@@ -1,0 +1,1132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_physics_ray_contact" kind="class" language="C++" prot="public">
+    <compoundname>njli::PhysicsRayContact</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <includes refid="_physics_ray_contact_8h" local="no">PhysicsRayContact.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_physics_ray_contact_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="30" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_ray_contact_1abd7959b8cbcd7c25bc6c0c8b1ea26ce6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsWorld</definition>
+        <argsstring></argsstring>
+        <name>PhysicsWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="31" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_ray_contact_1a59cdb6fe5b378389e35b8b2a2f4e990e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldState</definition>
+        <argsstring></argsstring>
+        <name>WorldState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="32" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_ray_contact_1a7b4bcdf992c21ae83363f25df05b1d25" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class World</definition>
+        <argsstring></argsstring>
+        <name>World</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="33" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_physics_ray_contact_1ab45c460f290a435ea879528f4dd5b372" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::PhysicsRayContact::m_closestHitFraction</definition>
+        <argsstring></argsstring>
+        <name>m_closestHitFraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="194" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_ray_contact_1a3cc7540d9aff7dad7860e6910aad7b41" prot="private" static="no" mutable="no">
+        <type>btVector3 *</type>
+        <definition>btVector3* njli::PhysicsRayContact::m_hitNormalWorld</definition>
+        <argsstring></argsstring>
+        <name>m_hitNormalWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="195" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_ray_contact_1a8bb6d7b4281cb7a5f36e28f87d1a2d77" prot="private" static="no" mutable="no">
+        <type>btVector3 *</type>
+        <definition>btVector3* njli::PhysicsRayContact::m_hitPointWorld</definition>
+        <argsstring></argsstring>
+        <name>m_hitPointWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="196" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_ray_contact_1ae315ed84ad9ab0f019a7a515f5a30f34" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* njli::PhysicsRayContact::m_node</definition>
+        <argsstring></argsstring>
+        <name>m_node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="197" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_ray_contact_1ad676d79b15af074e79631759e42f59aa" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::PhysicsRayContact::m_touchPosition</definition>
+        <argsstring></argsstring>
+        <name>m_touchPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="198" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1aaf35d126b209d8f09270fad928faa51a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsRayContact::PhysicsRayContact</definition>
+        <argsstring>()</argsstring>
+        <name>PhysicsRayContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1adf6960ca7a232ee4d2d58afc105c1883" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsRayContact::PhysicsRayContact</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>PhysicsRayContact</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a158613e1edba5d0175a8a0cdddde1109" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsRayContact::PhysicsRayContact</definition>
+        <argsstring>(const PhysicsRayContact &amp;)</argsstring>
+        <name>PhysicsRayContact</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a55b296d9dbe3cf8aa8e886a75fc8c0a3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsRayContact::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a75d11d2cb2a59dadec4cf08c8d74b863" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::PhysicsRayContact::~PhysicsRayContact</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysicsRayContact</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a02b26a7d8039cbf2b595f517bbfaa166" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+        <definition>PhysicsRayContact&amp; njli::PhysicsRayContact::operator=</definition>
+        <argsstring>(const PhysicsRayContact &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1ae44f643d72f6feff01536b0514ea2cf9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsRayContact::screenPosition</definition>
+        <argsstring>(const btVector2 &amp;pos)</argsstring>
+        <name>screenPosition</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1ab8995b347efdd2ad6d096dd0a0359977" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsRayContact::set</definition>
+        <argsstring>(f32 m_closestHitFraction, const btVector3 &amp;m_hitNormalWorld, const btVector3 &amp;m_hitPointWorld, Node *m_node)</argsstring>
+        <name>set</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>m_closestHitFraction</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>m_hitNormalWorld</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>m_hitPointWorld</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>m_node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="190" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a137ae28469554d1e1a9f932fdb3f808f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::PhysicsRayContact::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a7dc16a5e0bd9c514c615393f2e96a99b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsRayContact::serialize</definition>
+        <argsstring>(void *dataBuffer, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+          <declname>dataBuffer</declname>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 15:02:25</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dataBuffer description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a0359afcb01f851ad9774bda869bc8eea" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::PhysicsRayContact::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a0bb5770242ff196aa9c3102fc4baa731" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::PhysicsRayContact::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1ada58cfcde104252f771ad6d1b604f7f7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::PhysicsRayContact::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a911887e0780b9a95c0d003833034f58f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::PhysicsRayContact::getClosestHitFraction</definition>
+        <argsstring>() const</argsstring>
+        <name>getClosestHitFraction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a69ed826971b15e1dac145fe0f220663d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>const btVector3&amp; njli::PhysicsRayContact::getHitNormalWorld</definition>
+        <argsstring>() const</argsstring>
+        <name>getHitNormalWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1ae4a0bc9a07a0a504fecd776424ee89f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>const btVector3&amp; njli::PhysicsRayContact::getHitPointWorld</definition>
+        <argsstring>() const</argsstring>
+        <name>getHitPointWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1aa7508ae743098d57b2e11862decfeb2f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* njli::PhysicsRayContact::getHitNode</definition>
+        <argsstring>() const</argsstring>
+        <name>getHitNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1aead7a5c4b596bb008533c4d75ec06054" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::PhysicsRayContact::getTouchPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getTouchPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a4292b0c22fcabce21e8f7f066ef84812" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> **</type>
+        <definition>static PhysicsRayContact** njli::PhysicsRayContact::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="95" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a83407a542ac6b4fe3afb856949a6c8f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsRayContact::destroyArray</definition>
+        <argsstring>(PhysicsRayContact **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="101" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1af2363fea4145cacad545b63386c2b071" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> *</type>
+        <definition>static PhysicsRayContact* njli::PhysicsRayContact::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="107" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a44731e003241a785dbdb45ae94531c61" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> *</type>
+        <definition>static PhysicsRayContact* njli::PhysicsRayContact::create</definition>
+        <argsstring>(const PhysicsRayContactBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_ray_contact_builder" kindref="compound">PhysicsRayContactBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a438e26cf68a5d260f2fc3b6d23acd387" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> *</type>
+        <definition>static PhysicsRayContact* njli::PhysicsRayContact::clone</definition>
+        <argsstring>(const PhysicsRayContact &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1aba4cb7f93abc0faacee4f600760405b3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> *</type>
+        <definition>static PhysicsRayContact* njli::PhysicsRayContact::copy</definition>
+        <argsstring>(const PhysicsRayContact &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a7c45fca2b9c95f31d4fac45b3f20fff0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsRayContact::destroy</definition>
+        <argsstring>(PhysicsRayContact *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="137" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1acc6851bfddfb4c66a81f7d000fe5b817" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsRayContact::load</definition>
+        <argsstring>(PhysicsRayContact &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="145" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_ray_contact_1a46bdbc4c8a6f814a98a9f7f72510b513" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::PhysicsRayContact::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="152" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1552">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1553" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1551">
+        <label>njli::PhysicsRayContact</label>
+        <link refid="classnjli_1_1_physics_ray_contact"/>
+        <childnode refid="1552" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1554">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="1553">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1554" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1556">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1557" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1555">
+        <label>njli::PhysicsRayContact</label>
+        <link refid="classnjli_1_1_physics_ray_contact"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>m_node</edgelabel>
+        </childnode>
+      </node>
+      <node id="1578">
+        <label>njli::AbstractStateMachine&lt; Scene &gt;</label>
+        <link refid="classnjli_1_1_abstract_state_machine"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1579" relation="usage">
+          <edgelabel>m_pCurrentState</edgelabel>
+          <edgelabel>m_pPreviousState</edgelabel>
+        </childnode>
+      </node>
+      <node id="1570">
+        <label>njli::AbstractStateMachine&lt; Node &gt;</label>
+        <link refid="classnjli_1_1_abstract_state_machine"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1571" relation="usage">
+          <edgelabel>m_pCurrentState</edgelabel>
+          <edgelabel>m_pPreviousState</edgelabel>
+        </childnode>
+      </node>
+      <node id="1558">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="1558" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1576">
+        <label>njli::PhysicsWorld</label>
+        <link refid="classnjli_1_1_physics_world"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1569">
+        <label>njli::NodeStateMachine</label>
+        <link refid="classnjli_1_1_node_state_machine"/>
+        <childnode refid="1570" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1568">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="1564">
+        <label>njli::Image</label>
+        <link refid="classnjli_1_1_image"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1560">
+        <label>njli::AbstractActionable</label>
+        <link refid="classnjli_1_1_abstract_actionable"/>
+      </node>
+      <node id="1557">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1558" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1562">
+        <label>njli::SteeringBehaviorMachine</label>
+        <link refid="classnjli_1_1_steering_behavior_machine"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1574">
+        <label>njli::PhysicsShape</label>
+        <link refid="classnjli_1_1_physics_shape"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1561">
+        <label>njli::PhysicsField</label>
+        <link refid="classnjli_1_1_physics_field"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1566">
+        <label>njli::Material</label>
+        <link refid="classnjli_1_1_material"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1567" relation="usage">
+          <edgelabel>m_Specular</edgelabel>
+          <edgelabel>m_Reflective</edgelabel>
+          <edgelabel>m_Diffuse</edgelabel>
+          <edgelabel>m_Multiply</edgelabel>
+          <edgelabel>m_Emission</edgelabel>
+          <edgelabel>m_Normal</edgelabel>
+          <edgelabel>m_Transparent</edgelabel>
+          <edgelabel>m_Ambient</edgelabel>
+        </childnode>
+      </node>
+      <node id="1559">
+        <label>njli::Node</label>
+        <link refid="classnjli_1_1_node"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1560" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1561" relation="usage">
+          <edgelabel>m_PhysicsField</edgelabel>
+        </childnode>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+        <childnode refid="1562" relation="usage">
+          <edgelabel>m_SteeringBehaviorMachine</edgelabel>
+        </childnode>
+        <childnode refid="1563" relation="usage">
+          <edgelabel>m_Geometry</edgelabel>
+        </childnode>
+        <childnode refid="1569" relation="usage">
+          <edgelabel>m_NodeStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="1572" relation="usage">
+          <edgelabel>m_Light</edgelabel>
+        </childnode>
+        <childnode refid="1573" relation="usage">
+          <edgelabel>m_PhysicsBody</edgelabel>
+        </childnode>
+        <childnode refid="1575" relation="usage">
+          <edgelabel>m_CurrentScene</edgelabel>
+        </childnode>
+        <childnode refid="1580" relation="usage">
+          <edgelabel>m_Camera</edgelabel>
+        </childnode>
+      </node>
+      <node id="1580">
+        <label>njli::Camera</label>
+        <link refid="classnjli_1_1_camera"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1571">
+        <label>njli::AbstractState&lt; Node &gt;</label>
+        <link refid="classnjli_1_1_abstract_state"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1577">
+        <label>njli::SceneStateMachine</label>
+        <link refid="classnjli_1_1_scene_state_machine"/>
+        <childnode refid="1578" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1575">
+        <label>njli::Scene</label>
+        <link refid="classnjli_1_1_scene"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1576" relation="usage">
+          <edgelabel>m_PhysicsWorld</edgelabel>
+        </childnode>
+        <childnode refid="1559" relation="usage">
+          <edgelabel>m_RootNode</edgelabel>
+        </childnode>
+        <childnode refid="1566" relation="usage">
+          <edgelabel>m_BackgroundMaterial</edgelabel>
+        </childnode>
+        <childnode refid="1577" relation="usage">
+          <edgelabel>m_SceneStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="1580" relation="usage">
+          <edgelabel>m_TouchCamera</edgelabel>
+        </childnode>
+      </node>
+      <node id="1579">
+        <label>njli::AbstractState&lt; Scene &gt;</label>
+        <link refid="classnjli_1_1_abstract_state"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1567">
+        <label>njli::MaterialProperty</label>
+        <link refid="classnjli_1_1_material_property"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1568" relation="usage">
+          <edgelabel>m_AbstractFrameBufferObject</edgelabel>
+          <edgelabel>m_loadGPU_fbo</edgelabel>
+        </childnode>
+      </node>
+      <node id="1573">
+        <label>njli::PhysicsBody</label>
+        <link refid="classnjli_1_1_physics_body"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1574" relation="usage">
+          <edgelabel>m_PhysicsShape</edgelabel>
+        </childnode>
+      </node>
+      <node id="1563">
+        <label>njli::Geometry</label>
+        <link refid="classnjli_1_1_geometry"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1564" relation="usage">
+          <edgelabel>m_setupOpacity_Image</edgelabel>
+        </childnode>
+        <childnode refid="1565" relation="usage">
+          <edgelabel>m_ShaderProgram</edgelabel>
+        </childnode>
+        <childnode refid="1566" relation="usage">
+          <edgelabel>m_setupOpacity_Material</edgelabel>
+          <edgelabel>m_Material</edgelabel>
+        </childnode>
+      </node>
+      <node id="1565">
+        <label>njli::ShaderProgram</label>
+        <link refid="classnjli_1_1_shader_program"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1572">
+        <label>njli::Light</label>
+        <link refid="classnjli_1_1_light"/>
+        <childnode refid="1556" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" line="29" column="1" bodyfile="njligames-njlic_engine/njli/physics/PhysicsRayContact.h" bodystart="27" bodyend="199"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a55b296d9dbe3cf8aa8e886a75fc8c0a3" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a137ae28469554d1e1a9f932fdb3f808f" prot="public" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a438e26cf68a5d260f2fc3b6d23acd387" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsRayContact</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1aba4cb7f93abc0faacee4f600760405b3" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1af2363fea4145cacad545b63386c2b071" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a44731e003241a785dbdb45ae94531c61" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsRayContact</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a4292b0c22fcabce21e8f7f066ef84812" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a7c45fca2b9c95f31d4fac45b3f20fff0" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsRayContact</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a83407a542ac6b4fe3afb856949a6c8f1" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a0359afcb01f851ad9774bda869bc8eea" prot="public" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a911887e0780b9a95c0d003833034f58f" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getClosestHitFraction</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1aa7508ae743098d57b2e11862decfeb2f" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getHitNode</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a69ed826971b15e1dac145fe0f220663d" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getHitNormalWorld</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ae4a0bc9a07a0a504fecd776424ee89f9" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getHitPointWorld</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::PhysicsRayContact</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsRayContact</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsRayContact</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1aead7a5c4b596bb008533c4d75ec06054" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>getTouchPosition</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a0bb5770242ff196aa9c3102fc4baa731" prot="public" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1acc6851bfddfb4c66a81f7d000fe5b817" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>load</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ab45c460f290a435ea879528f4dd5b372" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_closestHitFraction</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a3cc7540d9aff7dad7860e6910aad7b41" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_hitNormalWorld</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a8bb6d7b4281cb7a5f36e28f87d1a2d77" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_hitPointWorld</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ae315ed84ad9ab0f019a7a515f5a30f34" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_node</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ad676d79b15af074e79631759e42f59aa" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>m_touchPosition</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ada58cfcde104252f771ad6d1b604f7f7" prot="public" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a02b26a7d8039cbf2b595f517bbfaa166" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1aaf35d126b209d8f09270fad928faa51a" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>PhysicsRayContact</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1adf6960ca7a232ee4d2d58afc105c1883" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>PhysicsRayContact</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a158613e1edba5d0175a8a0cdddde1109" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>PhysicsRayContact</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1abd7959b8cbcd7c25bc6c0c8b1ea26ce6" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>PhysicsWorld</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ae44f643d72f6feff01536b0514ea2cf9" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>screenPosition</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a7dc16a5e0bd9c514c615393f2e96a99b" prot="public" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsRayContact</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1ab8995b347efdd2ad6d096dd0a0359977" prot="protected" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>set</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::PhysicsRayContact</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a46bdbc4c8a6f814a98a9f7f72510b513" prot="public" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>type</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a7b4bcdf992c21ae83363f25df05b1d25" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>World</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a59cdb6fe5b378389e35b8b2a2f4e990e" prot="private" virt="non-virtual"><scope>njli::PhysicsRayContact</scope><name>WorldState</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_physics_ray_contact_1a75d11d2cb2a59dadec4cf08c8d74b863" prot="protected" virt="virtual"><scope>njli::PhysicsRayContact</scope><name>~PhysicsRayContact</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

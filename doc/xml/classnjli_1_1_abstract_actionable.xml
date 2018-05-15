@@ -1,0 +1,340 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_abstract_actionable" kind="class" language="C++" prot="public">
+    <compoundname>njli::AbstractActionable</compoundname>
+    <derivedcompoundref refid="classnjli_1_1_node" prot="public" virt="non-virtual">njli::Node</derivedcompoundref>
+    <includes refid="_abstract_actionable_8h" local="no">AbstractActionable.h</includes>
+    <innerclass refid="structnjli_1_1_abstract_actionable_1_1_actionable_action" prot="private">njli::AbstractActionable::ActionableAction</innerclass>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_abstract_actionable_1a17bc44206dd13cb179bafdf0cd2bbda9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structnjli_1_1_abstract_actionable_1_1_actionable_action" kindref="compound">ActionableAction</ref> * &gt;</type>
+        <definition>std::vector&lt;ActionableAction *&gt; njli::AbstractActionable::m_Actions</definition>
+        <argsstring></argsstring>
+        <name>m_Actions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="101" column="1" bodyfile="njligames-njlic_engine/njli/AbstractActionable.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_abstract_actionable_1a230d6ee2c4c2cd3f7d4e716ea238dbfc" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; <ref refid="structnjli_1_1_abstract_actionable_1_1_actionable_action" kindref="compound">ActionableAction</ref> * &gt;</type>
+        <definition>std::queue&lt;ActionableAction *&gt; njli::AbstractActionable::m_ActionMemoryQueue</definition>
+        <argsstring></argsstring>
+        <name>m_ActionMemoryQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="102" column="1" bodyfile="njligames-njlic_engine/njli/AbstractActionable.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a14bdb9bfc024571d6989763629625949" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::AbstractActionable::AbstractActionable</definition>
+        <argsstring>()</argsstring>
+        <name>AbstractActionable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a649739eb41be60afdcf18d7fe0d25fff" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::AbstractActionable::~AbstractActionable</definition>
+        <argsstring>()</argsstring>
+        <name>~AbstractActionable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1aab364e6f121a457e33a61850300c2d7b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractActionable::update</definition>
+        <argsstring>(f32 timeStep)</argsstring>
+        <name>update</name>
+        <reimplementedby refid="classnjli_1_1_node_1a3eb1db3aa2681e4acaf3e9e95fd01e69">update</reimplementedby>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a9df58912375974fd1e5da088e4d4225d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractActionable::getAllActionNames</definition>
+        <argsstring>(std::vector&lt; std::string &gt; &amp;actionNames)</argsstring>
+        <name>getAllActionNames</name>
+        <param>
+          <type>std::vector&lt; std::string &gt; &amp;</type>
+          <declname>actionNames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="88" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1af2020b25504138eb95c993b3a09c6500" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractActionable::runAction</definition>
+        <argsstring>(Action *action, bool callCompletionFunction=false)</argsstring>
+        <name>runAction</name>
+        <reimplementedby refid="classnjli_1_1_node_1a5674da852b950cc581fd22bc0c309b5f">runAction</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_action" kindref="compound">Action</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>callCompletionFunction</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#action description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callCompletionFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#callCompletionFunction description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a8ad2ebd2c3a7abb313602866259fb98c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractActionable::runAction</definition>
+        <argsstring>(Action *action, const char *key, bool callCompletionFunction=false)</argsstring>
+        <name>runAction</name>
+        <reimplementedby refid="classnjli_1_1_node_1a4a5ab73e783b102ffa0c5af0d118e207">runAction</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_action" kindref="compound">Action</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>callCompletionFunction</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#action description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#key description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>callCompletionFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#callCompletionFunction description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a2e853aeb7805f7fb878acc2f4ebafadb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_action" kindref="compound">Action</ref> *</type>
+        <definition>Action* njli::AbstractActionable::getAction</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>getAction</name>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#key description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a237eba6122f8505a04df9bcc0cd431af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::AbstractActionable::hasActions</definition>
+        <argsstring>() const</argsstring>
+        <name>hasActions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a902395a20ef04482b15e7a65c0be4bad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::AbstractActionable::removeAction</definition>
+        <argsstring>(const char *key)</argsstring>
+        <name>removeAction</name>
+        <reimplementedby refid="classnjli_1_1_node_1ae469bbf7d36fd0ea3b78ff9ee8cc6dee">removeAction</reimplementedby>
+        <param>
+          <type>const char *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>key</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#key description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a758cc11b09194399de63537e0f7e1485" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractActionable::removeAllActions</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllActions</name>
+        <reimplementedby refid="classnjli_1_1_node_1ad497289960419c904082516aab4ab551">removeAllActions</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="84" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a7674886976b87af3bfa33ad030268e3e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::AbstractActionable::AbstractActionable</definition>
+        <argsstring>(const AbstractActionable &amp;copy)</argsstring>
+        <name>AbstractActionable</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_actionable" kindref="compound">AbstractActionable</ref> &amp;</type>
+          <declname>copy</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_abstract_actionable_1a0f09166a53c6d1b5652ad268fcdfcb46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_actionable" kindref="compound">AbstractActionable</ref> &amp;</type>
+        <definition>AbstractActionable&amp; njli::AbstractActionable::operator=</definition>
+        <argsstring>(const AbstractActionable &amp;rhs)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_actionable" kindref="compound">AbstractActionable</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;#Description#&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>njli::AbstractActionable</label>
+        <link refid="classnjli_1_1_abstract_actionable"/>
+      </node>
+      <node id="1">
+        <label>njli::Node</label>
+        <link refid="classnjli_1_1_node"/>
+        <childnode refid="0" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="njligames-njlic_engine/njli/AbstractActionable.h" line="25" column="1" bodyfile="njligames-njlic_engine/njli/AbstractActionable.h" bodystart="24" bodyend="103"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_actionable_1a14bdb9bfc024571d6989763629625949" prot="protected" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>AbstractActionable</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a7674886976b87af3bfa33ad030268e3e" prot="private" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>AbstractActionable</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a2e853aeb7805f7fb878acc2f4ebafadb" prot="public" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>getAction</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a9df58912375974fd1e5da088e4d4225d" prot="protected" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>getAllActionNames</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a237eba6122f8505a04df9bcc0cd431af" prot="public" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>hasActions</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a230d6ee2c4c2cd3f7d4e716ea238dbfc" prot="private" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>m_ActionMemoryQueue</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a17bc44206dd13cb179bafdf0cd2bbda9" prot="private" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>m_Actions</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a0f09166a53c6d1b5652ad268fcdfcb46" prot="private" virt="non-virtual"><scope>njli::AbstractActionable</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a902395a20ef04482b15e7a65c0be4bad" prot="public" virt="virtual"><scope>njli::AbstractActionable</scope><name>removeAction</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a758cc11b09194399de63537e0f7e1485" prot="public" virt="virtual"><scope>njli::AbstractActionable</scope><name>removeAllActions</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1af2020b25504138eb95c993b3a09c6500" prot="public" virt="virtual"><scope>njli::AbstractActionable</scope><name>runAction</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a8ad2ebd2c3a7abb313602866259fb98c" prot="public" virt="virtual"><scope>njli::AbstractActionable</scope><name>runAction</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1aab364e6f121a457e33a61850300c2d7b" prot="protected" virt="virtual"><scope>njli::AbstractActionable</scope><name>update</name></member>
+      <member refid="classnjli_1_1_abstract_actionable_1a649739eb41be60afdcf18d7fe0d25fff" prot="protected" virt="virtual"><scope>njli::AbstractActionable</scope><name>~AbstractActionable</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

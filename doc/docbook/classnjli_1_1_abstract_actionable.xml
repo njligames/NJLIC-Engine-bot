@@ -1,0 +1,354 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_abstract_actionable">
+<title>njli::AbstractActionable class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_abstract_actionable_8h">&lt;AbstractActionable.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::AbstractActionable</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_actionable__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::AbstractActionable</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_actionable__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structnjli_1_1_abstract_actionable_1_1_actionable_action">njli::AbstractActionable::ActionableAction</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; ActionableAction * &gt; m_Actions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::queue&lt; ActionableAction * &gt; m_ActionMemoryQueue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_actionable_1a14bdb9bfc024571d6989763629625949">AbstractActionable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_actionable_1a649739eb41be60afdcf18d7fe0d25fff">~AbstractActionable</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_actionable_1aab364e6f121a457e33a61850300c2d7b">update</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> timeStep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_actionable_1a9df58912375974fd1e5da088e4d4225d">getAllActionNames</link> (
+std::vector&lt; std::string &gt; &amp; actionNames)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_actionable_1af2020b25504138eb95c993b3a09c6500">runAction</link> (
+<link linkend="classnjli_1_1_action">Action</link> * action, bool callCompletionFunction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_actionable_1a8ad2ebd2c3a7abb313602866259fb98c">runAction</link> (
+<link linkend="classnjli_1_1_action">Action</link> * action, const char * key, bool callCompletionFunction)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_abstract_actionable_1a2e853aeb7805f7fb878acc2f4ebafadb">getAction</link> (
+const char * key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_abstract_actionable_1a237eba6122f8505a04df9bcc0cd431af">hasActions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_abstract_actionable_1a902395a20ef04482b15e7a65c0be4bad">removeAction</link> (
+const char * key)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_actionable_1a758cc11b09194399de63537e0f7e1485">removeAllActions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_actionable_1a7674886976b87af3bfa33ad030268e3e">AbstractActionable</link> (
+const <link linkend="classnjli_1_1_abstract_actionable">AbstractActionable</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_abstract_actionable">AbstractActionable</link> &amp; <link linkend="classnjli_1_1_abstract_actionable_1a0f09166a53c6d1b5652ad268fcdfcb46">operator=</link> (
+const <link linkend="classnjli_1_1_abstract_actionable">AbstractActionable</link> &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>&lt;#Description#&gt; </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a14bdb9bfc024571d6989763629625949">
+                <title>njli::AbstractActionable::AbstractActionable ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a649739eb41be60afdcf18d7fe0d25fff">
+                <title>virtual njli::AbstractActionable::~AbstractActionable ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1aab364e6f121a457e33a61850300c2d7b">
+                <title>virtual void njli::AbstractActionable::update (f32 timeStep)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a9df58912375974fd1e5da088e4d4225d">
+                <title>void njli::AbstractActionable::getAllActionNames (std::vector&lt; std::string &gt; &amp;actionNames)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1af2020b25504138eb95c993b3a09c6500">
+                <title>virtual void njli::AbstractActionable::runAction (Action *action, bool callCompletionFunction=false)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>action</entry>
+                                <entry>
+<para>&lt;#action description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>callCompletionFunction</entry>
+                                <entry>
+<para>&lt;#callCompletionFunction description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a8ad2ebd2c3a7abb313602866259fb98c">
+                <title>virtual void njli::AbstractActionable::runAction (Action *action, const char *key, bool callCompletionFunction=false)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>action</entry>
+                                <entry>
+<para>&lt;#action description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>&lt;#key description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>callCompletionFunction</entry>
+                                <entry>
+<para>&lt;#callCompletionFunction description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a2e853aeb7805f7fb878acc2f4ebafadb">
+                <title>Action* njli::AbstractActionable::getAction (const char *key)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>&lt;#key description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a237eba6122f8505a04df9bcc0cd431af">
+                <title>bool njli::AbstractActionable::hasActions () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a902395a20ef04482b15e7a65c0be4bad">
+                <title>virtual bool njli::AbstractActionable::removeAction (const char *key)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>key</entry>
+                                <entry>
+<para>&lt;#key description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a758cc11b09194399de63537e0f7e1485">
+                <title>virtual void njli::AbstractActionable::removeAllActions ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a7674886976b87af3bfa33ad030268e3e">
+                <title>njli::AbstractActionable::AbstractActionable (const AbstractActionable &amp;copy)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_abstract_actionable_1a0f09166a53c6d1b5652ad268fcdfcb46">
+                <title>AbstractActionable&amp; njli::AbstractActionable::operator= (const AbstractActionable &amp;rhs)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

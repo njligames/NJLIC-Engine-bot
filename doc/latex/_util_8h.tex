@@ -1,0 +1,488 @@
+\hypertarget{_util_8h}{}\section{njligames-\/njlic\+\_\+engine/njli/platform/\+Util.h File Reference}
+\label{_util_8h}\index{njligames-\/njlic\+\_\+engine/njli/platform/\+Util.\+h@{njligames-\/njlic\+\_\+engine/njli/platform/\+Util.\+h}}
+{\ttfamily \#include \char`\"{}Log.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for Util.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_util_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_util_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrgb}{rgb}}
+\item 
+struct \mbox{\hyperlink{structhsv}{hsv}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}~((\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$)0)
+\item 
+\#define \mbox{\hyperlink{_util_8h_a598a3330b3c21701223ee0ca14316eca}{PI}}~3.\+14159265358979323846264338327f
+\item 
+\#define \mbox{\hyperlink{_util_8h_a6b20d41d6252e9871430c242cb1a56e7}{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}~512
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef char \mbox{\hyperlink{_util_8h_a2ff401e087cf786c38a6812723e94473}{s8}}
+\item 
+typedef unsigned char \mbox{\hyperlink{_util_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}
+\item 
+typedef short \mbox{\hyperlink{_util_8h_a2e9bf6983da73775aa86158c825bf777}{s16}}
+\item 
+typedef unsigned short \mbox{\hyperlink{_util_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}
+\item 
+typedef int \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}
+\item 
+typedef unsigned int \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}
+\item 
+typedef signed long long \mbox{\hyperlink{_util_8h_a4258bfb2c3a440d06c4aaa3c2b450dde}{s64}}
+\item 
+typedef unsigned long long \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}
+\item 
+typedef float \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}
+\item 
+typedef double \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{_util_8h_ae88bd4b701da0facce543b4b1cf2913e}{Is\+On}} (const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} value, const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} bit)
+\item 
+\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{_util_8h_a86d8a45efa3de86d9cbd56e47f817ae5}{On}} (const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} value, const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} bit)
+\item 
+\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{_util_8h_ad1051d2c3a51590b7ff6d8eebf207767}{Off}} (const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} value, const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} bit)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{_util_8h_a49d91d981da3589ae6425aec87b8b2ba}{clampf}} (const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} value, const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} min, const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} max)
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{_util_8h_a2ab20be98ddc67c99178eecd4e4fce2d}{clamp}} (const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} value, const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} min, const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} max)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{_util_8h_a06c3fcc0066b352d32be5c1af8836395}{clamp\+Color}} (const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} color)
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{_util_8h_aa1324f2b342af4bee334ecbba1f0d8ea}{is\+Power\+Of\+Two}} (\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} v)
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{_util_8h_a9f316c57e6595e69794eb7404799cef3}{fix\+Power\+Of\+Two}} (\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} v)
+\item 
+\mbox{\hyperlink{structhsv}{hsv}} \mbox{\hyperlink{_util_8h_aa9504068d05a6b4a9f772dbfa9d0e0ca}{rgb2hsv}} (\mbox{\hyperlink{structrgb}{rgb}} in)
+\item 
+\mbox{\hyperlink{structrgb}{rgb}} \mbox{\hyperlink{_util_8h_a4a66ca1d47428638881abe32bfd7affc}{hsv2rgb}} (\mbox{\hyperlink{structhsv}{hsv}} in)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_util_8h_a6b20d41d6252e9871430c242cb1a56e7}\label{_util_8h_a6b20d41d6252e9871430c242cb1a56e7}} 
+\index{Util.\+h@{Util.\+h}!B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}
+\index{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE@{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily \#define B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE~512}
+
+
+
+Definition at line 42 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}\label{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}} 
+\index{Util.\+h@{Util.\+h}!N\+U\+LL@{N\+U\+LL}}
+\index{N\+U\+LL@{N\+U\+LL}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{N\+U\+LL}{NULL}}
+{\footnotesize\ttfamily \#define N\+U\+LL~((\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$)0)}
+
+
+
+Definition at line 22 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a598a3330b3c21701223ee0ca14316eca}\label{_util_8h_a598a3330b3c21701223ee0ca14316eca}} 
+\index{Util.\+h@{Util.\+h}!PI@{PI}}
+\index{PI@{PI}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{PI}{PI}}
+{\footnotesize\ttfamily \#define PI~3.\+14159265358979323846264338327f}
+
+
+
+Definition at line 25 of file Util.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_util_8h_a5f6906312a689f27d70e9d086649d3fd}\label{_util_8h_a5f6906312a689f27d70e9d086649d3fd}} 
+\index{Util.\+h@{Util.\+h}!f32@{f32}}
+\index{f32@{f32}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{f32}{f32}}
+{\footnotesize\ttfamily typedef float \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}
+
+
+
+Definition at line 39 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}\label{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}} 
+\index{Util.\+h@{Util.\+h}!f64@{f64}}
+\index{f64@{f64}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{f64}{f64}}
+{\footnotesize\ttfamily typedef double \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}}}
+
+
+
+Definition at line 40 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a2e9bf6983da73775aa86158c825bf777}\label{_util_8h_a2e9bf6983da73775aa86158c825bf777}} 
+\index{Util.\+h@{Util.\+h}!s16@{s16}}
+\index{s16@{s16}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{s16}{s16}}
+{\footnotesize\ttfamily typedef short \mbox{\hyperlink{_util_8h_a2e9bf6983da73775aa86158c825bf777}{s16}}}
+
+
+
+Definition at line 33 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}\label{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}} 
+\index{Util.\+h@{Util.\+h}!s32@{s32}}
+\index{s32@{s32}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{s32}{s32}}
+{\footnotesize\ttfamily typedef int \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}
+
+
+
+Definition at line 35 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a4258bfb2c3a440d06c4aaa3c2b450dde}\label{_util_8h_a4258bfb2c3a440d06c4aaa3c2b450dde}} 
+\index{Util.\+h@{Util.\+h}!s64@{s64}}
+\index{s64@{s64}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{s64}{s64}}
+{\footnotesize\ttfamily typedef signed long long \mbox{\hyperlink{_util_8h_a4258bfb2c3a440d06c4aaa3c2b450dde}{s64}}}
+
+
+
+Definition at line 37 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a2ff401e087cf786c38a6812723e94473}\label{_util_8h_a2ff401e087cf786c38a6812723e94473}} 
+\index{Util.\+h@{Util.\+h}!s8@{s8}}
+\index{s8@{s8}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{s8}{s8}}
+{\footnotesize\ttfamily typedef char \mbox{\hyperlink{_util_8h_a2ff401e087cf786c38a6812723e94473}{s8}}}
+
+
+
+Definition at line 31 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a9e6c91d77e24643b888dbd1a1a590054}\label{_util_8h_a9e6c91d77e24643b888dbd1a1a590054}} 
+\index{Util.\+h@{Util.\+h}!u16@{u16}}
+\index{u16@{u16}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{u16}{u16}}
+{\footnotesize\ttfamily typedef unsigned short \mbox{\hyperlink{_util_8h_a9e6c91d77e24643b888dbd1a1a590054}{u16}}}
+
+
+
+Definition at line 34 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}\label{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}} 
+\index{Util.\+h@{Util.\+h}!u32@{u32}}
+\index{u32@{u32}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{u32}{u32}}
+{\footnotesize\ttfamily typedef unsigned int \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}
+
+
+
+Definition at line 36 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}\label{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}} 
+\index{Util.\+h@{Util.\+h}!u64@{u64}}
+\index{u64@{u64}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{u64}{u64}}
+{\footnotesize\ttfamily typedef unsigned long long \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}}}
+
+
+
+Definition at line 38 of file Util.\+h.
+
+\mbox{\Hypertarget{_util_8h_aed742c436da53c1080638ce6ef7d13de}\label{_util_8h_aed742c436da53c1080638ce6ef7d13de}} 
+\index{Util.\+h@{Util.\+h}!u8@{u8}}
+\index{u8@{u8}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{u8}{u8}}
+{\footnotesize\ttfamily typedef unsigned char \mbox{\hyperlink{_util_8h_aed742c436da53c1080638ce6ef7d13de}{u8}}}
+
+
+
+Definition at line 32 of file Util.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_util_8h_a2ab20be98ddc67c99178eecd4e4fce2d}\label{_util_8h_a2ab20be98ddc67c99178eecd4e4fce2d}} 
+\index{Util.\+h@{Util.\+h}!clamp@{clamp}}
+\index{clamp@{clamp}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{clamp()}{clamp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} clamp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{value,  }\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{min,  }\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 70 of file Util.\+h.
+
+
+\begin{DoxyCode}
+71 \{
+72   \textcolor{keywordflow}{return} (value < min) ? min : ((value > max) ? max : value);
+73 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_a06c3fcc0066b352d32be5c1af8836395}\label{_util_8h_a06c3fcc0066b352d32be5c1af8836395}} 
+\index{Util.\+h@{Util.\+h}!clamp\+Color@{clamp\+Color}}
+\index{clamp\+Color@{clamp\+Color}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{clamp\+Color()}{clampColor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} clamp\+Color (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{color }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 75 of file Util.\+h.
+
+
+\begin{DoxyCode}
+75 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{_util_8h_a49d91d981da3589ae6425aec87b8b2ba}{clampf}}(color, 0.0f, 1.0f); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_a49d91d981da3589ae6425aec87b8b2ba}\label{_util_8h_a49d91d981da3589ae6425aec87b8b2ba}} 
+\index{Util.\+h@{Util.\+h}!clampf@{clampf}}
+\index{clampf@{clampf}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{clampf()}{clampf()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} clampf (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{value,  }\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{min,  }\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{max }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 65 of file Util.\+h.
+
+
+\begin{DoxyCode}
+66 \{
+67   \textcolor{keywordflow}{return} (value < min) ? min : ((value > max) ? max : value);
+68 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_a9f316c57e6595e69794eb7404799cef3}\label{_util_8h_a9f316c57e6595e69794eb7404799cef3}} 
+\index{Util.\+h@{Util.\+h}!fix\+Power\+Of\+Two@{fix\+Power\+Of\+Two}}
+\index{fix\+Power\+Of\+Two@{fix\+Power\+Of\+Two}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{fix\+Power\+Of\+Two()}{fixPowerOfTwo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} fix\+Power\+Of\+Two (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 79 of file Util.\+h.
+
+
+\begin{DoxyCode}
+80 \{
+81   v--;
+82   v |= v >> 1;
+83   v |= v >> 2;
+84   v |= v >> 4;
+85   v |= v >> 8;
+86   v |= v >> 16;
+87   v++;
+88 
+89   \textcolor{keywordflow}{return} v;
+90 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_a4a66ca1d47428638881abe32bfd7affc}\label{_util_8h_a4a66ca1d47428638881abe32bfd7affc}} 
+\index{Util.\+h@{Util.\+h}!hsv2rgb@{hsv2rgb}}
+\index{hsv2rgb@{hsv2rgb}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{hsv2rgb()}{hsv2rgb()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrgb}{rgb}} hsv2rgb (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structhsv}{hsv}}}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 152 of file Util.\+h.
+
+
+\begin{DoxyCode}
+153 \{
+154   \textcolor{keywordtype}{double} hh, p, q, t, ff;
+155   \textcolor{keywordtype}{long} i;
+156   \mbox{\hyperlink{structrgb}{rgb}} out;
+157 
+158   \textcolor{keywordflow}{if} (in.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}} <= 0.0)
+159     \{ \textcolor{comment}{// < is bogus, just shuts up warnings}
+160       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+161       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+162       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+163       \textcolor{keywordflow}{return} out;
+164     \}
+165   hh = in.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}};
+166   \textcolor{keywordflow}{if} (hh >= 360.0)
+167     hh = 0.0;
+168   hh /= 60.0;
+169   i = (long)hh;
+170   ff = hh - i;
+171   p = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}} * (1.0 - in.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}});
+172   q = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}} * (1.0 - (in.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}} * ff));
+173   t = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}} * (1.0 - (in.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}} * (1.0 - ff)));
+174 
+175   \textcolor{keywordflow}{switch} (i)
+176     \{
+177     \textcolor{keywordflow}{case} 0:
+178       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+179       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = t;
+180       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = p;
+181       \textcolor{keywordflow}{break};
+182     \textcolor{keywordflow}{case} 1:
+183       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = q;
+184       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+185       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = p;
+186       \textcolor{keywordflow}{break};
+187     \textcolor{keywordflow}{case} 2:
+188       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = p;
+189       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+190       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = t;
+191       \textcolor{keywordflow}{break};
+192 
+193     \textcolor{keywordflow}{case} 3:
+194       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = p;
+195       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = q;
+196       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+197       \textcolor{keywordflow}{break};
+198     \textcolor{keywordflow}{case} 4:
+199       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = t;
+200       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = p;
+201       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+202       \textcolor{keywordflow}{break};
+203     \textcolor{keywordflow}{case} 5:
+204     \textcolor{keywordflow}{default}:
+205       out.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} = in.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}};
+206       out.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} = p;
+207       out.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} = q;
+208       \textcolor{keywordflow}{break};
+209     \}
+210   \textcolor{keywordflow}{return} out;
+211 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_ae88bd4b701da0facce543b4b1cf2913e}\label{_util_8h_ae88bd4b701da0facce543b4b1cf2913e}} 
+\index{Util.\+h@{Util.\+h}!Is\+On@{Is\+On}}
+\index{Is\+On@{Is\+On}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{Is\+On()}{IsOn()}}
+{\footnotesize\ttfamily char Is\+On (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{value,  }\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 44 of file Util.\+h.
+
+
+\begin{DoxyCode}
+45 \{
+46   \textcolor{keywordtype}{int} v = value & bit;
+47   \textcolor{keywordtype}{char} ret = (v == 0) ? 0 : 1;
+48   \textcolor{keywordflow}{return} ret;
+49 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_aa1324f2b342af4bee334ecbba1f0d8ea}\label{_util_8h_aa1324f2b342af4bee334ecbba1f0d8ea}} 
+\index{Util.\+h@{Util.\+h}!is\+Power\+Of\+Two@{is\+Power\+Of\+Two}}
+\index{is\+Power\+Of\+Two@{is\+Power\+Of\+Two}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{is\+Power\+Of\+Two()}{isPowerOfTwo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} is\+Power\+Of\+Two (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 77 of file Util.\+h.
+
+
+\begin{DoxyCode}
+77 \{ \textcolor{keywordflow}{return} v && !(v & (v - 1)); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_ad1051d2c3a51590b7ff6d8eebf207767}\label{_util_8h_ad1051d2c3a51590b7ff6d8eebf207767}} 
+\index{Util.\+h@{Util.\+h}!Off@{Off}}
+\index{Off@{Off}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{Off()}{Off()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} Off (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{value,  }\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 56 of file Util.\+h.
+
+
+\begin{DoxyCode}
+57 \{
+58   \textcolor{keywordflow}{if} (\mbox{\hyperlink{_util_8h_ae88bd4b701da0facce543b4b1cf2913e}{IsOn}}(value, bit))
+59     \{
+60       \textcolor{keywordflow}{return} value ^ bit;
+61     \}
+62   \textcolor{keywordflow}{return} value;
+63 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_a86d8a45efa3de86d9cbd56e47f817ae5}\label{_util_8h_a86d8a45efa3de86d9cbd56e47f817ae5}} 
+\index{Util.\+h@{Util.\+h}!On@{On}}
+\index{On@{On}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{On()}{On()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} On (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{value,  }\item[{const \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 51 of file Util.\+h.
+
+
+\begin{DoxyCode}
+52 \{
+53   \textcolor{keywordflow}{return} value | bit;
+54 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{_util_8h_aa9504068d05a6b4a9f772dbfa9d0e0ca}\label{_util_8h_aa9504068d05a6b4a9f772dbfa9d0e0ca}} 
+\index{Util.\+h@{Util.\+h}!rgb2hsv@{rgb2hsv}}
+\index{rgb2hsv@{rgb2hsv}!Util.\+h@{Util.\+h}}
+\subsubsection{\texorpdfstring{rgb2hsv()}{rgb2hsv()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structhsv}{hsv}} rgb2hsv (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structrgb}{rgb}}}]{in }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 106 of file Util.\+h.
+
+
+\begin{DoxyCode}
+107 \{
+108   \mbox{\hyperlink{structhsv}{hsv}} out;
+109   \textcolor{keywordtype}{double} min, max, delta;
+110 
+111   min = in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} < in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} ? in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} : in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}};
+112   min = min < in.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} ? min : in.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}};
+113 
+114   max = in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} > in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} ? in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} : in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}};
+115   max = max > in.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} ? max : in.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}};
+116 
+117   out.\mbox{\hyperlink{structhsv_a572c01d23590231adffe6f9b16df20d3}{v}} = max; \textcolor{comment}{// v}
+118   delta = max - min;
+119   \textcolor{keywordflow}{if} (delta < 0.00001)
+120     \{
+121       out.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}} = 0;
+122       out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} = 0; \textcolor{comment}{// undefined, maybe nan?}
+123       \textcolor{keywordflow}{return} out;
+124     \}
+125   \textcolor{keywordflow}{if} (max > 0.0)
+126     \{ \textcolor{comment}{// NOTE: if Max is == 0, this divide would cause a crash}
+127       out.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}} = (delta / max); \textcolor{comment}{// s}
+128     \}
+129   \textcolor{keywordflow}{else}
+130     \{
+131       \textcolor{comment}{// if max is 0, then r = g = b = 0}
+132       \textcolor{comment}{// s = 0, v is undefined}
+133       out.\mbox{\hyperlink{structhsv_a3cbdc4bf500068b5c4466c4272114a23}{s}} = 0.0;
+134       out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} = NAN; \textcolor{comment}{// its now undefined}
+135       \textcolor{keywordflow}{return} out;
+136     \}
+137   \textcolor{keywordflow}{if} (in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} >= max)                 \textcolor{comment}{// > is bogus, just keeps compilor happy}
+138     out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} = (in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} - in.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}}) / delta; \textcolor{comment}{// between yellow & magenta}
+139   \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}} >= max)
+140     out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} = 2.0 + (in.\mbox{\hyperlink{structrgb_aa3e45a2c26ad435fe29dfea49f16831e}{b}} - in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}}) / delta; \textcolor{comment}{// between cyan & yellow}
+141   \textcolor{keywordflow}{else}
+142     out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} = 4.0 + (in.\mbox{\hyperlink{structrgb_ad5a38e43f70fb57d6da052745ea5ff90}{r}} - in.\mbox{\hyperlink{structrgb_a1c51cad47a05c797643776f9357a8749}{g}}) / delta; \textcolor{comment}{// between magenta & cyan}
+143 
+144   out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} *= 60.0; \textcolor{comment}{// degrees}
+145 
+146   \textcolor{keywordflow}{if} (out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} < 0.0)
+147     out.\mbox{\hyperlink{structhsv_aa27eea5f2a89b941eead7139330d12f4}{h}} += 360.0;
+148 
+149   \textcolor{keywordflow}{return} out;
+150 \}
+\end{DoxyCode}

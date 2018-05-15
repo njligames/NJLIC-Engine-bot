@@ -1,0 +1,754 @@
+\hypertarget{classnjli_1_1_steering_behavior_machine}{}\section{njli\+:\+:Steering\+Behavior\+Machine Class Reference}
+\label{classnjli_1_1_steering_behavior_machine}\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+
+
+{\ttfamily \#include $<$Steering\+Behavior\+Machine.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Steering\+Behavior\+Machine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnjli_1_1_steering_behavior_machine__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Steering\+Behavior\+Machine\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{classnjli_1_1_steering_behavior_machine__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_af6540438929773c0376faff7c1f908c0}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a1fbec43b76f0612ed5b0d2492bb4b6df}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$, bt\+Serializer $\ast$) const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a62b8ba5c3e2b9f63eb146721c03d37a1}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a9daddfcf84380483cd2643c15d0497a4}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a08dc60d265fe55badc0137c1a4427343}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_aa140509a8a5dcf389594c014ef1e779b}{get\+Parent}} ()
+\item 
+const \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ab60292961503180cfb1f67e04f6a3dd4}{get\+Parent}} () const
+\item 
+virtual const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_aea431466acb4ef73220206bbcd515a9a}{calculate\+Steering\+Force}} ()=0
+\item 
+const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a7d757fe3a0e36bcd3606f660025e1529}{get\+Calculated\+Force}} () const
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_afeba19775abc7b530aa0997e1e8cad9c}{set\+Heuristic}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$steering\+Behavior, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} heuristic)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a577fa9c6dcf0b5f5b742db4304792436}{get\+Heuristic}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$steering\+Behavior) const
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_aea8d4a3f11d710510a6362acc5e37f8d}{add\+Steering\+Behavior}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$steering\+Behavior, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} heuristic)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a8a14a3f6b951ddcf05a27256c3d21efe}{remove\+Steering\+Behavior}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$steering\+Behavior)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ac480ec6e9f11918adee87d95167b9b25}{remove\+All\+Steering\+Behaviors}} ()
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_abc8ac2f926c76602a5413baa12ba6f7b}{number\+Of\+Steering\+Behaviors}} () const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a5f16284442c65dd387dce41393b30c4d}{get\+Steering\+Behaviors}} (std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$$>$ \&steering\+Behaviors) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_afefbffc1177c86516257201bdd649566}{set\+Max\+Speed}} (const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} speed)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ac28ff247a7d7dab66bc3a9bbb28a4375}{get\+Max\+Speed}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a26bf31bf1fe4baf5baeac3062e4c797f}{set\+Max\+Force}} (const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} speed)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ad31815b6939f2cd6c4a39803198fcf3f}{get\+Max\+Force}} () const
+\item 
+const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_aac2de411738725c7e4347097327da51e}{get\+Heading\+Vector}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_af97628764337e956f6c6ffe1d21eff30}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a9cf768db1c04513184ada83d420af23e}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ab8fe4150d2324d83d50a413d35d16ae2}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a8c449bcdcb6b82b7258ad5e418d6c430}{create}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_builder}{Steering\+Behavior\+Machine\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a2f36fb5b2930a51164b442b399b2e414}{clone}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a63326be519b9ee6d77687f90c6304697}{copy}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a7e50f455b9d1a543c98bcb463f312647}{destroy}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a3826fef1020cad7acb80436f7c9a71bd}{load}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ab193f59f5f0a3ba81703678bd9b14e8b}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::pair$<$ \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} $>$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a1a02a6c877a13e3d51d91e0636cfff97}{Steering\+Pair}}
+\item 
+typedef std\+::map$<$ \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} $>$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a4140175f3174e6e8d22e977a72220b5d}{Steering\+Map}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a4ee69ac7ff9a845f31f488a94b3e4a95}{Steering\+Behavior\+Machine}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a9019174adb7e588dc03a3656fb546c21}{Steering\+Behavior\+Machine}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ad55d19c8bdcc34048021f613b0503437}{Steering\+Behavior\+Machine}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ae9872ddbb50d792d826fd85059f96507}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a95670a6b33019e1945dfd4425479a157}{$\sim$\+Steering\+Behavior\+Machine}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a666d87bb4e80a99fd5125102bf8f3064}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_acc1ec6529032eeb45aae2be40949304d}{get\+Max\+Force2}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ae8765d78cf8e8df73c72fdf9448d587e}{set\+Calculated\+Force}} (const bt\+Vector3 \&force)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a4140175f3174e6e8d22e977a72220b5d}{Steering\+Map}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_acc24af246957e8392f0fb59d4fd3bd20}{m\+\_\+\+Steering\+Behavior\+Map}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_ac00a02f9f9e37129e300c60fabf23e69}{calculate}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} timestep)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Vector3 $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a2a8706604ab27ba5ca57be349a18a216}{m\+\_\+\+Current\+Force}}
+\item 
+bt\+Vector3 $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a935ea15268f11582c9fbcdc350ddab19}{m\+\_\+\+Current\+Velocity}}
+\item 
+bt\+Vector3 $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a2df53aa5964dab7b6212f12eefdba0fc}{m\+\_\+\+Heading\+Vector}}
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a666e277daf2c8273fe3166e0416d9744}{m\+\_\+\+Max\+Speed}}
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a30aa17a8097bbc87c6b1b613cbb4dffe}{m\+\_\+\+Max\+Force}}
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_af664462dba2acbda423df91209f8ce93}{m\+\_\+\+Max\+Force2}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a6db9d28bd448a131448276ee03de1e6d}{Node}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 31 of file Steering\+Behavior\+Machine.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a4140175f3174e6e8d22e977a72220b5d}\label{classnjli_1_1_steering_behavior_machine_a4140175f3174e6e8d22e977a72220b5d}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!Steering\+Map@{Steering\+Map}}
+\index{Steering\+Map@{Steering\+Map}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{Steering\+Map}{SteeringMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}$>$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a4140175f3174e6e8d22e977a72220b5d}{njli\+::\+Steering\+Behavior\+Machine\+::\+Steering\+Map}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 252 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a1a02a6c877a13e3d51d91e0636cfff97}\label{classnjli_1_1_steering_behavior_machine_a1a02a6c877a13e3d51d91e0636cfff97}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!Steering\+Pair@{Steering\+Pair}}
+\index{Steering\+Pair@{Steering\+Pair}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{Steering\+Pair}{SteeringPair}}
+{\footnotesize\ttfamily typedef std\+::pair$<$\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}$>$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a1a02a6c877a13e3d51d91e0636cfff97}{njli\+::\+Steering\+Behavior\+Machine\+::\+Steering\+Pair}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 251 of file Steering\+Behavior\+Machine.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a4ee69ac7ff9a845f31f488a94b3e4a95}\label{classnjli_1_1_steering_behavior_machine_a4ee69ac7ff9a845f31f488a94b3e4a95}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!Steering\+Behavior\+Machine@{Steering\+Behavior\+Machine}}
+\index{Steering\+Behavior\+Machine@{Steering\+Behavior\+Machine}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{Steering\+Behavior\+Machine()}{SteeringBehaviorMachine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+Machine\+::\+Steering\+Behavior\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a9019174adb7e588dc03a3656fb546c21}\label{classnjli_1_1_steering_behavior_machine_a9019174adb7e588dc03a3656fb546c21}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!Steering\+Behavior\+Machine@{Steering\+Behavior\+Machine}}
+\index{Steering\+Behavior\+Machine@{Steering\+Behavior\+Machine}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{Steering\+Behavior\+Machine()}{SteeringBehaviorMachine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+Machine\+::\+Steering\+Behavior\+Machine (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ad55d19c8bdcc34048021f613b0503437}\label{classnjli_1_1_steering_behavior_machine_ad55d19c8bdcc34048021f613b0503437}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!Steering\+Behavior\+Machine@{Steering\+Behavior\+Machine}}
+\index{Steering\+Behavior\+Machine@{Steering\+Behavior\+Machine}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{Steering\+Behavior\+Machine()}{SteeringBehaviorMachine()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+Machine\+::\+Steering\+Behavior\+Machine (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a95670a6b33019e1945dfd4425479a157}\label{classnjli_1_1_steering_behavior_machine_a95670a6b33019e1945dfd4425479a157}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!````~Steering\+Behavior\+Machine@{$\sim$\+Steering\+Behavior\+Machine}}
+\index{````~Steering\+Behavior\+Machine@{$\sim$\+Steering\+Behavior\+Machine}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{$\sim$\+Steering\+Behavior\+Machine()}{~SteeringBehaviorMachine()}}
+{\footnotesize\ttfamily virtual njli\+::\+Steering\+Behavior\+Machine\+::$\sim$\+Steering\+Behavior\+Machine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_aea8d4a3f11d710510a6362acc5e37f8d}\label{classnjli_1_1_steering_behavior_machine_aea8d4a3f11d710510a6362acc5e37f8d}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!add\+Steering\+Behavior@{add\+Steering\+Behavior}}
+\index{add\+Steering\+Behavior@{add\+Steering\+Behavior}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{add\+Steering\+Behavior()}{addSteeringBehavior()}}
+{\footnotesize\ttfamily bool njli\+::\+Steering\+Behavior\+Machine\+::add\+Steering\+Behavior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$}]{steering\+Behavior,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{heuristic }\end{DoxyParamCaption})}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:01
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em steering\+Behavior} & $<$\#emitter description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+Machine\+\_\+add\+Steering\+Behavior\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ae9872ddbb50d792d826fd85059f96507}\label{classnjli_1_1_steering_behavior_machine_ae9872ddbb50d792d826fd85059f96507}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+Machine\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ac00a02f9f9e37129e300c60fabf23e69}\label{classnjli_1_1_steering_behavior_machine_ac00a02f9f9e37129e300c60fabf23e69}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!calculate@{calculate}}
+\index{calculate@{calculate}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{calculate()}{calculate()}}
+{\footnotesize\ttfamily virtual const bt\+Vector3\& njli\+::\+Steering\+Behavior\+Machine\+::calculate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_af6540438929773c0376faff7c1f908c0}\label{classnjli_1_1_steering_behavior_machine_af6540438929773c0376faff7c1f908c0}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+Machine\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calculate the buffer size of this object.
+
+\begin{DoxyReturn}{Returns}
+The buffer size. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_prioritized_aa05ec0e843f46f25b03794f0a9a9f483}{njli\+::\+Steering\+Behavior\+Machine\+Prioritized}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_dithered_a72434033db333ed95de03c579eb96c15}{njli\+::\+Steering\+Behavior\+Machine\+Dithered}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_weighted_a7e689fadcc5631e53fe3b9ec972ad70e}{njli\+::\+Steering\+Behavior\+Machine\+Weighted}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_aea431466acb4ef73220206bbcd515a9a}\label{classnjli_1_1_steering_behavior_machine_aea431466acb4ef73220206bbcd515a9a}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!calculate\+Steering\+Force@{calculate\+Steering\+Force}}
+\index{calculate\+Steering\+Force@{calculate\+Steering\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{calculate\+Steering\+Force()}{calculateSteeringForce()}}
+{\footnotesize\ttfamily virtual const bt\+Vector3\& njli\+::\+Steering\+Behavior\+Machine\+::calculate\+Steering\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_prioritized_a3260a17ae2fe1f5fb128915e3d2ab1b6}{njli\+::\+Steering\+Behavior\+Machine\+Prioritized}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_dithered_a9523006f50dc2ba0e2d6e3063c054ec4}{njli\+::\+Steering\+Behavior\+Machine\+Dithered}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_weighted_a14497ce93400f5c851a4ff412f2e050a}{njli\+::\+Steering\+Behavior\+Machine\+Weighted}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a2f36fb5b2930a51164b442b399b2e414}\label{classnjli_1_1_steering_behavior_machine_a2f36fb5b2930a51164b442b399b2e414}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a shallow copy of an instance of this class (sharing pointers).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to clone.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a63326be519b9ee6d77687f90c6304697}\label{classnjli_1_1_steering_behavior_machine_a63326be519b9ee6d77687f90c6304697}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a deep copy of an instance of this class (N\+OT sharing pointers).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to clone.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ab8fe4150d2324d83d50a413d35d16ae2}\label{classnjli_1_1_steering_behavior_machine_ab8fe4150d2324d83d50a413d35d16ae2}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!create@{create}}
+\index{create@{create}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an instance of this class.
+
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a8c449bcdcb6b82b7258ad5e418d6c430}\label{classnjli_1_1_steering_behavior_machine_a8c449bcdcb6b82b7258ad5e418d6c430}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!create@{create}}
+\index{create@{create}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_builder}{Steering\+Behavior\+Machine\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an instance of this class using a builder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & The builder to use for construction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_af97628764337e956f6c6ffe1d21eff30}\label{classnjli_1_1_steering_behavior_machine_af97628764337e956f6c6ffe1d21eff30}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an Array of instances of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The amount of elements in the array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a7e50f455b9d1a543c98bcb463f312647}\label{classnjli_1_1_steering_behavior_machine_a7e50f455b9d1a543c98bcb463f312647}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy an instance of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to destroy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a9cf768db1c04513184ada83d420af23e}\label{classnjli_1_1_steering_behavior_machine_a9cf768db1c04513184ada83d420af23e}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy an Array of this class type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The Pointer to the array to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a7d757fe3a0e36bcd3606f660025e1529}\label{classnjli_1_1_steering_behavior_machine_a7d757fe3a0e36bcd3606f660025e1529}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Calculated\+Force@{get\+Calculated\+Force}}
+\index{get\+Calculated\+Force@{get\+Calculated\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Calculated\+Force()}{getCalculatedForce()}}
+{\footnotesize\ttfamily const bt\+Vector3\& njli\+::\+Steering\+Behavior\+Machine\+::get\+Calculated\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a62b8ba5c3e2b9f63eb146721c03d37a1}\label{classnjli_1_1_steering_behavior_machine_a62b8ba5c3e2b9f63eb146721c03d37a1}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The name of this class.
+
+\begin{DoxyReturn}{Returns}
+The name of this class. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_prioritized_a0688707312da3b16368bbe4a8ed28462}{njli\+::\+Steering\+Behavior\+Machine\+Prioritized}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_dithered_a3262e6d95dbb37c00fcc3436b1e48233}{njli\+::\+Steering\+Behavior\+Machine\+Dithered}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_weighted_a96746378cde3e401742eda55cbe5b23c}{njli\+::\+Steering\+Behavior\+Machine\+Weighted}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_aac2de411738725c7e4347097327da51e}\label{classnjli_1_1_steering_behavior_machine_aac2de411738725c7e4347097327da51e}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Heading\+Vector@{get\+Heading\+Vector}}
+\index{get\+Heading\+Vector@{get\+Heading\+Vector}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Heading\+Vector()}{getHeadingVector()}}
+{\footnotesize\ttfamily const bt\+Vector3\& njli\+::\+Steering\+Behavior\+Machine\+::get\+Heading\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a577fa9c6dcf0b5f5b742db4304792436}\label{classnjli_1_1_steering_behavior_machine_a577fa9c6dcf0b5f5b742db4304792436}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Heuristic@{get\+Heuristic}}
+\index{get\+Heuristic@{get\+Heuristic}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Heuristic()}{getHeuristic()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::get\+Heuristic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$}]{steering\+Behavior }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ad31815b6939f2cd6c4a39803198fcf3f}\label{classnjli_1_1_steering_behavior_machine_ad31815b6939f2cd6c4a39803198fcf3f}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Max\+Force@{get\+Max\+Force}}
+\index{get\+Max\+Force@{get\+Max\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Max\+Force()}{getMaxForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::get\+Max\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_acc1ec6529032eeb45aae2be40949304d}\label{classnjli_1_1_steering_behavior_machine_acc1ec6529032eeb45aae2be40949304d}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Max\+Force2@{get\+Max\+Force2}}
+\index{get\+Max\+Force2@{get\+Max\+Force2}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Max\+Force2()}{getMaxForce2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::get\+Max\+Force2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ac28ff247a7d7dab66bc3a9bbb28a4375}\label{classnjli_1_1_steering_behavior_machine_ac28ff247a7d7dab66bc3a9bbb28a4375}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Max\+Speed@{get\+Max\+Speed}}
+\index{get\+Max\+Speed@{get\+Max\+Speed}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Max\+Speed()}{getMaxSpeed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::get\+Max\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_aa140509a8a5dcf389594c014ef1e779b}\label{classnjli_1_1_steering_behavior_machine_aa140509a8a5dcf389594c014ef1e779b}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_node}{Node}}$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ab60292961503180cfb1f67e04f6a3dd4}\label{classnjli_1_1_steering_behavior_machine_ab60292961503180cfb1f67e04f6a3dd4}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_node}{Node}}$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a5f16284442c65dd387dce41393b30c4d}\label{classnjli_1_1_steering_behavior_machine_a5f16284442c65dd387dce41393b30c4d}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Steering\+Behaviors@{get\+Steering\+Behaviors}}
+\index{get\+Steering\+Behaviors@{get\+Steering\+Behaviors}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Steering\+Behaviors()}{getSteeringBehaviors()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::get\+Steering\+Behaviors (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$$>$ \&}]{steering\+Behaviors }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:19
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+Emitters} & $<$\#particle\+Emitters description\#$>$\\
+\hline
+\end{DoxyParams}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+Machine\+\_\+get\+Steering\+Behaviors \mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a9daddfcf84380483cd2643c15d0497a4}\label{classnjli_1_1_steering_behavior_machine_a9daddfcf84380483cd2643c15d0497a4}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+Machine\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the type of \+::jli\+Object\+Enum\+Type enum value.
+
+\begin{DoxyReturn}{Returns}
+The \+::jli\+Object\+Enum\+Type enum value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_prioritized_adbf4f6b3ea233a5ae575d366b977d630}{njli\+::\+Steering\+Behavior\+Machine\+Prioritized}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_dithered_a5c38478d79cba8bc3069eac4e24acc0a}{njli\+::\+Steering\+Behavior\+Machine\+Dithered}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_weighted_a4d9fcf0548dc29c760dad537716c645e}{njli\+::\+Steering\+Behavior\+Machine\+Weighted}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a3826fef1020cad7acb80436f7c9a71bd}\label{classnjli_1_1_steering_behavior_machine_a3826fef1020cad7acb80436f7c9a71bd}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!load@{load}}
+\index{load@{load}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load a lua table representation of this class. This is used for J\+L\+I\+M.\+create(object).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to load. \\
+\hline
+{\em L} & The current lua state. \\
+\hline
+{\em stack\+\_\+index} & The stack index of the lua stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_abc8ac2f926c76602a5413baa12ba6f7b}\label{classnjli_1_1_steering_behavior_machine_abc8ac2f926c76602a5413baa12ba6f7b}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!number\+Of\+Steering\+Behaviors@{number\+Of\+Steering\+Behaviors}}
+\index{number\+Of\+Steering\+Behaviors@{number\+Of\+Steering\+Behaviors}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{number\+Of\+Steering\+Behaviors()}{numberOfSteeringBehaviors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} njli\+::\+Steering\+Behavior\+Machine\+::number\+Of\+Steering\+Behaviors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:14
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+Machine\+\_\+number\+Of\+Steering\+Behaviors\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a08dc60d265fe55badc0137c1a4427343}\label{classnjli_1_1_steering_behavior_machine_a08dc60d265fe55badc0137c1a4427343}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+Machine\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The string value for this object, which can be used for debugging.
+
+\begin{DoxyReturn}{Returns}
+"The string value for this object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_prioritized_a3268888171ef4efd85513b14616f47a8}{njli\+::\+Steering\+Behavior\+Machine\+Prioritized}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_dithered_aa23bb3e4de991237c1e5ad172d08ca21}{njli\+::\+Steering\+Behavior\+Machine\+Dithered}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_weighted_aa36b0042df33a2e63ec790e5a29ee183}{njli\+::\+Steering\+Behavior\+Machine\+Weighted}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a666d87bb4e80a99fd5125102bf8f3064}\label{classnjli_1_1_steering_behavior_machine_a666d87bb4e80a99fd5125102bf8f3064}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}\& njli\+::\+Steering\+Behavior\+Machine\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ac480ec6e9f11918adee87d95167b9b25}\label{classnjli_1_1_steering_behavior_machine_ac480ec6e9f11918adee87d95167b9b25}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!remove\+All\+Steering\+Behaviors@{remove\+All\+Steering\+Behaviors}}
+\index{remove\+All\+Steering\+Behaviors@{remove\+All\+Steering\+Behaviors}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{remove\+All\+Steering\+Behaviors()}{removeAllSteeringBehaviors()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::remove\+All\+Steering\+Behaviors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:09
+\end{DoxyAuthor}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+Machine\+\_\+remove\+All\+Steering\+Behaviors\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a8a14a3f6b951ddcf05a27256c3d21efe}\label{classnjli_1_1_steering_behavior_machine_a8a14a3f6b951ddcf05a27256c3d21efe}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!remove\+Steering\+Behavior@{remove\+Steering\+Behavior}}
+\index{remove\+Steering\+Behavior@{remove\+Steering\+Behavior}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{remove\+Steering\+Behavior()}{removeSteeringBehavior()}}
+{\footnotesize\ttfamily bool njli\+::\+Steering\+Behavior\+Machine\+::remove\+Steering\+Behavior (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$}]{steering\+Behavior }\end{DoxyParamCaption})}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:05
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em steering\+Behavior} & $<$\#emitter description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+Machine\+\_\+remove\+Steering\+Behavior\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a1fbec43b76f0612ed5b0d2492bb4b6df}\label{classnjli_1_1_steering_behavior_machine_a1fbec43b76f0612ed5b0d2492bb4b6df}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialize this object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bt\+Serializer} & the serializer which does the serialize. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_prioritized_a2f3fa591ca198f2d45b1d49d73173b65}{njli\+::\+Steering\+Behavior\+Machine\+Prioritized}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_dithered_afabe12bcb2005f23bd4f7a79bd758cf2}{njli\+::\+Steering\+Behavior\+Machine\+Dithered}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_weighted_a384f337048a8483eeb7189f8fef0b664}{njli\+::\+Steering\+Behavior\+Machine\+Weighted}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ae8765d78cf8e8df73c72fdf9448d587e}\label{classnjli_1_1_steering_behavior_machine_ae8765d78cf8e8df73c72fdf9448d587e}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!set\+Calculated\+Force@{set\+Calculated\+Force}}
+\index{set\+Calculated\+Force@{set\+Calculated\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{set\+Calculated\+Force()}{setCalculatedForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::set\+Calculated\+Force (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_afeba19775abc7b530aa0997e1e8cad9c}\label{classnjli_1_1_steering_behavior_machine_afeba19775abc7b530aa0997e1e8cad9c}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!set\+Heuristic@{set\+Heuristic}}
+\index{set\+Heuristic@{set\+Heuristic}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{set\+Heuristic()}{setHeuristic()}}
+{\footnotesize\ttfamily bool njli\+::\+Steering\+Behavior\+Machine\+::set\+Heuristic (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$}]{steering\+Behavior,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{heuristic }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a26bf31bf1fe4baf5baeac3062e4c797f}\label{classnjli_1_1_steering_behavior_machine_a26bf31bf1fe4baf5baeac3062e4c797f}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!set\+Max\+Force@{set\+Max\+Force}}
+\index{set\+Max\+Force@{set\+Max\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{set\+Max\+Force()}{setMaxForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::set\+Max\+Force (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{speed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_afefbffc1177c86516257201bdd649566}\label{classnjli_1_1_steering_behavior_machine_afefbffc1177c86516257201bdd649566}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!set\+Max\+Speed@{set\+Max\+Speed}}
+\index{set\+Max\+Speed@{set\+Max\+Speed}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{set\+Max\+Speed()}{setMaxSpeed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+Machine\+::set\+Max\+Speed (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{speed }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_ab193f59f5f0a3ba81703678bd9b14e8b}\label{classnjli_1_1_steering_behavior_machine_ab193f59f5f0a3ba81703678bd9b14e8b}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!type@{type}}
+\index{type@{type}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Steering\+Behavior\+Machine\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the type of \+::jli\+Object\+Enum\+Type enum value.
+
+\begin{DoxyReturn}{Returns}
+The \+::jli\+Object\+Enum\+Type enum value. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a6db9d28bd448a131448276ee03de1e6d}\label{classnjli_1_1_steering_behavior_machine_a6db9d28bd448a131448276ee03de1e6d}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!Node@{Node}}
+\index{Node@{Node}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{Node}{Node}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_node}{Node}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 35 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_steering_behavior_machine_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 34 of file Steering\+Behavior\+Machine.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a2a8706604ab27ba5ca57be349a18a216}\label{classnjli_1_1_steering_behavior_machine_a2a8706604ab27ba5ca57be349a18a216}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Current\+Force@{m\+\_\+\+Current\+Force}}
+\index{m\+\_\+\+Current\+Force@{m\+\_\+\+Current\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Current\+Force}{m\_CurrentForce}}
+{\footnotesize\ttfamily bt\+Vector3$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Current\+Force\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 259 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a935ea15268f11582c9fbcdc350ddab19}\label{classnjli_1_1_steering_behavior_machine_a935ea15268f11582c9fbcdc350ddab19}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Current\+Velocity@{m\+\_\+\+Current\+Velocity}}
+\index{m\+\_\+\+Current\+Velocity@{m\+\_\+\+Current\+Velocity}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Current\+Velocity}{m\_CurrentVelocity}}
+{\footnotesize\ttfamily bt\+Vector3$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Current\+Velocity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 262 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a2df53aa5964dab7b6212f12eefdba0fc}\label{classnjli_1_1_steering_behavior_machine_a2df53aa5964dab7b6212f12eefdba0fc}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Heading\+Vector@{m\+\_\+\+Heading\+Vector}}
+\index{m\+\_\+\+Heading\+Vector@{m\+\_\+\+Heading\+Vector}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Heading\+Vector}{m\_HeadingVector}}
+{\footnotesize\ttfamily bt\+Vector3$\ast$ njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Heading\+Vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 263 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a30aa17a8097bbc87c6b1b613cbb4dffe}\label{classnjli_1_1_steering_behavior_machine_a30aa17a8097bbc87c6b1b613cbb4dffe}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Max\+Force@{m\+\_\+\+Max\+Force}}
+\index{m\+\_\+\+Max\+Force@{m\+\_\+\+Max\+Force}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Max\+Force}{m\_MaxForce}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Max\+Force\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 265 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_af664462dba2acbda423df91209f8ce93}\label{classnjli_1_1_steering_behavior_machine_af664462dba2acbda423df91209f8ce93}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Max\+Force2@{m\+\_\+\+Max\+Force2}}
+\index{m\+\_\+\+Max\+Force2@{m\+\_\+\+Max\+Force2}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Max\+Force2}{m\_MaxForce2}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Max\+Force2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 266 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_a666e277daf2c8273fe3166e0416d9744}\label{classnjli_1_1_steering_behavior_machine_a666e277daf2c8273fe3166e0416d9744}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Max\+Speed@{m\+\_\+\+Max\+Speed}}
+\index{m\+\_\+\+Max\+Speed@{m\+\_\+\+Max\+Speed}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Max\+Speed}{m\_MaxSpeed}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Max\+Speed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 264 of file Steering\+Behavior\+Machine.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_machine_acc24af246957e8392f0fb59d4fd3bd20}\label{classnjli_1_1_steering_behavior_machine_acc24af246957e8392f0fb59d4fd3bd20}} 
+\index{njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}!m\+\_\+\+Steering\+Behavior\+Map@{m\+\_\+\+Steering\+Behavior\+Map}}
+\index{m\+\_\+\+Steering\+Behavior\+Map@{m\+\_\+\+Steering\+Behavior\+Map}!njli\+::\+Steering\+Behavior\+Machine@{njli\+::\+Steering\+Behavior\+Machine}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Steering\+Behavior\+Map}{m\_SteeringBehaviorMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine_a4140175f3174e6e8d22e977a72220b5d}{Steering\+Map}} njli\+::\+Steering\+Behavior\+Machine\+::m\+\_\+\+Steering\+Behavior\+Map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 254 of file Steering\+Behavior\+Machine.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/steering/\mbox{\hyperlink{_steering_behavior_machine_8h}{Steering\+Behavior\+Machine.\+h}}\end{DoxyCompactItemize}

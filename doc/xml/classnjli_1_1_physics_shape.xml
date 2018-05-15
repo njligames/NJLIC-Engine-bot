@@ -1,0 +1,1287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_physics_shape" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>njli::PhysicsShape</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_box" prot="public" virt="non-virtual">njli::PhysicsShapeBox</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_box2_d" prot="public" virt="non-virtual">njli::PhysicsShapeBox2D</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_bvh_triangle_mesh" prot="public" virt="non-virtual">njli::PhysicsShapeBvhTriangleMesh</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_capsule" prot="public" virt="non-virtual">njli::PhysicsShapeCapsule</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_cone" prot="public" virt="non-virtual">njli::PhysicsShapeCone</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_convex_hull" prot="public" virt="non-virtual">njli::PhysicsShapeConvexHull</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_convex_triangle_mesh" prot="public" virt="non-virtual">njli::PhysicsShapeConvexTriangleMesh</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_cylinder" prot="public" virt="non-virtual">njli::PhysicsShapeCylinder</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_heightfield_terrain" prot="public" virt="non-virtual">njli::PhysicsShapeHeightfieldTerrain</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_multi_sphere" prot="public" virt="non-virtual">njli::PhysicsShapeMultiSphere</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_sphere" prot="public" virt="non-virtual">njli::PhysicsShapeSphere</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_shape_static_plane" prot="public" virt="non-virtual">njli::PhysicsShapeStaticPlane</derivedcompoundref>
+    <includes refid="_physics_shape_8h" local="no">PhysicsShape.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_physics_shape_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="30" column="1" bodyfile="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_shape_1a5602338bf4d8e0e6baa58d3daa8dc90a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsBody</definition>
+        <argsstring></argsstring>
+        <name>PhysicsBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="31" column="1" bodyfile="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_shape_1ada345e4f9c2a87f06868b74d30e94ad2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsBodyRigid</definition>
+        <argsstring></argsstring>
+        <name>PhysicsBodyRigid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="32" column="1" bodyfile="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_shape_1a6db9d28bd448a131448276ee03de1e6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Node</definition>
+        <argsstring></argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="33" column="1" bodyfile="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a23c941342461cf9b8ea3a00f96e4b166" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsShape::PhysicsShape</definition>
+        <argsstring>()</argsstring>
+        <name>PhysicsShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ab15fa64eb27e24f04baa5ba707a9a030" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsShape::PhysicsShape</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>PhysicsShape</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a16a9abace510dc1886f82c09782d2976" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsShape::PhysicsShape</definition>
+        <argsstring>(const PhysicsShape &amp;)</argsstring>
+        <name>PhysicsShape</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a60e97b3ea2073db45dde247fd1c7d379" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsShape::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a4bd97d3b6ff4c10b082cc228aec318b1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::PhysicsShape::~PhysicsShape</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysicsShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a7c29f1de36c1043e77c070626af242ab" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> &amp;</type>
+        <definition>PhysicsShape&amp; njli::PhysicsShape::operator=</definition>
+        <argsstring>(const PhysicsShape &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a527e956caca24bf16ed0d47f69ff14e8" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const btCollisionShape *</type>
+        <definition>virtual const btCollisionShape* njli::PhysicsShape::getCollisionShape</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getCollisionShape</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a8e2e34bd218b74d7f03c0bdcdf142901">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1aacb06bac718d0ad96b0bf2b2b5f4d3dd">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a2de5e5e8c2d159963c46664d7ec4ab10">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a75ab9287d8f5c36ea782f4b7fb9535d6">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a59b7263115001da7a90c30b375ac6b80">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1aa8378f7e3af08e778dce0b416c8e0bfa">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a3e11137ac6e9e9ef6e76ee396db9297a">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1ad8d9342f3ef94ae2426cec1c771c0208">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1aa3676c39e8377b6798b034b67ba07d31">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1a5b2c32f5353b66f77a44fa53fde65d60">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a39f88d5fcc1139aa139c9d9163240e9a">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a1a319c965b9b504353759dd8729944e1">getCollisionShape</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a2910f0362035c971f245349a55378b01" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>btCollisionShape *</type>
+        <definition>virtual btCollisionShape* njli::PhysicsShape::getCollisionShape</definition>
+        <argsstring>()=0</argsstring>
+        <name>getCollisionShape</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1ac4db6814bd13306aee765a71203525a4">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a86d32058509c5e63b3ec98c758648c34">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a43635ec439d573213bae218901050d66">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a8929b088f8eac7b80215679f24da1abe">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a3a3e5928c3f1a0e944c583025962f418">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1abd5ce039acdb2ff2654bbeb36db88ac4">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a591dec07102b432fbced1b4bfd093512">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a484e8759584df9acd50c60740906b201">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1a9a87d86c692a3b1ce42c68354f312440">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1a3d4319affdfb39571fa631ae31317b57">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a504851418142c2a7abd89c3861f09caf">getCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a7d13876272eca6b0fd5d7f04392b134e">getCollisionShape</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a441e82a42f3b588a409c3b6c41288abd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::setCollisionShape</definition>
+        <argsstring>(const btCollisionShape &amp;shape)=0</argsstring>
+        <name>setCollisionShape</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a5aaf42224afb0773a280daddfa3c93d1">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a5fb1e1a0a980e346a919d155ac5c2c82">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1aba0df18d6c428c60f6efe61bb0fe1699">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a6c4f6e4cd8f796892bce7c3c09f0d14b">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a5ebd80dd3f719bc9f172f29e3bdf290d">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a0fbc71273b102cffdb224798d5cf0d49">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1ae54e42a11d5b7737dad326aa1c11b2ad">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a5948eb2b64291b9ad1e1ce711326b5c6">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1aca6f41dfec9b3287717357cbfa57935a">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1afef84525d2cb60ad5f2386a4faf4db9a">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a9d1a22e39d9a3b70646df7ff58bd46c0">setCollisionShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a8f520536b574f254ba6635ab2fe644cc">setCollisionShape</reimplementedby>
+        <param>
+          <type>const btCollisionShape &amp;</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a060d12d9eabbed9aa1187580def44571" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> *</type>
+        <definition>PhysicsBody* njli::PhysicsShape::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="212" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ad13001911fd2fe30b2eee35b883b6bbd" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> *</type>
+        <definition>const PhysicsBody* njli::PhysicsShape::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="213" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a0612a1c8c3f4520d78cb7f5838f03074" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::PhysicsShape::calculateSerializeBufferSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a14716c113a5f559ffde6051a018bb7a2">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1a0aa7607b93e89ea9fe1c6a73e44ec1d0">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a43560ce1d910b68d20f602ab1fc03631">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a048ff733f942dcac60a7d2b382a1d0a3">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a0a9f8e9382af4fb1115abf8bcb035931">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1a594a3ced7daabd53c425d79f6bfb4173">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1aa9ec0cd740c7401ec7aefc8329b72ce1">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a17be301f4efefa570239611a65a8dd8e">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a02e303c62d9e0924d4e7649b9bd7bffd">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a04d31d1728e5c858f3e5c91f00933d1d">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a67209a4c37b16ff0de98ac273296f2b0">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1abe17d7d9dd1c880e76553e2fc7f6da2b">calculateSerializeBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a2ac8a109a5ad67ee79f40ce8f28337cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::serialize</definition>
+        <argsstring>(void *, btSerializer *) const =0</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1ad3f806a86d7db579cd7d43f4e8f41ace">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1a3c8a170c8a0a3bb3184886d9657df74c">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a945c46bbfca818c8c9570124896cc8dc">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a11acca92dfad6bbfc36017267362f128">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1ad7ec0be0f27ab4b0248fa1231491fd20">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a2243032bcc3590a97f3ac40f976b3703">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a8697c559d914b92d57671d4204e336da">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a48a70d364b231ba98de91dd53af33ed3">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a559d30e350c441eeeceac724a635c9ad">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a445d0515891fd81edc19049ee5a8c46f">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a4a009f76809d15cbcd4f4e6f8353f1c4">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a95e3b4c85db36869d5cb85487b88cbad">serialize</reimplementedby>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a72cb98a55614a3e264b8e4a157b45c64" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::PhysicsShape::getClassName</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a176b8cfb4df192e48295adc6e97a1e8d">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1af0500ac8a54d96ada3a3ab1b775fdd76">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1ac5c2b0aa40a78763720fc47fe3d6693d">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a9a1d33140c781451ceccc749e0233033">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1aa8ed8409e1a6ba5ed2c5de028558425a">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a90c6c121436e997379305a4fe66bde0c">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a16dabd0490dfc7d3c5695ab39939f692">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1adf81c202808451b499e665d7db4a2e93">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1ae178ec3b2606f34fd8a5a659be3f202a">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a730f6ff1a72fc73f43c2daedf82b46e4">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1af468a2dcbc7bea9b1c7fc4cefd381f6f">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1ae40c449320efcf3c483e7ff67b68b812">getClassName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ac7c6b2ac373892095f8220d56f8ad6de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::PhysicsShape::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a1fd8c07d99fd3cbd64a94c3030c0d5d5">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1af078fddd3770d7c3846ef74d00d613e1">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a04a15e2a5226fdc9b920750b3d9b6af8">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1abfd5533159ecea36c3f9147b49dfe7c2">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1a512461c5827b246cdd5e037b2dc38d7c">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a000cd31104b2c03cb68652d59d39a214">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1ae5cf0a39440a5d46dbb8cae82a73c794">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a7eaa51f833cedddc3f70ee71ce83fc41">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a559022a1d5b28e604abf671607ca2527">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a5f6609da87c315d169df2f85908f15ab">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a6e9b5aaac0e31b354e53058d0a5da73c">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a2ca386d4ea821161f51aedf153581c16">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a890d915f88af06dcf1ac1fa4f5943dc2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type></type>
+        <definition>njli::PhysicsShape::operator std::string</definition>
+        <argsstring>() const =0</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a66e77cf7de8db55806fd760ff66591b0">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1aeeaae082ee5e0fcc1fe07cff9af3d940">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a2aac2eef57be19f2882c647087c71343">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a34d365099e710fa7dfb1bf010674eb2c">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1afdffa5511a58e1bd0898716ecfb111cd">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1ad1f7999f76923d03c3324371595f8bec">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1aa424b40c2427b3fc907e359e2c1d026d">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a3ca9563249b80caa6c7e745d49340130">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1af6efd230aa3b4d6dce9717586ac0630a">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1ae7f37e3f8c8cf55663727e025ee618f5">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a511b9645026962471fdb4a12cef49a37">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1ad47cccb4bc99838d9f8f3820930ba028">operator std::string</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ab71ebdd73aea0c6ce0a47c9c47284a66" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>btRigidBody *</type>
+        <definition>btRigidBody* njli::PhysicsShape::createRigidBodyWithShape</definition>
+        <argsstring>(f32 mass, btMotionState *motionState, const btVector3 &amp;localInertia=btVector3(0, 0, 0))</argsstring>
+        <name>createRigidBodyWithShape</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>btMotionState *</type>
+          <declname>motionState</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>localInertia</declname>
+          <defval>btVector3(0, 0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mass description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>motionState</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#motionState description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>localInertia</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#0 description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a7195c6413beb2e8bc4916e97ffca02f2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>btVector3</type>
+        <definition>btVector3 njli::PhysicsShape::calculateLocalInertia</definition>
+        <argsstring>(f32 mass) const</argsstring>
+        <name>calculateLocalInertia</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mass</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mass description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ac3f7cc28341fd58ace164bf8666480f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int njli::PhysicsShape::getNumVertices</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getNumVertices</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a7d37fd30a4ad7615fc17682d06824c11">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a9f7815a4e99feb1c2c0e62f6b7f0adbf">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1af865d6862f4dd8849f4b9290a3907337">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1af85b2258d5ab0b0ac1dbe88419c32fd9">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a14ad34853c7049de052a460fe1f349c2">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a8ffb7cb487afc5582cb4c1ae4997a065">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1af0263ac5341f2a8e560142a02aba7f34">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1aef5d4654e20f1c128b350867c2ea8eb6">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1af6b7c8322826c83fc672b1ddc50d70fa">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1ab17422166a9a96672d671f8843c49f26">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1ab6b86970a80827d5ea8620dbb080023f">getNumVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1a36c3b4521b3559311f259e3c1bec1ff6">getNumVertices</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a24df999ba2b7ac0d9abda09c4f17c2fe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int njli::PhysicsShape::getNumEdges</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getNumEdges</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a238d949b674d432f4f7f4accbcae1d8d">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a1031a181ab93d60ae32e97332618287c">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1a05334d41b8bad6261922842a5c204015">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a0e06d7b68da66e3af079f5e700d384c6">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1ae60a0cdaceb0fe22f53425b38d4b039d">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a24afd8e689b4111391f8079376edfbc6">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1ace1bebc13dc826cfc9475b55ba58c5d4">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a71cabda2ee30273b0a6ae2f5b390102f">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1abb31574ee5a71532d25cb045a840aedf">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1ab6a794d539b83627a5ccd4f7b85a531d">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1ab116e4bce67ace59c1d7b6f687a66d75">getNumEdges</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1afaa84e3e0b58aa2fd2a1bdd269c39c21">getNumEdges</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a657e98309a2a171ccb02a054a04c9b57" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::getEdge</definition>
+        <argsstring>(int i, btVector3 &amp;pa, btVector3 &amp;pb) const =0</argsstring>
+        <name>getEdge</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1aa0f34f14fa64e30bf5f52c5e7305885b">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a562b1cdfde0a2428ee66802df4878183">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1a9e73e95275b9127ce3cf25fa51bad8ba">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a3ae09d2ff8191ddbe9cf610f4795eab1">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a1da6bacc7f59a6a2adec45322075f4a9">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a4bf4fdd81dfddc61b0c40adf04bdddde">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a5595ac8002b807fefc1eed4b0dbc3762">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a75802aa375b7a694779dac73864c2cf1">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1ae84a8db205794e8d4ba73b864c2e003f">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a7cbe0859434c8f246406de6e7927a0fe">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a34a87015a53f50f543d106bd3af1ab07">getEdge</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1adacd48a8deac2b0469f79372c5637170">getEdge</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>pa</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>pb</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#i description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pa</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pa description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pb description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1acb05a16bdbfa5cee6dcbab5c253eb78e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::getVertex</definition>
+        <argsstring>(int i, btVector3 &amp;vtx) const =0</argsstring>
+        <name>getVertex</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1af77e8177d252806cdfaeb05ae88bc305">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1a6087255ff18c442470b790409261edf9">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1a8e138b8eefcf94a6d8a7296ac2c883bf">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1afb1902c79121fd1feba6df1b8b70cbd3">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1a274757f4f0bc1cf0e229c95c07fef7bd">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1a467600545bb56fe471cb930f5a7b8aad">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1a3d32ee4da977a41d62c1884eebe8ea93">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a53a05210663e07ec01a0882110b9ea56">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1aaeba3305211ed8ee895c16cde919d47a">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1ad6a9435112a9d9ebe56b0db5f8b2f5ce">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1ad5d35467acfd3c047d0c85c9aa1ad415">getVertex</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1af1045ee343d3434f0187c526bfc23fb5">getVertex</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>vtx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#i description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vtx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#vtx description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a11cb80220393bfce177b8bdc34f7f359" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>int</type>
+        <definition>virtual int njli::PhysicsShape::getNumPlanes</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getNumPlanes</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1abb7a45ae2636b54cd6f986c2985daf65">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1ad8e9f27811164163a87692725502de6d">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1ac0494575204d508cc5f91ebe68d3addf">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1aa0b34e9bbff704708da44cfae05e0579">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1aeff289a96116eed946c2ba7c77a9a101">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1ac89627a1d9681838e4539f30bd06ea82">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1abc8e8e1d5d04b9a5fc300841bc8fd70c">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a4a79b73e99c68e69332d5603f9c825f0">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a46270856ceec080bb19bbab9ba0ca81e">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a7602280dd520ca98ec426278cb8e3681">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a78cebc044d0dce9bfbf9bbad31398419">getNumPlanes</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1a107c31779cfb98b22c44b90d66f93db9">getNumPlanes</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ad5418af48c1210d6d5119244826cacbb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::getPlane</definition>
+        <argsstring>(btVector3 &amp;planeNormal, btVector3 &amp;planeSupport, int i) const =0</argsstring>
+        <name>getPlane</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1af97955a8925df43fa8339b742c0c082e">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cone_1a045f46217a76bd453e311c0f04528d36">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_sphere_1aa70ae0dd65cfacddab9600d0143f69a1">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_cylinder_1ad5f230b6c39911b3737f8e1d956ec390">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1aeb22f9561fb8da247c71d2c19639277d">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_hull_1ad7658f47a3acc7825453650f22dd72c5">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_multi_sphere_1ae0b4b79c9708c963406aabf07e699d5b">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_bvh_triangle_mesh_1ab45fe98147c8ee9fa8a576ad8b1fb472">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_convex_triangle_mesh_1a4ffbd0b5fee6ef20eb80063a548a2ef3">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_heightfield_terrain_1a3b815c83cd5b90b6982aff44aa80c67e">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1afaceeca4c3253774f92b2d67e6696b1e">getPlane</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1afdf7c5e8b6d17bbee2f62a0083bfd072">getPlane</reimplementedby>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>planeNormal</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>planeSupport</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>planeNormal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#planeNormal description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>planeSupport</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#planeSupport description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#i description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a346a118ddc9e6b446ae7a8586fee76fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::PhysicsShape::isInside</definition>
+        <argsstring>(const btVector3 &amp;pt, btScalar tolerance) const =0</argsstring>
+        <name>isInside</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box2_d_1a7275508a58e70148f5c1e0d26b5e1bd6">isInside</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_box_1ad3df70682f66f1a613a14c03e5390cc2">isInside</reimplementedby>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <param>
+          <type>btScalar</type>
+          <declname>tolerance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pt description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tolerance</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#tolerance description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1afd2f02f3fd7ab5c1b48f445f2831f18f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::setLocalScaling</definition>
+        <argsstring>(const btVector3 &amp;scaling)</argsstring>
+        <name>setLocalScaling</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_static_plane_1a2f6934822e6cfe1e4653809231fb4218">setLocalScaling</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1aced243d46142c8680d87e2cf4fbfc5f7">setLocalScaling</reimplementedby>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>scaling</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scaling</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#scaling description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a33ae845e59c2c693c07a17cc112bba3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsShape::getAabb</definition>
+        <argsstring>(const btTransform &amp;t, btVector3 &amp;aabbMin, btVector3 &amp;aabbMax) const</argsstring>
+        <name>getAabb</name>
+        <reimplementedby refid="classnjli_1_1_physics_shape_capsule_1a0fbdf8a10688efc4a289b4fca48b33af">getAabb</reimplementedby>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>aabbMin</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>aabbMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#t description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aabbMin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#aabbMin description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>aabbMax</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#aabbMax description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="202" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="50" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a701dbac9216cbda5493851634ade84c3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+        <definition>static PhysicsShape* njli::PhysicsShape::create</definition>
+        <argsstring>(u32 type)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;<ref refid="classnjli_1_1_physics_shape_1a2d21f55f6e742bddb5b5fc44223f96fb" kindref="member">type</ref> description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1ac3f7a072f33f984a3bac11b2c9191167" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsShape::destroy</definition>
+        <argsstring>(PhysicsShape *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1aaf889e6e5bc193fb8c5518a3a4c48f9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsShape::load</definition>
+        <argsstring>(PhysicsShape &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_shape_1a2d21f55f6e742bddb5b5fc44223f96fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::PhysicsShape::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="111" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1592">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1593" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1597">
+        <label>njli::PhysicsShapeBvhTriangleMesh</label>
+        <link refid="classnjli_1_1_physics_shape_bvh_triangle_mesh"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1599">
+        <label>njli::PhysicsShapeCone</label>
+        <link refid="classnjli_1_1_physics_shape_cone"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1594">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="1602">
+        <label>njli::PhysicsShapeCylinder</label>
+        <link refid="classnjli_1_1_physics_shape_cylinder"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1595">
+        <label>njli::PhysicsShapeBox</label>
+        <link refid="classnjli_1_1_physics_shape_box"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1593">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1594" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1605">
+        <label>njli::PhysicsShapeSphere</label>
+        <link refid="classnjli_1_1_physics_shape_sphere"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1598">
+        <label>njli::PhysicsShapeCapsule</label>
+        <link refid="classnjli_1_1_physics_shape_capsule"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1603">
+        <label>njli::PhysicsShapeHeightfieldTerrain</label>
+        <link refid="classnjli_1_1_physics_shape_heightfield_terrain"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1591">
+        <label>njli::PhysicsShape</label>
+        <link refid="classnjli_1_1_physics_shape"/>
+        <childnode refid="1592" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1596">
+        <label>njli::PhysicsShapeBox2D</label>
+        <link refid="classnjli_1_1_physics_shape_box2_d"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1604">
+        <label>njli::PhysicsShapeMultiSphere</label>
+        <link refid="classnjli_1_1_physics_shape_multi_sphere"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1606">
+        <label>njli::PhysicsShapeStaticPlane</label>
+        <link refid="classnjli_1_1_physics_shape_static_plane"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1601">
+        <label>njli::PhysicsShapeConvexTriangleMesh</label>
+        <link refid="classnjli_1_1_physics_shape_convex_triangle_mesh"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1600">
+        <label>njli::PhysicsShapeConvexHull</label>
+        <link refid="classnjli_1_1_physics_shape_convex_hull"/>
+        <childnode refid="1591" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1608">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1609" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1610">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="1610" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1609">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1610" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1607">
+        <label>njli::PhysicsShape</label>
+        <link refid="classnjli_1_1_physics_shape"/>
+        <childnode refid="1608" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" line="29" column="1" bodyfile="njligames-njlic_engine/njli/physics/shape/PhysicsShape.h" bodystart="27" bodyend="218"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a60e97b3ea2073db45dde247fd1c7d379" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a7195c6413beb2e8bc4916e97ffca02f2" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>calculateLocalInertia</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a0612a1c8c3f4520d78cb7f5838f03074" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::PhysicsShape</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual"><scope>njli::PhysicsShape</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a701dbac9216cbda5493851634ade84c3" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsShape</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ab71ebdd73aea0c6ce0a47c9c47284a66" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>createRigidBodyWithShape</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ac3f7a072f33f984a3bac11b2c9191167" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsShape</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::PhysicsShape</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a33ae845e59c2c693c07a17cc112bba3f" prot="public" virt="virtual"><scope>njli::PhysicsShape</scope><name>getAabb</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a72cb98a55614a3e264b8e4a157b45c64" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a527e956caca24bf16ed0d47f69ff14e8" prot="protected" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getCollisionShape</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a2910f0362035c971f245349a55378b01" prot="protected" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getCollisionShape</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a657e98309a2a171ccb02a054a04c9b57" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getEdge</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::PhysicsShape</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a24df999ba2b7ac0d9abda09c4f17c2fe" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getNumEdges</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a11cb80220393bfce177b8bdc34f7f359" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getNumPlanes</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ac3f7cc28341fd58ace164bf8666480f0" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getNumVertices</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a060d12d9eabbed9aa1187580def44571" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ad13001911fd2fe30b2eee35b883b6bbd" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ad5418af48c1210d6d5119244826cacbb" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getPlane</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsShape</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsShape</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ac7c6b2ac373892095f8220d56f8ad6de" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_physics_shape_1acb05a16bdbfa5cee6dcbab5c253eb78e" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>getVertex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a346a118ddc9e6b446ae7a8586fee76fa" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>isInside</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_physics_shape_1aaf889e6e5bc193fb8c5518a3a4c48f9c" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>load</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a6db9d28bd448a131448276ee03de1e6d" prot="private" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>Node</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a890d915f88af06dcf1ac1fa4f5943dc2" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a7c29f1de36c1043e77c070626af242ab" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a5602338bf4d8e0e6baa58d3daa8dc90a" prot="private" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>PhysicsBody</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ada345e4f9c2a87f06868b74d30e94ad2" prot="private" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>PhysicsBodyRigid</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a23c941342461cf9b8ea3a00f96e4b166" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>PhysicsShape</name></member>
+      <member refid="classnjli_1_1_physics_shape_1ab15fa64eb27e24f04baa5ba707a9a030" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>PhysicsShape</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a16a9abace510dc1886f82c09782d2976" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>PhysicsShape</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a2ac8a109a5ad67ee79f40ce8f28337cf" prot="public" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsShape</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a441e82a42f3b588a409c3b6c41288abd" prot="protected" virt="pure-virtual"><scope>njli::PhysicsShape</scope><name>setCollisionShape</name></member>
+      <member refid="classnjli_1_1_physics_shape_1afd2f02f3fd7ab5c1b48f445f2831f18f" prot="public" virt="virtual"><scope>njli::PhysicsShape</scope><name>setLocalScaling</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::PhysicsShape</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::PhysicsShape</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a2d21f55f6e742bddb5b5fc44223f96fb" prot="public" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>type</name></member>
+      <member refid="classnjli_1_1_physics_shape_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::PhysicsShape</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::PhysicsShape</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::PhysicsShape</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::PhysicsShape</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_physics_shape_1a4bd97d3b6ff4c10b082cc228aec318b1" prot="protected" virt="virtual"><scope>njli::PhysicsShape</scope><name>~PhysicsShape</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

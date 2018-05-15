@@ -1,0 +1,190 @@
+\hypertarget{easylogger_8h}{}\section{njligames-\/njlic\+\_\+engine/njli/platform/easylogger.h File Reference}
+\label{easylogger_8h}\index{njligames-\/njlic\+\_\+engine/njli/platform/easylogger.\+h@{njligames-\/njlic\+\_\+engine/njli/platform/easylogger.\+h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for easylogger.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{easylogger_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{easylogger\+::\+\_\+private\+::\+Log\+Sink}}
+\item 
+class \mbox{\hyperlink{classeasylogger_1_1_logger}{easylogger\+::\+Logger}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} system core class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceeasylogger}{easylogger}}
+\begin{DoxyCompactList}\small\item\em Main namespace containing all Easylogger functionality. \end{DoxyCompactList}\item 
+ \mbox{\hyperlink{namespaceeasylogger_1_1__private}{easylogger\+::\+\_\+private}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_afb6571d7648f15e63bddc3b877a87ba4}{E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H}}
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}(logger,  level,  message)
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_ad10e813294614a8850fd241db5bcd653}{L\+O\+G\+\_\+\+T\+R\+A\+CE}}(logger,  message)~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}}, message)
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_adb268ee8276a4b312d31ed9db04e9926}{L\+O\+G\+\_\+\+D\+E\+B\+UG}}(logger,  message)~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}}, message)
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_a0c30634de010bc24deacc2cb5a123bec}{L\+O\+G\+\_\+\+I\+N\+FO}}(logger,  message)~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}, message)
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_a32705d9b1868f3dc5918d6af2f45575a}{L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG}}(logger,  message)~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}, message)
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_ab3dff3a4b05f59968670e28caf19134b}{L\+O\+G\+\_\+\+E\+R\+R\+OR}}(logger,  message)~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}}, message)
+\item 
+\#define \mbox{\hyperlink{easylogger_8h_a5eb2cc752383b4ac1bb2eb9e1109ce7a}{L\+O\+G\+\_\+\+F\+A\+T\+AL}}(logger,  message)~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+AL}}, message)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{easylogger\+::\+Log\+Level}} \{ \newline
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}}, 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}}, 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}, 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}, 
+\newline
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}}, 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+AL}}
+ \}
+\begin{DoxyCompactList}\small\item\em Log levels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\\+::\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{easylogger\+::\+\_\+private\+::\+Log\+Sink}} \& \mbox{\hyperlink{easylogger_8h_abc9dffd7ca03c110900fdb1e7426fb6f}{operator$<$$<$}} (\+::\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{easylogger\+::\+\_\+private\+::\+Log\+Sink}} \&sink, const T \&val)
+\begin{DoxyCompactList}\small\item\em Stream operator for Log\+Sink. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}\label{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}} 
+\index{easylogger.\+h@{easylogger.\+h}!\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG@{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}
+\index{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG@{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}{\_EASY\_LOG}}
+{\footnotesize\ttfamily \#define \+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{level,  }\item[{}]{message }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}
+\textcolor{keywordflow}{do}\{ \(\backslash\)
+if ((logger).IsLevel((level))) \{ \(\backslash\)
+do \{ \(\backslash\)
+\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{::easylogger::\_private::LogSink}} \_easy\_sink((logger).Log(level, \_\_FILE\_\_, 
+      \_\_LINE\_\_, \_\_PRETTY\_FUNCTION\_\_)); \(\backslash\)
+\_easy\_sink << message; \(\backslash\)
+\} \textcolor{keywordflow}{while}(0); \(\backslash\)
+if ((level) == ::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb}{easylogger::LEVEL\_FATAL}}) \{ \(\backslash\)
+(logger).Flush(); \(\backslash\)
+std::abort(); \(\backslash\)
+\} \(\backslash\)
+\} \(\backslash\)
+\}\textcolor{keywordflow}{while}(0)
+\end{DoxyCode}
+General logging helper 
+
+Definition at line 385 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_afb6571d7648f15e63bddc3b877a87ba4}\label{easylogger_8h_afb6571d7648f15e63bddc3b877a87ba4}} 
+\index{easylogger.\+h@{easylogger.\+h}!E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H@{E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H}}
+\index{E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H@{E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H}{EASYLOGGER\_LOGSINK\_H}}
+{\footnotesize\ttfamily \#define E\+A\+S\+Y\+L\+O\+G\+G\+E\+R\+\_\+\+L\+O\+G\+S\+I\+N\+K\+\_\+H}
+
+
+
+Definition at line 357 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_adb268ee8276a4b312d31ed9db04e9926}\label{easylogger_8h_adb268ee8276a4b312d31ed9db04e9926}} 
+\index{easylogger.\+h@{easylogger.\+h}!L\+O\+G\+\_\+\+D\+E\+B\+UG@{L\+O\+G\+\_\+\+D\+E\+B\+UG}}
+\index{L\+O\+G\+\_\+\+D\+E\+B\+UG@{L\+O\+G\+\_\+\+D\+E\+B\+UG}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+D\+E\+B\+UG}{LOG\_DEBUG}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+D\+E\+B\+UG(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{message }\end{DoxyParamCaption})~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+D\+E\+B\+UG}}, message)}
+
+
+
+Definition at line 421 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_ab3dff3a4b05f59968670e28caf19134b}\label{easylogger_8h_ab3dff3a4b05f59968670e28caf19134b}} 
+\index{easylogger.\+h@{easylogger.\+h}!L\+O\+G\+\_\+\+E\+R\+R\+OR@{L\+O\+G\+\_\+\+E\+R\+R\+OR}}
+\index{L\+O\+G\+\_\+\+E\+R\+R\+OR@{L\+O\+G\+\_\+\+E\+R\+R\+OR}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+E\+R\+R\+OR}{LOG\_ERROR}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+E\+R\+R\+OR(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{message }\end{DoxyParamCaption})~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+E\+R\+R\+OR}}, message)}
+
+
+
+Definition at line 424 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_a5eb2cc752383b4ac1bb2eb9e1109ce7a}\label{easylogger_8h_a5eb2cc752383b4ac1bb2eb9e1109ce7a}} 
+\index{easylogger.\+h@{easylogger.\+h}!L\+O\+G\+\_\+\+F\+A\+T\+AL@{L\+O\+G\+\_\+\+F\+A\+T\+AL}}
+\index{L\+O\+G\+\_\+\+F\+A\+T\+AL@{L\+O\+G\+\_\+\+F\+A\+T\+AL}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+F\+A\+T\+AL}{LOG\_FATAL}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+F\+A\+T\+AL(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{message }\end{DoxyParamCaption})~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+F\+A\+T\+AL}}, message)}
+
+
+
+Definition at line 425 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_a0c30634de010bc24deacc2cb5a123bec}\label{easylogger_8h_a0c30634de010bc24deacc2cb5a123bec}} 
+\index{easylogger.\+h@{easylogger.\+h}!L\+O\+G\+\_\+\+I\+N\+FO@{L\+O\+G\+\_\+\+I\+N\+FO}}
+\index{L\+O\+G\+\_\+\+I\+N\+FO@{L\+O\+G\+\_\+\+I\+N\+FO}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+I\+N\+FO}{LOG\_INFO}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+I\+N\+FO(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{message }\end{DoxyParamCaption})~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+I\+N\+FO}}, message)}
+
+
+
+Definition at line 422 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_ad10e813294614a8850fd241db5bcd653}\label{easylogger_8h_ad10e813294614a8850fd241db5bcd653}} 
+\index{easylogger.\+h@{easylogger.\+h}!L\+O\+G\+\_\+\+T\+R\+A\+CE@{L\+O\+G\+\_\+\+T\+R\+A\+CE}}
+\index{L\+O\+G\+\_\+\+T\+R\+A\+CE@{L\+O\+G\+\_\+\+T\+R\+A\+CE}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+T\+R\+A\+CE}{LOG\_TRACE}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+T\+R\+A\+CE(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{message }\end{DoxyParamCaption})~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+T\+R\+A\+CE}}, message)}
+
+
+
+Definition at line 420 of file easylogger.\+h.
+
+\mbox{\Hypertarget{easylogger_8h_a32705d9b1868f3dc5918d6af2f45575a}\label{easylogger_8h_a32705d9b1868f3dc5918d6af2f45575a}} 
+\index{easylogger.\+h@{easylogger.\+h}!L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG@{L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG}}
+\index{L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG@{L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG}{LOG\_WARNING}}
+{\footnotesize\ttfamily \#define L\+O\+G\+\_\+\+W\+A\+R\+N\+I\+NG(\begin{DoxyParamCaption}\item[{}]{logger,  }\item[{}]{message }\end{DoxyParamCaption})~\mbox{\hyperlink{easylogger_8h_a872e0c2b8a887f8afb8491c36e155421}{\+\_\+\+E\+A\+S\+Y\+\_\+\+L\+OG}}((logger), \+::\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571}{easylogger\+::\+L\+E\+V\+E\+L\+\_\+\+W\+A\+R\+N\+I\+NG}}, message)}
+
+
+
+Definition at line 423 of file easylogger.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{easylogger_8h_abc9dffd7ca03c110900fdb1e7426fb6f}\label{easylogger_8h_abc9dffd7ca03c110900fdb1e7426fb6f}} 
+\index{easylogger.\+h@{easylogger.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!easylogger.\+h@{easylogger.\+h}}
+\subsubsection{\texorpdfstring{operator$<$$<$()}{operator<<()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\+::\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{easylogger\+::\+\_\+private\+::\+Log\+Sink}}\& operator$<$$<$ (\begin{DoxyParamCaption}\item[{\+::\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{easylogger\+::\+\_\+private\+::\+Log\+Sink}} \&}]{sink,  }\item[{const T \&}]{val }\end{DoxyParamCaption})}
+
+
+
+Stream operator for Log\+Sink. 
+
+
+
+Definition at line 370 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+370                                                                                      \{
+371     sink.\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink_a6d6aa70a384a424a1c566320bf1cdcdf}{Stream}}() << val;
+372     \textcolor{keywordflow}{return} sink;
+373 \}
+\end{DoxyCode}

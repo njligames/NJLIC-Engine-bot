@@ -1,0 +1,349 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_n_j_l_i_interface_8h">
+    <title>NJLIInterface.h File Reference</title>
+    <programlisting>#include &quot;SDL.h&quot;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+    <programlisting>#include &lt;vector&gt;</programlisting>
+<para>Include dependency diagram for NJLIInterface.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_n_j_l_i_interface_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for NJLIInterface.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_n_j_l_i_interface_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::map&lt; int, SDL_Joystick * &gt;  <link linkend="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4">JoystickMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef std::pair&lt; int, SDL_Joystick * &gt;  <link linkend="_n_j_l_i_interface_8h_1a49256682c3474ea60e1aa3e4f3726f1d">JoystickPair</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Variables</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; SDL_Joystick * &gt; <link linkend="_n_j_l_i_interface_8h_1ad44d313c047589b11b13ed2b86b8c4db">gGameJoysticks</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4">JoystickMap</link> <link linkend="_n_j_l_i_interface_8h_1adb79376dd8a0fe575d83acde08cb1047">gGameJoystickMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SDL_Window * <link linkend="_n_j_l_i_interface_8h_1a222f53a6a442d8f716dffd665e83528a">gWindow</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SDL_Renderer * <link linkend="_n_j_l_i_interface_8h_1a4735638969a524c4ac90a88f23c59a1f">gRenderer</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SDL_GLContext <link linkend="_n_j_l_i_interface_8h_1a18634b79b95e521c65f8446597af3fa5">gGlContext</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SDL_DisplayMode <link linkend="_n_j_l_i_interface_8h_1aeea34e2cdf8071c7dcd944e5f40141e5">gDisplayMode</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SDL_MouseMotionEvent <link linkend="_n_j_l_i_interface_8h_1a0d2385cca83f2f3e3972567646e933c5">gLastEvent</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a01e593ea28db3fae0f4b904a097f392a">gDone</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a617d46c48dd05c5f04f249d74b27474e">gXOffset</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a8832dca79836bee1ed31c0c1943f70eb">gYOffset</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a869dc264b051e5660082d1a9782c7d12">gNumTouches</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a1e60f47d0b131d5990bdc98dc8279399">NJLI_HandleUpdate</link> (
+double timeStep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a3ca283031b2c6db0f81d6b8f1ab6594c">NJLI_HandleRender</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1abd21b292252c420cad4abda6d86d1193">NJLI_HandleLowMemory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1aef46a1be5f0e91410087bb21528d3636">NJLI_HandleQuit</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a9ab4654023d305ec7788d1f6bd166f29">NJLI_HandlePause</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a490e2957f6cb5c01bcc873b219c13964">NJLI_HandleResume</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a24c9633bdc46d5b8b64456e75fbe5aa6">NJLI_HandleDropFile</link> (
+const char * filename)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a8bf04c69e1bc1c3c08f30aa579cc1d73">NJLI_HandleResize</link> (
+int width, int height, int sdlFormat, float refreshRate)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a33bb6576261605e9bab826bb21a7aa9a">NJLI_HandlePadDown</link> (
+int device_id, int keycode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a54e28fcf9d572c82e5d57129f319f43c">NJLI_HandlePadUp</link> (
+int device_id, int keycode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a105d45d4a14e2526ceeb66b1a0b60304">NJLI_HandleJoy</link> (
+int device_id, int axis, float value)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1ac8af65c5e0fb2ac87b2f4c5b0271586f">NJLI_HandleHat</link> (
+int device_id, int hat_id, int x, int y)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a68c675ef4b67a621a9b07956a87f164c">NJLI_HandleKeyDown</link> (
+const std::string &amp; keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1aae7e9403cfa5ccc5fd54012350fd153d">NJLI_HandleKeyUp</link> (
+const std::string &amp; keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1af76d7bc62254b701c7266713652b1578">NJLI_HandleKeyboardFocusLost</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1ad3d8b0648b78539ef5da05c66816fdde">NJLI_HandleKeyboardFinish</link> (
+const unsigned char * state, int numStates)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a0df118b26b35f2f4cad823df47ea4ad8">NJLI_HandleMouse</link> (
+int button, int eventType, float x, float y, int clicks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1aa68746871cc5e2195dbdb38623df5cf4">NJLI_HandleTouch</link> (
+int touchDevId, int pointerFingerId, int eventType, float x, float y, float dx, float dy, float pressure)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a504780d2532764bd8eca76da693862ea">NJLI_HandleFinishTouches</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a4a4ec35ea6565fbaf47ffeeeac329ff9">NJLI_HandleAccel</link> (
+float x, float y, float z)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a5caa8b96a2484e22eaf17f6400254327">NJLI_HandleSurfaceChanged</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a9e9547b19cfb4c6c39453d90a155b4f6">NJLI_HandleSurfaceDestroyed</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1ab89b70450a79c24a789431c13987f663">NJLI_HandleAddJoystick</link> (
+int device_id, const char * name, int is_accelerometer, int nbuttons, int naxes, int nhats, int nballs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int <link linkend="_n_j_l_i_interface_8h_1a8967eda0ee6571bc64d28407cb31ca83">NJLI_HandleRemoveJoystick</link> (
+int device_id)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="_n_j_l_i_interface_8h_1a521c282a3e54e5d174c07226c29c73e2">NJLI_HandleGetHint</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a3288c38f85384c3b1d9b4d6ff1fc65d3">NJLI_HandleCommitText</link> (
+const char * text, int newCursorPosition)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_n_j_l_i_interface_8h_1a825a21d7571cf6c98f65eea33346753d">NJLI_HandleSetComposingText</link> (
+const char * text, int newCursorPosition)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/njli/platform/NJLIInterface.h</para>
+    </simplesect>
+</section>

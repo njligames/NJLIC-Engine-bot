@@ -1,0 +1,343 @@
+\hypertarget{classnjli_1_1_n_j_l_i_game_engine}{}\section{njli\+:\+:N\+J\+L\+I\+Game\+Engine Class Reference}
+\label{classnjli_1_1_n_j_l_i_game_engine}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4ed}{Platform\+ID}} \{ \newline
+\mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6cf2daab29241b0e763ff97c8f4f53e7}{Platform\+I\+D\+\_\+i\+OS}} = 0, 
+\mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6c558271f40073f76d00143d7cb6ff8e}{Platform\+I\+D\+\_\+\+Android}}, 
+\mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda4aea7a4dcf787eccd5eeb27f18a4353f}{Platform\+I\+D\+\_\+\+Emscripten}}, 
+\mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda0957148df4fb1940266bf4153d5cfa48}{Platform\+I\+D\+\_\+\+Mac\+O\+Sx}}, 
+\newline
+\mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda9e5108023740f93fa7a49845aa0d72dc}{Platform\+I\+D\+\_\+tv\+OS}}, 
+\mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4edaaa85a957f94a226990385d06106eee62}{Platform\+I\+D\+\_\+\+Linux}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a18bdada0e3ba0fb40de703fe7a958f60}{is\+I\+OS}} ()
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a2728fbe484c5e56c75525839c144555b}{is\+A\+N\+D\+R\+O\+ID}} ()
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_ac4d956dc87db55cfa0b5bfe0096b976d}{is\+E\+M\+S\+C\+R\+I\+P\+T\+EN}} ()
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a10a676b87e8a0e467de8e98c595d181c}{is\+M\+A\+C\+O\+SX}} ()
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a053716ee7a9de6ef968df7756b20a341}{is\+T\+V\+OS}} ()
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_af6225412a3586fdcda3af0cf468a2d4c}{create}} (const char $\ast$device\+Name, bool init\+Lua=true)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a68f8a09df140f3275e9063fabc52aa4f}{resize}} (int x, int y, int \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a3b27833c0d69e5e4a2dec09335b38673}{width}}, int \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a56ca64c01ac4d79123229af44a8c2228}{height}}, int \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a6fcc45cad0ceac29634f0f76bd922362}{orientation}})
+\item 
+static int \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a3b27833c0d69e5e4a2dec09335b38673}{width}} ()
+\item 
+static int \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a56ca64c01ac4d79123229af44a8c2228}{height}} ()
+\item 
+static int \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a6fcc45cad0ceac29634f0f76bd922362}{orientation}} ()
+\item 
+static bool \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a9b08da977237bdf3b47bc4796c6a62e2}{start}} (int argc, char $\ast$$\ast$argv)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a0cc3ea87f7451156b3d2b493688bf90a}{update}} (float step)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a6a82035066c2f958f588df82bbee5d40}{render}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_ac672aa4d352a38dee9a98e64609509db}{destroy}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a30fa9ebe2167c4f69febe5248378b030}{handle\+Finger}} (int touch\+Dev\+Id, int pointer\+Finger\+Id, int event\+Type, float x, float y, float dx, float dy, float pressure)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a136a6550305dec3c346255c55419f691}{handle\+Fingers}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a73a62c2624ce57bf6ba7493c096c2c21}{mouse}} (int button, int event\+Type, float x, float y, int clicks)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_aae0cb673e9330ca776cca5edb369ef8b}{key\+Up}} (const char $\ast$keycode\+Name, bool with\+Caps\+Lock, bool with\+Control, bool with\+Shift, bool with\+Alt, bool with\+Gui)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a3b56f22140c20e3459824f3239182cf3}{key\+Down}} (const char $\ast$keycode\+Name, bool with\+Caps\+Lock, bool with\+Control, bool with\+Shift, bool with\+Alt, bool with\+Gui)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_af17d124611303256bff71fffe4dca8df}{handle\+Event}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$event)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_ab57113e9ef7c184f12ffb7b8417639ad}{will\+Resign\+Active}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a98c166ee40919fbf616f358a8bcb9bdc}{did\+Become\+Active}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a500f73154090764efccd084c56c7d0f1}{did\+Enter\+Background}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_ac0150f9ccf3a8b1e4fea04ac39526187}{will\+Enter\+Foreground}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a830dbe46713d362957ac1a0671967b75}{will\+Terminate}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5e157d71043942716317aaab5fe62914}{interrupt}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a976e9615ffb50e23b57d46d5e3e0958c}{resume\+Interrupt}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5ce47bb1bdc5bafdaae6528e100d2316}{keyboard\+Show}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a885ab8ad0939bf6fa51009b5854ef2be}{keyboard\+Cancel}} ()
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a360672d3cfecffb69a91462256da9da4}{keyboard\+Return}} (const char $\ast$text)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_ae2c3d2427e9e19edefd222c692143975}{received\+Memory\+Warning}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4ed}{Platform\+ID}} \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a84194db2322fdba0ce7942f4fbb4a345}{platform\+ID}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Game.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4ed}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4ed}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+ID@{Platform\+ID}}
+\index{Platform\+ID@{Platform\+ID}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{Platform\+ID}{PlatformID}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4ed}{njli\+::\+N\+J\+L\+I\+Game\+Engine\+::\+Platform\+ID}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Platform\+I\+D\+\_\+i\+OS@{Platform\+I\+D\+\_\+i\+OS}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+I\+D\+\_\+i\+OS@{Platform\+I\+D\+\_\+i\+OS}}}\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6cf2daab29241b0e763ff97c8f4f53e7}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6cf2daab29241b0e763ff97c8f4f53e7}} 
+Platform\+I\+D\+\_\+i\+OS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Platform\+I\+D\+\_\+\+Android@{Platform\+I\+D\+\_\+\+Android}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+I\+D\+\_\+\+Android@{Platform\+I\+D\+\_\+\+Android}}}\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6c558271f40073f76d00143d7cb6ff8e}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6c558271f40073f76d00143d7cb6ff8e}} 
+Platform\+I\+D\+\_\+\+Android&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Platform\+I\+D\+\_\+\+Emscripten@{Platform\+I\+D\+\_\+\+Emscripten}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+I\+D\+\_\+\+Emscripten@{Platform\+I\+D\+\_\+\+Emscripten}}}\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda4aea7a4dcf787eccd5eeb27f18a4353f}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda4aea7a4dcf787eccd5eeb27f18a4353f}} 
+Platform\+I\+D\+\_\+\+Emscripten&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Platform\+I\+D\+\_\+\+Mac\+O\+Sx@{Platform\+I\+D\+\_\+\+Mac\+O\+Sx}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+I\+D\+\_\+\+Mac\+O\+Sx@{Platform\+I\+D\+\_\+\+Mac\+O\+Sx}}}\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda0957148df4fb1940266bf4153d5cfa48}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda0957148df4fb1940266bf4153d5cfa48}} 
+Platform\+I\+D\+\_\+\+Mac\+O\+Sx&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Platform\+I\+D\+\_\+tv\+OS@{Platform\+I\+D\+\_\+tv\+OS}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+I\+D\+\_\+tv\+OS@{Platform\+I\+D\+\_\+tv\+OS}}}\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda9e5108023740f93fa7a49845aa0d72dc}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda9e5108023740f93fa7a49845aa0d72dc}} 
+Platform\+I\+D\+\_\+tv\+OS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Platform\+I\+D\+\_\+\+Linux@{Platform\+I\+D\+\_\+\+Linux}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!Platform\+I\+D\+\_\+\+Linux@{Platform\+I\+D\+\_\+\+Linux}}}\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4edaaa85a957f94a226990385d06106eee62}\label{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4edaaa85a957f94a226990385d06106eee62}} 
+Platform\+I\+D\+\_\+\+Linux&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 80 of file Game.\+h.
+
+
+\begin{DoxyCode}
+81     \{
+82       \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6cf2daab29241b0e763ff97c8f4f53e7}{PlatformID\_iOS}} = 0,
+83       \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda6c558271f40073f76d00143d7cb6ff8e}{PlatformID\_Android}},
+84       \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda4aea7a4dcf787eccd5eeb27f18a4353f}{PlatformID\_Emscripten}},
+85       \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda0957148df4fb1940266bf4153d5cfa48}{PlatformID\_MacOSx}},
+86       \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4eda9e5108023740f93fa7a49845aa0d72dc}{PlatformID\_tvOS}},
+87       \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4edaaa85a957f94a226990385d06106eee62}{PlatformID\_Linux}}
+88     \};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_af6225412a3586fdcda3af0cf468a2d4c}\label{classnjli_1_1_n_j_l_i_game_engine_af6225412a3586fdcda3af0cf468a2d4c}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!create@{create}}
+\index{create@{create}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::create (\begin{DoxyParamCaption}\item[{const char $\ast$}]{device\+Name,  }\item[{bool}]{init\+Lua = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_ac672aa4d352a38dee9a98e64609509db}\label{classnjli_1_1_n_j_l_i_game_engine_ac672aa4d352a38dee9a98e64609509db}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::destroy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a98c166ee40919fbf616f358a8bcb9bdc}\label{classnjli_1_1_n_j_l_i_game_engine_a98c166ee40919fbf616f358a8bcb9bdc}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!did\+Become\+Active@{did\+Become\+Active}}
+\index{did\+Become\+Active@{did\+Become\+Active}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{did\+Become\+Active()}{didBecomeActive()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::did\+Become\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a500f73154090764efccd084c56c7d0f1}\label{classnjli_1_1_n_j_l_i_game_engine_a500f73154090764efccd084c56c7d0f1}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!did\+Enter\+Background@{did\+Enter\+Background}}
+\index{did\+Enter\+Background@{did\+Enter\+Background}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{did\+Enter\+Background()}{didEnterBackground()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::did\+Enter\+Background (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_af17d124611303256bff71fffe4dca8df}\label{classnjli_1_1_n_j_l_i_game_engine_af17d124611303256bff71fffe4dca8df}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!handle\+Event@{handle\+Event}}
+\index{handle\+Event@{handle\+Event}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{handle\+Event()}{handleEvent()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::handle\+Event (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a30fa9ebe2167c4f69febe5248378b030}\label{classnjli_1_1_n_j_l_i_game_engine_a30fa9ebe2167c4f69febe5248378b030}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!handle\+Finger@{handle\+Finger}}
+\index{handle\+Finger@{handle\+Finger}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{handle\+Finger()}{handleFinger()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::handle\+Finger (\begin{DoxyParamCaption}\item[{int}]{touch\+Dev\+Id,  }\item[{int}]{pointer\+Finger\+Id,  }\item[{int}]{event\+Type,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{pressure }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+static void set\+Touch(int device\+Index, int touch\+Index, int num\+\_\+touches); \mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a136a6550305dec3c346255c55419f691}\label{classnjli_1_1_n_j_l_i_game_engine_a136a6550305dec3c346255c55419f691}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!handle\+Fingers@{handle\+Fingers}}
+\index{handle\+Fingers@{handle\+Fingers}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{handle\+Fingers()}{handleFingers()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::handle\+Fingers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a56ca64c01ac4d79123229af44a8c2228}\label{classnjli_1_1_n_j_l_i_game_engine_a56ca64c01ac4d79123229af44a8c2228}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!height@{height}}
+\index{height@{height}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{height()}{height()}}
+{\footnotesize\ttfamily static int njli\+::\+N\+J\+L\+I\+Game\+Engine\+::height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5e157d71043942716317aaab5fe62914}\label{classnjli_1_1_n_j_l_i_game_engine_a5e157d71043942716317aaab5fe62914}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!interrupt@{interrupt}}
+\index{interrupt@{interrupt}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{interrupt()}{interrupt()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a2728fbe484c5e56c75525839c144555b}\label{classnjli_1_1_n_j_l_i_game_engine_a2728fbe484c5e56c75525839c144555b}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!is\+A\+N\+D\+R\+O\+ID@{is\+A\+N\+D\+R\+O\+ID}}
+\index{is\+A\+N\+D\+R\+O\+ID@{is\+A\+N\+D\+R\+O\+ID}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{is\+A\+N\+D\+R\+O\+I\+D()}{isANDROID()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::is\+A\+N\+D\+R\+O\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_ac4d956dc87db55cfa0b5bfe0096b976d}\label{classnjli_1_1_n_j_l_i_game_engine_ac4d956dc87db55cfa0b5bfe0096b976d}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!is\+E\+M\+S\+C\+R\+I\+P\+T\+EN@{is\+E\+M\+S\+C\+R\+I\+P\+T\+EN}}
+\index{is\+E\+M\+S\+C\+R\+I\+P\+T\+EN@{is\+E\+M\+S\+C\+R\+I\+P\+T\+EN}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{is\+E\+M\+S\+C\+R\+I\+P\+T\+E\+N()}{isEMSCRIPTEN()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::is\+E\+M\+S\+C\+R\+I\+P\+T\+EN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a18bdada0e3ba0fb40de703fe7a958f60}\label{classnjli_1_1_n_j_l_i_game_engine_a18bdada0e3ba0fb40de703fe7a958f60}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!is\+I\+OS@{is\+I\+OS}}
+\index{is\+I\+OS@{is\+I\+OS}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{is\+I\+O\+S()}{isIOS()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::is\+I\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a10a676b87e8a0e467de8e98c595d181c}\label{classnjli_1_1_n_j_l_i_game_engine_a10a676b87e8a0e467de8e98c595d181c}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!is\+M\+A\+C\+O\+SX@{is\+M\+A\+C\+O\+SX}}
+\index{is\+M\+A\+C\+O\+SX@{is\+M\+A\+C\+O\+SX}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{is\+M\+A\+C\+O\+S\+X()}{isMACOSX()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::is\+M\+A\+C\+O\+SX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a053716ee7a9de6ef968df7756b20a341}\label{classnjli_1_1_n_j_l_i_game_engine_a053716ee7a9de6ef968df7756b20a341}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!is\+T\+V\+OS@{is\+T\+V\+OS}}
+\index{is\+T\+V\+OS@{is\+T\+V\+OS}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{is\+T\+V\+O\+S()}{isTVOS()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::is\+T\+V\+OS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a885ab8ad0939bf6fa51009b5854ef2be}\label{classnjli_1_1_n_j_l_i_game_engine_a885ab8ad0939bf6fa51009b5854ef2be}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!keyboard\+Cancel@{keyboard\+Cancel}}
+\index{keyboard\+Cancel@{keyboard\+Cancel}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{keyboard\+Cancel()}{keyboardCancel()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::keyboard\+Cancel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a360672d3cfecffb69a91462256da9da4}\label{classnjli_1_1_n_j_l_i_game_engine_a360672d3cfecffb69a91462256da9da4}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!keyboard\+Return@{keyboard\+Return}}
+\index{keyboard\+Return@{keyboard\+Return}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{keyboard\+Return()}{keyboardReturn()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::keyboard\+Return (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a5ce47bb1bdc5bafdaae6528e100d2316}\label{classnjli_1_1_n_j_l_i_game_engine_a5ce47bb1bdc5bafdaae6528e100d2316}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!keyboard\+Show@{keyboard\+Show}}
+\index{keyboard\+Show@{keyboard\+Show}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{keyboard\+Show()}{keyboardShow()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::keyboard\+Show (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a3b56f22140c20e3459824f3239182cf3}\label{classnjli_1_1_n_j_l_i_game_engine_a3b56f22140c20e3459824f3239182cf3}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!key\+Down@{key\+Down}}
+\index{key\+Down@{key\+Down}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{key\+Down()}{keyDown()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::key\+Down (\begin{DoxyParamCaption}\item[{const char $\ast$}]{keycode\+Name,  }\item[{bool}]{with\+Caps\+Lock,  }\item[{bool}]{with\+Control,  }\item[{bool}]{with\+Shift,  }\item[{bool}]{with\+Alt,  }\item[{bool}]{with\+Gui }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_aae0cb673e9330ca776cca5edb369ef8b}\label{classnjli_1_1_n_j_l_i_game_engine_aae0cb673e9330ca776cca5edb369ef8b}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!key\+Up@{key\+Up}}
+\index{key\+Up@{key\+Up}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{key\+Up()}{keyUp()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::key\+Up (\begin{DoxyParamCaption}\item[{const char $\ast$}]{keycode\+Name,  }\item[{bool}]{with\+Caps\+Lock,  }\item[{bool}]{with\+Control,  }\item[{bool}]{with\+Shift,  }\item[{bool}]{with\+Alt,  }\item[{bool}]{with\+Gui }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a73a62c2624ce57bf6ba7493c096c2c21}\label{classnjli_1_1_n_j_l_i_game_engine_a73a62c2624ce57bf6ba7493c096c2c21}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!mouse@{mouse}}
+\index{mouse@{mouse}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{mouse()}{mouse()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::mouse (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{event\+Type,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{clicks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a6fcc45cad0ceac29634f0f76bd922362}\label{classnjli_1_1_n_j_l_i_game_engine_a6fcc45cad0ceac29634f0f76bd922362}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!orientation@{orientation}}
+\index{orientation@{orientation}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{orientation()}{orientation()}}
+{\footnotesize\ttfamily static int njli\+::\+N\+J\+L\+I\+Game\+Engine\+::orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a84194db2322fdba0ce7942f4fbb4a345}\label{classnjli_1_1_n_j_l_i_game_engine_a84194db2322fdba0ce7942f4fbb4a345}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!platform\+ID@{platform\+ID}}
+\index{platform\+ID@{platform\+ID}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{platform\+I\+D()}{platformID()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_n_j_l_i_game_engine_a5a2bbb7c337d3918056ba12307f2a4ed}{Platform\+ID}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::platform\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_ae2c3d2427e9e19edefd222c692143975}\label{classnjli_1_1_n_j_l_i_game_engine_ae2c3d2427e9e19edefd222c692143975}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!received\+Memory\+Warning@{received\+Memory\+Warning}}
+\index{received\+Memory\+Warning@{received\+Memory\+Warning}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{received\+Memory\+Warning()}{receivedMemoryWarning()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::received\+Memory\+Warning (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a6a82035066c2f958f588df82bbee5d40}\label{classnjli_1_1_n_j_l_i_game_engine_a6a82035066c2f958f588df82bbee5d40}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!render@{render}}
+\index{render@{render}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a68f8a09df140f3275e9063fabc52aa4f}\label{classnjli_1_1_n_j_l_i_game_engine_a68f8a09df140f3275e9063fabc52aa4f}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!resize@{resize}}
+\index{resize@{resize}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::resize (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{orientation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a976e9615ffb50e23b57d46d5e3e0958c}\label{classnjli_1_1_n_j_l_i_game_engine_a976e9615ffb50e23b57d46d5e3e0958c}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!resume\+Interrupt@{resume\+Interrupt}}
+\index{resume\+Interrupt@{resume\+Interrupt}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{resume\+Interrupt()}{resumeInterrupt()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::resume\+Interrupt (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a9b08da977237bdf3b47bc4796c6a62e2}\label{classnjli_1_1_n_j_l_i_game_engine_a9b08da977237bdf3b47bc4796c6a62e2}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!start@{start}}
+\index{start@{start}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{start()}{start()}}
+{\footnotesize\ttfamily static bool njli\+::\+N\+J\+L\+I\+Game\+Engine\+::start (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a0cc3ea87f7451156b3d2b493688bf90a}\label{classnjli_1_1_n_j_l_i_game_engine_a0cc3ea87f7451156b3d2b493688bf90a}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!update@{update}}
+\index{update@{update}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::update (\begin{DoxyParamCaption}\item[{float}]{step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a3b27833c0d69e5e4a2dec09335b38673}\label{classnjli_1_1_n_j_l_i_game_engine_a3b27833c0d69e5e4a2dec09335b38673}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!width@{width}}
+\index{width@{width}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{width()}{width()}}
+{\footnotesize\ttfamily static int njli\+::\+N\+J\+L\+I\+Game\+Engine\+::width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_ac0150f9ccf3a8b1e4fea04ac39526187}\label{classnjli_1_1_n_j_l_i_game_engine_ac0150f9ccf3a8b1e4fea04ac39526187}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!will\+Enter\+Foreground@{will\+Enter\+Foreground}}
+\index{will\+Enter\+Foreground@{will\+Enter\+Foreground}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{will\+Enter\+Foreground()}{willEnterForeground()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::will\+Enter\+Foreground (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_ab57113e9ef7c184f12ffb7b8417639ad}\label{classnjli_1_1_n_j_l_i_game_engine_ab57113e9ef7c184f12ffb7b8417639ad}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!will\+Resign\+Active@{will\+Resign\+Active}}
+\index{will\+Resign\+Active@{will\+Resign\+Active}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{will\+Resign\+Active()}{willResignActive()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::will\+Resign\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classnjli_1_1_n_j_l_i_game_engine_a830dbe46713d362957ac1a0671967b75}\label{classnjli_1_1_n_j_l_i_game_engine_a830dbe46713d362957ac1a0671967b75}} 
+\index{njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}!will\+Terminate@{will\+Terminate}}
+\index{will\+Terminate@{will\+Terminate}!njli\+::\+N\+J\+L\+I\+Game\+Engine@{njli\+::\+N\+J\+L\+I\+Game\+Engine}}
+\subsubsection{\texorpdfstring{will\+Terminate()}{willTerminate()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+N\+J\+L\+I\+Game\+Engine\+::will\+Terminate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/platform/\mbox{\hyperlink{_game_8h}{Game.\+h}}\end{DoxyCompactItemize}

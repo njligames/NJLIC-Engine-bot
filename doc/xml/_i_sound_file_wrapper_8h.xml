@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_i_sound_file_wrapper_8h" kind="file" language="C++">
+    <compoundname>ISoundFileWrapper.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cstdio</includes>
+    <includes local="no">cstring</includes>
+    <includedby refid="_wrapper___o_g_g_8h" local="yes">njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h</includedby>
+    <includedby refid="_wrapper___r_a_w_8h" local="yes">njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</includedby>
+    <includedby refid="_wrapper___w_a_v_8h" local="yes">njligames-njlic_engine/njli/sound/openal/Wrapper_WAV.h</includedby>
+    <incdepgraph>
+      <node id="5703">
+        <label>njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h</label>
+        <link refid="_i_sound_file_wrapper_8h"/>
+        <childnode refid="5704" relation="include">
+        </childnode>
+        <childnode refid="5705" relation="include">
+        </childnode>
+        <childnode refid="5706" relation="include">
+        </childnode>
+      </node>
+      <node id="5705">
+        <label>cstdio</label>
+      </node>
+      <node id="5704">
+        <label>vector</label>
+      </node>
+      <node id="5706">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5709">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</label>
+        <link refid="_wrapper___r_a_w_8h"/>
+      </node>
+      <node id="5707">
+        <label>njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h</label>
+        <link refid="_i_sound_file_wrapper_8h"/>
+        <childnode refid="5708" relation="include">
+        </childnode>
+        <childnode refid="5709" relation="include">
+        </childnode>
+        <childnode refid="5710" relation="include">
+        </childnode>
+      </node>
+      <node id="5710">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_WAV.h</label>
+        <link refid="_wrapper___w_a_v_8h"/>
+      </node>
+      <node id="5708">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h</label>
+        <link refid="_wrapper___o_g_g_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnjli_1_1_i_sound_file_wrapper" prot="public">njli::ISoundFileWrapper</innerclass>
+    <innernamespace refid="namespacenjli">njli</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INTERFACE_SOUND_WRAPPER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTERFACE_SOUND_WRAPPER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SoundInfo;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;../../Macros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdio&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenjli" kindref="compound">njli</ref></highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="classnjli_1_1_i_sound_file_wrapper" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_i_sound_file_wrapper" kindref="compound">ISoundFileWrapper</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">SEEK_POS</ref><sp/>{<sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e" kindref="member">START</ref><sp/>=<sp/>0,<sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991" kindref="member">CURRENT</ref><sp/>=<sp/>1<sp/>}<sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">SEEK_POS</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4" kindref="member">ISoundFileWrapper</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minDecompressLengthAtOnce<sp/>=<sp/>-1){};</highlight></codeline>
+<codeline lineno="20" refid="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7" kindref="member">~ISoundFileWrapper</ref>(){};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a2c4dc8cc613f8f545b0e1ead86ee7e4d" kindref="member">LoadFromMemory</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dataSize,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SoundInfo<sp/>*soundInfo)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a525f86e4bbe65d5b90ee3eda171b5492" kindref="member">LoadFromFile</ref>(FILE<sp/>*f,<sp/>SoundInfo<sp/>*soundInfo)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a2e62b8b05da06eb1f9594ffdd5aa0cfd" kindref="member">DecompressStream</ref>(std::vector&lt;char&gt;<sp/>&amp;decompressBuffer,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inLoop<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a9b338a5bbcb5d07acdebce1efab332c5" kindref="member">DecompressAll</ref>(std::vector&lt;char&gt;<sp/>&amp;decompressBuffer)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab302d724c78a9a55f6dcb288d31e6854" kindref="member">ResetStream</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a22241a77b7d6adf55045a7a30ec5ef30" kindref="member">Seek</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pos,<sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">SEEK_POS</ref><sp/>start)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a7468aaf1e53cfd6feb38eae4ecf8ab99" kindref="member">GetCurrentStreamPos</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1afefb180620c4a6e17e994a867726eb29" kindref="member">GetTime</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1a1b22318560969f7cc06ac03dcb78971f" kindref="member">GetTotalTime</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h"/>
+  </compounddef>
+</doxygen>

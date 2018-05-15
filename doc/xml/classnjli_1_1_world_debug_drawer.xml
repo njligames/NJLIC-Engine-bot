@@ -1,0 +1,2077 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_world_debug_drawer" kind="class" language="C++" prot="public">
+    <compoundname>njli::WorldDebugDrawer</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">RenderInterface</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">btIDebugDraw</basecompoundref>
+    <includes refid="_world_debug_drawer_8h" local="no">WorldDebugDrawer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a1531502ece9afabebbf772bcc25f2811" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int njli::WorldDebugDrawer::m_DebugMode</definition>
+        <argsstring></argsstring>
+        <name>m_DebugMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="360" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a5c7be82eaa6a728ef956351320198d3e" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+        <definition>Camera* njli::WorldDebugDrawer::m_Camera</definition>
+        <argsstring></argsstring>
+        <name>m_Camera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="363" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="363" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1ada80b31b5782b0bf85943e0d5c075c0b" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint njli::WorldDebugDrawer::linePointProgram</definition>
+        <argsstring></argsstring>
+        <name>linePointProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="365" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="365" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1ab439977d5e3cfe2efc6f3b5445e0fd87" prot="private" static="no" mutable="no">
+        <type>GLint</type>
+        <definition>GLint njli::WorldDebugDrawer::linePointProgram_MvpMatrixLocation</definition>
+        <argsstring></argsstring>
+        <name>linePointProgram_MvpMatrixLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="366" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a0d63f957bea4ad8e5306d680bb2ea8e8" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint njli::WorldDebugDrawer::textProgram</definition>
+        <argsstring></argsstring>
+        <name>textProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="368" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a2b7b2612853759b92ad26de37ebe8dd1" prot="private" static="no" mutable="no">
+        <type>GLint</type>
+        <definition>GLint njli::WorldDebugDrawer::textProgram_GlyphTextureLocation</definition>
+        <argsstring></argsstring>
+        <name>textProgram_GlyphTextureLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="369" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a8afce071c7a5a29b378bb807f1dbdf3f" prot="private" static="no" mutable="no">
+        <type>GLint</type>
+        <definition>GLint njli::WorldDebugDrawer::textProgram_ScreenDimensions</definition>
+        <argsstring></argsstring>
+        <name>textProgram_ScreenDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="370" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a61e7e986d55c6348ba96b60406e6d3c1" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint njli::WorldDebugDrawer::linePointVAO</definition>
+        <argsstring></argsstring>
+        <name>linePointVAO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="372" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a731ef5fbc59334c0bf3f0a0ee4ce88ee" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint njli::WorldDebugDrawer::linePointVBO</definition>
+        <argsstring></argsstring>
+        <name>linePointVBO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="373" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a8a7f7e44c3a3ba9a1bca6c2d660f3a9d" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint njli::WorldDebugDrawer::textVAO</definition>
+        <argsstring></argsstring>
+        <name>textVAO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="375" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_debug_drawer_1a1911a5f2cdd6f0b66480883d9880ba42" prot="private" static="no" mutable="no">
+        <type>GLuint</type>
+        <definition>GLuint njli::WorldDebugDrawer::textVBO</definition>
+        <argsstring></argsstring>
+        <name>textVBO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="376" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ab55308c80918b35de864ddf762be9415" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldDebugDrawer::WorldDebugDrawer</definition>
+        <argsstring>()</argsstring>
+        <name>WorldDebugDrawer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a741f540999f852b736db76368719e2cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::WorldDebugDrawer::~WorldDebugDrawer</definition>
+        <argsstring>()</argsstring>
+        <name>~WorldDebugDrawer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a08488c8e987f18b7186d5ca50650db99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::WorldDebugDrawer::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a151c4b9f151d90e03df92f412346e876" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::WorldDebugDrawer::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ad8b4bbf6151d5f233dce54b012d9f395" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldDebugDrawer::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a058930605d9a5adbf095701584dededf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::beginDraw</definition>
+        <argsstring>()</argsstring>
+        <name>beginDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ad0f3fbe3f3f062800792178a1b83318e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::endDraw</definition>
+        <argsstring>()</argsstring>
+        <name>endDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1aa840ccc55092f26d9ed20ca1ceae1670" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::drawPointList</definition>
+        <argsstring>(const dd::DrawVertex *, int, bool)</argsstring>
+        <name>drawPointList</name>
+        <param>
+          <type>const dd::DrawVertex *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ab4547ab7ddab242ff2a402c691ce7c72" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::drawLineList</definition>
+        <argsstring>(const dd::DrawVertex *, int, bool)</argsstring>
+        <name>drawLineList</name>
+        <param>
+          <type>const dd::DrawVertex *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a902a5a10ef3b87d602cd87e2cd37c3e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::drawGlyphList</definition>
+        <argsstring>(const dd::DrawVertex *, int, dd::GlyphTextureHandle)</argsstring>
+        <name>drawGlyphList</name>
+        <param>
+          <type>const dd::DrawVertex *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>dd::GlyphTextureHandle</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a7d7fc930e719f3fd0715c860df1cbca7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::destroyGlyphTexture</definition>
+        <argsstring>(dd::GlyphTextureHandle)</argsstring>
+        <name>destroyGlyphTexture</name>
+        <param>
+          <type>dd::GlyphTextureHandle</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a33c8ba0bbcc08aefc27850aecbbfaeea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>dd::GlyphTextureHandle</type>
+        <definition>virtual dd::GlyphTextureHandle njli::WorldDebugDrawer::createGlyphTexture</definition>
+        <argsstring>(int, int, const void *)</argsstring>
+        <name>createGlyphTexture</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a09b33cb0a07320fc6c10890abbf1e3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::drawLine</definition>
+        <argsstring>(const btVector3 &amp;from, const btVector3 &amp;to, const btVector3 &amp;color)</argsstring>
+        <name>drawLine</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a5469fad4a1de098b62a2e9ecc3bcc291" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::drawContactPoint</definition>
+        <argsstring>(const btVector3 &amp;PointOnB, const btVector3 &amp;normalOnB, btScalar distance, int lifeTime, const btVector3 &amp;color)</argsstring>
+        <name>drawContactPoint</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>PointOnB</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>normalOnB</declname>
+        </param>
+        <param>
+          <type>btScalar</type>
+          <declname>distance</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lifeTime</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a283f65c1bc27f601271909a35ffac38d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::reportErrorWarning</definition>
+        <argsstring>(const char *warningString)</argsstring>
+        <name>reportErrorWarning</name>
+        <param>
+          <type>const char *</type>
+          <declname>warningString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a76cbaf34350fd41f5fd929e97df5c9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::draw3dText</definition>
+        <argsstring>(const btVector3 &amp;location, const char *textString)</argsstring>
+        <name>draw3dText</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>location</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>textString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a47497517ec5023b6ea53286eb6381510" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldDebugDrawer::setDebugMode</definition>
+        <argsstring>(int debugMode)</argsstring>
+        <name>setDebugMode</name>
+        <param>
+          <type>int</type>
+          <declname>debugMode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ace4ad17af606db8195712e15a42782b2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>virtual int njli::WorldDebugDrawer::getDebugMode</definition>
+        <argsstring>() const</argsstring>
+        <name>getDebugMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1aac2655edc06413745b2ff3ff13572a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1af34071bc860e89b151d779ee1c6acbbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::unInit</definition>
+        <argsstring>()</argsstring>
+        <name>unInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a52ac5a94b12639e5450f77690ab8f5bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::draw</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>draw</name>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a9de791d9497b36d0f19980cf301d05f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::point</definition>
+        <argsstring>(const btVector3 &amp;pos, const btVector3 &amp;color, float size=1.0f, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>point</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a point in 3D space to the debug draw queue. Point is expressed in world-space coordinates. Note that not all renderer support configurable point size, so take the &apos;size&apos; parameter as a hint only</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pos description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>.0f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#.0f description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ab8577e1631222c8a64ba370b4e62daa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::line</definition>
+        <argsstring>(const btVector3 &amp;from, const btVector3 &amp;to, const btVector3 &amp;color, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>line</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a 3D line to the debug draw queue. Note that lines are expressed in world coordinates, and so are all wireframe primitives which are built from lines.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#from description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#to description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a014bce3199ffded2f0577eb3c9a8bf19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::screenText</definition>
+        <argsstring>(ddStrParam str, const btVector3 &amp;pos, const btVector3 &amp;color, float scaling=1.0f, int durationMillis=0)</argsstring>
+        <name>screenText</name>
+        <param>
+          <type>ddStrParam</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaling</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a 2D text string as an overlay to the current view, using a built-in font. Position is in screen-space pixels, origin at the top-left corner of the screen. The third element (Z) of the position vector is ignored. Note: Newlines and tabs are handled (1 tab = 4 spaces).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#str description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pos description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>.0f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#.0f description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1acac1c29c7c13b5afb9553c38f304af47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::projectedText</definition>
+        <argsstring>(ddStrParam str, const btVector3 &amp;pos, const btVector3 &amp;color, float scaling=1.0f, int durationMillis=0)</argsstring>
+        <name>projectedText</name>
+        <param>
+          <type>ddStrParam</type>
+          <declname>str</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>scaling</declname>
+          <defval>1.0f</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a 3D text label centered at the given world position that gets projected to screen-space. The label always faces the viewer. sx/sy, sw/sh are the viewport coordinates/size, in pixels. &apos;vpMatrix&apos; is the view * projection transform to map the text from 3D to 2D.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#str description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pos description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>.0f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#.0f description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a247723d82e67043e246c9cf601e9a5e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::arrow</definition>
+        <argsstring>(const btVector3 &amp;from, const btVector3 &amp;to, const btVector3 &amp;color, float size, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>arrow</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>from</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>to</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a set of three coordinate axis depicting the position and orientation of the given transform. &apos;size&apos; defines the size of the arrow heads. &apos;length&apos; defines the length of the arrow&apos;s base line.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#length description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; <linebreak/>
+Add a 3D line with an arrow-like end to the debug draw queue. &apos;size&apos; defines the arrow head size. &apos;from&apos; and &apos;to&apos; the length of the arrow&apos;s base line.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>from</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#from description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>to</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#to description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1afaf93a608f1cbda884f660ef626d7891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::cross</definition>
+        <argsstring>(const btVector3 &amp;center, float length, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>cross</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add an axis-aligned cross (3 lines converging at a point) to the debug draw queue. &apos;length&apos; defines the length of the crossing lines. &apos;center&apos; is the world-space point where the lines meet.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#center description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#length description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1adec61e26c61222671eeaae5818750ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::circle</definition>
+        <argsstring>(const btVector3 &amp;center, const btVector3 &amp;planeNormal, const btVector3 &amp;color, float radius, float numSteps, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>circle</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>planeNormal</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>numSteps</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a wireframe circle to the debug draw queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#center description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>planeNormal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#planeNormal description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#radius description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numSteps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#numSteps description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a7a947904ddfe6665fc69fc9d04017f23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::plane</definition>
+        <argsstring>(const btVector3 &amp;center, const btVector3 &amp;planeNormal, const btVector3 &amp;planeColor, const btVector3 &amp;normalVecColor, float planeScale, float normalVecScale, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>plane</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>planeNormal</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>planeColor</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>normalVecColor</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>planeScale</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>normalVecScale</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a wireframe plane in 3D space to the debug draw queue. If &apos;normalVecScale&apos; is not zero, a line depicting the plane normal is also draw.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#center description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>planeNormal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#planeNormal description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>planeColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#planeColor description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalVecColor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#normalVecColor description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>planeScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#planeScale description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normalVecScale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#normalVecScale description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1af5b08f142be7d2061437d20bfdfb12a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::sphere</definition>
+        <argsstring>(const btVector3 &amp;center, const btVector3 &amp;color, float radius, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>sphere</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a wireframe sphere to the debug draw queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#center description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#radius description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a3e6834506d31a8111699f184ef75c6ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::cone</definition>
+        <argsstring>(const btVector3 &amp;apex, const btVector3 &amp;dir, const btVector3 &amp;color, float baseRadius, float apexRadius, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>cone</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>apex</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>dir</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>baseRadius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>apexRadius</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a wireframe cone to the debug draw queue. The cone &apos;apex&apos; is the point where all lines meet. The length of the &apos;dir&apos; vector determines the thickness. &apos;baseRadius&apos; &amp; &apos;apexRadius&apos; are in degrees.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>apex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#apex description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dir</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dir description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>baseRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#baseRadius description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>apexRadius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#apexRadius description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="230" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ac47f08694cdd1b36a2b0a89238ef9927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::box</definition>
+        <argsstring>(const btVector3 &amp;center, const btVector3 &amp;color, float width, float height, float depth, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>box</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>center</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>depth</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wireframe box from the eight points that define it.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>points</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#points description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; <linebreak/>
+Add a wireframe box to the debug draw queue.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#center description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#width description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#height description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depth</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depth description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ae4c968319278e639f0372948fdf16729" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::aabb</definition>
+        <argsstring>(const btVector3 &amp;mins, const btVector3 &amp;maxs, const btVector3 &amp;color, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>aabb</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>mins</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>maxs</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a wireframe Axis Aligned Bounding Box (AABB) to the debug draw queue.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mins description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#maxs description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a36d81cb34d46d4e853a44e3477dba202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::vertexNormal</definition>
+        <argsstring>(const btVector3 &amp;origin, const btVector3 &amp;normal, float length, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>vertexNormal</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>normal</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a wireframe frustum pyramid to the debug draw queue. &apos;invClipMatrix&apos; is the inverse of the matrix defining the frustum (AKA clip) volume, which normally consists of the projection * view matrix. E.g.: inverse(projMatrix * viewMatrix)</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>invClipMatrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#invClipMatrix description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; <linebreak/>
+Add a vertex normal for debug visualization. The normal vector &apos;normal&apos; is assumed to be already normalized.</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#origin description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#normal description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>length</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#length description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="301" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a3e46b0af228eb9e8f112ad7e6d8007f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::tangentBasis</definition>
+        <argsstring>(const btVector3 &amp;origin, const btVector3 &amp;normal, const btVector3 &amp;tangent, const btVector3 &amp;bitangent, float lengths, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>tangentBasis</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>origin</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>normal</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>tangent</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>bitangent</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>lengths</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Add a &quot;tangent basis&quot; at a given point in world space. Color scheme used is: normal=WHITE, tangent=YELLOW, bi-tangent=MAGENTA. The normal vector, tangent and bi-tangent vectors are assumed to be already normalized.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#origin description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normal</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#normal description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tangent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#tangent description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bitangent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#bitangent description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lengths</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#lengths description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="319" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a42fda06cd30581136e0e39f6682b71bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::xzSquareGrid</definition>
+        <argsstring>(float mins, float maxs, float y, float step, const btVector3 &amp;color, int durationMillis=0, bool depthEnabled=true)</argsstring>
+        <name>xzSquareGrid</name>
+        <param>
+          <type>float</type>
+          <declname>mins</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>maxs</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>step</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>durationMillis</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>depthEnabled</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Makes a 3D square grid of lines along the X and Z planes. &apos;y&apos; defines the height in the Y axis where the grid is placed. The grid will go from &apos;mins&apos; to &apos;maxs&apos; units in both the X and Z. &apos;step&apos; defines the gap between each line of the grid.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mins</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mins description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>maxs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#maxs description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#y description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>step</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#step description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>durationMillis</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#durationMillis description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>depthEnabled</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#depthEnabled description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a6472cecf79ae2d4b76fcb5e363019fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldDebugDrawer::processSdlEvent</definition>
+        <argsstring>(SDL_Event *event)</argsstring>
+        <name>processSdlEvent</name>
+        <param>
+          <type>SDL_Event *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="342" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a909649fb3b8e4eab5b8b76370b0e66d0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::setupShaderPrograms</definition>
+        <argsstring>()</argsstring>
+        <name>setupShaderPrograms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1ad67f8074167c127eb49596c6d2d813a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::setupVertexBuffers</definition>
+        <argsstring>()</argsstring>
+        <name>setupVertexBuffers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="350" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a48de01f1761e56a8511925468f6a802a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::compileShader</definition>
+        <argsstring>(const GLuint shader)</argsstring>
+        <name>compileShader</name>
+        <param>
+          <type>const GLuint</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a9f85884fc0612b81a189fa42b28c6707" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::linkProgram</definition>
+        <argsstring>(const GLuint program)</argsstring>
+        <name>linkProgram</name>
+        <param>
+          <type>const GLuint</type>
+          <declname>program</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="352" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1aed4000f5c9f1a4b5be0fdd6b48e9d68e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::initImgui</definition>
+        <argsstring>()</argsstring>
+        <name>initImgui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="354" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a0c68d5133dbbebd5e9f7cf46d8e9e12f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::unInitImgui</definition>
+        <argsstring>()</argsstring>
+        <name>unInitImgui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="355" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1a303d644236ffcfe2216a0ce445b0e74c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::renderImgui</definition>
+        <argsstring>()</argsstring>
+        <name>renderImgui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="356" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_debug_drawer_1afa1b4bf7b377c085e4ed2a5b41b13adb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldDebugDrawer::newFrameImgui</definition>
+        <argsstring>()</argsstring>
+        <name>newFrameImgui</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="357" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2710">
+        <label>njli::WorldDebugDrawer</label>
+        <link refid="classnjli_1_1_world_debug_drawer"/>
+        <childnode refid="2711" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2712" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2711">
+        <label>dd::RenderInterface</label>
+      </node>
+      <node id="2712">
+        <label>btIDebugDraw</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2717">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2718" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2713">
+        <label>njli::WorldDebugDrawer</label>
+        <link refid="classnjli_1_1_world_debug_drawer"/>
+        <childnode refid="2714" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2715" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2716" relation="usage">
+          <edgelabel>m_Camera</edgelabel>
+        </childnode>
+      </node>
+      <node id="2719">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2719" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2714">
+        <label>dd::RenderInterface</label>
+      </node>
+      <node id="2718">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2719" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2716">
+        <label>njli::Camera</label>
+        <link refid="classnjli_1_1_camera"/>
+        <childnode refid="2717" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2715">
+        <label>btIDebugDraw</label>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" line="28" column="1" bodyfile="njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h" bodystart="27" bodyend="384"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_world_debug_drawer_1ae4c968319278e639f0372948fdf16729" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>aabb</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a247723d82e67043e246c9cf601e9a5e4" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>arrow</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a058930605d9a5adbf095701584dededf" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>beginDraw</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ac47f08694cdd1b36a2b0a89238ef9927" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>box</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1adec61e26c61222671eeaae5818750ee2" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>circle</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a48de01f1761e56a8511925468f6a802a" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>compileShader</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a3e6834506d31a8111699f184ef75c6ad" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>cone</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a33c8ba0bbcc08aefc27850aecbbfaeea" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>createGlyphTexture</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1afaf93a608f1cbda884f660ef626d7891" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>cross</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a7d7fc930e719f3fd0715c860df1cbca7" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>destroyGlyphTexture</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a52ac5a94b12639e5450f77690ab8f5bc" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>draw</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a76cbaf34350fd41f5fd929e97df5c9a3" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>draw3dText</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a5469fad4a1de098b62a2e9ecc3bcc291" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>drawContactPoint</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a902a5a10ef3b87d602cd87e2cd37c3e4" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>drawGlyphList</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a09b33cb0a07320fc6c10890abbf1e3b5" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>drawLine</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ab4547ab7ddab242ff2a402c691ce7c72" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>drawLineList</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1aa840ccc55092f26d9ed20ca1ceae1670" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>drawPointList</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ad0f3fbe3f3f062800792178a1b83318e" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>endDraw</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a08488c8e987f18b7186d5ca50650db99" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ace4ad17af606db8195712e15a42782b2" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>getDebugMode</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a151c4b9f151d90e03df92f412346e876" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1aac2655edc06413745b2ff3ff13572a2d" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>init</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1aed4000f5c9f1a4b5be0fdd6b48e9d68e" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>initImgui</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ab8577e1631222c8a64ba370b4e62daa6" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>line</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ada80b31b5782b0bf85943e0d5c075c0b" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>linePointProgram</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ab439977d5e3cfe2efc6f3b5445e0fd87" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>linePointProgram_MvpMatrixLocation</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a61e7e986d55c6348ba96b60406e6d3c1" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>linePointVAO</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a731ef5fbc59334c0bf3f0a0ee4ce88ee" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>linePointVBO</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a9f85884fc0612b81a189fa42b28c6707" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>linkProgram</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a5c7be82eaa6a728ef956351320198d3e" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>m_Camera</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a1531502ece9afabebbf772bcc25f2811" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>m_DebugMode</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1afa1b4bf7b377c085e4ed2a5b41b13adb" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>newFrameImgui</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ad8b4bbf6151d5f233dce54b012d9f395" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a7a947904ddfe6665fc69fc9d04017f23" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>plane</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a9de791d9497b36d0f19980cf301d05f6" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>point</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a6472cecf79ae2d4b76fcb5e363019fbd" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>processSdlEvent</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1acac1c29c7c13b5afb9553c38f304af47" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>projectedText</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a303d644236ffcfe2216a0ce445b0e74c" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>renderImgui</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a283f65c1bc27f601271909a35ffac38d" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>reportErrorWarning</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a014bce3199ffded2f0577eb3c9a8bf19" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>screenText</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a47497517ec5023b6ea53286eb6381510" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>setDebugMode</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a909649fb3b8e4eab5b8b76370b0e66d0" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>setupShaderPrograms</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ad67f8074167c127eb49596c6d2d813a4" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>setupVertexBuffers</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1af5b08f142be7d2061437d20bfdfb12a4" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>sphere</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a3e46b0af228eb9e8f112ad7e6d8007f0" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>tangentBasis</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a0d63f957bea4ad8e5306d680bb2ea8e8" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>textProgram</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a2b7b2612853759b92ad26de37ebe8dd1" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>textProgram_GlyphTextureLocation</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a8afce071c7a5a29b378bb807f1dbdf3f" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>textProgram_ScreenDimensions</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a8a7f7e44c3a3ba9a1bca6c2d660f3a9d" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>textVAO</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a1911a5f2cdd6f0b66480883d9880ba42" prot="private" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>textVBO</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1af34071bc860e89b151d779ee1c6acbbf" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>unInit</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a0c68d5133dbbebd5e9f7cf46d8e9e12f" prot="protected" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>unInitImgui</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a36d81cb34d46d4e853a44e3477dba202" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>vertexNormal</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1ab55308c80918b35de864ddf762be9415" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>WorldDebugDrawer</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a42fda06cd30581136e0e39f6682b71bd" prot="public" virt="non-virtual"><scope>njli::WorldDebugDrawer</scope><name>xzSquareGrid</name></member>
+      <member refid="classnjli_1_1_world_debug_drawer_1a741f540999f852b736db76368719e2cf" prot="public" virt="virtual"><scope>njli::WorldDebugDrawer</scope><name>~WorldDebugDrawer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

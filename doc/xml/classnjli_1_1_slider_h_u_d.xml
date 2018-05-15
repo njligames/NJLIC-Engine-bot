@@ -1,0 +1,980 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_slider_h_u_d" kind="class" language="C++" prot="public">
+    <compoundname>njli::SliderHUD</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <basecompoundref refid="classnjli_1_1_abstract_frame_buffer_object" prot="public" virt="non-virtual">njli::AbstractFrameBufferObject</basecompoundref>
+    <includes refid="_slider_h_u_d_8h" local="no">SliderHUD.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_slider_h_u_d_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="30" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a0b02cb21788a357fb319b8e788338196" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::SliderHUD::m_dimensions</definition>
+        <argsstring></argsstring>
+        <name>m_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="157" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a4345d7ad18c82bffdd598fa040dcf95f" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::SliderHUD::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="158" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a2f5beb25d041a338881130f604b76c48" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SliderHUD::m_knobPos</definition>
+        <argsstring></argsstring>
+        <name>m_knobPos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="159" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1adca46e42811634fb76694319deb9cce6" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SliderHUD::m_slotHeight</definition>
+        <argsstring></argsstring>
+        <name>m_slotHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="161" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="161" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a983798d2710f43d303b8b0d573cd041a" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SliderHUD::m_slotRadius</definition>
+        <argsstring></argsstring>
+        <name>m_slotRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="162" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1aec325cfe3424cc232b5fe653e2ca6868" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SliderHUD::m_slotFeather</definition>
+        <argsstring></argsstring>
+        <name>m_slotFeather</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="163" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a52343c794850b57c10fe8ae72a89f18e" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_gradientStartColor</definition>
+        <argsstring></argsstring>
+        <name>m_gradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="164" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a17b3288b1e99144187f62ad925e36a84" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_gradientEndColor</definition>
+        <argsstring></argsstring>
+        <name>m_gradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="165" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="165" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a72fffbbb906af2c53bcd4ae214720725" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_knobShadowGradientStartColor</definition>
+        <argsstring></argsstring>
+        <name>m_knobShadowGradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="167" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a8eb7e4813c2c5db6b4017c122fc51109" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_knobShadowGradientEndColor</definition>
+        <argsstring></argsstring>
+        <name>m_knobShadowGradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="168" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a72191d6f3cf8188a0a84f26058700430" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_knobGradientStartColor</definition>
+        <argsstring></argsstring>
+        <name>m_knobGradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="170" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1a63a84c5b27d77d69697e02540ea40c80" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_knobGradientEndColor</definition>
+        <argsstring></argsstring>
+        <name>m_knobGradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="171" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_slider_h_u_d_1aa2045a80a0751ba59755d073d44087dc" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::SliderHUD::m_knobColor</definition>
+        <argsstring></argsstring>
+        <name>m_knobColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="172" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a8cc2cb200f5a52bd7f4d5f1520a08524" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SliderHUD::SliderHUD</definition>
+        <argsstring>()</argsstring>
+        <name>SliderHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a2ea762c03a7585d4e5c6d2aa3a23692a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SliderHUD::SliderHUD</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>SliderHUD</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1adb10bba5954a63dc1b6c0a0c22b41899" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SliderHUD::SliderHUD</definition>
+        <argsstring>(const SliderHUD &amp;)</argsstring>
+        <name>SliderHUD</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a7804e6f55bef27c234667ab64595acca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SliderHUD::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a64da41c2529ad0863638117b9749fec4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::SliderHUD::~SliderHUD</definition>
+        <argsstring>()</argsstring>
+        <name>~SliderHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a67c6e29fd346f8e303dc477682f0dcf8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> &amp;</type>
+        <definition>SliderHUD&amp; njli::SliderHUD::operator=</definition>
+        <argsstring>(const SliderHUD &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1abb2dd1860a2ae905408275a8bdad484c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::SliderHUD::renderFunction</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>renderFunction</name>
+        <reimplements refid="classnjli_1_1_abstract_frame_buffer_object_1aa75a537f5745e4be8f749892d195b43c">renderFunction</reimplements>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1ac8b3369b0456c8fa0d8765975edc3ed0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::SliderHUD::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a40bc8a80246227afedf2b4cc15bb4a02" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::SliderHUD::serialize</definition>
+        <argsstring>(void *, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a3a5f2b2fcb08174a629f52986153a67e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::SliderHUD::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a6dd59463a9e8b9ea30244b096f8785cc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::SliderHUD::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a03d13dc9d560ea5e3034f812f2562ba1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::SliderHUD::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1af297ea719c95c5c078620135d8b715c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::SliderHUD::setValue</definition>
+        <argsstring>(f32 v)</argsstring>
+        <name>setValue</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a1fcb9ca9673e68d68845e450282d1434" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SliderHUD::getValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="153" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a3009efb11b4bcd56bd933c21b230a125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::AbstractFrameBufferObject::isHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>isHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a5d7b8b3bc421084f282343e506a6d289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractFrameBufferObject::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a73ffd499fceaacd59b518a541ed2133e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractFrameBufferObject::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a7c2239129d284b67553d0c6535eaed1b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> **</type>
+        <definition>static SliderHUD** njli::SliderHUD::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1ad2a2ea86c9748a6dbbaa9fb32860be0a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::SliderHUD::destroyArray</definition>
+        <argsstring>(SliderHUD **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a39e75f82c8e15b733dd034f94d33927c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> *</type>
+        <definition>static SliderHUD* njli::SliderHUD::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1ad82c56035c83ac61772fd56872575136" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> *</type>
+        <definition>static SliderHUD* njli::SliderHUD::create</definition>
+        <argsstring>(const SliderHUDBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_slider_h_u_d_builder" kindref="compound">SliderHUDBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a6a515652bfa2ef7926ea86b80e3f40f7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> *</type>
+        <definition>static SliderHUD* njli::SliderHUD::clone</definition>
+        <argsstring>(const SliderHUD &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a144602096b965e2b6e836e752d37e77d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> *</type>
+        <definition>static SliderHUD* njli::SliderHUD::copy</definition>
+        <argsstring>(const SliderHUD &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a0d32698c697432a157e24ac11337f35b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::SliderHUD::destroy</definition>
+        <argsstring>(SliderHUD *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1a4736d2eebe4afbebfddda76dfd14cce3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::SliderHUD::load</definition>
+        <argsstring>(SliderHUD &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_slider_h_u_d" kindref="compound">SliderHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="142" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_slider_h_u_d_1ad0d5a4c37308654054255e7f261364c7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::SliderHUD::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="148" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2019">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2020" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2021">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2022">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="2020">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2021" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2018">
+        <label>njli::SliderHUD</label>
+        <link refid="classnjli_1_1_slider_h_u_d"/>
+        <childnode refid="2019" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2022" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2024">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2025" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2026">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2026" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2027">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="2025">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2026" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2023">
+        <label>njli::SliderHUD</label>
+        <link refid="classnjli_1_1_slider_h_u_d"/>
+        <childnode refid="2024" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2027" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/SliderHUD.h" line="29" column="1" bodyfile="njligames-njlic_engine/njli/graphics/SliderHUD.h" bodystart="27" bodyend="173"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ac8d66ca8d605b2c45873fc4020c579ee" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a7804e6f55bef27c234667ab64595acca" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1ac8b3369b0456c8fa0d8765975edc3ed0" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a6a515652bfa2ef7926ea86b80e3f40f7" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SliderHUD</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a144602096b965e2b6e836e752d37e77d" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a39e75f82c8e15b733dd034f94d33927c" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1ad82c56035c83ac61772fd56872575136" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SliderHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a7c2239129d284b67553d0c6535eaed1b" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a0d32698c697432a157e24ac11337f35b" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SliderHUD</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1ad2a2ea86c9748a6dbbaa9fb32860be0a" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1aded6f9fc4da10af752cf90a97aaa751d" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getAspectRatio</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a3a5f2b2fcb08174a629f52986153a67e" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a95ae9779550ed7496011f859ec3d4766" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getHeight</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::SliderHUD</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SliderHUD</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SliderHUD</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ae5fdf18cef91c86d8e1cf97d4728d144" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getTextureID</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a6dd59463a9e8b9ea30244b096f8785cc" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a1fcb9ca9673e68d68845e450282d1434" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getValue</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1aa4ab66fbdcb04f1834d1dc05b4c7a10c" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>getWidth</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a5d7b8b3bc421084f282343e506a6d289" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a5d7b8b3bc421084f282343e506a6d289" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::SliderHUD</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a3009efb11b4bcd56bd933c21b230a125" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a3009efb11b4bcd56bd933c21b230a125" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::SliderHUD</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a166068d3dbc251ce28daf2564fdb2e99" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>isLoadedGPU</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a4736d2eebe4afbebfddda76dfd14cce3" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>load</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a9fa4ab667a74a7a23b18ae3418e56f7d" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a0b02cb21788a357fb319b8e788338196" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_dimensions</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a17b3288b1e99144187f62ad925e36a84" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_gradientEndColor</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a52343c794850b57c10fe8ae72a89f18e" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_gradientStartColor</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1aa2045a80a0751ba59755d073d44087dc" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_knobColor</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a63a84c5b27d77d69697e02540ea40c80" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_knobGradientEndColor</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a72191d6f3cf8188a0a84f26058700430" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_knobGradientStartColor</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a2f5beb25d041a338881130f604b76c48" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_knobPos</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a8eb7e4813c2c5db6b4017c122fc51109" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_knobShadowGradientEndColor</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a72fffbbb906af2c53bcd4ae214720725" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_knobShadowGradientStartColor</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a4345d7ad18c82bffdd598fa040dcf95f" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_position</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1aec325cfe3424cc232b5fe653e2ca6868" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_slotFeather</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1adca46e42811634fb76694319deb9cce6" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_slotHeight</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a983798d2710f43d303b8b0d573cd041a" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>m_slotRadius</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a03d13dc9d560ea5e3034f812f2562ba1" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a67c6e29fd346f8e303dc477682f0dcf8" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ababe9973dc3593e158adf12033f66b71" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>render</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1abb2dd1860a2ae905408275a8bdad484c" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>renderFunction</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a40bc8a80246227afedf2b4cc15bb4a02" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SliderHUD</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::SliderHUD</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1af297ea719c95c5c078620135d8b715c5" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>setValue</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a73ffd499fceaacd59b518a541ed2133e" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>show</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a73ffd499fceaacd59b518a541ed2133e" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::SliderHUD</scope><name>show</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a8cc2cb200f5a52bd7f4d5f1520a08524" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>SliderHUD</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a2ea762c03a7585d4e5c6d2aa3a23692a" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>SliderHUD</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1adb10bba5954a63dc1b6c0a0c22b41899" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>SliderHUD</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1ad0d5a4c37308654054255e7f261364c7" prot="public" virt="non-virtual"><scope>njli::SliderHUD</scope><name>type</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a66d234282238e25ef245d64d087be8d8" prot="protected" virt="non-virtual"><scope>njli::SliderHUD</scope><name>unLoadGPU</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::SliderHUD</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a7899eafef8e2f57953a5d1aa799085eb" prot="public" virt="virtual"><scope>njli::SliderHUD</scope><name>~AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_slider_h_u_d_1a64da41c2529ad0863638117b9749fec4" prot="protected" virt="virtual"><scope>njli::SliderHUD</scope><name>~SliderHUD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="windows_2_sound_platform_8h" kind="file" language="C++">
+    <compoundname>SoundPlatform.h</compoundname>
+    <includedby refid="_sound_8h" local="yes">njligames-njlic_engine/njli/sound/Sound.h</includedby>
+    <includedby refid="_world_sound_8h" local="yes">njligames-njlic_engine/njli/sound/WorldSound.h</includedby>
+    <invincdepgraph>
+      <node id="4801">
+        <label>njligames-njlic_engine/njli/platform/windows/SoundPlatform.h</label>
+        <link refid="windows_2_sound_platform_8h"/>
+        <childnode refid="4802" relation="include">
+        </childnode>
+        <childnode refid="4805" relation="include">
+        </childnode>
+      </node>
+      <node id="4804">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</label>
+        <link refid="_wrapper___r_a_w_8h"/>
+      </node>
+      <node id="4805">
+        <label>njligames-njlic_engine/njli/sound/WorldSound.h</label>
+        <link refid="_world_sound_8h"/>
+        <childnode refid="4806" relation="include">
+        </childnode>
+      </node>
+      <node id="4803">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="4806">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="4803" relation="include">
+        </childnode>
+      </node>
+      <node id="4802">
+        <label>njligames-njlic_engine/njli/sound/Sound.h</label>
+        <link refid="_sound_8h"/>
+        <childnode refid="4803" relation="include">
+        </childnode>
+        <childnode refid="4804" relation="include">
+        </childnode>
+        <childnode refid="4805" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#if<sp/>defined(__FMOD__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fmod.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fmod_errors.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__OPENAL__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;AL/al.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;AL/alc.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(__SDL__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL_audio.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>Unsupported<sp/>choice<sp/>setting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/platform/windows/SoundPlatform.h"/>
+  </compounddef>
+</doxygen>

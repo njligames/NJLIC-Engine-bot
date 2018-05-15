@@ -1,0 +1,633 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_abstract_transform">
+<title>njli::AbstractTransform class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_abstract_transform_8h">&lt;AbstractTransform.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::AbstractTransform</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_transform__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::AbstractTransform</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_transform__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btTransform * m_WorldTransform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btQuaternion * m_Orientation</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btTransform * m_Pivot</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_transform_1ae81766ce7baa95743ad256dfab13a086">AbstractTransform</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_transform_1a8ea40aa6d85fc58ddec0962568921ddc">AbstractTransform</link> (
+const <link linkend="classnjli_1_1_abstract_transform">AbstractTransform</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_transform_1a0e9a40091685470285419f35c6c91bcc">~AbstractTransform</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_abstract_transform">AbstractTransform</link> &amp; <link linkend="classnjli_1_1_abstract_transform_1a33740ec533c3328faff5d702bcd36a16">operator=</link> (
+const <link linkend="classnjli_1_1_abstract_transform">AbstractTransform</link> &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btTransform &amp; <link linkend="classnjli_1_1_abstract_transform_1a6341254e626b209df85d0b7e830c2894">getTransform</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1a87650e2ff117cde3128c9de164c84b2b">setTransform</link> (
+const btTransform &amp; transform)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual btVector3 &amp; <link linkend="classnjli_1_1_abstract_transform_1a8ed6d7cc1b5728f68a2455e918a8c6b5">getOrigin</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1a8dfc3a81836971418bb9c71004222c8f">setOrigin</link> (
+const btVector3 &amp; origin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1a82759647e299853f562331879818eaa7">setOrigin</link> (
+const btVector2 &amp; origin)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btQuaternion <link linkend="classnjli_1_1_abstract_transform_1ab998267bb4662fa0c3902b9a236f15fc">getRotation</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1a721ce04e176c7bdd5fea612ccbbd1e12">setRotation</link> (
+const btQuaternion &amp; rotation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btVector3 <link linkend="classnjli_1_1_abstract_transform_1a1a9cf70d9ae4b9405500be603e74b4e8">getEulerAngles</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1a758c5d11698115dac64ec6e4ba29c5bb">setEulerAngles</link> (
+const btVector3 &amp; angles)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btQuaternion &amp; <link linkend="classnjli_1_1_abstract_transform_1af23dedd0d33968d9f4066056d442d8ab">getOrientation</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1a8668e1e13020412115e65b7e50176262">setOrientation</link> (
+const btQuaternion &amp; orientation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btVector3 <link linkend="classnjli_1_1_abstract_transform_1a292f90f311e9af8e2bffc630b100ca2b">getScale</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1ab9059ed0b04b3e5af674ce2652ffda35">setScale</link> (
+const btVector3 &amp; scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1ab3fe736cb93cd9853a675131f34404ff">setScale</link> (
+const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btTransform &amp; <link linkend="classnjli_1_1_abstract_transform_1aec6866eb4cc32cc1f7aecae2f5a55422">getPivot</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_transform_1aa2adbe5fcda38419fa30b22a59f734b3">setPivot</link> (
+const btTransform &amp; pivot)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual btTransform <link linkend="classnjli_1_1_abstract_transform_1a25e1a5d3daf3c0c5839915f33e37e51a">getWorldTransform</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1ae81766ce7baa95743ad256dfab13a086">
+                <title>njli::AbstractTransform::AbstractTransform ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a8ea40aa6d85fc58ddec0962568921ddc">
+                <title>njli::AbstractTransform::AbstractTransform (const AbstractTransform &amp;copy)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a0e9a40091685470285419f35c6c91bcc">
+                <title>virtual njli::AbstractTransform::~AbstractTransform ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a33740ec533c3328faff5d702bcd36a16">
+                <title>AbstractTransform&amp; njli::AbstractTransform::operator= (const AbstractTransform &amp;rhs)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rhs</entry>
+                                <entry>
+<para>&lt;#rhs description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a6341254e626b209df85d0b7e830c2894">
+                <title>btTransform&amp; njli::AbstractTransform::getTransform () const</title> <emphasis></emphasis>
+                
+<para>The transformation is the combination of the node’s rotation, position, and scale properties. The default transformation is SCNMatrix4Identity.</para>
+
+<para>When you set the value of this property, the node’s rotation, orientation, eulerAngles, position, and scale properties automatically change to match the new transform, and vice versa. JLIEngine can perform this conversion only if the transform you provide is a combination of rotation, translation, and scale operations. If you set the value of this property to a skew transformation or to a nonaffine transformation, the values of these properties become undefined. Setting a new value for any of these properties causes JLIEngine to compute a new transformation, discarding any skew or nonaffine operations in the original transformation.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The Transform for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a87650e2ff117cde3128c9de164c84b2b">
+                <title>virtual void njli::AbstractTransform::setTransform (const btTransform &amp;transform)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transform</entry>
+                                <entry>
+<para>&lt;#transform description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a8ed6d7cc1b5728f68a2455e918a8c6b5">
+                <title>virtual btVector3&amp; njli::AbstractTransform::getOrigin () const</title> <emphasis></emphasis>
+                
+<para>The node’s position locates it within the coordinate system of its parent, as modified by the node’s pivot property. The default position is the zero vector, indicating that the node is placed at the origin of the parent node’s coordinate system.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The Origin for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a8dfc3a81836971418bb9c71004222c8f">
+                <title>virtual void njli::AbstractTransform::setOrigin (const btVector3 &amp;origin)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>&lt;#origin description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a82759647e299853f562331879818eaa7">
+                <title>virtual void njli::AbstractTransform::setOrigin (const btVector2 &amp;origin)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>&lt;#origin description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1ab998267bb4662fa0c3902b9a236f15fc">
+                <title>btQuaternion njli::AbstractTransform::getRotation () const</title> <emphasis></emphasis>
+                
+<para>The four-component rotation vector specifies the direction of the rotation axis in the first three components and the angle of rotation (in radians) in the fourth. The default rotation is the zero vector, specifying no rotation. Rotation is applied relative to the node’s pivot property.</para>
+
+<para>The rotation, eulerAngles, and orientation properties all affect the rotational aspect of its transform property. Any change to one of these properties is reflected in the others.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>the Rotation for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a721ce04e176c7bdd5fea612ccbbd1e12">
+                <title>virtual void njli::AbstractTransform::setRotation (const btQuaternion &amp;rotation)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rotation</entry>
+                                <entry>
+<para>&lt;#rotation description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a1a9cf70d9ae4b9405500be603e74b4e8">
+                <title>btVector3 njli::AbstractTransform::getEulerAngles () const</title> <emphasis></emphasis>
+                
+<para>Roll is the rotation about the node’s z-axis, yaw is the rotation about the node’s y-axis, and pitch is the rotation about the node’s x-axis. Rotation is applied relative to the node’s pivot property.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The Euler Angles for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a758c5d11698115dac64ec6e4ba29c5bb">
+                <title>virtual void njli::AbstractTransform::setEulerAngles (const btVector3 &amp;angles)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>angles</entry>
+                                <entry>
+<para>&lt;#angles description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1af23dedd0d33968d9f4066056d442d8ab">
+                <title>btQuaternion&amp; njli::AbstractTransform::getOrientation () const</title> <emphasis></emphasis>
+                
+<para>The rotation, eulerAngles, and orientation properties all affect the rotational aspect of its transform property. Any change to one of these properties is reflected in the others.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The Orientation for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a8668e1e13020412115e65b7e50176262">
+                <title>void njli::AbstractTransform::setOrientation (const btQuaternion &amp;orientation)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>orientation</entry>
+                                <entry>
+<para>&lt;#orientation description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a292f90f311e9af8e2bffc630b100ca2b">
+                <title>btVector3 njli::AbstractTransform::getScale () const</title> <emphasis></emphasis>
+                
+<para>Each component of the scale vector multiplies the corresponding dimension of the node’s geometry. The default scale is 1.0 in all three dimensions. For example, applying a scale of (2.0, 0.5, 2.0) to a node containing a cube geometry reduces its height and increases its width and depth. Scaling is applied relative to the node’s pivot property.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The scale for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1ab9059ed0b04b3e5af674ce2652ffda35">
+                <title>virtual void njli::AbstractTransform::setScale (const btVector3 &amp;scale)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>scale</entry>
+                                <entry>
+<para>&lt;#scale description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1ab3fe736cb93cd9853a675131f34404ff">
+                <title>virtual void njli::AbstractTransform::setScale (const f32 scale)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>scale</entry>
+                                <entry>
+<para>&lt;#scale description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1aec6866eb4cc32cc1f7aecae2f5a55422">
+                <title>btTransform&amp; njli::AbstractTransform::getPivot () const</title> <emphasis></emphasis>
+                
+<para>A node’s pivot is the transformation between its coordinate space and that used by its position, rotation, and scale properties. The default pivot is SCNMatrix4Identity, specifying that the node’s position locates the origin of its coordinate system, its rotation is about an axis through its center, and its scale is also relative to that center point.</para>
+
+<para>Changing the pivot transform alters these behaviors in many useful ways. You can:</para>
+
+<para>Offset the node’s contents relative to its position. For example, by setting the pivot to a translation transform you can position a node containing a sphere geometry relative to where the sphere would rest on a floor instead of relative to its center.</para>
+
+<para>Move the node’s axis of rotation. For example, with a translation transform you can cause a node to revolve around a faraway point instead of rotating around its center, and with a rotation transform you can tilt the axis of rotation.</para>
+
+<para>Adjust the center point and direction for scaling the node. For example, with a translation transform you can cause a node to grow or shrink relative to a corner instead of to its center.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The Pivot for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1aa2adbe5fcda38419fa30b22a59f734b3">
+                <title>virtual void njli::AbstractTransform::setPivot (const btTransform &amp;pivot)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pivot</entry>
+                                <entry>
+<para>&lt;#pivot description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_transform_1a25e1a5d3daf3c0c5839915f33e37e51a">
+                <title>virtual btTransform njli::AbstractTransform::getWorldTransform () const =0</title> <emphasis></emphasis>
+                
+<para>A world transform is the node’s coordinate space transformation relative to the scene’s coordinate space. This transformation is the concatenation of the node’s transform property with that of its parent node, the parent’s parent, and so on up to the rootNode object of the scene.</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>The <link linkend="classnjli_1_1_world">World</link> Transform for this instance. </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

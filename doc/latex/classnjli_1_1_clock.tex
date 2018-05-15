@@ -1,0 +1,517 @@
+\hypertarget{classnjli_1_1_clock}{}\section{njli\+:\+:Clock Class Reference}
+\label{classnjli_1_1_clock}\index{njli\+::\+Clock@{njli\+::\+Clock}}
+
+
+{\ttfamily \#include $<$Clock.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Clock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classnjli_1_1_clock__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Clock\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{classnjli_1_1_clock__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_clock_a23843e93992d802b41cab9c2af6d8b93}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_a8c6f081b125f65ae45ee0bfd7ef85138}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_a54952cf183ca49429004733aad6b3fd1}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_clock_a403ec7bf5455930215121622d0324fb4}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_clock_a389d95316793c9fc113b625d92040d53}{operator std\+::string}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_aacf123c98c4ff46f5716b488423de72b}{update}} (\mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} milliseconds)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_ad318ac6f8c34fa8796dfe6156cbb1824}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Resets the initial reference time. \end{DoxyCompactList}\item 
+unsigned long int \mbox{\hyperlink{classnjli_1_1_clock_af5585917dc19bff0dd795e7a86bb0bef}{get\+Time\+Milliseconds}} ()
+\item 
+unsigned long int \mbox{\hyperlink{classnjli_1_1_clock_ac1debc5f875f6011e082d93037127870}{get\+Time\+Microseconds}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_a087eb5f8d9f51cc476f12f1d10a3cb95}{set\+Name}} (const char $\ast$name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_ad41266885be835f3ee602311e20877a4}{get\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_a83a8876ae63b92804004cf3febe76573}{create}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&builder) const
+\item 
+const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_ac4ca71716ed832be357f15f8262c8448}{get\+Pointer}} () const
+\item 
+\mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} \mbox{\hyperlink{classnjli_1_1_clock_a4ffddf141a426a5a07d0ac19f1913811}{get\+Pointer\+Value}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_a4fc4bcd9d1930911474210c047372fc0}{serialize\+Object}} (class bt\+Serializer $\ast$serializer) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_clock_a0cb02d4753cddc5aa00236c2f37f66f3}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_a4d8b6dbf9cf4eae3be8bca7ac498ad2b}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_a15b98bdfd4c744f0f3de68cacec783ab}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_a3cab98e8e835a0a113b8211846356c76}{create}} (const \mbox{\hyperlink{classnjli_1_1_clock_builder}{Clock\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_af5238b0b80730c0b42194fe8c5b3cc07}{clone}} (const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_a6b20a66ca32c33acce1edebaf5ac0420}{copy}} (const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_a4147bdb4d31e3402ba76ccd9652c50e0}{destroy}} (\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_clock_a8581e8a61763f24e24929a4806387cdb}{load}} (\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_clock_afa83aa79eb78706cf661e973a1258c2f}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_clock_a46fe51eb140fd7a3e6a011d511a7263f}{Clock}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_clock_a7e5e8e455e01fc4deb3174770a9a3532}{Clock}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_clock_a25793091ce80c61997437fb69efedb50}{Clock}} (const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_clock_a8223b146693fd33eaeeb13ff476dd2de}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_clock_aeefd3c72d70056958b87e689b3372744}{$\sim$\+Clock}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \& \mbox{\hyperlink{classnjli_1_1_clock_a5b62f508f07e979fe392a8fd099819fd}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Clock $\ast$ \mbox{\hyperlink{classnjli_1_1_clock_ab107f00a19c387d5b34d4a2fb92d8370}{m\+\_\+bt\+Clock}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_clock_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_clock_a7b4bcdf992c21ae83363f25df05b1d25}{World}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 24 of file Clock.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_clock_a46fe51eb140fd7a3e6a011d511a7263f}\label{classnjli_1_1_clock_a46fe51eb140fd7a3e6a011d511a7263f}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a7e5e8e455e01fc4deb3174770a9a3532}\label{classnjli_1_1_clock_a7e5e8e455e01fc4deb3174770a9a3532}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a25793091ce80c61997437fb69efedb50}\label{classnjli_1_1_clock_a25793091ce80c61997437fb69efedb50}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!Clock@{Clock}}
+\index{Clock@{Clock}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{Clock()}{Clock()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Clock\+::\+Clock (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_clock_aeefd3c72d70056958b87e689b3372744}\label{classnjli_1_1_clock_aeefd3c72d70056958b87e689b3372744}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!````~Clock@{$\sim$\+Clock}}
+\index{````~Clock@{$\sim$\+Clock}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{$\sim$\+Clock()}{~Clock()}}
+{\footnotesize\ttfamily virtual njli\+::\+Clock\+::$\sim$\+Clock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_clock_a8223b146693fd33eaeeb13ff476dd2de}\label{classnjli_1_1_clock_a8223b146693fd33eaeeb13ff476dd2de}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Clock\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a23843e93992d802b41cab9c2af6d8b93}\label{classnjli_1_1_clock_a23843e93992d802b41cab9c2af6d8b93}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Clock\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_clock_af5238b0b80730c0b42194fe8c5b3cc07}\label{classnjli_1_1_clock_af5238b0b80730c0b42194fe8c5b3cc07}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}}$\ast$ njli\+::\+Clock\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_a6b20a66ca32c33acce1edebaf5ac0420}\label{classnjli_1_1_clock_a6b20a66ca32c33acce1edebaf5ac0420}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}}$\ast$ njli\+::\+Clock\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_a83a8876ae63b92804004cf3febe76573}\label{classnjli_1_1_clock_a83a8876ae63b92804004cf3febe76573}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!create@{create}}
+\index{create@{create}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::create}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_a15b98bdfd4c744f0f3de68cacec783ab}\label{classnjli_1_1_clock_a15b98bdfd4c744f0f3de68cacec783ab}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!create@{create}}
+\index{create@{create}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}}$\ast$ njli\+::\+Clock\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_a3cab98e8e835a0a113b8211846356c76}\label{classnjli_1_1_clock_a3cab98e8e835a0a113b8211846356c76}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!create@{create}}
+\index{create@{create}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}}$\ast$ njli\+::\+Clock\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_clock_builder}{Clock\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_a0cb02d4753cddc5aa00236c2f37f66f3}\label{classnjli_1_1_clock_a0cb02d4753cddc5aa00236c2f37f66f3}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_clock}{Clock}}$\ast$$\ast$ njli\+::\+Clock\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_a4147bdb4d31e3402ba76ccd9652c50e0}\label{classnjli_1_1_clock_a4147bdb4d31e3402ba76ccd9652c50e0}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Clock\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_clock_a4d8b6dbf9cf4eae3be8bca7ac498ad2b}\label{classnjli_1_1_clock_a4d8b6dbf9cf4eae3be8bca7ac498ad2b}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Clock\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_clock_a54952cf183ca49429004733aad6b3fd1}\label{classnjli_1_1_clock_a54952cf183ca49429004733aad6b3fd1}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Clock\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_clock_ad41266885be835f3ee602311e20877a4}\label{classnjli_1_1_clock_ad41266885be835f3ee602311e20877a4}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Abstract\+Decorator\+::get\+Name}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_ac4ca71716ed832be357f15f8262c8448}\label{classnjli_1_1_clock_ac4ca71716ed832be357f15f8262c8448}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Pointer()}{getPointer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_clock_a4ffddf141a426a5a07d0ac19f1913811}\label{classnjli_1_1_clock_a4ffddf141a426a5a07d0ac19f1913811}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Pointer\+Value()}{getPointerValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer\+Value}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_ac1debc5f875f6011e082d93037127870}\label{classnjli_1_1_clock_ac1debc5f875f6011e082d93037127870}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Time\+Microseconds@{get\+Time\+Microseconds}}
+\index{get\+Time\+Microseconds@{get\+Time\+Microseconds}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Time\+Microseconds()}{getTimeMicroseconds()}}
+{\footnotesize\ttfamily unsigned long int njli\+::\+Clock\+::get\+Time\+Microseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the time in us since the last call to reset or since the \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} was created. \mbox{\Hypertarget{classnjli_1_1_clock_af5585917dc19bff0dd795e7a86bb0bef}\label{classnjli_1_1_clock_af5585917dc19bff0dd795e7a86bb0bef}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Time\+Milliseconds@{get\+Time\+Milliseconds}}
+\index{get\+Time\+Milliseconds@{get\+Time\+Milliseconds}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Time\+Milliseconds()}{getTimeMilliseconds()}}
+{\footnotesize\ttfamily unsigned long int njli\+::\+Clock\+::get\+Time\+Milliseconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns the time in ms since the last call to reset or since the bt\+Clock was created. \mbox{\Hypertarget{classnjli_1_1_clock_a403ec7bf5455930215121622d0324fb4}\label{classnjli_1_1_clock_a403ec7bf5455930215121622d0324fb4}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Clock\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a8581e8a61763f24e24929a4806387cdb}\label{classnjli_1_1_clock_a8581e8a61763f24e24929a4806387cdb}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!load@{load}}
+\index{load@{load}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Clock\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_clock_a389d95316793c9fc113b625d92040d53}\label{classnjli_1_1_clock_a389d95316793c9fc113b625d92040d53}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Clock\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a5b62f508f07e979fe392a8fd099819fd}\label{classnjli_1_1_clock_a5b62f508f07e979fe392a8fd099819fd}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_clock}{Clock}}\& njli\+::\+Clock\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_clock}{Clock}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_clock_ad318ac6f8c34fa8796dfe6156cbb1824}\label{classnjli_1_1_clock_ad318ac6f8c34fa8796dfe6156cbb1824}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!reset@{reset}}
+\index{reset@{reset}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Clock\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Resets the initial reference time. 
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a8c6f081b125f65ae45ee0bfd7ef85138}\label{classnjli_1_1_clock_a8c6f081b125f65ae45ee0bfd7ef85138}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Clock\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:44
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_clock_a4fc4bcd9d1930911474210c047372fc0}\label{classnjli_1_1_clock_a4fc4bcd9d1930911474210c047372fc0}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{serialize\+Object()}{serializeObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Factory\+Object\+::serialize\+Object}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & $<$\#serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_clock_a087eb5f8d9f51cc476f12f1d10a3cb95}\label{classnjli_1_1_clock_a087eb5f8d9f51cc476f12f1d10a3cb95}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Decorator\+::set\+Name}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & $<$\#name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_clock_afa83aa79eb78706cf661e973a1258c2f}\label{classnjli_1_1_clock_afa83aa79eb78706cf661e973a1258c2f}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!type@{type}}
+\index{type@{type}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Clock\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_clock_aacf123c98c4ff46f5716b488423de72b}\label{classnjli_1_1_clock_aacf123c98c4ff46f5716b488423de72b}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!update@{update}}
+\index{update@{update}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Clock\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}}}]{milliseconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em milliseconds} & $<$\#milliseconds description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_clock_a06401048780f7b9522187731d3a97579}{njli\+::\+Abstract\+Clock}}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_clock_a7b4bcdf992c21ae83363f25df05b1d25}\label{classnjli_1_1_clock_a7b4bcdf992c21ae83363f25df05b1d25}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!World@{World}}
+\index{World@{World}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{World}{World}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world}{World}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 28 of file Clock.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_clock_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_clock_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 27 of file Clock.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_clock_ab107f00a19c387d5b34d4a2fb92d8370}\label{classnjli_1_1_clock_ab107f00a19c387d5b34d4a2fb92d8370}} 
+\index{njli\+::\+Clock@{njli\+::\+Clock}!m\+\_\+bt\+Clock@{m\+\_\+bt\+Clock}}
+\index{m\+\_\+bt\+Clock@{m\+\_\+bt\+Clock}!njli\+::\+Clock@{njli\+::\+Clock}}
+\subsubsection{\texorpdfstring{m\+\_\+bt\+Clock}{m\_btClock}}
+{\footnotesize\ttfamily bt\+Clock$\ast$ njli\+::\+Clock\+::m\+\_\+bt\+Clock\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 165 of file Clock.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/\mbox{\hyperlink{_clock_8h}{Clock.\+h}}\end{DoxyCompactItemize}

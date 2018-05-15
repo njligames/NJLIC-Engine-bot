@@ -1,0 +1,752 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classeasylogger_1_1_logger" kind="class" language="C++" prot="public">
+    <compoundname>easylogger::Logger</compoundname>
+    <includes refid="easylogger_8h" local="no">easylogger.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd" prot="private" static="no">
+        <type>::std::map&lt; std::string, ::std::ostream * &gt;</type>
+        <definition>typedef ::std::map&lt;std::string, ::std::ostream*&gt; easylogger::Logger::StreamMap</definition>
+        <argsstring></argsstring>
+        <name>StreamMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="344" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95" prot="private" static="no">
+        <type>::std::pair&lt; std::string, std::ostream * &gt;</type>
+        <definition>typedef ::std::pair&lt;std::string, std::ostream*&gt; easylogger::Logger::StreamPair</definition>
+        <argsstring></argsstring>
+        <name>StreamPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="345" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" prot="private" static="no" mutable="no">
+        <type>::std::string</type>
+        <definition>::std::string easylogger::Logger::_name</definition>
+        <argsstring></argsstring>
+        <name>_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="338" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" prot="private" static="no" mutable="no">
+        <type><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> *</type>
+        <definition>Logger* easylogger::Logger::_parent</definition>
+        <argsstring></argsstring>
+        <name>_parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="340" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="340" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel easylogger::Logger::_level</definition>
+        <argsstring></argsstring>
+        <name>_level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="342" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" prot="private" static="no" mutable="no">
+        <type><ref refid="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd" kindref="member">StreamMap</ref></type>
+        <definition>StreamMap easylogger::Logger::_streamMap</definition>
+        <argsstring></argsstring>
+        <name>_streamMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="347" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" prot="private" static="no" mutable="no">
+        <type>::std::string</type>
+        <definition>::std::string easylogger::Logger::_format</definition>
+        <argsstring></argsstring>
+        <name>_format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="349" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" prot="private" static="no" mutable="no">
+        <type>::std::string</type>
+        <definition>::std::string easylogger::Logger::_timeFormat</definition>
+        <argsstring></argsstring>
+        <name>_timeFormat</name>
+        <initializer>=&quot;%c&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="351" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classeasylogger_1_1_logger_1a27353f6b5bf33ecd1b185b743973fb72" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class _private::LogSink</definition>
+        <argsstring></argsstring>
+        <name>_private::LogSink</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="353" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a8c5b5637694907e900012d300bf23033" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>easylogger::Logger::Logger</definition>
+        <argsstring>()</argsstring>
+        <name>Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a9338a86dffe3f96185b22a179eb96ce4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>easylogger::Logger::Logger</definition>
+        <argsstring>(const Logger &amp;rhs)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>const <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string easylogger::Logger::Now</definition>
+        <argsstring>(const char *format=&quot;%c&quot;)</argsstring>
+        <name>Now</name>
+        <param>
+          <type>const char *</type>
+          <declname>format</declname>
+          <defval>&quot;%c&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="226" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="226" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void easylogger::Logger::WriteLog</definition>
+        <argsstring>(LogLevel level, Logger *logger, const char *file, unsigned int line, const char *func, const char *message)</argsstring>
+        <name>WriteLog</name>
+        <param>
+          <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write log to stream</para><para>Does the actual work of writing log message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level of log message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> target of message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of file at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line of file at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of function at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log message. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="244" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="244" bodyend="256"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a2d09f2ce77a5eb571fb3436967651a12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void easylogger::Logger::WriteLog</definition>
+        <argsstring>(LogLevel level, Logger *logger, const char *file, unsigned int line, const char *func, const char *message, ::std::ostream *stream)</argsstring>
+        <name>WriteLog</name>
+        <param>
+          <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> *</type>
+          <declname>logger</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>::std::ostream *</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write log to stream</para><para>Does the actual work of writing log message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level of log message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>logger</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Original <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> target of message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of file at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line of file at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of function at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>message</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The log message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stream</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stream to write to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="269" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="269" bodyend="334"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a2cb8c991ae2c651f18d3c4d7ded9b3e9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>easylogger::Logger::Logger</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref></para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of logger used in log messages. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="102" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="102" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1ad0895803e8ba35e55acd32b3a1572526" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>easylogger::Logger::Logger</definition>
+        <argsstring>(const std::string &amp;name, Logger &amp;parent)</argsstring>
+        <name>Logger</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> &amp;</type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct a new <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> with a parent</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of logger used in log messages. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Parent <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> all messages are forwarded to. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="115" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="115" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a2e3ab6ee87be3ac9b44857972dcd411f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>easylogger::Logger::~Logger</definition>
+        <argsstring>()</argsstring>
+        <name>~Logger</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="124" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="124" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ::std::string &amp;</type>
+        <definition>const ::std::string&amp; easylogger::Logger::Name</definition>
+        <argsstring>() const</argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the name of the <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref></para><para><simplesect kind="return"><para><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>&apos;s name </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="129" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="129" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a350e161f9afb8a6dd764b297aa0baf93" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel easylogger::Logger::Level</definition>
+        <argsstring>() const</argsstring>
+        <name>Level</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the minimum log level of the <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref></para><para><simplesect kind="return"><para>Minimum log level </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="134" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="134" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a66ab7ca8dbdfcdeda3395bc39efc8c1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+        <definition>LogLevel easylogger::Logger::Level</definition>
+        <argsstring>(LogLevel level)</argsstring>
+        <name>Level</name>
+        <param>
+          <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the minimum log level of the <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref></para><para><simplesect kind="return"><para>New minimum log level </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="139" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="139" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a51a95dca60052b6d2f16bb0f0da7fe45" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool easylogger::Logger::IsLevel</definition>
+        <argsstring>(LogLevel level) const</argsstring>
+        <name>IsLevel</name>
+        <param>
+          <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Checks if this <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> or any ancestor accepts a given log level</para><para>Each <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> will only log messages of a particular level or higher. This method will check if this <ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> instance or any of its parents are willing to log a message of a given log level.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Log level to check for. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if any ancestor will accept log level </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="152" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1abbf5fd5ac40a75ed8303e520d99c9b81" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">_private::LogSink</ref></type>
+        <definition>_private::LogSink easylogger::Logger::Log</definition>
+        <argsstring>(LogLevel level, const char *file, unsigned int line, const char *func)</argsstring>
+        <name>Log</name>
+        <param>
+          <type><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>line</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a new log sink</para><para>Does the actual work of writing log message.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Level of log message. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of file at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>line</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Line of file at point of log. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Name of function at point of log. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="164" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool easylogger::Logger::AddStream</definition>
+        <argsstring>(const ::std::string &amp;name, ::std::ostream &amp;stream)</argsstring>
+        <name>AddStream</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>::std::ostream &amp;</type>
+          <declname>stream</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="169" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="169" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a5fbcc23c2e8defc0862d48844703cdd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool easylogger::Logger::RemoveStream</definition>
+        <argsstring>(const ::std::string &amp;name)</argsstring>
+        <name>RemoveStream</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="174" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>::std::ostream *</type>
+        <definition>::std::ostream* easylogger::Logger::GetStream</definition>
+        <argsstring>(const std::string &amp;name)</argsstring>
+        <name>GetStream</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="179" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="179" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a5289aa36c7ae745fa960af5b59a6ed54" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ::std::string &amp;</type>
+        <definition>const ::std::string&amp; easylogger::Logger::Format</definition>
+        <argsstring>() const</argsstring>
+        <name>Format</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log format string</para><para><simplesect kind="return"><para>Log format string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="192" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1ae4f6966ba512d06584b83118909a2f73" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ::std::string &amp;</type>
+        <definition>const ::std::string&amp; easylogger::Logger::TimeFormat</definition>
+        <argsstring>() const</argsstring>
+        <name>TimeFormat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the log time format string</para><para><simplesect kind="return"><para>Log time format string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="197" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1ab9395d1199d0ef5539f14552834d42a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ::std::string &amp;</type>
+        <definition>const ::std::string&amp; easylogger::Logger::Format</definition>
+        <argsstring>(const ::std::string &amp;format)</argsstring>
+        <name>Format</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the log format string</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New log format string. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Log format string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="203" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="203" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1a0b0ff3f703f2e6c04e86e8877d5a906c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>const ::std::string &amp;</type>
+        <definition>const ::std::string&amp; easylogger::Logger::TimeFormat</definition>
+        <argsstring>(const ::std::string &amp;format)</argsstring>
+        <name>TimeFormat</name>
+        <param>
+          <type>const ::std::string &amp;</type>
+          <declname>format</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the log format string</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>format</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>New log time format string. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Log time format string. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="211" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="211" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void easylogger::Logger::Flush</definition>
+        <argsstring>()</argsstring>
+        <name>Flush</name>
+        <briefdescription>
+<para>Flushes underlying output stream. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="216" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="216" bodyend="222"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref> system core class. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1058">
+        <label>easylogger::Logger</label>
+        <link refid="classeasylogger_1_1_logger"/>
+        <childnode refid="1058" relation="usage">
+          <edgelabel>_parent</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="94" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="94" bodyend="354"/>
+    <listofallmembers>
+      <member refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>_format</name></member>
+      <member refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>_level</name></member>
+      <member refid="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>_name</name></member>
+      <member refid="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>_parent</name></member>
+      <member refid="classeasylogger_1_1_logger_1a27353f6b5bf33ecd1b185b743973fb72" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>_private::LogSink</name></member>
+      <member refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>_streamMap</name></member>
+      <member refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>_timeFormat</name></member>
+      <member refid="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>AddStream</name></member>
+      <member refid="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Flush</name></member>
+      <member refid="classeasylogger_1_1_logger_1a5289aa36c7ae745fa960af5b59a6ed54" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Format</name></member>
+      <member refid="classeasylogger_1_1_logger_1ab9395d1199d0ef5539f14552834d42a7" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Format</name></member>
+      <member refid="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>GetStream</name></member>
+      <member refid="classeasylogger_1_1_logger_1a51a95dca60052b6d2f16bb0f0da7fe45" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>IsLevel</name></member>
+      <member refid="classeasylogger_1_1_logger_1a350e161f9afb8a6dd764b297aa0baf93" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Level</name></member>
+      <member refid="classeasylogger_1_1_logger_1a66ab7ca8dbdfcdeda3395bc39efc8c1c" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Level</name></member>
+      <member refid="classeasylogger_1_1_logger_1abbf5fd5ac40a75ed8303e520d99c9b81" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Log</name></member>
+      <member refid="classeasylogger_1_1_logger_1a8c5b5637694907e900012d300bf23033" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>Logger</name></member>
+      <member refid="classeasylogger_1_1_logger_1a9338a86dffe3f96185b22a179eb96ce4" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>Logger</name></member>
+      <member refid="classeasylogger_1_1_logger_1a2cb8c991ae2c651f18d3c4d7ded9b3e9" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Logger</name></member>
+      <member refid="classeasylogger_1_1_logger_1ad0895803e8ba35e55acd32b3a1572526" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Logger</name></member>
+      <member refid="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>Name</name></member>
+      <member refid="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>Now</name></member>
+      <member refid="classeasylogger_1_1_logger_1a5fbcc23c2e8defc0862d48844703cdd2" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>RemoveStream</name></member>
+      <member refid="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>StreamMap</name></member>
+      <member refid="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>StreamPair</name></member>
+      <member refid="classeasylogger_1_1_logger_1ae4f6966ba512d06584b83118909a2f73" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>TimeFormat</name></member>
+      <member refid="classeasylogger_1_1_logger_1a0b0ff3f703f2e6c04e86e8877d5a906c" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>TimeFormat</name></member>
+      <member refid="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>WriteLog</name></member>
+      <member refid="classeasylogger_1_1_logger_1a2d09f2ce77a5eb571fb3436967651a12" prot="private" virt="non-virtual"><scope>easylogger::Logger</scope><name>WriteLog</name></member>
+      <member refid="classeasylogger_1_1_logger_1a2e3ab6ee87be3ac9b44857972dcd411f" prot="public" virt="non-virtual"><scope>easylogger::Logger</scope><name>~Logger</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

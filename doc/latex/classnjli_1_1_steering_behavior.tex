@@ -1,0 +1,823 @@
+\hypertarget{classnjli_1_1_steering_behavior}{}\section{njli\+:\+:Steering\+Behavior Class Reference}
+\label{classnjli_1_1_steering_behavior}\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+
+
+{\ttfamily \#include $<$Steering\+Behavior.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Steering\+Behavior\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnjli_1_1_steering_behavior__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Steering\+Behavior\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_steering_behavior__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_abbc461d853c1b225cfde5b79d96d11bd}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_aa8494cb4a327c0040f64cfe8b393786e}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_abb58d6982dc295fc3e90f096f51b0ef8}{get\+Class\+Name}} () const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_ae82bca8468d41aff8c22b76fd359fe9b}{get\+Type}} () const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_acd7af46e42a8a3fc1208a47f50836ac8}{operator std\+::string}} () const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_a9720953de1268f658636213946d76ed3}{calculate\+Force}} ()=0
+\item 
+const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_a4e79ade4c061f79de526f05a529317d0}{get\+Current\+Force}} () const
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_aa197011275830165605ced9e47250b72}{add\+Target}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$emitter)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classnjli_1_1_steering_behavior_a54b6a2a46d2918d0941475f0e75d84ab}{remove\+Target}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$target)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_a607058ee31eae853823c0ecd1cf5b81d}{remove\+All\+Targets}} ()
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_a068ffa3f1d80389b134c22955695f800}{number\+Of\+Targets}} () const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_acfac4925fbaa4c6e9a76efea3b015fa7}{get\+Targets}} (std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$$>$ \&targets) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_aa8e882405b1cbeb62abeb154084dfccf}{get\+Target\+Index}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$object) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_a693361a80cba3b7beb75a2dcf0bd63dd}{get\+Target}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} index)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_a7c2cdca1ff34e7b4882847bd2ba6b222}{get\+Target}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} index) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_ac77f8ca5cacd612bc9de8e84c498df8d}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_aa24a3dcd73261a34b1bbb80804a97425}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_a41c2781070017d2faf5cd5bdabb36d09}{create}} ()
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_af58fefc1f70b9399aa6369fb19c1e0b6}{create}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior_builder}{Steering\+Behavior\+Builder}} \&builder)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_a4b924a53f5289df64d24b88340601394}{clone}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&object)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_a7a24f6e560057d1609da98ac353561b6}{copy}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&object)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_ad1867854ab502ef50adba56ea4da1d84}{destroy}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$object)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_a1d492f79b5486b45cf52b4c0e25a9f97}{load}} (\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_a3c8ce7cce8fa14d182d917d3ee4d9b13}{type}} ()
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ $>$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_ab7a7224d97d2e392e5ae75108a6c160a}{Target\+Vector}}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_a643a4f5e0c276d94fb5e7d130b0ef446}{Steering\+Behavior}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_a702de6537bd43b15bd2e4c41a6ad3552}{Steering\+Behavior}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_a52a459d7e95c05ad3dc04f7bc08bb99c}{Steering\+Behavior}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_adae316d4515e5cd6c4219d09717e2cc9}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_steering_behavior_adf0866d38fe7dd3aaf8048b80911a93d}{$\sim$\+Steering\+Behavior}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \& \mbox{\hyperlink{classnjli_1_1_steering_behavior_a4b99b614e4f9ed862949fe0bbe4a374b}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_aac8d25429493fe07310052e7c0b07dda}{get\+Parent}} ()
+\item 
+const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}} $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_ad9fc58487698c22d3b07c864863044d8}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_ad99f0f1056a0a980456e107bb3305fab}{set\+Current\+Force}} (const bt\+Vector3 \&force)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_steering_behavior_ac31b1718aa4edc52cb1598671c2ce9ba}{has\+Owner}} () const
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_steering_behavior_ae271bdd9879d6160e187c53ac9548099}{get\+Owner\+Position}} () const
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_steering_behavior_a7db08fdeb6eb0f065262f5ee0b1e26d1}{get\+Average\+Target\+Position}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_steering_behavior_ab7a7224d97d2e392e5ae75108a6c160a}{Target\+Vector}} \mbox{\hyperlink{classnjli_1_1_steering_behavior_a48a4deef579ab968bdd4ecf0ba0c8668}{m\+\_\+\+Target\+List}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Vector3 $\ast$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_a9148bc145f9bc1943d6c40fe263fcb29}{m\+\_\+\+Current\+Force}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_steering_behavior_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 29 of file Steering\+Behavior.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_ab7a7224d97d2e392e5ae75108a6c160a}\label{classnjli_1_1_steering_behavior_ab7a7224d97d2e392e5ae75108a6c160a}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!Target\+Vector@{Target\+Vector}}
+\index{Target\+Vector@{Target\+Vector}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{Target\+Vector}{TargetVector}}
+{\footnotesize\ttfamily typedef std\+::vector$<$\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$$>$ \mbox{\hyperlink{classnjli_1_1_steering_behavior_ab7a7224d97d2e392e5ae75108a6c160a}{njli\+::\+Steering\+Behavior\+::\+Target\+Vector}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 363 of file Steering\+Behavior.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a643a4f5e0c276d94fb5e7d130b0ef446}\label{classnjli_1_1_steering_behavior_a643a4f5e0c276d94fb5e7d130b0ef446}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!Steering\+Behavior@{Steering\+Behavior}}
+\index{Steering\+Behavior@{Steering\+Behavior}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{Steering\+Behavior()}{SteeringBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+::\+Steering\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a702de6537bd43b15bd2e4c41a6ad3552}\label{classnjli_1_1_steering_behavior_a702de6537bd43b15bd2e4c41a6ad3552}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!Steering\+Behavior@{Steering\+Behavior}}
+\index{Steering\+Behavior@{Steering\+Behavior}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{Steering\+Behavior()}{SteeringBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+::\+Steering\+Behavior (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a52a459d7e95c05ad3dc04f7bc08bb99c}\label{classnjli_1_1_steering_behavior_a52a459d7e95c05ad3dc04f7bc08bb99c}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!Steering\+Behavior@{Steering\+Behavior}}
+\index{Steering\+Behavior@{Steering\+Behavior}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{Steering\+Behavior()}{SteeringBehavior()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+::\+Steering\+Behavior (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_adf0866d38fe7dd3aaf8048b80911a93d}\label{classnjli_1_1_steering_behavior_adf0866d38fe7dd3aaf8048b80911a93d}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!````~Steering\+Behavior@{$\sim$\+Steering\+Behavior}}
+\index{````~Steering\+Behavior@{$\sim$\+Steering\+Behavior}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{$\sim$\+Steering\+Behavior()}{~SteeringBehavior()}}
+{\footnotesize\ttfamily virtual njli\+::\+Steering\+Behavior\+::$\sim$\+Steering\+Behavior (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_aa197011275830165605ced9e47250b72}\label{classnjli_1_1_steering_behavior_aa197011275830165605ced9e47250b72}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!add\+Target@{add\+Target}}
+\index{add\+Target@{add\+Target}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{add\+Target()}{addTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+::add\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{emitter }\end{DoxyParamCaption})}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:01
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em emitter} & $<$\#emitter description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_adae316d4515e5cd6c4219d09717e2cc9}\label{classnjli_1_1_steering_behavior_adae316d4515e5cd6c4219d09717e2cc9}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a9720953de1268f658636213946d76ed3}\label{classnjli_1_1_steering_behavior_a9720953de1268f658636213946d76ed3}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!calculate\+Force@{calculate\+Force}}
+\index{calculate\+Force@{calculate\+Force}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{calculate\+Force()}{calculateForce()}}
+{\footnotesize\ttfamily virtual const bt\+Vector3\& njli\+::\+Steering\+Behavior\+::calculate\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_obstacle_avoidance_addb96c5e33caceca8b524f9986090a78}{njli\+::\+Steering\+Behavior\+Obstacle\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_offset_pursuit_ada03ab32f7f5b138d513da180af6213d}{njli\+::\+Steering\+Behavior\+Offset\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wall_avoidance_af699ece0ed7df8fb52274ff1bb74993a}{njli\+::\+Steering\+Behavior\+Wall\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_follow_path_ac169340c95b5745648da76553a541708}{njli\+::\+Steering\+Behavior\+Follow\+Path}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_separation_ae969e8f68dcc47f17e67d096b19db4f1}{njli\+::\+Steering\+Behavior\+Separation}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_alignment_a57e0d628940b268bc9fbb5381b75c912}{njli\+::\+Steering\+Behavior\+Alignment}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_cohesion_a67060584a15bdf7b9c367d71304965c1}{njli\+::\+Steering\+Behavior\+Cohesion}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_interpose_a11c5d304f4459170a42b9c95b996d739}{njli\+::\+Steering\+Behavior\+Interpose}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_pursuit_a8b7df550e112b795f0e076873a99a86d}{njli\+::\+Steering\+Behavior\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_arrive_ae878be98da62eef4bb606937e5e944e7}{njli\+::\+Steering\+Behavior\+Arrive}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_evade_aab18adfa89d35b3063f02a1fe9b22ac4}{njli\+::\+Steering\+Behavior\+Evade}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wander_ae21123cbd677526e9860730511798f1a}{njli\+::\+Steering\+Behavior\+Wander}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_flee_a2f2eb808d8dd3d1792e7ff2916a02ac8}{njli\+::\+Steering\+Behavior\+Flee}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_hide_a767a29696376d90158523d2aa5fb13d7}{njli\+::\+Steering\+Behavior\+Hide}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_seek_a513e5b0f1e677cae6af2446485a80c61}{njli\+::\+Steering\+Behavior\+Seek}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_abbc461d853c1b225cfde5b79d96d11bd}\label{classnjli_1_1_steering_behavior_abbc461d853c1b225cfde5b79d96d11bd}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_obstacle_avoidance_ac449ac3fda8bf254ce14238e3098a8d6}{njli\+::\+Steering\+Behavior\+Obstacle\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_offset_pursuit_a1cf848834e750bb2a43bf2c4f2fde6d4}{njli\+::\+Steering\+Behavior\+Offset\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wall_avoidance_ae2c2f21709b8618e6bd984e00a982bdb}{njli\+::\+Steering\+Behavior\+Wall\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_follow_path_af60b873d59ffb7c5e800e2511f942978}{njli\+::\+Steering\+Behavior\+Follow\+Path}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_separation_a48e1a87903d1827801778137043d52d8}{njli\+::\+Steering\+Behavior\+Separation}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_alignment_a2b500b0c7cdd4c9bdecb94897749e5bd}{njli\+::\+Steering\+Behavior\+Alignment}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_arrive_a35e76ca4d74688cd292034313bffe888}{njli\+::\+Steering\+Behavior\+Arrive}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_cohesion_ac7807575daa40083f0e1c648da155f93}{njli\+::\+Steering\+Behavior\+Cohesion}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_evade_a15ee5391ccc2506831c1f74888d0b225}{njli\+::\+Steering\+Behavior\+Evade}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_flee_af688735b88770ca7e986b4f1607d7300}{njli\+::\+Steering\+Behavior\+Flee}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_hide_abf96426826554e8c405a08e8a6ca07f6}{njli\+::\+Steering\+Behavior\+Hide}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_interpose_a8b2c4a1124d344441df7c79d75779d60}{njli\+::\+Steering\+Behavior\+Interpose}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_pursuit_a5aab9694bf662d9f1cd8ad242b66d954}{njli\+::\+Steering\+Behavior\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_seek_aecc44b5c250eae468afe04cfbccf73a6}{njli\+::\+Steering\+Behavior\+Seek}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_wander_a15f9d5931b6d72abb1305cb018edbd3a}{njli\+::\+Steering\+Behavior\+Wander}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a4b924a53f5289df64d24b88340601394}\label{classnjli_1_1_steering_behavior_a4b924a53f5289df64d24b88340601394}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}}$\ast$ njli\+::\+Steering\+Behavior\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:31
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_a7a24f6e560057d1609da98ac353561b6}\label{classnjli_1_1_steering_behavior_a7a24f6e560057d1609da98ac353561b6}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}}$\ast$ njli\+::\+Steering\+Behavior\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:36
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_a41c2781070017d2faf5cd5bdabb36d09}\label{classnjli_1_1_steering_behavior_a41c2781070017d2faf5cd5bdabb36d09}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!create@{create}}
+\index{create@{create}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}}$\ast$ njli\+::\+Steering\+Behavior\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:21
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_af58fefc1f70b9399aa6369fb19c1e0b6}\label{classnjli_1_1_steering_behavior_af58fefc1f70b9399aa6369fb19c1e0b6}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!create@{create}}
+\index{create@{create}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}}$\ast$ njli\+::\+Steering\+Behavior\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior_builder}{Steering\+Behavior\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:23
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_ac77f8ca5cacd612bc9de8e84c498df8d}\label{classnjli_1_1_steering_behavior_ac77f8ca5cacd612bc9de8e84c498df8d}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}}$\ast$$\ast$ njli\+::\+Steering\+Behavior\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:09
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_ad1867854ab502ef50adba56ea4da1d84}\label{classnjli_1_1_steering_behavior_ad1867854ab502ef50adba56ea4da1d84}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:41
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em destroy\+Children\+Nodes} & $<$\#destroy\+Children\+Nodes description\#$>$\\
+\hline
+\end{DoxyParams}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_aa24a3dcd73261a34b1bbb80804a97425}\label{classnjli_1_1_steering_behavior_aa24a3dcd73261a34b1bbb80804a97425}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:13
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_a7db08fdeb6eb0f065262f5ee0b1e26d1}\label{classnjli_1_1_steering_behavior_a7db08fdeb6eb0f065262f5ee0b1e26d1}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Average\+Target\+Position@{get\+Average\+Target\+Position}}
+\index{get\+Average\+Target\+Position@{get\+Average\+Target\+Position}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Average\+Target\+Position()}{getAverageTargetPosition()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Steering\+Behavior\+::get\+Average\+Target\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_abb58d6982dc295fc3e90f096f51b0ef8}\label{classnjli_1_1_steering_behavior_abb58d6982dc295fc3e90f096f51b0ef8}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Steering\+Behavior\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:50
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ 
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_obstacle_avoidance_a4d8d5d43a2561ac4ea95e8c7a8e67630}{njli\+::\+Steering\+Behavior\+Obstacle\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_offset_pursuit_a0d864ea6805844cfc1de92f2c15493e9}{njli\+::\+Steering\+Behavior\+Offset\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wall_avoidance_aba07d63c5ecfc79ef1b33d6b4f17dbe1}{njli\+::\+Steering\+Behavior\+Wall\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_follow_path_a6281efac5e2e10796806c739692cd00b}{njli\+::\+Steering\+Behavior\+Follow\+Path}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_separation_a054f3b8439ed7b93dfa03f71310758ee}{njli\+::\+Steering\+Behavior\+Separation}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_alignment_a6cbba499c35513f2e890496d5e70467a}{njli\+::\+Steering\+Behavior\+Alignment}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_arrive_a49def442c41437419d4b1934528e6d12}{njli\+::\+Steering\+Behavior\+Arrive}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_cohesion_a72557106c655320637724465e98b1ecd}{njli\+::\+Steering\+Behavior\+Cohesion}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_evade_a764995d627d1735471951041885bb3dc}{njli\+::\+Steering\+Behavior\+Evade}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_flee_a95a04847e0acbf1a64df40835af28a3c}{njli\+::\+Steering\+Behavior\+Flee}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_hide_a219af1e998526e6e3bdd1f09aac2bc11}{njli\+::\+Steering\+Behavior\+Hide}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_interpose_aea1dd44a1ff29fae485fb554810f535d}{njli\+::\+Steering\+Behavior\+Interpose}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_pursuit_ab2c6df1f5f3cd71c736cb01db13af9fd}{njli\+::\+Steering\+Behavior\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_seek_a9bb4813f6247ada457c2fcf36ceeeece}{njli\+::\+Steering\+Behavior\+Seek}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_wander_a5970ae94b72e1d962643faa34029d0de}{njli\+::\+Steering\+Behavior\+Wander}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a4e79ade4c061f79de526f05a529317d0}\label{classnjli_1_1_steering_behavior_a4e79ade4c061f79de526f05a529317d0}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Current\+Force@{get\+Current\+Force}}
+\index{get\+Current\+Force@{get\+Current\+Force}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Current\+Force()}{getCurrentForce()}}
+{\footnotesize\ttfamily const bt\+Vector3\& njli\+::\+Steering\+Behavior\+::get\+Current\+Force (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_ae271bdd9879d6160e187c53ac9548099}\label{classnjli_1_1_steering_behavior_ae271bdd9879d6160e187c53ac9548099}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Owner\+Position@{get\+Owner\+Position}}
+\index{get\+Owner\+Position@{get\+Owner\+Position}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Owner\+Position()}{getOwnerPosition()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Steering\+Behavior\+::get\+Owner\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_aac8d25429493fe07310052e7c0b07dda}\label{classnjli_1_1_steering_behavior_aac8d25429493fe07310052e7c0b07dda}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$ njli\+::\+Steering\+Behavior\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_ad9fc58487698c22d3b07c864863044d8}\label{classnjli_1_1_steering_behavior_ad9fc58487698c22d3b07c864863044d8}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_steering_behavior_machine}{Steering\+Behavior\+Machine}}$\ast$ njli\+::\+Steering\+Behavior\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a693361a80cba3b7beb75a2dcf0bd63dd}\label{classnjli_1_1_steering_behavior_a693361a80cba3b7beb75a2dcf0bd63dd}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Target()}{getTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classnjli_1_1_node}{Node}}$\ast$ njli\+::\+Steering\+Behavior\+::get\+Target (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:27
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a7c2cdca1ff34e7b4882847bd2ba6b222}\label{classnjli_1_1_steering_behavior_a7c2cdca1ff34e7b4882847bd2ba6b222}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Target@{get\+Target}}
+\index{get\+Target@{get\+Target}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Target()}{getTarget()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{classnjli_1_1_node}{Node}}$\ast$ njli\+::\+Steering\+Behavior\+::get\+Target (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:30
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_aa8e882405b1cbeb62abeb154084dfccf}\label{classnjli_1_1_steering_behavior_aa8e882405b1cbeb62abeb154084dfccf}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Target\+Index@{get\+Target\+Index}}
+\index{get\+Target\+Index@{get\+Target\+Index}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Target\+Index()}{getTargetIndex()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+::get\+Target\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{object }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:22
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_acfac4925fbaa4c6e9a76efea3b015fa7}\label{classnjli_1_1_steering_behavior_acfac4925fbaa4c6e9a76efea3b015fa7}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Targets@{get\+Targets}}
+\index{get\+Targets@{get\+Targets}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Targets()}{getTargets()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::get\+Targets (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$$>$ \&}]{targets }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:19
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em particle\+Emitters} & $<$\#particle\+Emitters description\#$>$\\
+\hline
+\end{DoxyParams}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_ae82bca8468d41aff8c22b76fd359fe9b}\label{classnjli_1_1_steering_behavior_ae82bca8468d41aff8c22b76fd359fe9b}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:54
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ 
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_obstacle_avoidance_ae16f998663452ff03bf42c7df3da7f14}{njli\+::\+Steering\+Behavior\+Obstacle\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_offset_pursuit_acafec56dc840745c2fa9039c9a7c8507}{njli\+::\+Steering\+Behavior\+Offset\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wall_avoidance_a9673759d2e88ddf33de1316966d7ba67}{njli\+::\+Steering\+Behavior\+Wall\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_follow_path_ac7de5e240b694c37e7eca4a5c41b94d5}{njli\+::\+Steering\+Behavior\+Follow\+Path}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_separation_a682b4beac8d2750bae905e45efedb52b}{njli\+::\+Steering\+Behavior\+Separation}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_alignment_ab5230ab61bf1d66199ad26ec0963887d}{njli\+::\+Steering\+Behavior\+Alignment}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_arrive_ad2e5b01bf3703716d07b3e49434761c4}{njli\+::\+Steering\+Behavior\+Arrive}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_cohesion_aeddc5cf6f988277eafd15344c086527d}{njli\+::\+Steering\+Behavior\+Cohesion}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_evade_aea2cc17a1023812ec42851bf602ed3a2}{njli\+::\+Steering\+Behavior\+Evade}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_flee_ac7e1def63e331a0ea6d59f75bfc39d22}{njli\+::\+Steering\+Behavior\+Flee}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_hide_a61d1b4266bbd4d83f306c66e2dbfdccc}{njli\+::\+Steering\+Behavior\+Hide}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_interpose_a40ac76bd649350055bfb160248c48c9d}{njli\+::\+Steering\+Behavior\+Interpose}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_pursuit_a3921ed320793fa7e5efb3125b7a23569}{njli\+::\+Steering\+Behavior\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_seek_af2f037a05124681d1c73ca801a0d4d71}{njli\+::\+Steering\+Behavior\+Seek}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_wander_afc8c0a5a0d045370ce1a86d192b2b06d}{njli\+::\+Steering\+Behavior\+Wander}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_ac31b1718aa4edc52cb1598671c2ce9ba}\label{classnjli_1_1_steering_behavior_ac31b1718aa4edc52cb1598671c2ce9ba}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!has\+Owner@{has\+Owner}}
+\index{has\+Owner@{has\+Owner}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{has\+Owner()}{hasOwner()}}
+{\footnotesize\ttfamily bool njli\+::\+Steering\+Behavior\+::has\+Owner (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a1d492f79b5486b45cf52b4c0e25a9f97}\label{classnjli_1_1_steering_behavior_a1d492f79b5486b45cf52b4c0e25a9f97}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!load@{load}}
+\index{load@{load}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:46
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$\\
+\hline
+\end{DoxyParams}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ \mbox{\Hypertarget{classnjli_1_1_steering_behavior_a068ffa3f1d80389b134c22955695f800}\label{classnjli_1_1_steering_behavior_a068ffa3f1d80389b134c22955695f800}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!number\+Of\+Targets@{number\+Of\+Targets}}
+\index{number\+Of\+Targets@{number\+Of\+Targets}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{number\+Of\+Targets()}{numberOfTargets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Steering\+Behavior\+::number\+Of\+Targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:14
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_acd7af46e42a8a3fc1208a47f50836ac8}\label{classnjli_1_1_steering_behavior_acd7af46e42a8a3fc1208a47f50836ac8}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Steering\+Behavior\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:59
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ 
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_obstacle_avoidance_a84c212466f63945ab7218146f3adc365}{njli\+::\+Steering\+Behavior\+Obstacle\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_offset_pursuit_aa0266d0f37251d241f0365b24bf37458}{njli\+::\+Steering\+Behavior\+Offset\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wall_avoidance_aca10b42d39af7c023f2ff45ec6d93891}{njli\+::\+Steering\+Behavior\+Wall\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_follow_path_a0bd474599c9cb1b6dc24dfc1e481146b}{njli\+::\+Steering\+Behavior\+Follow\+Path}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_separation_a2aff6f1cc106f529a580d0812b4545d9}{njli\+::\+Steering\+Behavior\+Separation}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_alignment_aad8f9ac6f7ca9c4deb87a0a665aa4b5a}{njli\+::\+Steering\+Behavior\+Alignment}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_arrive_ad6d387b76e083ea4751b097eafa54ae6}{njli\+::\+Steering\+Behavior\+Arrive}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_cohesion_a4b4358c51b85b8c6ca8ffc61a566b35b}{njli\+::\+Steering\+Behavior\+Cohesion}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_evade_a65cb01c936a8ca1c879d260a943b16c6}{njli\+::\+Steering\+Behavior\+Evade}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_flee_a5f6ad77fa0c2aea0c30e248504944695}{njli\+::\+Steering\+Behavior\+Flee}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_hide_afad231266c18d212e47558624fb768f8}{njli\+::\+Steering\+Behavior\+Hide}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_interpose_ae6a51b54d67fb4e5abb947f728eed712}{njli\+::\+Steering\+Behavior\+Interpose}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_pursuit_a353d8fbc26d4ac8af1c907c9ede49324}{njli\+::\+Steering\+Behavior\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_seek_a2231d1ba0d0fe3c22116966a403e1408}{njli\+::\+Steering\+Behavior\+Seek}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_wander_abcdb8947569af12d7ff3e6bb53a0ed95}{njli\+::\+Steering\+Behavior\+Wander}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a4b99b614e4f9ed862949fe0bbe4a374b}\label{classnjli_1_1_steering_behavior_a4b99b614e4f9ed862949fe0bbe4a374b}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}}\& njli\+::\+Steering\+Behavior\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_steering_behavior}{Steering\+Behavior}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a607058ee31eae853823c0ecd1cf5b81d}\label{classnjli_1_1_steering_behavior_a607058ee31eae853823c0ecd1cf5b81d}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!remove\+All\+Targets@{remove\+All\+Targets}}
+\index{remove\+All\+Targets@{remove\+All\+Targets}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{remove\+All\+Targets()}{removeAllTargets()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::remove\+All\+Targets (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:09
+\end{DoxyAuthor}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a54b6a2a46d2918d0941475f0e75d84ab}\label{classnjli_1_1_steering_behavior_a54b6a2a46d2918d0941475f0e75d84ab}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!remove\+Target@{remove\+Target}}
+\index{remove\+Target@{remove\+Target}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{remove\+Target()}{removeTarget()}}
+{\footnotesize\ttfamily bool njli\+::\+Steering\+Behavior\+::remove\+Target (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{target }\end{DoxyParamCaption})}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:05
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em emitter} & $<$\#emitter description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_aa8494cb4a327c0040f64cfe8b393786e}\label{classnjli_1_1_steering_behavior_aa8494cb4a327c0040f64cfe8b393786e}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:45
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$\\
+\hline
+\end{DoxyParams}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ 
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_steering_behavior_obstacle_avoidance_a24d56edf67f8dc605dcc7897f5ba87e8}{njli\+::\+Steering\+Behavior\+Obstacle\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_offset_pursuit_a25cd6f2c3bbc1098c019477a27e836e3}{njli\+::\+Steering\+Behavior\+Offset\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_wall_avoidance_a3a442f51bc80974e2ee203561370002a}{njli\+::\+Steering\+Behavior\+Wall\+Avoidance}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_follow_path_abf14bd10eee78a37827fabe77217e51d}{njli\+::\+Steering\+Behavior\+Follow\+Path}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_separation_ac784949adb0c8903b1c30fd89c92e5d1}{njli\+::\+Steering\+Behavior\+Separation}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_alignment_abdbf23a5b3b54642be4ff30ff0e3edca}{njli\+::\+Steering\+Behavior\+Alignment}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_arrive_af5a5fa8bcbc51a5e18a7c92f497a4251}{njli\+::\+Steering\+Behavior\+Arrive}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_cohesion_a548183e74a5af18a73001cbb787b318e}{njli\+::\+Steering\+Behavior\+Cohesion}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_evade_a8a2e13abe004302c0ef004cc034a2f6d}{njli\+::\+Steering\+Behavior\+Evade}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_flee_a9b960243fb690e3e7273c05bae18b55c}{njli\+::\+Steering\+Behavior\+Flee}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_hide_a6846cae09de6f06b52cc97a7ff0467f8}{njli\+::\+Steering\+Behavior\+Hide}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_interpose_acdbe12a685512be57fa5c01df5ef0769}{njli\+::\+Steering\+Behavior\+Interpose}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_pursuit_a10a5320c1971fc7ab685b996d5e39fa2}{njli\+::\+Steering\+Behavior\+Pursuit}}, \mbox{\hyperlink{classnjli_1_1_steering_behavior_seek_aa6b4f5010360d6a5d99177cd8ccae178}{njli\+::\+Steering\+Behavior\+Seek}}, and \mbox{\hyperlink{classnjli_1_1_steering_behavior_wander_af095b146581b167cfec14ef42bd2a32a}{njli\+::\+Steering\+Behavior\+Wander}}.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_ad99f0f1056a0a980456e107bb3305fab}\label{classnjli_1_1_steering_behavior_ad99f0f1056a0a980456e107bb3305fab}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!set\+Current\+Force@{set\+Current\+Force}}
+\index{set\+Current\+Force@{set\+Current\+Force}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{set\+Current\+Force()}{setCurrentForce()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Steering\+Behavior\+::set\+Current\+Force (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{force }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a3c8ce7cce8fa14d182d917d3ee4d9b13}\label{classnjli_1_1_steering_behavior_a3c8ce7cce8fa14d182d917d3ee4d9b13}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!type@{type}}
+\index{type@{type}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Steering\+Behavior\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/10 21\+:02\+:50
+\end{DoxyAuthor}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$
+\end{DoxyReturn}
+\hypertarget{classnjli_1_1_steering_behavior_wander_ex1}{}\subsection{Lua example}\label{classnjli_1_1_steering_behavior_wander_ex1}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+Steering\+Behavior\+\_\+calculate\+Serialize\+Buffer\+Size\+\_\+ 
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_steering_behavior_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 31 of file Steering\+Behavior.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a9148bc145f9bc1943d6c40fe263fcb29}\label{classnjli_1_1_steering_behavior_a9148bc145f9bc1943d6c40fe263fcb29}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!m\+\_\+\+Current\+Force@{m\+\_\+\+Current\+Force}}
+\index{m\+\_\+\+Current\+Force@{m\+\_\+\+Current\+Force}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Current\+Force}{m\_CurrentForce}}
+{\footnotesize\ttfamily bt\+Vector3$\ast$ njli\+::\+Steering\+Behavior\+::m\+\_\+\+Current\+Force\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 367 of file Steering\+Behavior.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_steering_behavior_a48a4deef579ab968bdd4ecf0ba0c8668}\label{classnjli_1_1_steering_behavior_a48a4deef579ab968bdd4ecf0ba0c8668}} 
+\index{njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}!m\+\_\+\+Target\+List@{m\+\_\+\+Target\+List}}
+\index{m\+\_\+\+Target\+List@{m\+\_\+\+Target\+List}!njli\+::\+Steering\+Behavior@{njli\+::\+Steering\+Behavior}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Target\+List}{m\_TargetList}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_steering_behavior_ab7a7224d97d2e392e5ae75108a6c160a}{Target\+Vector}} njli\+::\+Steering\+Behavior\+::m\+\_\+\+Target\+List\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line 364 of file Steering\+Behavior.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/steering/behavior/\mbox{\hyperlink{_steering_behavior_8h}{Steering\+Behavior.\+h}}\end{DoxyCompactItemize}

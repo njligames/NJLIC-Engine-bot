@@ -1,0 +1,146 @@
+\hypertarget{namespace_im_guizmo}{}\section{Im\+Guizmo Namespace Reference}
+\label{namespace_im_guizmo}\index{Im\+Guizmo@{Im\+Guizmo}}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1}{O\+P\+E\+R\+A\+T\+I\+ON}} \{ \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a87d39725b76eb0cdd7d8803632faba68}{T\+R\+A\+N\+S\+L\+A\+TE}}, 
+\mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a002a0a905af7f2fd542df7d6e34c1d1f}{R\+O\+T\+A\+TE}}, 
+\mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a17ec357fe247a9aa2d1f368353690fdc}{S\+C\+A\+LE}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05a}{M\+O\+DE}} \{ \mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aaf0baed0c04cc42cc097e385019888fe7}{L\+O\+C\+AL}}, 
+\mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aa0db6bcb67dbf7b93b609e4d142320421}{W\+O\+R\+LD}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{namespace_im_guizmo_a2dfada1eb84fda54a892be444caf0588}{Begin\+Frame}} ()
+\item 
+bool \mbox{\hyperlink{namespace_im_guizmo_a258cf4380b3da155f7eb721542b50f67}{Is\+Over}} ()
+\item 
+bool \mbox{\hyperlink{namespace_im_guizmo_ac9bdd0b810d82ed4fa06e0dd2d1f3cc1}{Is\+Using}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{namespace_im_guizmo_a849497d6fd8adb2569adfa18c2841d77}{Enable}} (bool enable)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{namespace_im_guizmo_a8cc3ef9e0b149b8276fe69817360ee25}{Decompose\+Matrix\+To\+Components}} (const float $\ast$matrix, float $\ast$translation, float $\ast$rotation, float $\ast$scale)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{namespace_im_guizmo_a70bc9423194e2ab58e351ea881126b17}{Recompose\+Matrix\+From\+Components}} (const float $\ast$translation, const float $\ast$rotation, const float $\ast$scale, float $\ast$matrix)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{namespace_im_guizmo_acc60c99158253466671e9aac426f52f2}{Draw\+Cube}} (const float $\ast$view, const float $\ast$projection, float $\ast$matrix)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{namespace_im_guizmo_a6b1cb04f6a6cacb5029c1163848a510e}{Manipulate}} (const float $\ast$view, const float $\ast$projection, \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1}{O\+P\+E\+R\+A\+T\+I\+ON}} operation, \mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05a}{M\+O\+DE}} mode, float $\ast$matrix, float $\ast$delta\+Matrix=0, float $\ast$snap=0, float $\ast$local\+Bounds=\mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}, float $\ast$bounds\+Snap=\mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05a}\label{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05a}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!M\+O\+DE@{M\+O\+DE}}
+\index{M\+O\+DE@{M\+O\+DE}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{M\+O\+DE}{MODE}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05a}{Im\+Guizmo\+::\+M\+O\+DE}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+O\+C\+AL@{L\+O\+C\+AL}!Im\+Guizmo@{Im\+Guizmo}}\index{Im\+Guizmo@{Im\+Guizmo}!L\+O\+C\+AL@{L\+O\+C\+AL}}}\mbox{\Hypertarget{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aaf0baed0c04cc42cc097e385019888fe7}\label{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aaf0baed0c04cc42cc097e385019888fe7}} 
+L\+O\+C\+AL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{W\+O\+R\+LD@{W\+O\+R\+LD}!Im\+Guizmo@{Im\+Guizmo}}\index{Im\+Guizmo@{Im\+Guizmo}!W\+O\+R\+LD@{W\+O\+R\+LD}}}\mbox{\Hypertarget{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aa0db6bcb67dbf7b93b609e4d142320421}\label{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aa0db6bcb67dbf7b93b609e4d142320421}} 
+W\+O\+R\+LD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 165 of file Im\+Guizmo.\+h.
+
+
+\begin{DoxyCode}
+166   \{
+167     \mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aaf0baed0c04cc42cc097e385019888fe7}{LOCAL}},
+168     \mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05aa0db6bcb67dbf7b93b609e4d142320421}{WORLD}}
+169   \};
+\end{DoxyCode}
+\mbox{\Hypertarget{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1}\label{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!O\+P\+E\+R\+A\+T\+I\+ON@{O\+P\+E\+R\+A\+T\+I\+ON}}
+\index{O\+P\+E\+R\+A\+T\+I\+ON@{O\+P\+E\+R\+A\+T\+I\+ON}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{O\+P\+E\+R\+A\+T\+I\+ON}{OPERATION}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1}{Im\+Guizmo\+::\+O\+P\+E\+R\+A\+T\+I\+ON}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T\+R\+A\+N\+S\+L\+A\+TE@{T\+R\+A\+N\+S\+L\+A\+TE}!Im\+Guizmo@{Im\+Guizmo}}\index{Im\+Guizmo@{Im\+Guizmo}!T\+R\+A\+N\+S\+L\+A\+TE@{T\+R\+A\+N\+S\+L\+A\+TE}}}\mbox{\Hypertarget{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a87d39725b76eb0cdd7d8803632faba68}\label{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a87d39725b76eb0cdd7d8803632faba68}} 
+T\+R\+A\+N\+S\+L\+A\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+O\+T\+A\+TE@{R\+O\+T\+A\+TE}!Im\+Guizmo@{Im\+Guizmo}}\index{Im\+Guizmo@{Im\+Guizmo}!R\+O\+T\+A\+TE@{R\+O\+T\+A\+TE}}}\mbox{\Hypertarget{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a002a0a905af7f2fd542df7d6e34c1d1f}\label{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a002a0a905af7f2fd542df7d6e34c1d1f}} 
+R\+O\+T\+A\+TE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+C\+A\+LE@{S\+C\+A\+LE}!Im\+Guizmo@{Im\+Guizmo}}\index{Im\+Guizmo@{Im\+Guizmo}!S\+C\+A\+LE@{S\+C\+A\+LE}}}\mbox{\Hypertarget{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a17ec357fe247a9aa2d1f368353690fdc}\label{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a17ec357fe247a9aa2d1f368353690fdc}} 
+S\+C\+A\+LE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 158 of file Im\+Guizmo.\+h.
+
+
+\begin{DoxyCode}
+159   \{
+160     \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a87d39725b76eb0cdd7d8803632faba68}{TRANSLATE}},
+161     \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a002a0a905af7f2fd542df7d6e34c1d1f}{ROTATE}},
+162     \mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1a17ec357fe247a9aa2d1f368353690fdc}{SCALE}}
+163   \};
+\end{DoxyCode}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespace_im_guizmo_a2dfada1eb84fda54a892be444caf0588}\label{namespace_im_guizmo_a2dfada1eb84fda54a892be444caf0588}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Begin\+Frame@{Begin\+Frame}}
+\index{Begin\+Frame@{Begin\+Frame}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Begin\+Frame()}{BeginFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} Im\+Guizmo\+::\+Begin\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_a8cc3ef9e0b149b8276fe69817360ee25}\label{namespace_im_guizmo_a8cc3ef9e0b149b8276fe69817360ee25}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Decompose\+Matrix\+To\+Components@{Decompose\+Matrix\+To\+Components}}
+\index{Decompose\+Matrix\+To\+Components@{Decompose\+Matrix\+To\+Components}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Decompose\+Matrix\+To\+Components()}{DecomposeMatrixToComponents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} Im\+Guizmo\+::\+Decompose\+Matrix\+To\+Components (\begin{DoxyParamCaption}\item[{const float $\ast$}]{matrix,  }\item[{float $\ast$}]{translation,  }\item[{float $\ast$}]{rotation,  }\item[{float $\ast$}]{scale }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_acc60c99158253466671e9aac426f52f2}\label{namespace_im_guizmo_acc60c99158253466671e9aac426f52f2}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Draw\+Cube@{Draw\+Cube}}
+\index{Draw\+Cube@{Draw\+Cube}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Draw\+Cube()}{DrawCube()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} Im\+Guizmo\+::\+Draw\+Cube (\begin{DoxyParamCaption}\item[{const float $\ast$}]{view,  }\item[{const float $\ast$}]{projection,  }\item[{float $\ast$}]{matrix }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_a849497d6fd8adb2569adfa18c2841d77}\label{namespace_im_guizmo_a849497d6fd8adb2569adfa18c2841d77}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Enable@{Enable}}
+\index{Enable@{Enable}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Enable()}{Enable()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} Im\+Guizmo\+::\+Enable (\begin{DoxyParamCaption}\item[{bool}]{enable }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_a258cf4380b3da155f7eb721542b50f67}\label{namespace_im_guizmo_a258cf4380b3da155f7eb721542b50f67}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Is\+Over@{Is\+Over}}
+\index{Is\+Over@{Is\+Over}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Is\+Over()}{IsOver()}}
+{\footnotesize\ttfamily bool Im\+Guizmo\+::\+Is\+Over (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_ac9bdd0b810d82ed4fa06e0dd2d1f3cc1}\label{namespace_im_guizmo_ac9bdd0b810d82ed4fa06e0dd2d1f3cc1}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Is\+Using@{Is\+Using}}
+\index{Is\+Using@{Is\+Using}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Is\+Using()}{IsUsing()}}
+{\footnotesize\ttfamily bool Im\+Guizmo\+::\+Is\+Using (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_a6b1cb04f6a6cacb5029c1163848a510e}\label{namespace_im_guizmo_a6b1cb04f6a6cacb5029c1163848a510e}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Manipulate@{Manipulate}}
+\index{Manipulate@{Manipulate}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Manipulate()}{Manipulate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} Im\+Guizmo\+::\+Manipulate (\begin{DoxyParamCaption}\item[{const float $\ast$}]{view,  }\item[{const float $\ast$}]{projection,  }\item[{\mbox{\hyperlink{namespace_im_guizmo_a3559e88fd6409ce121ee4d9847867cd1}{O\+P\+E\+R\+A\+T\+I\+ON}}}]{operation,  }\item[{\mbox{\hyperlink{namespace_im_guizmo_a555eafa3970d08a1afb7b47bce89d05a}{M\+O\+DE}}}]{mode,  }\item[{float $\ast$}]{matrix,  }\item[{float $\ast$}]{delta\+Matrix = {\ttfamily 0},  }\item[{float $\ast$}]{snap = {\ttfamily 0},  }\item[{float $\ast$}]{local\+Bounds = {\ttfamily \mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}},  }\item[{float $\ast$}]{bounds\+Snap = {\ttfamily \mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespace_im_guizmo_a70bc9423194e2ab58e351ea881126b17}\label{namespace_im_guizmo_a70bc9423194e2ab58e351ea881126b17}} 
+\index{Im\+Guizmo@{Im\+Guizmo}!Recompose\+Matrix\+From\+Components@{Recompose\+Matrix\+From\+Components}}
+\index{Recompose\+Matrix\+From\+Components@{Recompose\+Matrix\+From\+Components}!Im\+Guizmo@{Im\+Guizmo}}
+\subsubsection{\texorpdfstring{Recompose\+Matrix\+From\+Components()}{RecomposeMatrixFromComponents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} Im\+Guizmo\+::\+Recompose\+Matrix\+From\+Components (\begin{DoxyParamCaption}\item[{const float $\ast$}]{translation,  }\item[{const float $\ast$}]{rotation,  }\item[{const float $\ast$}]{scale,  }\item[{float $\ast$}]{matrix }\end{DoxyParamCaption})}
+

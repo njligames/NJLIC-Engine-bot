@@ -1,0 +1,248 @@
+\hypertarget{classnjli_1_1_abstract_actionable}{}\section{njli\+:\+:Abstract\+Actionable Class Reference}
+\label{classnjli_1_1_abstract_actionable}\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+
+
+$<$\#\+Description\#$>$  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Actionable.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Abstract\+Actionable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{classnjli_1_1_abstract_actionable__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnjli_1_1_abstract_actionable_1_1_actionable_action}{Actionable\+Action}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_actionable_af2020b25504138eb95c993b3a09c6500}{run\+Action}} (\mbox{\hyperlink{classnjli_1_1_action}{Action}} $\ast$action, bool call\+Completion\+Function=false)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a8ad2ebd2c3a7abb313602866259fb98c}{run\+Action}} (\mbox{\hyperlink{classnjli_1_1_action}{Action}} $\ast$action, const char $\ast$key, bool call\+Completion\+Function=false)
+\item 
+\mbox{\hyperlink{classnjli_1_1_action}{Action}} $\ast$ \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a2e853aeb7805f7fb878acc2f4ebafadb}{get\+Action}} (const char $\ast$key)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a237eba6122f8505a04df9bcc0cd431af}{has\+Actions}} () const
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a902395a20ef04482b15e7a65c0be4bad}{remove\+Action}} (const char $\ast$key)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a758cc11b09194399de63537e0f7e1485}{remove\+All\+Actions}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_actionable_a14bdb9bfc024571d6989763629625949}{Abstract\+Actionable}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a649739eb41be60afdcf18d7fe0d25fff}{$\sim$\+Abstract\+Actionable}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_actionable_aab364e6f121a457e33a61850300c2d7b}{update}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} time\+Step)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a9df58912375974fd1e5da088e4d4225d}{get\+All\+Action\+Names}} (std\+::vector$<$ std\+::string $>$ \&action\+Names)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_actionable_a7674886976b87af3bfa33ad030268e3e}{Abstract\+Actionable}} (const \mbox{\hyperlink{classnjli_1_1_abstract_actionable}{Abstract\+Actionable}} \&copy)
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_actionable}{Abstract\+Actionable}} \& \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a0f09166a53c6d1b5652ad268fcdfcb46}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_abstract_actionable}{Abstract\+Actionable}} \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structnjli_1_1_abstract_actionable_1_1_actionable_action}{Actionable\+Action}} $\ast$ $>$ \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a17bc44206dd13cb179bafdf0cd2bbda9}{m\+\_\+\+Actions}}
+\item 
+std\+::queue$<$ \mbox{\hyperlink{structnjli_1_1_abstract_actionable_1_1_actionable_action}{Actionable\+Action}} $\ast$ $>$ \mbox{\hyperlink{classnjli_1_1_abstract_actionable_a230d6ee2c4c2cd3f7d4e716ea238dbfc}{m\+\_\+\+Action\+Memory\+Queue}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 24 of file Abstract\+Actionable.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a14bdb9bfc024571d6989763629625949}\label{classnjli_1_1_abstract_actionable_a14bdb9bfc024571d6989763629625949}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!Abstract\+Actionable@{Abstract\+Actionable}}
+\index{Abstract\+Actionable@{Abstract\+Actionable}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{Abstract\+Actionable()}{AbstractActionable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily njli\+::\+Abstract\+Actionable\+::\+Abstract\+Actionable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a649739eb41be60afdcf18d7fe0d25fff}\label{classnjli_1_1_abstract_actionable_a649739eb41be60afdcf18d7fe0d25fff}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!````~Abstract\+Actionable@{$\sim$\+Abstract\+Actionable}}
+\index{````~Abstract\+Actionable@{$\sim$\+Abstract\+Actionable}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{$\sim$\+Abstract\+Actionable()}{~AbstractActionable()}}
+{\footnotesize\ttfamily virtual njli\+::\+Abstract\+Actionable\+::$\sim$\+Abstract\+Actionable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a7674886976b87af3bfa33ad030268e3e}\label{classnjli_1_1_abstract_actionable_a7674886976b87af3bfa33ad030268e3e}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!Abstract\+Actionable@{Abstract\+Actionable}}
+\index{Abstract\+Actionable@{Abstract\+Actionable}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{Abstract\+Actionable()}{AbstractActionable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily njli\+::\+Abstract\+Actionable\+::\+Abstract\+Actionable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_actionable}{Abstract\+Actionable}} \&}]{copy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a2e853aeb7805f7fb878acc2f4ebafadb}\label{classnjli_1_1_abstract_actionable_a2e853aeb7805f7fb878acc2f4ebafadb}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!get\+Action@{get\+Action}}
+\index{get\+Action@{get\+Action}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{get\+Action()}{getAction()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_action}{Action}}$\ast$ njli\+::\+Abstract\+Actionable\+::get\+Action (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & $<$\#key description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a9df58912375974fd1e5da088e4d4225d}\label{classnjli_1_1_abstract_actionable_a9df58912375974fd1e5da088e4d4225d}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!get\+All\+Action\+Names@{get\+All\+Action\+Names}}
+\index{get\+All\+Action\+Names@{get\+All\+Action\+Names}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{get\+All\+Action\+Names()}{getAllActionNames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Actionable\+::get\+All\+Action\+Names (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$ \&}]{action\+Names }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a237eba6122f8505a04df9bcc0cd431af}\label{classnjli_1_1_abstract_actionable_a237eba6122f8505a04df9bcc0cd431af}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!has\+Actions@{has\+Actions}}
+\index{has\+Actions@{has\+Actions}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{has\+Actions()}{hasActions()}}
+{\footnotesize\ttfamily bool njli\+::\+Abstract\+Actionable\+::has\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a0f09166a53c6d1b5652ad268fcdfcb46}\label{classnjli_1_1_abstract_actionable_a0f09166a53c6d1b5652ad268fcdfcb46}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_abstract_actionable}{Abstract\+Actionable}}\& njli\+::\+Abstract\+Actionable\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_actionable}{Abstract\+Actionable}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a902395a20ef04482b15e7a65c0be4bad}\label{classnjli_1_1_abstract_actionable_a902395a20ef04482b15e7a65c0be4bad}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!remove\+Action@{remove\+Action}}
+\index{remove\+Action@{remove\+Action}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{remove\+Action()}{removeAction()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Abstract\+Actionable\+::remove\+Action (\begin{DoxyParamCaption}\item[{const char $\ast$}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em key} & $<$\#key description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_node_ae469bbf7d36fd0ea3b78ff9ee8cc6dee}{njli\+::\+Node}}.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a758cc11b09194399de63537e0f7e1485}\label{classnjli_1_1_abstract_actionable_a758cc11b09194399de63537e0f7e1485}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!remove\+All\+Actions@{remove\+All\+Actions}}
+\index{remove\+All\+Actions@{remove\+All\+Actions}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{remove\+All\+Actions()}{removeAllActions()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Actionable\+::remove\+All\+Actions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$ 
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_node_ad497289960419c904082516aab4ab551}{njli\+::\+Node}}.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_af2020b25504138eb95c993b3a09c6500}\label{classnjli_1_1_abstract_actionable_af2020b25504138eb95c993b3a09c6500}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!run\+Action@{run\+Action}}
+\index{run\+Action@{run\+Action}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{run\+Action()}{runAction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Actionable\+::run\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_action}{Action}} $\ast$}]{action,  }\item[{bool}]{call\+Completion\+Function = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & $<$\#action description\#$>$ \\
+\hline
+{\em call\+Completion\+Function} & $<$\#call\+Completion\+Function description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_node_a5674da852b950cc581fd22bc0c309b5f}{njli\+::\+Node}}.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a8ad2ebd2c3a7abb313602866259fb98c}\label{classnjli_1_1_abstract_actionable_a8ad2ebd2c3a7abb313602866259fb98c}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!run\+Action@{run\+Action}}
+\index{run\+Action@{run\+Action}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{run\+Action()}{runAction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Actionable\+::run\+Action (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_action}{Action}} $\ast$}]{action,  }\item[{const char $\ast$}]{key,  }\item[{bool}]{call\+Completion\+Function = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em action} & $<$\#action description\#$>$ \\
+\hline
+{\em key} & $<$\#key description\#$>$ \\
+\hline
+{\em call\+Completion\+Function} & $<$\#call\+Completion\+Function description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_node_a4a5ab73e783b102ffa0c5af0d118e207}{njli\+::\+Node}}.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_aab364e6f121a457e33a61850300c2d7b}\label{classnjli_1_1_abstract_actionable_aab364e6f121a457e33a61850300c2d7b}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!update@{update}}
+\index{update@{update}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Actionable\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{time\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_node_a3eb1db3aa2681e4acaf3e9e95fd01e69}{njli\+::\+Node}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a230d6ee2c4c2cd3f7d4e716ea238dbfc}\label{classnjli_1_1_abstract_actionable_a230d6ee2c4c2cd3f7d4e716ea238dbfc}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!m\+\_\+\+Action\+Memory\+Queue@{m\+\_\+\+Action\+Memory\+Queue}}
+\index{m\+\_\+\+Action\+Memory\+Queue@{m\+\_\+\+Action\+Memory\+Queue}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Action\+Memory\+Queue}{m\_ActionMemoryQueue}}
+{\footnotesize\ttfamily std\+::queue$<$\mbox{\hyperlink{structnjli_1_1_abstract_actionable_1_1_actionable_action}{Actionable\+Action}} $\ast$$>$ njli\+::\+Abstract\+Actionable\+::m\+\_\+\+Action\+Memory\+Queue\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 102 of file Abstract\+Actionable.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_actionable_a17bc44206dd13cb179bafdf0cd2bbda9}\label{classnjli_1_1_abstract_actionable_a17bc44206dd13cb179bafdf0cd2bbda9}} 
+\index{njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}!m\+\_\+\+Actions@{m\+\_\+\+Actions}}
+\index{m\+\_\+\+Actions@{m\+\_\+\+Actions}!njli\+::\+Abstract\+Actionable@{njli\+::\+Abstract\+Actionable}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Actions}{m\_Actions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structnjli_1_1_abstract_actionable_1_1_actionable_action}{Actionable\+Action}} $\ast$$>$ njli\+::\+Abstract\+Actionable\+::m\+\_\+\+Actions\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 101 of file Abstract\+Actionable.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/\mbox{\hyperlink{_abstract_actionable_8h}{Abstract\+Actionable.\+h}}\end{DoxyCompactItemize}

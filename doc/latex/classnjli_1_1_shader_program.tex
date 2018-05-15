@@ -1,0 +1,796 @@
+\hypertarget{classnjli_1_1_shader_program}{}\section{njli\+:\+:Shader\+Program Class Reference}
+\label{classnjli_1_1_shader_program}\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+
+
+{\ttfamily \#include $<$Shader\+Program.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Shader\+Program\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classnjli_1_1_shader_program__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Shader\+Program\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_shader_program__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_shader_program_ae6b8ee664db016d247d1969a80a4d0f0}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_afe83d2e58961011b642a25e7c15a6953}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$, bt\+Serializer $\ast$) const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a61698287de4dadfd88151f40038569cf}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_shader_program_af2f154eef9904f4b5078983ae025cd7a}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program_a2af9c6b24ed749e698c3fce3fabda18f}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_a302cf231b252535230e1eaa794c0dc3e}{save\+Source}} (const std\+::string \&vertex\+Shader\+Source, const std\+::string \&fragment\+Shader\+Source)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a232cb84b51bfdd0d3ace500fedde45a2}{is\+Linked}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_af93d37d88d0d56ae1dfe0a902ec7391e}{un\+Load\+G\+PU}} ()
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_aa48f0968f86931295b686cb31d6aadfd}{set\+Uniform\+Value}} (const char $\ast$uniform\+Name, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} value)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a01aeae9437f32732e8d2d3b59c962139}{get\+Uniform\+Value}} (const char $\ast$uniform\+Name, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \&value)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_ab55e9cbbf6a0921259a38c50ff0c6c80}{set\+Uniform\+Value}} (const char $\ast$uniform\+Name, const bt\+Transform \&value, bool transpose=false)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a3a27d20080728fd333fb013f6492ee34}{get\+Uniform\+Value}} (const char $\ast$uniform\+Name, bt\+Transform \&value)
+\item 
+\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_shader_program_aa870b331b82002024be451a7d556d99c}{get\+Uniform\+Location}} (const char $\ast$uniform\+Name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a132663261df4c7029260a59afb91a19d}{vertex\+Shader\+Log}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a3f4444c90822c63fee69261f476774b7}{fragment\+Shader\+Log}} () const
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a28dfbce737ee0481f6a8199a0b1b226f}{program\+Log}} () const
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a1295b3e2656bc24f485dc97a7d920b67}{use}} ()
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a5a6c623a0321cfc305b6edc6e514b049}{compile}} (const char $\ast$file\+Content, \mbox{\hyperlink{namespacenjli_a8f2b6cfac9213576c34bcf711ac39fbd}{njli\+Shader\+Type}} \mbox{\hyperlink{classnjli_1_1_shader_program_a92e24de59f2e44318baab955895910ba}{type}})
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a47e7e27178632533e9d8c805f5482812}{compile\+Shader}} (\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} $\ast$shader, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_shader_program_a92e24de59f2e44318baab955895910ba}{type}}, const char $\ast$source)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a73023771e5e565e69571188ebc59a471}{log\+For\+Open\+G\+L\+Object}} (\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} object, \mbox{\hyperlink{_shader_program_8h_a50070b167d585b9e4ba6faa4e3063cc7}{G\+L\+Info\+Function}} info\+Func, \mbox{\hyperlink{_shader_program_8h_a946b6792efe50de240df436a3d028764}{G\+L\+Log\+Function}} log\+Func) const
+\item 
+\mbox{\hyperlink{classnjli_1_1_geometry}{Geometry}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a663abf703712e6cbdffd9ac7ee2631b9}{get\+Parent}} ()
+\item 
+const \mbox{\hyperlink{classnjli_1_1_geometry}{Geometry}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_af1c05ca7d7c97f0abeedf3c34426ddc1}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_a087eb5f8d9f51cc476f12f1d10a3cb95}{set\+Name}} (const char $\ast$name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_ad41266885be835f3ee602311e20877a4}{get\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a83a8876ae63b92804004cf3febe76573}{create}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&builder) const
+\item 
+const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_ac4ca71716ed832be357f15f8262c8448}{get\+Pointer}} () const
+\item 
+\mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} \mbox{\hyperlink{classnjli_1_1_shader_program_a4ffddf141a426a5a07d0ac19f1913811}{get\+Pointer\+Value}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_a4fc4bcd9d1930911474210c047372fc0}{serialize\+Object}} (class bt\+Serializer $\ast$serializer) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a78a8831d8b2c160381b3f00b5bd0a9f1}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_a86ca7eb980e28330ee6ca6a7d17e0a12}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a0d6c86874feb9ca5e1203afe5c30b216}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a425842368a91fb2d82d550a36d3d440a}{create}} (const \mbox{\hyperlink{classnjli_1_1_shader_program_builder}{Shader\+Program\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a65c36d0386ef8a58f55d14918d0d8096}{clone}} (const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_ac5ccaeffeccdfc14a2579eddb07e0a36}{copy}} (const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_ae162b5b68d88e47b14b507fec798da1c}{destroy}} (\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_shader_program_af1b37f6cb592d8ebd4f5a31a80a373c2}{load}} (\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_shader_program_a92e24de59f2e44318baab955895910ba}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program_a5def475147030f4b08273f0dc0d8d0eb}{Shader\+Program}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program_a46ab4a8c88ca20c55202c9a152a57838}{Shader\+Program}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program_a45a93b1279f11a5323e28070ccc778a8}{Shader\+Program}} (const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program_a091874e0063dade5799d8061f156fe3c}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_shader_program_a8b08a64a5724aba5cc614c2288846044}{$\sim$\+Shader\+Program}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \& \mbox{\hyperlink{classnjli_1_1_shader_program_aba28741515ef99ccd725473aadd26a93}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_add1203b770ecde00cf3089433cdc372e}{link}} ()
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_shader_program_a0f30cbd74175ed6967bafc46b35bb928}{bind\+Attribute}} (const char $\ast$attribute\+Name)
+\item 
+\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_shader_program_a44caba1039485701689f734de28462e7}{get\+Attribute\+Location}} (const char $\ast$attribute\+Name) const
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ std\+::string, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} $>$ \mbox{\hyperlink{classnjli_1_1_shader_program_a36ecea1b480769cf2a125e5fb13f122a}{Uniform\+Value\+Map}}
+\item 
+typedef std\+::pair$<$ std\+::string, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} $>$ \mbox{\hyperlink{classnjli_1_1_shader_program_a784188d8ab62d1eb541432ce756689a9}{Uniform\+Value\+Pair}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_shader_program_a8391542fc26ae41466b6fe713a5ded2f}{m\+\_\+\+Program}}
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_shader_program_a8f1c16c8132f6680d0fd8e7cd0f53ad9}{m\+\_\+vert\+Shader}}
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_shader_program_a9b528190f997c332ccd7f4605a2ba5c7}{m\+\_\+frag\+Shader}}
+\item 
+std\+::string \mbox{\hyperlink{classnjli_1_1_shader_program_a36b6891a72ec4e6f7ee89add79884282}{m\+\_\+\+Vertex\+Shader\+Source}}
+\item 
+std\+::string \mbox{\hyperlink{classnjli_1_1_shader_program_aa1e64cb2fabffbafbff9f7c707672643}{m\+\_\+\+Fragment\+Shader\+Source}}
+\item 
+\mbox{\hyperlink{classnjli_1_1_shader_program_a36ecea1b480769cf2a125e5fb13f122a}{Uniform\+Value\+Map}} \mbox{\hyperlink{classnjli_1_1_shader_program_a20e228a576a90ddd2e232fa490cde560}{m\+\_\+uniform\+Value\+Map}}
+\item 
+float $\ast$ \mbox{\hyperlink{classnjli_1_1_shader_program_a2de7645fd10fecfe9bd3e128984c93e7}{m\+\_\+mat4\+Buffer}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_shader_program_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_shader_program_a9aca7b7350e6ffa0e2d6320834ad1857}{Geometry}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_shader_program_ae7c7f3376b81514442fbc2a5fe2f5ec9}{Material\+Property}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 36 of file Shader\+Program.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a36ecea1b480769cf2a125e5fb13f122a}\label{classnjli_1_1_shader_program_a36ecea1b480769cf2a125e5fb13f122a}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Uniform\+Value\+Map@{Uniform\+Value\+Map}}
+\index{Uniform\+Value\+Map@{Uniform\+Value\+Map}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Uniform\+Value\+Map}{UniformValueMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$std\+::string, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}$>$ \mbox{\hyperlink{classnjli_1_1_shader_program_a36ecea1b480769cf2a125e5fb13f122a}{njli\+::\+Shader\+Program\+::\+Uniform\+Value\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 259 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a784188d8ab62d1eb541432ce756689a9}\label{classnjli_1_1_shader_program_a784188d8ab62d1eb541432ce756689a9}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Uniform\+Value\+Pair@{Uniform\+Value\+Pair}}
+\index{Uniform\+Value\+Pair@{Uniform\+Value\+Pair}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Uniform\+Value\+Pair}{UniformValuePair}}
+{\footnotesize\ttfamily typedef std\+::pair$<$std\+::string, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}$>$ \mbox{\hyperlink{classnjli_1_1_shader_program_a784188d8ab62d1eb541432ce756689a9}{njli\+::\+Shader\+Program\+::\+Uniform\+Value\+Pair}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 260 of file Shader\+Program.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a5def475147030f4b08273f0dc0d8d0eb}\label{classnjli_1_1_shader_program_a5def475147030f4b08273f0dc0d8d0eb}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Shader\+Program@{Shader\+Program}}
+\index{Shader\+Program@{Shader\+Program}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Shader\+Program()}{ShaderProgram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a46ab4a8c88ca20c55202c9a152a57838}\label{classnjli_1_1_shader_program_a46ab4a8c88ca20c55202c9a152a57838}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Shader\+Program@{Shader\+Program}}
+\index{Shader\+Program@{Shader\+Program}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Shader\+Program()}{ShaderProgram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a45a93b1279f11a5323e28070ccc778a8}\label{classnjli_1_1_shader_program_a45a93b1279f11a5323e28070ccc778a8}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Shader\+Program@{Shader\+Program}}
+\index{Shader\+Program@{Shader\+Program}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Shader\+Program()}{ShaderProgram()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Shader\+Program\+::\+Shader\+Program (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a8b08a64a5724aba5cc614c2288846044}\label{classnjli_1_1_shader_program_a8b08a64a5724aba5cc614c2288846044}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!````~Shader\+Program@{$\sim$\+Shader\+Program}}
+\index{````~Shader\+Program@{$\sim$\+Shader\+Program}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{$\sim$\+Shader\+Program()}{~ShaderProgram()}}
+{\footnotesize\ttfamily virtual njli\+::\+Shader\+Program\+::$\sim$\+Shader\+Program (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a0f30cbd74175ed6967bafc46b35bb928}\label{classnjli_1_1_shader_program_a0f30cbd74175ed6967bafc46b35bb928}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!bind\+Attribute@{bind\+Attribute}}
+\index{bind\+Attribute@{bind\+Attribute}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{bind\+Attribute()}{bindAttribute()}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::bind\+Attribute (\begin{DoxyParamCaption}\item[{const char $\ast$}]{attribute\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em attribute\+Name} & $<$\#attribute\+Name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a091874e0063dade5799d8061f156fe3c}\label{classnjli_1_1_shader_program_a091874e0063dade5799d8061f156fe3c}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Shader\+Program\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ae6b8ee664db016d247d1969a80a4d0f0}\label{classnjli_1_1_shader_program_ae6b8ee664db016d247d1969a80a4d0f0}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Shader\+Program\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a65c36d0386ef8a58f55d14918d0d8096}\label{classnjli_1_1_shader_program_a65c36d0386ef8a58f55d14918d0d8096}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}}$\ast$ njli\+::\+Shader\+Program\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a5a6c623a0321cfc305b6edc6e514b049}\label{classnjli_1_1_shader_program_a5a6c623a0321cfc305b6edc6e514b049}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!compile@{compile}}
+\index{compile@{compile}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{compile()}{compile()}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::compile (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Content,  }\item[{\mbox{\hyperlink{namespacenjli_a8f2b6cfac9213576c34bcf711ac39fbd}{njli\+Shader\+Type}}}]{type }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Content} & $<$\#file\+Content description\#$>$ \\
+\hline
+{\em type} & $<$\mbox{\hyperlink{classnjli_1_1_shader_program_a92e24de59f2e44318baab955895910ba}{type}} description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a47e7e27178632533e9d8c805f5482812}\label{classnjli_1_1_shader_program_a47e7e27178632533e9d8c805f5482812}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!compile\+Shader@{compile\+Shader}}
+\index{compile\+Shader@{compile\+Shader}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{compile\+Shader()}{compileShader()}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::compile\+Shader (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} $\ast$}]{shader,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{type,  }\item[{const char $\ast$}]{source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ac5ccaeffeccdfc14a2579eddb07e0a36}\label{classnjli_1_1_shader_program_ac5ccaeffeccdfc14a2579eddb07e0a36}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}}$\ast$ njli\+::\+Shader\+Program\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a83a8876ae63b92804004cf3febe76573}\label{classnjli_1_1_shader_program_a83a8876ae63b92804004cf3febe76573}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!create@{create}}
+\index{create@{create}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::create}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a0d6c86874feb9ca5e1203afe5c30b216}\label{classnjli_1_1_shader_program_a0d6c86874feb9ca5e1203afe5c30b216}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!create@{create}}
+\index{create@{create}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}}$\ast$ njli\+::\+Shader\+Program\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a425842368a91fb2d82d550a36d3d440a}\label{classnjli_1_1_shader_program_a425842368a91fb2d82d550a36d3d440a}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!create@{create}}
+\index{create@{create}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}}$\ast$ njli\+::\+Shader\+Program\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_shader_program_builder}{Shader\+Program\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a78a8831d8b2c160381b3f00b5bd0a9f1}\label{classnjli_1_1_shader_program_a78a8831d8b2c160381b3f00b5bd0a9f1}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}}$\ast$$\ast$ njli\+::\+Shader\+Program\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ae162b5b68d88e47b14b507fec798da1c}\label{classnjli_1_1_shader_program_ae162b5b68d88e47b14b507fec798da1c}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Shader\+Program\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a86ca7eb980e28330ee6ca6a7d17e0a12}\label{classnjli_1_1_shader_program_a86ca7eb980e28330ee6ca6a7d17e0a12}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Shader\+Program\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a3f4444c90822c63fee69261f476774b7}\label{classnjli_1_1_shader_program_a3f4444c90822c63fee69261f476774b7}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!fragment\+Shader\+Log@{fragment\+Shader\+Log}}
+\index{fragment\+Shader\+Log@{fragment\+Shader\+Log}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{fragment\+Shader\+Log()}{fragmentShaderLog()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Shader\+Program\+::fragment\+Shader\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a44caba1039485701689f734de28462e7}\label{classnjli_1_1_shader_program_a44caba1039485701689f734de28462e7}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Attribute\+Location@{get\+Attribute\+Location}}
+\index{get\+Attribute\+Location@{get\+Attribute\+Location}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Attribute\+Location()}{getAttributeLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Shader\+Program\+::get\+Attribute\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{attribute\+Name }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em attribute\+Name} & $<$\#attribute\+Name description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a61698287de4dadfd88151f40038569cf}\label{classnjli_1_1_shader_program_a61698287de4dadfd88151f40038569cf}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Shader\+Program\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ad41266885be835f3ee602311e20877a4}\label{classnjli_1_1_shader_program_ad41266885be835f3ee602311e20877a4}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Abstract\+Decorator\+::get\+Name}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a663abf703712e6cbdffd9ac7ee2631b9}\label{classnjli_1_1_shader_program_a663abf703712e6cbdffd9ac7ee2631b9}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_geometry}{Geometry}}$\ast$ njli\+::\+Shader\+Program\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_af1c05ca7d7c97f0abeedf3c34426ddc1}\label{classnjli_1_1_shader_program_af1c05ca7d7c97f0abeedf3c34426ddc1}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_geometry}{Geometry}}$\ast$ njli\+::\+Shader\+Program\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ac4ca71716ed832be357f15f8262c8448}\label{classnjli_1_1_shader_program_ac4ca71716ed832be357f15f8262c8448}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Pointer()}{getPointer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_shader_program_a4ffddf141a426a5a07d0ac19f1913811}\label{classnjli_1_1_shader_program_a4ffddf141a426a5a07d0ac19f1913811}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Pointer\+Value()}{getPointerValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer\+Value}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_af2f154eef9904f4b5078983ae025cd7a}\label{classnjli_1_1_shader_program_af2f154eef9904f4b5078983ae025cd7a}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Shader\+Program\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_aa870b331b82002024be451a7d556d99c}\label{classnjli_1_1_shader_program_aa870b331b82002024be451a7d556d99c}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Uniform\+Location@{get\+Uniform\+Location}}
+\index{get\+Uniform\+Location@{get\+Uniform\+Location}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Location()}{getUniformLocation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Shader\+Program\+::get\+Uniform\+Location (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em uniform\+Name} & $<$\#uniform\+Name description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a01aeae9437f32732e8d2d3b59c962139}\label{classnjli_1_1_shader_program_a01aeae9437f32732e8d2d3b59c962139}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Uniform\+Value@{get\+Uniform\+Value}}
+\index{get\+Uniform\+Value@{get\+Uniform\+Value}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Value()}{getUniformValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::get\+Uniform\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name,  }\item[{\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a3a27d20080728fd333fb013f6492ee34}\label{classnjli_1_1_shader_program_a3a27d20080728fd333fb013f6492ee34}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!get\+Uniform\+Value@{get\+Uniform\+Value}}
+\index{get\+Uniform\+Value@{get\+Uniform\+Value}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{get\+Uniform\+Value()}{getUniformValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::get\+Uniform\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name,  }\item[{bt\+Transform \&}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a232cb84b51bfdd0d3ace500fedde45a2}\label{classnjli_1_1_shader_program_a232cb84b51bfdd0d3ace500fedde45a2}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!is\+Linked@{is\+Linked}}
+\index{is\+Linked@{is\+Linked}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{is\+Linked()}{isLinked()}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::is\+Linked (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_add1203b770ecde00cf3089433cdc372e}\label{classnjli_1_1_shader_program_add1203b770ecde00cf3089433cdc372e}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!link@{link}}
+\index{link@{link}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{link()}{link()}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::link (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_af1b37f6cb592d8ebd4f5a31a80a373c2}\label{classnjli_1_1_shader_program_af1b37f6cb592d8ebd4f5a31a80a373c2}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!load@{load}}
+\index{load@{load}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Shader\+Program\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a73023771e5e565e69571188ebc59a471}\label{classnjli_1_1_shader_program_a73023771e5e565e69571188ebc59a471}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!log\+For\+Open\+G\+L\+Object@{log\+For\+Open\+G\+L\+Object}}
+\index{log\+For\+Open\+G\+L\+Object@{log\+For\+Open\+G\+L\+Object}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{log\+For\+Open\+G\+L\+Object()}{logForOpenGLObject()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Shader\+Program\+::log\+For\+Open\+G\+L\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{object,  }\item[{\mbox{\hyperlink{_shader_program_8h_a50070b167d585b9e4ba6faa4e3063cc7}{G\+L\+Info\+Function}}}]{info\+Func,  }\item[{\mbox{\hyperlink{_shader_program_8h_a946b6792efe50de240df436a3d028764}{G\+L\+Log\+Function}}}]{log\+Func }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a2af9c6b24ed749e698c3fce3fabda18f}\label{classnjli_1_1_shader_program_a2af9c6b24ed749e698c3fce3fabda18f}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Shader\+Program\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_aba28741515ef99ccd725473aadd26a93}\label{classnjli_1_1_shader_program_aba28741515ef99ccd725473aadd26a93}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}}\& njli\+::\+Shader\+Program\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_shader_program}{Shader\+Program}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a28dfbce737ee0481f6a8199a0b1b226f}\label{classnjli_1_1_shader_program_a28dfbce737ee0481f6a8199a0b1b226f}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!program\+Log@{program\+Log}}
+\index{program\+Log@{program\+Log}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{program\+Log()}{programLog()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Shader\+Program\+::program\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a302cf231b252535230e1eaa794c0dc3e}\label{classnjli_1_1_shader_program_a302cf231b252535230e1eaa794c0dc3e}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!save\+Source@{save\+Source}}
+\index{save\+Source@{save\+Source}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{save\+Source()}{saveSource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Shader\+Program\+::save\+Source (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{vertex\+Shader\+Source,  }\item[{const std\+::string \&}]{fragment\+Shader\+Source }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_afe83d2e58961011b642a25e7c15a6953}\label{classnjli_1_1_shader_program_afe83d2e58961011b642a25e7c15a6953}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Shader\+Program\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a4fc4bcd9d1930911474210c047372fc0}\label{classnjli_1_1_shader_program_a4fc4bcd9d1930911474210c047372fc0}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{serialize\+Object()}{serializeObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Factory\+Object\+::serialize\+Object}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & $<$\#serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a087eb5f8d9f51cc476f12f1d10a3cb95}\label{classnjli_1_1_shader_program_a087eb5f8d9f51cc476f12f1d10a3cb95}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Decorator\+::set\+Name}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & $<$\#name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_aa48f0968f86931295b686cb31d6aadfd}\label{classnjli_1_1_shader_program_aa48f0968f86931295b686cb31d6aadfd}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!set\+Uniform\+Value@{set\+Uniform\+Value}}
+\index{set\+Uniform\+Value@{set\+Uniform\+Value}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform\+Value()}{setUniformValue()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::set\+Uniform\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name,  }\item[{\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ab55e9cbbf6a0921259a38c50ff0c6c80}\label{classnjli_1_1_shader_program_ab55e9cbbf6a0921259a38c50ff0c6c80}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!set\+Uniform\+Value@{set\+Uniform\+Value}}
+\index{set\+Uniform\+Value@{set\+Uniform\+Value}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{set\+Uniform\+Value()}{setUniformValue()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::set\+Uniform\+Value (\begin{DoxyParamCaption}\item[{const char $\ast$}]{uniform\+Name,  }\item[{const bt\+Transform \&}]{value,  }\item[{bool}]{transpose = {\ttfamily false} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a92e24de59f2e44318baab955895910ba}\label{classnjli_1_1_shader_program_a92e24de59f2e44318baab955895910ba}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!type@{type}}
+\index{type@{type}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Shader\+Program\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_af93d37d88d0d56ae1dfe0a902ec7391e}\label{classnjli_1_1_shader_program_af93d37d88d0d56ae1dfe0a902ec7391e}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!un\+Load\+G\+PU@{un\+Load\+G\+PU}}
+\index{un\+Load\+G\+PU@{un\+Load\+G\+PU}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{un\+Load\+G\+P\+U()}{unLoadGPU()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Shader\+Program\+::un\+Load\+G\+PU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_shader_program_a1295b3e2656bc24f485dc97a7d920b67}\label{classnjli_1_1_shader_program_a1295b3e2656bc24f485dc97a7d920b67}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!use@{use}}
+\index{use@{use}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{use()}{use()}}
+{\footnotesize\ttfamily bool njli\+::\+Shader\+Program\+::use (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_shader_program_a132663261df4c7029260a59afb91a19d}\label{classnjli_1_1_shader_program_a132663261df4c7029260a59afb91a19d}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!vertex\+Shader\+Log@{vertex\+Shader\+Log}}
+\index{vertex\+Shader\+Log@{vertex\+Shader\+Log}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{vertex\+Shader\+Log()}{vertexShaderLog()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Shader\+Program\+::vertex\+Shader\+Log (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a9aca7b7350e6ffa0e2d6320834ad1857}\label{classnjli_1_1_shader_program_a9aca7b7350e6ffa0e2d6320834ad1857}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Geometry@{Geometry}}
+\index{Geometry@{Geometry}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Geometry}{Geometry}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_geometry}{Geometry}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 40 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_ae7c7f3376b81514442fbc2a5fe2f5ec9}\label{classnjli_1_1_shader_program_ae7c7f3376b81514442fbc2a5fe2f5ec9}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!Material\+Property@{Material\+Property}}
+\index{Material\+Property@{Material\+Property}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{Material\+Property}{MaterialProperty}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_material_property}{Material\+Property}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 41 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_shader_program_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 39 of file Shader\+Program.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_shader_program_aa1e64cb2fabffbafbff9f7c707672643}\label{classnjli_1_1_shader_program_aa1e64cb2fabffbafbff9f7c707672643}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+\+Fragment\+Shader\+Source@{m\+\_\+\+Fragment\+Shader\+Source}}
+\index{m\+\_\+\+Fragment\+Shader\+Source@{m\+\_\+\+Fragment\+Shader\+Source}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Fragment\+Shader\+Source}{m\_FragmentShaderSource}}
+{\footnotesize\ttfamily std\+::string njli\+::\+Shader\+Program\+::m\+\_\+\+Fragment\+Shader\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 257 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a9b528190f997c332ccd7f4605a2ba5c7}\label{classnjli_1_1_shader_program_a9b528190f997c332ccd7f4605a2ba5c7}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+frag\+Shader@{m\+\_\+frag\+Shader}}
+\index{m\+\_\+frag\+Shader@{m\+\_\+frag\+Shader}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+frag\+Shader}{m\_fragShader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Shader\+Program\+::m\+\_\+frag\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 254 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a2de7645fd10fecfe9bd3e128984c93e7}\label{classnjli_1_1_shader_program_a2de7645fd10fecfe9bd3e128984c93e7}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+mat4\+Buffer@{m\+\_\+mat4\+Buffer}}
+\index{m\+\_\+mat4\+Buffer@{m\+\_\+mat4\+Buffer}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+mat4\+Buffer}{m\_mat4Buffer}}
+{\footnotesize\ttfamily float$\ast$ njli\+::\+Shader\+Program\+::m\+\_\+mat4\+Buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 262 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a8391542fc26ae41466b6fe713a5ded2f}\label{classnjli_1_1_shader_program_a8391542fc26ae41466b6fe713a5ded2f}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+\+Program@{m\+\_\+\+Program}}
+\index{m\+\_\+\+Program@{m\+\_\+\+Program}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Program}{m\_Program}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Shader\+Program\+::m\+\_\+\+Program\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 252 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a20e228a576a90ddd2e232fa490cde560}\label{classnjli_1_1_shader_program_a20e228a576a90ddd2e232fa490cde560}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+uniform\+Value\+Map@{m\+\_\+uniform\+Value\+Map}}
+\index{m\+\_\+uniform\+Value\+Map@{m\+\_\+uniform\+Value\+Map}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+uniform\+Value\+Map}{m\_uniformValueMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_shader_program_a36ecea1b480769cf2a125e5fb13f122a}{Uniform\+Value\+Map}} njli\+::\+Shader\+Program\+::m\+\_\+uniform\+Value\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 261 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a36b6891a72ec4e6f7ee89add79884282}\label{classnjli_1_1_shader_program_a36b6891a72ec4e6f7ee89add79884282}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+\+Vertex\+Shader\+Source@{m\+\_\+\+Vertex\+Shader\+Source}}
+\index{m\+\_\+\+Vertex\+Shader\+Source@{m\+\_\+\+Vertex\+Shader\+Source}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Vertex\+Shader\+Source}{m\_VertexShaderSource}}
+{\footnotesize\ttfamily std\+::string njli\+::\+Shader\+Program\+::m\+\_\+\+Vertex\+Shader\+Source\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 256 of file Shader\+Program.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_shader_program_a8f1c16c8132f6680d0fd8e7cd0f53ad9}\label{classnjli_1_1_shader_program_a8f1c16c8132f6680d0fd8e7cd0f53ad9}} 
+\index{njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}!m\+\_\+vert\+Shader@{m\+\_\+vert\+Shader}}
+\index{m\+\_\+vert\+Shader@{m\+\_\+vert\+Shader}!njli\+::\+Shader\+Program@{njli\+::\+Shader\+Program}}
+\subsubsection{\texorpdfstring{m\+\_\+vert\+Shader}{m\_vertShader}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Shader\+Program\+::m\+\_\+vert\+Shader\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 253 of file Shader\+Program.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/graphics/\mbox{\hyperlink{_shader_program_8h}{Shader\+Program.\+h}}\end{DoxyCompactItemize}

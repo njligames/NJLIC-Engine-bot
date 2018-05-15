@@ -1,0 +1,3168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_geometry" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>njli::Geometry</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <derivedcompoundref refid="classnjli_1_1_cube" prot="public" virt="non-virtual">njli::Cube</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_plane" prot="public" virt="non-virtual">njli::Plane</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_sprite2_d" prot="public" virt="non-virtual">njli::Sprite2D</derivedcompoundref>
+    <includes refid="_geometry_8h" local="no">Geometry.h</includes>
+    <innerclass refid="structnjli_1_1_geometry_1_1_textured_colored_vertex" prot="public">njli::Geometry::TexturedColoredVertex</innerclass>
+    <innerclass refid="structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex" prot="public">njli::Geometry::TexturedNormaledColoredVertex</innerclass>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_geometry_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="44" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_geometry_1a6db9d28bd448a131448276ee03de1e6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Node</definition>
+        <argsstring></argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="45" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_geometry_1a032858ae1fe02d2d1170981c2af2d67c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Scene</definition>
+        <argsstring></argsstring>
+        <name>Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="46" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_geometry_1ada345e4f9c2a87f06868b74d30e94ad2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsBodyRigid</definition>
+        <argsstring></argsstring>
+        <name>PhysicsBodyRigid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="47" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1aadc21c7eaa17ae0bd48895e0b805e926" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> * &gt;</type>
+        <definition>std::vector&lt;LevelOfDetail *&gt; njli::Geometry::m_LevelOfDetailList</definition>
+        <argsstring></argsstring>
+        <name>m_LevelOfDetailList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="582" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ab2ba0f4fa336c12174fcac949df5fee3" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>Material* njli::Geometry::m_Material</definition>
+        <argsstring></argsstring>
+        <name>m_Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="584" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a28fe075abe7471aee4eff56e0b1389c3" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>ShaderProgram* njli::Geometry::m_ShaderProgram</definition>
+        <argsstring></argsstring>
+        <name>m_ShaderProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="585" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="585" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1aa8e22217dcfbcb465395971bef71453c" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_projectionMatrixUniform</definition>
+        <argsstring></argsstring>
+        <name>m_projectionMatrixUniform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="586" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="586" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a0a9f224dd899fe90b27c6da5cafe6489" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_modelViewBufferID</definition>
+        <argsstring></argsstring>
+        <name>m_modelViewBufferID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="588" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="588" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1aae71a91b509b2535d0037a6be4bc3e2d" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_colorTransformBufferID</definition>
+        <argsstring></argsstring>
+        <name>m_colorTransformBufferID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="589" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="589" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ab544bc75aee1731a0bfe0f107eaf4044" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref> *</type>
+        <definition>f32* njli::Geometry::m_ModelviewTransform</definition>
+        <argsstring></argsstring>
+        <name>m_ModelviewTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="590" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="590" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a261359d21a4f86f5335975197372e183" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref> *</type>
+        <definition>f32* njli::Geometry::m_ColorTransform</definition>
+        <argsstring></argsstring>
+        <name>m_ColorTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="591" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="591" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ab3c31621e11c227991a764b3dcd8d7b2" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InTransformAttrib</definition>
+        <argsstring></argsstring>
+        <name>m_InTransformAttrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="593" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="593" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a92e00e8041964fbec6273971bde5c80d" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InColorTransform</definition>
+        <argsstring></argsstring>
+        <name>m_InColorTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="594" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="594" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a0cb9201bc685871f14a28e5ab3ad3ece" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_verticesBufferID</definition>
+        <argsstring></argsstring>
+        <name>m_verticesBufferID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="595" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="595" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1aa4b1af9c522fda1a6f4aa6d92bce806f" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::indexBufferID</definition>
+        <argsstring></argsstring>
+        <name>indexBufferID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="596" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="596" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a2aa12f424eb0ff7e66138470f14a9544" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_vertexArrayID</definition>
+        <argsstring></argsstring>
+        <name>m_vertexArrayID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="597" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="597" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a3c49bfc26e8e421c3321223cf607ff96" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InPositionAttrib</definition>
+        <argsstring></argsstring>
+        <name>m_InPositionAttrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="599" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a17d04db635e9cfdf49eb928f41569cb8" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InTexCoordAttrib</definition>
+        <argsstring></argsstring>
+        <name>m_InTexCoordAttrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="600" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="600" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a1c6c813d0d983d18f5f0463b476f8477" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InColorAttrib</definition>
+        <argsstring></argsstring>
+        <name>m_InColorAttrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="601" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="601" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ae15315943bb9830d57a1e7a67dfa04ab" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InOpacityAttrib</definition>
+        <argsstring></argsstring>
+        <name>m_InOpacityAttrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="602" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="602" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ac455a1ec0567cade34b5453e32ba463f" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::m_InHiddenAttrib</definition>
+        <argsstring></argsstring>
+        <name>m_InHiddenAttrib</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="603" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="603" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a1a70685ec5ec85f08adbd7277590a67c" prot="private" static="no" mutable="no">
+        <type>std::bitset&lt; <ref refid="_geometry_8h_1a32926a2aa4b4f89492e39e960367a9af" kindref="member">NUMBER_OF_MESHES</ref> &gt;</type>
+        <definition>std::bitset&lt;NUMBER_OF_MESHES&gt; njli::Geometry::m_References</definition>
+        <argsstring></argsstring>
+        <name>m_References</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="605" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="605" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a9913325754224a04d80c97942c5d0590" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::Geometry::m_blendFuncSource</definition>
+        <argsstring></argsstring>
+        <name>m_blendFuncSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="609" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="609" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1afa9f334ee74381bb6bb7f2487943ebd5" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::Geometry::m_blendFuncDestination</definition>
+        <argsstring></argsstring>
+        <name>m_blendFuncDestination</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="610" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="610" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a4bb3529fcfb94e4567ec743bafdcb033" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::_opacityModifyRGB</definition>
+        <argsstring></argsstring>
+        <name>_opacityModifyRGB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="611" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="611" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ac5c7f121590883537de568962f8e3b96" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::u_pointSize</definition>
+        <argsstring></argsstring>
+        <name>u_pointSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="613" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="613" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ae1d2dde4fa803b27f8743710841a53cb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_enableBlend</definition>
+        <argsstring></argsstring>
+        <name>m_enableBlend</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="615" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="615" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a6417e088ae2684f413e37d3fd17e4b90" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_enableDepthTest</definition>
+        <argsstring></argsstring>
+        <name>m_enableDepthTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="616" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="616" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ac546ac75ca65bd355d3a1aca7077a7a1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_enableStencilTest</definition>
+        <argsstring></argsstring>
+        <name>m_enableStencilTest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="617" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ad414e27c2a708d6b0e361b88cfd8d75b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_TransformDirty</definition>
+        <argsstring></argsstring>
+        <name>m_TransformDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="619" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="619" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a27cca52a3235c03f661f5f03a258ea54" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_ColorTransformDirty</definition>
+        <argsstring></argsstring>
+        <name>m_ColorTransformDirty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="620" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a4e9e4a00d2ae14efb4df0fbe1485570f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_LoadGPU</definition>
+        <argsstring></argsstring>
+        <name>m_LoadGPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="623" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a8990f2c3818485e53b23de12fea66468" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>Material* njli::Geometry::m_setupOpacity_Material</definition>
+        <argsstring></argsstring>
+        <name>m_setupOpacity_Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="629" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1afcd7de399a889620ff0ad2b2f2fc3afa" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_image" kindref="compound">Image</ref> *</type>
+        <definition>Image* njli::Geometry::m_setupOpacity_Image</definition>
+        <argsstring></argsstring>
+        <name>m_setupOpacity_Image</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="630" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="630" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a55329444afa99dbd6fd3092e550c3618" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_setupOpacity</definition>
+        <argsstring></argsstring>
+        <name>m_setupOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="631" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="631" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1acab3d6720f978b23572f0ae75486a14f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_UnLoadGPU</definition>
+        <argsstring></argsstring>
+        <name>m_UnLoadGPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="633" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="633" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a6dba2ac93b83f9baa5596158e311470b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_bufferModified</definition>
+        <argsstring></argsstring>
+        <name>m_bufferModified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="638" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a6a2f29f2dd1c6a0f46a59f719c422a56" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::Geometry::m_vertexAttribChanged</definition>
+        <argsstring></argsstring>
+        <name>m_vertexAttribChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="639" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1aa2abacdbd107c6b2d23e30be645ff0b6" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* njli::Geometry::m_MatrixBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_MatrixBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="641" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="641" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ac610f319fbf74cee097fc579ab61e6a4" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::Geometry::m_maxindice</definition>
+        <argsstring></argsstring>
+        <name>m_maxindice</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="642" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="642" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1ae021b501c8e2052a24ac3139461b86f3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+        <definition>njliBitCategories njli::Geometry::m_RenderCategory</definition>
+        <argsstring></argsstring>
+        <name>m_RenderCategory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="643" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="643" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a4719e7a6be0324ad5a3369e563c8528a" prot="private" static="yes" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::Geometry::s_PointSize</definition>
+        <argsstring></argsstring>
+        <name>s_PointSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="607" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="607" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_geometry_1a31da0cda6afa6d640ce54b5c6642cf73" prot="private" static="yes" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::Geometry::s_LineWidth</definition>
+        <argsstring></argsstring>
+        <name>s_LineWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="626" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aa4130386ba85c7f15437fc3539530cc2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::Geometry::Geometry</definition>
+        <argsstring>()</argsstring>
+        <name>Geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1af78c87969f709e52b767f1f1841e6b51" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::Geometry::Geometry</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>Geometry</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a11bccbb5b7f74ffe5e85afe825069120" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::Geometry::Geometry</definition>
+        <argsstring>(const Geometry &amp;)</argsstring>
+        <name>Geometry</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a91ea8d7cf64ab6c3b07d370a64d69f73" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::Geometry::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aa2b91ed0f6436f990deeef380ef7843e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::Geometry::~Geometry</definition>
+        <argsstring>()</argsstring>
+        <name>~Geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a191cc8461636a801bce0f2bf8f1992f6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> &amp;</type>
+        <definition>Geometry&amp; njli::Geometry::operator=</definition>
+        <argsstring>(const Geometry &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a61477b1983dc37e146232b99eff643e1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::load</definition>
+        <argsstring>()</argsstring>
+        <name>load</name>
+        <reimplementedby refid="classnjli_1_1_cube_1ac4040d5afd8034ba6cafca66d472c966">load</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1afe5dc58f98c20568da4bb48cc2ade19f">load</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="477" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a0c5960113b3cd040e7df7b8d2104f7a3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::unLoad</definition>
+        <argsstring>()</argsstring>
+        <name>unLoad</name>
+        <reimplementedby refid="classnjli_1_1_cube_1a6699821443ee652912052b4d8ddf58e1">unLoad</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a7d6d0369dd3cd6552d3a188aa323a088">unLoad</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="478" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ab2f41460700ad44f8cea15d6e8b66fea" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::render</definition>
+        <argsstring>(Camera *camera, s32 mode=0x0004)</argsstring>
+        <name>render</name>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>mode</declname>
+          <defval>0x0004</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="479" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a6547f3d712e0507d79e47b162360eab0" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* njli::Geometry::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="483" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aeda5f906f9221ce62149bc959d3460b2" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>const Node* njli::Geometry::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="484" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aaf9879b9197998f1a63dac38ead6354c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::addReference</definition>
+        <argsstring>(Node *)</argsstring>
+        <name>addReference</name>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="486" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a39b63002b1e195651b30186319f5cf6d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::removeReference</definition>
+        <argsstring>(Node *)</argsstring>
+        <name>removeReference</name>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="487" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a3780bbd093a4b163de3499e5726667f9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::hideGeometry</definition>
+        <argsstring>(Node *)=0</argsstring>
+        <name>hideGeometry</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a3394026e187763e245fcf11c483bb75c">hideGeometry</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a328e8add9f2af823067d7c98e33dcff2">hideGeometry</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a4a0be33f855fcef2b8ab1ebed8b09652">hideGeometry</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="488" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a3729511d4f34251e0ac1df3135c2a00f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::enableBufferModified</definition>
+        <argsstring>(bool modified=true)</argsstring>
+        <name>enableBufferModified</name>
+        <param>
+          <type>bool</type>
+          <declname>modified</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="490" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a7d8e8d24bb0b2ed0e19bb214cb7f512d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::Geometry::isBufferModified</definition>
+        <argsstring>() const</argsstring>
+        <name>isBufferModified</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="491" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a8a14d6d068bf303718c1a92886f673b8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::Geometry::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <reimplementedby refid="classnjli_1_1_plane_1a7f585c76d7bd568c089c91c12cba4982">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a1e825a45f0d5562df188067854283d1b">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a4151be6ec53acfacc209ec1a0755a671">calculateSerializeBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a42a35911278eb52e0013d6dadd80271d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::serialize</definition>
+        <argsstring>(void *dataBuffer, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <reimplementedby refid="classnjli_1_1_plane_1a3a3dd9c8e6f4a7a8304732b80c1ce68f">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a00652e991c099a535207194c73324c65">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1ae372ea409ac67b1585e7928bffe5f502">serialize</reimplementedby>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+          <declname>dataBuffer</declname>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 15:02:57</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dataBuffer description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1abfa3fe3b5680b7b40c650fdc7a7fb737" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::Geometry::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <reimplementedby refid="classnjli_1_1_plane_1a9a7ccbc86c1f486cd816f0f4f3e9c550">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1ab6515dcb9f54a3bf9945dacbb88d2eca">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a6e82261effc23589cca219ddb5c90851">getClassName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac13aedbb6914e12416c46574805cb13a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::Geometry::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <reimplementedby refid="classnjli_1_1_plane_1ae2a4d392bb3fe4ad2aa068a578aa11d7">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1ac5a367b969396afb5e7d060593ce67ab">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a57e7a9f75af0208001c075120f1ece3c">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ae678ad91efebe665fc2f5533dc26fe24" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::Geometry::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <reimplementedby refid="classnjli_1_1_plane_1a0530fd624d0fbb1b2629f74e81a8b0fa">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a565b51d4b11b9d35f6ca7e54fbf7fb8e">operator std::string</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="100" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a3cbdfa54d4321633f3c59c27a041fe52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::addLevelOfDetail</definition>
+        <argsstring>(LevelOfDetail *geometry)</argsstring>
+        <name>addLevelOfDetail</name>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ae0001216bacc787a9c235fb78609d276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::Geometry::removeLevelOfDetail</definition>
+        <argsstring>(LevelOfDetail *geometry)</argsstring>
+        <name>removeLevelOfDetail</name>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="147" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a95e2234f03e5a4fae599689e1545f323" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::removeAllLevelOfDetails</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllLevelOfDetails</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="151" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac205720639e55ef44ea2e8102d26fe65" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::getLevelOfDetails</definition>
+        <argsstring>(std::vector&lt; LevelOfDetail *&gt; &amp;geometries) const</argsstring>
+        <name>getLevelOfDetails</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *&gt; &amp;</type>
+          <declname>geometries</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometries</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometries description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aec96c72c2a2a25ff38d2ab5fc0f29ebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+        <definition>LevelOfDetail* njli::Geometry::getLevelOfDetail</definition>
+        <argsstring>(const u32 index)</argsstring>
+        <name>getLevelOfDetail</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a97ca6b5b3e6241030284eaf8a89b15d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+        <definition>const LevelOfDetail* njli::Geometry::getLevelOfDetail</definition>
+        <argsstring>(const u32 index) const</argsstring>
+        <name>getLevelOfDetail</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a8cd2fdd337567a3ec1b6ad53e8010afa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setMaterial</definition>
+        <argsstring>(Material *material, Image *image=NULL)</argsstring>
+        <name>setMaterial</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+          <defval><ref refid="_util_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" kindref="member">NULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#material description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a419d020ca0b46536bb53d923fd1c7df3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::removeMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>removeMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aeb3c06288fdf26e61eb942abc69d7d02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>Material* njli::Geometry::getMaterial</definition>
+        <argsstring>()</argsstring>
+        <name>getMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a9eae0bae53bb1936e80a632e6fe48438" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>const Material* njli::Geometry::getMaterial</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a49e8cb2aeb028d46a2ec9e4b45b7bb6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setShaderProgram</definition>
+        <argsstring>(ShaderProgram *shader)</argsstring>
+        <name>setShaderProgram</name>
+        <param>
+          <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#shader description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aa4b0598066056bb2ffa97e85febadfa4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::removeShaderProgram</definition>
+        <argsstring>()</argsstring>
+        <name>removeShaderProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="207" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1af5c8c5bf7cfb1945e7d5dded1a0c09a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>ShaderProgram* njli::Geometry::getShaderProgram</definition>
+        <argsstring>()</argsstring>
+        <name>getShaderProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1af174791330137117465516251b7b3da7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>const ShaderProgram* njli::Geometry::getShaderProgram</definition>
+        <argsstring>() const</argsstring>
+        <name>getShaderProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a99e87d031c95a3a4e73f2e1d68f7e977" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::Geometry::getMaxMeshes</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxMeshes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a64f70fb9198d1037e363b8e24572ec53" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::getVertices</definition>
+        <argsstring>(LevelOfDetail *geometry, btVector3 **vertices, Node *node) const =0</argsstring>
+        <name>getVertices</name>
+        <reimplementedby refid="classnjli_1_1_plane_1ad021359d2f67ae8165be5b14c33b4b6d">getVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a5f7f2c09006d809bce2914d86e3350d6">getVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a5379017996ff9b59a54253f75fac4409">getVertices</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>btVector3 **</type>
+          <declname>vertices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 17:02:44</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#vertices description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a125699411e1abc464f923fe4e72fc65b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>virtual u64 njli::Geometry::getNumberOfVertices</definition>
+        <argsstring>(LevelOfDetail *geometry, Node *node) const =0</argsstring>
+        <name>getNumberOfVertices</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a6e25a6d9b9819d375c257b68a1e8a6d6">getNumberOfVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a96d489e0131032c64a150cd1629fd0e5">getNumberOfVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a62a69318d5cb98a56f81f91968efcc8e">getNumberOfVertices</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 17:02:49</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="250" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a9995d84e425b589da7576cb3815150e8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::getVertexColors</definition>
+        <argsstring>(LevelOfDetail *geometry, btVector4 **colorVertices, Node *node) const =0</argsstring>
+        <name>getVertexColors</name>
+        <reimplementedby refid="classnjli_1_1_plane_1ada514395abc636326f76aee6fba5ab4f">getVertexColors</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1ac17cc53c2a39003e8459e990102a23fb">getVertexColors</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a7eb8e4a7d431b6b6f46888a1592cf8ad">getVertexColors</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>btVector4 **</type>
+          <declname>colorVertices</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 17:02:56</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>colorVertices</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#colorVertices description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a224b18abc15b88b556e6b71bb89ecf73" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>virtual u64 njli::Geometry::getNumberOfVertexColors</definition>
+        <argsstring>(LevelOfDetail *geometry, Node *node) const =0</argsstring>
+        <name>getNumberOfVertexColors</name>
+        <reimplementedby refid="classnjli_1_1_plane_1ad003f2734ae681dc704bac77d7e7ca89">getNumberOfVertexColors</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a2ecb47d5889333f482406230fe470e34">getNumberOfVertexColors</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1ad0a716c391963e9e64e26900b8e152a4">getNumberOfVertexColors</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 17:02:05</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="276" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ae54ead1ba785a8c2207b197d8e419abe" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::getTextureCoordinates</definition>
+        <argsstring>(LevelOfDetail *geometry, btVector2 **textureCoordinates, Node *node) const =0</argsstring>
+        <name>getTextureCoordinates</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a55020a9815103781fbe1846cf8b5c81e">getTextureCoordinates</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1ac1e43c1713d68560888fbfdaaff7128c">getTextureCoordinates</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a059f9b19dfbc85491c78613caa3abe72">getTextureCoordinates</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type>btVector2 **</type>
+          <declname>textureCoordinates</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 17:02:14</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>textureCoordinates</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#textureCoordinates description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="288" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a495713b5eea24429df8899cfaa59c832" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>virtual u64 njli::Geometry::getNumberOfTextureCoordinates</definition>
+        <argsstring>(LevelOfDetail *geometry, Node *node) const =0</argsstring>
+        <name>getNumberOfTextureCoordinates</name>
+        <reimplementedby refid="classnjli_1_1_plane_1acac9e0af1f82ed239af270c9c50ec4ab">getNumberOfTextureCoordinates</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a68ba69857ee4bb27dbf9072da12046ab">getNumberOfTextureCoordinates</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a286147feca746833690715526014f6c2">getNumberOfTextureCoordinates</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_level_of_detail" kindref="compound">LevelOfDetail</ref> *</type>
+          <declname>geometry</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 17:02:21</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geometry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#geometry description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ad4f8c2a3b873a63ee62c87d512b9540d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::setOpacity</definition>
+        <argsstring>(Node *node, f32 opacity)=0</argsstring>
+        <name>setOpacity</name>
+        <reimplementedby refid="classnjli_1_1_plane_1abf634e87fdc57ec8a9a2965ec24cc34f">setOpacity</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1abf2ee9acb5cd301b5a4029181be7b155">setOpacity</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a490650f1d2fc6296bc867229367975b8">setOpacity</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>opacity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#opacity description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="311" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a4ba0fc9934e40c651b89969d47b03d3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::setHidden</definition>
+        <argsstring>(Node *node, bool hidden=true)=0</argsstring>
+        <name>setHidden</name>
+        <reimplementedby refid="classnjli_1_1_plane_1af6ce772f6604982a03f837f9479e590b">setHidden</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a67ddaace4a3a936408068657d617a64f">setHidden</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a4a3773c8d699643dc5552a341530c824">setHidden</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>hidden</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transfrom</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transfrom description#&gt; &lt;#Description#&gt;</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#opacity description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="325" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac1ea8a16d541174a03addfa2dfede406" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::Geometry::isHidden</definition>
+        <argsstring>(Node *node) const =0</argsstring>
+        <name>isHidden</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a3c9fb24d02e80c3f2f91790bed222886">isHidden</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a875c4e8392568fdd347c9730aedde9a4">isHidden</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a1873e8390f7a8ffc0c8c94ad239ea0e5">isHidden</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#camera description#&gt; &lt;#Description#&gt;</para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>opacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#opacity description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a25fefe3f656bdcb8c88d2fd4d2f48df1" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::transformVertices</definition>
+        <argsstring>(Node *node, const btTransform &amp;transfrom)=0</argsstring>
+        <name>transformVertices</name>
+        <reimplementedby refid="classnjli_1_1_plane_1aeb45c844627228083af4f2dd4d6b5010">transformVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a357c517b9064bf729722e3cff9312dd0">transformVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1ad3a57659a9ad27cbd21254db444ac49f">transformVertices</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transfrom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a1169257a4241392cec0a23c922f148f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::transformVertexColors</definition>
+        <argsstring>(Node *node, const btTransform &amp;transform)=0</argsstring>
+        <name>transformVertexColors</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a918065b54d466a43fe4c56688a9f0ee2">transformVertexColors</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a9faa5df865ca871af37dea98682a52a2">transformVertexColors</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a2a2d30322a9d48d0521fedbba3072a80">transformVertexColors</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="351" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a8ffb29f40c6f175f83cc36568feb87c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::transformTextureCoordinates</definition>
+        <argsstring>(Node *node, const btTransform &amp;transform)=0</argsstring>
+        <name>transformTextureCoordinates</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a39afa45eb73d3c9a84d5a814d58ea963">transformTextureCoordinates</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a61249eccaef1845855b6c1165bb1d1cf">transformTextureCoordinates</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1af656eb95de72d96c48d9be85d3801763">transformTextureCoordinates</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="359" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a6661dda8bb03d0f3d6e9764760b6b13f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::applyShape</definition>
+        <argsstring>(Node *node, PhysicsShape *physicsShape)=0</argsstring>
+        <name>applyShape</name>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1ae5133dcfd1e31e9686c1240e86feb7d4">applyShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_plane_1a12d8dcbd747c9d03aba34dbf864e4478">applyShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1ac3cffa5a972b0925f562fcabab368cd2">applyShape</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+          <declname>physicsShape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>physicsShape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#physicsShape description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="367" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a9d2e2064f925d9be17ed7fb1b84b728a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::Geometry::shouldApplyShape</definition>
+        <argsstring>(Node *node) const =0</argsstring>
+        <name>shouldApplyShape</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a0ba9fe9f6a03a8438d6204520776250b">shouldApplyShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a7815fc6f5a2174a560721310fa4bd92f">shouldApplyShape</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1ae9b5fd0928a0e47ad37114ca9da6f41a">shouldApplyShape</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="369" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a27b42b7a7ed3c67a6f8827288828687a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::Geometry::numberOfVertices</definition>
+        <argsstring>() const =0</argsstring>
+        <name>numberOfVertices</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a5e69f210a364b0fbacb0e06d98e41725">numberOfVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1aadf462166716a9545b1b2b47078064e7">numberOfVertices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1ae13602610a36e2636c0416a500847dc7">numberOfVertices</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a1033c9f6dee9f725b122c2ddd33f4b0e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::Geometry::numberOfIndices</definition>
+        <argsstring>() const =0</argsstring>
+        <name>numberOfIndices</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a4dd558b3278ca76bfd21d2ec9f02b87b">numberOfIndices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a122d3a2b1e326ec33a865cc6f3391229">numberOfIndices</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1aadc09bc806fa16ad2b4dbe2e9cfba24e">numberOfIndices</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1adbf0ae6c38f23779df2b37708e80c24c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>virtual const void* njli::Geometry::getArrayBuffer</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getArrayBuffer</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a134447dc787dab9269e68f8011e2973f">getArrayBuffer</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a33f8ca33a86505fa1bbee02e7ae9ac77">getArrayBuffer</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a7cac9e09519030700347f1b803a3084e">getArrayBuffer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a97ec03852997043d6900af8009b390d9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" kindref="member">s64</ref></type>
+        <definition>virtual s64 njli::Geometry::getArrayBufferSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getArrayBufferSize</name>
+        <reimplementedby refid="classnjli_1_1_plane_1ad7e4c804fee51739e0696e34c7146a3a">getArrayBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a44544af58aae672e358e364877af9a16">getArrayBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a7ce47c8c15d233418ebc5f012291a2d9">getArrayBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="394" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac4edd389ae104da289e2282d780454f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>virtual const void* njli::Geometry::getElementArrayBuffer</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getElementArrayBuffer</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a13ae025d91ca2ef639d1ba4e92b5ccc5">getElementArrayBuffer</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a23d0d7188f82ae0b16d79a809b4656ea">getElementArrayBuffer</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a87994e01a64d5c6c72c98434f7147a08">getElementArrayBuffer</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac857e830af897450652aee0922e62e20" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" kindref="member">s64</ref></type>
+        <definition>virtual s64 njli::Geometry::getElementArrayBufferSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getElementArrayBufferSize</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a5826539217d13c19c72ed6504d1b6d15">getElementArrayBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1abf93b9573c3ef1b94809e50774a06379">getElementArrayBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a214b06be63b407db77a24bd639b39b60">getElementArrayBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="407" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a64c12722f84add665776c2b9400108fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::setSize</definition>
+        <argsstring>(Node *node, const btVector3 &amp;position, const f32 halfSize)=0</argsstring>
+        <name>setSize</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a69ac7f253c3a2a068f9fd20526dbfa3d">setSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1a935f8c1119991d17858a3982c33912b6">setSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a318f37bf46314d96ce9c70794cf6125a">setSize</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>halfSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="409" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a6ba967a65603a7660ab63fe067e338b4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::setColor</definition>
+        <argsstring>(Node *node, const btVector4 &amp;color)=0</argsstring>
+        <name>setColor</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a60396b5d7d0d1984cb05703a843cce79">setColor</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1aa07b851ff55bd189771d467ca94be5fa">setColor</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a5b32ecafaa923c27662db4ae37286815">setColor</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="411" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a52a0a0310a248e03f8b6c410ca0f3fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setBlendSource</definition>
+        <argsstring>(s32 source)</argsstring>
+        <name>setBlendSource</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="413" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac8524641c3a7273902e2028ef6836503" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setBlendDestination</definition>
+        <argsstring>(s32 dest)</argsstring>
+        <name>setBlendDestination</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>dest</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="414" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a6c736d40f50aa200248ff2fffe362446" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setupOpacity</definition>
+        <argsstring>(Material *material, Image *image)</argsstring>
+        <name>setupOpacity</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a3242e657cbb5914f8f29ba6dbe21ef89" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::loadGPU</definition>
+        <argsstring>()</argsstring>
+        <name>loadGPU</name>
+        <reimplementedby refid="classnjli_1_1_plane_1ad52d21698d5e389af343d798b985bc67">loadGPU</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="420" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a1c7f801932e981d35c18acd5bf11c8c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::unLoadGPU</definition>
+        <argsstring>()</argsstring>
+        <name>unLoadGPU</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a5a5600ceb6d93991c31bed8249ab0e65">unLoadGPU</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="424" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a29ac09a7f5ea68c26a410a03b8a58e16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::Geometry::isLoadedGPU</definition>
+        <argsstring>() const</argsstring>
+        <name>isLoadedGPU</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a0c9b3ff7436f10618116b3392dab9cd4">isLoadedGPU</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="430" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a728c03769da533f7ca74fc967582b632" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::setTransform</definition>
+        <argsstring>(const u64 index, const btTransform &amp;transform)</argsstring>
+        <name>setTransform</name>
+        <param>
+          <type>const <ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1acf510a790969aae6641ae068f1d804ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>btTransform</type>
+        <definition>virtual btTransform njli::Geometry::getTransform</definition>
+        <argsstring>(const u64 index)</argsstring>
+        <name>getTransform</name>
+        <param>
+          <type>const <ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="446" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aa0cc2acc76701fd62efdcddd802e4cda" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::setColorTransform</definition>
+        <argsstring>(const u64 index, const btTransform &amp;transform)</argsstring>
+        <name>setColorTransform</name>
+        <param>
+          <type>const <ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="454" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ae7af4b2e9fb67dbc658492290aeeacad" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>btTransform</type>
+        <definition>virtual btTransform njli::Geometry::getColorTransform</definition>
+        <argsstring>(const u64 index)</argsstring>
+        <name>getColorTransform</name>
+        <param>
+          <type>const <ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="463" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a79efc86c5c96b88d33adfdc3debcddd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::getAabb</definition>
+        <argsstring>(Node *node, btVector3 &amp;aabbMin, btVector3 &amp;aabbMax) const</argsstring>
+        <name>getAabb</name>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1add0a0f16202c5e62dfff65e08570316d">getAabb</reimplementedby>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>aabbMin</declname>
+        </param>
+        <param>
+          <type>btVector3 &amp;</type>
+          <declname>aabbMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="465" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a12bd5b2725ed4ec11cd48d4fc365f644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::enableBlend</definition>
+        <argsstring>(const bool enable=true)</argsstring>
+        <name>enableBlend</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="468" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a4270551bf9c0f0ade7ce5b0fd16f78d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::enableDepthTest</definition>
+        <argsstring>(const bool enable=true)</argsstring>
+        <name>enableDepthTest</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="469" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a66c3dcdcfb2fcc30bc0520f280b87ab0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::enableStencilTest</definition>
+        <argsstring>(const bool enable=true)</argsstring>
+        <name>enableStencilTest</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="470" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac369079a8761aeabf7fcef930690db42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::hide</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>hide</name>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="472" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a2778a40635e95c7c7059aa7ce9007290" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::show</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>show</name>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="473" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac73f3369c9be097e8cd534ca42401c9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::Geometry::isHidden</definition>
+        <argsstring>(Camera *camera) const</argsstring>
+        <name>isHidden</name>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="474" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a555e9b90676b286bf036902e164e6fa4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::Geometry::numberOfReferences</definition>
+        <argsstring>() const</argsstring>
+        <name>numberOfReferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="499" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a60f8058a4afac8cfe23aa33ae1382fbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::sort</definition>
+        <argsstring>(const btVector3 &amp;cameraOrigin)</argsstring>
+        <name>sort</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>cameraOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="564" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ae448a8fa9c7aaccd9db8ed6dfcf62dab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setupShader</definition>
+        <argsstring>()</argsstring>
+        <name>setupShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="566" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="64" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a1b2b50024e18bfce206656b91440dfd1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>static Geometry* njli::Geometry::create</definition>
+        <argsstring>(u32 type)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;<ref refid="classnjli_1_1_geometry_1a144e779681b19041b60e129cbf7cac29" kindref="member">type</ref> description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a349dae2018bfdf9bcbec73623d45ce68" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::Geometry::destroy</definition>
+        <argsstring>(Geometry *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a54a7465cbc4c4d1c8c353a809c73393e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::Geometry::load</definition>
+        <argsstring>(Geometry &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="123" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a144e779681b19041b60e129cbf7cac29" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::Geometry::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="129" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a73ef5b46355f011df4a64303dd99d7b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::Geometry::setPointSize</definition>
+        <argsstring>(const f32 size)</argsstring>
+        <name>setPointSize</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="494" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a8db5f3cf3727aa03fb31a1954c53c139" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>static f32 njli::Geometry::getPointSize</definition>
+        <argsstring>()</argsstring>
+        <name>getPointSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="495" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aca9151002282f1d817893db01d48d332" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::Geometry::setLineWidth</definition>
+        <argsstring>(const f32 size)</argsstring>
+        <name>setLineWidth</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="496" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a1c16844fdb0bd887c6338bfb445a1804" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>static f32 njli::Geometry::getLineWidth</definition>
+        <argsstring>()</argsstring>
+        <name>getLineWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="497" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_geometry_1af92dc57bfd9c3457085d2fdc4102cb22" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::quickSort</definition>
+        <argsstring>(signed long left, signed long right, const btVector3 &amp;cameraOrigin)</argsstring>
+        <name>quickSort</name>
+        <param>
+          <type>signed long</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>signed long</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>cameraOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="569" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a67fcd3f18e15e7da88bc070eb7dca337" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::swapTransformData</definition>
+        <argsstring>(const size_t idx1, const size_t idx2)</argsstring>
+        <name>swapTransformData</name>
+        <param>
+          <type>const size_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="572" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a7bbffa4f383e7a89a52e9b426d58b285" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::Geometry::lessThan</definition>
+        <argsstring>(const size_t idx1, const size_t idx2, const btVector3 &amp;cameraOrigin)</argsstring>
+        <name>lessThan</name>
+        <param>
+          <type>const size_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>cameraOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="573" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a5211fda676d03559ae8221b60b2738d2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::Geometry::greaterThan</definition>
+        <argsstring>(const size_t idx1, const size_t idx2, const btVector3 &amp;cameraOrigin)</argsstring>
+        <name>greaterThan</name>
+        <param>
+          <type>const size_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>idx2</declname>
+        </param>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>cameraOrigin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="575" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ac7ee1093062d2f342519f7914852a367" prot="private" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::Geometry::swapVertexData</definition>
+        <argsstring>(const size_t idx1, const size_t idx2)=0</argsstring>
+        <name>swapVertexData</name>
+        <reimplementedby refid="classnjli_1_1_plane_1a238e9b9a68bf90b6e7a90119fe852da7">swapVertexData</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_cube_1af902a20050d40c642b6c5e7def28cce0">swapVertexData</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_sprite2_d_1a310321527886b81f468aa818812a3347">swapVertexData</reimplementedby>
+        <param>
+          <type>const size_t</type>
+          <declname>idx1</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>idx2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="578" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a450c71467016f8266e29c7dbcde2c4c6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::bindTransform</definition>
+        <argsstring>()</argsstring>
+        <name>bindTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="580" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ad8f86922c32926077dee808253fbc7df" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::bindColorTransform</definition>
+        <argsstring>()</argsstring>
+        <name>bindColorTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="581" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1a0c5aad85ac6ab14068c229abb87e2c17" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::loadGPU_Internal</definition>
+        <argsstring>()</argsstring>
+        <name>loadGPU_Internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="624" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1aca4922f34c4daa4f3e6209c3ed5c2609" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::setupOpacity_Internal</definition>
+        <argsstring>(Material *material, Image *image)</argsstring>
+        <name>setupOpacity_Internal</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_image" kindref="compound">Image</ref> *</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="628" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_geometry_1ab4f7836b90acc74a61fce2d49d65a05f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::Geometry::unLoadGPU_Internal</definition>
+        <argsstring>()</argsstring>
+        <name>unLoadGPU_Internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="634" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="933">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="934" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="935">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="934">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="935" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="937">
+        <label>njli::Plane</label>
+        <link refid="classnjli_1_1_plane"/>
+        <childnode refid="932" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="938">
+        <label>njli::Sprite2D</label>
+        <link refid="classnjli_1_1_sprite2_d"/>
+        <childnode refid="932" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="936">
+        <label>njli::Cube</label>
+        <link refid="classnjli_1_1_cube"/>
+        <childnode refid="932" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="932">
+        <label>njli::Geometry</label>
+        <link refid="classnjli_1_1_geometry"/>
+        <childnode refid="933" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="940">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="941" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="942" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="947">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="943">
+        <label>njli::Image</label>
+        <link refid="classnjli_1_1_image"/>
+        <childnode refid="940" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="941">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="942" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="945">
+        <label>njli::Material</label>
+        <link refid="classnjli_1_1_material"/>
+        <childnode refid="940" relation="public-inheritance">
+        </childnode>
+        <childnode refid="946" relation="usage">
+          <edgelabel>m_Specular</edgelabel>
+          <edgelabel>m_Reflective</edgelabel>
+          <edgelabel>m_Diffuse</edgelabel>
+          <edgelabel>m_Multiply</edgelabel>
+          <edgelabel>m_Emission</edgelabel>
+          <edgelabel>m_Normal</edgelabel>
+          <edgelabel>m_Transparent</edgelabel>
+          <edgelabel>m_Ambient</edgelabel>
+        </childnode>
+      </node>
+      <node id="946">
+        <label>njli::MaterialProperty</label>
+        <link refid="classnjli_1_1_material_property"/>
+        <childnode refid="940" relation="public-inheritance">
+        </childnode>
+        <childnode refid="947" relation="usage">
+          <edgelabel>m_AbstractFrameBufferObject</edgelabel>
+          <edgelabel>m_loadGPU_fbo</edgelabel>
+        </childnode>
+      </node>
+      <node id="939">
+        <label>njli::Geometry</label>
+        <link refid="classnjli_1_1_geometry"/>
+        <childnode refid="940" relation="public-inheritance">
+        </childnode>
+        <childnode refid="943" relation="usage">
+          <edgelabel>m_setupOpacity_Image</edgelabel>
+        </childnode>
+        <childnode refid="944" relation="usage">
+          <edgelabel>m_ShaderProgram</edgelabel>
+        </childnode>
+        <childnode refid="945" relation="usage">
+          <edgelabel>m_setupOpacity_Material</edgelabel>
+          <edgelabel>m_Material</edgelabel>
+        </childnode>
+      </node>
+      <node id="944">
+        <label>njli::ShaderProgram</label>
+        <link refid="classnjli_1_1_shader_program"/>
+        <childnode refid="940" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/Geometry.h" line="43" column="1" bodyfile="njligames-njlic_engine/njli/graphics/Geometry.h" bodystart="41" bodyend="644"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_geometry_1a4bb3529fcfb94e4567ec743bafdcb033" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>_opacityModifyRGB</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_geometry_1a3cbdfa54d4321633f3c59c27a041fe52" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>addLevelOfDetail</name></member>
+      <member refid="classnjli_1_1_geometry_1aaf9879b9197998f1a63dac38ead6354c" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>addReference</name></member>
+      <member refid="classnjli_1_1_geometry_1a6661dda8bb03d0f3d6e9764760b6b13f" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>applyShape</name></member>
+      <member refid="classnjli_1_1_geometry_1ad8f86922c32926077dee808253fbc7df" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>bindColorTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1a450c71467016f8266e29c7dbcde2c4c6" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>bindTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1a91ea8d7cf64ab6c3b07d370a64d69f73" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_geometry_1a8a14d6d068bf303718c1a92886f673b8" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_geometry_1a1b2b50024e18bfce206656b91440dfd1" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>create</name></member>
+      <member refid="classnjli_1_1_geometry_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::Geometry</scope><name>create</name></member>
+      <member refid="classnjli_1_1_geometry_1a349dae2018bfdf9bcbec73623d45ce68" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::Geometry</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_geometry_1a12bd5b2725ed4ec11cd48d4fc365f644" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>enableBlend</name></member>
+      <member refid="classnjli_1_1_geometry_1a3729511d4f34251e0ac1df3135c2a00f" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>enableBufferModified</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_geometry_1a4270551bf9c0f0ade7ce5b0fd16f78d8" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>enableDepthTest</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_geometry_1a66c3dcdcfb2fcc30bc0520f280b87ab0" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>enableStencilTest</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_geometry_1aa4130386ba85c7f15437fc3539530cc2" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>Geometry</name></member>
+      <member refid="classnjli_1_1_geometry_1af78c87969f709e52b767f1f1841e6b51" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>Geometry</name></member>
+      <member refid="classnjli_1_1_geometry_1a11bccbb5b7f74ffe5e85afe825069120" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>Geometry</name></member>
+      <member refid="classnjli_1_1_geometry_1a79efc86c5c96b88d33adfdc3debcddd4" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>getAabb</name></member>
+      <member refid="classnjli_1_1_geometry_1adbf0ae6c38f23779df2b37708e80c24c" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getArrayBuffer</name></member>
+      <member refid="classnjli_1_1_geometry_1a97ec03852997043d6900af8009b390d9" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getArrayBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_geometry_1abfa3fe3b5680b7b40c650fdc7a7fb737" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_geometry_1ae7af4b2e9fb67dbc658492290aeeacad" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>getColorTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1ac4edd389ae104da289e2282d780454f0" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getElementArrayBuffer</name></member>
+      <member refid="classnjli_1_1_geometry_1ac857e830af897450652aee0922e62e20" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getElementArrayBufferSize</name></member>
+      <member refid="classnjli_1_1_geometry_1aec96c72c2a2a25ff38d2ab5fc0f29ebe" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getLevelOfDetail</name></member>
+      <member refid="classnjli_1_1_geometry_1a97ca6b5b3e6241030284eaf8a89b15d0" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getLevelOfDetail</name></member>
+      <member refid="classnjli_1_1_geometry_1ac205720639e55ef44ea2e8102d26fe65" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getLevelOfDetails</name></member>
+      <member refid="classnjli_1_1_geometry_1a1c16844fdb0bd887c6338bfb445a1804" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getLineWidth</name></member>
+      <member refid="classnjli_1_1_geometry_1aeb3c06288fdf26e61eb942abc69d7d02" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getMaterial</name></member>
+      <member refid="classnjli_1_1_geometry_1a9eae0bae53bb1936e80a632e6fe48438" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getMaterial</name></member>
+      <member refid="classnjli_1_1_geometry_1a99e87d031c95a3a4e73f2e1d68f7e977" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getMaxMeshes</name></member>
+      <member refid="classnjli_1_1_geometry_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::Geometry</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_geometry_1a495713b5eea24429df8899cfaa59c832" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getNumberOfTextureCoordinates</name></member>
+      <member refid="classnjli_1_1_geometry_1a224b18abc15b88b556e6b71bb89ecf73" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getNumberOfVertexColors</name></member>
+      <member refid="classnjli_1_1_geometry_1a125699411e1abc464f923fe4e72fc65b" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getNumberOfVertices</name></member>
+      <member refid="classnjli_1_1_geometry_1a6547f3d712e0507d79e47b162360eab0" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_geometry_1aeda5f906f9221ce62149bc959d3460b2" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_geometry_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::Geometry</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_geometry_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::Geometry</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_geometry_1a8db5f3cf3727aa03fb31a1954c53c139" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getPointSize</name></member>
+      <member refid="classnjli_1_1_geometry_1af5c8c5bf7cfb1945e7d5dded1a0c09a9" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getShaderProgram</name></member>
+      <member refid="classnjli_1_1_geometry_1af174791330137117465516251b7b3da7" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getShaderProgram</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_geometry_1ae54ead1ba785a8c2207b197d8e419abe" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getTextureCoordinates</name></member>
+      <member refid="classnjli_1_1_geometry_1acf510a790969aae6641ae068f1d804ea" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>getTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1ac13aedbb6914e12416c46574805cb13a" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_geometry_1a9995d84e425b589da7576cb3815150e8" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getVertexColors</name></member>
+      <member refid="classnjli_1_1_geometry_1a64f70fb9198d1037e363b8e24572ec53" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>getVertices</name></member>
+      <member refid="classnjli_1_1_geometry_1a5211fda676d03559ae8221b60b2738d2" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>greaterThan</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_geometry_1ac369079a8761aeabf7fcef930690db42" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_geometry_1a3780bbd093a4b163de3499e5726667f9" prot="protected" virt="pure-virtual"><scope>njli::Geometry</scope><name>hideGeometry</name></member>
+      <member refid="classnjli_1_1_geometry_1aa4b1af9c522fda1a6f4aa6d92bce806f" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>indexBufferID</name></member>
+      <member refid="classnjli_1_1_geometry_1a7d8e8d24bb0b2ed0e19bb214cb7f512d" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>isBufferModified</name></member>
+      <member refid="classnjli_1_1_geometry_1ac1ea8a16d541174a03addfa2dfede406" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_geometry_1ac73f3369c9be097e8cd534ca42401c9b" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_geometry_1a29ac09a7f5ea68c26a410a03b8a58e16" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>isLoadedGPU</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_geometry_1a7bbffa4f383e7a89a52e9b426d58b285" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>lessThan</name></member>
+      <member refid="classnjli_1_1_geometry_1a54a7465cbc4c4d1c8c353a809c73393e" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>load</name></member>
+      <member refid="classnjli_1_1_geometry_1a61477b1983dc37e146232b99eff643e1" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>load</name></member>
+      <member refid="classnjli_1_1_geometry_1a3242e657cbb5914f8f29ba6dbe21ef89" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_geometry_1a0c5aad85ac6ab14068c229abb87e2c17" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>loadGPU_Internal</name></member>
+      <member refid="classnjli_1_1_geometry_1afa9f334ee74381bb6bb7f2487943ebd5" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_blendFuncDestination</name></member>
+      <member refid="classnjli_1_1_geometry_1a9913325754224a04d80c97942c5d0590" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_blendFuncSource</name></member>
+      <member refid="classnjli_1_1_geometry_1a6dba2ac93b83f9baa5596158e311470b" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_bufferModified</name></member>
+      <member refid="classnjli_1_1_geometry_1a261359d21a4f86f5335975197372e183" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_ColorTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1aae71a91b509b2535d0037a6be4bc3e2d" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_colorTransformBufferID</name></member>
+      <member refid="classnjli_1_1_geometry_1a27cca52a3235c03f661f5f03a258ea54" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_ColorTransformDirty</name></member>
+      <member refid="classnjli_1_1_geometry_1ae1d2dde4fa803b27f8743710841a53cb" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_enableBlend</name></member>
+      <member refid="classnjli_1_1_geometry_1a6417e088ae2684f413e37d3fd17e4b90" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_enableDepthTest</name></member>
+      <member refid="classnjli_1_1_geometry_1ac546ac75ca65bd355d3a1aca7077a7a1" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_enableStencilTest</name></member>
+      <member refid="classnjli_1_1_geometry_1a1c6c813d0d983d18f5f0463b476f8477" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InColorAttrib</name></member>
+      <member refid="classnjli_1_1_geometry_1a92e00e8041964fbec6273971bde5c80d" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InColorTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1ac455a1ec0567cade34b5453e32ba463f" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InHiddenAttrib</name></member>
+      <member refid="classnjli_1_1_geometry_1ae15315943bb9830d57a1e7a67dfa04ab" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InOpacityAttrib</name></member>
+      <member refid="classnjli_1_1_geometry_1a3c49bfc26e8e421c3321223cf607ff96" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InPositionAttrib</name></member>
+      <member refid="classnjli_1_1_geometry_1a17d04db635e9cfdf49eb928f41569cb8" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InTexCoordAttrib</name></member>
+      <member refid="classnjli_1_1_geometry_1ab3c31621e11c227991a764b3dcd8d7b2" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_InTransformAttrib</name></member>
+      <member refid="classnjli_1_1_geometry_1aadc21c7eaa17ae0bd48895e0b805e926" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_LevelOfDetailList</name></member>
+      <member refid="classnjli_1_1_geometry_1a4e9e4a00d2ae14efb4df0fbe1485570f" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_LoadGPU</name></member>
+      <member refid="classnjli_1_1_geometry_1ab2ba0f4fa336c12174fcac949df5fee3" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_Material</name></member>
+      <member refid="classnjli_1_1_geometry_1aa2abacdbd107c6b2d23e30be645ff0b6" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_MatrixBuffer</name></member>
+      <member refid="classnjli_1_1_geometry_1ac610f319fbf74cee097fc579ab61e6a4" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_maxindice</name></member>
+      <member refid="classnjli_1_1_geometry_1a0a9f224dd899fe90b27c6da5cafe6489" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_modelViewBufferID</name></member>
+      <member refid="classnjli_1_1_geometry_1ab544bc75aee1731a0bfe0f107eaf4044" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_ModelviewTransform</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_geometry_1aa8e22217dcfbcb465395971bef71453c" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_projectionMatrixUniform</name></member>
+      <member refid="classnjli_1_1_geometry_1a1a70685ec5ec85f08adbd7277590a67c" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_References</name></member>
+      <member refid="classnjli_1_1_geometry_1ae021b501c8e2052a24ac3139461b86f3" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_RenderCategory</name></member>
+      <member refid="classnjli_1_1_geometry_1a55329444afa99dbd6fd3092e550c3618" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_setupOpacity</name></member>
+      <member refid="classnjli_1_1_geometry_1afcd7de399a889620ff0ad2b2f2fc3afa" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_setupOpacity_Image</name></member>
+      <member refid="classnjli_1_1_geometry_1a8990f2c3818485e53b23de12fea66468" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_setupOpacity_Material</name></member>
+      <member refid="classnjli_1_1_geometry_1a28fe075abe7471aee4eff56e0b1389c3" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_ShaderProgram</name></member>
+      <member refid="classnjli_1_1_geometry_1ad414e27c2a708d6b0e361b88cfd8d75b" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_TransformDirty</name></member>
+      <member refid="classnjli_1_1_geometry_1acab3d6720f978b23572f0ae75486a14f" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_UnLoadGPU</name></member>
+      <member refid="classnjli_1_1_geometry_1a2aa12f424eb0ff7e66138470f14a9544" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_vertexArrayID</name></member>
+      <member refid="classnjli_1_1_geometry_1a6a2f29f2dd1c6a0f46a59f719c422a56" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_vertexAttribChanged</name></member>
+      <member refid="classnjli_1_1_geometry_1a0cb9201bc685871f14a28e5ab3ad3ece" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>m_verticesBufferID</name></member>
+      <member refid="classnjli_1_1_geometry_1a6db9d28bd448a131448276ee03de1e6d" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>Node</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_geometry_1a1033c9f6dee9f725b122c2ddd33f4b0e" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>numberOfIndices</name></member>
+      <member refid="classnjli_1_1_geometry_1a555e9b90676b286bf036902e164e6fa4" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>numberOfReferences</name></member>
+      <member refid="classnjli_1_1_geometry_1a27b42b7a7ed3c67a6f8827288828687a" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>numberOfVertices</name></member>
+      <member refid="classnjli_1_1_geometry_1ae678ad91efebe665fc2f5533dc26fe24" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_geometry_1a191cc8461636a801bce0f2bf8f1992f6" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_geometry_1ada345e4f9c2a87f06868b74d30e94ad2" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>PhysicsBodyRigid</name></member>
+      <member refid="classnjli_1_1_geometry_1af92dc57bfd9c3457085d2fdc4102cb22" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>quickSort</name></member>
+      <member refid="classnjli_1_1_geometry_1a95e2234f03e5a4fae599689e1545f323" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>removeAllLevelOfDetails</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_geometry_1ae0001216bacc787a9c235fb78609d276" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>removeLevelOfDetail</name></member>
+      <member refid="classnjli_1_1_geometry_1a419d020ca0b46536bb53d923fd1c7df3" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>removeMaterial</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_geometry_1a39b63002b1e195651b30186319f5cf6d" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>removeReference</name></member>
+      <member refid="classnjli_1_1_geometry_1aa4b0598066056bb2ffa97e85febadfa4" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>removeShaderProgram</name></member>
+      <member refid="classnjli_1_1_geometry_1ab2f41460700ad44f8cea15d6e8b66fea" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>render</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::Geometry</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_geometry_1a31da0cda6afa6d640ce54b5c6642cf73" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>s_LineWidth</name></member>
+      <member refid="classnjli_1_1_geometry_1a4719e7a6be0324ad5a3369e563c8528a" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>s_PointSize</name></member>
+      <member refid="classnjli_1_1_geometry_1a032858ae1fe02d2d1170981c2af2d67c" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>Scene</name></member>
+      <member refid="classnjli_1_1_geometry_1a42a35911278eb52e0013d6dadd80271d" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_geometry_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::Geometry</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_geometry_1ac8524641c3a7273902e2028ef6836503" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setBlendDestination</name></member>
+      <member refid="classnjli_1_1_geometry_1a52a0a0310a248e03f8b6c410ca0f3fae" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setBlendSource</name></member>
+      <member refid="classnjli_1_1_geometry_1a6ba967a65603a7660ab63fe067e338b4" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>setColor</name></member>
+      <member refid="classnjli_1_1_geometry_1aa0cc2acc76701fd62efdcddd802e4cda" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>setColorTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1a4ba0fc9934e40c651b89969d47b03d3b" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>setHidden</name></member>
+      <member refid="classnjli_1_1_geometry_1aca9151002282f1d817893db01d48d332" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setLineWidth</name></member>
+      <member refid="classnjli_1_1_geometry_1a8cd2fdd337567a3ec1b6ad53e8010afa" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setMaterial</name></member>
+      <member refid="classnjli_1_1_geometry_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::Geometry</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_geometry_1ad4f8c2a3b873a63ee62c87d512b9540d" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>setOpacity</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_geometry_1a73ef5b46355f011df4a64303dd99d7b6" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setPointSize</name></member>
+      <member refid="classnjli_1_1_geometry_1a49e8cb2aeb028d46a2ec9e4b45b7bb6f" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setShaderProgram</name></member>
+      <member refid="classnjli_1_1_geometry_1a64c12722f84add665776c2b9400108fd" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>setSize</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_geometry_1a728c03769da533f7ca74fc967582b632" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>setTransform</name></member>
+      <member refid="classnjli_1_1_geometry_1a6c736d40f50aa200248ff2fffe362446" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setupOpacity</name></member>
+      <member refid="classnjli_1_1_geometry_1aca4922f34c4daa4f3e6209c3ed5c2609" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>setupOpacity_Internal</name></member>
+      <member refid="classnjli_1_1_geometry_1ae448a8fa9c7aaccd9db8ed6dfcf62dab" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>setupShader</name></member>
+      <member refid="classnjli_1_1_geometry_1a9d2e2064f925d9be17ed7fb1b84b728a" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>shouldApplyShape</name></member>
+      <member refid="classnjli_1_1_geometry_1a2778a40635e95c7c7059aa7ce9007290" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>show</name></member>
+      <member refid="classnjli_1_1_geometry_1a60f8058a4afac8cfe23aa33ae1382fbd" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>sort</name></member>
+      <member refid="classnjli_1_1_geometry_1a67fcd3f18e15e7da88bc070eb7dca337" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>swapTransformData</name></member>
+      <member refid="classnjli_1_1_geometry_1ac7ee1093062d2f342519f7914852a367" prot="private" virt="pure-virtual"><scope>njli::Geometry</scope><name>swapVertexData</name></member>
+      <member refid="classnjli_1_1_geometry_1a8ffb29f40c6f175f83cc36568feb87c4" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>transformTextureCoordinates</name></member>
+      <member refid="classnjli_1_1_geometry_1a1169257a4241392cec0a23c922f148f3" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>transformVertexColors</name></member>
+      <member refid="classnjli_1_1_geometry_1a25fefe3f656bdcb8c88d2fd4d2f48df1" prot="public" virt="pure-virtual"><scope>njli::Geometry</scope><name>transformVertices</name></member>
+      <member refid="classnjli_1_1_geometry_1a144e779681b19041b60e129cbf7cac29" prot="public" virt="non-virtual"><scope>njli::Geometry</scope><name>type</name></member>
+      <member refid="classnjli_1_1_geometry_1ac5c7f121590883537de568962f8e3b96" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>u_pointSize</name></member>
+      <member refid="classnjli_1_1_geometry_1a0c5960113b3cd040e7df7b8d2104f7a3" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>unLoad</name></member>
+      <member refid="classnjli_1_1_geometry_1a1c7f801932e981d35c18acd5bf11c8c4" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>unLoadGPU</name></member>
+      <member refid="classnjli_1_1_geometry_1ab4f7836b90acc74a61fce2d49d65a05f" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>unLoadGPU_Internal</name></member>
+      <member refid="classnjli_1_1_geometry_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::Geometry</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::Geometry</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_geometry_1aa2b91ed0f6436f990deeef380ef7843e" prot="protected" virt="virtual"><scope>njli::Geometry</scope><name>~Geometry</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

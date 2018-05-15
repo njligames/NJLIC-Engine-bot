@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classeasylogger_1_1_logger">
+<title>easylogger::Logger class Reference</title>
+<para>
+    <programlisting>#include <link linkend="easylogger_8h">&lt;easylogger.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for easylogger::Logger</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classeasylogger_1_1_logger__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for easylogger::Logger</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classeasylogger_1_1_logger__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef ::std::map&lt; std::string, ::std::ostream * &gt;  <link linkend="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd">StreamMap</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef ::std::pair&lt; std::string, std::ostream * &gt;  <link linkend="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95">StreamPair</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>::std::string _name</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Logger * _parent</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>LogLevel _level</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>StreamMap _streamMap</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>::std::string _format</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>::std::string _timeFormat</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classeasylogger_1_1_logger_1a8c5b5637694907e900012d300bf23033">Logger</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classeasylogger_1_1_logger_1a9338a86dffe3f96185b22a179eb96ce4">Logger</link> (
+const <link linkend="classeasylogger_1_1_logger">Logger</link> &amp; rhs)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string <link linkend="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce">Now</link> (
+const char * format)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5">WriteLog</link> (
+<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> level, <link linkend="classeasylogger_1_1_logger">Logger</link> * logger, const char * file, unsigned int line, const char * func, const char * message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classeasylogger_1_1_logger_1a2d09f2ce77a5eb571fb3436967651a12">WriteLog</link> (
+<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> level, <link linkend="classeasylogger_1_1_logger">Logger</link> * logger, const char * file, unsigned int line, const char * func, const char * message, ::std::ostream * stream)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classeasylogger_1_1_logger_1a2cb8c991ae2c651f18d3c4d7ded9b3e9">Logger</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classeasylogger_1_1_logger_1ad0895803e8ba35e55acd32b3a1572526">Logger</link> (
+const std::string &amp; name, <link linkend="classeasylogger_1_1_logger">Logger</link> &amp; parent)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classeasylogger_1_1_logger_1a2e3ab6ee87be3ac9b44857972dcd411f">~Logger</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const ::std::string &amp; <link linkend="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0">Name</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> <link linkend="classeasylogger_1_1_logger_1a350e161f9afb8a6dd764b297aa0baf93">Level</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> <link linkend="classeasylogger_1_1_logger_1a66ab7ca8dbdfcdeda3395bc39efc8c1c">Level</link> (
+<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> level)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classeasylogger_1_1_logger_1a51a95dca60052b6d2f16bb0f0da7fe45">IsLevel</link> (
+<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> level)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classeasylogger_1_1__private_1_1_log_sink">_private::LogSink</link> <link linkend="classeasylogger_1_1_logger_1abbf5fd5ac40a75ed8303e520d99c9b81">Log</link> (
+<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0">LogLevel</link> level, const char * file, unsigned int line, const char * func)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05">AddStream</link> (
+const ::std::string &amp; name, ::std::ostream &amp; stream)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classeasylogger_1_1_logger_1a5fbcc23c2e8defc0862d48844703cdd2">RemoveStream</link> (
+const ::std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>::std::ostream * <link linkend="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba">GetStream</link> (
+const std::string &amp; name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const ::std::string &amp; <link linkend="classeasylogger_1_1_logger_1a5289aa36c7ae745fa960af5b59a6ed54">Format</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const ::std::string &amp; <link linkend="classeasylogger_1_1_logger_1ae4f6966ba512d06584b83118909a2f73">TimeFormat</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const ::std::string &amp; <link linkend="classeasylogger_1_1_logger_1ab9395d1199d0ef5539f14552834d42a7">Format</link> (
+const ::std::string &amp; format)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const ::std::string &amp; <link linkend="classeasylogger_1_1_logger_1a0b0ff3f703f2e6c04e86e8877d5a906c">TimeFormat</link> (
+const ::std::string &amp; format)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0">Flush</link> (
+)<para><emphasis>Flushes underlying output stream.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para><link linkend="classeasylogger_1_1_logger">Logger</link> system core class. </para>
+    </simplesect>
+            <section xml:id="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd">
+                <title>typedef ::std::map&lt;std::string, ::std::ostream*&gt; easylogger::Logger::StreamMap</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95">
+                <title>typedef ::std::pair&lt;std::string, std::ostream*&gt; easylogger::Logger::StreamPair</title> <emphasis></emphasis>
+                
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classeasylogger_1_1_logger_1a8c5b5637694907e900012d300bf23033">
+                <title>easylogger::Logger::Logger ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a9338a86dffe3f96185b22a179eb96ce4">
+                <title>easylogger::Logger::Logger (const Logger &amp;rhs)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce">
+                <title>std::string easylogger::Logger::Now (const char *format=&quot;%c&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5">
+                <title>void easylogger::Logger::WriteLog (LogLevel level, Logger *logger, const char *file, unsigned int line, const char *func, const char *message)</title> <emphasis></emphasis>
+                
+<para>Write log to stream</para>
+
+<para>Does the actual work of writing log message.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>level</entry>
+                                <entry>
+<para>Level of log message. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>logger</entry>
+                                <entry>
+<para>Original <link linkend="classeasylogger_1_1_logger">Logger</link> target of message. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>file</entry>
+                                <entry>
+<para>Name of file at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>line</entry>
+                                <entry>
+<para>Line of file at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>func</entry>
+                                <entry>
+<para>Name of function at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The log message. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a2d09f2ce77a5eb571fb3436967651a12">
+                <title>void easylogger::Logger::WriteLog (LogLevel level, Logger *logger, const char *file, unsigned int line, const char *func, const char *message, ::std::ostream *stream)</title> <emphasis></emphasis>
+                
+<para>Write log to stream</para>
+
+<para>Does the actual work of writing log message.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>level</entry>
+                                <entry>
+<para>Level of log message. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>logger</entry>
+                                <entry>
+<para>Original <link linkend="classeasylogger_1_1_logger">Logger</link> target of message. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>file</entry>
+                                <entry>
+<para>Name of file at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>line</entry>
+                                <entry>
+<para>Line of file at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>func</entry>
+                                <entry>
+<para>Name of function at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>message</entry>
+                                <entry>
+<para>The log message. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stream</entry>
+                                <entry>
+<para>The stream to write to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a2cb8c991ae2c651f18d3c4d7ded9b3e9">
+                <title>easylogger::Logger::Logger (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+<para>Construct a new <link linkend="classeasylogger_1_1_logger">Logger</link></para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>Name of logger used in log messages. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1ad0895803e8ba35e55acd32b3a1572526">
+                <title>easylogger::Logger::Logger (const std::string &amp;name, Logger &amp;parent)</title> <emphasis></emphasis>
+                
+<para>Construct a new <link linkend="classeasylogger_1_1_logger">Logger</link> with a parent</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>Name of logger used in log messages. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>parent</entry>
+                                <entry>
+<para>Parent <link linkend="classeasylogger_1_1_logger">Logger</link> all messages are forwarded to. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a2e3ab6ee87be3ac9b44857972dcd411f">
+                <title>easylogger::Logger::~Logger ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0">
+                <title>const ::std::string&amp; easylogger::Logger::Name () const</title> <emphasis></emphasis>
+                
+<para>Get the name of the <link linkend="classeasylogger_1_1_logger">Logger</link></para>
+
+<para><formalpara><title>Returns: </title>
+
+<para><link linkend="classeasylogger_1_1_logger">Logger</link>&apos;s name </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a350e161f9afb8a6dd764b297aa0baf93">
+                <title>LogLevel easylogger::Logger::Level () const</title> <emphasis></emphasis>
+                
+<para>Get the minimum log level of the <link linkend="classeasylogger_1_1_logger">Logger</link></para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>Minimum log level </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a66ab7ca8dbdfcdeda3395bc39efc8c1c">
+                <title>LogLevel easylogger::Logger::Level (LogLevel level)</title> <emphasis></emphasis>
+                
+<para>Set the minimum log level of the <link linkend="classeasylogger_1_1_logger">Logger</link></para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>New minimum log level </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a51a95dca60052b6d2f16bb0f0da7fe45">
+                <title>bool easylogger::Logger::IsLevel (LogLevel level) const</title> <emphasis></emphasis>
+                
+<para>Checks if this <link linkend="classeasylogger_1_1_logger">Logger</link> or any ancestor accepts a given log level</para>
+
+<para>Each <link linkend="classeasylogger_1_1_logger">Logger</link> will only log messages of a particular level or higher. This method will check if this <link linkend="classeasylogger_1_1_logger">Logger</link> instance or any of its parents are willing to log a message of a given log level.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>level</entry>
+                                <entry>
+<para>Log level to check for. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>true if any ancestor will accept log level </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1abbf5fd5ac40a75ed8303e520d99c9b81">
+                <title>_private::LogSink easylogger::Logger::Log (LogLevel level, const char *file, unsigned int line, const char *func)</title> <emphasis></emphasis>
+                
+<para>Create a new log sink</para>
+
+<para>Does the actual work of writing log message.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>level</entry>
+                                <entry>
+<para>Level of log message. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>file</entry>
+                                <entry>
+<para>Name of file at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>line</entry>
+                                <entry>
+<para>Line of file at point of log. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>func</entry>
+                                <entry>
+<para>Name of function at point of log. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05">
+                <title>bool easylogger::Logger::AddStream (const ::std::string &amp;name, ::std::ostream &amp;stream)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a5fbcc23c2e8defc0862d48844703cdd2">
+                <title>bool easylogger::Logger::RemoveStream (const ::std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba">
+                <title>::std::ostream* easylogger::Logger::GetStream (const std::string &amp;name)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a5289aa36c7ae745fa960af5b59a6ed54">
+                <title>const ::std::string&amp; easylogger::Logger::Format () const</title> <emphasis></emphasis>
+                
+<para>Get the log format string</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>Log format string. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1ae4f6966ba512d06584b83118909a2f73">
+                <title>const ::std::string&amp; easylogger::Logger::TimeFormat () const</title> <emphasis></emphasis>
+                
+<para>Get the log time format string</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>Log time format string. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1ab9395d1199d0ef5539f14552834d42a7">
+                <title>const ::std::string&amp; easylogger::Logger::Format (const ::std::string &amp;format)</title> <emphasis></emphasis>
+                
+<para>Set the log format string</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>format</entry>
+                                <entry>
+<para>New log format string. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Log format string. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1a0b0ff3f703f2e6c04e86e8877d5a906c">
+                <title>const ::std::string&amp; easylogger::Logger::TimeFormat (const ::std::string &amp;format)</title> <emphasis></emphasis>
+                
+<para>Set the log format string</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>format</entry>
+                                <entry>
+<para>New log time format string. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>Log time format string. </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0">
+                <title>void easylogger::Logger::Flush ()</title> <emphasis>Flushes underlying output stream.</emphasis>
+                
+            </section>
+</section>

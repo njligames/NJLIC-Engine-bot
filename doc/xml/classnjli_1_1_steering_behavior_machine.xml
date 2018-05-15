@@ -1,0 +1,1111 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_steering_behavior_machine" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>njli::SteeringBehaviorMachine</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <derivedcompoundref refid="classnjli_1_1_steering_behavior_machine_dithered" prot="public" virt="non-virtual">njli::SteeringBehaviorMachineDithered</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_steering_behavior_machine_prioritized" prot="public" virt="non-virtual">njli::SteeringBehaviorMachinePrioritized</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_steering_behavior_machine_weighted" prot="public" virt="non-virtual">njli::SteeringBehaviorMachineWeighted</derivedcompoundref>
+    <includes refid="_steering_behavior_machine_8h" local="no">SteeringBehaviorMachine.h</includes>
+      <sectiondef kind="protected-type">
+      <memberdef kind="typedef" id="classnjli_1_1_steering_behavior_machine_1a1a02a6c877a13e3d51d91e0636cfff97" prot="protected" static="no">
+        <type>std::pair&lt; <ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *, <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref> &gt;</type>
+        <definition>typedef std::pair&lt;SteeringBehavior *, f32&gt; njli::SteeringBehaviorMachine::SteeringPair</definition>
+        <argsstring></argsstring>
+        <name>SteeringPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="251" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnjli_1_1_steering_behavior_machine_1a4140175f3174e6e8d22e977a72220b5d" prot="protected" static="no">
+        <type>std::map&lt; <ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *, <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref> &gt;</type>
+        <definition>typedef std::map&lt;SteeringBehavior *, f32&gt; njli::SteeringBehaviorMachine::SteeringMap</definition>
+        <argsstring></argsstring>
+        <name>SteeringMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="252" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_steering_behavior_machine_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="34" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_steering_behavior_machine_1a6db9d28bd448a131448276ee03de1e6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Node</definition>
+        <argsstring></argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="35" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1acc24af246957e8392f0fb59d4fd3bd20" prot="protected" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine_1a4140175f3174e6e8d22e977a72220b5d" kindref="member">SteeringMap</ref></type>
+        <definition>SteeringMap njli::SteeringBehaviorMachine::m_SteeringBehaviorMap</definition>
+        <argsstring></argsstring>
+        <name>m_SteeringBehaviorMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="254" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1a2a8706604ab27ba5ca57be349a18a216" prot="private" static="no" mutable="no">
+        <type>btVector3 *</type>
+        <definition>btVector3* njli::SteeringBehaviorMachine::m_CurrentForce</definition>
+        <argsstring></argsstring>
+        <name>m_CurrentForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="259" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1a935ea15268f11582c9fbcdc350ddab19" prot="private" static="no" mutable="no">
+        <type>btVector3 *</type>
+        <definition>btVector3* njli::SteeringBehaviorMachine::m_CurrentVelocity</definition>
+        <argsstring></argsstring>
+        <name>m_CurrentVelocity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="262" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1a2df53aa5964dab7b6212f12eefdba0fc" prot="private" static="no" mutable="no">
+        <type>btVector3 *</type>
+        <definition>btVector3* njli::SteeringBehaviorMachine::m_HeadingVector</definition>
+        <argsstring></argsstring>
+        <name>m_HeadingVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="263" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1a666e277daf2c8273fe3166e0416d9744" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::m_MaxSpeed</definition>
+        <argsstring></argsstring>
+        <name>m_MaxSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="264" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1a30aa17a8097bbc87c6b1b613cbb4dffe" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::m_MaxForce</definition>
+        <argsstring></argsstring>
+        <name>m_MaxForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="265" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_steering_behavior_machine_1af664462dba2acbda423df91209f8ce93" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::m_MaxForce2</definition>
+        <argsstring></argsstring>
+        <name>m_MaxForce2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="266" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a4ee69ac7ff9a845f31f488a94b3e4a95" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SteeringBehaviorMachine::SteeringBehaviorMachine</definition>
+        <argsstring>()</argsstring>
+        <name>SteeringBehaviorMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a9019174adb7e588dc03a3656fb546c21" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SteeringBehaviorMachine::SteeringBehaviorMachine</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>SteeringBehaviorMachine</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ad55d19c8bdcc34048021f613b0503437" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SteeringBehaviorMachine::SteeringBehaviorMachine</definition>
+        <argsstring>(const SteeringBehaviorMachine &amp;)</argsstring>
+        <name>SteeringBehaviorMachine</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ae9872ddbb50d792d826fd85059f96507" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::SteeringBehaviorMachine::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a95670a6b33019e1945dfd4425479a157" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::SteeringBehaviorMachine::~SteeringBehaviorMachine</definition>
+        <argsstring>()</argsstring>
+        <name>~SteeringBehaviorMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a666d87bb4e80a99fd5125102bf8f3064" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> &amp;</type>
+        <definition>SteeringBehaviorMachine&amp; njli::SteeringBehaviorMachine::operator=</definition>
+        <argsstring>(const SteeringBehaviorMachine &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1acc1ec6529032eeb45aae2be40949304d" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::getMaxForce2</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxForce2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ae8765d78cf8e8df73c72fdf9448d587e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::SteeringBehaviorMachine::setCalculatedForce</definition>
+        <argsstring>(const btVector3 &amp;force)</argsstring>
+        <name>setCalculatedForce</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="250" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1af6540438929773c0376faff7c1f908c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::SteeringBehaviorMachine::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_weighted_1a7e689fadcc5631e53fe3b9ec972ad70e">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_dithered_1a72434033db333ed95de03c579eb96c15">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_prioritized_1aa05ec0e843f46f25b03794f0a9a9f483">calculateSerializeBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Calculate the buffer size of this object.</para><para><simplesect kind="return"><para>The buffer size. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a1fbec43b76f0612ed5b0d2492bb4b6df" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::SteeringBehaviorMachine::serialize</definition>
+        <argsstring>(void *, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_weighted_1a384f337048a8483eeb7189f8fef0b664">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_dithered_1afabe12bcb2005f23bd4f7a79bd758cf2">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_prioritized_1a2f3fa591ca198f2d45b1d49d73173b65">serialize</reimplementedby>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Serialize this object.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the serializer which does the serialize. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a62b8ba5c3e2b9f63eb146721c03d37a1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::SteeringBehaviorMachine::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_weighted_1a96746378cde3e401742eda55cbe5b23c">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_dithered_1a3262e6d95dbb37c00fcc3436b1e48233">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_prioritized_1a0688707312da3b16368bbe4a8ed28462">getClassName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The name of this class.</para><para><simplesect kind="return"><para>The name of this class. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a9daddfcf84380483cd2643c15d0497a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::SteeringBehaviorMachine::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_weighted_1a4d9fcf0548dc29c760dad537716c645e">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_dithered_1a5c38478d79cba8bc3069eac4e24acc0a">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_prioritized_1adbf4f6b3ea233a5ae575d366b977d630">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the type of ::jliObjectEnumType enum value.</para><para><simplesect kind="return"><para>The ::jliObjectEnumType enum value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a08dc60d265fe55badc0137c1a4427343" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::SteeringBehaviorMachine::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_weighted_1aa36b0042df33a2e63ec790e5a29ee183">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_dithered_1aa23bb3e4de991237c1e5ad172d08ca21">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_prioritized_1a3268888171ef4efd85513b14616f47a8">operator std::string</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The string value for this object, which can be used for debugging.</para><para><simplesect kind="return"><para>"The string value for this object. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1aa140509a8a5dcf389594c014ef1e779b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* njli::SteeringBehaviorMachine::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ab60292961503180cfb1f67e04f6a3dd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>const Node* njli::SteeringBehaviorMachine::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1aea431466acb4ef73220206bbcd515a9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>virtual const btVector3&amp; njli::SteeringBehaviorMachine::calculateSteeringForce</definition>
+        <argsstring>()=0</argsstring>
+        <name>calculateSteeringForce</name>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_weighted_1a14497ce93400f5c851a4ff412f2e050a">calculateSteeringForce</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_dithered_1a9523006f50dc2ba0e2d6e3063c054ec4">calculateSteeringForce</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_steering_behavior_machine_prioritized_1a3260a17ae2fe1f5fb128915e3d2ab1b6">calculateSteeringForce</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a7d757fe3a0e36bcd3606f660025e1529" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>const btVector3&amp; njli::SteeringBehaviorMachine::getCalculatedForce</definition>
+        <argsstring>() const</argsstring>
+        <name>getCalculatedForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1afeba19775abc7b530aa0997e1e8cad9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::SteeringBehaviorMachine::setHeuristic</definition>
+        <argsstring>(SteeringBehavior *steeringBehavior, f32 heuristic)</argsstring>
+        <name>setHeuristic</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *</type>
+          <declname>steeringBehavior</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>heuristic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a577fa9c6dcf0b5f5b742db4304792436" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::getHeuristic</definition>
+        <argsstring>(SteeringBehavior *steeringBehavior) const</argsstring>
+        <name>getHeuristic</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *</type>
+          <declname>steeringBehavior</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1aea8d4a3f11d710510a6362acc5e37f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::SteeringBehaviorMachine::addSteeringBehavior</definition>
+        <argsstring>(SteeringBehavior *steeringBehavior, f32 heuristic)</argsstring>
+        <name>addSteeringBehavior</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *</type>
+          <declname>steeringBehavior</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>heuristic</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-10 21:02:01</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steeringBehavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#emitter description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt;</para></simplesect>
+</para><sect1 id="classnjli_1_1_steering_behavior_wander_1ex1">
+<title>Lua example</title>
+<para><programlisting filename="SteeringBehaviorMachine.lua"></programlisting>SteeringBehaviorMachine_addSteeringBehavior_ </para></sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a8a14a3f6b951ddcf05a27256c3d21efe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::SteeringBehaviorMachine::removeSteeringBehavior</definition>
+        <argsstring>(SteeringBehavior *steeringBehavior)</argsstring>
+        <name>removeSteeringBehavior</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *</type>
+          <declname>steeringBehavior</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-10 21:02:05</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>steeringBehavior</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#emitter description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt;</para></simplesect>
+</para><sect1 id="classnjli_1_1_steering_behavior_wander_1ex1">
+<title>Lua example</title>
+<para><programlisting filename="SteeringBehaviorMachine.lua"></programlisting>SteeringBehaviorMachine_removeSteeringBehavior_ </para></sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="199" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ac480ec6e9f11918adee87d95167b9b25" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::SteeringBehaviorMachine::removeAllSteeringBehaviors</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllSteeringBehaviors</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-10 21:02:09</para></simplesect>
+</para><sect1 id="classnjli_1_1_steering_behavior_wander_1ex1">
+<title>Lua example</title>
+<para><programlisting filename="SteeringBehaviorMachine.lua"></programlisting>SteeringBehaviorMachine_removeAllSteeringBehaviors_ </para></sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1abc8ac2f926c76602a5413baa12ba6f7b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::SteeringBehaviorMachine::numberOfSteeringBehaviors</definition>
+        <argsstring>() const</argsstring>
+        <name>numberOfSteeringBehaviors</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-10 21:02:14</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt;</para></simplesect>
+</para><sect1 id="classnjli_1_1_steering_behavior_wander_1ex1">
+<title>Lua example</title>
+<para><programlisting filename="SteeringBehaviorMachine.lua"></programlisting>SteeringBehaviorMachine_numberOfSteeringBehaviors_ </para></sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a5f16284442c65dd387dce41393b30c4d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::SteeringBehaviorMachine::getSteeringBehaviors</definition>
+        <argsstring>(std::vector&lt; SteeringBehavior *&gt; &amp;steeringBehaviors) const</argsstring>
+        <name>getSteeringBehaviors</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classnjli_1_1_steering_behavior" kindref="compound">SteeringBehavior</ref> *&gt; &amp;</type>
+          <declname>steeringBehaviors</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-10 21:02:19</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>particleEmitters</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#particleEmitters description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para><sect1 id="classnjli_1_1_steering_behavior_wander_1ex1">
+<title>Lua example</title>
+<para><programlisting filename="SteeringBehaviorMachine.lua"></programlisting>SteeringBehaviorMachine_getSteeringBehaviors </para></sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1afefbffc1177c86516257201bdd649566" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::SteeringBehaviorMachine::setMaxSpeed</definition>
+        <argsstring>(const f32 speed)</argsstring>
+        <name>setMaxSpeed</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ac28ff247a7d7dab66bc3a9bbb28a4375" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::getMaxSpeed</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxSpeed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="240" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a26bf31bf1fe4baf5baeac3062e4c797f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::SteeringBehaviorMachine::setMaxForce</definition>
+        <argsstring>(const f32 speed)</argsstring>
+        <name>setMaxForce</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>speed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ad31815b6939f2cd6c4a39803198fcf3f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::SteeringBehaviorMachine::getMaxForce</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxForce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1aac2de411738725c7e4347097327da51e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>const btVector3&amp; njli::SteeringBehaviorMachine::getHeadingVector</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeadingVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="245" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1af97628764337e956f6c6ffe1d21eff30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> **</type>
+        <definition>static SteeringBehaviorMachine** njli::SteeringBehaviorMachine::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an Array of instances of this class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The amount of elements in the array.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the newly created array. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a9cf768db1c04513184ada83d420af23e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::SteeringBehaviorMachine::destroyArray</definition>
+        <argsstring>(SteeringBehaviorMachine **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy an Array of this class type.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The Pointer to the array to delete. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ab8fe4150d2324d83d50a413d35d16ae2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> *</type>
+        <definition>static SteeringBehaviorMachine* njli::SteeringBehaviorMachine::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an instance of this class.</para><para><simplesect kind="return"><para>Pointer to the newly created instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a8c449bcdcb6b82b7258ad5e418d6c430" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> *</type>
+        <definition>static SteeringBehaviorMachine* njli::SteeringBehaviorMachine::create</definition>
+        <argsstring>(const SteeringBehaviorMachineBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_steering_behavior_machine_builder" kindref="compound">SteeringBehaviorMachineBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create an instance of this class using a builder.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The builder to use for construction</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the newly created instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a2f36fb5b2930a51164b442b399b2e414" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> *</type>
+        <definition>static SteeringBehaviorMachine* njli::SteeringBehaviorMachine::clone</definition>
+        <argsstring>(const SteeringBehaviorMachine &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a shallow copy of an instance of this class (sharing pointers).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to clone.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the newly created instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a63326be519b9ee6d77687f90c6304697" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> *</type>
+        <definition>static SteeringBehaviorMachine* njli::SteeringBehaviorMachine::copy</definition>
+        <argsstring>(const SteeringBehaviorMachine &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Create a deep copy of an instance of this class (NOT sharing pointers).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to clone.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Pointer to the newly created instance. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a7e50f455b9d1a543c98bcb463f312647" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::SteeringBehaviorMachine::destroy</definition>
+        <argsstring>(SteeringBehaviorMachine *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destroy an instance of this class.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to destroy. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="130" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1a3826fef1020cad7acb80436f7c9a71bd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::SteeringBehaviorMachine::load</definition>
+        <argsstring>(SteeringBehaviorMachine &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_steering_behavior_machine" kindref="compound">SteeringBehaviorMachine</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Load a lua table representation of this class. This is used for JLIM.create(object).</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The object to load. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The current lua state. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The stack index of the lua stack. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="139" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ab193f59f5f0a3ba81703678bd9b14e8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::SteeringBehaviorMachine::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the type of ::jliObjectEnumType enum value.</para><para><simplesect kind="return"><para>The ::jliObjectEnumType enum value. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="146" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_steering_behavior_machine_1ac00a02f9f9e37129e300c60fabf23e69" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>virtual const btVector3&amp; njli::SteeringBehaviorMachine::calculate</definition>
+        <argsstring>(f32 timestep)</argsstring>
+        <name>calculate</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>timestep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="257" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2299">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2300" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2304">
+        <label>njli::SteeringBehaviorMachineWeighted</label>
+        <link refid="classnjli_1_1_steering_behavior_machine_weighted"/>
+        <childnode refid="2298" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2301">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2300">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2301" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2298">
+        <label>njli::SteeringBehaviorMachine</label>
+        <link refid="classnjli_1_1_steering_behavior_machine"/>
+        <childnode refid="2299" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2303">
+        <label>njli::SteeringBehaviorMachinePrioritized</label>
+        <link refid="classnjli_1_1_steering_behavior_machine_prioritized"/>
+        <childnode refid="2298" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2302">
+        <label>njli::SteeringBehaviorMachineDithered</label>
+        <link refid="classnjli_1_1_steering_behavior_machine_dithered"/>
+        <childnode refid="2298" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2306">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2307" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2308">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2308" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2307">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2305">
+        <label>njli::SteeringBehaviorMachine</label>
+        <link refid="classnjli_1_1_steering_behavior_machine"/>
+        <childnode refid="2306" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" line="33" column="1" bodyfile="njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h" bodystart="31" bodyend="267"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1aea8d4a3f11d710510a6362acc5e37f8d" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>addSteeringBehavior</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ae9872ddbb50d792d826fd85059f96507" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ac00a02f9f9e37129e300c60fabf23e69" prot="private" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>calculate</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1af6540438929773c0376faff7c1f908c0" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1aea431466acb4ef73220206bbcd515a9a" prot="public" virt="pure-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>calculateSteeringForce</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a2f36fb5b2930a51164b442b399b2e414" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SteeringBehaviorMachine</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a63326be519b9ee6d77687f90c6304697" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ab8fe4150d2324d83d50a413d35d16ae2" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>create</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a8c449bcdcb6b82b7258ad5e418d6c430" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SteeringBehaviorMachine</scope><name>create</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1af97628764337e956f6c6ffe1d21eff30" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a7e50f455b9d1a543c98bcb463f312647" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::SteeringBehaviorMachine</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a9cf768db1c04513184ada83d420af23e" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a7d757fe3a0e36bcd3606f660025e1529" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getCalculatedForce</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a62b8ba5c3e2b9f63eb146721c03d37a1" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1aac2de411738725c7e4347097327da51e" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getHeadingVector</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a577fa9c6dcf0b5f5b742db4304792436" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getHeuristic</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ad31815b6939f2cd6c4a39803198fcf3f" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getMaxForce</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1acc1ec6529032eeb45aae2be40949304d" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getMaxForce2</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ac28ff247a7d7dab66bc3a9bbb28a4375" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getMaxSpeed</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::SteeringBehaviorMachine</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1aa140509a8a5dcf389594c014ef1e779b" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ab60292961503180cfb1f67e04f6a3dd4" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a5f16284442c65dd387dce41393b30c4d" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getSteeringBehaviors</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a9daddfcf84380483cd2643c15d0497a4" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a3826fef1020cad7acb80436f7c9a71bd" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>load</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a2a8706604ab27ba5ca57be349a18a216" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_CurrentForce</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a935ea15268f11582c9fbcdc350ddab19" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_CurrentVelocity</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a2df53aa5964dab7b6212f12eefdba0fc" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_HeadingVector</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a30aa17a8097bbc87c6b1b613cbb4dffe" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_MaxForce</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1af664462dba2acbda423df91209f8ce93" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_MaxForce2</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a666e277daf2c8273fe3166e0416d9744" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_MaxSpeed</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1acc24af246957e8392f0fb59d4fd3bd20" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>m_SteeringBehaviorMap</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a6db9d28bd448a131448276ee03de1e6d" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>Node</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1abc8ac2f926c76602a5413baa12ba6f7b" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>numberOfSteeringBehaviors</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a08dc60d265fe55badc0137c1a4427343" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a666d87bb4e80a99fd5125102bf8f3064" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ac480ec6e9f11918adee87d95167b9b25" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeAllSteeringBehaviors</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a8a14a3f6b951ddcf05a27256c3d21efe" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>removeSteeringBehavior</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a1fbec43b76f0612ed5b0d2492bb4b6df" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ae8765d78cf8e8df73c72fdf9448d587e" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setCalculatedForce</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1afeba19775abc7b530aa0997e1e8cad9c" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setHeuristic</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a26bf31bf1fe4baf5baeac3062e4c797f" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setMaxForce</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1afefbffc1177c86516257201bdd649566" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setMaxSpeed</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::SteeringBehaviorMachine</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a4ee69ac7ff9a845f31f488a94b3e4a95" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>SteeringBehaviorMachine</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a9019174adb7e588dc03a3656fb546c21" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>SteeringBehaviorMachine</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ad55d19c8bdcc34048021f613b0503437" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>SteeringBehaviorMachine</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a4140175f3174e6e8d22e977a72220b5d" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>SteeringMap</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a1a02a6c877a13e3d51d91e0636cfff97" prot="protected" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>SteeringPair</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1ab193f59f5f0a3ba81703678bd9b14e8b" prot="public" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>type</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::SteeringBehaviorMachine</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_steering_behavior_machine_1a95670a6b33019e1945dfd4425479a157" prot="protected" virt="virtual"><scope>njli::SteeringBehaviorMachine</scope><name>~SteeringBehaviorMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

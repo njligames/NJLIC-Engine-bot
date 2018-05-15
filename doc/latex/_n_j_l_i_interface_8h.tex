@@ -1,0 +1,358 @@
+\hypertarget{_n_j_l_i_interface_8h}{}\section{njligames-\/njlic\+\_\+engine/njli/platform/\+N\+J\+L\+I\+Interface.h File Reference}
+\label{_n_j_l_i_interface_8h}\index{njligames-\/njlic\+\_\+engine/njli/platform/\+N\+J\+L\+I\+Interface.\+h@{njligames-\/njlic\+\_\+engine/njli/platform/\+N\+J\+L\+I\+Interface.\+h}}
+{\ttfamily \#include \char`\"{}S\+D\+L.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for N\+J\+L\+I\+Interface.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_n_j_l_i_interface_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::map$<$ int, S\+D\+L\+\_\+\+Joystick $\ast$ $>$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a2642a79c3f661b171d671a8faca552c4}{Joystick\+Map}}
+\item 
+typedef std\+::pair$<$ int, S\+D\+L\+\_\+\+Joystick $\ast$ $>$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a49256682c3474ea60e1aa3e4f3726f1d}{Joystick\+Pair}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a1e60f47d0b131d5990bdc98dc8279399}{N\+J\+L\+I\+\_\+\+Handle\+Update}} (double time\+Step)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a3ca283031b2c6db0f81d6b8f1ab6594c}{N\+J\+L\+I\+\_\+\+Handle\+Render}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_abd21b292252c420cad4abda6d86d1193}{N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_aef46a1be5f0e91410087bb21528d3636}{N\+J\+L\+I\+\_\+\+Handle\+Quit}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a9ab4654023d305ec7788d1f6bd166f29}{N\+J\+L\+I\+\_\+\+Handle\+Pause}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a490e2957f6cb5c01bcc873b219c13964}{N\+J\+L\+I\+\_\+\+Handle\+Resume}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a24c9633bdc46d5b8b64456e75fbe5aa6}{N\+J\+L\+I\+\_\+\+Handle\+Drop\+File}} (const char $\ast$filename)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a8bf04c69e1bc1c3c08f30aa579cc1d73}{N\+J\+L\+I\+\_\+\+Handle\+Resize}} (int width, int height, int sdl\+Format, float refresh\+Rate)
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a33bb6576261605e9bab826bb21a7aa9a}{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down}} (int device\+\_\+id, int keycode)
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a54e28fcf9d572c82e5d57129f319f43c}{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up}} (int device\+\_\+id, int keycode)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a105d45d4a14e2526ceeb66b1a0b60304}{N\+J\+L\+I\+\_\+\+Handle\+Joy}} (int device\+\_\+id, int axis, float value)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_ac8af65c5e0fb2ac87b2f4c5b0271586f}{N\+J\+L\+I\+\_\+\+Handle\+Hat}} (int device\+\_\+id, int hat\+\_\+id, int x, int y)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a68c675ef4b67a621a9b07956a87f164c}{N\+J\+L\+I\+\_\+\+Handle\+Key\+Down}} (const std\+::string \&keycode\+Name, bool with\+Caps\+Lock, bool with\+Control, bool with\+Shift, bool with\+Alt, bool with\+Gui)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_aae7e9403cfa5ccc5fd54012350fd153d}{N\+J\+L\+I\+\_\+\+Handle\+Key\+Up}} (const std\+::string \&keycode\+Name, bool with\+Caps\+Lock, bool with\+Control, bool with\+Shift, bool with\+Alt, bool with\+Gui)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_af76d7bc62254b701c7266713652b1578}{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_ad3d8b0648b78539ef5da05c66816fdde}{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish}} (const unsigned char $\ast$state, int num\+States)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a0df118b26b35f2f4cad823df47ea4ad8}{N\+J\+L\+I\+\_\+\+Handle\+Mouse}} (int button, int event\+Type, float x, float y, int clicks)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_aa68746871cc5e2195dbdb38623df5cf4}{N\+J\+L\+I\+\_\+\+Handle\+Touch}} (int touch\+Dev\+Id, int pointer\+Finger\+Id, int event\+Type, float x, float y, float dx, float dy, float pressure)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a504780d2532764bd8eca76da693862ea}{N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a4a4ec35ea6565fbaf47ffeeeac329ff9}{N\+J\+L\+I\+\_\+\+Handle\+Accel}} (float x, float y, float z)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a5caa8b96a2484e22eaf17f6400254327}{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a9e9547b19cfb4c6c39453d90a155b4f6}{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed}} ()
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_ab89b70450a79c24a789431c13987f663}{N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick}} (int device\+\_\+id, const char $\ast$name, int is\+\_\+accelerometer, int nbuttons, int naxes, int nhats, int nballs)
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a8967eda0ee6571bc64d28407cb31ca83}{N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick}} (int device\+\_\+id)
+\item 
+const char $\ast$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a521c282a3e54e5d174c07226c29c73e2}{N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint}} (const char $\ast$name)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a3288c38f85384c3b1d9b4d6ff1fc65d3}{N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text}} (const char $\ast$text, int new\+Cursor\+Position)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{_n_j_l_i_interface_8h_a825a21d7571cf6c98f65eea33346753d}{N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text}} (const char $\ast$text, int new\+Cursor\+Position)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ S\+D\+L\+\_\+\+Joystick $\ast$ $>$ \mbox{\hyperlink{_n_j_l_i_interface_8h_ad44d313c047589b11b13ed2b86b8c4db}{g\+Game\+Joysticks}}
+\item 
+\mbox{\hyperlink{_n_j_l_i_interface_8h_a2642a79c3f661b171d671a8faca552c4}{Joystick\+Map}} \mbox{\hyperlink{_n_j_l_i_interface_8h_adb79376dd8a0fe575d83acde08cb1047}{g\+Game\+Joystick\+Map}}
+\item 
+S\+D\+L\+\_\+\+Window $\ast$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a222f53a6a442d8f716dffd665e83528a}{g\+Window}}
+\item 
+S\+D\+L\+\_\+\+Renderer $\ast$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a4735638969a524c4ac90a88f23c59a1f}{g\+Renderer}}
+\item 
+S\+D\+L\+\_\+\+G\+L\+Context \mbox{\hyperlink{_n_j_l_i_interface_8h_a18634b79b95e521c65f8446597af3fa5}{g\+Gl\+Context}}
+\item 
+S\+D\+L\+\_\+\+Display\+Mode \mbox{\hyperlink{_n_j_l_i_interface_8h_aeea34e2cdf8071c7dcd944e5f40141e5}{g\+Display\+Mode}}
+\item 
+S\+D\+L\+\_\+\+Mouse\+Motion\+Event \mbox{\hyperlink{_n_j_l_i_interface_8h_a0d2385cca83f2f3e3972567646e933c5}{g\+Last\+Event}}
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a01e593ea28db3fae0f4b904a097f392a}{g\+Done}}
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a617d46c48dd05c5f04f249d74b27474e}{g\+X\+Offset}}
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a8832dca79836bee1ed31c0c1943f70eb}{g\+Y\+Offset}}
+\item 
+int \mbox{\hyperlink{_n_j_l_i_interface_8h_a869dc264b051e5660082d1a9782c7d12}{g\+Num\+Touches}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a2642a79c3f661b171d671a8faca552c4}\label{_n_j_l_i_interface_8h_a2642a79c3f661b171d671a8faca552c4}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!Joystick\+Map@{Joystick\+Map}}
+\index{Joystick\+Map@{Joystick\+Map}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{Joystick\+Map}{JoystickMap}}
+{\footnotesize\ttfamily typedef std\+::map$<$int, S\+D\+L\+\_\+\+Joystick $\ast$$>$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a2642a79c3f661b171d671a8faca552c4}{Joystick\+Map}}}
+
+
+
+Definition at line 17 of file N\+J\+L\+I\+Interface.\+h.
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a49256682c3474ea60e1aa3e4f3726f1d}\label{_n_j_l_i_interface_8h_a49256682c3474ea60e1aa3e4f3726f1d}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!Joystick\+Pair@{Joystick\+Pair}}
+\index{Joystick\+Pair@{Joystick\+Pair}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{Joystick\+Pair}{JoystickPair}}
+{\footnotesize\ttfamily typedef std\+::pair$<$int, S\+D\+L\+\_\+\+Joystick $\ast$$>$ \mbox{\hyperlink{_n_j_l_i_interface_8h_a49256682c3474ea60e1aa3e4f3726f1d}{Joystick\+Pair}}}
+
+
+
+Definition at line 18 of file N\+J\+L\+I\+Interface.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a4a4ec35ea6565fbaf47ffeeeac329ff9}\label{_n_j_l_i_interface_8h_a4a4ec35ea6565fbaf47ffeeeac329ff9}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Accel@{N\+J\+L\+I\+\_\+\+Handle\+Accel}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Accel@{N\+J\+L\+I\+\_\+\+Handle\+Accel}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Accel()}{NJLI\_HandleAccel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Accel (\begin{DoxyParamCaption}\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{z }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_ab89b70450a79c24a789431c13987f663}\label{_n_j_l_i_interface_8h_ab89b70450a79c24a789431c13987f663}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick@{N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick@{N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick()}{NJLI\_HandleAddJoystick()}}
+{\footnotesize\ttfamily int N\+J\+L\+I\+\_\+\+Handle\+Add\+Joystick (\begin{DoxyParamCaption}\item[{int}]{device\+\_\+id,  }\item[{const char $\ast$}]{name,  }\item[{int}]{is\+\_\+accelerometer,  }\item[{int}]{nbuttons,  }\item[{int}]{naxes,  }\item[{int}]{nhats,  }\item[{int}]{nballs }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a3288c38f85384c3b1d9b4d6ff1fc65d3}\label{_n_j_l_i_interface_8h_a3288c38f85384c3b1d9b4d6ff1fc65d3}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text@{N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text@{N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text()}{NJLI\_HandleCommitText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Commit\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{int}]{new\+Cursor\+Position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a24c9633bdc46d5b8b64456e75fbe5aa6}\label{_n_j_l_i_interface_8h_a24c9633bdc46d5b8b64456e75fbe5aa6}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Drop\+File@{N\+J\+L\+I\+\_\+\+Handle\+Drop\+File}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Drop\+File@{N\+J\+L\+I\+\_\+\+Handle\+Drop\+File}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Drop\+File()}{NJLI\_HandleDropFile()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Drop\+File (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a504780d2532764bd8eca76da693862ea}\label{_n_j_l_i_interface_8h_a504780d2532764bd8eca76da693862ea}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches@{N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches@{N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches()}{NJLI\_HandleFinishTouches()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Finish\+Touches (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a521c282a3e54e5d174c07226c29c73e2}\label{_n_j_l_i_interface_8h_a521c282a3e54e5d174c07226c29c73e2}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint@{N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint@{N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint()}{NJLI\_HandleGetHint()}}
+{\footnotesize\ttfamily const char$\ast$ N\+J\+L\+I\+\_\+\+Handle\+Get\+Hint (\begin{DoxyParamCaption}\item[{const char $\ast$}]{name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_ac8af65c5e0fb2ac87b2f4c5b0271586f}\label{_n_j_l_i_interface_8h_ac8af65c5e0fb2ac87b2f4c5b0271586f}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Hat@{N\+J\+L\+I\+\_\+\+Handle\+Hat}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Hat@{N\+J\+L\+I\+\_\+\+Handle\+Hat}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Hat()}{NJLI\_HandleHat()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Hat (\begin{DoxyParamCaption}\item[{int}]{device\+\_\+id,  }\item[{int}]{hat\+\_\+id,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a105d45d4a14e2526ceeb66b1a0b60304}\label{_n_j_l_i_interface_8h_a105d45d4a14e2526ceeb66b1a0b60304}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Joy@{N\+J\+L\+I\+\_\+\+Handle\+Joy}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Joy@{N\+J\+L\+I\+\_\+\+Handle\+Joy}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Joy()}{NJLI\_HandleJoy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Joy (\begin{DoxyParamCaption}\item[{int}]{device\+\_\+id,  }\item[{int}]{axis,  }\item[{float}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_ad3d8b0648b78539ef5da05c66816fdde}\label{_n_j_l_i_interface_8h_ad3d8b0648b78539ef5da05c66816fdde}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish@{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish@{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish()}{NJLI\_HandleKeyboardFinish()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Finish (\begin{DoxyParamCaption}\item[{const unsigned char $\ast$}]{state,  }\item[{int}]{num\+States }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_af76d7bc62254b701c7266713652b1578}\label{_n_j_l_i_interface_8h_af76d7bc62254b701c7266713652b1578}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost@{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost@{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost()}{NJLI\_HandleKeyboardFocusLost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Keyboard\+Focus\+Lost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a68c675ef4b67a621a9b07956a87f164c}\label{_n_j_l_i_interface_8h_a68c675ef4b67a621a9b07956a87f164c}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Key\+Down@{N\+J\+L\+I\+\_\+\+Handle\+Key\+Down}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Key\+Down@{N\+J\+L\+I\+\_\+\+Handle\+Key\+Down}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Key\+Down()}{NJLI\_HandleKeyDown()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Key\+Down (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{keycode\+Name,  }\item[{bool}]{with\+Caps\+Lock,  }\item[{bool}]{with\+Control,  }\item[{bool}]{with\+Shift,  }\item[{bool}]{with\+Alt,  }\item[{bool}]{with\+Gui }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_aae7e9403cfa5ccc5fd54012350fd153d}\label{_n_j_l_i_interface_8h_aae7e9403cfa5ccc5fd54012350fd153d}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Key\+Up@{N\+J\+L\+I\+\_\+\+Handle\+Key\+Up}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Key\+Up@{N\+J\+L\+I\+\_\+\+Handle\+Key\+Up}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Key\+Up()}{NJLI\_HandleKeyUp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Key\+Up (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{keycode\+Name,  }\item[{bool}]{with\+Caps\+Lock,  }\item[{bool}]{with\+Control,  }\item[{bool}]{with\+Shift,  }\item[{bool}]{with\+Alt,  }\item[{bool}]{with\+Gui }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_abd21b292252c420cad4abda6d86d1193}\label{_n_j_l_i_interface_8h_abd21b292252c420cad4abda6d86d1193}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory@{N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory@{N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory()}{NJLI\_HandleLowMemory()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Low\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a0df118b26b35f2f4cad823df47ea4ad8}\label{_n_j_l_i_interface_8h_a0df118b26b35f2f4cad823df47ea4ad8}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Mouse@{N\+J\+L\+I\+\_\+\+Handle\+Mouse}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Mouse@{N\+J\+L\+I\+\_\+\+Handle\+Mouse}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Mouse()}{NJLI\_HandleMouse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Mouse (\begin{DoxyParamCaption}\item[{int}]{button,  }\item[{int}]{event\+Type,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{int}]{clicks }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a33bb6576261605e9bab826bb21a7aa9a}\label{_n_j_l_i_interface_8h_a33bb6576261605e9bab826bb21a7aa9a}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down@{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down@{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down()}{NJLI\_HandlePadDown()}}
+{\footnotesize\ttfamily int N\+J\+L\+I\+\_\+\+Handle\+Pad\+Down (\begin{DoxyParamCaption}\item[{int}]{device\+\_\+id,  }\item[{int}]{keycode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a54e28fcf9d572c82e5d57129f319f43c}\label{_n_j_l_i_interface_8h_a54e28fcf9d572c82e5d57129f319f43c}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up@{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up@{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up()}{NJLI\_HandlePadUp()}}
+{\footnotesize\ttfamily int N\+J\+L\+I\+\_\+\+Handle\+Pad\+Up (\begin{DoxyParamCaption}\item[{int}]{device\+\_\+id,  }\item[{int}]{keycode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a9ab4654023d305ec7788d1f6bd166f29}\label{_n_j_l_i_interface_8h_a9ab4654023d305ec7788d1f6bd166f29}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Pause@{N\+J\+L\+I\+\_\+\+Handle\+Pause}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Pause@{N\+J\+L\+I\+\_\+\+Handle\+Pause}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Pause()}{NJLI\_HandlePause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_aef46a1be5f0e91410087bb21528d3636}\label{_n_j_l_i_interface_8h_aef46a1be5f0e91410087bb21528d3636}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Quit@{N\+J\+L\+I\+\_\+\+Handle\+Quit}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Quit@{N\+J\+L\+I\+\_\+\+Handle\+Quit}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Quit()}{NJLI\_HandleQuit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Quit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a8967eda0ee6571bc64d28407cb31ca83}\label{_n_j_l_i_interface_8h_a8967eda0ee6571bc64d28407cb31ca83}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick@{N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick@{N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick()}{NJLI\_HandleRemoveJoystick()}}
+{\footnotesize\ttfamily int N\+J\+L\+I\+\_\+\+Handle\+Remove\+Joystick (\begin{DoxyParamCaption}\item[{int}]{device\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a3ca283031b2c6db0f81d6b8f1ab6594c}\label{_n_j_l_i_interface_8h_a3ca283031b2c6db0f81d6b8f1ab6594c}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Render@{N\+J\+L\+I\+\_\+\+Handle\+Render}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Render@{N\+J\+L\+I\+\_\+\+Handle\+Render}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Render()}{NJLI\_HandleRender()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Render (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a8bf04c69e1bc1c3c08f30aa579cc1d73}\label{_n_j_l_i_interface_8h_a8bf04c69e1bc1c3c08f30aa579cc1d73}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Resize@{N\+J\+L\+I\+\_\+\+Handle\+Resize}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Resize@{N\+J\+L\+I\+\_\+\+Handle\+Resize}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Resize()}{NJLI\_HandleResize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Resize (\begin{DoxyParamCaption}\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{sdl\+Format,  }\item[{float}]{refresh\+Rate }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a490e2957f6cb5c01bcc873b219c13964}\label{_n_j_l_i_interface_8h_a490e2957f6cb5c01bcc873b219c13964}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Resume@{N\+J\+L\+I\+\_\+\+Handle\+Resume}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Resume@{N\+J\+L\+I\+\_\+\+Handle\+Resume}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Resume()}{NJLI\_HandleResume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Resume (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a825a21d7571cf6c98f65eea33346753d}\label{_n_j_l_i_interface_8h_a825a21d7571cf6c98f65eea33346753d}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text@{N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text@{N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text()}{NJLI\_HandleSetComposingText()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Set\+Composing\+Text (\begin{DoxyParamCaption}\item[{const char $\ast$}]{text,  }\item[{int}]{new\+Cursor\+Position }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a5caa8b96a2484e22eaf17f6400254327}\label{_n_j_l_i_interface_8h_a5caa8b96a2484e22eaf17f6400254327}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed@{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed@{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed()}{NJLI\_HandleSurfaceChanged()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Surface\+Changed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a9e9547b19cfb4c6c39453d90a155b4f6}\label{_n_j_l_i_interface_8h_a9e9547b19cfb4c6c39453d90a155b4f6}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed@{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed@{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed()}{NJLI\_HandleSurfaceDestroyed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Surface\+Destroyed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_aa68746871cc5e2195dbdb38623df5cf4}\label{_n_j_l_i_interface_8h_aa68746871cc5e2195dbdb38623df5cf4}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Touch@{N\+J\+L\+I\+\_\+\+Handle\+Touch}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Touch@{N\+J\+L\+I\+\_\+\+Handle\+Touch}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Touch()}{NJLI\_HandleTouch()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Touch (\begin{DoxyParamCaption}\item[{int}]{touch\+Dev\+Id,  }\item[{int}]{pointer\+Finger\+Id,  }\item[{int}]{event\+Type,  }\item[{float}]{x,  }\item[{float}]{y,  }\item[{float}]{dx,  }\item[{float}]{dy,  }\item[{float}]{pressure }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a1e60f47d0b131d5990bdc98dc8279399}\label{_n_j_l_i_interface_8h_a1e60f47d0b131d5990bdc98dc8279399}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!N\+J\+L\+I\+\_\+\+Handle\+Update@{N\+J\+L\+I\+\_\+\+Handle\+Update}}
+\index{N\+J\+L\+I\+\_\+\+Handle\+Update@{N\+J\+L\+I\+\_\+\+Handle\+Update}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{N\+J\+L\+I\+\_\+\+Handle\+Update()}{NJLI\_HandleUpdate()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} N\+J\+L\+I\+\_\+\+Handle\+Update (\begin{DoxyParamCaption}\item[{double}]{time\+Step }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_aeea34e2cdf8071c7dcd944e5f40141e5}\label{_n_j_l_i_interface_8h_aeea34e2cdf8071c7dcd944e5f40141e5}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Display\+Mode@{g\+Display\+Mode}}
+\index{g\+Display\+Mode@{g\+Display\+Mode}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Display\+Mode}{gDisplayMode}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Display\+Mode g\+Display\+Mode}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a01e593ea28db3fae0f4b904a097f392a}\label{_n_j_l_i_interface_8h_a01e593ea28db3fae0f4b904a097f392a}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Done@{g\+Done}}
+\index{g\+Done@{g\+Done}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Done}{gDone}}
+{\footnotesize\ttfamily int g\+Done}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_adb79376dd8a0fe575d83acde08cb1047}\label{_n_j_l_i_interface_8h_adb79376dd8a0fe575d83acde08cb1047}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Game\+Joystick\+Map@{g\+Game\+Joystick\+Map}}
+\index{g\+Game\+Joystick\+Map@{g\+Game\+Joystick\+Map}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Game\+Joystick\+Map}{gGameJoystickMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_n_j_l_i_interface_8h_a2642a79c3f661b171d671a8faca552c4}{Joystick\+Map}} g\+Game\+Joystick\+Map}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_ad44d313c047589b11b13ed2b86b8c4db}\label{_n_j_l_i_interface_8h_ad44d313c047589b11b13ed2b86b8c4db}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Game\+Joysticks@{g\+Game\+Joysticks}}
+\index{g\+Game\+Joysticks@{g\+Game\+Joysticks}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Game\+Joysticks}{gGameJoysticks}}
+{\footnotesize\ttfamily std\+::vector$<$S\+D\+L\+\_\+\+Joystick $\ast$$>$ g\+Game\+Joysticks}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a18634b79b95e521c65f8446597af3fa5}\label{_n_j_l_i_interface_8h_a18634b79b95e521c65f8446597af3fa5}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Gl\+Context@{g\+Gl\+Context}}
+\index{g\+Gl\+Context@{g\+Gl\+Context}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Gl\+Context}{gGlContext}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+G\+L\+Context g\+Gl\+Context}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a0d2385cca83f2f3e3972567646e933c5}\label{_n_j_l_i_interface_8h_a0d2385cca83f2f3e3972567646e933c5}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Last\+Event@{g\+Last\+Event}}
+\index{g\+Last\+Event@{g\+Last\+Event}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Last\+Event}{gLastEvent}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Mouse\+Motion\+Event g\+Last\+Event}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a869dc264b051e5660082d1a9782c7d12}\label{_n_j_l_i_interface_8h_a869dc264b051e5660082d1a9782c7d12}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Num\+Touches@{g\+Num\+Touches}}
+\index{g\+Num\+Touches@{g\+Num\+Touches}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Num\+Touches}{gNumTouches}}
+{\footnotesize\ttfamily int g\+Num\+Touches}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a4735638969a524c4ac90a88f23c59a1f}\label{_n_j_l_i_interface_8h_a4735638969a524c4ac90a88f23c59a1f}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Renderer@{g\+Renderer}}
+\index{g\+Renderer@{g\+Renderer}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Renderer}{gRenderer}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Renderer$\ast$ g\+Renderer}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a222f53a6a442d8f716dffd665e83528a}\label{_n_j_l_i_interface_8h_a222f53a6a442d8f716dffd665e83528a}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Window@{g\+Window}}
+\index{g\+Window@{g\+Window}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Window}{gWindow}}
+{\footnotesize\ttfamily S\+D\+L\+\_\+\+Window$\ast$ g\+Window}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a617d46c48dd05c5f04f249d74b27474e}\label{_n_j_l_i_interface_8h_a617d46c48dd05c5f04f249d74b27474e}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+X\+Offset@{g\+X\+Offset}}
+\index{g\+X\+Offset@{g\+X\+Offset}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+X\+Offset}{gXOffset}}
+{\footnotesize\ttfamily int g\+X\+Offset}
+
+\mbox{\Hypertarget{_n_j_l_i_interface_8h_a8832dca79836bee1ed31c0c1943f70eb}\label{_n_j_l_i_interface_8h_a8832dca79836bee1ed31c0c1943f70eb}} 
+\index{N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}!g\+Y\+Offset@{g\+Y\+Offset}}
+\index{g\+Y\+Offset@{g\+Y\+Offset}!N\+J\+L\+I\+Interface.\+h@{N\+J\+L\+I\+Interface.\+h}}
+\subsubsection{\texorpdfstring{g\+Y\+Offset}{gYOffset}}
+{\footnotesize\ttfamily int g\+Y\+Offset}
+

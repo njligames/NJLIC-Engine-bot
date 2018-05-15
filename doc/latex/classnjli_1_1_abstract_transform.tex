@@ -1,0 +1,380 @@
+\hypertarget{classnjli_1_1_abstract_transform}{}\section{njli\+:\+:Abstract\+Transform Class Reference}
+\label{classnjli_1_1_abstract_transform}\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+
+
+{\ttfamily \#include $<$Abstract\+Transform.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Abstract\+Transform\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classnjli_1_1_abstract_transform__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_transform_ae81766ce7baa95743ad256dfab13a086}{Abstract\+Transform}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_transform_a8ea40aa6d85fc58ddec0962568921ddc}{Abstract\+Transform}} (const \mbox{\hyperlink{classnjli_1_1_abstract_transform}{Abstract\+Transform}} \&copy)
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_transform_a0e9a40091685470285419f35c6c91bcc}{$\sim$\+Abstract\+Transform}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_transform}{Abstract\+Transform}} \& \mbox{\hyperlink{classnjli_1_1_abstract_transform_a33740ec533c3328faff5d702bcd36a16}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_abstract_transform}{Abstract\+Transform}} \&rhs)
+\item 
+bt\+Transform \& \mbox{\hyperlink{classnjli_1_1_abstract_transform_a6341254e626b209df85d0b7e830c2894}{get\+Transform}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_a87650e2ff117cde3128c9de164c84b2b}{set\+Transform}} (const bt\+Transform \&transform)
+\item 
+virtual bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_abstract_transform_a8ed6d7cc1b5728f68a2455e918a8c6b5}{get\+Origin}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_a8dfc3a81836971418bb9c71004222c8f}{set\+Origin}} (const bt\+Vector3 \&origin)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_a82759647e299853f562331879818eaa7}{set\+Origin}} (const bt\+Vector2 \&origin)
+\item 
+bt\+Quaternion \mbox{\hyperlink{classnjli_1_1_abstract_transform_ab998267bb4662fa0c3902b9a236f15fc}{get\+Rotation}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_a721ce04e176c7bdd5fea612ccbbd1e12}{set\+Rotation}} (const bt\+Quaternion \&rotation)
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_abstract_transform_a1a9cf70d9ae4b9405500be603e74b4e8}{get\+Euler\+Angles}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_a758c5d11698115dac64ec6e4ba29c5bb}{set\+Euler\+Angles}} (const bt\+Vector3 \&angles)
+\item 
+bt\+Quaternion \& \mbox{\hyperlink{classnjli_1_1_abstract_transform_af23dedd0d33968d9f4066056d442d8ab}{get\+Orientation}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_a8668e1e13020412115e65b7e50176262}{set\+Orientation}} (const bt\+Quaternion \&orientation)
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_abstract_transform_a292f90f311e9af8e2bffc630b100ca2b}{get\+Scale}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_ab9059ed0b04b3e5af674ce2652ffda35}{set\+Scale}} (const bt\+Vector3 \&scale)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_ab3fe736cb93cd9853a675131f34404ff}{set\+Scale}} (const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} scale)
+\item 
+bt\+Transform \& \mbox{\hyperlink{classnjli_1_1_abstract_transform_aec6866eb4cc32cc1f7aecae2f5a55422}{get\+Pivot}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_transform_aa2adbe5fcda38419fa30b22a59f734b3}{set\+Pivot}} (const bt\+Transform \&pivot)
+\item 
+virtual bt\+Transform \mbox{\hyperlink{classnjli_1_1_abstract_transform_a25e1a5d3daf3c0c5839915f33e37e51a}{get\+World\+Transform}} () const =0
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Transform $\ast$ \mbox{\hyperlink{classnjli_1_1_abstract_transform_a90ca5d67abcb0a5ea1e3c3554c9f8e0e}{m\+\_\+\+World\+Transform}}
+\item 
+bt\+Quaternion $\ast$ \mbox{\hyperlink{classnjli_1_1_abstract_transform_ab86688491ad0a42d93ebf4242a12c17e}{m\+\_\+\+Orientation}}
+\item 
+bt\+Transform $\ast$ \mbox{\hyperlink{classnjli_1_1_abstract_transform_a6c1eda10f9fa9bd340e3b1a560f3954a}{m\+\_\+\+Pivot}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 21 of file Abstract\+Transform.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_ae81766ce7baa95743ad256dfab13a086}\label{classnjli_1_1_abstract_transform_ae81766ce7baa95743ad256dfab13a086}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!Abstract\+Transform@{Abstract\+Transform}}
+\index{Abstract\+Transform@{Abstract\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{Abstract\+Transform()}{AbstractTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily njli\+::\+Abstract\+Transform\+::\+Abstract\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_abstract_transform_a8ea40aa6d85fc58ddec0962568921ddc}\label{classnjli_1_1_abstract_transform_a8ea40aa6d85fc58ddec0962568921ddc}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!Abstract\+Transform@{Abstract\+Transform}}
+\index{Abstract\+Transform@{Abstract\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{Abstract\+Transform()}{AbstractTransform()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily njli\+::\+Abstract\+Transform\+::\+Abstract\+Transform (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_transform}{Abstract\+Transform}} \&}]{copy }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_abstract_transform_a0e9a40091685470285419f35c6c91bcc}\label{classnjli_1_1_abstract_transform_a0e9a40091685470285419f35c6c91bcc}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!````~Abstract\+Transform@{$\sim$\+Abstract\+Transform}}
+\index{````~Abstract\+Transform@{$\sim$\+Abstract\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{$\sim$\+Abstract\+Transform()}{~AbstractTransform()}}
+{\footnotesize\ttfamily virtual njli\+::\+Abstract\+Transform\+::$\sim$\+Abstract\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a1a9cf70d9ae4b9405500be603e74b4e8}\label{classnjli_1_1_abstract_transform_a1a9cf70d9ae4b9405500be603e74b4e8}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Euler\+Angles@{get\+Euler\+Angles}}
+\index{get\+Euler\+Angles@{get\+Euler\+Angles}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Euler\+Angles()}{getEulerAngles()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Abstract\+Transform\+::get\+Euler\+Angles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Roll is the rotation about the node’s z-\/axis, yaw is the rotation about the node’s y-\/axis, and pitch is the rotation about the node’s x-\/axis. Rotation is applied relative to the node’s pivot property.
+
+\begin{DoxyReturn}{Returns}
+The Euler Angles for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_af23dedd0d33968d9f4066056d442d8ab}\label{classnjli_1_1_abstract_transform_af23dedd0d33968d9f4066056d442d8ab}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Orientation@{get\+Orientation}}
+\index{get\+Orientation@{get\+Orientation}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Orientation()}{getOrientation()}}
+{\footnotesize\ttfamily bt\+Quaternion\& njli\+::\+Abstract\+Transform\+::get\+Orientation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The rotation, euler\+Angles, and orientation properties all affect the rotational aspect of its transform property. Any change to one of these properties is reflected in the others.
+
+\begin{DoxyReturn}{Returns}
+The Orientation for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a8ed6d7cc1b5728f68a2455e918a8c6b5}\label{classnjli_1_1_abstract_transform_a8ed6d7cc1b5728f68a2455e918a8c6b5}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Origin@{get\+Origin}}
+\index{get\+Origin@{get\+Origin}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Origin()}{getOrigin()}}
+{\footnotesize\ttfamily virtual bt\+Vector3\& njli\+::\+Abstract\+Transform\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The node’s position locates it within the coordinate system of its parent, as modified by the node’s pivot property. The default position is the zero vector, indicating that the node is placed at the origin of the parent node’s coordinate system.
+
+\begin{DoxyReturn}{Returns}
+The Origin for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_aec6866eb4cc32cc1f7aecae2f5a55422}\label{classnjli_1_1_abstract_transform_aec6866eb4cc32cc1f7aecae2f5a55422}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Pivot@{get\+Pivot}}
+\index{get\+Pivot@{get\+Pivot}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Pivot()}{getPivot()}}
+{\footnotesize\ttfamily bt\+Transform\& njli\+::\+Abstract\+Transform\+::get\+Pivot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+A node’s pivot is the transformation between its coordinate space and that used by its position, rotation, and scale properties. The default pivot is S\+C\+N\+Matrix4\+Identity, specifying that the node’s position locates the origin of its coordinate system, its rotation is about an axis through its center, and its scale is also relative to that center point.
+
+Changing the pivot transform alters these behaviors in many useful ways. You can\+:
+
+Offset the node’s contents relative to its position. For example, by setting the pivot to a translation transform you can position a node containing a sphere geometry relative to where the sphere would rest on a floor instead of relative to its center.
+
+Move the node’s axis of rotation. For example, with a translation transform you can cause a node to revolve around a faraway point instead of rotating around its center, and with a rotation transform you can tilt the axis of rotation.
+
+Adjust the center point and direction for scaling the node. For example, with a translation transform you can cause a node to grow or shrink relative to a corner instead of to its center.
+
+\begin{DoxyReturn}{Returns}
+The Pivot for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_ab998267bb4662fa0c3902b9a236f15fc}\label{classnjli_1_1_abstract_transform_ab998267bb4662fa0c3902b9a236f15fc}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Rotation@{get\+Rotation}}
+\index{get\+Rotation@{get\+Rotation}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Rotation()}{getRotation()}}
+{\footnotesize\ttfamily bt\+Quaternion njli\+::\+Abstract\+Transform\+::get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The four-\/component rotation vector specifies the direction of the rotation axis in the first three components and the angle of rotation (in radians) in the fourth. The default rotation is the zero vector, specifying no rotation. Rotation is applied relative to the node’s pivot property.
+
+The rotation, euler\+Angles, and orientation properties all affect the rotational aspect of its transform property. Any change to one of these properties is reflected in the others.
+
+\begin{DoxyReturn}{Returns}
+the Rotation for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a292f90f311e9af8e2bffc630b100ca2b}\label{classnjli_1_1_abstract_transform_a292f90f311e9af8e2bffc630b100ca2b}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Scale@{get\+Scale}}
+\index{get\+Scale@{get\+Scale}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Scale()}{getScale()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Abstract\+Transform\+::get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Each component of the scale vector multiplies the corresponding dimension of the node’s geometry. The default scale is 1.\+0 in all three dimensions. For example, applying a scale of (2.\+0, 0.\+5, 2.\+0) to a node containing a cube geometry reduces its height and increases its width and depth. Scaling is applied relative to the node’s pivot property.
+
+\begin{DoxyReturn}{Returns}
+The scale for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a6341254e626b209df85d0b7e830c2894}\label{classnjli_1_1_abstract_transform_a6341254e626b209df85d0b7e830c2894}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+Transform@{get\+Transform}}
+\index{get\+Transform@{get\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+Transform()}{getTransform()}}
+{\footnotesize\ttfamily bt\+Transform\& njli\+::\+Abstract\+Transform\+::get\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+The transformation is the combination of the node’s rotation, position, and scale properties. The default transformation is S\+C\+N\+Matrix4\+Identity.
+
+When you set the value of this property, the node’s rotation, orientation, euler\+Angles, position, and scale properties automatically change to match the new transform, and vice versa. J\+L\+I\+Engine can perform this conversion only if the transform you provide is a combination of rotation, translation, and scale operations. If you set the value of this property to a skew transformation or to a nonaffine transformation, the values of these properties become undefined. Setting a new value for any of these properties causes J\+L\+I\+Engine to compute a new transformation, discarding any skew or nonaffine operations in the original transformation.
+
+\begin{DoxyReturn}{Returns}
+The Transform for this instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a25e1a5d3daf3c0c5839915f33e37e51a}\label{classnjli_1_1_abstract_transform_a25e1a5d3daf3c0c5839915f33e37e51a}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!get\+World\+Transform@{get\+World\+Transform}}
+\index{get\+World\+Transform@{get\+World\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{get\+World\+Transform()}{getWorldTransform()}}
+{\footnotesize\ttfamily virtual bt\+Transform njli\+::\+Abstract\+Transform\+::get\+World\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+A world transform is the node’s coordinate space transformation relative to the scene’s coordinate space. This transformation is the concatenation of the node’s transform property with that of its parent node, the parent’s parent, and so on up to the root\+Node object of the scene.
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{classnjli_1_1_world}{World}} Transform for this instance. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_sound_ac6e54aa0ca0c4e9893d9a78322f86dd3}{njli\+::\+Sound}}.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a33740ec533c3328faff5d702bcd36a16}\label{classnjli_1_1_abstract_transform_a33740ec533c3328faff5d702bcd36a16}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_abstract_transform}{Abstract\+Transform}}\& njli\+::\+Abstract\+Transform\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_transform}{Abstract\+Transform}} \&}]{rhs }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & $<$\#rhs description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a758c5d11698115dac64ec6e4ba29c5bb}\label{classnjli_1_1_abstract_transform_a758c5d11698115dac64ec6e4ba29c5bb}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Euler\+Angles@{set\+Euler\+Angles}}
+\index{set\+Euler\+Angles@{set\+Euler\+Angles}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Euler\+Angles()}{setEulerAngles()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Euler\+Angles (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{angles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em angles} & $<$\#angles description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a8668e1e13020412115e65b7e50176262}\label{classnjli_1_1_abstract_transform_a8668e1e13020412115e65b7e50176262}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Orientation@{set\+Orientation}}
+\index{set\+Orientation@{set\+Orientation}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Orientation()}{setOrientation()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Orientation (\begin{DoxyParamCaption}\item[{const bt\+Quaternion \&}]{orientation }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em orientation} & $<$\#orientation description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a8dfc3a81836971418bb9c71004222c8f}\label{classnjli_1_1_abstract_transform_a8dfc3a81836971418bb9c71004222c8f}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Origin@{set\+Origin}}
+\index{set\+Origin@{set\+Origin}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Origin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Origin (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & $<$\#origin description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a82759647e299853f562331879818eaa7}\label{classnjli_1_1_abstract_transform_a82759647e299853f562331879818eaa7}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Origin@{set\+Origin}}
+\index{set\+Origin@{set\+Origin}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Origin()}{setOrigin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Origin (\begin{DoxyParamCaption}\item[{const bt\+Vector2 \&}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & $<$\#origin description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_aa2adbe5fcda38419fa30b22a59f734b3}\label{classnjli_1_1_abstract_transform_aa2adbe5fcda38419fa30b22a59f734b3}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Pivot@{set\+Pivot}}
+\index{set\+Pivot@{set\+Pivot}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Pivot()}{setPivot()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Pivot (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{pivot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em pivot} & $<$\#pivot description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a721ce04e176c7bdd5fea612ccbbd1e12}\label{classnjli_1_1_abstract_transform_a721ce04e176c7bdd5fea612ccbbd1e12}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Rotation@{set\+Rotation}}
+\index{set\+Rotation@{set\+Rotation}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Rotation()}{setRotation()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Rotation (\begin{DoxyParamCaption}\item[{const bt\+Quaternion \&}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em rotation} & $<$\#rotation description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_ab9059ed0b04b3e5af674ce2652ffda35}\label{classnjli_1_1_abstract_transform_ab9059ed0b04b3e5af674ce2652ffda35}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Scale (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & $<$\#scale description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_ab3fe736cb93cd9853a675131f34404ff}\label{classnjli_1_1_abstract_transform_ab3fe736cb93cd9853a675131f34404ff}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Scale@{set\+Scale}}
+\index{set\+Scale@{set\+Scale}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Scale()}{setScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Scale (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{scale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em scale} & $<$\#scale description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a87650e2ff117cde3128c9de164c84b2b}\label{classnjli_1_1_abstract_transform_a87650e2ff117cde3128c9de164c84b2b}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!set\+Transform@{set\+Transform}}
+\index{set\+Transform@{set\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{set\+Transform()}{setTransform()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Transform\+::set\+Transform (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform} & $<$\#transform description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_ab86688491ad0a42d93ebf4242a12c17e}\label{classnjli_1_1_abstract_transform_ab86688491ad0a42d93ebf4242a12c17e}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!m\+\_\+\+Orientation@{m\+\_\+\+Orientation}}
+\index{m\+\_\+\+Orientation@{m\+\_\+\+Orientation}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Orientation}{m\_Orientation}}
+{\footnotesize\ttfamily bt\+Quaternion$\ast$ njli\+::\+Abstract\+Transform\+::m\+\_\+\+Orientation\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 214 of file Abstract\+Transform.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a6c1eda10f9fa9bd340e3b1a560f3954a}\label{classnjli_1_1_abstract_transform_a6c1eda10f9fa9bd340e3b1a560f3954a}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!m\+\_\+\+Pivot@{m\+\_\+\+Pivot}}
+\index{m\+\_\+\+Pivot@{m\+\_\+\+Pivot}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Pivot}{m\_Pivot}}
+{\footnotesize\ttfamily bt\+Transform$\ast$ njli\+::\+Abstract\+Transform\+::m\+\_\+\+Pivot\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 215 of file Abstract\+Transform.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_abstract_transform_a90ca5d67abcb0a5ea1e3c3554c9f8e0e}\label{classnjli_1_1_abstract_transform_a90ca5d67abcb0a5ea1e3c3554c9f8e0e}} 
+\index{njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}!m\+\_\+\+World\+Transform@{m\+\_\+\+World\+Transform}}
+\index{m\+\_\+\+World\+Transform@{m\+\_\+\+World\+Transform}!njli\+::\+Abstract\+Transform@{njli\+::\+Abstract\+Transform}}
+\subsubsection{\texorpdfstring{m\+\_\+\+World\+Transform}{m\_WorldTransform}}
+{\footnotesize\ttfamily bt\+Transform$\ast$ njli\+::\+Abstract\+Transform\+::m\+\_\+\+World\+Transform\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 213 of file Abstract\+Transform.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/\mbox{\hyperlink{_abstract_transform_8h}{Abstract\+Transform.\+h}}\end{DoxyCompactItemize}

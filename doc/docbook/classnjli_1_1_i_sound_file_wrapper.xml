@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_i_sound_file_wrapper">
+<title>njli::ISoundFileWrapper class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_i_sound_file_wrapper_8h">&lt;ISoundFileWrapper.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::ISoundFileWrapper</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_i_sound_file_wrapper__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::ISoundFileWrapper</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_i_sound_file_wrapper__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7">SEEK_POS</link> {
+<link linkend="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e">START</link>= 0,
+<link linkend="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991">CURRENT</link>= 1
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef enum <link linkend="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7">njli::ISoundFileWrapper::SEEK_POS</link>  <link linkend="classnjli_1_1_i_sound_file_wrapper_1a5374e14efd1564c10852da7cfe31164a">SEEK_POS</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4">ISoundFileWrapper</link> (
+int minDecompressLengthAtOnce)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7">~ISoundFileWrapper</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_i_sound_file_wrapper_1a2c4dc8cc613f8f545b0e1ead86ee7e4d">LoadFromMemory</link> (
+char * data, int dataSize, SoundInfo * soundInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_i_sound_file_wrapper_1a525f86e4bbe65d5b90ee3eda171b5492">LoadFromFile</link> (
+FILE * f, SoundInfo * soundInfo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_i_sound_file_wrapper_1a2e62b8b05da06eb1f9594ffdd5aa0cfd">DecompressStream</link> (
+std::vector&lt; char &gt; &amp; decompressBuffer, bool inLoop)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_i_sound_file_wrapper_1a9b338a5bbcb5d07acdebce1efab332c5">DecompressAll</link> (
+std::vector&lt; char &gt; &amp; decompressBuffer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_i_sound_file_wrapper_1ab302d724c78a9a55f6dcb288d31e6854">ResetStream</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_i_sound_file_wrapper_1a22241a77b7d6adf55045a7a30ec5ef30">Seek</link> (
+size_t pos, <link linkend="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7">SEEK_POS</link> start)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual size_t <link linkend="classnjli_1_1_i_sound_file_wrapper_1a7468aaf1e53cfd6feb38eae4ecf8ab99">GetCurrentStreamPos</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="classnjli_1_1_i_sound_file_wrapper_1afefb180620c4a6e17e994a867726eb29">GetTime</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual float <link linkend="classnjli_1_1_i_sound_file_wrapper_1a1b22318560969f7cc06ac03dcb78971f">GetTotalTime</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7">
+               <title>enum SEEK_POS </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e">
+                            <term>START</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991">
+                            <term>CURRENT</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 17 of file ISoundFileWrapper.h
+                    <computeroutput><literallayout>
+{
+START= 0, 
+CURRENT= 1, 
+}SEEK_POS;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a5374e14efd1564c10852da7cfe31164a">
+                <title>typedef enum njli::ISoundFileWrapper::SEEK_POS  njli::ISoundFileWrapper::SEEK_POS</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4">
+                <title>njli::ISoundFileWrapper::ISoundFileWrapper (int minDecompressLengthAtOnce=-1)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7">
+                <title>virtual njli::ISoundFileWrapper::~ISoundFileWrapper ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a2c4dc8cc613f8f545b0e1ead86ee7e4d">
+                <title>virtual void njli::ISoundFileWrapper::LoadFromMemory (char *data, int dataSize, SoundInfo *soundInfo)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a525f86e4bbe65d5b90ee3eda171b5492">
+                <title>virtual void njli::ISoundFileWrapper::LoadFromFile (FILE *f, SoundInfo *soundInfo)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a2e62b8b05da06eb1f9594ffdd5aa0cfd">
+                <title>virtual void njli::ISoundFileWrapper::DecompressStream (std::vector&lt; char &gt; &amp;decompressBuffer, bool inLoop=false)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a9b338a5bbcb5d07acdebce1efab332c5">
+                <title>virtual void njli::ISoundFileWrapper::DecompressAll (std::vector&lt; char &gt; &amp;decompressBuffer)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1ab302d724c78a9a55f6dcb288d31e6854">
+                <title>virtual void njli::ISoundFileWrapper::ResetStream ()=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a22241a77b7d6adf55045a7a30ec5ef30">
+                <title>virtual void njli::ISoundFileWrapper::Seek (size_t pos, SEEK_POS start)=0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a7468aaf1e53cfd6feb38eae4ecf8ab99">
+                <title>virtual size_t njli::ISoundFileWrapper::GetCurrentStreamPos () const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1afefb180620c4a6e17e994a867726eb29">
+                <title>virtual float njli::ISoundFileWrapper::GetTime () const =0</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_i_sound_file_wrapper_1a1b22318560969f7cc06ac03dcb78971f">
+                <title>virtual float njli::ISoundFileWrapper::GetTotalTime () const =0</title> <emphasis></emphasis>
+                
+            </section>
+</section>

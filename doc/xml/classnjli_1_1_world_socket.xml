@@ -1,0 +1,468 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_world_socket" kind="class" language="C++" prot="public">
+    <compoundname>njli::WorldSocket</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_object" prot="public" virt="non-virtual">njli::AbstractObject</basecompoundref>
+    <includes refid="_world_socket_8h" local="no">WorldSocket.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_socket_1a6535269e736f06ed9464a85e1ee94ad5" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::WorldSocket::m_sck</definition>
+        <argsstring></argsstring>
+        <name>m_sck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="97" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_socket_1ab8eaf650ed60181c5984c50190967952" prot="private" static="no" mutable="no">
+        <type>struct sockaddr_in</type>
+        <definition>struct sockaddr_in njli::WorldSocket::m_sck_addr</definition>
+        <argsstring></argsstring>
+        <name>m_sck_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="97" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_socket_1a20a56b50c5086151d1ceb67034ae4cd1" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a2ff401e087cf786c38a6812723e94473" kindref="member">s8</ref> *</type>
+        <definition>s8* njli::WorldSocket::m_buffer</definition>
+        <argsstring></argsstring>
+        <name>m_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="99" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_socket_1afc58ced137ddce637734bb7b67a8accb" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::WorldSocket::m_isConnected</definition>
+        <argsstring></argsstring>
+        <name>m_isConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="100" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_socket_1ad139dd74c61b2663bfb08861cc51f1b5" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::WorldSocket::m_SocketData</definition>
+        <argsstring></argsstring>
+        <name>m_SocketData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="102" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_socket_1adb76e0e0966e72716f105875633a727a" prot="private" static="no" mutable="no">
+        <type>std::queue&lt; std::string &gt;</type>
+        <definition>std::queue&lt;std::string&gt; njli::WorldSocket::m_MessageQueue</definition>
+        <argsstring></argsstring>
+        <name>m_MessageQueue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="104" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a48206691f6d67e6d2cadd5871236e688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldSocket::WorldSocket</definition>
+        <argsstring>()</argsstring>
+        <name>WorldSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a11a9b35e1abfa429eaf2797ebcc5e06e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::WorldSocket::~WorldSocket</definition>
+        <argsstring>()</argsstring>
+        <name>~WorldSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a5a98ed3511ee0c2784ad14e36a6a6fd0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::WorldSocket::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afdabb48c4bf763e297ffe810b433a863">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a497c7bba3a7001fb1ad2f8c98768d9eb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::WorldSocket::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1a08dcf202a47f0782813b8bc98c659e78">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a6a0a48963031efd27782ea8c6d256663" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::WorldSocket::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afc07f4138bd3003910e7aa7fa0fe11ad">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a9fa97067d750876046d8a0b79eaa2708" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldSocket::connectJLI</definition>
+        <argsstring>(const char *ip, u16 port)</argsstring>
+        <name>connectJLI</name>
+        <param>
+          <type>const char *</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ip</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#ip description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#port description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a72f3fbc4ed89cd5fc2c98e02e85577a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldSocket::parseMessage</definition>
+        <argsstring>(const std::string &amp;delimeter=&quot;root&quot;)</argsstring>
+        <name>parseMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>delimeter</declname>
+          <defval>&quot;root&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="74" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1ae4161c8d9db7f9b53dd855c0313b5d18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldSocket::hasMessage</definition>
+        <argsstring>() const</argsstring>
+        <name>hasMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1ab748f606af5d49786785a5d9f3b9fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string njli::WorldSocket::popMessage</definition>
+        <argsstring>()</argsstring>
+        <name>popMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1aeb35c51f861acc84da71dd68a09fd2c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldSocket::sendMessage</definition>
+        <argsstring>(const std::string &amp;message)</argsstring>
+        <name>sendMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1af3e1664b23b7ded9a695c51140a8c209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldSocket::disconnectJLI</definition>
+        <argsstring>()</argsstring>
+        <name>disconnectJLI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1ae3c8b6487d5edb322a93bf9204c287a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldSocket::isConnected</definition>
+        <argsstring>() const</argsstring>
+        <name>isConnected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="88" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="29" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1ae15dc1f2db17e7ef5faccc4e6ad335e9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldSocket::socketSetOpt</definition>
+        <argsstring>()</argsstring>
+        <name>socketSetOpt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="91" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a6c5aa4b415b1260606c4c81f2aad03e6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldSocket::WorldSocket</definition>
+        <argsstring>(const WorldSocket &amp;)</argsstring>
+        <name>WorldSocket</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_socket_1a1a085ac09dc8bd9504fa4c03b1f4d86d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref> &amp;</type>
+        <definition>WorldSocket&amp; njli::WorldSocket::operator=</definition>
+        <argsstring>(const WorldSocket &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldSocket.h" line="95" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;#Description#&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2757">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2756">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2757" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2755">
+        <label>njli::WorldSocket</label>
+        <link refid="classnjli_1_1_world_socket"/>
+        <childnode refid="2756" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2760">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2760" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2759">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2760" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2758">
+        <label>njli::WorldSocket</label>
+        <link refid="classnjli_1_1_world_socket"/>
+        <childnode refid="2759" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/WorldSocket.h" line="26" column="1" bodyfile="njligames-njlic_engine/njli/WorldSocket.h" bodystart="25" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_world_socket_1a9fa97067d750876046d8a0b79eaa2708" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>connectJLI</name></member>
+      <member refid="classnjli_1_1_world_socket_1af3e1664b23b7ded9a695c51140a8c209" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>disconnectJLI</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_world_socket_1a5a98ed3511ee0c2784ad14e36a6a6fd0" prot="public" virt="virtual"><scope>njli::WorldSocket</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_world_socket_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::WorldSocket</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_world_socket_1a497c7bba3a7001fb1ad2f8c98768d9eb" prot="public" virt="virtual"><scope>njli::WorldSocket</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_world_socket_1ae4161c8d9db7f9b53dd855c0313b5d18" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>hasMessage</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_world_socket_1ae3c8b6487d5edb322a93bf9204c287a2" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>isConnected</name></member>
+      <member refid="classnjli_1_1_world_socket_1a20a56b50c5086151d1ceb67034ae4cd1" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>m_buffer</name></member>
+      <member refid="classnjli_1_1_world_socket_1afc58ced137ddce637734bb7b67a8accb" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>m_isConnected</name></member>
+      <member refid="classnjli_1_1_world_socket_1adb76e0e0966e72716f105875633a727a" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>m_MessageQueue</name></member>
+      <member refid="classnjli_1_1_world_socket_1a6535269e736f06ed9464a85e1ee94ad5" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>m_sck</name></member>
+      <member refid="classnjli_1_1_world_socket_1ab8eaf650ed60181c5984c50190967952" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>m_sck_addr</name></member>
+      <member refid="classnjli_1_1_world_socket_1ad139dd74c61b2663bfb08861cc51f1b5" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>m_SocketData</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_world_socket_1a6a0a48963031efd27782ea8c6d256663" prot="public" virt="virtual"><scope>njli::WorldSocket</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_world_socket_1a1a085ac09dc8bd9504fa4c03b1f4d86d" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_world_socket_1a72f3fbc4ed89cd5fc2c98e02e85577a0" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>parseMessage</name></member>
+      <member refid="classnjli_1_1_world_socket_1ab748f606af5d49786785a5d9f3b9fa97" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>popMessage</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_world_socket_1aeb35c51f861acc84da71dd68a09fd2c2" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>sendMessage</name></member>
+      <member refid="classnjli_1_1_world_socket_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::WorldSocket</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::WorldSocket</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_world_socket_1ae15dc1f2db17e7ef5faccc4e6ad335e9" prot="protected" virt="non-virtual"><scope>njli::WorldSocket</scope><name>socketSetOpt</name></member>
+      <member refid="classnjli_1_1_world_socket_1a48206691f6d67e6d2cadd5871236e688" prot="public" virt="non-virtual"><scope>njli::WorldSocket</scope><name>WorldSocket</name></member>
+      <member refid="classnjli_1_1_world_socket_1a6c5aa4b415b1260606c4c81f2aad03e6" prot="private" virt="non-virtual"><scope>njli::WorldSocket</scope><name>WorldSocket</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::WorldSocket</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::WorldSocket</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_world_socket_1a11a9b35e1abfa429eaf2797ebcc5e06e" prot="public" virt="virtual"><scope>njli::WorldSocket</scope><name>~WorldSocket</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

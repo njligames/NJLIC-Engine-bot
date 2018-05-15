@@ -1,0 +1,1571 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_checkbox_h_u_d" kind="class" language="C++" prot="public">
+    <compoundname>njli::CheckboxHUD</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <basecompoundref refid="classnjli_1_1_abstract_frame_buffer_object" prot="public" virt="non-virtual">njli::AbstractFrameBufferObject</basecompoundref>
+    <includes refid="_checkbox_h_u_d_8h" local="no">CheckboxHUD.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_checkbox_h_u_d_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="32" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1af97939ec2d8f7137dd7206aaef82ebeb" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::CheckboxHUD::m_dimensions</definition>
+        <argsstring></argsstring>
+        <name>m_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="198" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a15d15c4ef020a1d109c1257b535ef6af" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::CheckboxHUD::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="199" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a0e1d4b8f2b740d9d6189da68959b34d5" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::m_fontSize</definition>
+        <argsstring></argsstring>
+        <name>m_fontSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="200" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1ae30d4899d8b3bb39b583005d30e94d80" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::CheckboxHUD::m_fontFace</definition>
+        <argsstring></argsstring>
+        <name>m_fontFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="201" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1acaa459636c3131b4991b2a7d74d4b6c5" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::CheckboxHUD::m_fillColor</definition>
+        <argsstring></argsstring>
+        <name>m_fillColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="202" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a57ec6ee10cf894de31c8f5d3c1987cbf" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::CheckboxHUD::m_align</definition>
+        <argsstring></argsstring>
+        <name>m_align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="203" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a4a42a1e6ec369fe33ea9a7d6b546048a" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::m_cornerRadius</definition>
+        <argsstring></argsstring>
+        <name>m_cornerRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="204" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a06f4f2ae5cbff9350537724e8b2f5f5f" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::m_feather</definition>
+        <argsstring></argsstring>
+        <name>m_feather</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="205" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a1f692a5cf90de60c6a1d3747b1f3710d" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::CheckboxHUD::m_gradientStartColor</definition>
+        <argsstring></argsstring>
+        <name>m_gradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="206" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a3f4833ec007b2ee45c150e5b851dc1d0" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::CheckboxHUD::m_gradientEndColor</definition>
+        <argsstring></argsstring>
+        <name>m_gradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="207" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1ac904923a373f4c67ab94dbf407459245" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::m_iconFontSize</definition>
+        <argsstring></argsstring>
+        <name>m_iconFontSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="208" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1ae3f331029c085859eb0e47c66d16ae56" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::CheckboxHUD::m_iconFontFace</definition>
+        <argsstring></argsstring>
+        <name>m_iconFontFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="209" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1ab725b03ce1e63bef6675bea2f5cef7a8" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::CheckboxHUD::m_iconFillColor</definition>
+        <argsstring></argsstring>
+        <name>m_iconFillColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="210" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1aafd86237ddcbc55e4797d478b906bc2f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::CheckboxHUD::m_iconText</definition>
+        <argsstring></argsstring>
+        <name>m_iconText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="211" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a5746b7e4e3127374c6761d077e061661" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::CheckboxHUD::m_text</definition>
+        <argsstring></argsstring>
+        <name>m_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="212" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a2b013bfab34f523e31de0eae6c113d2f" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::CheckboxHUD::m_checkboxDimension</definition>
+        <argsstring></argsstring>
+        <name>m_checkboxDimension</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="213" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_checkbox_h_u_d_1a412e277cbdbd39ce605d81342ef11f91" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::CheckboxHUD::m_isChecked</definition>
+        <argsstring></argsstring>
+        <name>m_isChecked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="214" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aec11f8636407a40541f56c650ac8ce3e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::CheckboxHUD::CheckboxHUD</definition>
+        <argsstring>()</argsstring>
+        <name>CheckboxHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a85dcc4809caadfeb82fbfc48e9fbc33e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::CheckboxHUD::CheckboxHUD</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>CheckboxHUD</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a3eb6d43b7a6bc7f47f0d6619bb226d11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::CheckboxHUD::CheckboxHUD</definition>
+        <argsstring>(const CheckboxHUD &amp;)</argsstring>
+        <name>CheckboxHUD</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1adbd098f0f7b90603014c8c45df1fab91" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::CheckboxHUD::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a6e3854c02a8506227af0323475ac52a2" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::CheckboxHUD::~CheckboxHUD</definition>
+        <argsstring>()</argsstring>
+        <name>~CheckboxHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a750ebe87c1e2357b8d434200568420f4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> &amp;</type>
+        <definition>CheckboxHUD&amp; njli::CheckboxHUD::operator=</definition>
+        <argsstring>(const CheckboxHUD &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a9a833ae0ac0412333e305dad18a46c6b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::CheckboxHUD::renderFunction</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>renderFunction</name>
+        <reimplements refid="classnjli_1_1_abstract_frame_buffer_object_1aa75a537f5745e4be8f749892d195b43c">renderFunction</reimplements>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="41" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a51fbe982b583328b8b73299d75d5fe83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::CheckboxHUD::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aa5edf29add89b86e7dd15ab5c91625f4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::CheckboxHUD::serialize</definition>
+        <argsstring>(void *dataBuffer, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+          <declname>dataBuffer</declname>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 15:02:30</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dataBuffer description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a51763018df640c7b4a4d674ba6bf2cfa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::CheckboxHUD::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a5877b7c1c680c535d1d0878f36a0bbc5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::CheckboxHUD::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a40b9fbfcc7a86278467503de2aab953d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::CheckboxHUD::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="89" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a1f5298769d6467f4333a6fa208131ccd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setDimensions</definition>
+        <argsstring>(const btVector2 &amp;dim)</argsstring>
+        <name>setDimensions</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="158" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aaa1068b0211ba419f36dfb3b10e726b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setPosition</definition>
+        <argsstring>(const btVector2 &amp;pos)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="159" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a4063a85d6fb9bc70311171465efa7025" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontSize</definition>
+        <argsstring>(f32 fontSize)</argsstring>
+        <name>setFontSize</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>fontSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ae4b99948d4cc44e2ddd6f1b8b2e6cbf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontFace</definition>
+        <argsstring>(const char *fontFace)</argsstring>
+        <name>setFontFace</name>
+        <param>
+          <type>const char *</type>
+          <declname>fontFace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a34ff2d255d4c683052a099f8207988ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontColor</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setFontColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a186750a8e24a00f9473bb14c47248810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setText</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>setText</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ad910eaefd683c7809d908aa43aba1770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontAlign</definition>
+        <argsstring>(njliHUDAlign align)</argsstring>
+        <name>setFontAlign</name>
+        <param>
+          <type><ref refid="namespacenjli_1a376c3102aef4710f2b54a545bf0e2b3a" kindref="member">njliHUDAlign</ref></type>
+          <declname>align</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="164" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ae3f929ce57043944b8193b5e82396fd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setCheckboxRadius</definition>
+        <argsstring>(f32 radius)</argsstring>
+        <name>setCheckboxRadius</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a185341fbfa8e4a4f6c011f6b6a90216f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setCheckboxFeather</definition>
+        <argsstring>(f32 feather)</argsstring>
+        <name>setCheckboxFeather</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>feather</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ac96f62891f59b1f56285b1aeb8dcefb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setCheckboxGradientStartColor</definition>
+        <argsstring>(const btVector4 &amp;start)</argsstring>
+        <name>setCheckboxGradientStartColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a2731b7eaefa483f90e8fe96ec4951fae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setCheckboxGradientEndColor</definition>
+        <argsstring>(const btVector4 &amp;end)</argsstring>
+        <name>setCheckboxGradientEndColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a57260414f1a25ced9c1da85f67641c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setCheckboxDimensions</definition>
+        <argsstring>(const btVector2 &amp;dim)</argsstring>
+        <name>setCheckboxDimensions</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="169" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a4b88a46f30ab4675d3f9d2e14ca59a6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontSizeIcon</definition>
+        <argsstring>(f32 size)</argsstring>
+        <name>setFontSizeIcon</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a9f5a683fa1eadb2844f1d7735e01f389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontFaceIcon</definition>
+        <argsstring>(const char *fontFace)</argsstring>
+        <name>setFontFaceIcon</name>
+        <param>
+          <type>const char *</type>
+          <declname>fontFace</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="171" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ab23a6ab181e6698b8653c0c8f45a5b78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setFontColorIcon</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setFontColorIcon</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ab1fe6f159b1937786b4c070c682220f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::setTextIcon</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>setTextIcon</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aeb52009f01f539521dc28b4db919a148" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::CheckboxHUD::getDimensions</definition>
+        <argsstring>() const</argsstring>
+        <name>getDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="175" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a88e5d4d16effbda2538969d951b054a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::CheckboxHUD::getPosition</definition>
+        <argsstring>(const btVector2 &amp;pos) const</argsstring>
+        <name>getPosition</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a3a31f385e84c25268b677583af6fdd62" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::getFontSize</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="177" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a2c42628c8c36649eab6e05a5737d7abb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::CheckboxHUD::getFontFace</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a291bcdad7b79356d6820a0224c15a85c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::CheckboxHUD::getFontColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a22abee806c987db2852b4475d41d62bf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::CheckboxHUD::getText</definition>
+        <argsstring>() const</argsstring>
+        <name>getText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a92870d62459f239e7866f9fbf32757a9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenjli_1a376c3102aef4710f2b54a545bf0e2b3a" kindref="member">njliHUDAlign</ref></type>
+        <definition>njliHUDAlign njli::CheckboxHUD::getFontAlign</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontAlign</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="181" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a2688c95a6e4cc7746e929c2be50525af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::getCheckboxRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getCheckboxRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="182" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a44f03f6c6af1876befd9f32cf1c442be" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::getCheckboxFeather</definition>
+        <argsstring>() const</argsstring>
+        <name>getCheckboxFeather</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1afb56efe6ec76e058e5a6e71b9f8adbe9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::CheckboxHUD::getCheckboxGradientStartColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getCheckboxGradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ab2491d18a6d6503da3b2952ce8838101" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::CheckboxHUD::getCheckboxGradientEndColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getCheckboxGradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ab0da419b8b5ede1ec19fdb21e110666d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::CheckboxHUD::getCheckboxDimensions</definition>
+        <argsstring>() const</argsstring>
+        <name>getCheckboxDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a72d40dc4183170214df6f3d872e7f3de" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::CheckboxHUD::getFontSizeIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontSizeIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a1c164e6cb1e76d95e17e8ed6f9f2bd23" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::CheckboxHUD::getFontFaceIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontFaceIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1acfe11aa6958e76646cc74e6e40c33fcd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::CheckboxHUD::getFontColorIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontColorIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a2c41c4503415cb8464fa57ebb400cbaf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::CheckboxHUD::getTextIcon</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextIcon</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ad543bafb52bd55a7143af7a9312d663a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::check</definition>
+        <argsstring>()</argsstring>
+        <name>check</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a6e4733ecf2b4e5e44cd8206af9bdc671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::CheckboxHUD::unCheck</definition>
+        <argsstring>()</argsstring>
+        <name>unCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a25b48e71d20e08b4560dbcc55b3838e1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::CheckboxHUD::isChecked</definition>
+        <argsstring>() const</argsstring>
+        <name>isChecked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="194" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a3009efb11b4bcd56bd933c21b230a125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::AbstractFrameBufferObject::isHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>isHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a5d7b8b3bc421084f282343e506a6d289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractFrameBufferObject::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a73ffd499fceaacd59b518a541ed2133e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractFrameBufferObject::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aa55de648a51d6a4b9deaeb7d1f0aecf1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> **</type>
+        <definition>static CheckboxHUD** njli::CheckboxHUD::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a78fec39b7c044f3b42cb16edd1a20f85" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::CheckboxHUD::destroyArray</definition>
+        <argsstring>(CheckboxHUD **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ad82c2050436a46588852bfdce166dd14" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> *</type>
+        <definition>static CheckboxHUD* njli::CheckboxHUD::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1ac1d8b71694df11c9ea0192021d8e0d1d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> *</type>
+        <definition>static CheckboxHUD* njli::CheckboxHUD::create</definition>
+        <argsstring>(const CheckboxHUDBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_checkbox_h_u_d_builder" kindref="compound">CheckboxHUDBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aa7dd57a54aa295cabb00bfa5440024b8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> *</type>
+        <definition>static CheckboxHUD* njli::CheckboxHUD::clone</definition>
+        <argsstring>(const CheckboxHUD &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="126" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a4e36b531b587aa5b8b6c0f4784cf6da5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> *</type>
+        <definition>static CheckboxHUD* njli::CheckboxHUD::copy</definition>
+        <argsstring>(const CheckboxHUD &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="134" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1aa0a2b943e1310f959840e941ff625ba5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::CheckboxHUD::destroy</definition>
+        <argsstring>(CheckboxHUD *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="140" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a4ce3230f14d2c7078ea27a4ab3248c3e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::CheckboxHUD::load</definition>
+        <argsstring>(CheckboxHUD &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_checkbox_h_u_d" kindref="compound">CheckboxHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_checkbox_h_u_d_1a92edaeae8e24b4f07814e20d4fbff290" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::CheckboxHUD::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="154" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="775">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="776" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="777">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="774">
+        <label>njli::CheckboxHUD</label>
+        <link refid="classnjli_1_1_checkbox_h_u_d"/>
+        <childnode refid="775" relation="public-inheritance">
+        </childnode>
+        <childnode refid="778" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="778">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="776">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="777" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="780">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="781" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="782">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="782" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="779">
+        <label>njli::CheckboxHUD</label>
+        <link refid="classnjli_1_1_checkbox_h_u_d"/>
+        <childnode refid="780" relation="public-inheritance">
+        </childnode>
+        <childnode refid="783" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="783">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="781">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="782" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" line="31" column="1" bodyfile="njligames-njlic_engine/njli/graphics/CheckboxHUD.h" bodystart="29" bodyend="215"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ac8d66ca8d605b2c45873fc4020c579ee" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1adbd098f0f7b90603014c8c45df1fab91" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a51fbe982b583328b8b73299d75d5fe83" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ad543bafb52bd55a7143af7a9312d663a" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>check</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aec11f8636407a40541f56c650ac8ce3e" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>CheckboxHUD</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a85dcc4809caadfeb82fbfc48e9fbc33e" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>CheckboxHUD</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a3eb6d43b7a6bc7f47f0d6619bb226d11" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>CheckboxHUD</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aa7dd57a54aa295cabb00bfa5440024b8" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::CheckboxHUD</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4e36b531b587aa5b8b6c0f4784cf6da5" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ad82c2050436a46588852bfdce166dd14" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ac1d8b71694df11c9ea0192021d8e0d1d" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::CheckboxHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aa55de648a51d6a4b9deaeb7d1f0aecf1" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aa0a2b943e1310f959840e941ff625ba5" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::CheckboxHUD</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a78fec39b7c044f3b42cb16edd1a20f85" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1aded6f9fc4da10af752cf90a97aaa751d" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getAspectRatio</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ab0da419b8b5ede1ec19fdb21e110666d" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getCheckboxDimensions</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a44f03f6c6af1876befd9f32cf1c442be" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getCheckboxFeather</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ab2491d18a6d6503da3b2952ce8838101" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getCheckboxGradientEndColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1afb56efe6ec76e058e5a6e71b9f8adbe9" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getCheckboxGradientStartColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a2688c95a6e4cc7746e929c2be50525af" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getCheckboxRadius</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a51763018df640c7b4a4d674ba6bf2cfa" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aeb52009f01f539521dc28b4db919a148" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getDimensions</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a92870d62459f239e7866f9fbf32757a9" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontAlign</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a291bcdad7b79356d6820a0224c15a85c" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1acfe11aa6958e76646cc74e6e40c33fcd" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontColorIcon</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a2c42628c8c36649eab6e05a5737d7abb" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontFace</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a1c164e6cb1e76d95e17e8ed6f9f2bd23" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontFaceIcon</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a3a31f385e84c25268b677583af6fdd62" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontSize</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a72d40dc4183170214df6f3d872e7f3de" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getFontSizeIcon</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a95ae9779550ed7496011f859ec3d4766" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getHeight</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::CheckboxHUD</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::CheckboxHUD</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::CheckboxHUD</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a88e5d4d16effbda2538969d951b054a3" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getPosition</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a22abee806c987db2852b4475d41d62bf" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getText</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a2c41c4503415cb8464fa57ebb400cbaf" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getTextIcon</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ae5fdf18cef91c86d8e1cf97d4728d144" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getTextureID</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a5877b7c1c680c535d1d0878f36a0bbc5" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1aa4ab66fbdcb04f1834d1dc05b4c7a10c" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>getWidth</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a5d7b8b3bc421084f282343e506a6d289" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a5d7b8b3bc421084f282343e506a6d289" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::CheckboxHUD</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a25b48e71d20e08b4560dbcc55b3838e1" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>isChecked</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a3009efb11b4bcd56bd933c21b230a125" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a3009efb11b4bcd56bd933c21b230a125" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::CheckboxHUD</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a166068d3dbc251ce28daf2564fdb2e99" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>isLoadedGPU</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4ce3230f14d2c7078ea27a4ab3248c3e" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>load</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a9fa4ab667a74a7a23b18ae3418e56f7d" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a57ec6ee10cf894de31c8f5d3c1987cbf" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_align</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a2b013bfab34f523e31de0eae6c113d2f" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_checkboxDimension</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4a42a1e6ec369fe33ea9a7d6b546048a" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_cornerRadius</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1af97939ec2d8f7137dd7206aaef82ebeb" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_dimensions</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a06f4f2ae5cbff9350537724e8b2f5f5f" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_feather</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1acaa459636c3131b4991b2a7d74d4b6c5" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_fillColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ae30d4899d8b3bb39b583005d30e94d80" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_fontFace</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a0e1d4b8f2b740d9d6189da68959b34d5" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_fontSize</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a3f4833ec007b2ee45c150e5b851dc1d0" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_gradientEndColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a1f692a5cf90de60c6a1d3747b1f3710d" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_gradientStartColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ab725b03ce1e63bef6675bea2f5cef7a8" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_iconFillColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ae3f331029c085859eb0e47c66d16ae56" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_iconFontFace</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ac904923a373f4c67ab94dbf407459245" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_iconFontSize</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aafd86237ddcbc55e4797d478b906bc2f" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_iconText</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a412e277cbdbd39ce605d81342ef11f91" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_isChecked</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a15d15c4ef020a1d109c1257b535ef6af" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_position</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a5746b7e4e3127374c6761d077e061661" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>m_text</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a40b9fbfcc7a86278467503de2aab953d" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a750ebe87c1e2357b8d434200568420f4" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ababe9973dc3593e158adf12033f66b71" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>render</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a9a833ae0ac0412333e305dad18a46c6b" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>renderFunction</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aa5edf29add89b86e7dd15ab5c91625f4" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::CheckboxHUD</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a57260414f1a25ced9c1da85f67641c24" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setCheckboxDimensions</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a185341fbfa8e4a4f6c011f6b6a90216f" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setCheckboxFeather</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a2731b7eaefa483f90e8fe96ec4951fae" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setCheckboxGradientEndColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ac96f62891f59b1f56285b1aeb8dcefb0" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setCheckboxGradientStartColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ae3f929ce57043944b8193b5e82396fd5" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setCheckboxRadius</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a1f5298769d6467f4333a6fa208131ccd" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setDimensions</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ad910eaefd683c7809d908aa43aba1770" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontAlign</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a34ff2d255d4c683052a099f8207988ba" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontColor</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ab23a6ab181e6698b8653c0c8f45a5b78" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontColorIcon</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ae4b99948d4cc44e2ddd6f1b8b2e6cbf0" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontFace</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a9f5a683fa1eadb2844f1d7735e01f389" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontFaceIcon</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4063a85d6fb9bc70311171465efa7025" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontSize</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a4b88a46f30ab4675d3f9d2e14ca59a6f" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setFontSizeIcon</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::CheckboxHUD</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1aaa1068b0211ba419f36dfb3b10e726b3" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setPosition</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a186750a8e24a00f9473bb14c47248810" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setText</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1ab1fe6f159b1937786b4c070c682220f9" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>setTextIcon</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a73ffd499fceaacd59b518a541ed2133e" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>show</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a73ffd499fceaacd59b518a541ed2133e" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::CheckboxHUD</scope><name>show</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a92edaeae8e24b4f07814e20d4fbff290" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>type</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a6e4733ecf2b4e5e44cd8206af9bdc671" prot="public" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>unCheck</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a66d234282238e25ef245d64d087be8d8" prot="protected" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>unLoadGPU</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::CheckboxHUD</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a7899eafef8e2f57953a5d1aa799085eb" prot="public" virt="virtual"><scope>njli::CheckboxHUD</scope><name>~AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_checkbox_h_u_d_1a6e3854c02a8506227af0323475ac52a2" prot="protected" virt="virtual"><scope>njli::CheckboxHUD</scope><name>~CheckboxHUD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

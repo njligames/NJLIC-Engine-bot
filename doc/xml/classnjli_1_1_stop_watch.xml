@@ -1,0 +1,883 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_stop_watch" kind="class" language="C++" prot="public">
+    <compoundname>njli::StopWatch</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <basecompoundref refid="classnjli_1_1_abstract_clock" prot="public" virt="non-virtual">njli::AbstractClock</basecompoundref>
+    <includes refid="_stop_watch_8h" local="no">StopWatch.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_stop_watch_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="28" column="1" bodyfile="njligames-njlic_engine/njli/StopWatch.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_stop_watch_1a8a743a402f3b3196e5d1821c15a7a567" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; unsigned long int &gt;</type>
+        <definition>std::vector&lt;unsigned long int&gt; njli::StopWatch::m_Laps</definition>
+        <argsstring></argsstring>
+        <name>m_Laps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="174" column="1" bodyfile="njligames-njlic_engine/njli/StopWatch.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_stop_watch_1abf7f6282ed8ff446622b56da25d5dbfd" prot="private" static="no" mutable="no">
+        <type>btClock *</type>
+        <definition>btClock* njli::StopWatch::m_CurrentClock</definition>
+        <argsstring></argsstring>
+        <name>m_CurrentClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="175" column="1" bodyfile="njligames-njlic_engine/njli/StopWatch.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_stop_watch_1a4e9ad8912f5c1d4246a5cda677f6d585" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::StopWatch::m_IsStopped</definition>
+        <argsstring></argsstring>
+        <name>m_IsStopped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="176" column="1" bodyfile="njligames-njlic_engine/njli/StopWatch.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_stop_watch_1a90f72afdaba0072fc81c3d11953e0a1c" prot="private" static="no" mutable="no">
+        <type>unsigned long int</type>
+        <definition>unsigned long int njli::StopWatch::m_StoppedMilliseconds</definition>
+        <argsstring></argsstring>
+        <name>m_StoppedMilliseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="177" column="1" bodyfile="njligames-njlic_engine/njli/StopWatch.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ac094097f357ce5be29c99163839b69e3" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::StopWatch::StopWatch</definition>
+        <argsstring>()</argsstring>
+        <name>StopWatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1aebfc9a72bddb3b3be0e32ede9aad6c81" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::StopWatch::StopWatch</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>StopWatch</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a9417fb532a505e9bffc6833cab50c4fc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::StopWatch::StopWatch</definition>
+        <argsstring>(const StopWatch &amp;)</argsstring>
+        <name>StopWatch</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1acbfde61e615ca5f35cfb60307576015f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::StopWatch::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a255e775e661935059ed46c68a8109d40" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::StopWatch::~StopWatch</definition>
+        <argsstring>()</argsstring>
+        <name>~StopWatch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a5cb9c0f427eff50c366fc724bd5c36d6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> &amp;</type>
+        <definition>StopWatch&amp; njli::StopWatch::operator=</definition>
+        <argsstring>(const StopWatch &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="36" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a72e1052a6525fe6d6887bd985b1ef8d3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::StopWatch::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ae0d61d085799cf5f132cf92c65b48cdc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::StopWatch::serialize</definition>
+        <argsstring>(void *, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a70283751febb463682cf4126c970aaa5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::StopWatch::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a9f6f6c44d2c6137a8bb38720e2ccbfbc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::StopWatch::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a841749dbe95a638802a2e7d69e0388c0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::StopWatch::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a0ab1925582a66c67c1db0bf9f731f4cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::StopWatch::update</definition>
+        <argsstring>(f64 milliseconds)</argsstring>
+        <name>update</name>
+        <reimplements refid="classnjli_1_1_abstract_clock_1a06401048780f7b9522187731d3a97579">update</reimplements>
+        <param>
+          <type><ref refid="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" kindref="member">f64</ref></type>
+          <declname>milliseconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>milliseconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#milliseconds description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a86c10437140b1a885228b17dca3697d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::StopWatch::start</definition>
+        <argsstring>()</argsstring>
+        <name>start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1aa18f65d2873cb83258cca59d2e9e600f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned long int</type>
+        <definition>unsigned long int njli::StopWatch::getMilliseconds</definition>
+        <argsstring>(s32 index=-1)</argsstring>
+        <name>getMilliseconds</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>index</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="157" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a611f4cc1cd65b7099db654f1052c6910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::StopWatch::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a63dc587580584f4574df3830c84b1da1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::StopWatch::isStopped</definition>
+        <argsstring>() const</argsstring>
+        <name>isStopped</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a94fa6e3e6b10171d826141c1c5c6dd50" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::StopWatch::lap</definition>
+        <argsstring>()</argsstring>
+        <name>lap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="165" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a190d183506dce6ce0497fd339e1891a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::StopWatch::clearLaps</definition>
+        <argsstring>()</argsstring>
+        <name>clearLaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a4c1ef7d5831b366836689566ac084d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::StopWatch::numberOfLaps</definition>
+        <argsstring>()</argsstring>
+        <name>numberOfLaps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="170" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ab3ca2ba06be2e649b3d68e3582a24606" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> **</type>
+        <definition>static StopWatch** njli::StopWatch::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a606c409e3940aea9d90bca5037eb2227" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::StopWatch::destroyArray</definition>
+        <argsstring>(StopWatch **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="92" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a017e60bda148ff2282d0947b2181a4f8" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> *</type>
+        <definition>static StopWatch* njli::StopWatch::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ae55b126fe41dfe7274b2bec706993738" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> *</type>
+        <definition>static StopWatch* njli::StopWatch::create</definition>
+        <argsstring>(const StopWatchBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_stop_watch_builder" kindref="compound">StopWatchBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="106" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a89592642454c69b7de06a272f56a8dd3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> *</type>
+        <definition>static StopWatch* njli::StopWatch::clone</definition>
+        <argsstring>(const StopWatch &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1a828bdc3414c97fa1537416548dffc803" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> *</type>
+        <definition>static StopWatch* njli::StopWatch::copy</definition>
+        <argsstring>(const StopWatch &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1aebb1a654fc268b038e1f48649e796fd7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::StopWatch::destroy</definition>
+        <argsstring>(StopWatch *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1af8576ae6a5bfa890c35c6cddedd62e57" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::StopWatch::load</definition>
+        <argsstring>(StopWatch &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_stop_watch" kindref="compound">StopWatch</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="136" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_stop_watch_1ae0c8a96a7465847dd0b739f307ca71c6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::StopWatch::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/StopWatch.h" line="142" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2520">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2521" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2522">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2521">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2522" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2519">
+        <label>njli::StopWatch</label>
+        <link refid="classnjli_1_1_stop_watch"/>
+        <childnode refid="2520" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2523" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2523">
+        <label>njli::AbstractClock</label>
+        <link refid="classnjli_1_1_abstract_clock"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2525">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2526" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2527">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2527" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2526">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2527" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2524">
+        <label>njli::StopWatch</label>
+        <link refid="classnjli_1_1_stop_watch"/>
+        <childnode refid="2525" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2528" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2528">
+        <label>njli::AbstractClock</label>
+        <link refid="classnjli_1_1_abstract_clock"/>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/StopWatch.h" line="27" column="1" bodyfile="njligames-njlic_engine/njli/StopWatch.h" bodystart="25" bodyend="178"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_clock_1adf1ecfb49abca618253d605ff43a212b" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>AbstractClock</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1a3c605a41c8f527a61c2226b2dba6bba4" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>AbstractClock</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_stop_watch_1acbfde61e615ca5f35cfb60307576015f" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a72e1052a6525fe6d6887bd985b1ef8d3" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::StopWatch</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a190d183506dce6ce0497fd339e1891a8" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>clearLaps</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a89592642454c69b7de06a272f56a8dd3" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::StopWatch</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a828bdc3414c97fa1537416548dffc803" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a017e60bda148ff2282d0947b2181a4f8" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>create</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ae55b126fe41dfe7274b2bec706993738" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>create</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::StopWatch</scope><name>create</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ab3ca2ba06be2e649b3d68e3582a24606" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_stop_watch_1aebb1a654fc268b038e1f48649e796fd7" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::StopWatch</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a606c409e3940aea9d90bca5037eb2227" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::StopWatch</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a70283751febb463682cf4126c970aaa5" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_stop_watch_1aa18f65d2873cb83258cca59d2e9e600f" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>getMilliseconds</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::StopWatch</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::StopWatch</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::StopWatch</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1ada0417b7564b9cdee7357191f33ea448" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>getRawTime</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a9f6f6c44d2c6137a8bb38720e2ccbfbc" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a63dc587580584f4574df3830c84b1da1" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>isStopped</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a94fa6e3e6b10171d826141c1c5c6dd50" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>lap</name></member>
+      <member refid="classnjli_1_1_stop_watch_1af8576ae6a5bfa890c35c6cddedd62e57" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>load</name></member>
+      <member refid="classnjli_1_1_stop_watch_1abf7f6282ed8ff446622b56da25d5dbfd" prot="private" virt="non-virtual"><scope>njli::StopWatch</scope><name>m_CurrentClock</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a4e9ad8912f5c1d4246a5cda677f6d585" prot="private" virt="non-virtual"><scope>njli::StopWatch</scope><name>m_IsStopped</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a8a743a402f3b3196e5d1821c15a7a567" prot="private" virt="non-virtual"><scope>njli::StopWatch</scope><name>m_Laps</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a90f72afdaba0072fc81c3d11953e0a1c" prot="private" virt="non-virtual"><scope>njli::StopWatch</scope><name>m_StoppedMilliseconds</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a4c1ef7d5831b366836689566ac084d69" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>numberOfLaps</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a841749dbe95a638802a2e7d69e0388c0" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a5cb9c0f427eff50c366fc724bd5c36d6" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1a3cdd1200a3ef9bd0a5748ab3e7c2ad7b" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractClock::"><scope>njli::StopWatch</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ae0d61d085799cf5f132cf92c65b48cdc" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::StopWatch</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::StopWatch</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::StopWatch</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1ad837eada8b3deafe40d6a2e27efa048a" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>setRawTime</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a86c10437140b1a885228b17dca3697d4" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>start</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a611f4cc1cd65b7099db654f1052c6910" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>stop</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ac094097f357ce5be29c99163839b69e3" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>StopWatch</name></member>
+      <member refid="classnjli_1_1_stop_watch_1aebfc9a72bddb3b3be0e32ede9aad6c81" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>StopWatch</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a9417fb532a505e9bffc6833cab50c4fc" prot="protected" virt="non-virtual"><scope>njli::StopWatch</scope><name>StopWatch</name></member>
+      <member refid="classnjli_1_1_stop_watch_1ae0c8a96a7465847dd0b739f307ca71c6" prot="public" virt="non-virtual"><scope>njli::StopWatch</scope><name>type</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a0ab1925582a66c67c1db0bf9f731f4cc" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>update</name></member>
+      <member refid="classnjli_1_1_stop_watch_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::StopWatch</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1a41aac7ee2287261e3b9e7fff9863f821" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>~AbstractClock</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::StopWatch</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::StopWatch</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::StopWatch</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_stop_watch_1a255e775e661935059ed46c68a8109d40" prot="protected" virt="virtual"><scope>njli::StopWatch</scope><name>~StopWatch</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

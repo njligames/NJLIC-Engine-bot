@@ -1,0 +1,221 @@
+\hypertarget{classnjli_1_1_world_sound}{}\section{njli\+:\+:World\+Sound Class Reference}
+\label{classnjli_1_1_world_sound}\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+
+
+{\ttfamily \#include $<$World\+Sound.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:World\+Sound\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{classnjli_1_1_world_sound__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:World\+Sound\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=264pt]{classnjli_1_1_world_sound__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_world_sound_aed4012c3031f6f1b8fdf0c3f9ebc37b5}{World\+Sound}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_world_sound_a2fb62ddebed62016ca546b1f496bac17}{$\sim$\+World\+Sound}} ()
+\item 
+virtual const \mbox{\hyperlink{_util_8h_a2ff401e087cf786c38a6812723e94473}{s8}} $\ast$ \mbox{\hyperlink{classnjli_1_1_world_sound_af737672a862c91dee7158f09ee646549}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_world_sound_afa9fb24ca771bb477fdc673668c110c3}{get\+Type}} () const
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_world_sound_a13ce9a50994719130f8492017f82b887}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_world_sound_a48829ae6317cd2476854d36417f09b5c}{enable\+Pause}} (bool enable=true)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_world_sound_a97885caaa2588661c1339788d8196d89}{load\+Sound}} (const char $\ast$path, \mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&sound)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_world_sound_a548876efce189ddf088d503e41d6e7f6}{load\+Sound}} (const char $\ast$file\+Content, \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} file\+\_\+size, \mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&sound)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_world_sound_a7911347b81467da066b5f8f21767a7f7}{un\+Load\+Sound}} (const \mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&sound)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_world_sound_a087eb5f8d9f51cc476f12f1d10a3cb95}{set\+Name}} (const char $\ast$name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_world_sound_ad41266885be835f3ee602311e20877a4}{get\+Name}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_world_sound_a30ef05c01a98642bb0b86f77c86a46b8}{update}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_world_sound_a6d5b69217a2ad24faca15ade9c7b5c63}{play\+Sound}} (\mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&sound, bool is\+Paused=false)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_world_sound_a50914f77c7cf4fb97616c898c5291f4b}{Sound}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_world_sound_a7b4bcdf992c21ae83363f25df05b1d25}{World}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 46 of file World\+Sound.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_world_sound_aed4012c3031f6f1b8fdf0c3f9ebc37b5}\label{classnjli_1_1_world_sound_aed4012c3031f6f1b8fdf0c3f9ebc37b5}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!World\+Sound@{World\+Sound}}
+\index{World\+Sound@{World\+Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{World\+Sound()}{WorldSound()}}
+{\footnotesize\ttfamily njli\+::\+World\+Sound\+::\+World\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a2fb62ddebed62016ca546b1f496bac17}\label{classnjli_1_1_world_sound_a2fb62ddebed62016ca546b1f496bac17}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!````~World\+Sound@{$\sim$\+World\+Sound}}
+\index{````~World\+Sound@{$\sim$\+World\+Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{$\sim$\+World\+Sound()}{~WorldSound()}}
+{\footnotesize\ttfamily njli\+::\+World\+Sound\+::$\sim$\+World\+Sound (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a48829ae6317cd2476854d36417f09b5c}\label{classnjli_1_1_world_sound_a48829ae6317cd2476854d36417f09b5c}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!enable\+Pause@{enable\+Pause}}
+\index{enable\+Pause@{enable\+Pause}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{enable\+Pause()}{enablePause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+World\+Sound\+::enable\+Pause (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_af737672a862c91dee7158f09ee646549}\label{classnjli_1_1_world_sound_af737672a862c91dee7158f09ee646549}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const \mbox{\hyperlink{_util_8h_a2ff401e087cf786c38a6812723e94473}{s8}}$\ast$ njli\+::\+World\+Sound\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_object_afdabb48c4bf763e297ffe810b433a863}{njli\+::\+Abstract\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_ad41266885be835f3ee602311e20877a4}\label{classnjli_1_1_world_sound_ad41266885be835f3ee602311e20877a4}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Abstract\+Decorator\+::get\+Name}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_world_sound_afa9fb24ca771bb477fdc673668c110c3}\label{classnjli_1_1_world_sound_afa9fb24ca771bb477fdc673668c110c3}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+World\+Sound\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_object_a08dcf202a47f0782813b8bc98c659e78}{njli\+::\+Abstract\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a97885caaa2588661c1339788d8196d89}\label{classnjli_1_1_world_sound_a97885caaa2588661c1339788d8196d89}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!load\+Sound@{load\+Sound}}
+\index{load\+Sound@{load\+Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{load\+Sound()}{loadSound()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily bool njli\+::\+World\+Sound\+::load\+Sound (\begin{DoxyParamCaption}\item[{const char $\ast$}]{path,  }\item[{\mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&}]{sound }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a548876efce189ddf088d503e41d6e7f6}\label{classnjli_1_1_world_sound_a548876efce189ddf088d503e41d6e7f6}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!load\+Sound@{load\+Sound}}
+\index{load\+Sound@{load\+Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{load\+Sound()}{loadSound()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool njli\+::\+World\+Sound\+::load\+Sound (\begin{DoxyParamCaption}\item[{const char $\ast$}]{file\+Content,  }\item[{\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{file\+\_\+size,  }\item[{\mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&}]{sound }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a13ce9a50994719130f8492017f82b887}\label{classnjli_1_1_world_sound_a13ce9a50994719130f8492017f82b887}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily virtual njli\+::\+World\+Sound\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_object_afc07f4138bd3003910e7aa7fa0fe11ad}{njli\+::\+Abstract\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a6d5b69217a2ad24faca15ade9c7b5c63}\label{classnjli_1_1_world_sound_a6d5b69217a2ad24faca15ade9c7b5c63}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!play\+Sound@{play\+Sound}}
+\index{play\+Sound@{play\+Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{play\+Sound()}{playSound()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+World\+Sound\+::play\+Sound (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&}]{sound,  }\item[{bool}]{is\+Paused = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a087eb5f8d9f51cc476f12f1d10a3cb95}\label{classnjli_1_1_world_sound_a087eb5f8d9f51cc476f12f1d10a3cb95}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Decorator\+::set\+Name}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & $<$\#name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a7911347b81467da066b5f8f21767a7f7}\label{classnjli_1_1_world_sound_a7911347b81467da066b5f8f21767a7f7}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!un\+Load\+Sound@{un\+Load\+Sound}}
+\index{un\+Load\+Sound@{un\+Load\+Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{un\+Load\+Sound()}{unLoadSound()}}
+{\footnotesize\ttfamily bool njli\+::\+World\+Sound\+::un\+Load\+Sound (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_sound}{Sound}} \&}]{sound }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a30ef05c01a98642bb0b86f77c86a46b8}\label{classnjli_1_1_world_sound_a30ef05c01a98642bb0b86f77c86a46b8}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!update@{update}}
+\index{update@{update}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+World\+Sound\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a50914f77c7cf4fb97616c898c5291f4b}\label{classnjli_1_1_world_sound_a50914f77c7cf4fb97616c898c5291f4b}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!Sound@{Sound}}
+\index{Sound@{Sound}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{Sound}{Sound}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_sound}{Sound}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 49 of file World\+Sound.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_world_sound_a7b4bcdf992c21ae83363f25df05b1d25}\label{classnjli_1_1_world_sound_a7b4bcdf992c21ae83363f25df05b1d25}} 
+\index{njli\+::\+World\+Sound@{njli\+::\+World\+Sound}!World@{World}}
+\index{World@{World}!njli\+::\+World\+Sound@{njli\+::\+World\+Sound}}
+\subsubsection{\texorpdfstring{World}{World}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world}{World}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 50 of file World\+Sound.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/sound/\mbox{\hyperlink{_world_sound_8h}{World\+Sound.\+h}}\end{DoxyCompactItemize}

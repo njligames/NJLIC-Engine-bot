@@ -1,0 +1,139 @@
+\hypertarget{classnjli_1_1_telegram}{}\section{njli\+:\+:Telegram Class Reference}
+\label{classnjli_1_1_telegram}\index{njli\+::\+Telegram@{njli\+::\+Telegram}}
+
+
+{\ttfamily \#include $<$Abstract\+State.\+h$>$}
+
+
+
+Collaboration diagram for njli\+:\+:Telegram\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_telegram__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_telegram_aa11c66843172eabb2329c15a4d7ebe05}{Telegram}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_telegram_ab4334c9796b4c8a8bbc3727061059c3d}{Telegram}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} time, \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$sender, \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$receiver, \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} msg, \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$info=\mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}})
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_telegram_ac8d9684f9beb98cdbfb912cefb18f036}{Sender}}
+\item 
+\mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_telegram_aa2811ae30fb5bcbdb6dfd89bd1305b52}{Receiver}}
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_telegram_a5b15d94b15ff8de3637c94f93744b26c}{Msg}}
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_telegram_ad3624ff53bc492416a0b19f39107bfeb}{Dispatch\+Time}}
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_telegram_a2248c08d1f6bd31106010ec55c7c0818}{Extra\+Info}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 165 of file Abstract\+State.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_telegram_aa11c66843172eabb2329c15a4d7ebe05}\label{classnjli_1_1_telegram_aa11c66843172eabb2329c15a4d7ebe05}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Telegram@{Telegram}}
+\index{Telegram@{Telegram}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Telegram()}{Telegram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily njli\+::\+Telegram\+::\+Telegram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 186 of file Abstract\+State.\+h.
+
+
+\begin{DoxyCode}
+186                : \mbox{\hyperlink{classnjli_1_1_telegram_ac8d9684f9beb98cdbfb912cefb18f036}{Sender}}(\mbox{\hyperlink{_abstract_state_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}), \mbox{\hyperlink{classnjli_1_1_telegram_aa2811ae30fb5bcbdb6dfd89bd1305b52}{Receiver}}(\mbox{\hyperlink{_abstract_state_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}}), \mbox{\hyperlink{classnjli_1_1_telegram_a5b15d94b15ff8de3637c94f93744b26c}{Msg}}(0), 
+      \mbox{\hyperlink{classnjli_1_1_telegram_ad3624ff53bc492416a0b19f39107bfeb}{DispatchTime}}(0) \textcolor{comment}{//,}
+187     \textcolor{comment}{// ExtraInfo(0)}
+188     \{
+189     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_telegram_ab4334c9796b4c8a8bbc3727061059c3d}\label{classnjli_1_1_telegram_ab4334c9796b4c8a8bbc3727061059c3d}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Telegram@{Telegram}}
+\index{Telegram@{Telegram}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Telegram()}{Telegram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily njli\+::\+Telegram\+::\+Telegram (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{time,  }\item[{\mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$}]{sender,  }\item[{\mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$}]{receiver,  }\item[{\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}}}]{msg,  }\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{info = {\ttfamily \mbox{\hyperlink{_util_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{N\+U\+LL}}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 191 of file Abstract\+State.\+h.
+
+
+\begin{DoxyCode}
+193         : \mbox{\hyperlink{classnjli_1_1_telegram_ac8d9684f9beb98cdbfb912cefb18f036}{Sender}}(sender), \mbox{\hyperlink{classnjli_1_1_telegram_aa2811ae30fb5bcbdb6dfd89bd1305b52}{Receiver}}(receiver), \mbox{\hyperlink{classnjli_1_1_telegram_a5b15d94b15ff8de3637c94f93744b26c}{Msg}}(msg), 
+      \mbox{\hyperlink{classnjli_1_1_telegram_ad3624ff53bc492416a0b19f39107bfeb}{DispatchTime}}(time),
+194           \mbox{\hyperlink{classnjli_1_1_telegram_a2248c08d1f6bd31106010ec55c7c0818}{ExtraInfo}}(info)
+195     \{
+196     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_telegram_ad3624ff53bc492416a0b19f39107bfeb}\label{classnjli_1_1_telegram_ad3624ff53bc492416a0b19f39107bfeb}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Dispatch\+Time@{Dispatch\+Time}}
+\index{Dispatch\+Time@{Dispatch\+Time}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Dispatch\+Time}{DispatchTime}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Telegram\+::\+Dispatch\+Time}
+
+
+
+Definition at line 181 of file Abstract\+State.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_telegram_a2248c08d1f6bd31106010ec55c7c0818}\label{classnjli_1_1_telegram_a2248c08d1f6bd31106010ec55c7c0818}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Extra\+Info@{Extra\+Info}}
+\index{Extra\+Info@{Extra\+Info}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Extra\+Info}{ExtraInfo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Telegram\+::\+Extra\+Info}
+
+
+
+Definition at line 184 of file Abstract\+State.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_telegram_a5b15d94b15ff8de3637c94f93744b26c}\label{classnjli_1_1_telegram_a5b15d94b15ff8de3637c94f93744b26c}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Msg@{Msg}}
+\index{Msg@{Msg}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Msg}{Msg}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Telegram\+::\+Msg}
+
+
+
+Definition at line 176 of file Abstract\+State.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_telegram_aa2811ae30fb5bcbdb6dfd89bd1305b52}\label{classnjli_1_1_telegram_aa2811ae30fb5bcbdb6dfd89bd1305b52}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Receiver@{Receiver}}
+\index{Receiver@{Receiver}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Receiver}{Receiver}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Telegram\+::\+Receiver}
+
+
+
+Definition at line 172 of file Abstract\+State.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_telegram_ac8d9684f9beb98cdbfb912cefb18f036}\label{classnjli_1_1_telegram_ac8d9684f9beb98cdbfb912cefb18f036}} 
+\index{njli\+::\+Telegram@{njli\+::\+Telegram}!Sender@{Sender}}
+\index{Sender@{Sender}!njli\+::\+Telegram@{njli\+::\+Telegram}}
+\subsubsection{\texorpdfstring{Sender}{Sender}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Telegram\+::\+Sender}
+
+
+
+Definition at line 169 of file Abstract\+State.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/\mbox{\hyperlink{_abstract_state_8h}{Abstract\+State.\+h}}\end{DoxyCompactItemize}

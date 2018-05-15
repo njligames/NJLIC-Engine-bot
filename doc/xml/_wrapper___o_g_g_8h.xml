@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_wrapper___o_g_g_8h" kind="file" language="C++">
+    <compoundname>Wrapper_OGG.h</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cstring</includes>
+    <includes refid="_i_sound_file_wrapper_8h" local="yes">ISoundFileWrapper.h</includes>
+    <incdepgraph>
+      <node id="5714">
+        <label>ISoundFileWrapper.h</label>
+        <link refid="_i_sound_file_wrapper_8h"/>
+        <childnode refid="5712" relation="include">
+        </childnode>
+        <childnode refid="5715" relation="include">
+        </childnode>
+        <childnode refid="5713" relation="include">
+        </childnode>
+      </node>
+      <node id="5715">
+        <label>cstdio</label>
+      </node>
+      <node id="5712">
+        <label>vector</label>
+      </node>
+      <node id="5711">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h</label>
+        <link refid="_wrapper___o_g_g_8h"/>
+        <childnode refid="5712" relation="include">
+        </childnode>
+        <childnode refid="5713" relation="include">
+        </childnode>
+        <childnode refid="5714" relation="include">
+        </childnode>
+      </node>
+      <node id="5713">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structogg__file" prot="public">ogg_file</innerclass>
+    <innerclass refid="classnjli_1_1_wrapper_ogg" prot="public">njli::WrapperOgg</innerclass>
+    <innernamespace refid="namespacenjli">njli</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_wrapper___o_g_g_8h_1a19906647bd966757e5f2acd00f34023d" prot="public" static="no">
+        <name>OGG_BUFFER_SIZE</name>
+        <initializer>2048</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="8" column="9" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_wrapper___o_g_g_8h_1ad39f07112cd3b7103d376e1c0c1221f9" prot="public" static="no">
+        <type>struct <ref refid="structogg__file" kindref="compound">ogg_file</ref></type>
+        <definition>typedef struct ogg_file  ogg_file</definition>
+        <argsstring></argsstring>
+        <name>ogg_file</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="21" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>WRAPPER_OGG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WRAPPER_OGG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SoundInfo;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">OggVorbis_File;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_wrapper___o_g_g_8h_1a19906647bd966757e5f2acd00f34023d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OGG_BUFFER_SIZE<sp/>2048</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;../../Macros.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstring&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_sound_file_wrapper_8h" kindref="compound">ISoundFileWrapper.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structogg__file" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structogg__file" kindref="compound">ogg_file</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18" refid="structogg__file_1a1d79fed1cd34a17c415ea361795dcf6e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structogg__file_1a1d79fed1cd34a17c415ea361795dcf6e" kindref="member">curPtr</ref>;</highlight></codeline>
+<codeline lineno="19" refid="structogg__file_1a6fc2ba03266798a26d28b944d9455aac" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structogg__file_1a6fc2ba03266798a26d28b944d9455aac" kindref="member">filePtr</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structogg__file_1a96db2da70b0fc374045245e7c77077ed" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="structogg__file_1a96db2da70b0fc374045245e7c77077ed" kindref="member">fileSize</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="_wrapper___o_g_g_8h_1ad39f07112cd3b7103d376e1c0c1221f9" kindref="member">ogg_file</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenjli" kindref="compound">njli</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="classnjli_1_1_wrapper_ogg" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_wrapper_ogg" kindref="compound">WrapperOgg</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_i_sound_file_wrapper" kindref="compound">ISoundFileWrapper</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a48f5522a7407346d58fa69c57ffbd369" kindref="member">WrapperOgg</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1ae96fb224e50879ef50c3021fa09ea890" kindref="member">minDecompressLengthAtOnce</ref><sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a0ca14ff5c8de2e1b024081cd4ee36900" kindref="member">~WrapperOgg</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a3ba50f99487d489f0b495cfe7fa77811" kindref="member">LoadFromMemory</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dataSize,<sp/>SoundInfo<sp/>*soundInfo);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a315af49a4e484e1cb8689a11dfe9db2f" kindref="member">LoadFromFile</ref>(FILE<sp/>*f,<sp/>SoundInfo<sp/>*soundInfo);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a47dbddbb35d013d8250adc8e666c4fdd" kindref="member">DecompressStream</ref>(std::vector&lt;char&gt;<sp/>&amp;decompressBuffer,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inLoop<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1ad33e7975379d1e4f5c15944370a4cf47" kindref="member">DecompressAll</ref>(std::vector&lt;char&gt;<sp/>&amp;decompressBuffer);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a28d1964b0a03208ebeb30e09ef625c90" kindref="member">ResetStream</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1adc4b8116a89e8eb48f65276ec46e8dd2" kindref="member">Seek</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>pos,<sp/><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">SEEK_POS</ref><sp/>start);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a90e11afb177a4085c5925af77436cd91" kindref="member">GetCurrentStreamPos</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a0fdf09ad6e5bde3de915140c39698a97" kindref="member">GetTime</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1adb921d96c9d60b6539fbc05e08989ffa" kindref="member">GetTotalTime</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="46" refid="classnjli_1_1_wrapper_ogg_1a295c445a708ee989fdc9e4baaf8aa998" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>OggVorbis_File<sp/>*<ref refid="classnjli_1_1_wrapper_ogg_1a295c445a708ee989fdc9e4baaf8aa998" kindref="member">ov</ref>;</highlight></codeline>
+<codeline lineno="47" refid="classnjli_1_1_wrapper_ogg_1a38f58ccb93324aaf7aca3aa77c810efe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structogg__file" kindref="compound">ogg_file</ref><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a38f58ccb93324aaf7aca3aa77c810efe" kindref="member">t</ref>;</highlight></codeline>
+<codeline lineno="48" refid="classnjli_1_1_wrapper_ogg_1aa353b7ba5e112e1160689397d0a90de1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1aa353b7ba5e112e1160689397d0a90de1" kindref="member">bufArray</ref>[<ref refid="_wrapper___o_g_g_8h_1a19906647bd966757e5f2acd00f34023d" kindref="member">OGG_BUFFER_SIZE</ref>];</highlight></codeline>
+<codeline lineno="49" refid="classnjli_1_1_wrapper_ogg_1ae96fb224e50879ef50c3021fa09ea890" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1ae96fb224e50879ef50c3021fa09ea890" kindref="member">minDecompressLengthAtOnce</ref>;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="classnjli_1_1_wrapper_ogg_1a51417abb4c7c95e860b92a95146e7b2d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_wrapper_ogg_1a51417abb4c7c95e860b92a95146e7b2d" kindref="member">seekable</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h"/>
+  </compounddef>
+</doxygen>

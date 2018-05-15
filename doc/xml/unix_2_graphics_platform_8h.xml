@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="unix_2_graphics_platform_8h" kind="file" language="C++">
+    <compoundname>GraphicsPlatform.h</compoundname>
+    <includedby refid="_world_debug_drawer_8h" local="yes">njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h</includedby>
+    <includedby refid="_sound_8h" local="yes">njligames-njlic_engine/njli/sound/Sound.h</includedby>
+    <includedby refid="_world_sound_8h" local="yes">njligames-njlic_engine/njli/sound/WorldSound.h</includedby>
+    <invincdepgraph>
+      <node id="4782">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</label>
+        <link refid="_wrapper___r_a_w_8h"/>
+      </node>
+      <node id="4777">
+        <label>njligames-njlic_engine/njli/platform/unix/GraphicsPlatform.h</label>
+        <link refid="unix_2_graphics_platform_8h"/>
+        <childnode refid="4778" relation="include">
+        </childnode>
+        <childnode refid="4781" relation="include">
+        </childnode>
+        <childnode refid="4783" relation="include">
+        </childnode>
+      </node>
+      <node id="4783">
+        <label>njligames-njlic_engine/njli/sound/WorldSound.h</label>
+        <link refid="_world_sound_8h"/>
+        <childnode refid="4779" relation="include">
+        </childnode>
+      </node>
+      <node id="4778">
+        <label>njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h</label>
+        <link refid="_world_debug_drawer_8h"/>
+        <childnode refid="4779" relation="include">
+        </childnode>
+        <childnode refid="4780" relation="include">
+        </childnode>
+      </node>
+      <node id="4780">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="4779">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="4780" relation="include">
+        </childnode>
+      </node>
+      <node id="4781">
+        <label>njligames-njlic_engine/njli/sound/Sound.h</label>
+        <link refid="_sound_8h"/>
+        <childnode refid="4780" relation="include">
+        </childnode>
+        <childnode refid="4782" relation="include">
+        </childnode>
+        <childnode refid="4783" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(NJLI_GL_ES2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>Unsupported<sp/>choice<sp/>setting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(NJLI_GL_ES3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>Unsupported<sp/>choice<sp/>setting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(NJLI_GL_2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>GL_GLEXT_PROTOTYPES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;GL/gl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;GL/glext.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NANOVG_GL2_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(NJLI_GL_3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OpenGL/gl3.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;OpenGL/gl3ext.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>NANOVG_GL3_IMPLEMENTATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#error<sp/>Unsupported<sp/>choice<sp/>setting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/platform/unix/GraphicsPlatform.h"/>
+  </compounddef>
+</doxygen>

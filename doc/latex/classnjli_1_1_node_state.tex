@@ -1,0 +1,609 @@
+\hypertarget{classnjli_1_1_node_state}{}\section{njli\+:\+:Node\+State Class Reference}
+\label{classnjli_1_1_node_state}\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+
+
+{\ttfamily \#include $<$Node\+State.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Node\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classnjli_1_1_node_state__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Node\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_node_state__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_node_state_afaf6f0ecbc077af2003c6fba3eb81eff}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a6383632da2585bd7da2c12216df1f18a}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_aac4612e5bc3e6a5c4a361e593157723c}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_node_state_a58607b67974806152c3483b40786b2de}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_node_state_a9565c2a4a62f9ee0093da373fcbd716a}{operator std\+::string}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_ae2e27ccb73406c40bd502c5684bf62b0}{enter}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a627419875be255906b52e08d63fe61a3}{update}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$node, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} timestep)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_adbc43108aab891099b2cd9080f97a543}{exit}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$node)
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_node_state_aa05ae9e51e4a9c5061dbf6815e1a6b27}{on\+Message}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$node, const \mbox{\hyperlink{classnjli_1_1_telegram}{Telegram}} \&telegram) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a087eb5f8d9f51cc476f12f1d10a3cb95}{set\+Name}} (const char $\ast$name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_ad41266885be835f3ee602311e20877a4}{get\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_a83a8876ae63b92804004cf3febe76573}{create}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&builder) const
+\item 
+const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_ac4ca71716ed832be357f15f8262c8448}{get\+Pointer}} () const
+\item 
+\mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} \mbox{\hyperlink{classnjli_1_1_node_state_a4ffddf141a426a5a07d0ac19f1913811}{get\+Pointer\+Value}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a4fc4bcd9d1930911474210c047372fc0}{serialize\+Object}} (class bt\+Serializer $\ast$serializer) const
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_node_state_a4c7007210237496fbe169ba114c3750d}{is\+Finished}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_aa4e66d0016cd5c43dc3a485eaf558174}{enable\+Finished}} (const bool=true)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a4ed007508bd8f80af668a302376b7d1a}{enable\+Can\+Delete}} (const bool enable=true)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_a46f4eb5ad4b0cb11d454d2e17e88f07c}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a6f2ce1a2b1a3ad475cd4b8b23321533e}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_a00caefaec4d9b4a16c76d6020882f720}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_ab1379ea6f6b5fb0d7c5a38fbeaca7bc5}{create}} (const \mbox{\hyperlink{classnjli_1_1_node_state_builder}{Node\+State\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_a803f15ad59bfb455e70e159a9ab7912d}{clone}} (const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$ \mbox{\hyperlink{classnjli_1_1_node_state_abcdb692c2ef398c1f3d946a60105d549}{copy}} (const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a0de1bbd47e3cdbb87fcb81ecae81c2c7}{destroy}} (\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_node_state_a5f4bfdcec42cd5a9baab7754d0ef09c8}{load}} (\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_node_state_ad73f8c965c1ad03441d1c1d07d6442b5}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_node_state_a1ad92560b4057809dcf0a658d576cd6a}{Node\+State}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_node_state_a1cd1d39f5b5e14e5466d4bcb75adc568}{Node\+State}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_node_state_a102adf95d05a404dc6b564ea7a18c723}{Node\+State}} (const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_node_state_a30ad1be81dbbe9614a951859c319447b}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_node_state_ae336cf62e8e11ed6016fd1737a4604a9}{$\sim$\+Node\+State}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \& \mbox{\hyperlink{classnjli_1_1_node_state_a680aec8f08f28157238c1f2d178e99b3}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_node_state_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 24 of file Node\+State.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a1ad92560b4057809dcf0a658d576cd6a}\label{classnjli_1_1_node_state_a1ad92560b4057809dcf0a658d576cd6a}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!Node\+State@{Node\+State}}
+\index{Node\+State@{Node\+State}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{Node\+State()}{NodeState()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Node\+State\+::\+Node\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a1cd1d39f5b5e14e5466d4bcb75adc568}\label{classnjli_1_1_node_state_a1cd1d39f5b5e14e5466d4bcb75adc568}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!Node\+State@{Node\+State}}
+\index{Node\+State@{Node\+State}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{Node\+State()}{NodeState()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Node\+State\+::\+Node\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a102adf95d05a404dc6b564ea7a18c723}\label{classnjli_1_1_node_state_a102adf95d05a404dc6b564ea7a18c723}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!Node\+State@{Node\+State}}
+\index{Node\+State@{Node\+State}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{Node\+State()}{NodeState()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Node\+State\+::\+Node\+State (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_ae336cf62e8e11ed6016fd1737a4604a9}\label{classnjli_1_1_node_state_ae336cf62e8e11ed6016fd1737a4604a9}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!````~Node\+State@{$\sim$\+Node\+State}}
+\index{````~Node\+State@{$\sim$\+Node\+State}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{$\sim$\+Node\+State()}{~NodeState()}}
+{\footnotesize\ttfamily virtual njli\+::\+Node\+State\+::$\sim$\+Node\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a30ad1be81dbbe9614a951859c319447b}\label{classnjli_1_1_node_state_a30ad1be81dbbe9614a951859c319447b}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Node\+State\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_afaf6f0ecbc077af2003c6fba3eb81eff}\label{classnjli_1_1_node_state_afaf6f0ecbc077af2003c6fba3eb81eff}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Node\+State\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a803f15ad59bfb455e70e159a9ab7912d}\label{classnjli_1_1_node_state_a803f15ad59bfb455e70e159a9ab7912d}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}}$\ast$ njli\+::\+Node\+State\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_abcdb692c2ef398c1f3d946a60105d549}\label{classnjli_1_1_node_state_abcdb692c2ef398c1f3d946a60105d549}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}}$\ast$ njli\+::\+Node\+State\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a83a8876ae63b92804004cf3febe76573}\label{classnjli_1_1_node_state_a83a8876ae63b92804004cf3febe76573}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!create@{create}}
+\index{create@{create}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::create}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a00caefaec4d9b4a16c76d6020882f720}\label{classnjli_1_1_node_state_a00caefaec4d9b4a16c76d6020882f720}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!create@{create}}
+\index{create@{create}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}}$\ast$ njli\+::\+Node\+State\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_ab1379ea6f6b5fb0d7c5a38fbeaca7bc5}\label{classnjli_1_1_node_state_ab1379ea6f6b5fb0d7c5a38fbeaca7bc5}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!create@{create}}
+\index{create@{create}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}}$\ast$ njli\+::\+Node\+State\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_node_state_builder}{Node\+State\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a46f4eb5ad4b0cb11d454d2e17e88f07c}\label{classnjli_1_1_node_state_a46f4eb5ad4b0cb11d454d2e17e88f07c}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}}$\ast$$\ast$ njli\+::\+Node\+State\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a0de1bbd47e3cdbb87fcb81ecae81c2c7}\label{classnjli_1_1_node_state_a0de1bbd47e3cdbb87fcb81ecae81c2c7}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a6f2ce1a2b1a3ad475cd4b8b23321533e}\label{classnjli_1_1_node_state_a6f2ce1a2b1a3ad475cd4b8b23321533e}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a4ed007508bd8f80af668a302376b7d1a}\label{classnjli_1_1_node_state_a4ed007508bd8f80af668a302376b7d1a}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!enable\+Can\+Delete@{enable\+Can\+Delete}}
+\index{enable\+Can\+Delete@{enable\+Can\+Delete}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{enable\+Can\+Delete()}{enableCanDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_state}{njli\+::\+Abstract\+State}}$<$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE $>$\+::enable\+Can\+Delete}
+
+
+
+Definition at line 160 of file Abstract\+State.\+h.
+
+
+\begin{DoxyCode}
+161   \{
+162     \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a678b8f28320f6a7e2aa38d5ef72889a8}{AbstractFactoryObject::enableCanDelete}}(enable);
+163   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_node_state_aa4e66d0016cd5c43dc3a485eaf558174}\label{classnjli_1_1_node_state_aa4e66d0016cd5c43dc3a485eaf558174}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!enable\+Finished@{enable\+Finished}}
+\index{enable\+Finished@{enable\+Finished}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{enable\+Finished()}{enableFinished()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_abstract_state}{njli\+::\+Abstract\+State}}$<$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE $>$\+::enable\+Finished}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & $<$\#bool description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 154 of file Abstract\+State.\+h.
+
+
+\begin{DoxyCode}
+155   \{
+156     \mbox{\hyperlink{classnjli_1_1_abstract_state_a445a5d1ac7572b8b01b81937c89e960c}{m\_isFinished}} = finished;
+157   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_node_state_ae2e27ccb73406c40bd502c5684bf62b0}\label{classnjli_1_1_node_state_ae2e27ccb73406c40bd502c5684bf62b0}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!enter@{enter}}
+\index{enter@{enter}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{enter()}{enter()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::enter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 17\+:02\+:22
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em node} & $<$\#node description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_state_ae10e437370dcfc3261ec0b9f350f16d8}{njli\+::\+Abstract\+State$<$ Node $>$}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_adbc43108aab891099b2cd9080f97a543}\label{classnjli_1_1_node_state_adbc43108aab891099b2cd9080f97a543}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!exit@{exit}}
+\index{exit@{exit}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{node }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 17\+:02\+:47
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em node} & $<$\#node description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_state_a75207a4c62f813d8d84168024a30c60a}{njli\+::\+Abstract\+State$<$ Node $>$}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_aac4612e5bc3e6a5c4a361e593157723c}\label{classnjli_1_1_node_state_aac4612e5bc3e6a5c4a361e593157723c}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Node\+State\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_ad41266885be835f3ee602311e20877a4}\label{classnjli_1_1_node_state_ad41266885be835f3ee602311e20877a4}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Abstract\+Decorator\+::get\+Name}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_ac4ca71716ed832be357f15f8262c8448}\label{classnjli_1_1_node_state_ac4ca71716ed832be357f15f8262c8448}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{get\+Pointer()}{getPointer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_node_state_a4ffddf141a426a5a07d0ac19f1913811}\label{classnjli_1_1_node_state_a4ffddf141a426a5a07d0ac19f1913811}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{get\+Pointer\+Value()}{getPointerValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer\+Value}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a58607b67974806152c3483b40786b2de}\label{classnjli_1_1_node_state_a58607b67974806152c3483b40786b2de}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Node\+State\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a4c7007210237496fbe169ba114c3750d}\label{classnjli_1_1_node_state_a4c7007210237496fbe169ba114c3750d}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!is\+Finished@{is\+Finished}}
+\index{is\+Finished@{is\+Finished}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{is\+Finished()}{isFinished()}}
+{\footnotesize\ttfamily bool \mbox{\hyperlink{classnjli_1_1_abstract_state}{njli\+::\+Abstract\+State}}$<$ O\+B\+J\+E\+C\+T\+\_\+\+T\+Y\+PE $>$\+::is\+Finished}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Definition at line 148 of file Abstract\+State.\+h.
+
+
+\begin{DoxyCode}
+149   \{
+150     \textcolor{keywordflow}{return} \mbox{\hyperlink{classnjli_1_1_abstract_state_a445a5d1ac7572b8b01b81937c89e960c}{m\_isFinished}};
+151   \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a5f4bfdcec42cd5a9baab7754d0ef09c8}\label{classnjli_1_1_node_state_a5f4bfdcec42cd5a9baab7754d0ef09c8}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!load@{load}}
+\index{load@{load}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_node_state_aa05ae9e51e4a9c5061dbf6815e1a6b27}\label{classnjli_1_1_node_state_aa05ae9e51e4a9c5061dbf6815e1a6b27}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!on\+Message@{on\+Message}}
+\index{on\+Message@{on\+Message}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{on\+Message()}{onMessage()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Node\+State\+::on\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{node,  }\item[{const \mbox{\hyperlink{classnjli_1_1_telegram}{Telegram}} \&}]{telegram }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 17\+:02\+:03
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em node} & $<$\#node description\#$>$ \\
+\hline
+{\em telegram} & $<$\#telegram description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_state_aa486b2e60e57d789855acdfb555a4cdc}{njli\+::\+Abstract\+State$<$ Node $>$}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a9565c2a4a62f9ee0093da373fcbd716a}\label{classnjli_1_1_node_state_a9565c2a4a62f9ee0093da373fcbd716a}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Node\+State\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a680aec8f08f28157238c1f2d178e99b3}\label{classnjli_1_1_node_state_a680aec8f08f28157238c1f2d178e99b3}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}}\& njli\+::\+Node\+State\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_node_state}{Node\+State}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a6383632da2585bd7da2c12216df1f18a}\label{classnjli_1_1_node_state_a6383632da2585bd7da2c12216df1f18a}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:04
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_node_state_a4fc4bcd9d1930911474210c047372fc0}\label{classnjli_1_1_node_state_a4fc4bcd9d1930911474210c047372fc0}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{serialize\+Object()}{serializeObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Factory\+Object\+::serialize\+Object}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & $<$\#serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a087eb5f8d9f51cc476f12f1d10a3cb95}\label{classnjli_1_1_node_state_a087eb5f8d9f51cc476f12f1d10a3cb95}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Decorator\+::set\+Name}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & $<$\#name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_node_state_ad73f8c965c1ad03441d1c1d07d6442b5}\label{classnjli_1_1_node_state_ad73f8c965c1ad03441d1c1d07d6442b5}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!type@{type}}
+\index{type@{type}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Node\+State\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_node_state_a627419875be255906b52e08d63fe61a3}\label{classnjli_1_1_node_state_a627419875be255906b52e08d63fe61a3}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!update@{update}}
+\index{update@{update}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Node\+State\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{node,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 17\+:02\+:36
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em node} & $<$\#node description\#$>$ \\
+\hline
+{\em timestep} & $<$\#timestep description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_state_aa1d0341a1b1bd83f9b722488680537ad}{njli\+::\+Abstract\+State$<$ Node $>$}}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_node_state_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_node_state_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Node\+State@{njli\+::\+Node\+State}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Node\+State@{njli\+::\+Node\+State}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 27 of file Node\+State.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/\mbox{\hyperlink{_node_state_8h}{Node\+State.\+h}}\end{DoxyCompactItemize}

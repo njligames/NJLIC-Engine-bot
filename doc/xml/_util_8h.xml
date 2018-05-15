@@ -1,0 +1,2886 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_util_8h" kind="file" language="C++">
+    <compoundname>Util.h</compoundname>
+    <includes refid="_log_8h" local="yes">Log.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">math.h</includes>
+    <includedby refid="_abstract_actionable_8h" local="yes">njligames-njlic_engine/njli/AbstractActionable.h</includedby>
+    <includedby refid="_abstract_clock_8h" local="yes">njligames-njlic_engine/njli/AbstractClock.h</includedby>
+    <includedby refid="_abstract_decorator_8h" local="yes">njligames-njlic_engine/njli/AbstractDecorator.h</includedby>
+    <includedby refid="_abstract_object_8h" local="yes">njligames-njlic_engine/njli/AbstractObject.h</includedby>
+    <includedby refid="_abstract_factory_object_8h" local="yes">njligames-njlic_engine/njli/AbstractFactoryObject.h</includedby>
+    <includedby refid="_abstract_state_8h" local="yes">njligames-njlic_engine/njli/AbstractState.h</includedby>
+    <includedby refid="_abstract_transform_8h" local="yes">njligames-njlic_engine/njli/AbstractTransform.h</includedby>
+    <includedby refid="_j_l_i_factory_types_8h" local="yes">njligames-njlic_engine/njli/JLIFactoryTypes.h</includedby>
+    <includedby refid="_abstract_builder_8h" local="yes">njligames-njlic_engine/njli/builders/AbstractBuilder.h</includedby>
+    <includedby refid="_action_builder_8h" local="yes">njligames-njlic_engine/njli/builders/ActionBuilder.h</includedby>
+    <includedby refid="_camera_builder_8h" local="yes">njligames-njlic_engine/njli/builders/CameraBuilder.h</includedby>
+    <includedby refid="_clock_builder_8h" local="yes">njligames-njlic_engine/njli/builders/ClockBuilder.h</includedby>
+    <includedby refid="_collision_response_builder_8h" local="yes">njligames-njlic_engine/njli/builders/CollisionResponseBuilder.h</includedby>
+    <includedby refid="_font_builder_8h" local="yes">njligames-njlic_engine/njli/builders/FontBuilder.h</includedby>
+    <includedby refid="_button_h_u_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/ButtonHUDBuilder.h</includedby>
+    <includedby refid="_checkbox_h_u_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/CheckboxHUDBuilder.h</includedby>
+    <includedby refid="_dropdown_h_u_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/DropdownHUDBuilder.h</includedby>
+    <includedby refid="_label_h_u_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/LabelHUDBuilder.h</includedby>
+    <includedby refid="_material_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/MaterialBuilder.h</includedby>
+    <includedby refid="_material_property_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/MaterialPropertyBuilder.h</includedby>
+    <includedby refid="_shader_program_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/ShaderProgramBuilder.h</includedby>
+    <includedby refid="_slider_h_u_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/SliderHUDBuilder.h</includedby>
+    <includedby refid="_sprite2_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/Sprite2DBuilder.h</includedby>
+    <includedby refid="_textbox_h_u_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/graphics/TextboxHUDBuilder.h</includedby>
+    <includedby refid="_image_builder_8h" local="yes">njligames-njlic_engine/njli/builders/ImageBuilder.h</includedby>
+    <includedby refid="_json_j_l_i_builder_8h" local="yes">njligames-njlic_engine/njli/builders/JsonJLIBuilder.h</includedby>
+    <includedby refid="_level_of_detail_builder_8h" local="yes">njligames-njlic_engine/njli/builders/LevelOfDetailBuilder.h</includedby>
+    <includedby refid="_light_builder_8h" local="yes">njligames-njlic_engine/njli/builders/LightBuilder.h</includedby>
+    <includedby refid="_node_builder_8h" local="yes">njligames-njlic_engine/njli/builders/NodeBuilder.h</includedby>
+    <includedby refid="_node_state_builder_8h" local="yes">njligames-njlic_engine/njli/builders/NodeStateBuilder.h</includedby>
+    <includedby refid="_node_state_machine_builder_8h" local="yes">njligames-njlic_engine/njli/builders/NodeStateMachineBuilder.h</includedby>
+    <includedby refid="_particle_emitter_builder_8h" local="yes">njligames-njlic_engine/njli/builders/ParticleEmitterBuilder.h</includedby>
+    <includedby refid="_physics_body_ghost_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/body/PhysicsBodyGhostBuilder.h</includedby>
+    <includedby refid="_physics_body_rigid_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/body/PhysicsBodyRigidBuilder.h</includedby>
+    <includedby refid="_physics_body_soft_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/body/PhysicsBodySoftBuilder.h</includedby>
+    <includedby refid="_physics_constraint_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintBuilder.h</includedby>
+    <includedby refid="_physics_constraint_cone_twist_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintConeTwistBuilder.h</includedby>
+    <includedby refid="_physics_constraint_fixed_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintFixedBuilder.h</includedby>
+    <includedby refid="_physics_constraint_generic6_dof_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintGeneric6DofBuilder.h</includedby>
+    <includedby refid="_physics_constraint_generic6_dof_spring_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintGeneric6DofSpringBuilder.h</includedby>
+    <includedby refid="_physics_constraint_hinge_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintHingeBuilder.h</includedby>
+    <includedby refid="_physics_constraint_point_to_point_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintPointToPointBuilder.h</includedby>
+    <includedby refid="_physics_constraint_slider_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintSliderBuilder.h</includedby>
+    <includedby refid="_physics_close_contact_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/PhysicsCloseContactBuilder.h</includedby>
+    <includedby refid="_physics_contact_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/PhysicsContactBuilder.h</includedby>
+    <includedby refid="_physics_field_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/PhysicsFieldBuilder.h</includedby>
+    <includedby refid="_physics_ray_contact_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/PhysicsRayContactBuilder.h</includedby>
+    <includedby refid="_physics_world_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/PhysicsWorldBuilder.h</includedby>
+    <includedby refid="_physics_shape_box2_d_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBox2DBuilder.h</includedby>
+    <includedby refid="_physics_shape_box_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBoxBuilder.h</includedby>
+    <includedby refid="_physics_shape_bvh_triangle_mesh_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBvhTriangleMeshBuilder.h</includedby>
+    <includedby refid="_physics_shape_capsule_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeCapsuleBuilder.h</includedby>
+    <includedby refid="_physics_shape_cone_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConeBuilder.h</includedby>
+    <includedby refid="_physics_shape_convex_hull_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConvexHullBuilder.h</includedby>
+    <includedby refid="_physics_shape_convex_triangle_mesh_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConvexTriangleMeshBuilder.h</includedby>
+    <includedby refid="_physics_shape_cylinder_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeCylinderBuilder.h</includedby>
+    <includedby refid="_physics_shape_heightfield_terrain_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeHeightfieldTerrainBuilder.h</includedby>
+    <includedby refid="_physics_shape_multi_sphere_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeMultiSphereBuilder.h</includedby>
+    <includedby refid="_physics_shape_sphere_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeSphereBuilder.h</includedby>
+    <includedby refid="_physics_shape_static_plane_builder_8h" local="yes">njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeStaticPlaneBuilder.h</includedby>
+    <includedby refid="_plane_builder_8h" local="yes">njligames-njlic_engine/njli/builders/PlaneBuilder.h</includedby>
+    <includedby refid="_scene_builder_8h" local="yes">njligames-njlic_engine/njli/builders/SceneBuilder.h</includedby>
+    <includedby refid="_scene_state_builder_8h" local="yes">njligames-njlic_engine/njli/builders/SceneStateBuilder.h</includedby>
+    <includedby refid="_scene_state_machine_builder_8h" local="yes">njligames-njlic_engine/njli/builders/SceneStateMachineBuilder.h</includedby>
+    <includedby refid="_skinner_builder_8h" local="yes">njligames-njlic_engine/njli/builders/SkinnerBuilder.h</includedby>
+    <includedby refid="_sound_builder_8h" local="yes">njligames-njlic_engine/njli/builders/sound/SoundBuilder.h</includedby>
+    <includedby refid="_sprite_frame_atlas_builder_8h" local="yes">njligames-njlic_engine/njli/builders/SpriteFrameAtlasBuilder.h</includedby>
+    <includedby refid="_steering_behavior_alignment_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorAlignmentBuilder.h</includedby>
+    <includedby refid="_steering_behavior_arrive_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorArriveBuilder.h</includedby>
+    <includedby refid="_steering_behavior_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorBuilder.h</includedby>
+    <includedby refid="_steering_behavior_cohesion_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorCohesionBuilder.h</includedby>
+    <includedby refid="_steering_behavior_evade_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorEvadeBuilder.h</includedby>
+    <includedby refid="_steering_behavior_flee_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorFleeBuilder.h</includedby>
+    <includedby refid="_steering_behavior_follow_path_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorFollowPathBuilder.h</includedby>
+    <includedby refid="_steering_behavior_hide_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorHideBuilder.h</includedby>
+    <includedby refid="_steering_behavior_interpose_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorInterposeBuilder.h</includedby>
+    <includedby refid="_steering_behavior_obstacle_avoidance_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorObstacleAvoidanceBuilder.h</includedby>
+    <includedby refid="_steering_behavior_offset_pursuit_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorOffsetPursuitBuilder.h</includedby>
+    <includedby refid="_steering_behavior_pursuit_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorPursuitBuilder.h</includedby>
+    <includedby refid="_steering_behavior_seek_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorSeekBuilder.h</includedby>
+    <includedby refid="_steering_behavior_separation_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorSeparationBuilder.h</includedby>
+    <includedby refid="_steering_behavior_wall_avoidance_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorWallAvoidanceBuilder.h</includedby>
+    <includedby refid="_steering_behavior_wander_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorWanderBuilder.h</includedby>
+    <includedby refid="_steering_behavior_machine_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineBuilder.h</includedby>
+    <includedby refid="_steering_behavior_machine_dithered_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineDitheredBuilder.h</includedby>
+    <includedby refid="_steering_behavior_machine_prioritized_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachinePrioritizedBuilder.h</includedby>
+    <includedby refid="_steering_behavior_machine_weighted_builder_8h" local="yes">njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineWeightedBuilder.h</includedby>
+    <includedby refid="_stop_watch_builder_8h" local="yes">njligames-njlic_engine/njli/builders/StopWatchBuilder.h</includedby>
+    <includedby refid="_thread_builder_8h" local="yes">njligames-njlic_engine/njli/builders/ThreadBuilder.h</includedby>
+    <includedby refid="_timer_builder_8h" local="yes">njligames-njlic_engine/njli/builders/TimerBuilder.h</includedby>
+    <includedby refid="_world_state_builder_8h" local="yes">njligames-njlic_engine/njli/builders/WorldStateBuilder.h</includedby>
+    <includedby refid="_world_state_machine_builder_8h" local="yes">njligames-njlic_engine/njli/builders/WorldStateMachineBuilder.h</includedby>
+    <includedby refid="_xml_builder_8h" local="yes">njligames-njlic_engine/njli/builders/XmlBuilder.h</includedby>
+    <includedby refid="_cube_builder_8h" local="yes">njligames-njlic_engine/njli/CubeBuilder.h</includedby>
+    <includedby refid="_abstract_frame_buffer_object_8h" local="yes">njligames-njlic_engine/njli/graphics/AbstractFrameBufferObject.h</includedby>
+    <includedby refid="_world_debug_drawer_8h" local="yes">njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h</includedby>
+    <includedby refid="_world_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/WorldHUD.h</includedby>
+    <includedby refid="_world_8h" local="yes">njligames-njlic_engine/njli/World.h</includedby>
+    <includedby refid="_world_factory_8h" local="yes">njligames-njlic_engine/njli/WorldFactory.h</includedby>
+    <includedby refid="_world_lua_virtual_machine_8h" local="yes">njligames-njlic_engine/njli/WorldLuaVirtualMachine.h</includedby>
+    <includedby refid="_physics_world_8h" local="yes">njligames-njlic_engine/njli/physics/PhysicsWorld.h</includedby>
+    <includedby refid="_color_util_8h" local="yes">njligames-njlic_engine/njli/platform/ColorUtil.h</includedby>
+    <includedby refid="_device_input_time_8h" local="yes">njligames-njlic_engine/njli/platform/DeviceInputTime.h</includedby>
+    <includedby refid="_wrapper___w_a_v_8h" local="yes">njligames-njlic_engine/njli/sound/openal/Wrapper_WAV.h</includedby>
+    <includedby refid="_world_sound_8h" local="yes">njligames-njlic_engine/njli/sound/WorldSound.h</includedby>
+    <incdepgraph>
+      <node id="5380">
+        <label>stdlib.h</label>
+      </node>
+      <node id="5374">
+        <label>Log.h</label>
+        <link refid="_log_8h"/>
+        <childnode refid="5375" relation="include">
+        </childnode>
+        <childnode refid="5376" relation="include">
+        </childnode>
+        <childnode refid="5377" relation="include">
+        </childnode>
+        <childnode refid="5378" relation="include">
+        </childnode>
+      </node>
+      <node id="5376">
+        <label>SDL_assert.h</label>
+      </node>
+      <node id="5377">
+        <label>SDL_config.h</label>
+      </node>
+      <node id="5378">
+        <label>SDL_log.h</label>
+      </node>
+      <node id="5375">
+        <label>Macros.h</label>
+        <link refid="_macros_8h"/>
+      </node>
+      <node id="5381">
+        <label>math.h</label>
+      </node>
+      <node id="5373">
+        <label>njligames-njlic_engine/njli/platform/Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="5374" relation="include">
+        </childnode>
+        <childnode refid="5379" relation="include">
+        </childnode>
+        <childnode refid="5380" relation="include">
+        </childnode>
+        <childnode refid="5381" relation="include">
+        </childnode>
+      </node>
+      <node id="5379">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="5533">
+        <label>njligames-njlic_engine/njli/physics/PhysicsField.h</label>
+        <link refid="_physics_field_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5576">
+        <label>njligames-njlic_engine/njli/AbstractTransform.h</label>
+        <link refid="_abstract_transform_8h"/>
+        <childnode refid="5549" relation="include">
+        </childnode>
+      </node>
+      <node id="5573">
+        <label>njligames-njlic_engine/njli/WorldResourceLoader.h</label>
+        <link refid="_world_resource_loader_8h"/>
+        <childnode refid="5513" relation="include">
+        </childnode>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5433">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintBuilder.h</label>
+        <link refid="_physics_constraint_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5543">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeConvexTriangleMesh.h</label>
+        <link refid="_physics_shape_convex_triangle_mesh_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5503">
+        <label>njligames-njlic_engine/njli/graphics/LevelOfDetail.h</label>
+        <link refid="_level_of_detail_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5450">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConeBuilder.h</label>
+        <link refid="_physics_shape_cone_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5435">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintFixedBuilder.h</label>
+        <link refid="_physics_constraint_fixed_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5391">
+        <label>njligames-njlic_engine/njli/AbstractClock.h</label>
+        <link refid="_abstract_clock_8h"/>
+        <childnode refid="5392" relation="include">
+        </childnode>
+        <childnode refid="5393" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5394" relation="include">
+        </childnode>
+        <childnode refid="5395" relation="include">
+        </childnode>
+        <childnode refid="5396" relation="include">
+        </childnode>
+      </node>
+      <node id="5447">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBoxBuilder.h</label>
+        <link refid="_physics_shape_box_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5554">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorArrive.h</label>
+        <link refid="_steering_behavior_arrive_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5474">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorObstacleAvoidanceBuilder.h</label>
+        <link refid="_steering_behavior_obstacle_avoidance_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5502">
+        <label>njligames-njlic_engine/njli/graphics/LabelHUD.h</label>
+        <link refid="_label_h_u_d_8h"/>
+      </node>
+      <node id="5415">
+        <label>njligames-njlic_engine/njli/builders/graphics/LabelHUDBuilder.h</label>
+        <link refid="_label_h_u_d_builder_8h"/>
+      </node>
+      <node id="5436">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintGeneric6DofBuilder.h</label>
+        <link refid="_physics_constraint_generic6_dof_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5550">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</label>
+        <link refid="_wrapper___r_a_w_8h"/>
+      </node>
+      <node id="5515">
+        <label>njligames-njlic_engine/njli/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5406" relation="include">
+        </childnode>
+        <childnode refid="5402" relation="include">
+        </childnode>
+      </node>
+      <node id="5407">
+        <label>njligames-njlic_engine/njli/builders/ActionBuilder.h</label>
+        <link refid="_action_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5394">
+        <label>njligames-njlic_engine/njli/WorldClock.h</label>
+        <link refid="_world_clock_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5527">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintGeneric6DofSpring.h</label>
+        <link refid="_physics_constraint_generic6_dof_spring_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5521">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBodyRigid.h</label>
+        <link refid="_physics_body_rigid_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5483">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachinePrioritizedBuilder.h</label>
+        <link refid="_steering_behavior_machine_prioritized_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5482">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineDitheredBuilder.h</label>
+        <link refid="_steering_behavior_machine_dithered_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5384">
+        <label>njligames-njlic_engine/njli/Action.h</label>
+        <link refid="_action_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5512">
+        <label>njligames-njlic_engine/njli/graphics/TextboxHUD.h</label>
+        <link refid="_textbox_h_u_d_8h"/>
+      </node>
+      <node id="5509">
+        <label>njligames-njlic_engine/njli/graphics/Skinner.h</label>
+        <link refid="_skinner_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5446">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBox2DBuilder.h</label>
+        <link refid="_physics_shape_box2_d_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5431">
+        <label>njligames-njlic_engine/njli/builders/physics/body/PhysicsBodyRigidBuilder.h</label>
+        <link refid="_physics_body_rigid_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5566">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorWallAvoidance.h</label>
+        <link refid="_steering_behavior_wall_avoidance_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5551">
+        <label>njligames-njlic_engine/njli/sound/WorldSound.h</label>
+        <link refid="_world_sound_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+      </node>
+      <node id="5519">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBody.h</label>
+        <link refid="_physics_body_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5388" relation="include">
+        </childnode>
+        <childnode refid="5520" relation="include">
+        </childnode>
+        <childnode refid="5521" relation="include">
+        </childnode>
+        <childnode refid="5522" relation="include">
+        </childnode>
+      </node>
+      <node id="5578">
+        <label>njligames-njlic_engine/njli/graphics/AbstractFrameBufferObject.h</label>
+        <link refid="_abstract_frame_buffer_object_8h"/>
+        <childnode refid="5495" relation="include">
+        </childnode>
+        <childnode refid="5496" relation="include">
+        </childnode>
+        <childnode refid="5501" relation="include">
+        </childnode>
+        <childnode refid="5502" relation="include">
+        </childnode>
+        <childnode refid="5510" relation="include">
+        </childnode>
+        <childnode refid="5512" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5393">
+        <label>njligames-njlic_engine/njli/GameClock.h</label>
+        <link refid="_game_clock_8h"/>
+      </node>
+      <node id="5524">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintConeTwist.h</label>
+        <link refid="_physics_constraint_cone_twist_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5460">
+        <label>njligames-njlic_engine/njli/builders/SceneStateBuilder.h</label>
+        <link refid="_scene_state_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5552">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehavior.h</label>
+        <link refid="_steering_behavior_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5553" relation="include">
+        </childnode>
+        <childnode refid="5554" relation="include">
+        </childnode>
+        <childnode refid="5555" relation="include">
+        </childnode>
+        <childnode refid="5556" relation="include">
+        </childnode>
+        <childnode refid="5557" relation="include">
+        </childnode>
+        <childnode refid="5558" relation="include">
+        </childnode>
+        <childnode refid="5559" relation="include">
+        </childnode>
+        <childnode refid="5560" relation="include">
+        </childnode>
+        <childnode refid="5561" relation="include">
+        </childnode>
+        <childnode refid="5562" relation="include">
+        </childnode>
+        <childnode refid="5563" relation="include">
+        </childnode>
+        <childnode refid="5564" relation="include">
+        </childnode>
+        <childnode refid="5565" relation="include">
+        </childnode>
+        <childnode refid="5566" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+      </node>
+      <node id="5432">
+        <label>njligames-njlic_engine/njli/builders/physics/body/PhysicsBodySoftBuilder.h</label>
+        <link refid="_physics_body_soft_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5579">
+        <label>njligames-njlic_engine/njli/graphics/WorldDebugDrawer.h</label>
+        <link refid="_world_debug_drawer_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5495">
+        <label>njligames-njlic_engine/njli/graphics/ButtonHUD.h</label>
+        <link refid="_button_h_u_d_8h"/>
+      </node>
+      <node id="5496">
+        <label>njligames-njlic_engine/njli/graphics/CheckboxHUD.h</label>
+        <link refid="_checkbox_h_u_d_8h"/>
+      </node>
+      <node id="5555">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorCohesion.h</label>
+        <link refid="_steering_behavior_cohesion_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5399">
+        <label>njligames-njlic_engine/njli/AbstractFactoryObject.h</label>
+        <link refid="_abstract_factory_object_8h"/>
+        <childnode refid="5400" relation="include">
+        </childnode>
+        <childnode refid="5384" relation="include">
+        </childnode>
+        <childnode refid="5403" relation="include">
+        </childnode>
+        <childnode refid="5491" relation="include">
+        </childnode>
+        <childnode refid="5392" relation="include">
+        </childnode>
+        <childnode refid="5492" relation="include">
+        </childnode>
+        <childnode refid="5494" relation="include">
+        </childnode>
+        <childnode refid="5495" relation="include">
+        </childnode>
+        <childnode refid="5496" relation="include">
+        </childnode>
+        <childnode refid="5498" relation="include">
+        </childnode>
+        <childnode refid="5501" relation="include">
+        </childnode>
+        <childnode refid="5502" relation="include">
+        </childnode>
+        <childnode refid="5503" relation="include">
+        </childnode>
+        <childnode refid="5504" relation="include">
+        </childnode>
+        <childnode refid="5505" relation="include">
+        </childnode>
+        <childnode refid="5506" relation="include">
+        </childnode>
+        <childnode refid="5507" relation="include">
+        </childnode>
+        <childnode refid="5508" relation="include">
+        </childnode>
+        <childnode refid="5509" relation="include">
+        </childnode>
+        <childnode refid="5510" relation="include">
+        </childnode>
+        <childnode refid="5511" relation="include">
+        </childnode>
+        <childnode refid="5512" relation="include">
+        </childnode>
+        <childnode refid="5513" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5514" relation="include">
+        </childnode>
+        <childnode refid="5388" relation="include">
+        </childnode>
+        <childnode refid="5515" relation="include">
+        </childnode>
+        <childnode refid="5516" relation="include">
+        </childnode>
+        <childnode refid="5395" relation="include">
+        </childnode>
+        <childnode refid="5517" relation="include">
+        </childnode>
+        <childnode refid="5396" relation="include">
+        </childnode>
+        <childnode refid="5518" relation="include">
+        </childnode>
+        <childnode refid="5519" relation="include">
+        </childnode>
+        <childnode refid="5523" relation="include">
+        </childnode>
+        <childnode refid="5524" relation="include">
+        </childnode>
+        <childnode refid="5525" relation="include">
+        </childnode>
+        <childnode refid="5526" relation="include">
+        </childnode>
+        <childnode refid="5527" relation="include">
+        </childnode>
+        <childnode refid="5528" relation="include">
+        </childnode>
+        <childnode refid="5529" relation="include">
+        </childnode>
+        <childnode refid="5530" relation="include">
+        </childnode>
+        <childnode refid="5531" relation="include">
+        </childnode>
+        <childnode refid="5532" relation="include">
+        </childnode>
+        <childnode refid="5533" relation="include">
+        </childnode>
+        <childnode refid="5534" relation="include">
+        </childnode>
+        <childnode refid="5535" relation="include">
+        </childnode>
+        <childnode refid="5536" relation="include">
+        </childnode>
+        <childnode refid="5539" relation="include">
+        </childnode>
+        <childnode refid="5540" relation="include">
+        </childnode>
+        <childnode refid="5541" relation="include">
+        </childnode>
+        <childnode refid="5542" relation="include">
+        </childnode>
+        <childnode refid="5543" relation="include">
+        </childnode>
+        <childnode refid="5544" relation="include">
+        </childnode>
+        <childnode refid="5545" relation="include">
+        </childnode>
+        <childnode refid="5546" relation="include">
+        </childnode>
+        <childnode refid="5547" relation="include">
+        </childnode>
+        <childnode refid="5548" relation="include">
+        </childnode>
+        <childnode refid="5549" relation="include">
+        </childnode>
+        <childnode refid="5552" relation="include">
+        </childnode>
+        <childnode refid="5553" relation="include">
+        </childnode>
+        <childnode refid="5554" relation="include">
+        </childnode>
+        <childnode refid="5555" relation="include">
+        </childnode>
+        <childnode refid="5556" relation="include">
+        </childnode>
+        <childnode refid="5557" relation="include">
+        </childnode>
+        <childnode refid="5558" relation="include">
+        </childnode>
+        <childnode refid="5559" relation="include">
+        </childnode>
+        <childnode refid="5560" relation="include">
+        </childnode>
+        <childnode refid="5561" relation="include">
+        </childnode>
+        <childnode refid="5562" relation="include">
+        </childnode>
+        <childnode refid="5563" relation="include">
+        </childnode>
+        <childnode refid="5564" relation="include">
+        </childnode>
+        <childnode refid="5565" relation="include">
+        </childnode>
+        <childnode refid="5566" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+        <childnode refid="5568" relation="include">
+        </childnode>
+        <childnode refid="5569" relation="include">
+        </childnode>
+        <childnode refid="5570" relation="include">
+        </childnode>
+        <childnode refid="5571" relation="include">
+        </childnode>
+      </node>
+      <node id="5451">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConvexHullBuilder.h</label>
+        <link refid="_physics_shape_convex_hull_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5387">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="5556">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorEvade.h</label>
+        <link refid="_steering_behavior_evade_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5409">
+        <label>njligames-njlic_engine/njli/builders/ClockBuilder.h</label>
+        <link refid="_clock_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5497">
+        <label>njligames-njlic_engine/njli/graphics/Cube.h</label>
+        <link refid="_cube_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5570">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachinePrioritized.h</label>
+        <link refid="_steering_behavior_machine_prioritized_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5534">
+        <label>njligames-njlic_engine/njli/physics/PhysicsRayContact.h</label>
+        <link refid="_physics_ray_contact_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5487">
+        <label>njligames-njlic_engine/njli/builders/TimerBuilder.h</label>
+        <link refid="_timer_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5485">
+        <label>njligames-njlic_engine/njli/builders/StopWatchBuilder.h</label>
+        <link refid="_stop_watch_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5406">
+        <label>njligames-njlic_engine/njli/SceneState.h</label>
+        <link refid="_scene_state_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5401">
+        <label>njligames-njlic_engine/njli/WorldStateMachine.h</label>
+        <link refid="_world_state_machine_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5430">
+        <label>njligames-njlic_engine/njli/builders/physics/body/PhysicsBodyGhostBuilder.h</label>
+        <link refid="_physics_body_ghost_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5454">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeHeightfieldTerrainBuilder.h</label>
+        <link refid="_physics_shape_heightfield_terrain_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5449">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeCapsuleBuilder.h</label>
+        <link refid="_physics_shape_capsule_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5403">
+        <label>njligames-njlic_engine/njli/builders/AbstractBuilder.h</label>
+        <link refid="_abstract_builder_8h"/>
+        <childnode refid="5404" relation="include">
+        </childnode>
+        <childnode refid="5384" relation="include">
+        </childnode>
+        <childnode refid="5407" relation="include">
+        </childnode>
+        <childnode refid="5408" relation="include">
+        </childnode>
+        <childnode refid="5409" relation="include">
+        </childnode>
+        <childnode refid="5410" relation="include">
+        </childnode>
+        <childnode refid="5411" relation="include">
+        </childnode>
+        <childnode refid="5412" relation="include">
+        </childnode>
+        <childnode refid="5413" relation="include">
+        </childnode>
+        <childnode refid="5414" relation="include">
+        </childnode>
+        <childnode refid="5415" relation="include">
+        </childnode>
+        <childnode refid="5416" relation="include">
+        </childnode>
+        <childnode refid="5417" relation="include">
+        </childnode>
+        <childnode refid="5418" relation="include">
+        </childnode>
+        <childnode refid="5419" relation="include">
+        </childnode>
+        <childnode refid="5420" relation="include">
+        </childnode>
+        <childnode refid="5421" relation="include">
+        </childnode>
+        <childnode refid="5422" relation="include">
+        </childnode>
+        <childnode refid="5423" relation="include">
+        </childnode>
+        <childnode refid="5424" relation="include">
+        </childnode>
+        <childnode refid="5425" relation="include">
+        </childnode>
+        <childnode refid="5426" relation="include">
+        </childnode>
+        <childnode refid="5427" relation="include">
+        </childnode>
+        <childnode refid="5428" relation="include">
+        </childnode>
+        <childnode refid="5429" relation="include">
+        </childnode>
+        <childnode refid="5430" relation="include">
+        </childnode>
+        <childnode refid="5431" relation="include">
+        </childnode>
+        <childnode refid="5432" relation="include">
+        </childnode>
+        <childnode refid="5433" relation="include">
+        </childnode>
+        <childnode refid="5434" relation="include">
+        </childnode>
+        <childnode refid="5435" relation="include">
+        </childnode>
+        <childnode refid="5436" relation="include">
+        </childnode>
+        <childnode refid="5437" relation="include">
+        </childnode>
+        <childnode refid="5438" relation="include">
+        </childnode>
+        <childnode refid="5439" relation="include">
+        </childnode>
+        <childnode refid="5440" relation="include">
+        </childnode>
+        <childnode refid="5441" relation="include">
+        </childnode>
+        <childnode refid="5442" relation="include">
+        </childnode>
+        <childnode refid="5443" relation="include">
+        </childnode>
+        <childnode refid="5444" relation="include">
+        </childnode>
+        <childnode refid="5445" relation="include">
+        </childnode>
+        <childnode refid="5446" relation="include">
+        </childnode>
+        <childnode refid="5447" relation="include">
+        </childnode>
+        <childnode refid="5448" relation="include">
+        </childnode>
+        <childnode refid="5449" relation="include">
+        </childnode>
+        <childnode refid="5450" relation="include">
+        </childnode>
+        <childnode refid="5451" relation="include">
+        </childnode>
+        <childnode refid="5452" relation="include">
+        </childnode>
+        <childnode refid="5453" relation="include">
+        </childnode>
+        <childnode refid="5454" relation="include">
+        </childnode>
+        <childnode refid="5455" relation="include">
+        </childnode>
+        <childnode refid="5456" relation="include">
+        </childnode>
+        <childnode refid="5457" relation="include">
+        </childnode>
+        <childnode refid="5458" relation="include">
+        </childnode>
+        <childnode refid="5459" relation="include">
+        </childnode>
+        <childnode refid="5460" relation="include">
+        </childnode>
+        <childnode refid="5461" relation="include">
+        </childnode>
+        <childnode refid="5462" relation="include">
+        </childnode>
+        <childnode refid="5463" relation="include">
+        </childnode>
+        <childnode refid="5464" relation="include">
+        </childnode>
+        <childnode refid="5465" relation="include">
+        </childnode>
+        <childnode refid="5466" relation="include">
+        </childnode>
+        <childnode refid="5467" relation="include">
+        </childnode>
+        <childnode refid="5468" relation="include">
+        </childnode>
+        <childnode refid="5469" relation="include">
+        </childnode>
+        <childnode refid="5470" relation="include">
+        </childnode>
+        <childnode refid="5471" relation="include">
+        </childnode>
+        <childnode refid="5472" relation="include">
+        </childnode>
+        <childnode refid="5473" relation="include">
+        </childnode>
+        <childnode refid="5474" relation="include">
+        </childnode>
+        <childnode refid="5475" relation="include">
+        </childnode>
+        <childnode refid="5476" relation="include">
+        </childnode>
+        <childnode refid="5477" relation="include">
+        </childnode>
+        <childnode refid="5478" relation="include">
+        </childnode>
+        <childnode refid="5479" relation="include">
+        </childnode>
+        <childnode refid="5480" relation="include">
+        </childnode>
+        <childnode refid="5481" relation="include">
+        </childnode>
+        <childnode refid="5482" relation="include">
+        </childnode>
+        <childnode refid="5483" relation="include">
+        </childnode>
+        <childnode refid="5484" relation="include">
+        </childnode>
+        <childnode refid="5485" relation="include">
+        </childnode>
+        <childnode refid="5486" relation="include">
+        </childnode>
+        <childnode refid="5487" relation="include">
+        </childnode>
+        <childnode refid="5488" relation="include">
+        </childnode>
+        <childnode refid="5489" relation="include">
+        </childnode>
+        <childnode refid="5490" relation="include">
+        </childnode>
+        <childnode refid="5491" relation="include">
+        </childnode>
+        <childnode refid="5392" relation="include">
+        </childnode>
+        <childnode refid="5492" relation="include">
+        </childnode>
+        <childnode refid="5493" relation="include">
+        </childnode>
+        <childnode refid="5494" relation="include">
+        </childnode>
+        <childnode refid="5495" relation="include">
+        </childnode>
+        <childnode refid="5496" relation="include">
+        </childnode>
+        <childnode refid="5497" relation="include">
+        </childnode>
+        <childnode refid="5498" relation="include">
+        </childnode>
+        <childnode refid="5501" relation="include">
+        </childnode>
+        <childnode refid="5502" relation="include">
+        </childnode>
+        <childnode refid="5503" relation="include">
+        </childnode>
+        <childnode refid="5504" relation="include">
+        </childnode>
+        <childnode refid="5505" relation="include">
+        </childnode>
+        <childnode refid="5506" relation="include">
+        </childnode>
+        <childnode refid="5507" relation="include">
+        </childnode>
+        <childnode refid="5508" relation="include">
+        </childnode>
+        <childnode refid="5509" relation="include">
+        </childnode>
+        <childnode refid="5510" relation="include">
+        </childnode>
+        <childnode refid="5500" relation="include">
+        </childnode>
+        <childnode refid="5511" relation="include">
+        </childnode>
+        <childnode refid="5512" relation="include">
+        </childnode>
+        <childnode refid="5513" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5514" relation="include">
+        </childnode>
+        <childnode refid="5388" relation="include">
+        </childnode>
+        <childnode refid="5515" relation="include">
+        </childnode>
+        <childnode refid="5405" relation="include">
+        </childnode>
+        <childnode refid="5401" relation="include">
+        </childnode>
+        <childnode refid="5516" relation="include">
+        </childnode>
+        <childnode refid="5389" relation="include">
+        </childnode>
+        <childnode refid="5390" relation="include">
+        </childnode>
+        <childnode refid="5406" relation="include">
+        </childnode>
+        <childnode refid="5402" relation="include">
+        </childnode>
+        <childnode refid="5395" relation="include">
+        </childnode>
+        <childnode refid="5517" relation="include">
+        </childnode>
+        <childnode refid="5396" relation="include">
+        </childnode>
+        <childnode refid="5518" relation="include">
+        </childnode>
+        <childnode refid="5519" relation="include">
+        </childnode>
+        <childnode refid="5520" relation="include">
+        </childnode>
+        <childnode refid="5521" relation="include">
+        </childnode>
+        <childnode refid="5522" relation="include">
+        </childnode>
+        <childnode refid="5523" relation="include">
+        </childnode>
+        <childnode refid="5524" relation="include">
+        </childnode>
+        <childnode refid="5525" relation="include">
+        </childnode>
+        <childnode refid="5526" relation="include">
+        </childnode>
+        <childnode refid="5527" relation="include">
+        </childnode>
+        <childnode refid="5528" relation="include">
+        </childnode>
+        <childnode refid="5529" relation="include">
+        </childnode>
+        <childnode refid="5530" relation="include">
+        </childnode>
+        <childnode refid="5531" relation="include">
+        </childnode>
+        <childnode refid="5532" relation="include">
+        </childnode>
+        <childnode refid="5533" relation="include">
+        </childnode>
+        <childnode refid="5534" relation="include">
+        </childnode>
+        <childnode refid="5535" relation="include">
+        </childnode>
+        <childnode refid="5536" relation="include">
+        </childnode>
+        <childnode refid="5537" relation="include">
+        </childnode>
+        <childnode refid="5538" relation="include">
+        </childnode>
+        <childnode refid="5539" relation="include">
+        </childnode>
+        <childnode refid="5540" relation="include">
+        </childnode>
+        <childnode refid="5541" relation="include">
+        </childnode>
+        <childnode refid="5542" relation="include">
+        </childnode>
+        <childnode refid="5543" relation="include">
+        </childnode>
+        <childnode refid="5544" relation="include">
+        </childnode>
+        <childnode refid="5545" relation="include">
+        </childnode>
+        <childnode refid="5546" relation="include">
+        </childnode>
+        <childnode refid="5547" relation="include">
+        </childnode>
+        <childnode refid="5548" relation="include">
+        </childnode>
+        <childnode refid="5549" relation="include">
+        </childnode>
+        <childnode refid="5552" relation="include">
+        </childnode>
+        <childnode refid="5553" relation="include">
+        </childnode>
+        <childnode refid="5554" relation="include">
+        </childnode>
+        <childnode refid="5555" relation="include">
+        </childnode>
+        <childnode refid="5556" relation="include">
+        </childnode>
+        <childnode refid="5557" relation="include">
+        </childnode>
+        <childnode refid="5558" relation="include">
+        </childnode>
+        <childnode refid="5559" relation="include">
+        </childnode>
+        <childnode refid="5560" relation="include">
+        </childnode>
+        <childnode refid="5561" relation="include">
+        </childnode>
+        <childnode refid="5562" relation="include">
+        </childnode>
+        <childnode refid="5563" relation="include">
+        </childnode>
+        <childnode refid="5564" relation="include">
+        </childnode>
+        <childnode refid="5565" relation="include">
+        </childnode>
+        <childnode refid="5566" relation="include">
+        </childnode>
+        <childnode refid="5567" relation="include">
+        </childnode>
+        <childnode refid="5568" relation="include">
+        </childnode>
+        <childnode refid="5569" relation="include">
+        </childnode>
+        <childnode refid="5570" relation="include">
+        </childnode>
+        <childnode refid="5571" relation="include">
+        </childnode>
+      </node>
+      <node id="5501">
+        <label>njligames-njlic_engine/njli/graphics/DropdownHUD.h</label>
+        <link refid="_dropdown_h_u_d_8h"/>
+      </node>
+      <node id="5526">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintGeneric6Dof.h</label>
+        <link refid="_physics_constraint_generic6_dof_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5527" relation="include">
+        </childnode>
+      </node>
+      <node id="5416">
+        <label>njligames-njlic_engine/njli/builders/graphics/MaterialBuilder.h</label>
+        <link refid="_material_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5425">
+        <label>njligames-njlic_engine/njli/builders/LightBuilder.h</label>
+        <link refid="_light_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5528">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintHinge.h</label>
+        <link refid="_physics_constraint_hinge_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5468">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorCohesionBuilder.h</label>
+        <link refid="_steering_behavior_cohesion_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5486">
+        <label>njligames-njlic_engine/njli/builders/ThreadBuilder.h</label>
+        <link refid="_thread_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5574">
+        <label>njligames-njlic_engine/njli/WorldSocket.h</label>
+        <link refid="_world_socket_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5466">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorArriveBuilder.h</label>
+        <link refid="_steering_behavior_arrive_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5472">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorHideBuilder.h</label>
+        <link refid="_steering_behavior_hide_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5567">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorWander.h</label>
+        <link refid="_steering_behavior_wander_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5530">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintSlider.h</label>
+        <link refid="_physics_constraint_slider_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5480">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorWanderBuilder.h</label>
+        <link refid="_steering_behavior_wander_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5535">
+        <label>njligames-njlic_engine/njli/physics/PhysicsWorld.h</label>
+        <link refid="_physics_world_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5422">
+        <label>njligames-njlic_engine/njli/builders/ImageBuilder.h</label>
+        <link refid="_image_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5428">
+        <label>njligames-njlic_engine/njli/builders/NodeStateMachineBuilder.h</label>
+        <link refid="_node_state_machine_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5402">
+        <label>njligames-njlic_engine/njli/SceneStateMachine.h</label>
+        <link refid="_scene_state_machine_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5410">
+        <label>njligames-njlic_engine/njli/builders/CollisionResponseBuilder.h</label>
+        <link refid="_collision_response_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5426">
+        <label>njligames-njlic_engine/njli/builders/NodeBuilder.h</label>
+        <link refid="_node_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5564">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorSeek.h</label>
+        <link refid="_steering_behavior_seek_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5434">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintConeTwistBuilder.h</label>
+        <link refid="_physics_constraint_cone_twist_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5452">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConvexTriangleMeshBuilder.h</label>
+        <link refid="_physics_shape_convex_triangle_mesh_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5478">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorSeparationBuilder.h</label>
+        <link refid="_steering_behavior_separation_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5537">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeBox.h</label>
+        <link refid="_physics_shape_box_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5464">
+        <label>njligames-njlic_engine/njli/builders/SpriteFrameAtlasBuilder.h</label>
+        <link refid="_sprite_frame_atlas_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5571">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachineWeighted.h</label>
+        <link refid="_steering_behavior_machine_weighted_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5405">
+        <label>njligames-njlic_engine/njli/WorldState.h</label>
+        <link refid="_world_state_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5511">
+        <label>njligames-njlic_engine/njli/graphics/SpriteFrameAtlas.h</label>
+        <link refid="_sprite_frame_atlas_8h"/>
+        <childnode refid="5500" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5477">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorSeekBuilder.h</label>
+        <link refid="_steering_behavior_seek_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5529">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintPointToPoint.h</label>
+        <link refid="_physics_constraint_point_to_point_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5583">
+        <label>njligames-njlic_engine/njli/platform/DeviceMouse.h</label>
+        <link refid="_device_mouse_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5405" relation="include">
+        </childnode>
+        <childnode refid="5575" relation="include">
+        </childnode>
+      </node>
+      <node id="5569">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachineDithered.h</label>
+        <link refid="_steering_behavior_machine_dithered_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5453">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeCylinderBuilder.h</label>
+        <link refid="_physics_shape_cylinder_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5575">
+        <label>njligames-njlic_engine/njli/platform/WorldInput.h</label>
+        <link refid="_world_input_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+      </node>
+      <node id="5494">
+        <label>njligames-njlic_engine/njli/Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5443">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsFieldBuilder.h</label>
+        <link refid="_physics_field_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5522">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBodySoft.h</label>
+        <link refid="_physics_body_soft_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5507">
+        <label>njligames-njlic_engine/njli/graphics/ParticleEmitter.h</label>
+        <link refid="_particle_emitter_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5445">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsWorldBuilder.h</label>
+        <link refid="_physics_world_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5427">
+        <label>njligames-njlic_engine/njli/builders/NodeStateBuilder.h</label>
+        <link refid="_node_state_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5568">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h</label>
+        <link refid="_steering_behavior_machine_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5569" relation="include">
+        </childnode>
+        <childnode refid="5570" relation="include">
+        </childnode>
+        <childnode refid="5571" relation="include">
+        </childnode>
+      </node>
+      <node id="5547">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeSphere.h</label>
+        <link refid="_physics_shape_sphere_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5491">
+        <label>njligames-njlic_engine/njli/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5544">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeCylinder.h</label>
+        <link refid="_physics_shape_cylinder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5442">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsContactBuilder.h</label>
+        <link refid="_physics_contact_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5545">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeHeightfieldTerrain.h</label>
+        <link refid="_physics_shape_heightfield_terrain_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5456">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeSphereBuilder.h</label>
+        <link refid="_physics_shape_sphere_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5585">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_WAV.h</label>
+        <link refid="_wrapper___w_a_v_8h"/>
+      </node>
+      <node id="5469">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorEvadeBuilder.h</label>
+        <link refid="_steering_behavior_evade_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5473">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorInterposeBuilder.h</label>
+        <link refid="_steering_behavior_interpose_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5565">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorSeparation.h</label>
+        <link refid="_steering_behavior_separation_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5479">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorWallAvoidanceBuilder.h</label>
+        <link refid="_steering_behavior_wall_avoidance_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5531">
+        <label>njligames-njlic_engine/njli/physics/PhysicsCloseContact.h</label>
+        <link refid="_physics_close_contact_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5386">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5560">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorInterpose.h</label>
+        <link refid="_steering_behavior_interpose_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5525">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintFixed.h</label>
+        <link refid="_physics_constraint_fixed_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5441">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsCloseContactBuilder.h</label>
+        <link refid="_physics_close_contact_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5562">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorOffsetPursuit.h</label>
+        <link refid="_steering_behavior_offset_pursuit_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5577">
+        <label>njligames-njlic_engine/njli/JLIFactoryTypes.h</label>
+        <link refid="_j_l_i_factory_types_8h"/>
+        <childnode refid="5384" relation="include">
+        </childnode>
+        <childnode refid="5491" relation="include">
+        </childnode>
+        <childnode refid="5496" relation="include">
+        </childnode>
+        <childnode refid="5498" relation="include">
+        </childnode>
+        <childnode refid="5505" relation="include">
+        </childnode>
+        <childnode refid="5506" relation="include">
+        </childnode>
+        <childnode refid="5508" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+        <childnode refid="5513" relation="include">
+        </childnode>
+        <childnode refid="5573" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5514" relation="include">
+        </childnode>
+        <childnode refid="5388" relation="include">
+        </childnode>
+        <childnode refid="5515" relation="include">
+        </childnode>
+        <childnode refid="5519" relation="include">
+        </childnode>
+        <childnode refid="5535" relation="include">
+        </childnode>
+      </node>
+      <node id="5400">
+        <label>njligames-njlic_engine/njli/AbstractStateMachine.h</label>
+        <link refid="_abstract_state_machine_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5401" relation="include">
+        </childnode>
+        <childnode refid="5390" relation="include">
+        </childnode>
+        <childnode refid="5402" relation="include">
+        </childnode>
+      </node>
+      <node id="5395">
+        <label>njligames-njlic_engine/njli/StopWatch.h</label>
+        <link refid="_stop_watch_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5389">
+        <label>njligames-njlic_engine/njli/NodeState.h</label>
+        <link refid="_node_state_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5424">
+        <label>njligames-njlic_engine/njli/builders/LevelOfDetailBuilder.h</label>
+        <link refid="_level_of_detail_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5458">
+        <label>njligames-njlic_engine/njli/builders/PlaneBuilder.h</label>
+        <link refid="_plane_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5514">
+        <label>njligames-njlic_engine/njli/WorldFactory.h</label>
+        <link refid="_world_factory_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5582">
+        <label>njligames-njlic_engine/njli/platform/DeviceKey.h</label>
+        <link refid="_device_key_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+      </node>
+      <node id="5440">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintSliderBuilder.h</label>
+        <link refid="_physics_constraint_slider_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5465">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorAlignmentBuilder.h</label>
+        <link refid="_steering_behavior_alignment_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5504">
+        <label>njligames-njlic_engine/njli/graphics/Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5467">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorBuilder.h</label>
+        <link refid="_steering_behavior_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5398">
+        <label>njligames-njlic_engine/njli/AbstractObject.h</label>
+        <link refid="_abstract_object_8h"/>
+        <childnode refid="5399" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+        <childnode refid="5573" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5394" relation="include">
+        </childnode>
+        <childnode refid="5574" relation="include">
+        </childnode>
+        <childnode refid="5575" relation="include">
+        </childnode>
+        <childnode refid="5551" relation="include">
+        </childnode>
+      </node>
+      <node id="5584">
+        <label>njligames-njlic_engine/njli/platform/DeviceTouch.h</label>
+        <link refid="_device_touch_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5405" relation="include">
+        </childnode>
+        <childnode refid="5406" relation="include">
+        </childnode>
+        <childnode refid="5575" relation="include">
+        </childnode>
+      </node>
+      <node id="5498">
+        <label>njligames-njlic_engine/njli/graphics/Geometry.h</label>
+        <link refid="_geometry_8h"/>
+        <childnode refid="5497" relation="include">
+        </childnode>
+        <childnode refid="5499" relation="include">
+        </childnode>
+        <childnode refid="5500" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5558">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorFollowPath.h</label>
+        <link refid="_steering_behavior_follow_path_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5385">
+        <label>njligames-njlic_engine/njli/WorldLuaVirtualMachine.h</label>
+        <link refid="_world_lua_virtual_machine_8h"/>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5563">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorPursuit.h</label>
+        <link refid="_steering_behavior_pursuit_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5444">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsRayContactBuilder.h</label>
+        <link refid="_physics_ray_contact_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5470">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorFleeBuilder.h</label>
+        <link refid="_steering_behavior_flee_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5476">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorPursuitBuilder.h</label>
+        <link refid="_steering_behavior_pursuit_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5408">
+        <label>njligames-njlic_engine/njli/builders/CameraBuilder.h</label>
+        <link refid="_camera_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5392">
+        <label>njligames-njlic_engine/njli/Clock.h</label>
+        <link refid="_clock_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5500">
+        <label>njligames-njlic_engine/njli/graphics/Sprite2D.h</label>
+        <link refid="_sprite2_d_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5462">
+        <label>njligames-njlic_engine/njli/builders/SkinnerBuilder.h</label>
+        <link refid="_skinner_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5419">
+        <label>njligames-njlic_engine/njli/builders/graphics/SliderHUDBuilder.h</label>
+        <link refid="_slider_h_u_d_builder_8h"/>
+      </node>
+      <node id="5423">
+        <label>njligames-njlic_engine/njli/builders/JsonJLIBuilder.h</label>
+        <link refid="_json_j_l_i_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5520">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBodyGhost.h</label>
+        <link refid="_physics_body_ghost_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5499">
+        <label>njligames-njlic_engine/njli/graphics/Plane.h</label>
+        <link refid="_plane_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5490">
+        <label>njligames-njlic_engine/njli/builders/XmlBuilder.h</label>
+        <link refid="_xml_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5517">
+        <label>njligames-njlic_engine/njli/Thread.h</label>
+        <link refid="_thread_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5541">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeCone.h</label>
+        <link refid="_physics_shape_cone_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5505">
+        <label>njligames-njlic_engine/njli/graphics/Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5383">
+        <label>njligames-njlic_engine/njli/AbstractActionable.h</label>
+        <link refid="_abstract_actionable_8h"/>
+        <childnode refid="5384" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5388" relation="include">
+        </childnode>
+      </node>
+      <node id="5518">
+        <label>njligames-njlic_engine/njli/Xml.h</label>
+        <link refid="_xml_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5448">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBvhTriangleMeshBuilder.h</label>
+        <link refid="_physics_shape_bvh_triangle_mesh_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5481">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineBuilder.h</label>
+        <link refid="_steering_behavior_machine_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5513">
+        <label>njligames-njlic_engine/njli/Image.h</label>
+        <link refid="_image_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5475">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorOffsetPursuitBuilder.h</label>
+        <link refid="_steering_behavior_offset_pursuit_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5516">
+        <label>njligames-njlic_engine/njli/JsonJLI.h</label>
+        <link refid="_json_j_l_i_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5559">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorHide.h</label>
+        <link refid="_steering_behavior_hide_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5538">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeBox2D.h</label>
+        <link refid="_physics_shape_box2_d_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5553">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorAlignment.h</label>
+        <link refid="_steering_behavior_alignment_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5411">
+        <label>njligames-njlic_engine/njli/builders/FontBuilder.h</label>
+        <link refid="_font_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5542">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeConvexHull.h</label>
+        <link refid="_physics_shape_convex_hull_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5561">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorObstacleAvoidance.h</label>
+        <link refid="_steering_behavior_obstacle_avoidance_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5523">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraint.h</label>
+        <link refid="_physics_constraint_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5524" relation="include">
+        </childnode>
+        <childnode refid="5525" relation="include">
+        </childnode>
+        <childnode refid="5526" relation="include">
+        </childnode>
+        <childnode refid="5528" relation="include">
+        </childnode>
+        <childnode refid="5529" relation="include">
+        </childnode>
+        <childnode refid="5530" relation="include">
+        </childnode>
+      </node>
+      <node id="5463">
+        <label>njligames-njlic_engine/njli/builders/sound/SoundBuilder.h</label>
+        <link refid="_sound_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5382">
+        <label>njligames-njlic_engine/njli/platform/Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="5383" relation="include">
+        </childnode>
+        <childnode refid="5391" relation="include">
+        </childnode>
+        <childnode refid="5397" relation="include">
+        </childnode>
+        <childnode refid="5398" relation="include">
+        </childnode>
+        <childnode refid="5399" relation="include">
+        </childnode>
+        <childnode refid="5404" relation="include">
+        </childnode>
+        <childnode refid="5576" relation="include">
+        </childnode>
+        <childnode refid="5577" relation="include">
+        </childnode>
+        <childnode refid="5403" relation="include">
+        </childnode>
+        <childnode refid="5407" relation="include">
+        </childnode>
+        <childnode refid="5408" relation="include">
+        </childnode>
+        <childnode refid="5409" relation="include">
+        </childnode>
+        <childnode refid="5410" relation="include">
+        </childnode>
+        <childnode refid="5411" relation="include">
+        </childnode>
+        <childnode refid="5412" relation="include">
+        </childnode>
+        <childnode refid="5413" relation="include">
+        </childnode>
+        <childnode refid="5414" relation="include">
+        </childnode>
+        <childnode refid="5415" relation="include">
+        </childnode>
+        <childnode refid="5416" relation="include">
+        </childnode>
+        <childnode refid="5417" relation="include">
+        </childnode>
+        <childnode refid="5418" relation="include">
+        </childnode>
+        <childnode refid="5419" relation="include">
+        </childnode>
+        <childnode refid="5420" relation="include">
+        </childnode>
+        <childnode refid="5421" relation="include">
+        </childnode>
+        <childnode refid="5422" relation="include">
+        </childnode>
+        <childnode refid="5423" relation="include">
+        </childnode>
+        <childnode refid="5424" relation="include">
+        </childnode>
+        <childnode refid="5425" relation="include">
+        </childnode>
+        <childnode refid="5426" relation="include">
+        </childnode>
+        <childnode refid="5427" relation="include">
+        </childnode>
+        <childnode refid="5428" relation="include">
+        </childnode>
+        <childnode refid="5429" relation="include">
+        </childnode>
+        <childnode refid="5430" relation="include">
+        </childnode>
+        <childnode refid="5431" relation="include">
+        </childnode>
+        <childnode refid="5432" relation="include">
+        </childnode>
+        <childnode refid="5433" relation="include">
+        </childnode>
+        <childnode refid="5434" relation="include">
+        </childnode>
+        <childnode refid="5435" relation="include">
+        </childnode>
+        <childnode refid="5436" relation="include">
+        </childnode>
+        <childnode refid="5437" relation="include">
+        </childnode>
+        <childnode refid="5438" relation="include">
+        </childnode>
+        <childnode refid="5439" relation="include">
+        </childnode>
+        <childnode refid="5440" relation="include">
+        </childnode>
+        <childnode refid="5441" relation="include">
+        </childnode>
+        <childnode refid="5442" relation="include">
+        </childnode>
+        <childnode refid="5443" relation="include">
+        </childnode>
+        <childnode refid="5444" relation="include">
+        </childnode>
+        <childnode refid="5445" relation="include">
+        </childnode>
+        <childnode refid="5446" relation="include">
+        </childnode>
+        <childnode refid="5447" relation="include">
+        </childnode>
+        <childnode refid="5448" relation="include">
+        </childnode>
+        <childnode refid="5449" relation="include">
+        </childnode>
+        <childnode refid="5450" relation="include">
+        </childnode>
+        <childnode refid="5451" relation="include">
+        </childnode>
+        <childnode refid="5452" relation="include">
+        </childnode>
+        <childnode refid="5453" relation="include">
+        </childnode>
+        <childnode refid="5454" relation="include">
+        </childnode>
+        <childnode refid="5455" relation="include">
+        </childnode>
+        <childnode refid="5456" relation="include">
+        </childnode>
+        <childnode refid="5457" relation="include">
+        </childnode>
+        <childnode refid="5458" relation="include">
+        </childnode>
+        <childnode refid="5459" relation="include">
+        </childnode>
+        <childnode refid="5460" relation="include">
+        </childnode>
+        <childnode refid="5461" relation="include">
+        </childnode>
+        <childnode refid="5462" relation="include">
+        </childnode>
+        <childnode refid="5463" relation="include">
+        </childnode>
+        <childnode refid="5464" relation="include">
+        </childnode>
+        <childnode refid="5465" relation="include">
+        </childnode>
+        <childnode refid="5466" relation="include">
+        </childnode>
+        <childnode refid="5467" relation="include">
+        </childnode>
+        <childnode refid="5468" relation="include">
+        </childnode>
+        <childnode refid="5469" relation="include">
+        </childnode>
+        <childnode refid="5470" relation="include">
+        </childnode>
+        <childnode refid="5471" relation="include">
+        </childnode>
+        <childnode refid="5472" relation="include">
+        </childnode>
+        <childnode refid="5473" relation="include">
+        </childnode>
+        <childnode refid="5474" relation="include">
+        </childnode>
+        <childnode refid="5475" relation="include">
+        </childnode>
+        <childnode refid="5476" relation="include">
+        </childnode>
+        <childnode refid="5477" relation="include">
+        </childnode>
+        <childnode refid="5478" relation="include">
+        </childnode>
+        <childnode refid="5479" relation="include">
+        </childnode>
+        <childnode refid="5480" relation="include">
+        </childnode>
+        <childnode refid="5481" relation="include">
+        </childnode>
+        <childnode refid="5482" relation="include">
+        </childnode>
+        <childnode refid="5483" relation="include">
+        </childnode>
+        <childnode refid="5484" relation="include">
+        </childnode>
+        <childnode refid="5485" relation="include">
+        </childnode>
+        <childnode refid="5486" relation="include">
+        </childnode>
+        <childnode refid="5487" relation="include">
+        </childnode>
+        <childnode refid="5488" relation="include">
+        </childnode>
+        <childnode refid="5489" relation="include">
+        </childnode>
+        <childnode refid="5490" relation="include">
+        </childnode>
+        <childnode refid="5493" relation="include">
+        </childnode>
+        <childnode refid="5578" relation="include">
+        </childnode>
+        <childnode refid="5579" relation="include">
+        </childnode>
+        <childnode refid="5572" relation="include">
+        </childnode>
+        <childnode refid="5386" relation="include">
+        </childnode>
+        <childnode refid="5514" relation="include">
+        </childnode>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5535" relation="include">
+        </childnode>
+        <childnode refid="5580" relation="include">
+        </childnode>
+        <childnode refid="5581" relation="include">
+        </childnode>
+        <childnode refid="5585" relation="include">
+        </childnode>
+        <childnode refid="5551" relation="include">
+        </childnode>
+      </node>
+      <node id="5388">
+        <label>njligames-njlic_engine/njli/Node.h</label>
+        <link refid="_node_8h"/>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5389" relation="include">
+        </childnode>
+        <childnode refid="5390" relation="include">
+        </childnode>
+      </node>
+      <node id="5390">
+        <label>njligames-njlic_engine/njli/NodeStateMachine.h</label>
+        <link refid="_node_state_machine_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5418">
+        <label>njligames-njlic_engine/njli/builders/graphics/ShaderProgramBuilder.h</label>
+        <link refid="_shader_program_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5471">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorFollowPathBuilder.h</label>
+        <link refid="_steering_behavior_follow_path_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5492">
+        <label>njligames-njlic_engine/njli/CollisionResponse.h</label>
+        <link refid="_collision_response_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5421">
+        <label>njligames-njlic_engine/njli/builders/graphics/TextboxHUDBuilder.h</label>
+        <link refid="_textbox_h_u_d_builder_8h"/>
+      </node>
+      <node id="5549">
+        <label>njligames-njlic_engine/njli/sound/Sound.h</label>
+        <link refid="_sound_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5550" relation="include">
+        </childnode>
+        <childnode refid="5551" relation="include">
+        </childnode>
+      </node>
+      <node id="5548">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeStaticPlane.h</label>
+        <link refid="_physics_shape_static_plane_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5404">
+        <label>njligames-njlic_engine/njli/AbstractState.h</label>
+        <link refid="_abstract_state_8h"/>
+        <childnode refid="5400" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5385" relation="include">
+        </childnode>
+        <childnode refid="5405" relation="include">
+        </childnode>
+        <childnode refid="5389" relation="include">
+        </childnode>
+        <childnode refid="5406" relation="include">
+        </childnode>
+      </node>
+      <node id="5546">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeMultiSphere.h</label>
+        <link refid="_physics_shape_multi_sphere_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5459">
+        <label>njligames-njlic_engine/njli/builders/SceneBuilder.h</label>
+        <link refid="_scene_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5484">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineWeightedBuilder.h</label>
+        <link refid="_steering_behavior_machine_weighted_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5439">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintPointToPointBuilder.h</label>
+        <link refid="_physics_constraint_point_to_point_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5413">
+        <label>njligames-njlic_engine/njli/builders/graphics/CheckboxHUDBuilder.h</label>
+        <link refid="_checkbox_h_u_d_builder_8h"/>
+      </node>
+      <node id="5572">
+        <label>njligames-njlic_engine/njli/graphics/WorldHUD.h</label>
+        <link refid="_world_h_u_d_8h"/>
+      </node>
+      <node id="5461">
+        <label>njligames-njlic_engine/njli/builders/SceneStateMachineBuilder.h</label>
+        <link refid="_scene_state_machine_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5438">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintHingeBuilder.h</label>
+        <link refid="_physics_constraint_hinge_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5508">
+        <label>njligames-njlic_engine/njli/graphics/ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5488">
+        <label>njligames-njlic_engine/njli/builders/WorldStateBuilder.h</label>
+        <link refid="_world_state_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5489">
+        <label>njligames-njlic_engine/njli/builders/WorldStateMachineBuilder.h</label>
+        <link refid="_world_state_machine_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5455">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeMultiSphereBuilder.h</label>
+        <link refid="_physics_shape_multi_sphere_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5429">
+        <label>njligames-njlic_engine/njli/builders/ParticleEmitterBuilder.h</label>
+        <link refid="_particle_emitter_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5414">
+        <label>njligames-njlic_engine/njli/builders/graphics/DropdownHUDBuilder.h</label>
+        <link refid="_dropdown_h_u_d_builder_8h"/>
+      </node>
+      <node id="5536">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShape.h</label>
+        <link refid="_physics_shape_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+        <childnode refid="5537" relation="include">
+        </childnode>
+        <childnode refid="5538" relation="include">
+        </childnode>
+        <childnode refid="5539" relation="include">
+        </childnode>
+        <childnode refid="5540" relation="include">
+        </childnode>
+        <childnode refid="5541" relation="include">
+        </childnode>
+        <childnode refid="5542" relation="include">
+        </childnode>
+        <childnode refid="5543" relation="include">
+        </childnode>
+        <childnode refid="5544" relation="include">
+        </childnode>
+        <childnode refid="5545" relation="include">
+        </childnode>
+        <childnode refid="5546" relation="include">
+        </childnode>
+        <childnode refid="5547" relation="include">
+        </childnode>
+        <childnode refid="5548" relation="include">
+        </childnode>
+      </node>
+      <node id="5539">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeBvhTriangleMesh.h</label>
+        <link refid="_physics_shape_bvh_triangle_mesh_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5493">
+        <label>njligames-njlic_engine/njli/CubeBuilder.h</label>
+        <link refid="_cube_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5510">
+        <label>njligames-njlic_engine/njli/graphics/SliderHUD.h</label>
+        <link refid="_slider_h_u_d_8h"/>
+      </node>
+      <node id="5457">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeStaticPlaneBuilder.h</label>
+        <link refid="_physics_shape_static_plane_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5437">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintGeneric6DofSpringBuilder.h</label>
+        <link refid="_physics_constraint_generic6_dof_spring_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5532">
+        <label>njligames-njlic_engine/njli/physics/PhysicsContact.h</label>
+        <link refid="_physics_contact_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5412">
+        <label>njligames-njlic_engine/njli/builders/graphics/ButtonHUDBuilder.h</label>
+        <link refid="_button_h_u_d_builder_8h"/>
+      </node>
+      <node id="5397">
+        <label>njligames-njlic_engine/njli/AbstractDecorator.h</label>
+        <link refid="_abstract_decorator_8h"/>
+        <childnode refid="5398" relation="include">
+        </childnode>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5417">
+        <label>njligames-njlic_engine/njli/builders/graphics/MaterialPropertyBuilder.h</label>
+        <link refid="_material_property_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5540">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeCapsule.h</label>
+        <link refid="_physics_shape_capsule_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5580">
+        <label>njligames-njlic_engine/njli/platform/ColorUtil.h</label>
+        <link refid="_color_util_8h"/>
+      </node>
+      <node id="5581">
+        <label>njligames-njlic_engine/njli/platform/DeviceInputTime.h</label>
+        <link refid="_device_input_time_8h"/>
+        <childnode refid="5582" relation="include">
+        </childnode>
+        <childnode refid="5583" relation="include">
+        </childnode>
+        <childnode refid="5584" relation="include">
+        </childnode>
+      </node>
+      <node id="5557">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorFlee.h</label>
+        <link refid="_steering_behavior_flee_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5396">
+        <label>njligames-njlic_engine/njli/Timer.h</label>
+        <link refid="_timer_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5420">
+        <label>njligames-njlic_engine/njli/builders/graphics/Sprite2DBuilder.h</label>
+        <link refid="_sprite2_d_builder_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+      <node id="5506">
+        <label>njligames-njlic_engine/njli/graphics/MaterialProperty.h</label>
+        <link refid="_material_property_8h"/>
+        <childnode refid="5387" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structrgb" prot="public">rgb</innerclass>
+    <innerclass refid="structhsv" prot="public">hsv</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_util_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" prot="public" static="no">
+        <name>NULL</name>
+        <initializer>((<ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *)0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="22" column="9" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_util_8h_1a598a3330b3c21701223ee0ca14316eca" prot="public" static="no">
+        <name>PI</name>
+        <initializer>3.14159265358979323846264338327f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="25" column="9" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_util_8h_1a6b20d41d6252e9871430c242cb1a56e7" prot="public" static="no">
+        <name>BUFFER_SIZE</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="42" column="9" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_util_8h_1a2ff401e087cf786c38a6812723e94473" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char s8</definition>
+        <argsstring></argsstring>
+        <name>s8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="31" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1aed742c436da53c1080638ce6ef7d13de" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char u8</definition>
+        <argsstring></argsstring>
+        <name>u8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="32" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1a2e9bf6983da73775aa86158c825bf777" prot="public" static="no">
+        <type>short</type>
+        <definition>typedef short s16</definition>
+        <argsstring></argsstring>
+        <name>s16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="33" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" prot="public" static="no">
+        <type>unsigned short</type>
+        <definition>typedef unsigned short u16</definition>
+        <argsstring></argsstring>
+        <name>u16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="34" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int s32</definition>
+        <argsstring></argsstring>
+        <name>s32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="35" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" prot="public" static="no">
+        <type>unsigned int</type>
+        <definition>typedef unsigned int u32</definition>
+        <argsstring></argsstring>
+        <name>u32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="36" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" prot="public" static="no">
+        <type>signed long long</type>
+        <definition>typedef signed long long s64</definition>
+        <argsstring></argsstring>
+        <name>s64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="37" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" prot="public" static="no">
+        <type>unsigned long long</type>
+        <definition>typedef unsigned long long u64</definition>
+        <argsstring></argsstring>
+        <name>u64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="38" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" prot="public" static="no">
+        <type>float</type>
+        <definition>typedef float f32</definition>
+        <argsstring></argsstring>
+        <name>f32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="39" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" prot="public" static="no">
+        <type>double</type>
+        <definition>typedef double f64</definition>
+        <argsstring></argsstring>
+        <name>f64</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="40" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_util_8h_1ae88bd4b701da0facce543b4b1cf2913e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>char</type>
+        <definition>char IsOn</definition>
+        <argsstring>(const s32 value, const s32 bit)</argsstring>
+        <name>IsOn</name>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="44" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1a86d8a45efa3de86d9cbd56e47f817ae5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 On</definition>
+        <argsstring>(const s32 value, const s32 bit)</argsstring>
+        <name>On</name>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="51" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1ad1051d2c3a51590b7ff6d8eebf207767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 Off</definition>
+        <argsstring>(const s32 value, const s32 bit)</argsstring>
+        <name>Off</name>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>bit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="56" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1a49d91d981da3589ae6425aec87b8b2ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 clampf</definition>
+        <argsstring>(const f32 value, const f32 min, const f32 max)</argsstring>
+        <name>clampf</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="65" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="65" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1a2ab20be98ddc67c99178eecd4e4fce2d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 clamp</definition>
+        <argsstring>(const s32 value, const s32 min, const s32 max)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="70" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1a06c3fcc0066b352d32be5c1af8836395" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 clampColor</definition>
+        <argsstring>(const f32 color)</argsstring>
+        <name>clampColor</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="75" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1aa1324f2b342af4bee334ecbba1f0d8ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 isPowerOfTwo</definition>
+        <argsstring>(s32 v)</argsstring>
+        <name>isPowerOfTwo</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="77" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1a9f316c57e6595e69794eb7404799cef3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 fixPowerOfTwo</definition>
+        <argsstring>(s32 v)</argsstring>
+        <name>fixPowerOfTwo</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="79" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="79" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1aa9504068d05a6b4a9f772dbfa9d0e0ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structhsv" kindref="compound">hsv</ref></type>
+        <definition>hsv rgb2hsv</definition>
+        <argsstring>(rgb in)</argsstring>
+        <name>rgb2hsv</name>
+        <param>
+          <type><ref refid="structrgb" kindref="compound">rgb</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="106" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="106" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="_util_8h_1a4a66ca1d47428638881abe32bfd7affc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structrgb" kindref="compound">rgb</ref></type>
+        <definition>rgb hsv2rgb</definition>
+        <argsstring>(hsv in)</argsstring>
+        <name>hsv2rgb</name>
+        <param>
+          <type><ref refid="structhsv" kindref="compound">hsv</ref></type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/Util.h" line="152" column="1" bodyfile="njligames-njlic_engine/njli/platform/Util.h" bodystart="152" bodyend="211"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Util.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>JLIGameEngineTest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>James<sp/>Folk<sp/>on<sp/>11/9/14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2014<sp/>James<sp/>Folk.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>JLIGameEngineTest_Util_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JLIGameEngineTest_Util_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;Game.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_log_8h" kindref="compound">Log.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;csignal&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NULL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="_util_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NULL<sp/>((void<sp/>*)0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_util_8h_1a598a3330b3c21701223ee0ca14316eca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PI<sp/>3.14159265358979323846264338327f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//#if<sp/>!(defined(NDEBUG))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>JLI_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_util_8h_1a2ff401e087cf786c38a6812723e94473" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a2ff401e087cf786c38a6812723e94473" kindref="member">s8</ref>;</highlight></codeline>
+<codeline lineno="32" refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref>;</highlight></codeline>
+<codeline lineno="33" refid="_util_8h_1a2e9bf6983da73775aa86158c825bf777" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a2e9bf6983da73775aa86158c825bf777" kindref="member">s16</ref>;</highlight></codeline>
+<codeline lineno="34" refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">short</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref>;</highlight></codeline>
+<codeline lineno="35" refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref>;</highlight></codeline>
+<codeline lineno="36" refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref>;</highlight></codeline>
+<codeline lineno="37" refid="_util_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde" kindref="member">s64</ref>;</highlight></codeline>
+<codeline lineno="38" refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref>;</highlight></codeline>
+<codeline lineno="39" refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref>;</highlight></codeline>
+<codeline lineno="40" refid="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" kindref="member">f64</ref>;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_util_8h_1a6b20d41d6252e9871430c242cb1a56e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUFFER_SIZE<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_util_8h_1ae88bd4b701da0facce543b4b1cf2913e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1ae88bd4b701da0facce543b4b1cf2913e" kindref="member">IsOn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>bit)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>value<sp/>&amp;<sp/>bit;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/>(v<sp/>==<sp/>0)<sp/>?<sp/>0<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_util_8h_1a86d8a45efa3de86d9cbd56e47f817ae5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="_util_8h_1a86d8a45efa3de86d9cbd56e47f817ae5" kindref="member">On</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>bit)<sp/></highlight><highlight class="comment">//,<sp/>bool<sp/>on<sp/>=<sp/>true)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>|<sp/>bit;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_util_8h_1ad1051d2c3a51590b7ff6d8eebf207767" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/><ref refid="_util_8h_1ad1051d2c3a51590b7ff6d8eebf207767" kindref="member">Off</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>bit)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_util_8h_1ae88bd4b701da0facce543b4b1cf2913e" kindref="member">IsOn</ref>(value,<sp/>bit))</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value<sp/>^<sp/>bit;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>value;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_util_8h_1a49d91d981da3589ae6425aec87b8b2ba" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/><ref refid="_util_8h_1a49d91d981da3589ae6425aec87b8b2ba" kindref="member">clampf</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>max)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(value<sp/>&lt;<sp/>min)<sp/>?<sp/>min<sp/>:<sp/>((value<sp/>&gt;<sp/>max)<sp/>?<sp/>max<sp/>:<sp/>value);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_util_8h_1a2ab20be98ddc67c99178eecd4e4fce2d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/><ref refid="_util_8h_1a2ab20be98ddc67c99178eecd4e4fce2d" kindref="member">clamp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>min,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>max)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(value<sp/>&lt;<sp/>min)<sp/>?<sp/>min<sp/>:<sp/>((value<sp/>&gt;<sp/>max)<sp/>?<sp/>max<sp/>:<sp/>value);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_util_8h_1a06c3fcc0066b352d32be5c1af8836395" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/><ref refid="_util_8h_1a06c3fcc0066b352d32be5c1af8836395" kindref="member">clampColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>color)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a49d91d981da3589ae6425aec87b8b2ba" kindref="member">clampf</ref>(color,<sp/>0.0f,<sp/>1.0f);<sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_util_8h_1aa1324f2b342af4bee334ecbba1f0d8ea" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/><ref refid="_util_8h_1aa1324f2b342af4bee334ecbba1f0d8ea" kindref="member">isPowerOfTwo</ref>(<ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>v)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v<sp/>&amp;&amp;<sp/>!(v<sp/>&amp;<sp/>(v<sp/>-<sp/>1));<sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_util_8h_1a9f316c57e6595e69794eb7404799cef3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/><ref refid="_util_8h_1a9f316c57e6595e69794eb7404799cef3" kindref="member">fixPowerOfTwo</ref>(<ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>v)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>v--;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>v<sp/>|=<sp/>v<sp/>&gt;&gt;<sp/>1;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>v<sp/>|=<sp/>v<sp/>&gt;&gt;<sp/>2;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>v<sp/>|=<sp/>v<sp/>&gt;&gt;<sp/>4;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>v<sp/>|=<sp/>v<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>v<sp/>|=<sp/>v<sp/>&gt;&gt;<sp/>16;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>v++;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="structrgb" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94" refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref>;<sp/></highlight><highlight class="comment">//<sp/>percent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structrgb_1a1c51cad47a05c797643776f9357a8749" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref>;<sp/></highlight><highlight class="comment">//<sp/>percent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref>;<sp/></highlight><highlight class="comment">//<sp/>percent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}<sp/><ref refid="structrgb" kindref="compound">rgb</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="structhsv" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101" refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref>;<sp/></highlight><highlight class="comment">//<sp/>angle<sp/>in<sp/>degrees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref>;<sp/></highlight><highlight class="comment">//<sp/>percent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;<sp/></highlight><highlight class="comment">//<sp/>percent</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/><ref refid="structhsv" kindref="compound">hsv</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="_util_8h_1aa9504068d05a6b4a9f772dbfa9d0e0ca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structhsv" kindref="compound">hsv</ref><sp/><ref refid="_util_8h_1aa9504068d05a6b4a9f772dbfa9d0e0ca" kindref="member">rgb2hsv</ref>(<ref refid="structrgb" kindref="compound">rgb</ref><sp/>in)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="structhsv" kindref="compound">hsv</ref><sp/>out;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>min,<sp/>max,<sp/>delta;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>min<sp/>=<sp/>in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>&lt;<sp/>in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>?<sp/>in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>:<sp/>in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>min<sp/>=<sp/>min<sp/>&lt;<sp/>in.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>?<sp/>min<sp/>:<sp/>in.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>max<sp/>=<sp/>in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>&gt;<sp/>in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>?<sp/>in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>:<sp/>in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>max<sp/>=<sp/>max<sp/>&gt;<sp/>in.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>?<sp/>max<sp/>:<sp/>in.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>out.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref><sp/>=<sp/>max;<sp/></highlight><highlight class="comment">//<sp/>v</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>delta<sp/>=<sp/>max<sp/>-<sp/>min;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(delta<sp/>&lt;<sp/>0.00001)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//<sp/>undefined,<sp/>maybe<sp/>nan?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(max<sp/>&gt;<sp/>0.0)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>if<sp/>Max<sp/>is<sp/>==<sp/>0,<sp/>this<sp/>divide<sp/>would<sp/>cause<sp/>a<sp/>crash</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref><sp/>=<sp/>(delta<sp/>/<sp/>max);<sp/></highlight><highlight class="comment">//<sp/>s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>max<sp/>is<sp/>0,<sp/>then<sp/>r<sp/>=<sp/>g<sp/>=<sp/>b<sp/>=<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>s<sp/>=<sp/>0,<sp/>v<sp/>is<sp/>undefined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref><sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>=<sp/>NAN;<sp/></highlight><highlight class="comment">//<sp/>its<sp/>now<sp/>undefined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>&gt;=<sp/>max)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&gt;<sp/>is<sp/>bogus,<sp/>just<sp/>keeps<sp/>compilor<sp/>happy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>=<sp/>(in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>-<sp/>in.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref>)<sp/>/<sp/>delta;<sp/></highlight><highlight class="comment">//<sp/>between<sp/>yellow<sp/>&amp;<sp/>magenta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>&gt;=<sp/>max)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>=<sp/>2.0<sp/>+<sp/>(in.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>-<sp/>in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref>)<sp/>/<sp/>delta;<sp/></highlight><highlight class="comment">//<sp/>between<sp/>cyan<sp/>&amp;<sp/>yellow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>=<sp/>4.0<sp/>+<sp/>(in.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>-<sp/>in.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref>)<sp/>/<sp/>delta;<sp/></highlight><highlight class="comment">//<sp/>between<sp/>magenta<sp/>&amp;<sp/>cyan</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>*=<sp/>60.0;<sp/></highlight><highlight class="comment">//<sp/>degrees</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>&lt;<sp/>0.0)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>out.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref><sp/>+=<sp/>360.0;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152" refid="_util_8h_1a4a66ca1d47428638881abe32bfd7affc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structrgb" kindref="compound">rgb</ref><sp/><ref refid="_util_8h_1a4a66ca1d47428638881abe32bfd7affc" kindref="member">hsv2rgb</ref>(<ref refid="structhsv" kindref="compound">hsv</ref><sp/>in)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hh,<sp/>p,<sp/>q,<sp/>t,<sp/>ff;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>i;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><ref refid="structrgb" kindref="compound">rgb</ref><sp/>out;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref><sp/>&lt;=<sp/>0.0)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//<sp/>&lt;<sp/>is<sp/>bogus,<sp/>just<sp/>shuts<sp/>up<sp/>warnings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>hh<sp/>=<sp/>in.<ref refid="structhsv_1aa27eea5f2a89b941eead7139330d12f4" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(hh<sp/>&gt;=<sp/>360.0)</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>hh<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/>hh<sp/>/=<sp/>60.0;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>i<sp/>=<sp/>(long)hh;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>ff<sp/>=<sp/>hh<sp/>-<sp/>i;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/>p<sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref><sp/>*<sp/>(1.0<sp/>-<sp/>in.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref>);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/>q<sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref><sp/>*<sp/>(1.0<sp/>-<sp/>(in.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref><sp/>*<sp/>ff));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>t<sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref><sp/>*<sp/>(1.0<sp/>-<sp/>(in.<ref refid="structhsv_1a3cbdc4bf500068b5c4466c4272114a23" kindref="member">s</ref><sp/>*<sp/>(1.0<sp/>-<sp/>ff)));</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(i)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>q;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>q;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>t;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1ad5a38e43f70fb57d6da052745ea5ff90" kindref="member">r</ref><sp/>=<sp/>in.<ref refid="structhsv_1a572c01d23590231adffe6f9b16df20d3" kindref="member">v</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1a1c51cad47a05c797643776f9357a8749" kindref="member">g</ref><sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>out.<ref refid="structrgb_1aa3e45a2c26ad435fe29dfea49f16831e" kindref="member">b</ref><sp/>=<sp/>q;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>out;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/platform/Util.h"/>
+  </compounddef>
+</doxygen>

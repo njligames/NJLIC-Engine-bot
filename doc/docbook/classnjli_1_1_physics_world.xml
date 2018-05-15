@@ -1,0 +1,1481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_physics_world">
+<title>njli::PhysicsWorld class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_physics_world_8h">&lt;PhysicsWorld.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::PhysicsWorld</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_physics_world__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::PhysicsWorld</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_physics_world__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classnjli_1_1_physics_world_1_1_custom_filter_callback">njli::PhysicsWorld::CustomFilterCallback</link></para>
+<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f32 m_SimulationSpeed</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f32 m_TimeStep</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btDefaultCollisionConfiguration * m_collisionConfiguration</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btCollisionDispatcher * m_dispatcher</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btBroadphaseInterface * m_overlappingPairCache</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btSequentialImpulseConstraintSolver * m_solver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btDiscreteDynamicsWorld * m_dynamicsWorld</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btOverlapFilterCallback * m_btOverlapFilterCallback</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btGhostPairCallback * m_btGhostPairCallback</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; btPairCachingGhostObject * &gt; * m_GhostObjects</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btBroadphaseInterface * m_broadphase</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; struct btBroadphaseProxy * &gt; m_proxies</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; Node * &gt; m_collisionNodes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_Paused</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btVoronoiSimplexSolver * m_simplexSolver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btMinkowskiPenetrationDepthSolver * m_pdSolver</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_world_1a64f4e12a96831a18cf568fb338193379">PhysicsWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_world_1a11c079e930dfb8d4d5e7834b22f2d3ee">PhysicsWorld</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_world_1aaa5561b67b4b8ddd1e71b26e1f9e9cb7">PhysicsWorld</link> (
+const <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_world_1a92c908a89e5d1b8f061bf706ee3df631">BT_DECLARE_ALIGNED_ALLOCATOR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_physics_world_1ae2f4d16a40aaaf5b65d091861c5069ff">~PhysicsWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> &amp; <link linkend="classnjli_1_1_physics_world_1ac324be9f6e37e0057c461202203863d2">operator=</link> (
+const <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a5e3b0fcf00fc8a8151510c86088c034f">debugDrawWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_physics_world_1af738be88df0902fe6921d46a46bced9e">calculateSerializeBufferSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1aac4422bdcfb063b92aa0a39c889e5b07">serialize</link> (
+<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * dataBuffer, btSerializer * )<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_physics_world_1a5966246f8f7902403e51f6b6c481ebfc">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_physics_world_1af4b51d0d7e4bf4da6b1be6525c7b7937">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_world_1a9ce27a6f2a6386f5a5e09bab5094e8c6">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a2d13fac3772ac6a2417cbdfb9ec65ed2">update</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> timeStep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1ac3fe9c56c88ef269803ee550975f0a4c">render</link> (
+<link linkend="classnjli_1_1_camera">Camera</link> * camera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a55433c9f9a854a45b2135d6e15423f8b">setGravity</link> (
+const btVector3 &amp; gravity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btVector3 <link linkend="classnjli_1_1_physics_world_1a2ab946117c0c074c384956b9df0fed8b">getGravity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a6349b4cedb5718009109d9614e8cc8b7">setSimulationSpeed</link> (
+const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> speed)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_physics_world_1a9ea8ef8cac36b815fa7431bd7fbdd045">getSimulationSpeed</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_physics_world_1ae347ecd60cf40a997e712bf0ff51f3f8">getTimeStep</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a0fc4b0b757a0fa74f289a9186e26fc5d">setPreTickCallback</link> (
+btInternalTickCallback callback)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a727d1fa784603c527fd210a6b9950842">setPostTickCallback</link> (
+btInternalTickCallback callback)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1a3b7a0136977fba6c34da2c3b8b598536">rayTestClosest</link> (
+const btVector3 &amp; rayFromWorld, const btVector3 &amp; rayToWorld, <link linkend="classnjli_1_1_physics_ray_contact">PhysicsRayContact</link> &amp; rayContact, <link linkend="namespacenjli_1af7b302a2b48bb644f85c88080925c974">njliBitCategories</link> collisionGroup, <link linkend="namespacenjli_1af7b302a2b48bb644f85c88080925c974">njliBitCategories</link> collisionMask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1a211942b503f8a7d2932504a2c7e5ac66">rayTestAll</link> (
+const btVector3 &amp; rayFromWorld, const btVector3 &amp; rayToWorld, btAlignedObjectArray&lt; <link linkend="classnjli_1_1_physics_ray_contact">PhysicsRayContact</link> *&gt; &amp; rayContacts, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> &amp; numContacts, <link linkend="namespacenjli_1af7b302a2b48bb644f85c88080925c974">njliBitCategories</link> collisionGroup, <link linkend="namespacenjli_1af7b302a2b48bb644f85c88080925c974">njliBitCategories</link> collisionMask)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1ad29d2afe4cb405f8217662aa07cb4a2b">enablePause</link> (
+bool enable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1a2f98c36debbef81fed25d92a20d06688">isPaused</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1a2fcb8da2f603c342ac9f72e33e3df9b7">addRigidBody</link> (
+<link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * body)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1a90eadf9bf47cb07aaa058e38ffb81f2a">removeRigidBody</link> (
+<link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * body)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1a01043c9eab9fa91adafa957ef1e57293">addConstraint</link> (
+<link linkend="classnjli_1_1_physics_constraint">PhysicsConstraint</link> * constraint, bool disableCollisionsBetweenLinkedBodies)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_physics_world_1aa881c299b2550503cf9b678db6eedfc8">removeConstraint</link> (
+<link linkend="classnjli_1_1_physics_constraint">PhysicsConstraint</link> * constraint)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_physics_world_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_physics_world_1a83a8876ae63b92804004cf3febe76573">create</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="classnjli_1_1_physics_world_1ac4ca71716ed832be357f15f8262c8448">getPointer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link> <link linkend="classnjli_1_1_physics_world_1a4ffddf141a426a5a07d0ac19f1913811">getPointerValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a4fc4bcd9d1930911474210c047372fc0">serializeObject</link> (
+class btSerializer * serializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> ** <link linkend="classnjli_1_1_physics_world_1a79e85fb35958b4613526181e9c9bdb86">createArray</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a2abce5fcfb7f547fdd056717ac44247f">destroyArray</link> (
+<link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> ** array, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * <link linkend="classnjli_1_1_physics_world_1a7bbce96ef8fd04a42161cccf07eb1944">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * <link linkend="classnjli_1_1_physics_world_1a52397ea3dd323182160d9c39ccdb635b">create</link> (
+const <link linkend="classnjli_1_1_physics_world_builder">PhysicsWorldBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * <link linkend="classnjli_1_1_physics_world_1a99e15fd93e236e959f2b7ce4a284279c">clone</link> (
+const <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> &amp; physics)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * <link linkend="classnjli_1_1_physics_world_1a03aca8773a10c85fd06e045542104e1c">copy</link> (
+const <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1a6d6e3b4603d5804e69c6644094c11cc4">destroy</link> (
+<link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * physicsWorld)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1ac46ba955f16710f12fd0a57ccf5ed7f0">load</link> (
+<link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> &amp; object, lua_State * L, int stack_index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_physics_world_1adfed64f0c077cb328745d8ad18a5e217">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_world_1ae6873032c9a97589b406c69f33383fdb">ghostObjectCollisionTest</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>&lt;#Description#&gt; </para>
+                <para>Definition at line 60 of file PhysicsWorld.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>PhysicsWorld.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_physics_world_1a64f4e12a96831a18cf568fb338193379">
+                <title>njli::PhysicsWorld::PhysicsWorld ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a11c079e930dfb8d4d5e7834b22f2d3ee">
+                <title>njli::PhysicsWorld::PhysicsWorld (const AbstractBuilder &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1aaa5561b67b4b8ddd1e71b26e1f9e9cb7">
+                <title>njli::PhysicsWorld::PhysicsWorld (const PhysicsWorld &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a92c908a89e5d1b8f061bf706ee3df631">
+                <title>njli::PhysicsWorld::BT_DECLARE_ALIGNED_ALLOCATOR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ae2f4d16a40aaaf5b65d091861c5069ff">
+                <title>virtual njli::PhysicsWorld::~PhysicsWorld ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ac324be9f6e37e0057c461202203863d2">
+                <title>PhysicsWorld&amp; njli::PhysicsWorld::operator= (const PhysicsWorld &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a5e3b0fcf00fc8a8151510c86088c034f">
+                <title>void njli::PhysicsWorld::debugDrawWorld ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1af738be88df0902fe6921d46a46bced9e">
+                <title>virtual s32 njli::PhysicsWorld::calculateSerializeBufferSize () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1aac4422bdcfb063b92aa0a39c889e5b07">
+                <title>virtual void njli::PhysicsWorld::serialize (void *dataBuffer, btSerializer *) const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 15:02:19</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>dataBuffer</entry>
+                                <entry>
+<para>&lt;#dataBuffer description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>btSerializer</entry>
+                                <entry>
+<para>&lt;#btSerializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a5966246f8f7902403e51f6b6c481ebfc">
+                <title>virtual const char* njli::PhysicsWorld::getClassName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1af4b51d0d7e4bf4da6b1be6525c7b7937">
+                <title>virtual s32 njli::PhysicsWorld::getType () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a9ce27a6f2a6386f5a5e09bab5094e8c6">
+                <title>njli::PhysicsWorld::operator std::string () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a2d13fac3772ac6a2417cbdfb9ec65ed2">
+                <title>void njli::PhysicsWorld::update (f32 timeStep)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>timeStep</entry>
+                                <entry>
+<para>&lt;#timeStep description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ac3fe9c56c88ef269803ee550975f0a4c">
+                <title>void njli::PhysicsWorld::render (Camera *camera)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>camera</entry>
+                                <entry>
+<para>&lt;#camera description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a55433c9f9a854a45b2135d6e15423f8b">
+                <title>void njli::PhysicsWorld::setGravity (const btVector3 &amp;gravity)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>gravity</entry>
+                                <entry>
+<para>&lt;#gravity description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a2ab946117c0c074c384956b9df0fed8b">
+                <title>btVector3 njli::PhysicsWorld::getGravity () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a6349b4cedb5718009109d9614e8cc8b7">
+                <title>void njli::PhysicsWorld::setSimulationSpeed (const f32 speed)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>speed</entry>
+                                <entry>
+<para>&lt;#speed description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a9ea8ef8cac36b815fa7431bd7fbdd045">
+                <title>f32 njli::PhysicsWorld::getSimulationSpeed () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ae347ecd60cf40a997e712bf0ff51f3f8">
+                <title>f32 njli::PhysicsWorld::getTimeStep () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a0fc4b0b757a0fa74f289a9186e26fc5d">
+                <title>void njli::PhysicsWorld::setPreTickCallback (btInternalTickCallback callback)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>callback</entry>
+                                <entry>
+<para>&lt;#callback description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a727d1fa784603c527fd210a6b9950842">
+                <title>void njli::PhysicsWorld::setPostTickCallback (btInternalTickCallback callback)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>callback</entry>
+                                <entry>
+<para>&lt;#callback description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a3b7a0136977fba6c34da2c3b8b598536">
+                <title>bool njli::PhysicsWorld::rayTestClosest (const btVector3 &amp;rayFromWorld, const btVector3 &amp;rayToWorld, PhysicsRayContact &amp;rayContact, njliBitCategories collisionGroup=JLI_BIT_CATEGORY_DefaultFilter, njliBitCategories collisionMask=JLI_BIT_CATEGORY_AllFilter) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rayFromWorld</entry>
+                                <entry>
+<para>&lt;#rayFromWorld description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>rayToWorld</entry>
+                                <entry>
+<para>&lt;#rayToWorld description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>rayContact</entry>
+                                <entry>
+<para>&lt;#rayContact description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>collisionGroup</entry>
+                                <entry>
+<para>&lt;#collisionGroup description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>collisionMask</entry>
+                                <entry>
+<para>&lt;#collisionMask description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a211942b503f8a7d2932504a2c7e5ac66">
+                <title>bool njli::PhysicsWorld::rayTestAll (const btVector3 &amp;rayFromWorld, const btVector3 &amp;rayToWorld, btAlignedObjectArray&lt; PhysicsRayContact *&gt; &amp;rayContacts, s32 &amp;numContacts, njliBitCategories collisionGroup=JLI_BIT_CATEGORY_DefaultFilter, njliBitCategories collisionMask=JLI_BIT_CATEGORY_AllFilter) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>rayFromWorld</entry>
+                                <entry>
+<para>&lt;#rayFromWorld description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>rayToWorld</entry>
+                                <entry>
+<para>&lt;#rayToWorld description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>rayContacts</entry>
+                                <entry>
+<para>&lt;#rayContacts description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>numContacts</entry>
+                                <entry>
+<para>&lt;#numContacts description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>collisionGroup</entry>
+                                <entry>
+<para>&lt;#collisionGroup description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>collisionMask</entry>
+                                <entry>
+<para>&lt;#collisionMask description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ad29d2afe4cb405f8217662aa07cb4a2b">
+                <title>void njli::PhysicsWorld::enablePause (bool enable=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a2f98c36debbef81fed25d92a20d06688">
+                <title>bool njli::PhysicsWorld::isPaused () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a2fcb8da2f603c342ac9f72e33e3df9b7">
+                <title>bool njli::PhysicsWorld::addRigidBody (PhysicsBodyRigid *body)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>body</entry>
+                                <entry>
+<para>&lt;#body description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a90eadf9bf47cb07aaa058e38ffb81f2a">
+                <title>bool njli::PhysicsWorld::removeRigidBody (PhysicsBodyRigid *body)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>body</entry>
+                                <entry>
+<para>&lt;#body description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a01043c9eab9fa91adafa957ef1e57293">
+                <title>bool njli::PhysicsWorld::addConstraint (PhysicsConstraint *constraint, bool disableCollisionsBetweenLinkedBodies=true)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>constraint</entry>
+                                <entry>
+<para>&lt;#constraint description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>disableCollisionsBetweenLinkedBodies</entry>
+                                <entry>
+<para>&lt;#disableCollisionsBetweenLinkedBodies description#&gt; <literallayout> @return &lt;#return value description#&gt;</literallayout> </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1aa881c299b2550503cf9b678db6eedfc8">
+                <title>bool njli::PhysicsWorld::removeConstraint (PhysicsConstraint *constraint)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>constraint</entry>
+                                <entry>
+<para>&lt;#constraint description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a83a8876ae63b92804004cf3febe76573">
+                <title>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create (const AbstractBuilder &amp;builder) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ac4ca71716ed832be357f15f8262c8448">
+                <title>const void* njli::AbstractFactoryObject::getPointer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a4ffddf141a426a5a07d0ac19f1913811">
+                <title>u64 njli::AbstractFactoryObject::getPointerValue () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a4fc4bcd9d1930911474210c047372fc0">
+                <title>virtual void njli::AbstractFactoryObject::serializeObject (class btSerializer *serializer) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>serializer</entry>
+                                <entry>
+<para>&lt;#serializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a79e85fb35958b4613526181e9c9bdb86">
+                <title>static PhysicsWorld** njli::PhysicsWorld::createArray (const u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a2abce5fcfb7f547fdd056717ac44247f">
+                <title>static void njli::PhysicsWorld::destroyArray (PhysicsWorld **array, const u32 size=0)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>array</entry>
+                                <entry>
+<para>&lt;#array description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a7bbce96ef8fd04a42161cccf07eb1944">
+                <title>static PhysicsWorld* njli::PhysicsWorld::create ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a52397ea3dd323182160d9c39ccdb635b">
+                <title>static PhysicsWorld* njli::PhysicsWorld::create (const PhysicsWorldBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a99e15fd93e236e959f2b7ce4a284279c">
+                <title>static PhysicsWorld* njli::PhysicsWorld::clone (const PhysicsWorld &amp;physics)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>physics</entry>
+                                <entry>
+<para>&lt;#physics description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a03aca8773a10c85fd06e045542104e1c">
+                <title>static PhysicsWorld* njli::PhysicsWorld::copy (const PhysicsWorld &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1a6d6e3b4603d5804e69c6644094c11cc4">
+                <title>static void njli::PhysicsWorld::destroy (PhysicsWorld *physicsWorld)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>physicsWorld</entry>
+                                <entry>
+<para>&lt;#physicsWorld description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ac46ba955f16710f12fd0a57ccf5ed7f0">
+                <title>static void njli::PhysicsWorld::load (PhysicsWorld &amp;object, lua_State *L, int stack_index)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>L</entry>
+                                <entry>
+<para>&lt;#L description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stack_index</entry>
+                                <entry>
+<para>&lt;#stack_index description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1adfed64f0c077cb328745d8ad18a5e217">
+                <title>static u32 njli::PhysicsWorld::type ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_world_1ae6873032c9a97589b406c69f33383fdb">
+                <title>void njli::PhysicsWorld::ghostObjectCollisionTest ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

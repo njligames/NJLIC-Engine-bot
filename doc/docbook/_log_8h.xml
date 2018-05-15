@@ -1,0 +1,498 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_log_8h">
+    <title>Log.h File Reference</title>
+    <programlisting>#include &quot;Macros.h&quot;</programlisting>
+    <programlisting>#include &quot;SDL_assert.h&quot;</programlisting>
+    <programlisting>#include &quot;SDL_config.h&quot;</programlisting>
+    <programlisting>#include &quot;SDL_log.h&quot;</programlisting>
+<para>Include dependency diagram for Log.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_log_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Log.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_log_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ad03084521a78f069edda4960ef078e93">LUA_WRAPPER_LOGGING</link> 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ad49afa178ec4521d7021b7b0702d5db1">FMOD_LOGGING_ON</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a4ae434427436c69e2d65f41208958ce0">njli_luawrite</link> <link linkend="_log_8h_1aec62af3b7029d530f8a2a3a92b6f6364">LUA_WRITE</link>(c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1af14a46f6f51a3142c39994ac6354b57f">SCRIPT_ERROR</link> <link linkend="_log_8h_1a9a2b9ceca7bf08dd77eb272ade7d0084">_script_error</link>(tag, &quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__, __func__,         \
+                __VA_ARGS__);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1adc22d45f643dc817497df90cc02bf701">CRASH</link> /*__builtin_trap()*/ <link linkend="_log_8h_1a9c36de417a4ccc86e249d89ea07d8f8e">_script_crash</link>()</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1af0f5b5dd163750aef913cc0858b5d3f0">DEBUG_LOG_PRINT_V</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1a78efe282a34305e3723a7161fb785f06">_debug_log_v</link>(tag, &quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__, __func__,    \
+                     __VA_ARGS__);                                             \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1aee53a8a2621ddb7d1bbc9b0ca5a982d0">DEBUG_LOG_PRINT_D</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1a66226250d9741ce1e2bb3da485c15ccc">_debug_log_d</link>(tag, &quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__, __func__,    \
+                     __VA_ARGS__);                                             \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a18b5ceb19695891ea4079d1385809bb6">DEBUG_LOG_PRINT_W</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1acafecbb68ba49a5d0cde797c14f22812">_debug_log_w</link>(tag, &quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__, __func__,    \
+                     __VA_ARGS__);                                             \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a027235ba85c1a6314d8f8a32c05f6175">DEBUG_LOG_PRINT_E</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1ae657b1ed7534487c51976789e2d2c0c2">_debug_log_e</link>(tag, &quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__, __func__,    \
+                     __VA_ARGS__);                                             \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ad5ee87790648f8d2f260fab5fcb164b1">SDL_assertCheck</link> do                                                                           \
+    {                                                                          \
+      char string[3584];                                                       \
+      snprintf(string, (3584 - 1), fmt, ##args);                               \
+      if ((condition) == 0)                                          \
+        {                                                                      \
+          SDL_LogError(SDL_LOG_CATEGORY_TEST, &quot;Assert &apos;%s&apos;: %s&quot;, string,       \
+                       &quot;Failed&quot;);                                              \
+        }                                                                      \
+      else                                                                     \
+        {                                                                      \
+          /*                SDL_Log(&quot;Assert &apos;%s&apos;: %s&quot;, string, &quot;Passed&quot;);*/    \
+        }                                                                      \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1abc93d4c7479c9cfe34fd99c5d47d42ad">SDL_assertPrint</link> do                                                                           \
+    {                                                                          \
+      <link linkend="_log_8h_1ad5ee87790648f8d2f260fab5fcb164b1">SDL_assertCheck</link>((condition), fmt, ##args);                               \
+      SDL_assert((condition));                                                 \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a6477a35a45a62b17c166482051cc7a15">DEBUG_ASSERT_PRINT</link> do                                                                           \
+    {                                                                          \
+      if (!(condition))                                                        \
+        {                                                                      \
+          if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                      \
+            <link linkend="_log_8h_1a64ad63c6a78800487a7bf7a3036b1bd9">_debug_log_stderr</link>(&quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__,          \
+                              __func__, __VA_ARGS__);                          \
+          <link linkend="_log_8h_1adc22d45f643dc817497df90cc02bf701">CRASH</link>();                                                             \
+        }                                                                      \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a804c0845ab7de9fddac03e9a7dadc2ee">DEBUG_WARN_PRINT</link> do                                                                           \
+    {                                                                          \
+      if (!(condition))                                                        \
+        {                                                                      \
+          if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                      \
+            <link linkend="_log_8h_1acafecbb68ba49a5d0cde797c14f22812">_debug_log_w</link>(&quot;%s:%d:%s(): &quot; fmt, __FILE__, __LINE__, __func__,     \
+                         __VA_ARGS__);                                         \
+        }                                                                      \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a20f686a106ec929a8c06764aecbf37cc">DEBUG_LOG_V</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1a78efe282a34305e3723a7161fb785f06">_debug_log_v</link>(tag, fmt, __VA_ARGS__);                                   \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a1a4e0672ab0b08c6d9b8d17c59ba4b37">DEBUG_LOG_D</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1a66226250d9741ce1e2bb3da485c15ccc">_debug_log_d</link>(tag, fmt, __VA_ARGS__);                                   \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ad55d2448f9da3e6491c66d9772d6501f">DEBUG_LOG_W</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1acafecbb68ba49a5d0cde797c14f22812">_debug_log_w</link>(tag, fmt, __VA_ARGS__);                                   \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ade6de648bbfe0c4046b4a0e81c9739dc">DEBUG_LOG_E</link> do                                                                           \
+    {                                                                          \
+      if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                          \
+        <link linkend="_log_8h_1ae657b1ed7534487c51976789e2d2c0c2">_debug_log_e</link>(tag, fmt, __VA_ARGS__);                                   \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a51f117f04e2c130220124132f82b8233">DEBUG_WARN_LOG</link> do                                                                           \
+    {                                                                          \
+      if (!(condition))                                                        \
+        {                                                                      \
+          if (<link linkend="_log_8h_1a44d8ca8ecfccda385a2802f51e3dd234">LOGGING_ON</link>)                                                      \
+            <link linkend="_log_8h_1acafecbb68ba49a5d0cde797c14f22812">_debug_log_w</link>(fmt, __VA_ARGS__);                                    \
+        }                                                                      \
+    }                                                                          \
+  while (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a5bb3457330d5d35e5043b837f97b8d25">DEBUG_PRINT</link> <link linkend="_log_8h_1a1a4e0672ab0b08c6d9b8d17c59ba4b37">DEBUG_LOG_D</link>(&quot;DEFAULT&quot;, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1aa97e8dc28005a1241103bef65128944b">DEBUG_PRINTF</link> <link linkend="_log_8h_1a1a4e0672ab0b08c6d9b8d17c59ba4b37">DEBUG_LOG_D</link>(&quot;DEFAULT&quot;, fmt, __VA_ARGS__)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1aec9547293d27900202e316167a193d90">DEBUG_VERBOSE</link> <link linkend="_log_8h_1a20f686a106ec929a8c06764aecbf37cc">DEBUG_LOG_V</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a6eb965ee9f9ddacf359c1904315ba724">DEBUG_DEBUG</link> <link linkend="_log_8h_1a1a4e0672ab0b08c6d9b8d17c59ba4b37">DEBUG_LOG_D</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1aa19c9adfd1dfdf4e09026d910c9cb76c">DEBUG_WARN</link> <link linkend="_log_8h_1ad55d2448f9da3e6491c66d9772d6501f">DEBUG_LOG_W</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a947c8bc8a191ae93d6297fac9aba37ee">DEBUG_ERROR</link> <link linkend="_log_8h_1ade6de648bbfe0c4046b4a0e81c9739dc">DEBUG_LOG_E</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a215cf9ab11255457243b82024f4c1e03">DEBUG_LOG_WRITE_V</link> <link linkend="_log_8h_1af0f5b5dd163750aef913cc0858b5d3f0">DEBUG_LOG_PRINT_V</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ac2edd874468b62d0c794d830c73617c5">DEBUG_LOG_WRITE_D</link> <link linkend="_log_8h_1aee53a8a2621ddb7d1bbc9b0ca5a982d0">DEBUG_LOG_PRINT_D</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a65c172d2e2cb9e25ee4670e6d226fe95">DEBUG_LOG_WRITE_W</link> <link linkend="_log_8h_1a18b5ceb19695891ea4079d1385809bb6">DEBUG_LOG_PRINT_W</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a94131c832d840abf36600bd7c935446c">DEBUG_LOG_WRITE_E</link> <link linkend="_log_8h_1a027235ba85c1a6314d8f8a32c05f6175">DEBUG_LOG_PRINT_E</link>(tag, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a3c23ab1e103703b3517528ad68fd06cc">DEBUG_ASSERT_WRITE</link> <link linkend="_log_8h_1a6477a35a45a62b17c166482051cc7a15">DEBUG_ASSERT_PRINT</link>(condition, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1ae1b3c7ce535c2483510bb98c1176d5e7">DEBUG_WARN_WRITE</link> <link linkend="_log_8h_1a804c0845ab7de9fddac03e9a7dadc2ee">DEBUG_WARN_PRINT</link>(condition, &quot;%s&quot;, text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a8c242b4461ea505703d8384a309d4000">DEBUG_GL_ERROR_PRINT</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1afd7c1a8acb51b1311cccca3f54cedb82">DEBUG_GL_ERROR_WRITE</link> <link linkend="_log_8h_1a8c242b4461ea505703d8384a309d4000">DEBUG_GL_ERROR_PRINT</link>(op, &quot;%s&quot;, &quot;&quot;)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a6e9a44965497365b718f668007b2fea4">btVector2_BASE</link> &quot;{\&quot;btVector2\&quot;:[{\&quot;x\&quot;:\&quot;%f\&quot;, \&quot;y\&quot;:\&quot;%f\&quot;}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1aa8cb4d33b38de9781f60d8388cf2d602">btVector3_BASE</link> &quot;{\&quot;btVector3\&quot;:[{\&quot;x\&quot;:\&quot;%f\&quot;, \&quot;y\&quot;:\&quot;%f\&quot;, \&quot;z\&quot;:\&quot;%f\&quot;}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a4294e447357545539394c6e0d4d66279">btVector4_BASE</link> &quot;{\&quot;btVector4\&quot;:[{\&quot;x\&quot;:\&quot;%f\&quot;, \&quot;y\&quot;:\&quot;%f\&quot;, \&quot;z\&quot;:\&quot;%f\&quot;, \&quot;w\&quot;:\&quot;%f\&quot;}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a2286da5fafe4334325f4023429546fec">btManifold_BASE</link> &quot;{\&quot;btManifoldPoint\&quot;:[{\&quot;distance\&quot;:\&quot;%f\&quot;, \&quot;lifetime\&quot;:\&quot;%d\&quot;, &quot;          \
+  &quot;\&quot;Position <link linkend="_util_8h_1a86d8a45efa3de86d9cbd56e47f817ae5">On</link> A\&quot;:%s, \&quot;Position <link linkend="_util_8h_1a86d8a45efa3de86d9cbd56e47f817ae5">On</link> B\&quot;:%s, \&quot;Applied Impulse\&quot;:\&quot;%f\&quot;}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a99109c3dbdb13448f1d74077ea50add9">btQuaternion_BASE</link> &quot;{\&quot;btQuaternion\&quot;:[{\&quot;angle\&quot;:\&quot;%f\&quot;, \&quot;axis\&quot;:%s}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1abc56f223195427220eac4d21d39a9e01">btMatrix3x3_BASE</link> &quot;{\&quot;btMatrix3x3\&quot;:[{\&quot;xx\&quot;:\&quot;%f\&quot;, \&quot;xy\&quot;:\&quot;%f\&quot;, \&quot;xz\&quot;:\&quot;%f\&quot;, &quot;           \
+  &quot;\&quot;yx\&quot;:\&quot;%f\&quot;, \&quot;yy\&quot;:\&quot;%f\&quot;, \&quot;yz\&quot;:\&quot;%f\&quot;, \&quot;zx\&quot;:\&quot;%f\&quot;, &quot;               \
+  &quot;\&quot;zy\&quot;:\&quot;%f\&quot;, \&quot;zz\&quot;:\&quot;%f\&quot;}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_log_8h_1a5d705a0226b0149f9b25309b7ac2527b">btTransform_BASE</link> &quot;{\&quot;btTransform\&quot;:[{\&quot;xx\&quot;:\&quot;%f\&quot;, \&quot;xy\&quot;:\&quot;%f\&quot;, \&quot;xz\&quot;:\&quot;%f\&quot;, &quot;           \
+  &quot;\&quot;xw\&quot;:\&quot;%f\&quot;, \&quot;yx\&quot;:\&quot;%f\&quot;, \&quot;yy\&quot;:\&quot;%f\&quot;, \&quot;yz\&quot;:\&quot;%f\&quot;, &quot;               \
+  &quot;\&quot;yw\&quot;:\&quot;%f\&quot;, \&quot;zx\&quot;:\&quot;%f\&quot;, \&quot;zy\&quot;:\&quot;%f\&quot;, \&quot;zz\&quot;:\&quot;%f\&quot;, &quot;               \
+  &quot;\&quot;zw\&quot;:\&quot;%f\&quot;, \&quot;wx\&quot;:\&quot;%f\&quot;, \&quot;wy\&quot;:\&quot;%f\&quot;, \&quot;wz\&quot;:\&quot;%f\&quot;, &quot;               \
+  &quot;\&quot;ww\&quot;:\&quot;%f\&quot;}]}&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1a78efe282a34305e3723a7161fb785f06">_debug_log_v</link> (
+const char * tag, const char * text, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1a66226250d9741ce1e2bb3da485c15ccc">_debug_log_d</link> (
+const char * tag, const char * text, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1acafecbb68ba49a5d0cde797c14f22812">_debug_log_w</link> (
+const char * tag, const char * text, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1ae657b1ed7534487c51976789e2d2c0c2">_debug_log_e</link> (
+const char * tag, const char * text, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1a9a2b9ceca7bf08dd77eb272ade7d0084">_script_error</link> (
+const char * tag, const char * text, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1a9c36de417a4ccc86e249d89ea07d8f8e">_script_crash</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1aec62af3b7029d530f8a2a3a92b6f6364">LUA_WRITE</link> (
+const char * c)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1a64ad63c6a78800487a7bf7a3036b1bd9">_debug_log_stderr</link> (
+const char * tag, const char * fmt, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="_log_8h_1abb8935393618ec31c12666227a970bfa">njliSleep</link> (
+unsigned int _ms)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="_log_8h_1a6a92ead199a6daa32718d5d8be44db07">string_format</link> (
+const char * fmt, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/njli/platform/Log.h</para>
+    </simplesect>
+</section>

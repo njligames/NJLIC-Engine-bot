@@ -1,0 +1,455 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="class_device_util">
+<title>DeviceUtil class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_device_util_8h">&lt;DeviceUtil.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for DeviceUtil</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_device_util__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for DeviceUtil</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="class_device_util__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6">HardwareId</link> {
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a59dfa2248607f7e6a83d18fae8306b5f">NOT_AVAILABLE</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a426756b6e91e32d8787381edb82e2f99">IPHONE_2G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aef9f2cde0d6264b94a3b0b4a8401a857">IPHONE_3G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6ad5d2d991e046187f0c8125524af89dcc">IPHONE_3GS</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a6bc46fcd2e969285170bb3820edfbb53">IPHONE_4</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a0bda6882d66a01056b8b27407cf04dde">IPHONE_4_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aaa6bc9531710ba79ea16e0a5282aad2d">IPHONE_4S</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a3a685b702a361e4b8f7644a0db02edec">IPHONE_5</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a5a458f705f8a7c11a8c40e276b8f3435">IPHONE_5_CDMA_GSM</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a8c61baf0087c75d5e1065706c6882891">IPHONE_5C</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6af34c861978cbdc2dfb7a817618a05c75">IPHONE_5C_CDMA_GSM</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a29ea42b1c0889a0dfd11ee44a4ebc196">IPHONE_5S</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a72f08b0879de13801118446a8b35232e">IPHONE_5S_CDMA_GSM</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a7caadb319881dbe21f56c25c53dbaefa">IPHONE_6_PLUS</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6ac006c12e0d8ef8b704d660cdf2cc73eb">IPHONE_6</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a2eafaf5d3af8ef5d74609323291012f0">IPOD_TOUCH_1G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a67489fe12e9113a843b947b7a1aa1222">IPOD_TOUCH_2G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a1609005bd5421a79ad24e5f904c1e5bb">IPOD_TOUCH_3G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aa83e7eabe18529a42e39cbe83b713f8f">IPOD_TOUCH_4G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a559d772e788b42914ceba6ea51cba65c">IPOD_TOUCH_5G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a970f5a61fb5328c9be3df7218d66252c">IPAD</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a10f567693a3e3ed95e54604e8c704761">IPAD_2</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a6b9313e7d99fdf150b4caef42bb20eb4">IPAD_2_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6ac788b25de5b19b3898e3d3dd74bebeda">IPAD_2_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a27aa5176f402cd18a622becc95417a27">IPAD_3</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6abd8e2401ae0544ef020921bf548811e9">IPAD_3G</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a15e7a40f6f34e8d9510fd25c03b1b900">IPAD_3_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a611853ccaf008a1196c11c96f4065dd3">IPAD_3_WIFI_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6abaaf347119652f3afcf4f9a3092c293a">IPAD_4</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6affc073377d7cb597375656ee0af524a5">IPAD_4_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a58ced1898dc35555f9a0be5e75249012">IPAD_4_GSM_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a6756ec07502f339b4ce75fcaf5f94530">IPAD_MINI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a9f6e25f225538424d8daf905e8386bb4">IPAD_MINI_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a203bc1f67712655dcc9ce307afe14a86">IPAD_MINI_WIFI_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a11e3ab97fb5f6f2cc58ea96d3f61617d">IPAD_MINI_RETINA_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a11488d352dd3632a73434624ed12fe52">IPAD_MINI_RETINA_WIFI_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a9fee968dee865d79828d5323796c4fb6">IPAD_MINI_3_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6af142fa5b1a88460175197feea19d9471">IPAD_MINI_3_WIFI_CELLULAR</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a2506c50cb92a515f86166936b3ace015">IPAD_MINI_RETINA_WIFI_CELLULAR_CN</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a4f2548335b89faae77423ceb443387da">IPAD_AIR_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a5806cb025d9d3d380ddb5bf58e0d3f58">IPAD_AIR_WIFI_GSM</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a8c35811bc1218577794b0320ff7740df">IPAD_AIR_WIFI_CDMA</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a448de67eccb6fb2cb667da6836f59edb">IPAD_AIR_2_WIFI</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aaf6e21e19c261926b25ed94a09cd5742">IPAD_AIR_2_WIFI_CELLULAR</link>,
+<link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a5cb482919e3998b2e07aefe149afd8f9">SIMULATOR</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::string <link linkend="class_device_util_1a169613511f0399d3e0d1b3d8674808ba">hardwareString</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::string <link linkend="class_device_util_1a0b41896ef1ac3277c1126341bee50d26">hardwareDescription</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6">HardwareId</link> <link linkend="class_device_util_1aeacce8246f59676945b5f1914a08fb4a">hardwareId</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+            <section xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6">
+               <title>enum HardwareId </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a59dfa2248607f7e6a83d18fae8306b5f">
+                            <term>NOT_AVAILABLE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a426756b6e91e32d8787381edb82e2f99">
+                            <term>IPHONE_2G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aef9f2cde0d6264b94a3b0b4a8401a857">
+                            <term>IPHONE_3G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6ad5d2d991e046187f0c8125524af89dcc">
+                            <term>IPHONE_3GS</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a6bc46fcd2e969285170bb3820edfbb53">
+                            <term>IPHONE_4</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a0bda6882d66a01056b8b27407cf04dde">
+                            <term>IPHONE_4_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aaa6bc9531710ba79ea16e0a5282aad2d">
+                            <term>IPHONE_4S</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a3a685b702a361e4b8f7644a0db02edec">
+                            <term>IPHONE_5</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a5a458f705f8a7c11a8c40e276b8f3435">
+                            <term>IPHONE_5_CDMA_GSM</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a8c61baf0087c75d5e1065706c6882891">
+                            <term>IPHONE_5C</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6af34c861978cbdc2dfb7a817618a05c75">
+                            <term>IPHONE_5C_CDMA_GSM</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a29ea42b1c0889a0dfd11ee44a4ebc196">
+                            <term>IPHONE_5S</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a72f08b0879de13801118446a8b35232e">
+                            <term>IPHONE_5S_CDMA_GSM</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a7caadb319881dbe21f56c25c53dbaefa">
+                            <term>IPHONE_6_PLUS</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6ac006c12e0d8ef8b704d660cdf2cc73eb">
+                            <term>IPHONE_6</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a2eafaf5d3af8ef5d74609323291012f0">
+                            <term>IPOD_TOUCH_1G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a67489fe12e9113a843b947b7a1aa1222">
+                            <term>IPOD_TOUCH_2G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a1609005bd5421a79ad24e5f904c1e5bb">
+                            <term>IPOD_TOUCH_3G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aa83e7eabe18529a42e39cbe83b713f8f">
+                            <term>IPOD_TOUCH_4G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a559d772e788b42914ceba6ea51cba65c">
+                            <term>IPOD_TOUCH_5G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a970f5a61fb5328c9be3df7218d66252c">
+                            <term>IPAD</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a10f567693a3e3ed95e54604e8c704761">
+                            <term>IPAD_2</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a6b9313e7d99fdf150b4caef42bb20eb4">
+                            <term>IPAD_2_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6ac788b25de5b19b3898e3d3dd74bebeda">
+                            <term>IPAD_2_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a27aa5176f402cd18a622becc95417a27">
+                            <term>IPAD_3</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6abd8e2401ae0544ef020921bf548811e9">
+                            <term>IPAD_3G</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a15e7a40f6f34e8d9510fd25c03b1b900">
+                            <term>IPAD_3_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a611853ccaf008a1196c11c96f4065dd3">
+                            <term>IPAD_3_WIFI_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6abaaf347119652f3afcf4f9a3092c293a">
+                            <term>IPAD_4</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6affc073377d7cb597375656ee0af524a5">
+                            <term>IPAD_4_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a58ced1898dc35555f9a0be5e75249012">
+                            <term>IPAD_4_GSM_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a6756ec07502f339b4ce75fcaf5f94530">
+                            <term>IPAD_MINI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a9f6e25f225538424d8daf905e8386bb4">
+                            <term>IPAD_MINI_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a203bc1f67712655dcc9ce307afe14a86">
+                            <term>IPAD_MINI_WIFI_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a11e3ab97fb5f6f2cc58ea96d3f61617d">
+                            <term>IPAD_MINI_RETINA_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a11488d352dd3632a73434624ed12fe52">
+                            <term>IPAD_MINI_RETINA_WIFI_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a9fee968dee865d79828d5323796c4fb6">
+                            <term>IPAD_MINI_3_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6af142fa5b1a88460175197feea19d9471">
+                            <term>IPAD_MINI_3_WIFI_CELLULAR</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a2506c50cb92a515f86166936b3ace015">
+                            <term>IPAD_MINI_RETINA_WIFI_CELLULAR_CN</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a4f2548335b89faae77423ceb443387da">
+                            <term>IPAD_AIR_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a5806cb025d9d3d380ddb5bf58e0d3f58">
+                            <term>IPAD_AIR_WIFI_GSM</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a8c35811bc1218577794b0320ff7740df">
+                            <term>IPAD_AIR_WIFI_CDMA</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a448de67eccb6fb2cb667da6836f59edb">
+                            <term>IPAD_AIR_2_WIFI</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6aaf6e21e19c261926b25ed94a09cd5742">
+                            <term>IPAD_AIR_2_WIFI_CELLULAR</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="class_device_util_1a45e0ab9d49e3a0583798709c4613d9b6a5cb482919e3998b2e07aefe149afd8f9">
+                            <term>SIMULATOR</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 18 of file DeviceUtil.h
+                    <computeroutput><literallayout>
+{
+NOT_AVAILABLE, 
+IPHONE_2G, 
+IPHONE_3G, 
+IPHONE_3GS, 
+IPHONE_4, 
+IPHONE_4_CDMA, 
+IPHONE_4S, 
+IPHONE_5, 
+IPHONE_5_CDMA_GSM, 
+IPHONE_5C, 
+IPHONE_5C_CDMA_GSM, 
+IPHONE_5S, 
+IPHONE_5S_CDMA_GSM, 
+IPHONE_6_PLUS, 
+IPHONE_6, 
+IPOD_TOUCH_1G, 
+IPOD_TOUCH_2G, 
+IPOD_TOUCH_3G, 
+IPOD_TOUCH_4G, 
+IPOD_TOUCH_5G, 
+IPAD, 
+IPAD_2, 
+IPAD_2_WIFI, 
+IPAD_2_CDMA, 
+IPAD_3, 
+IPAD_3G, 
+IPAD_3_WIFI, 
+IPAD_3_WIFI_CDMA, 
+IPAD_4, 
+IPAD_4_WIFI, 
+IPAD_4_GSM_CDMA, 
+IPAD_MINI, 
+IPAD_MINI_WIFI, 
+IPAD_MINI_WIFI_CDMA, 
+IPAD_MINI_RETINA_WIFI, 
+IPAD_MINI_RETINA_WIFI_CDMA, 
+IPAD_MINI_3_WIFI, 
+IPAD_MINI_3_WIFI_CELLULAR, 
+IPAD_MINI_RETINA_WIFI_CELLULAR_CN, 
+IPAD_AIR_WIFI, 
+IPAD_AIR_WIFI_GSM, 
+IPAD_AIR_WIFI_CDMA, 
+IPAD_AIR_2_WIFI, 
+IPAD_AIR_2_WIFI_CELLULAR, 
+SIMULATOR, 
+}HardwareId;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+            <section xml:id="class_device_util_1a169613511f0399d3e0d1b3d8674808ba">
+                <title>static std::string DeviceUtil::hardwareString ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_device_util_1a0b41896ef1ac3277c1126341bee50d26">
+                <title>static std::string DeviceUtil::hardwareDescription ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="class_device_util_1aeacce8246f59676945b5f1914a08fb4a">
+                <title>static HardwareId DeviceUtil::hardwareId ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

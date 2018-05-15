@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_abstract_transform_8h" kind="file" language="C++">
+    <compoundname>AbstractTransform.h</compoundname>
+    <includes refid="_util_8h" local="yes">Util.h</includes>
+    <includedby refid="_sound_8h" local="yes">njligames-njlic_engine/njli/sound/Sound.h</includedby>
+    <incdepgraph>
+      <node id="712">
+        <label>njligames-njlic_engine/njli/AbstractTransform.h</label>
+        <link refid="_abstract_transform_8h"/>
+        <childnode refid="713" relation="include">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>stdlib.h</label>
+      </node>
+      <node id="714">
+        <label>Log.h</label>
+        <link refid="_log_8h"/>
+        <childnode refid="715" relation="include">
+        </childnode>
+        <childnode refid="716" relation="include">
+        </childnode>
+        <childnode refid="717" relation="include">
+        </childnode>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="716">
+        <label>SDL_assert.h</label>
+      </node>
+      <node id="717">
+        <label>SDL_config.h</label>
+      </node>
+      <node id="718">
+        <label>SDL_log.h</label>
+      </node>
+      <node id="715">
+        <label>Macros.h</label>
+        <link refid="_macros_8h"/>
+      </node>
+      <node id="721">
+        <label>math.h</label>
+      </node>
+      <node id="713">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="714" relation="include">
+        </childnode>
+        <childnode refid="719" relation="include">
+        </childnode>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+      </node>
+      <node id="719">
+        <label>stdio.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="722">
+        <label>njligames-njlic_engine/njli/AbstractTransform.h</label>
+        <link refid="_abstract_transform_8h"/>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="725">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</label>
+        <link refid="_wrapper___r_a_w_8h"/>
+      </node>
+      <node id="726">
+        <label>njligames-njlic_engine/njli/sound/WorldSound.h</label>
+        <link refid="_world_sound_8h"/>
+        <childnode refid="727" relation="include">
+        </childnode>
+      </node>
+      <node id="724">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="727">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="724" relation="include">
+        </childnode>
+      </node>
+      <node id="723">
+        <label>njligames-njlic_engine/njli/sound/Sound.h</label>
+        <link refid="_sound_8h"/>
+        <childnode refid="724" relation="include">
+        </childnode>
+        <childnode refid="725" relation="include">
+        </childnode>
+        <childnode refid="726" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnjli_1_1_abstract_transform" prot="public">njli::AbstractTransform</innerclass>
+    <innernamespace refid="namespacenjli">njli</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AbstractTransform.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>JLIGameEngineTest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>James<sp/>Folk<sp/>on<sp/>12/21/14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2014<sp/>James<sp/>Folk.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__JLIGameEngineTest__AbstractTransform__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__JLIGameEngineTest__AbstractTransform__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btTransform;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btVector2;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btVector3;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btVector4;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">btQuaternion;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_util_8h" kindref="compound">Util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenjli" kindref="compound">njli</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21" refid="classnjli_1_1_abstract_transform" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_abstract_transform" kindref="compound">AbstractTransform</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_transform_1ae81766ce7baa95743ad256dfab13a086" kindref="member">AbstractTransform</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_transform_1ae81766ce7baa95743ad256dfab13a086" kindref="member">AbstractTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform" kindref="compound">AbstractTransform</ref><sp/>&amp;copy);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a0e9a40091685470285419f35c6c91bcc" kindref="member">~AbstractTransform</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_transform" kindref="compound">AbstractTransform</ref><sp/>&amp;<ref refid="classnjli_1_1_abstract_transform_1a33740ec533c3328faff5d702bcd36a16" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform" kindref="compound">AbstractTransform</ref><sp/>&amp;rhs);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>btTransform<sp/>&amp;<ref refid="classnjli_1_1_abstract_transform_1a6341254e626b209df85d0b7e830c2894" kindref="member">getTransform</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a87650e2ff117cde3128c9de164c84b2b" kindref="member">setTransform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btTransform<sp/>&amp;transform);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>btVector3<sp/>&amp;<ref refid="classnjli_1_1_abstract_transform_1a8ed6d7cc1b5728f68a2455e918a8c6b5" kindref="member">getOrigin</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a8dfc3a81836971418bb9c71004222c8f" kindref="member">setOrigin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3<sp/>&amp;origin);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a8dfc3a81836971418bb9c71004222c8f" kindref="member">setOrigin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector2<sp/>&amp;origin);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>btQuaternion<sp/><ref refid="classnjli_1_1_abstract_transform_1ab998267bb4662fa0c3902b9a236f15fc" kindref="member">getRotation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a721ce04e176c7bdd5fea612ccbbd1e12" kindref="member">setRotation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btQuaternion<sp/>&amp;rotation);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>btVector3<sp/><ref refid="classnjli_1_1_abstract_transform_1a1a9cf70d9ae4b9405500be603e74b4e8" kindref="member">getEulerAngles</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a758c5d11698115dac64ec6e4ba29c5bb" kindref="member">setEulerAngles</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3<sp/>&amp;angles);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>btQuaternion<sp/>&amp;<ref refid="classnjli_1_1_abstract_transform_1af23dedd0d33968d9f4066056d442d8ab" kindref="member">getOrientation</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1a8668e1e13020412115e65b7e50176262" kindref="member">setOrientation</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btQuaternion<sp/>&amp;orientation);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>btVector3<sp/><ref refid="classnjli_1_1_abstract_transform_1a292f90f311e9af8e2bffc630b100ca2b" kindref="member">getScale</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1ab9059ed0b04b3e5af674ce2652ffda35" kindref="member">setScale</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3<sp/>&amp;scale);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1ab9059ed0b04b3e5af674ce2652ffda35" kindref="member">setScale</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>scale);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>btTransform<sp/>&amp;<ref refid="classnjli_1_1_abstract_transform_1aec6866eb4cc32cc1f7aecae2f5a55422" kindref="member">getPivot</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_transform_1aa2adbe5fcda38419fa30b22a59f734b3" kindref="member">setPivot</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btTransform<sp/>&amp;pivot);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>btTransform<sp/><ref refid="classnjli_1_1_abstract_transform_1a25e1a5d3daf3c0c5839915f33e37e51a" kindref="member">getWorldTransform</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="213" refid="classnjli_1_1_abstract_transform_1a90ca5d67abcb0a5ea1e3c3554c9f8e0e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btTransform<sp/>*<ref refid="classnjli_1_1_abstract_transform_1a90ca5d67abcb0a5ea1e3c3554c9f8e0e" kindref="member">m_WorldTransform</ref>;</highlight></codeline>
+<codeline lineno="214" refid="classnjli_1_1_abstract_transform_1ab86688491ad0a42d93ebf4242a12c17e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btQuaternion<sp/>*<ref refid="classnjli_1_1_abstract_transform_1ab86688491ad0a42d93ebf4242a12c17e" kindref="member">m_Orientation</ref>;</highlight></codeline>
+<codeline lineno="215" refid="classnjli_1_1_abstract_transform_1a6c1eda10f9fa9bd340e3b1a560f3954a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btTransform<sp/>*<ref refid="classnjli_1_1_abstract_transform_1a6c1eda10f9fa9bd340e3b1a560f3954a" kindref="member">m_Pivot</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>defined(__JLIGameEngineTest__AbstractTransform__)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/AbstractTransform.h"/>
+  </compounddef>
+</doxygen>

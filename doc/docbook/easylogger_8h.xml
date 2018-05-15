@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="easylogger_8h">
+    <title>easylogger.h File Reference</title>
+    <programlisting>#include &lt;iostream&gt;</programlisting>
+    <programlisting>#include &lt;sstream&gt;</programlisting>
+    <programlisting>#include &lt;string&gt;</programlisting>
+    <programlisting>#include &lt;cstdlib&gt;</programlisting>
+    <programlisting>#include &lt;ctime&gt;</programlisting>
+    <programlisting>#include &lt;map&gt;</programlisting>
+<para>Include dependency diagram for easylogger.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="easylogger_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for easylogger.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="easylogger_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classeasylogger_1_1__private_1_1_log_sink">easylogger::_private::LogSink</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classeasylogger_1_1_logger">easylogger::Logger</link></para>
+<para><emphasis>Logger system core class.</emphasis></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title> Namespaces </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespaceeasylogger">easylogger</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="namespaceeasylogger_1_1__private">easylogger::_private</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </simplesect>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1afb6571d7648f15e63bddc3b877a87ba4">EASYLOGGER_LOGSINK_H</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link> do{ \
+if ((logger).IsLevel((level))) { \
+do { \
+::<link linkend="classeasylogger_1_1__private_1_1_log_sink">easylogger::_private::LogSink</link> _easy_sink((logger).Log(level, __FILE__, __LINE__, __PRETTY_FUNCTION__)); \
+_easy_sink &lt;&lt; message; \
+} while(0); \
+if ((level) == ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb">easylogger::LEVEL_FATAL</link>) { \
+(logger).Flush(); \
+std::abort(); \
+} \
+} \
+}while(0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1ad10e813294614a8850fd241db5bcd653">LOG_TRACE</link> <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link>((logger), ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e">easylogger::LEVEL_TRACE</link>, message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1adb268ee8276a4b312d31ed9db04e9926">LOG_DEBUG</link> <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link>((logger), ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f">easylogger::LEVEL_DEBUG</link>, message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1a0c30634de010bc24deacc2cb5a123bec">LOG_INFO</link> <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link>((logger), ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61">easylogger::LEVEL_INFO</link>, message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1a32705d9b1868f3dc5918d6af2f45575a">LOG_WARNING</link> <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link>((logger), ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571">easylogger::LEVEL_WARNING</link>, message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1ab3dff3a4b05f59968670e28caf19134b">LOG_ERROR</link> <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link>((logger), ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245">easylogger::LEVEL_ERROR</link>, message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="easylogger_8h_1a5eb2cc752383b4ac1bb2eb9e1109ce7a">LOG_FATAL</link> <link linkend="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421">_EASY_LOG</link>((logger), ::<link linkend="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb">easylogger::LEVEL_FATAL</link>, message)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>::<link linkend="classeasylogger_1_1__private_1_1_log_sink">easylogger::_private::LogSink</link> &amp; <link linkend="easylogger_8h_1abc9dffd7ca03c110900fdb1e7426fb6f">operator&lt;&lt;</link> (
+::<link linkend="classeasylogger_1_1__private_1_1_log_sink">easylogger::_private::LogSink</link> &amp; sink, const T &amp; val)<para><emphasis>Stream operator for LogSink.</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/njli/platform/easylogger.h</para>
+    </simplesect>
+</section>

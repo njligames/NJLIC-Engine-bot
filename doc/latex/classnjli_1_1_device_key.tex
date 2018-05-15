@@ -1,0 +1,283 @@
+\hypertarget{classnjli_1_1_device_key}{}\section{njli\+:\+:Device\+Key Class Reference}
+\label{classnjli_1_1_device_key}\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+
+
+{\ttfamily \#include $<$Device\+Key.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Device\+Key\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classnjli_1_1_device_key__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Device\+Key\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classnjli_1_1_device_key__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_key_a6c0ce8411a06487b2d23b6d5a527aa25}{Device\+Key}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_key_a97f655c0ede86cf0fe3806108517dbad}{Device\+Key}} (const \mbox{\hyperlink{classnjli_1_1_device_key}{Device\+Key}} \&rhs)
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_key}{Device\+Key}} \& \mbox{\hyperlink{classnjli_1_1_device_key_a24bc97579381b1f0c3dadf46be045c27}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_device_key}{Device\+Key}} \&rhs)
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_key_ab7f6d643ded11dc722c507ce6171c58a}{Device\+Key}} (int scan\+Code, const std\+::string \&scan\+Code\+Name)
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_device_key_a06bc979d7804180fd4e383798ee308ab}{$\sim$\+Device\+Key}} ()
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_device_key_a14f6e0865bbf44c100b34448e9d67f24}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_device_key_aa7b5696085bd6c8a1a935d422ae51e1f}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_key_a49edcb4af0e6bc5e9830e770c85437f1}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_device_key_a9bf8e7ef5d2038aefc61d8732ee1169a}{set}} (int scan\+Code, const std\+::string \&scan\+Code\+Name)
+\item 
+int \mbox{\hyperlink{classnjli_1_1_device_key_ab75e19e17395f72ec633f491ad502784}{get\+Scan\+Code}} () const
+\item 
+std\+::string \mbox{\hyperlink{classnjli_1_1_device_key_a1e9dfe1c89d373a70d12a81de08c29e3}{get\+Scan\+Code\+Name}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\+\_\+\+Scan\+Code}}
+\item 
+std\+::string \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\+\_\+\+Scan\+Code\+Name}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file Device\+Key.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a6c0ce8411a06487b2d23b6d5a527aa25}\label{classnjli_1_1_device_key_a6c0ce8411a06487b2d23b6d5a527aa25}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!Device\+Key@{Device\+Key}}
+\index{Device\+Key@{Device\+Key}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{Device\+Key()}{DeviceKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Device\+Key\+::\+Device\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 22 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+22 : \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\_ScanCode}}(0), \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\_ScanCodeName}}(\textcolor{stringliteral}{"NOT SET"}) \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a97f655c0ede86cf0fe3806108517dbad}\label{classnjli_1_1_device_key_a97f655c0ede86cf0fe3806108517dbad}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!Device\+Key@{Device\+Key}}
+\index{Device\+Key@{Device\+Key}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{Device\+Key()}{DeviceKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Device\+Key\+::\+Device\+Key (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_device_key}{Device\+Key}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 24 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+25         : \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\_ScanCode}}(rhs.m\_ScanCode), \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\_ScanCodeName}}(rhs.m\_ScanCodeName)
+26     \{
+27     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_ab7f6d643ded11dc722c507ce6171c58a}\label{classnjli_1_1_device_key_ab7f6d643ded11dc722c507ce6171c58a}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!Device\+Key@{Device\+Key}}
+\index{Device\+Key@{Device\+Key}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{Device\+Key()}{DeviceKey()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Device\+Key\+::\+Device\+Key (\begin{DoxyParamCaption}\item[{int}]{scan\+Code,  }\item[{const std\+::string \&}]{scan\+Code\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 39 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+40     \{
+41       \textcolor{keyword}{set}(scanCode, scanCodeName);
+42     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a06bc979d7804180fd4e383798ee308ab}\label{classnjli_1_1_device_key_a06bc979d7804180fd4e383798ee308ab}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!````~Device\+Key@{$\sim$\+Device\+Key}}
+\index{````~Device\+Key@{$\sim$\+Device\+Key}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{$\sim$\+Device\+Key()}{~DeviceKey()}}
+{\footnotesize\ttfamily virtual njli\+::\+Device\+Key\+::$\sim$\+Device\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 44 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+44 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a14f6e0865bbf44c100b34448e9d67f24}\label{classnjli_1_1_device_key_a14f6e0865bbf44c100b34448e9d67f24}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Device\+Key\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_device_input_time_a2e5cdadd44d1ee2d7d7136e91f2bcafb}{njli\+::\+Device\+Input\+Time}}.
+
+
+
+Definition at line 46 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+46 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"DeviceKey"}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_ab75e19e17395f72ec633f491ad502784}\label{classnjli_1_1_device_key_ab75e19e17395f72ec633f491ad502784}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!get\+Scan\+Code@{get\+Scan\+Code}}
+\index{get\+Scan\+Code@{get\+Scan\+Code}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{get\+Scan\+Code()}{getScanCode()}}
+{\footnotesize\ttfamily int njli\+::\+Device\+Key\+::get\+Scan\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 66 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+66 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\_ScanCode}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a1e9dfe1c89d373a70d12a81de08c29e3}\label{classnjli_1_1_device_key_a1e9dfe1c89d373a70d12a81de08c29e3}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!get\+Scan\+Code\+Name@{get\+Scan\+Code\+Name}}
+\index{get\+Scan\+Code\+Name@{get\+Scan\+Code\+Name}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{get\+Scan\+Code\+Name()}{getScanCodeName()}}
+{\footnotesize\ttfamily std\+::string njli\+::\+Device\+Key\+::get\+Scan\+Code\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 67 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+67 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\_ScanCodeName}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_aa7b5696085bd6c8a1a935d422ae51e1f}\label{classnjli_1_1_device_key_aa7b5696085bd6c8a1a935d422ae51e1f}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Device\+Key\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_device_input_time_a69e4bb4be69f3ac53f4514a58fd61021}{njli\+::\+Device\+Input\+Time}}.
+
+
+
+Definition at line 47 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+47 \{ \textcolor{keywordflow}{return} 0; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a49edcb4af0e6bc5e9830e770c85437f1}\label{classnjli_1_1_device_key_a49edcb4af0e6bc5e9830e770c85437f1}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Device\+Key\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 48 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+49     \{
+50       \textcolor{keywordtype}{char} buffer[1024];
+51 
+52       sprintf(buffer, \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)}
+53 \textcolor{stringliteral}{                    Scan Code [%d]\(\backslash\)n\(\backslash\)}
+54 \textcolor{stringliteral}{                    Scan Code Name [%s]\(\backslash\)n"},
+55               \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\_ScanCode}}, \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\_ScanCodeName}}.c\_str());
+56 
+57       \textcolor{keywordflow}{return} std::string(buffer);
+58     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a24bc97579381b1f0c3dadf46be045c27}\label{classnjli_1_1_device_key_a24bc97579381b1f0c3dadf46be045c27}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_device_key}{Device\+Key}}\& njli\+::\+Device\+Key\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_device_key}{Device\+Key}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 29 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+30     \{
+31       \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != &rhs)
+32         \{
+33           \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\_ScanCode}} = rhs.m\_ScanCode;
+34           \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\_ScanCodeName}} = rhs.m\_ScanCodeName;
+35         \}
+36       \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+37     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a9bf8e7ef5d2038aefc61d8732ee1169a}\label{classnjli_1_1_device_key_a9bf8e7ef5d2038aefc61d8732ee1169a}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!set@{set}}
+\index{set@{set}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{set()}{set()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Device\+Key\+::set (\begin{DoxyParamCaption}\item[{int}]{scan\+Code,  }\item[{const std\+::string \&}]{scan\+Code\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 60 of file Device\+Key.\+h.
+
+
+\begin{DoxyCode}
+61     \{
+62       \mbox{\hyperlink{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}{m\_ScanCode}} = scanCode;
+63       \mbox{\hyperlink{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}{m\_ScanCodeName}} = scanCodeName;
+64     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}\label{classnjli_1_1_device_key_a326eb4f8f1b7abc2b916c8ed11d8dca6}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!m\+\_\+\+Scan\+Code@{m\+\_\+\+Scan\+Code}}
+\index{m\+\_\+\+Scan\+Code@{m\+\_\+\+Scan\+Code}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Scan\+Code}{m\_ScanCode}}
+{\footnotesize\ttfamily int njli\+::\+Device\+Key\+::m\+\_\+\+Scan\+Code\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 70 of file Device\+Key.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}\label{classnjli_1_1_device_key_ac619bfe3e166c9f9ddda4e308f4315d9}} 
+\index{njli\+::\+Device\+Key@{njli\+::\+Device\+Key}!m\+\_\+\+Scan\+Code\+Name@{m\+\_\+\+Scan\+Code\+Name}}
+\index{m\+\_\+\+Scan\+Code\+Name@{m\+\_\+\+Scan\+Code\+Name}!njli\+::\+Device\+Key@{njli\+::\+Device\+Key}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Scan\+Code\+Name}{m\_ScanCodeName}}
+{\footnotesize\ttfamily std\+::string njli\+::\+Device\+Key\+::m\+\_\+\+Scan\+Code\+Name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 71 of file Device\+Key.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/platform/\mbox{\hyperlink{_device_key_8h}{Device\+Key.\+h}}\end{DoxyCompactItemize}

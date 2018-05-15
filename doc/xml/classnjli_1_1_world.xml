@@ -1,0 +1,2473 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_world" kind="class" language="C++" prot="public">
+    <compoundname>njli::World</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_object" prot="public" virt="non-virtual">njli::AbstractObject</basecompoundref>
+    <includes refid="_world_8h" local="no">World.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_1a96897049ea6e799e334d53f8e8735e35" prot="private" static="no" mutable="no">
+        <type>btAlignedObjectArray&lt; <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">njli::PhysicsRayContact</ref> * &gt;</type>
+        <definition>btAlignedObjectArray&lt;njli::PhysicsRayContact *&gt; njli::World::m_RayContacts</definition>
+        <argsstring></argsstring>
+        <name>m_RayContacts</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="505" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="505" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1ae50678873f637941aa87ec45c33e9a1c" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref> *</type>
+        <definition>WorldFactory* njli::World::m_WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>m_WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="512" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="512" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a4ebb658eba80c17e930b96881d3a4e19" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_resource_loader" kindref="compound">WorldResourceLoader</ref> *</type>
+        <definition>WorldResourceLoader* njli::World::m_WorldResourceLoader</definition>
+        <argsstring></argsstring>
+        <name>m_WorldResourceLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="513" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="513" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1aacebc8d861e42a409cf1a875972da641" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref> *</type>
+        <definition>WorldClock* njli::World::m_WorldClock</definition>
+        <argsstring></argsstring>
+        <name>m_WorldClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="514" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="514" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1ab3878c3df6c61327dfd7a08864e567a9" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref> *</type>
+        <definition>WorldLuaVirtualMachine* njli::World::m_WorldLuaVirtualMachine</definition>
+        <argsstring></argsstring>
+        <name>m_WorldLuaVirtualMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="515" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="515" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a14412bd1ed14fca506732c0234db2b28" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_state_machine" kindref="compound">WorldStateMachine</ref> *</type>
+        <definition>WorldStateMachine* njli::World::m_stateMachine</definition>
+        <argsstring></argsstring>
+        <name>m_stateMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="517" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="517" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a0ac18bfa72f55b16c00703e1035a0af7" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::World::m_ViewPortDimensions</definition>
+        <argsstring></argsstring>
+        <name>m_ViewPortDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="519" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="519" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a9c9279cbbb77ef973cb7d003198789b7" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* njli::World::m_Scene</definition>
+        <argsstring></argsstring>
+        <name>m_Scene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="521" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a0f6ea126555fa904aa246baba084c9de" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref> *</type>
+        <definition>WorldSocket* njli::World::m_WorldSocket</definition>
+        <argsstring></argsstring>
+        <name>m_WorldSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="522" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a922a3ec1f96ac87f97faee6329f39686" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_h_u_d" kindref="compound">WorldHUD</ref> *</type>
+        <definition>WorldHUD* njli::World::m_WorldHUD</definition>
+        <argsstring></argsstring>
+        <name>m_WorldHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="523" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="523" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a87601ddb30dead7b8b0bd05bcc1f7ff3" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_input" kindref="compound">WorldInput</ref> *</type>
+        <definition>WorldInput* njli::World::m_WorldInput</definition>
+        <argsstring></argsstring>
+        <name>m_WorldInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="524" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="524" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a004cd4a3a730b83733b3ff91bfaedce2" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_sound" kindref="compound">WorldSound</ref> *</type>
+        <definition>WorldSound* njli::World::m_WorldSound</definition>
+        <argsstring></argsstring>
+        <name>m_WorldSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="525" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="525" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1aa92f105e6f53c7d8c30b8e453e1181c8" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_world_debug_drawer" kindref="compound">WorldDebugDrawer</ref> *</type>
+        <definition>WorldDebugDrawer* njli::World::m_WorldDebugDrawer</definition>
+        <argsstring></argsstring>
+        <name>m_WorldDebugDrawer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="526" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="526" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1ac9ab0b237e486a28bd08adf913b3908c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::World::m_enableDebugDraw</definition>
+        <argsstring></argsstring>
+        <name>m_enableDebugDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="529" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="529" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a5ae1a42d02339871c60b45ecacc92753" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+        <definition>Camera* njli::World::m_DebugDrawCamera</definition>
+        <argsstring></argsstring>
+        <name>m_DebugDrawCamera</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="530" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="530" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a180a3f557467c6bb6d88cf05b691a6f4" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>Material* njli::World::m_DebugDrawMaterial</definition>
+        <argsstring></argsstring>
+        <name>m_DebugDrawMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="531" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1ab701cb678bcb47262db407e4684608a2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::World::m_SocketEnabled</definition>
+        <argsstring></argsstring>
+        <name>m_SocketEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="535" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a51c1d3b5047c2e10c2850faf137efa9a" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::World::m_SocketAddress</definition>
+        <argsstring></argsstring>
+        <name>m_SocketAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="536" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="536" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1aafbdf669fc3dbc91c2b746b653ac4f17" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 njli::World::m_SocketPort</definition>
+        <argsstring></argsstring>
+        <name>m_SocketPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="537" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="537" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1acf0b94b1d7cba8d62158065b03de9012" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::World::m_BackgroundColor</definition>
+        <argsstring></argsstring>
+        <name>m_BackgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="538" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="538" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a9dc158249ba20ca7b1523cce0d8d309f" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::World::m_DeviceName</definition>
+        <argsstring></argsstring>
+        <name>m_DeviceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="539" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="539" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1a5a261c335c55b2fd0e678e815a6cc85a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::World::m_AnimationPaused</definition>
+        <argsstring></argsstring>
+        <name>m_AnimationPaused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="541" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_1af387313aec7a62f3792e76d9610b70a8" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::World::m_GamePaused</definition>
+        <argsstring></argsstring>
+        <name>m_GamePaused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="542" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="542" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_1afbef76d7d011571721a36b2eb625e997" prot="private" static="yes" mutable="no">
+        <type><ref refid="classnjli_1_1_world" kindref="compound">World</ref> *</type>
+        <definition>World* njli::World::s_Instance</definition>
+        <argsstring></argsstring>
+        <name>s_Instance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="510" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_world_1a7e31e4dff9169bd82c24e69ff29b53b6" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::World::createInstance</definition>
+        <argsstring>()</argsstring>
+        <name>createInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a3bddccf6aeb57d953f358a2e66fc2c00" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::World::destroyInstance</definition>
+        <argsstring>()</argsstring>
+        <name>destroyInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world" kindref="compound">World</ref> *</type>
+        <definition>static World* njli::World::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a9c8ccd2a51131b026b1ee6c9135eea8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool njli::World::hasInstance</definition>
+        <argsstring>()</argsstring>
+        <name>hasInstance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_world_1af01e96219aea73e611ba28179b3532ed" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::World::World</definition>
+        <argsstring>()</argsstring>
+        <name>World</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aaf74d0ac73e1bf62d7b26bf7fdb6b5cd" prot="private" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::World::~World</definition>
+        <argsstring>()</argsstring>
+        <name>~World</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1abf9c0b24c17244baf76d760e81974cfe" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::World::World</definition>
+        <argsstring>(const World &amp;)</argsstring>
+        <name>World</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world" kindref="compound">World</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="507" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a2fe83dc2d899a91ef21ac20220e2ada4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world" kindref="compound">World</ref> &amp;</type>
+        <definition>World&amp; njli::World::operator=</definition>
+        <argsstring>(const World &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world" kindref="compound">World</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="508" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_world_1a28299874538b8a714bcbae908760a364" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref> *</type>
+        <definition>WorldFactory* njli::World::getWorldFactory</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1abfd08290519a0525e79f8961cff41c33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref> *</type>
+        <definition>const WorldFactory* njli::World::getWorldFactory</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a094d454c35f0afea279bb5fbb39c196a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_resource_loader" kindref="compound">WorldResourceLoader</ref> *</type>
+        <definition>WorldResourceLoader* njli::World::getWorldResourceLoader</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldResourceLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a78357165d6bc4ef06ef774d4e0606bc9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_resource_loader" kindref="compound">WorldResourceLoader</ref> *</type>
+        <definition>const WorldResourceLoader* njli::World::getWorldResourceLoader</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldResourceLoader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a00797432cd913a07ad852e703cbf7278" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref> *</type>
+        <definition>WorldClock* njli::World::getWorldClock</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a7edeaa8b2caed5240128952e85ea5b12" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref> *</type>
+        <definition>const WorldClock* njli::World::getWorldClock</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a6ebccef746ad4e44455bae7698839e29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref> *</type>
+        <definition>WorldLuaVirtualMachine* njli::World::getWorldLuaVirtualMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldLuaVirtualMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a82f0b1f8d27a311ec99b67d778e121a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref> *</type>
+        <definition>const WorldLuaVirtualMachine* njli::World::getWorldLuaVirtualMachine</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldLuaVirtualMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="104" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a245f64dbfb8ac4b9aa405c05c58a77e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref> *</type>
+        <definition>WorldSocket* njli::World::getWorldSocket</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a58cd945663087fae147a88f76a984f83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref> *</type>
+        <definition>const WorldSocket* njli::World::getWorldSocket</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a9b8a2755f4643d169d54e047554ba8f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_input" kindref="compound">WorldInput</ref> *</type>
+        <definition>WorldInput* njli::World::getWorldInput</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="166" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aefbda7b9bf38ace818503473814d8b18" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_input" kindref="compound">WorldInput</ref> *</type>
+        <definition>const WorldInput* njli::World::getWorldInput</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="172" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aeafce2408df830b6d0d4f4cc70a502f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_sound" kindref="compound">WorldSound</ref> *</type>
+        <definition>WorldSound* njli::World::getWorldSound</definition>
+        <argsstring>()</argsstring>
+        <name>getWorldSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aa0df2fe274aae44a7c3f4df0bfc2b2c8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_sound" kindref="compound">WorldSound</ref> *</type>
+        <definition>const WorldSound* njli::World::getWorldSound</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldSound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a779f9ee41d7e73e013654dcdb1d83cf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_state_machine" kindref="compound">WorldStateMachine</ref> *</type>
+        <definition>WorldStateMachine* njli::World::getStateMachine</definition>
+        <argsstring>()</argsstring>
+        <name>getStateMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="192" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aa78f8be7d30ab1d38cea248c3017f0a7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_state_machine" kindref="compound">WorldStateMachine</ref> *</type>
+        <definition>const WorldStateMachine* njli::World::getStateMachine</definition>
+        <argsstring>() const</argsstring>
+        <name>getStateMachine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1abd9b6751260b5e6c28fa9cfd874cfaad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_debug_drawer" kindref="compound">WorldDebugDrawer</ref> *</type>
+        <definition>WorldDebugDrawer* njli::World::getDebugDrawer</definition>
+        <argsstring>()</argsstring>
+        <name>getDebugDrawer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="205" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a88ce760cdc314298a58f96af3ef9d492" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_world_debug_drawer" kindref="compound">WorldDebugDrawer</ref> *</type>
+        <definition>const WorldDebugDrawer* njli::World::getDebugDrawer</definition>
+        <argsstring>() const</argsstring>
+        <name>getDebugDrawer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a027fc2766ebe49b79f974e7e808610f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchDown</definition>
+        <argsstring>(DeviceTouch **touches)</argsstring>
+        <name>touchDown</name>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="231" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a1b2be462f5455b01856968eea7ee96bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchUp</definition>
+        <argsstring>(DeviceTouch **touches)</argsstring>
+        <name>touchUp</name>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a19b6222b4d9eaa0f83ab74f555ed6e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchMove</definition>
+        <argsstring>(DeviceTouch **touches)</argsstring>
+        <name>touchMove</name>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="243" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a456be839bfe441022745d2790ac44942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchCancelled</definition>
+        <argsstring>(DeviceTouch **touches)</argsstring>
+        <name>touchCancelled</name>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aa1bc8ac0264f93580c6629d41dbd00b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchDown</definition>
+        <argsstring>(const DeviceTouch &amp;touch)</argsstring>
+        <name>touchDown</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="251" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a9d64d3a8310bba9935bf998ec9d341e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchUp</definition>
+        <argsstring>(const DeviceTouch &amp;touch)</argsstring>
+        <name>touchUp</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a625c469136089b896cc94c7f151ec8e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::touchMove</definition>
+        <argsstring>(const DeviceTouch &amp;touch)</argsstring>
+        <name>touchMove</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a484e8c77cd1ed5613189c503326a310b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::mouseDown</definition>
+        <argsstring>(const DeviceMouse &amp;touch)</argsstring>
+        <name>mouseDown</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="255" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a4f3f72ae362ffc3aa5636d30dd84224e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::mouseUp</definition>
+        <argsstring>(const DeviceMouse &amp;touch)</argsstring>
+        <name>mouseUp</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="256" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a6c13bee0e9fca64f619dd92b927f948a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::mouseMove</definition>
+        <argsstring>(const DeviceMouse &amp;touch)</argsstring>
+        <name>mouseMove</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="257" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ad64c93b5f93db6e9df3ce7b9869d12d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::keyUp</definition>
+        <argsstring>(const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>keyUp</name>
+        <param>
+          <type>const char *</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="259" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a6fc507c345272128f64cd5c6d4e6ca08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::keyDown</definition>
+        <argsstring>(const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>keyDown</name>
+        <param>
+          <type>const char *</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="262" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1abd97ee22f8fbfa29ace0f4859b16d6e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::keyboardShow</definition>
+        <argsstring>()</argsstring>
+        <name>keyboardShow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="265" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a5ecc9ab5fe1c940ae021489d5574edf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::keyboardCancel</definition>
+        <argsstring>()</argsstring>
+        <name>keyboardCancel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a6e7f30cb39fb2cc23148a3765d0fed3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::keyboardReturn</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>keyboardReturn</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ab816a3e089fafc8fe7723723fb201bee" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::getViewPort</definition>
+        <argsstring>(s32 *viewPort) const</argsstring>
+        <name>getViewPort</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref> *</type>
+          <declname>viewPort</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#camera description#&gt; &lt;#Description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; &lt;#Description#&gt;</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>viewPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#viewPort description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="292" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a32797f128d963f99839c12faf4b4dc12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::createScript</definition>
+        <argsstring>()</argsstring>
+        <name>createScript</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="297" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ad27af4cf142639c3436f4163d0526442" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::destroyScript</definition>
+        <argsstring>()</argsstring>
+        <name>destroyScript</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a248c324a0a97b0f286eaedf8f997688e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::update</definition>
+        <argsstring>(f32 timeStep, const u32 numSubSteps)</argsstring>
+        <name>update</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>timeStep</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>numSubSteps</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>timeStep</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#timeStep description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a3e7f68f7467d421971e13dfcc5e2100e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::render</definition>
+        <argsstring>()</argsstring>
+        <name>render</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="314" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a04acd6d056b32f996c165d2d9a8ee34d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::resize</definition>
+        <argsstring>(s32 x, s32 y, s32 width, s32 height, s32 orientation)</argsstring>
+        <name>resize</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#width description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#height description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>orientation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#orientation description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="323" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a0d888d6664fed006bde6e9fd806bc41c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::World::getViewportDimensions</definition>
+        <argsstring>() const</argsstring>
+        <name>getViewportDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a4f3d49c5cc8e3a3a2c2439e663a9c60b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::World::getAspectRatio</definition>
+        <argsstring>() const</argsstring>
+        <name>getAspectRatio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="336" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a2811263a084944cded212cd714a165cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::World::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afdabb48c4bf763e297ffe810b433a863">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a35e88a33b35fa6de44f10e3a93a62468" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::World::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1a08dcf202a47f0782813b8bc98c659e78">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="349" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a2a892d17f7e21b51784e45ecc4aa642e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::World::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afc07f4138bd3003910e7aa7fa0fe11ad">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="355" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a80c42c94ab3fbf4242f3d9b5e7866379" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::setScene</definition>
+        <argsstring>(Scene *scene)</argsstring>
+        <name>setScene</name>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#scene description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="362" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aabf2a07e2fab640f5800357ad1fd7717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::removeScene</definition>
+        <argsstring>()</argsstring>
+        <name>removeScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="366" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1aacef8d7932cbc6df28524a15b30b50f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>Scene* njli::World::getScene</definition>
+        <argsstring>()</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="372" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a007a67243897e4dd1448e97b6b860389" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+        <definition>const Scene* njli::World::getScene</definition>
+        <argsstring>() const</argsstring>
+        <name>getScene</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="378" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ad67785776209cbbaa6140fcc90b4913a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::enableDebugDraw</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>enableDebugDraw</name>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>camera</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#camera description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="385" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a4894e4a53f692a503661a7836bf7713f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::disableDebugDraw</definition>
+        <argsstring>()</argsstring>
+        <name>disableDebugDraw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a5b67da9acd56cec605ad0dccc2b957cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::startSocket</definition>
+        <argsstring>(u8 n0, u8 n1, u8 n2, u8 n3, u16 port=2223)</argsstring>
+        <name>startSocket</name>
+        <param>
+          <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>n0</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>n1</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>n2</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>n3</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+          <declname>port</declname>
+          <defval>2223</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n0</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#n0 description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#n1 description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#n2 description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n3</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#n3 description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>port</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#port description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ac4b819fe8d34e6661d8f47138c318ff5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::startSocket</definition>
+        <argsstring>(u16 port=2223)</argsstring>
+        <name>startSocket</name>
+        <param>
+          <type><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+          <declname>port</declname>
+          <defval>2223</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="402" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a776f8bf7c461ecac1db1b485828f6894" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::World::isSocketEnabled</definition>
+        <argsstring>() const</argsstring>
+        <name>isSocketEnabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="408" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a7d217f38577d72d349e2df64761dc4c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::stopSocket</definition>
+        <argsstring>()</argsstring>
+        <name>stopSocket</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="412" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ac65ea60b2f5033c2e8a7504820d59ac5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::World::getSocketAddress</definition>
+        <argsstring>() const</argsstring>
+        <name>getSocketAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="419" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1af108b41273b0ff7abbf88fa6e311304e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref></type>
+        <definition>u16 njli::World::getSocketPort</definition>
+        <argsstring>() const</argsstring>
+        <name>getSocketPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="425" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a7eebf55a7920061d87e5dc03feb692da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::setBackgroundAlpha</definition>
+        <argsstring>(const f32 alpha)</argsstring>
+        <name>setBackgroundAlpha</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#alpha description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="432" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::setBackgroundColor</definition>
+        <argsstring>(const btVector3 &amp;color)</argsstring>
+        <name>setBackgroundColor</name>
+        <param>
+          <type>const btVector3 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="438" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ab7bbd4dee42bec416fb2b64e9843ddf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::setBackgroundColor</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setBackgroundColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="444" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a9f1b7c924b237316f9529a319c2ca055" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::setBackgroundColor</definition>
+        <argsstring>(f32 red, f32 green, f32 blue)</argsstring>
+        <name>setBackgroundColor</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>red</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>green</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>blue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>red</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#red description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>green</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#green description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>blue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#blue description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="453" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a7805d9b4c5ef0943a5c1c32b507d2151" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::World::getBackgroundColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getBackgroundColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="460" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a5ddb30abad714d14694863bb89af14b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::World::getDeviceName</definition>
+        <argsstring>() const</argsstring>
+        <name>getDeviceName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="467" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a5c9cc63ac7cb847e6d581a867614e47d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::setDeviceName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setDeviceName</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="473" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a41b67b3dea3196afa6ff1b0d961b39d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::enablePauseAnimation</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enablePauseAnimation</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="475" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ac84f5b1da4bbd124829f30b7a3fbd4d0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::World::isAnimationPaused</definition>
+        <argsstring>() const</argsstring>
+        <name>isAnimationPaused</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="482" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ae8f238cc0f23ce6b8a05ad5a3da555f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::enablePauseGame</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enablePauseGame</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="484" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1abfbc1b055160d3c6a6ccd4f1ec784b0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::World::isPausedGame</definition>
+        <argsstring>() const</argsstring>
+        <name>isPausedGame</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="485" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a6470e58e64be02c4bf71a201417bcbbc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::World::isDebug</definition>
+        <argsstring>() const</argsstring>
+        <name>isDebug</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="487" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a72aa272f2e66633642e069106f09c9e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::World::runJavascript</definition>
+        <argsstring>(const char *script)</argsstring>
+        <name>runJavascript</name>
+        <param>
+          <type>const char *</type>
+          <declname>script</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="489" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_world_1a4118fbcbb82b872369b235bbc7cde67f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::processMessage</definition>
+        <argsstring>(const std::string &amp;msg, const std::string delimeter=&quot;root&quot;)</argsstring>
+        <name>processMessage</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>delimeter</declname>
+          <defval>&quot;root&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="493" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a322956de68eb15d43bfb39083942edee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::handleSocketMessage</definition>
+        <argsstring>()</argsstring>
+        <name>handleSocketMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="495" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::checkRayCollision</definition>
+        <argsstring>(DeviceTouch **touches, const char *code, bool disableNodeTouched=false)</argsstring>
+        <name>checkRayCollision</name>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>disableNodeTouched</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="497" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1a3e3cfdf16d875d3fc64c7428c07d23d7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::checkRayCollision</definition>
+        <argsstring>(const DeviceTouch &amp;touch, const char *code, bool disableNodeTouched=false)</argsstring>
+        <name>checkRayCollision</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>disableNodeTouched</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="499" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_1ae023b659a2be3ea9dd38ff1fdef93bd6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::World::checkRayCollision</definition>
+        <argsstring>(const DeviceMouse &amp;mouse, const char *code, bool disableNodeTouched=false)</argsstring>
+        <name>checkRayCollision</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>mouse</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>disableNodeTouched</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/World.h" line="501" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;#Description#&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2654">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2652">
+        <label>njli::World</label>
+        <link refid="classnjli_1_1_world"/>
+        <childnode refid="2653" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2653">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2654" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2670">
+        <label>njli::WorldResourceLoader</label>
+        <link refid="classnjli_1_1_world_resource_loader"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2662">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2658">
+        <label>njli::WorldDebugDrawer</label>
+        <link refid="classnjli_1_1_world_debug_drawer"/>
+        <childnode refid="2659" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2660" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2661" relation="usage">
+          <edgelabel>m_Camera</edgelabel>
+        </childnode>
+      </node>
+      <node id="2698">
+        <label>njli::AbstractStateMachine&lt; Scene &gt;</label>
+        <link refid="classnjli_1_1_abstract_state_machine"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2699" relation="usage">
+          <edgelabel>m_pCurrentState</edgelabel>
+          <edgelabel>m_pPreviousState</edgelabel>
+        </childnode>
+      </node>
+      <node id="2692">
+        <label>njli::AbstractStateMachine&lt; Node &gt;</label>
+        <link refid="classnjli_1_1_abstract_state_machine"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2693" relation="usage">
+          <edgelabel>m_pCurrentState</edgelabel>
+          <edgelabel>m_pPreviousState</edgelabel>
+        </childnode>
+      </node>
+      <node id="2657">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2657" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2675">
+        <label>btClock</label>
+      </node>
+      <node id="2671">
+        <label>njli::WorldFactory</label>
+        <link refid="classnjli_1_1_world_factory"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2655">
+        <label>njli::World</label>
+        <link refid="classnjli_1_1_world"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2658" relation="usage">
+          <edgelabel>m_WorldDebugDrawer</edgelabel>
+        </childnode>
+        <childnode refid="2663" relation="usage">
+          <edgelabel>m_WorldInput</edgelabel>
+        </childnode>
+        <childnode refid="2667" relation="usage">
+          <edgelabel>m_stateMachine</edgelabel>
+        </childnode>
+        <childnode refid="2670" relation="usage">
+          <edgelabel>m_WorldResourceLoader</edgelabel>
+        </childnode>
+        <childnode refid="2671" relation="usage">
+          <edgelabel>m_WorldFactory</edgelabel>
+        </childnode>
+        <childnode refid="2672" relation="usage">
+          <edgelabel>m_WorldLuaVirtualMachine</edgelabel>
+        </childnode>
+        <childnode refid="2655" relation="usage">
+          <edgelabel>s_Instance</edgelabel>
+        </childnode>
+        <childnode refid="2673" relation="usage">
+          <edgelabel>m_WorldClock</edgelabel>
+        </childnode>
+        <childnode refid="2676" relation="usage">
+          <edgelabel>m_WorldSocket</edgelabel>
+        </childnode>
+        <childnode refid="2677" relation="usage">
+          <edgelabel>m_DebugDrawMaterial</edgelabel>
+        </childnode>
+        <childnode refid="2680" relation="usage">
+          <edgelabel>m_WorldHUD</edgelabel>
+        </childnode>
+        <childnode refid="2661" relation="usage">
+          <edgelabel>m_DebugDrawCamera</edgelabel>
+        </childnode>
+        <childnode refid="2681" relation="usage">
+          <edgelabel>m_WorldSound</edgelabel>
+        </childnode>
+        <childnode refid="2682" relation="usage">
+          <edgelabel>m_Scene</edgelabel>
+        </childnode>
+      </node>
+      <node id="2681">
+        <label>njli::WorldSound</label>
+        <link refid="classnjli_1_1_world_sound"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2664">
+        <label>njli::DeviceMouse</label>
+        <link refid="classnjli_1_1_device_mouse"/>
+        <childnode refid="2665" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2659">
+        <label>dd::RenderInterface</label>
+      </node>
+      <node id="2673">
+        <label>njli::WorldClock</label>
+        <link refid="classnjli_1_1_world_clock"/>
+        <childnode refid="2674" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2675" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2683">
+        <label>njli::PhysicsWorld</label>
+        <link refid="classnjli_1_1_physics_world"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2691">
+        <label>njli::NodeStateMachine</label>
+        <link refid="classnjli_1_1_node_state_machine"/>
+        <childnode refid="2692" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2679">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="2689">
+        <label>njli::Image</label>
+        <link refid="classnjli_1_1_image"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2685">
+        <label>njli::AbstractActionable</label>
+        <link refid="classnjli_1_1_abstract_actionable"/>
+      </node>
+      <node id="2669">
+        <label>njli::AbstractState&lt; void &gt;</label>
+        <link refid="classnjli_1_1_abstract_state"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2656">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2657" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2680">
+        <label>njli::WorldHUD</label>
+        <link refid="classnjli_1_1_world_h_u_d"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2661" relation="usage">
+          <edgelabel>m_Camera</edgelabel>
+        </childnode>
+      </node>
+      <node id="2687">
+        <label>njli::SteeringBehaviorMachine</label>
+        <link refid="classnjli_1_1_steering_behavior_machine"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2696">
+        <label>njli::PhysicsShape</label>
+        <link refid="classnjli_1_1_physics_shape"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2665">
+        <label>njli::DeviceInputTime</label>
+        <link refid="classnjli_1_1_device_input_time"/>
+      </node>
+      <node id="2686">
+        <label>njli::PhysicsField</label>
+        <link refid="classnjli_1_1_physics_field"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2677">
+        <label>njli::Material</label>
+        <link refid="classnjli_1_1_material"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2678" relation="usage">
+          <edgelabel>m_Specular</edgelabel>
+          <edgelabel>m_Reflective</edgelabel>
+          <edgelabel>m_Diffuse</edgelabel>
+          <edgelabel>m_Multiply</edgelabel>
+          <edgelabel>m_Emission</edgelabel>
+          <edgelabel>m_Normal</edgelabel>
+          <edgelabel>m_Transparent</edgelabel>
+          <edgelabel>m_Ambient</edgelabel>
+        </childnode>
+      </node>
+      <node id="2684">
+        <label>njli::Node</label>
+        <link refid="classnjli_1_1_node"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2685" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2686" relation="usage">
+          <edgelabel>m_PhysicsField</edgelabel>
+        </childnode>
+        <childnode refid="2684" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+        <childnode refid="2687" relation="usage">
+          <edgelabel>m_SteeringBehaviorMachine</edgelabel>
+        </childnode>
+        <childnode refid="2688" relation="usage">
+          <edgelabel>m_Geometry</edgelabel>
+        </childnode>
+        <childnode refid="2691" relation="usage">
+          <edgelabel>m_NodeStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="2694" relation="usage">
+          <edgelabel>m_Light</edgelabel>
+        </childnode>
+        <childnode refid="2695" relation="usage">
+          <edgelabel>m_PhysicsBody</edgelabel>
+        </childnode>
+        <childnode refid="2682" relation="usage">
+          <edgelabel>m_CurrentScene</edgelabel>
+        </childnode>
+        <childnode refid="2661" relation="usage">
+          <edgelabel>m_Camera</edgelabel>
+        </childnode>
+      </node>
+      <node id="2663">
+        <label>njli::WorldInput</label>
+        <link refid="classnjli_1_1_world_input"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2664" relation="usage">
+          <edgelabel>m_Mouse</edgelabel>
+        </childnode>
+        <childnode refid="2666" relation="usage">
+          <edgelabel>m_TouchBuffer</edgelabel>
+        </childnode>
+      </node>
+      <node id="2668">
+        <label>njli::AbstractStateMachine&lt; void &gt;</label>
+        <link refid="classnjli_1_1_abstract_state_machine"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2669" relation="usage">
+          <edgelabel>m_pCurrentState</edgelabel>
+          <edgelabel>m_pPreviousState</edgelabel>
+        </childnode>
+      </node>
+      <node id="2661">
+        <label>njli::Camera</label>
+        <link refid="classnjli_1_1_camera"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2676">
+        <label>njli::WorldSocket</label>
+        <link refid="classnjli_1_1_world_socket"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2693">
+        <label>njli::AbstractState&lt; Node &gt;</label>
+        <link refid="classnjli_1_1_abstract_state"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2672">
+        <label>njli::WorldLuaVirtualMachine</label>
+        <link refid="classnjli_1_1_world_lua_virtual_machine"/>
+        <childnode refid="2656" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2697">
+        <label>njli::SceneStateMachine</label>
+        <link refid="classnjli_1_1_scene_state_machine"/>
+        <childnode refid="2698" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2667">
+        <label>njli::WorldStateMachine</label>
+        <link refid="classnjli_1_1_world_state_machine"/>
+        <childnode refid="2668" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2682">
+        <label>njli::Scene</label>
+        <link refid="classnjli_1_1_scene"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2683" relation="usage">
+          <edgelabel>m_PhysicsWorld</edgelabel>
+        </childnode>
+        <childnode refid="2684" relation="usage">
+          <edgelabel>m_RootNode</edgelabel>
+        </childnode>
+        <childnode refid="2677" relation="usage">
+          <edgelabel>m_BackgroundMaterial</edgelabel>
+        </childnode>
+        <childnode refid="2697" relation="usage">
+          <edgelabel>m_SceneStateMachine</edgelabel>
+        </childnode>
+        <childnode refid="2661" relation="usage">
+          <edgelabel>m_TouchCamera</edgelabel>
+        </childnode>
+      </node>
+      <node id="2699">
+        <label>njli::AbstractState&lt; Scene &gt;</label>
+        <link refid="classnjli_1_1_abstract_state"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2660">
+        <label>btIDebugDraw</label>
+      </node>
+      <node id="2666">
+        <label>njli::DeviceTouch</label>
+        <link refid="classnjli_1_1_device_touch"/>
+        <childnode refid="2665" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2678">
+        <label>njli::MaterialProperty</label>
+        <link refid="classnjli_1_1_material_property"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2679" relation="usage">
+          <edgelabel>m_AbstractFrameBufferObject</edgelabel>
+          <edgelabel>m_loadGPU_fbo</edgelabel>
+        </childnode>
+      </node>
+      <node id="2695">
+        <label>njli::PhysicsBody</label>
+        <link refid="classnjli_1_1_physics_body"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2696" relation="usage">
+          <edgelabel>m_PhysicsShape</edgelabel>
+        </childnode>
+      </node>
+      <node id="2688">
+        <label>njli::Geometry</label>
+        <link refid="classnjli_1_1_geometry"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2689" relation="usage">
+          <edgelabel>m_setupOpacity_Image</edgelabel>
+        </childnode>
+        <childnode refid="2690" relation="usage">
+          <edgelabel>m_ShaderProgram</edgelabel>
+        </childnode>
+        <childnode refid="2677" relation="usage">
+          <edgelabel>m_setupOpacity_Material</edgelabel>
+          <edgelabel>m_Material</edgelabel>
+        </childnode>
+      </node>
+      <node id="2674">
+        <label>njli::AbstractClock</label>
+        <link refid="classnjli_1_1_abstract_clock"/>
+      </node>
+      <node id="2690">
+        <label>njli::ShaderProgram</label>
+        <link refid="classnjli_1_1_shader_program"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2694">
+        <label>njli::Light</label>
+        <link refid="classnjli_1_1_light"/>
+        <childnode refid="2662" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/World.h" line="39" column="1" bodyfile="njligames-njlic_engine/njli/World.h" bodystart="38" bodyend="543"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>checkRayCollision</name></member>
+      <member refid="classnjli_1_1_world_1a3e3cfdf16d875d3fc64c7428c07d23d7" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>checkRayCollision</name></member>
+      <member refid="classnjli_1_1_world_1ae023b659a2be3ea9dd38ff1fdef93bd6" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>checkRayCollision</name></member>
+      <member refid="classnjli_1_1_world_1a7e31e4dff9169bd82c24e69ff29b53b6" prot="public" virt="non-virtual"><scope>njli::World</scope><name>createInstance</name></member>
+      <member refid="classnjli_1_1_world_1a32797f128d963f99839c12faf4b4dc12" prot="public" virt="non-virtual"><scope>njli::World</scope><name>createScript</name></member>
+      <member refid="classnjli_1_1_world_1a3bddccf6aeb57d953f358a2e66fc2c00" prot="public" virt="non-virtual"><scope>njli::World</scope><name>destroyInstance</name></member>
+      <member refid="classnjli_1_1_world_1ad27af4cf142639c3436f4163d0526442" prot="public" virt="non-virtual"><scope>njli::World</scope><name>destroyScript</name></member>
+      <member refid="classnjli_1_1_world_1a4894e4a53f692a503661a7836bf7713f" prot="public" virt="non-virtual"><scope>njli::World</scope><name>disableDebugDraw</name></member>
+      <member refid="classnjli_1_1_world_1ad67785776209cbbaa6140fcc90b4913a" prot="public" virt="non-virtual"><scope>njli::World</scope><name>enableDebugDraw</name></member>
+      <member refid="classnjli_1_1_world_1a41b67b3dea3196afa6ff1b0d961b39d2" prot="public" virt="non-virtual"><scope>njli::World</scope><name>enablePauseAnimation</name></member>
+      <member refid="classnjli_1_1_world_1ae8f238cc0f23ce6b8a05ad5a3da555f7" prot="public" virt="non-virtual"><scope>njli::World</scope><name>enablePauseGame</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_world_1a4f3d49c5cc8e3a3a2c2439e663a9c60b" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getAspectRatio</name></member>
+      <member refid="classnjli_1_1_world_1a7805d9b4c5ef0943a5c1c32b507d2151" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getBackgroundColor</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_world_1a2811263a084944cded212cd714a165cf" prot="public" virt="virtual"><scope>njli::World</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_world_1abd9b6751260b5e6c28fa9cfd874cfaad" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getDebugDrawer</name></member>
+      <member refid="classnjli_1_1_world_1a88ce760cdc314298a58f96af3ef9d492" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getDebugDrawer</name></member>
+      <member refid="classnjli_1_1_world_1a5ddb30abad714d14694863bb89af14b9" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getDeviceName</name></member>
+      <member refid="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getInstance</name></member>
+      <member refid="classnjli_1_1_world_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::World</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_world_1aacef8d7932cbc6df28524a15b30b50f5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getScene</name></member>
+      <member refid="classnjli_1_1_world_1a007a67243897e4dd1448e97b6b860389" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getScene</name></member>
+      <member refid="classnjli_1_1_world_1ac65ea60b2f5033c2e8a7504820d59ac5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getSocketAddress</name></member>
+      <member refid="classnjli_1_1_world_1af108b41273b0ff7abbf88fa6e311304e" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getSocketPort</name></member>
+      <member refid="classnjli_1_1_world_1a779f9ee41d7e73e013654dcdb1d83cf9" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getStateMachine</name></member>
+      <member refid="classnjli_1_1_world_1aa78f8be7d30ab1d38cea248c3017f0a7" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getStateMachine</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_world_1a35e88a33b35fa6de44f10e3a93a62468" prot="public" virt="virtual"><scope>njli::World</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_world_1ab816a3e089fafc8fe7723723fb201bee" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getViewPort</name></member>
+      <member refid="classnjli_1_1_world_1a0d888d6664fed006bde6e9fd806bc41c" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getViewportDimensions</name></member>
+      <member refid="classnjli_1_1_world_1a00797432cd913a07ad852e703cbf7278" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldClock</name></member>
+      <member refid="classnjli_1_1_world_1a7edeaa8b2caed5240128952e85ea5b12" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldClock</name></member>
+      <member refid="classnjli_1_1_world_1a28299874538b8a714bcbae908760a364" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldFactory</name></member>
+      <member refid="classnjli_1_1_world_1abfd08290519a0525e79f8961cff41c33" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldFactory</name></member>
+      <member refid="classnjli_1_1_world_1a9b8a2755f4643d169d54e047554ba8f2" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldInput</name></member>
+      <member refid="classnjli_1_1_world_1aefbda7b9bf38ace818503473814d8b18" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldInput</name></member>
+      <member refid="classnjli_1_1_world_1a6ebccef746ad4e44455bae7698839e29" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldLuaVirtualMachine</name></member>
+      <member refid="classnjli_1_1_world_1a82f0b1f8d27a311ec99b67d778e121a5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldLuaVirtualMachine</name></member>
+      <member refid="classnjli_1_1_world_1a094d454c35f0afea279bb5fbb39c196a" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldResourceLoader</name></member>
+      <member refid="classnjli_1_1_world_1a78357165d6bc4ef06ef774d4e0606bc9" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldResourceLoader</name></member>
+      <member refid="classnjli_1_1_world_1a245f64dbfb8ac4b9aa405c05c58a77e5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldSocket</name></member>
+      <member refid="classnjli_1_1_world_1a58cd945663087fae147a88f76a984f83" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldSocket</name></member>
+      <member refid="classnjli_1_1_world_1aeafce2408df830b6d0d4f4cc70a502f6" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldSound</name></member>
+      <member refid="classnjli_1_1_world_1aa0df2fe274aae44a7c3f4df0bfc2b2c8" prot="public" virt="non-virtual"><scope>njli::World</scope><name>getWorldSound</name></member>
+      <member refid="classnjli_1_1_world_1a322956de68eb15d43bfb39083942edee" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>handleSocketMessage</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_world_1a9c8ccd2a51131b026b1ee6c9135eea8b" prot="public" virt="non-virtual"><scope>njli::World</scope><name>hasInstance</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_world_1ac84f5b1da4bbd124829f30b7a3fbd4d0" prot="public" virt="non-virtual"><scope>njli::World</scope><name>isAnimationPaused</name></member>
+      <member refid="classnjli_1_1_world_1a6470e58e64be02c4bf71a201417bcbbc" prot="public" virt="non-virtual"><scope>njli::World</scope><name>isDebug</name></member>
+      <member refid="classnjli_1_1_world_1abfbc1b055160d3c6a6ccd4f1ec784b0b" prot="public" virt="non-virtual"><scope>njli::World</scope><name>isPausedGame</name></member>
+      <member refid="classnjli_1_1_world_1a776f8bf7c461ecac1db1b485828f6894" prot="public" virt="non-virtual"><scope>njli::World</scope><name>isSocketEnabled</name></member>
+      <member refid="classnjli_1_1_world_1a5ecc9ab5fe1c940ae021489d5574edf7" prot="public" virt="non-virtual"><scope>njli::World</scope><name>keyboardCancel</name></member>
+      <member refid="classnjli_1_1_world_1a6e7f30cb39fb2cc23148a3765d0fed3e" prot="public" virt="non-virtual"><scope>njli::World</scope><name>keyboardReturn</name></member>
+      <member refid="classnjli_1_1_world_1abd97ee22f8fbfa29ace0f4859b16d6e0" prot="public" virt="non-virtual"><scope>njli::World</scope><name>keyboardShow</name></member>
+      <member refid="classnjli_1_1_world_1a6fc507c345272128f64cd5c6d4e6ca08" prot="public" virt="non-virtual"><scope>njli::World</scope><name>keyDown</name></member>
+      <member refid="classnjli_1_1_world_1ad64c93b5f93db6e9df3ce7b9869d12d4" prot="public" virt="non-virtual"><scope>njli::World</scope><name>keyUp</name></member>
+      <member refid="classnjli_1_1_world_1a5a261c335c55b2fd0e678e815a6cc85a" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_AnimationPaused</name></member>
+      <member refid="classnjli_1_1_world_1acf0b94b1d7cba8d62158065b03de9012" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_BackgroundColor</name></member>
+      <member refid="classnjli_1_1_world_1a5ae1a42d02339871c60b45ecacc92753" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_DebugDrawCamera</name></member>
+      <member refid="classnjli_1_1_world_1a180a3f557467c6bb6d88cf05b691a6f4" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_DebugDrawMaterial</name></member>
+      <member refid="classnjli_1_1_world_1a9dc158249ba20ca7b1523cce0d8d309f" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_DeviceName</name></member>
+      <member refid="classnjli_1_1_world_1ac9ab0b237e486a28bd08adf913b3908c" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_enableDebugDraw</name></member>
+      <member refid="classnjli_1_1_world_1af387313aec7a62f3792e76d9610b70a8" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_GamePaused</name></member>
+      <member refid="classnjli_1_1_world_1a96897049ea6e799e334d53f8e8735e35" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_RayContacts</name></member>
+      <member refid="classnjli_1_1_world_1a9c9279cbbb77ef973cb7d003198789b7" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_Scene</name></member>
+      <member refid="classnjli_1_1_world_1a51c1d3b5047c2e10c2850faf137efa9a" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_SocketAddress</name></member>
+      <member refid="classnjli_1_1_world_1ab701cb678bcb47262db407e4684608a2" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_SocketEnabled</name></member>
+      <member refid="classnjli_1_1_world_1aafbdf669fc3dbc91c2b746b653ac4f17" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_SocketPort</name></member>
+      <member refid="classnjli_1_1_world_1a14412bd1ed14fca506732c0234db2b28" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_stateMachine</name></member>
+      <member refid="classnjli_1_1_world_1a0ac18bfa72f55b16c00703e1035a0af7" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_ViewPortDimensions</name></member>
+      <member refid="classnjli_1_1_world_1aacebc8d861e42a409cf1a875972da641" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldClock</name></member>
+      <member refid="classnjli_1_1_world_1aa92f105e6f53c7d8c30b8e453e1181c8" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldDebugDrawer</name></member>
+      <member refid="classnjli_1_1_world_1ae50678873f637941aa87ec45c33e9a1c" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldFactory</name></member>
+      <member refid="classnjli_1_1_world_1a922a3ec1f96ac87f97faee6329f39686" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldHUD</name></member>
+      <member refid="classnjli_1_1_world_1a87601ddb30dead7b8b0bd05bcc1f7ff3" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldInput</name></member>
+      <member refid="classnjli_1_1_world_1ab3878c3df6c61327dfd7a08864e567a9" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldLuaVirtualMachine</name></member>
+      <member refid="classnjli_1_1_world_1a4ebb658eba80c17e930b96881d3a4e19" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldResourceLoader</name></member>
+      <member refid="classnjli_1_1_world_1a0f6ea126555fa904aa246baba084c9de" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldSocket</name></member>
+      <member refid="classnjli_1_1_world_1a004cd4a3a730b83733b3ff91bfaedce2" prot="private" virt="non-virtual"><scope>njli::World</scope><name>m_WorldSound</name></member>
+      <member refid="classnjli_1_1_world_1a484e8c77cd1ed5613189c503326a310b" prot="public" virt="non-virtual"><scope>njli::World</scope><name>mouseDown</name></member>
+      <member refid="classnjli_1_1_world_1a6c13bee0e9fca64f619dd92b927f948a" prot="public" virt="non-virtual"><scope>njli::World</scope><name>mouseMove</name></member>
+      <member refid="classnjli_1_1_world_1a4f3f72ae362ffc3aa5636d30dd84224e" prot="public" virt="non-virtual"><scope>njli::World</scope><name>mouseUp</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_world_1a2a892d17f7e21b51784e45ecc4aa642e" prot="public" virt="virtual"><scope>njli::World</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_world_1a2fe83dc2d899a91ef21ac20220e2ada4" prot="private" virt="non-virtual"><scope>njli::World</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_world_1a4118fbcbb82b872369b235bbc7cde67f" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>processMessage</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_world_1aabf2a07e2fab640f5800357ad1fd7717" prot="public" virt="non-virtual"><scope>njli::World</scope><name>removeScene</name></member>
+      <member refid="classnjli_1_1_world_1a3e7f68f7467d421971e13dfcc5e2100e" prot="public" virt="non-virtual"><scope>njli::World</scope><name>render</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::World</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_world_1a04acd6d056b32f996c165d2d9a8ee34d" prot="public" virt="non-virtual"><scope>njli::World</scope><name>resize</name></member>
+      <member refid="classnjli_1_1_world_1a72aa272f2e66633642e069106f09c9e9" prot="public" virt="non-virtual"><scope>njli::World</scope><name>runJavascript</name></member>
+      <member refid="classnjli_1_1_world_1afbef76d7d011571721a36b2eb625e997" prot="private" virt="non-virtual"><scope>njli::World</scope><name>s_Instance</name></member>
+      <member refid="classnjli_1_1_world_1a7eebf55a7920061d87e5dc03feb692da" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setBackgroundAlpha</name></member>
+      <member refid="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setBackgroundColor</name></member>
+      <member refid="classnjli_1_1_world_1ab7bbd4dee42bec416fb2b64e9843ddf1" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setBackgroundColor</name></member>
+      <member refid="classnjli_1_1_world_1a9f1b7c924b237316f9529a319c2ca055" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setBackgroundColor</name></member>
+      <member refid="classnjli_1_1_world_1a5c9cc63ac7cb847e6d581a867614e47d" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setDeviceName</name></member>
+      <member refid="classnjli_1_1_world_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::World</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::World</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_world_1a80c42c94ab3fbf4242f3d9b5e7866379" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setScene</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::World</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_world_1a5b67da9acd56cec605ad0dccc2b957cd" prot="public" virt="non-virtual"><scope>njli::World</scope><name>startSocket</name></member>
+      <member refid="classnjli_1_1_world_1ac4b819fe8d34e6661d8f47138c318ff5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>startSocket</name></member>
+      <member refid="classnjli_1_1_world_1a7d217f38577d72d349e2df64761dc4c5" prot="public" virt="non-virtual"><scope>njli::World</scope><name>stopSocket</name></member>
+      <member refid="classnjli_1_1_world_1a456be839bfe441022745d2790ac44942" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchCancelled</name></member>
+      <member refid="classnjli_1_1_world_1a027fc2766ebe49b79f974e7e808610f8" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchDown</name></member>
+      <member refid="classnjli_1_1_world_1aa1bc8ac0264f93580c6629d41dbd00b3" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchDown</name></member>
+      <member refid="classnjli_1_1_world_1a19b6222b4d9eaa0f83ab74f555ed6e68" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchMove</name></member>
+      <member refid="classnjli_1_1_world_1a625c469136089b896cc94c7f151ec8e6" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchMove</name></member>
+      <member refid="classnjli_1_1_world_1a1b2be462f5455b01856968eea7ee96bb" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchUp</name></member>
+      <member refid="classnjli_1_1_world_1a9d64d3a8310bba9935bf998ec9d341e8" prot="public" virt="non-virtual"><scope>njli::World</scope><name>touchUp</name></member>
+      <member refid="classnjli_1_1_world_1a248c324a0a97b0f286eaedf8f997688e" prot="public" virt="non-virtual"><scope>njli::World</scope><name>update</name></member>
+      <member refid="classnjli_1_1_world_1af01e96219aea73e611ba28179b3532ed" prot="private" virt="non-virtual"><scope>njli::World</scope><name>World</name></member>
+      <member refid="classnjli_1_1_world_1abf9c0b24c17244baf76d760e81974cfe" prot="private" virt="non-virtual"><scope>njli::World</scope><name>World</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::World</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::World</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_world_1aaf74d0ac73e1bf62d7b26bf7fdb6b5cd" prot="private" virt="virtual"><scope>njli::World</scope><name>~World</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

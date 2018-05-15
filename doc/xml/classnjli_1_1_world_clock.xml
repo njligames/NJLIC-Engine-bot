@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_world_clock" kind="class" language="C++" prot="public">
+    <compoundname>njli::WorldClock</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_clock" prot="public" virt="non-virtual">njli::AbstractClock</basecompoundref>
+    <basecompoundref refid="classnjli_1_1_abstract_object" prot="public" virt="non-virtual">njli::AbstractObject</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">btClock</basecompoundref>
+    <includes refid="_world_clock_8h" local="no">WorldClock.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_clock_1aa727682fd2ee70cbfba4e78813e8f730" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::WorldClock::m_TimeStep</definition>
+        <argsstring></argsstring>
+        <name>m_TimeStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="84" column="1" bodyfile="njligames-njlic_engine/njli/WorldClock.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_clock_1a2fccbd5a2216651b2614cf5b0d960046" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" kindref="member">f64</ref></type>
+        <definition>f64 njli::WorldClock::m_TotalMilliseconds</definition>
+        <argsstring></argsstring>
+        <name>m_TotalMilliseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="85" column="1" bodyfile="njligames-njlic_engine/njli/WorldClock.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1abc95e23fc5d9c28884e4775c2c61e232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldClock::WorldClock</definition>
+        <argsstring>()</argsstring>
+        <name>WorldClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1aac4a9a1501e69c88ef720b01564c9d4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::WorldClock::~WorldClock</definition>
+        <argsstring>()</argsstring>
+        <name>~WorldClock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a3d049ae0564d07c40cc0f9a3d5ccf20e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::WorldClock::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afdabb48c4bf763e297ffe810b433a863">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1ada98188afadfa5dc712d96a0d12f56a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::WorldClock::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1a08dcf202a47f0782813b8bc98c659e78">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a0ebeaf0636f48e20734bf05dee514ff3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::WorldClock::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afc07f4138bd3003910e7aa7fa0fe11ad">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a0594a3ed72d610082cc4ad00bb2d0e42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" kindref="member">f64</ref></type>
+        <definition>f64 njli::WorldClock::totalMilliseconds</definition>
+        <argsstring>() const</argsstring>
+        <name>totalMilliseconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a756caa9141b7e68da86d65050552102d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::WorldClock::timeStep</definition>
+        <argsstring>() const</argsstring>
+        <name>timeStep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1ae68c432422e175aaa52746b99c57f843" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WorldClock::update</definition>
+        <argsstring>(f64 milliseconds)</argsstring>
+        <name>update</name>
+        <reimplements refid="classnjli_1_1_abstract_clock_1a06401048780f7b9522187731d3a97579">update</reimplements>
+        <param>
+          <type><ref refid="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5" kindref="member">f64</ref></type>
+          <declname>milliseconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>milliseconds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#milliseconds description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="25" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a7980edaac13345c4a1589542a699d53e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldClock::WorldClock</definition>
+        <argsstring>(const WorldClock &amp;)</argsstring>
+        <name>WorldClock</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_clock_1a4e158b42fd4835209dce260ffe490420" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref> &amp;</type>
+        <definition>WorldClock&amp; njli::WorldClock::operator=</definition>
+        <argsstring>(const WorldClock &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldClock.h" line="82" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;#Description#&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2703">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2704">
+        <label>btClock</label>
+      </node>
+      <node id="2700">
+        <label>njli::WorldClock</label>
+        <link refid="classnjli_1_1_world_clock"/>
+        <childnode refid="2701" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2702" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2704" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2702">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2703" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2701">
+        <label>njli::AbstractClock</label>
+        <link refid="classnjli_1_1_abstract_clock"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2708">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2708" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2709">
+        <label>btClock</label>
+      </node>
+      <node id="2705">
+        <label>njli::WorldClock</label>
+        <link refid="classnjli_1_1_world_clock"/>
+        <childnode refid="2706" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2707" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2709" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2707">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2708" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2706">
+        <label>njli::AbstractClock</label>
+        <link refid="classnjli_1_1_abstract_clock"/>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/WorldClock.h" line="22" column="1" bodyfile="njligames-njlic_engine/njli/WorldClock.h" bodystart="21" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_clock_1adf1ecfb49abca618253d605ff43a212b" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>AbstractClock</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1a3c605a41c8f527a61c2226b2dba6bba4" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>AbstractClock</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_world_clock_1a3d049ae0564d07c40cc0f9a3d5ccf20e" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_world_clock_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::WorldClock</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1ada0417b7564b9cdee7357191f33ea448" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>getRawTime</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_world_clock_1ada98188afadfa5dc712d96a0d12f56a2" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_world_clock_1aa727682fd2ee70cbfba4e78813e8f730" prot="private" virt="non-virtual"><scope>njli::WorldClock</scope><name>m_TimeStep</name></member>
+      <member refid="classnjli_1_1_world_clock_1a2fccbd5a2216651b2614cf5b0d960046" prot="private" virt="non-virtual"><scope>njli::WorldClock</scope><name>m_TotalMilliseconds</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_world_clock_1a0ebeaf0636f48e20734bf05dee514ff3" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_world_clock_1a4e158b42fd4835209dce260ffe490420" prot="private" virt="non-virtual"><scope>njli::WorldClock</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1a3cdd1200a3ef9bd0a5748ab3e7c2ad7b" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractClock::"><scope>njli::WorldClock</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::WorldClock</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_world_clock_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::WorldClock</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::WorldClock</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1ad837eada8b3deafe40d6a2e27efa048a" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>setRawTime</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_world_clock_1a756caa9141b7e68da86d65050552102d" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>timeStep</name></member>
+      <member refid="classnjli_1_1_world_clock_1a0594a3ed72d610082cc4ad00bb2d0e42" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>totalMilliseconds</name></member>
+      <member refid="classnjli_1_1_world_clock_1ae68c432422e175aaa52746b99c57f843" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>update</name></member>
+      <member refid="classnjli_1_1_world_clock_1abc95e23fc5d9c28884e4775c2c61e232" prot="public" virt="non-virtual"><scope>njli::WorldClock</scope><name>WorldClock</name></member>
+      <member refid="classnjli_1_1_world_clock_1a7980edaac13345c4a1589542a699d53e" prot="private" virt="non-virtual"><scope>njli::WorldClock</scope><name>WorldClock</name></member>
+      <member refid="classnjli_1_1_abstract_clock_1a41aac7ee2287261e3b9e7fff9863f821" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>~AbstractClock</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::WorldClock</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::WorldClock</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_world_clock_1aac4a9a1501e69c88ef720b01564c9d4c" prot="public" virt="virtual"><scope>njli::WorldClock</scope><name>~WorldClock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1949 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_material_property" kind="class" language="C++" prot="public">
+    <compoundname>njli::MaterialProperty</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <includes refid="_material_property_8h" local="no">MaterialProperty.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855b" prot="private" static="no" strong="no">
+        <type></type>
+        <name>njliLoadGPUType</name>
+        <enumvalue id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab2312f8edb2846647ff841d4a7813c89" prot="private">
+          <name>JLI_LOAD_GPU_TYPE_NONE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba19facd571e661394fd10c4adc26e2de6" prot="private">
+          <name>JLI_LOAD_GPU_TYPE_2D_EMPTY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba84cee2de1a9c1bff7902327c2871a4cf" prot="private">
+          <name>JLI_LOAD_GPU_TYPE_2D</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba705566d6faa4dc00bf60956035329286" prot="private">
+          <name>JLI_LOAD_GPU_TYPE_CUBE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bac5507e15f557a30a23a193db80d35b57" prot="private">
+          <name>JLI_LOAD_GPU_TYPE_FBO</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab57e4f81335fbb5b1af57ef0dde78a59" prot="private">
+          <name>JLI_LOAD_GPU_TYPE_MAX</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="375" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="374" bodyend="382"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_material_property_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="36" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_material_property_1aa1212b6e372a0f45d2c01f3cd203af77" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Material</definition>
+        <argsstring></argsstring>
+        <name>Material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="37" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1aeb9f7375f6cf29868549e99f1d709b3d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::MaterialProperty::m_diffuseBound</definition>
+        <argsstring></argsstring>
+        <name>m_diffuseBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="342" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="342" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a792f0aecc3bf0a36018e7abeca5c7080" prot="private" static="no" mutable="no">
+        <type>bool *</type>
+        <definition>bool* njli::MaterialProperty::m_materialBound</definition>
+        <argsstring></argsstring>
+        <name>m_materialBound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="343" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="343" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a54b3b51f4b0d736d316b63777ccda316" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_textureID</definition>
+        <argsstring></argsstring>
+        <name>m_textureID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="344" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a13b42d54787929d981050557ac4748a8" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1a980b62f11da3b7143a525012cb512bac" kindref="member">njliTextureMinificationValueType</ref></type>
+        <definition>njliTextureMinificationValueType njli::MaterialProperty::m_minVal</definition>
+        <argsstring></argsstring>
+        <name>m_minVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="345" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a99668eb548352e3b136eff0d78bdaf47" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1a9fe7a080d946c5be3afc71d834dc7902" kindref="member">njliTextureMagnificationValueType</ref></type>
+        <definition>njliTextureMagnificationValueType njli::MaterialProperty::m_magVal</definition>
+        <argsstring></argsstring>
+        <name>m_magVal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="346" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a18842aef4fce7ec9871bcf206fc5d517" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62" kindref="member">njliTextureWrapType</ref></type>
+        <definition>njliTextureWrapType njli::MaterialProperty::m_sWrap</definition>
+        <argsstring></argsstring>
+        <name>m_sWrap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="347" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a1db9e13afa4a288eaf901c7e6726d36f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62" kindref="member">njliTextureWrapType</ref></type>
+        <definition>njliTextureWrapType njli::MaterialProperty::m_tWrap</definition>
+        <argsstring></argsstring>
+        <name>m_tWrap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="348" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a6561cf1412426aa7a0b40590ad221169" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::MaterialProperty::m_textureType</definition>
+        <argsstring></argsstring>
+        <name>m_textureType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="349" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1aeab9a246acdf7a58f77381addbe25af3" prot="private" static="no" mutable="no">
+        <type>btTransform *</type>
+        <definition>btTransform* njli::MaterialProperty::m_TextureTransform</definition>
+        <argsstring></argsstring>
+        <name>m_TextureTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="350" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1acbc4746b18b182d07313eeab1fb0a62c" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 njli::MaterialProperty::m_TextureIndex</definition>
+        <argsstring></argsstring>
+        <name>m_TextureIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="351" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a8e0a5e6f9f07c09905cc9bdef219486b" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_Width</definition>
+        <argsstring></argsstring>
+        <name>m_Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="352" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="352" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a51e2a105287561c4417234e5a804fa32" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_Height</definition>
+        <argsstring></argsstring>
+        <name>m_Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="353" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1aa65bd34c711ad4a992d9c0cca0408502" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_NumberOfComponents</definition>
+        <argsstring></argsstring>
+        <name>m_NumberOfComponents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="354" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a71f667dc1a2ab962ed1d014b223c6c2d" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_2DUniform</definition>
+        <argsstring></argsstring>
+        <name>m_2DUniform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="356" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="356" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a48374b6e4a3ec749e21499e76633606e" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_CubeUniform</definition>
+        <argsstring></argsstring>
+        <name>m_CubeUniform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="357" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a6ca2655337c3335aa3188e4b0a202d0e" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_is2DUniform</definition>
+        <argsstring></argsstring>
+        <name>m_is2DUniform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="358" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a24142b6247dd361b43102f83d2d8e36c" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::m_isCubeUniform</definition>
+        <argsstring></argsstring>
+        <name>m_isCubeUniform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="359" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a6d09f742e5c768571d6a240648cfc488" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_abstract_frame_buffer_object" kindref="compound">AbstractFrameBufferObject</ref> *</type>
+        <definition>AbstractFrameBufferObject* njli::MaterialProperty::m_AbstractFrameBufferObject</definition>
+        <argsstring></argsstring>
+        <name>m_AbstractFrameBufferObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="360" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="360" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1adda1b2988da4117aefb2d54ff735c13c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::MaterialProperty::m_hasOpacity</definition>
+        <argsstring></argsstring>
+        <name>m_hasOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="361" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="361" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a3ad0ce3f3e483eff600e95737228c218" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855b" kindref="member">njliLoadGPUType</ref></type>
+        <definition>njliLoadGPUType njli::MaterialProperty::m_njliLoadGPUType</definition>
+        <argsstring></argsstring>
+        <name>m_njliLoadGPUType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="384" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1ad46878315683b289618fc02ade373381" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_abstract_frame_buffer_object" kindref="compound">AbstractFrameBufferObject</ref> *</type>
+        <definition>AbstractFrameBufferObject* njli::MaterialProperty::m_loadGPU_fbo</definition>
+        <argsstring></argsstring>
+        <name>m_loadGPU_fbo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="385" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a6cc6f82863c4a24f7ce7fd987d79621d" prot="private" static="yes" mutable="no">
+        <type>std::bitset&lt; 16 &gt;</type>
+        <definition>std::bitset&lt;16&gt; njli::MaterialProperty::s_TextureIDReferences</definition>
+        <argsstring></argsstring>
+        <name>s_TextureIDReferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="368" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a2171d36a9f88b3a13ae5076d4260bd35" prot="private" static="yes" mutable="no">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::MaterialProperty::s_MaxTextureUnits</definition>
+        <argsstring></argsstring>
+        <name>s_MaxTextureUnits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="370" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_material_property_1a4a448748254555524066ca2806a6b66d" prot="private" static="yes" mutable="no">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::MaterialProperty::s_MaxTextureSize</definition>
+        <argsstring></argsstring>
+        <name>s_MaxTextureSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="371" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="371" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a6811e536c0304699a61cfc1024f2ba8f" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::MaterialProperty::MaterialProperty</definition>
+        <argsstring>()</argsstring>
+        <name>MaterialProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1adb5e4547cc2288c3a2eb3ff527550b7e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::MaterialProperty::MaterialProperty</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>MaterialProperty</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a7c76ca284edd6d7ac17b90ec0f0367f1" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::MaterialProperty::MaterialProperty</definition>
+        <argsstring>(const MaterialProperty &amp;)</argsstring>
+        <name>MaterialProperty</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ae5c6b3221d3eba4205c5301d440c00ca" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::MaterialProperty::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a75c8490c52755625c177afc58c229a93" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::MaterialProperty::~MaterialProperty</definition>
+        <argsstring>()</argsstring>
+        <name>~MaterialProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a2be91e903f98e3eea9309485e76a7f79" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> &amp;</type>
+        <definition>MaterialProperty&amp; njli::MaterialProperty::operator=</definition>
+        <argsstring>(const MaterialProperty &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a50438fb39042ba68cd581bff9658b2b3" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 njli::MaterialProperty::getTextureIndex</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="327" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a1ec8ff2f8e2d6289361d1fe9c8838807" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::setTextureIndex</definition>
+        <argsstring>(u8 index)</argsstring>
+        <name>setTextureIndex</name>
+        <param>
+          <type><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a51d5f7827d6a08ab84c0ec549dbaf9de" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::MaterialProperty::bind</definition>
+        <argsstring>(ShaderProgram *program)</argsstring>
+        <name>bind</name>
+        <param>
+          <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+          <declname>program</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="330" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ae15d33487d858135cb0366bc629fe255" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::unBind</definition>
+        <argsstring>()</argsstring>
+        <name>unBind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="331" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a9bf91c2260c96d60ee8ef7eaa491e8de" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadTexImage2DInternal</definition>
+        <argsstring>(const Image &amp;img, s32 target)</argsstring>
+        <name>loadTexImage2DInternal</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>target</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="333" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ad04b3469ee0c493240c55e1294c71727" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::reLoadTexImage2DInternal</definition>
+        <argsstring>(const Image &amp;img, s32 target, const btVector2 &amp;offset=btVector2(0, 0))</argsstring>
+        <name>reLoadTexImage2DInternal</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>target</declname>
+        </param>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>offset</declname>
+          <defval>btVector2(0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="334" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ae72cdc356494add65927cabbb9141d82" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::MaterialProperty::loadProperties</definition>
+        <argsstring>() const</argsstring>
+        <name>loadProperties</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="337" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a888f05d2a7c7db1d701aeedc41390943" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::MaterialProperty::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a5338183b33812c774e246c9d1827d666" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::MaterialProperty::serialize</definition>
+        <argsstring>(void *dataBuffer, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+          <declname>dataBuffer</declname>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 15:02:47</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dataBuffer description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a10e4f8c062f12361638445530f82bd69" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::MaterialProperty::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1aad6d725e907d46679f9aeac68f91ff42" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::MaterialProperty::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a3ab43fdd4f1a6dd76f5e8e468c1be923" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::MaterialProperty::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a1c30fb90512ef7eef66f4571d34fc42e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>Material* njli::MaterialProperty::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="162" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ab401ed5ab389a124afe832ff9a67777b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>const Material* njli::MaterialProperty::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a252a4ebb78f314af5eeec14ebd794692" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::setMinificationFilter</definition>
+        <argsstring>(njliTextureMinificationValueType val)</argsstring>
+        <name>setMinificationFilter</name>
+        <param>
+          <type><ref refid="namespacenjli_1a980b62f11da3b7143a525012cb512bac" kindref="member">njliTextureMinificationValueType</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#val description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="178" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1adbfec558090c7a6091b23a0ee4ad0c76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenjli_1a980b62f11da3b7143a525012cb512bac" kindref="member">njliTextureMinificationValueType</ref></type>
+        <definition>njliTextureMinificationValueType njli::MaterialProperty::getMinificationFilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinificationFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ac8519825cbf12f274d2cfea9d1afcc64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::setMagnificationFilter</definition>
+        <argsstring>(njliTextureMagnificationValueType val)</argsstring>
+        <name>setMagnificationFilter</name>
+        <param>
+          <type><ref refid="namespacenjli_1a9fe7a080d946c5be3afc71d834dc7902" kindref="member">njliTextureMagnificationValueType</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#val description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1aa5f65e3731941c88cc6600b414a8b1dd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenjli_1a9fe7a080d946c5be3afc71d834dc7902" kindref="member">njliTextureMagnificationValueType</ref></type>
+        <definition>njliTextureMagnificationValueType njli::MaterialProperty::getMagnificationFilter</definition>
+        <argsstring>() const</argsstring>
+        <name>getMagnificationFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a373bb320a2411e19eb79b376bdace858" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::setWrapS</definition>
+        <argsstring>(njliTextureWrapType val)</argsstring>
+        <name>setWrapS</name>
+        <param>
+          <type><ref refid="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62" kindref="member">njliTextureWrapType</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#val description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="204" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a88eebd11319add4290b5d7d28a177161" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62" kindref="member">njliTextureWrapType</ref></type>
+        <definition>njliTextureWrapType njli::MaterialProperty::getWrapS</definition>
+        <argsstring>() const</argsstring>
+        <name>getWrapS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a085c669a1f7e6df12a6e8bcabd70a176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::setWrapT</definition>
+        <argsstring>(njliTextureWrapType val)</argsstring>
+        <name>setWrapT</name>
+        <param>
+          <type><ref refid="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62" kindref="member">njliTextureWrapType</ref></type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#val description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="217" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ad83676a4a57a35e1e8f4ece4942ab300" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62" kindref="member">njliTextureWrapType</ref></type>
+        <definition>njliTextureWrapType njli::MaterialProperty::getWrapT</definition>
+        <argsstring>() const</argsstring>
+        <name>getWrapT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="223" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ad96612e3ed0bd7e7ee02007e4a7e6449" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU</definition>
+        <argsstring>()</argsstring>
+        <name>loadGPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="228" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ac710f73d560118360ab73f5bf87cf016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU</definition>
+        <argsstring>(const Image &amp;img)</argsstring>
+        <name>loadGPU</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#img description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1aff66a14be2c9117f8620cd2bab88f9b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU</definition>
+        <argsstring>(const Image &amp;negativeX, const Image &amp;negativeY, const Image &amp;negativeZ, const Image &amp;positiveX, const Image &amp;positiveY, const Image &amp;positiveZ)</argsstring>
+        <name>loadGPU</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>negativeX</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>negativeY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>negativeZ</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>positiveX</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>positiveY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>positiveZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>negativeX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#negativeX description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>negativeY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#negativeY description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>negativeZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#negativeZ description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positiveX</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#positiveX description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positiveY</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#positiveY description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>positiveZ</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#positiveZ description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a54a76d538f19e7b4bdd29b1106ca92e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU</definition>
+        <argsstring>(AbstractFrameBufferObject *fbo)</argsstring>
+        <name>loadGPU</name>
+        <param>
+          <type><ref refid="classnjli_1_1_abstract_frame_buffer_object" kindref="compound">AbstractFrameBufferObject</ref> *</type>
+          <declname>fbo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fbo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#fbo description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="253" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a26086f9fabd9f206fc89ef9e4d1ab351" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::unLoadGPU</definition>
+        <argsstring>()</argsstring>
+        <name>unLoadGPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1adb0972e7a2a81e22c59252d609ed4134" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::reLoadGPU</definition>
+        <argsstring>(const Image &amp;img, const btVector2 &amp;offset=btVector2(0, 0))</argsstring>
+        <name>reLoadGPU</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>offset</declname>
+          <defval>btVector2(0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#img description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#0 description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1abb3e55b3f32ba67f6e52b3a1af5672be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::reLoadGPU</definition>
+        <argsstring>(const Image &amp;img, njliTextureCubeSides cubeSide, const btVector2 &amp;offset=btVector2(0, 0))</argsstring>
+        <name>reLoadGPU</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenjli_1a3287657f79ee806953cdf2a3e719a9dd" kindref="member">njliTextureCubeSides</ref></type>
+          <declname>cubeSide</declname>
+        </param>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>offset</declname>
+          <defval>btVector2(0, 0)</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#img description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cubeSide</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#cubeSide description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#0 description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="275" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a8c9ed69e9d9965c8aaaa8e5a79ce1d3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::setTextureTransform</definition>
+        <argsstring>(const btTransform &amp;transform)</argsstring>
+        <name>setTextureTransform</name>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="283" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a0e93c57d80278fff3bc8f873e0cba4da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btTransform &amp;</type>
+        <definition>const btTransform&amp; njli::MaterialProperty::getTextureTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextureTransform</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="289" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a03191c04ff259c86536626a6efcaf6d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::getWidth</definition>
+        <argsstring>() const</argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a15f1ba5be6e2f5da618dea70c3e2700e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::MaterialProperty::getHeight</definition>
+        <argsstring>() const</argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a80ffe6edad2abff10c36fb54ff7640f6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::MaterialProperty::isTextureCube</definition>
+        <argsstring>() const</argsstring>
+        <name>isTextureCube</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a839469894a0d05814b6947a107e34516" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::MaterialProperty::isTexture2D</definition>
+        <argsstring>() const</argsstring>
+        <name>isTexture2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a81e7c9ce6255bf9a4a07215892b1b5fa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::MaterialProperty::hasOpacity</definition>
+        <argsstring>() const</argsstring>
+        <name>hasOpacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="54" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ab1577f6ebd7e36432b326dbe37602185" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> **</type>
+        <definition>static MaterialProperty** njli::MaterialProperty::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a663827a5878ba71adb46ace8142f823d" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::MaterialProperty::destroyArray</definition>
+        <argsstring>(MaterialProperty **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ab7a5e5535ed79f6ac2c86c8b78214007" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        <definition>static MaterialProperty* njli::MaterialProperty::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a030ee6b5b94ec745e83b044ccc6906ff" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        <definition>static MaterialProperty* njli::MaterialProperty::create</definition>
+        <argsstring>(const MaterialPropertyBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_material_property_builder" kindref="compound">MaterialPropertyBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a7cbf31bfe41a2048c0bd26d99f57a74c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        <definition>static MaterialProperty* njli::MaterialProperty::clone</definition>
+        <argsstring>(const MaterialProperty &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a8347b1bfe6959984904ef14d113bad53" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        <definition>static MaterialProperty* njli::MaterialProperty::copy</definition>
+        <argsstring>(const MaterialProperty &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1ae3efb73be6d8d3e1bcca27d438959fe0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::MaterialProperty::destroy</definition>
+        <argsstring>(MaterialProperty *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a4a3dce836762ad8e911e7965df320b07" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::MaterialProperty::load</definition>
+        <argsstring>(MaterialProperty &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a4d223566b0ede80d533b50bdbe9e6717" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::MaterialProperty::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="155" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a136a817ad5462dc2946014aab739bddd" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::MaterialProperty::initReferences</definition>
+        <argsstring>()</argsstring>
+        <name>initReferences</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="324" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a9bbe416abf678f714afc3cedbe235b11" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::MaterialProperty::addReference</definition>
+        <argsstring>(MaterialProperty *)</argsstring>
+        <name>addReference</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="364" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a9aedcf990d5787c531ae4126d1329c5e" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::MaterialProperty::removeReference</definition>
+        <argsstring>(MaterialProperty *)</argsstring>
+        <name>removeReference</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="365" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1aebfaf86035d419025c151dfdd20bd6b1" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>static bool njli::MaterialProperty::hasReference</definition>
+        <argsstring>(MaterialProperty *)</argsstring>
+        <name>hasReference</name>
+        <param>
+          <type><ref refid="classnjli_1_1_material_property" kindref="compound">MaterialProperty</ref> *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="366" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a9952072ad753a049bf653dc55a7089b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU_Internal</definition>
+        <argsstring>()</argsstring>
+        <name>loadGPU_Internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a2279e0f7abdce078f62c121520cac369" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU_Internal</definition>
+        <argsstring>(const Image &amp;img)</argsstring>
+        <name>loadGPU_Internal</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="389" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1aa9a78f32c94e7d5e822dd328eb954ec9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU_Internal</definition>
+        <argsstring>(const Image &amp;negativeX, const Image &amp;negativeY, const Image &amp;negativeZ, const Image &amp;positiveX, const Image &amp;positiveY, const Image &amp;positiveZ)</argsstring>
+        <name>loadGPU_Internal</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>negativeX</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>negativeY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>negativeZ</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>positiveX</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>positiveY</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_image" kindref="compound">Image</ref> &amp;</type>
+          <declname>positiveZ</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_material_property_1a0e2f5b5c25f4b11f282905cd4492c5f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::MaterialProperty::loadGPU_Internal</definition>
+        <argsstring>(AbstractFrameBufferObject *fbo)</argsstring>
+        <name>loadGPU_Internal</name>
+        <param>
+          <type><ref refid="classnjli_1_1_abstract_frame_buffer_object" kindref="compound">AbstractFrameBufferObject</ref> *</type>
+          <declname>fbo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="393" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1083">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1084" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1085">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="1084">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1085" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1082">
+        <label>njli::MaterialProperty</label>
+        <link refid="classnjli_1_1_material_property"/>
+        <childnode refid="1083" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1087">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1088" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1089">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="1089" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1090">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="1088">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1089" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1086">
+        <label>njli::MaterialProperty</label>
+        <link refid="classnjli_1_1_material_property"/>
+        <childnode refid="1087" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1090" relation="usage">
+          <edgelabel>m_AbstractFrameBufferObject</edgelabel>
+          <edgelabel>m_loadGPU_fbo</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/MaterialProperty.h" line="35" column="1" bodyfile="njligames-njlic_engine/njli/graphics/MaterialProperty.h" bodystart="33" bodyend="394"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_material_property_1a9bbe416abf678f714afc3cedbe235b11" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>addReference</name></member>
+      <member refid="classnjli_1_1_material_property_1a51d5f7827d6a08ab84c0ec549dbaf9de" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>bind</name></member>
+      <member refid="classnjli_1_1_material_property_1ae5c6b3221d3eba4205c5301d440c00ca" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_material_property_1a888f05d2a7c7db1d701aeedc41390943" prot="public" virt="virtual"><scope>njli::MaterialProperty</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_material_property_1a7cbf31bfe41a2048c0bd26d99f57a74c" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::MaterialProperty</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_material_property_1a8347b1bfe6959984904ef14d113bad53" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_material_property_1ab7a5e5535ed79f6ac2c86c8b78214007" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>create</name></member>
+      <member refid="classnjli_1_1_material_property_1a030ee6b5b94ec745e83b044ccc6906ff" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>create</name></member>
+      <member refid="classnjli_1_1_material_property_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::MaterialProperty</scope><name>create</name></member>
+      <member refid="classnjli_1_1_material_property_1ab1577f6ebd7e36432b326dbe37602185" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_material_property_1ae3efb73be6d8d3e1bcca27d438959fe0" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::MaterialProperty</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_material_property_1a663827a5878ba71adb46ace8142f823d" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_material_property_1a10e4f8c062f12361638445530f82bd69" prot="public" virt="virtual"><scope>njli::MaterialProperty</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_material_property_1a15f1ba5be6e2f5da618dea70c3e2700e" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getHeight</name></member>
+      <member refid="classnjli_1_1_material_property_1aa5f65e3731941c88cc6600b414a8b1dd" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getMagnificationFilter</name></member>
+      <member refid="classnjli_1_1_material_property_1adbfec558090c7a6091b23a0ee4ad0c76" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getMinificationFilter</name></member>
+      <member refid="classnjli_1_1_material_property_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::MaterialProperty</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_material_property_1a1c30fb90512ef7eef66f4571d34fc42e" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_material_property_1ab401ed5ab389a124afe832ff9a67777b" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_material_property_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::MaterialProperty</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_material_property_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::MaterialProperty</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_material_property_1a50438fb39042ba68cd581bff9658b2b3" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getTextureIndex</name></member>
+      <member refid="classnjli_1_1_material_property_1a0e93c57d80278fff3bc8f873e0cba4da" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getTextureTransform</name></member>
+      <member refid="classnjli_1_1_material_property_1aad6d725e907d46679f9aeac68f91ff42" prot="public" virt="virtual"><scope>njli::MaterialProperty</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_material_property_1a03191c04ff259c86536626a6efcaf6d5" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getWidth</name></member>
+      <member refid="classnjli_1_1_material_property_1a88eebd11319add4290b5d7d28a177161" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getWrapS</name></member>
+      <member refid="classnjli_1_1_material_property_1ad83676a4a57a35e1e8f4ece4942ab300" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>getWrapT</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_material_property_1a81e7c9ce6255bf9a4a07215892b1b5fa" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>hasOpacity</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_material_property_1aebfaf86035d419025c151dfdd20bd6b1" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>hasReference</name></member>
+      <member refid="classnjli_1_1_material_property_1a136a817ad5462dc2946014aab739bddd" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>initReferences</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_material_property_1a839469894a0d05814b6947a107e34516" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>isTexture2D</name></member>
+      <member refid="classnjli_1_1_material_property_1a80ffe6edad2abff10c36fb54ff7640f6" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>isTextureCube</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba84cee2de1a9c1bff7902327c2871a4cf" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>JLI_LOAD_GPU_TYPE_2D</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba19facd571e661394fd10c4adc26e2de6" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>JLI_LOAD_GPU_TYPE_2D_EMPTY</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba705566d6faa4dc00bf60956035329286" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>JLI_LOAD_GPU_TYPE_CUBE</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bac5507e15f557a30a23a193db80d35b57" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>JLI_LOAD_GPU_TYPE_FBO</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab57e4f81335fbb5b1af57ef0dde78a59" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>JLI_LOAD_GPU_TYPE_MAX</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab2312f8edb2846647ff841d4a7813c89" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>JLI_LOAD_GPU_TYPE_NONE</name></member>
+      <member refid="classnjli_1_1_material_property_1a4a3dce836762ad8e911e7965df320b07" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>load</name></member>
+      <member refid="classnjli_1_1_material_property_1ad96612e3ed0bd7e7ee02007e4a7e6449" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1ac710f73d560118360ab73f5bf87cf016" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1aff66a14be2c9117f8620cd2bab88f9b5" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1a54a76d538f19e7b4bdd29b1106ca92e1" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1a9952072ad753a049bf653dc55a7089b0" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU_Internal</name></member>
+      <member refid="classnjli_1_1_material_property_1a2279e0f7abdce078f62c121520cac369" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU_Internal</name></member>
+      <member refid="classnjli_1_1_material_property_1aa9a78f32c94e7d5e822dd328eb954ec9" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU_Internal</name></member>
+      <member refid="classnjli_1_1_material_property_1a0e2f5b5c25f4b11f282905cd4492c5f8" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadGPU_Internal</name></member>
+      <member refid="classnjli_1_1_material_property_1ae72cdc356494add65927cabbb9141d82" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>loadProperties</name></member>
+      <member refid="classnjli_1_1_material_property_1a9bf91c2260c96d60ee8ef7eaa491e8de" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>loadTexImage2DInternal</name></member>
+      <member refid="classnjli_1_1_material_property_1a71f667dc1a2ab962ed1d014b223c6c2d" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_2DUniform</name></member>
+      <member refid="classnjli_1_1_material_property_1a6d09f742e5c768571d6a240648cfc488" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_material_property_1a48374b6e4a3ec749e21499e76633606e" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_CubeUniform</name></member>
+      <member refid="classnjli_1_1_material_property_1aeb9f7375f6cf29868549e99f1d709b3d" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_diffuseBound</name></member>
+      <member refid="classnjli_1_1_material_property_1adda1b2988da4117aefb2d54ff735c13c" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_hasOpacity</name></member>
+      <member refid="classnjli_1_1_material_property_1a51e2a105287561c4417234e5a804fa32" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_Height</name></member>
+      <member refid="classnjli_1_1_material_property_1a6ca2655337c3335aa3188e4b0a202d0e" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_is2DUniform</name></member>
+      <member refid="classnjli_1_1_material_property_1a24142b6247dd361b43102f83d2d8e36c" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_isCubeUniform</name></member>
+      <member refid="classnjli_1_1_material_property_1ad46878315683b289618fc02ade373381" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_loadGPU_fbo</name></member>
+      <member refid="classnjli_1_1_material_property_1a99668eb548352e3b136eff0d78bdaf47" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_magVal</name></member>
+      <member refid="classnjli_1_1_material_property_1a792f0aecc3bf0a36018e7abeca5c7080" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_materialBound</name></member>
+      <member refid="classnjli_1_1_material_property_1a13b42d54787929d981050557ac4748a8" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_minVal</name></member>
+      <member refid="classnjli_1_1_material_property_1a3ad0ce3f3e483eff600e95737228c218" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_njliLoadGPUType</name></member>
+      <member refid="classnjli_1_1_material_property_1aa65bd34c711ad4a992d9c0cca0408502" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_NumberOfComponents</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_material_property_1a18842aef4fce7ec9871bcf206fc5d517" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_sWrap</name></member>
+      <member refid="classnjli_1_1_material_property_1a54b3b51f4b0d736d316b63777ccda316" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_textureID</name></member>
+      <member refid="classnjli_1_1_material_property_1acbc4746b18b182d07313eeab1fb0a62c" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_TextureIndex</name></member>
+      <member refid="classnjli_1_1_material_property_1aeab9a246acdf7a58f77381addbe25af3" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_TextureTransform</name></member>
+      <member refid="classnjli_1_1_material_property_1a6561cf1412426aa7a0b40590ad221169" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_textureType</name></member>
+      <member refid="classnjli_1_1_material_property_1a1db9e13afa4a288eaf901c7e6726d36f" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_tWrap</name></member>
+      <member refid="classnjli_1_1_material_property_1a8e0a5e6f9f07c09905cc9bdef219486b" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>m_Width</name></member>
+      <member refid="classnjli_1_1_material_property_1aa1212b6e372a0f45d2c01f3cd203af77" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>Material</name></member>
+      <member refid="classnjli_1_1_material_property_1a6811e536c0304699a61cfc1024f2ba8f" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>MaterialProperty</name></member>
+      <member refid="classnjli_1_1_material_property_1adb5e4547cc2288c3a2eb3ff527550b7e" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>MaterialProperty</name></member>
+      <member refid="classnjli_1_1_material_property_1a7c76ca284edd6d7ac17b90ec0f0367f1" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>MaterialProperty</name></member>
+      <member refid="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855b" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>njliLoadGPUType</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_material_property_1a3ab43fdd4f1a6dd76f5e8e468c1be923" prot="public" virt="virtual"><scope>njli::MaterialProperty</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_material_property_1a2be91e903f98e3eea9309485e76a7f79" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_material_property_1adb0972e7a2a81e22c59252d609ed4134" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>reLoadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1abb3e55b3f32ba67f6e52b3a1af5672be" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>reLoadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1ad04b3469ee0c493240c55e1294c71727" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>reLoadTexImage2DInternal</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_material_property_1a9aedcf990d5787c531ae4126d1329c5e" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>removeReference</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_material_property_1a4a448748254555524066ca2806a6b66d" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>s_MaxTextureSize</name></member>
+      <member refid="classnjli_1_1_material_property_1a2171d36a9f88b3a13ae5076d4260bd35" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>s_MaxTextureUnits</name></member>
+      <member refid="classnjli_1_1_material_property_1a6cc6f82863c4a24f7ce7fd987d79621d" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>s_TextureIDReferences</name></member>
+      <member refid="classnjli_1_1_material_property_1a5338183b33812c774e246c9d1827d666" prot="public" virt="virtual"><scope>njli::MaterialProperty</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_material_property_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::MaterialProperty</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_material_property_1ac8519825cbf12f274d2cfea9d1afcc64" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setMagnificationFilter</name></member>
+      <member refid="classnjli_1_1_material_property_1a252a4ebb78f314af5eeec14ebd794692" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setMinificationFilter</name></member>
+      <member refid="classnjli_1_1_material_property_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::MaterialProperty</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_material_property_1a1ec8ff2f8e2d6289361d1fe9c8838807" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setTextureIndex</name></member>
+      <member refid="classnjli_1_1_material_property_1a8c9ed69e9d9965c8aaaa8e5a79ce1d3f" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setTextureTransform</name></member>
+      <member refid="classnjli_1_1_material_property_1a373bb320a2411e19eb79b376bdace858" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setWrapS</name></member>
+      <member refid="classnjli_1_1_material_property_1a085c669a1f7e6df12a6e8bcabd70a176" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>setWrapT</name></member>
+      <member refid="classnjli_1_1_material_property_1a4d223566b0ede80d533b50bdbe9e6717" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>type</name></member>
+      <member refid="classnjli_1_1_material_property_1ae15d33487d858135cb0366bc629fe255" prot="protected" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>unBind</name></member>
+      <member refid="classnjli_1_1_material_property_1a26086f9fabd9f206fc89ef9e4d1ab351" prot="public" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>unLoadGPU</name></member>
+      <member refid="classnjli_1_1_material_property_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::MaterialProperty</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::MaterialProperty</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_material_property_1a75c8490c52755625c177afc58c229a93" prot="protected" virt="virtual"><scope>njli::MaterialProperty</scope><name>~MaterialProperty</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

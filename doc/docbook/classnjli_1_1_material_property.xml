@@ -1,0 +1,1837 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_material_property">
+<title>njli::MaterialProperty class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_material_property_8h">&lt;MaterialProperty.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::MaterialProperty</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_material_property__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::MaterialProperty</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_material_property__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855b">njliLoadGPUType</link> {
+<link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab2312f8edb2846647ff841d4a7813c89">JLI_LOAD_GPU_TYPE_NONE</link>,
+<link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba19facd571e661394fd10c4adc26e2de6">JLI_LOAD_GPU_TYPE_2D_EMPTY</link>,
+<link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba84cee2de1a9c1bff7902327c2871a4cf">JLI_LOAD_GPU_TYPE_2D</link>,
+<link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba705566d6faa4dc00bf60956035329286">JLI_LOAD_GPU_TYPE_CUBE</link>,
+<link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bac5507e15f557a30a23a193db80d35b57">JLI_LOAD_GPU_TYPE_FBO</link>,
+<link linkend="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab57e4f81335fbb5b1af57ef0dde78a59">JLI_LOAD_GPU_TYPE_MAX</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_diffuseBound</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool * m_materialBound</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_textureID</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>njliTextureMinificationValueType m_minVal</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>njliTextureMagnificationValueType m_magVal</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>njliTextureWrapType m_sWrap</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>njliTextureWrapType m_tWrap</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>s32 m_textureType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btTransform * m_TextureTransform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u8 m_TextureIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_Width</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_Height</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_NumberOfComponents</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_2DUniform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_CubeUniform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_is2DUniform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u32 m_isCubeUniform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AbstractFrameBufferObject * m_AbstractFrameBufferObject</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_hasOpacity</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>njliLoadGPUType m_njliLoadGPUType</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AbstractFrameBufferObject * m_loadGPU_fbo</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::bitset&lt; 16 &gt; s_TextureIDReferences</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static u64 s_MaxTextureUnits</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static u64 s_MaxTextureSize</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_material_property_1a6811e536c0304699a61cfc1024f2ba8f">MaterialProperty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_material_property_1adb5e4547cc2288c3a2eb3ff527550b7e">MaterialProperty</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_material_property_1a7c76ca284edd6d7ac17b90ec0f0367f1">MaterialProperty</link> (
+const <link linkend="classnjli_1_1_material_property">MaterialProperty</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_material_property_1ae5c6b3221d3eba4205c5301d440c00ca">BT_DECLARE_ALIGNED_ALLOCATOR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_material_property_1a75c8490c52755625c177afc58c229a93">~MaterialProperty</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_material_property">MaterialProperty</link> &amp; <link linkend="classnjli_1_1_material_property_1a2be91e903f98e3eea9309485e76a7f79">operator=</link> (
+const <link linkend="classnjli_1_1_material_property">MaterialProperty</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link> <link linkend="classnjli_1_1_material_property_1a50438fb39042ba68cd581bff9658b2b3">getTextureIndex</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a1ec8ff2f8e2d6289361d1fe9c8838807">setTextureIndex</link> (
+<link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link> index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_material_property_1a51d5f7827d6a08ab84c0ec549dbaf9de">bind</link> (
+<link linkend="classnjli_1_1_shader_program">ShaderProgram</link> * program)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ae15d33487d858135cb0366bc629fe255">unBind</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a9bf91c2260c96d60ee8ef7eaa491e8de">loadTexImage2DInternal</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; img, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> target)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ad04b3469ee0c493240c55e1294c71727">reLoadTexImage2DInternal</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; img, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> target, const btVector2 &amp; offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ae72cdc356494add65927cabbb9141d82">loadProperties</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_material_property_1a888f05d2a7c7db1d701aeedc41390943">calculateSerializeBufferSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a5338183b33812c774e246c9d1827d666">serialize</link> (
+<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * dataBuffer, btSerializer * )<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_material_property_1a10e4f8c062f12361638445530f82bd69">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_material_property_1aad6d725e907d46679f9aeac68f91ff42">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_material_property_1a3ab43fdd4f1a6dd76f5e8e468c1be923">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_material">Material</link> * <link linkend="classnjli_1_1_material_property_1a1c30fb90512ef7eef66f4571d34fc42e">getParent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_material">Material</link> * <link linkend="classnjli_1_1_material_property_1ab401ed5ab389a124afe832ff9a67777b">getParent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a252a4ebb78f314af5eeec14ebd794692">setMinificationFilter</link> (
+<link linkend="namespacenjli_1a980b62f11da3b7143a525012cb512bac">njliTextureMinificationValueType</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespacenjli_1a980b62f11da3b7143a525012cb512bac">njliTextureMinificationValueType</link> <link linkend="classnjli_1_1_material_property_1adbfec558090c7a6091b23a0ee4ad0c76">getMinificationFilter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ac8519825cbf12f274d2cfea9d1afcc64">setMagnificationFilter</link> (
+<link linkend="namespacenjli_1a9fe7a080d946c5be3afc71d834dc7902">njliTextureMagnificationValueType</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespacenjli_1a9fe7a080d946c5be3afc71d834dc7902">njliTextureMagnificationValueType</link> <link linkend="classnjli_1_1_material_property_1aa5f65e3731941c88cc6600b414a8b1dd">getMagnificationFilter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a373bb320a2411e19eb79b376bdace858">setWrapS</link> (
+<link linkend="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62">njliTextureWrapType</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62">njliTextureWrapType</link> <link linkend="classnjli_1_1_material_property_1a88eebd11319add4290b5d7d28a177161">getWrapS</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a085c669a1f7e6df12a6e8bcabd70a176">setWrapT</link> (
+<link linkend="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62">njliTextureWrapType</link> val)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespacenjli_1a6e9496d4850ec7151f04a220e1979b62">njliTextureWrapType</link> <link linkend="classnjli_1_1_material_property_1ad83676a4a57a35e1e8f4ece4942ab300">getWrapT</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ad96612e3ed0bd7e7ee02007e4a7e6449">loadGPU</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ac710f73d560118360ab73f5bf87cf016">loadGPU</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; img)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1aff66a14be2c9117f8620cd2bab88f9b5">loadGPU</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; negativeX, const <link linkend="classnjli_1_1_image">Image</link> &amp; negativeY, const <link linkend="classnjli_1_1_image">Image</link> &amp; negativeZ, const <link linkend="classnjli_1_1_image">Image</link> &amp; positiveX, const <link linkend="classnjli_1_1_image">Image</link> &amp; positiveY, const <link linkend="classnjli_1_1_image">Image</link> &amp; positiveZ)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a54a76d538f19e7b4bdd29b1106ca92e1">loadGPU</link> (
+<link linkend="classnjli_1_1_abstract_frame_buffer_object">AbstractFrameBufferObject</link> * fbo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a26086f9fabd9f206fc89ef9e4d1ab351">unLoadGPU</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1adb0972e7a2a81e22c59252d609ed4134">reLoadGPU</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; img, const btVector2 &amp; offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1abb3e55b3f32ba67f6e52b3a1af5672be">reLoadGPU</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; img, <link linkend="namespacenjli_1a3287657f79ee806953cdf2a3e719a9dd">njliTextureCubeSides</link> cubeSide, const btVector2 &amp; offset)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a8c9ed69e9d9965c8aaaa8e5a79ce1d3f">setTextureTransform</link> (
+const btTransform &amp; transform)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const btTransform &amp; <link linkend="classnjli_1_1_material_property_1a0e93c57d80278fff3bc8f873e0cba4da">getTextureTransform</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_material_property_1a03191c04ff259c86536626a6efcaf6d5">getWidth</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_material_property_1a15f1ba5be6e2f5da618dea70c3e2700e">getHeight</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_material_property_1a80ffe6edad2abff10c36fb54ff7640f6">isTextureCube</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_material_property_1a839469894a0d05814b6947a107e34516">isTexture2D</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_material_property_1a81e7c9ce6255bf9a4a07215892b1b5fa">hasOpacity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_material_property_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_material_property_1a83a8876ae63b92804004cf3febe76573">create</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="classnjli_1_1_material_property_1ac4ca71716ed832be357f15f8262c8448">getPointer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link> <link linkend="classnjli_1_1_material_property_1a4ffddf141a426a5a07d0ac19f1913811">getPointerValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a4fc4bcd9d1930911474210c047372fc0">serializeObject</link> (
+class btSerializer * serializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_material_property">MaterialProperty</link> ** <link linkend="classnjli_1_1_material_property_1ab1577f6ebd7e36432b326dbe37602185">createArray</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a663827a5878ba71adb46ace8142f823d">destroyArray</link> (
+<link linkend="classnjli_1_1_material_property">MaterialProperty</link> ** array, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_material_property">MaterialProperty</link> * <link linkend="classnjli_1_1_material_property_1ab7a5e5535ed79f6ac2c86c8b78214007">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_material_property">MaterialProperty</link> * <link linkend="classnjli_1_1_material_property_1a030ee6b5b94ec745e83b044ccc6906ff">create</link> (
+const <link linkend="classnjli_1_1_material_property_builder">MaterialPropertyBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_material_property">MaterialProperty</link> * <link linkend="classnjli_1_1_material_property_1a7cbf31bfe41a2048c0bd26d99f57a74c">clone</link> (
+const <link linkend="classnjli_1_1_material_property">MaterialProperty</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_material_property">MaterialProperty</link> * <link linkend="classnjli_1_1_material_property_1a8347b1bfe6959984904ef14d113bad53">copy</link> (
+const <link linkend="classnjli_1_1_material_property">MaterialProperty</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1ae3efb73be6d8d3e1bcca27d438959fe0">destroy</link> (
+<link linkend="classnjli_1_1_material_property">MaterialProperty</link> * object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a4a3dce836762ad8e911e7965df320b07">load</link> (
+<link linkend="classnjli_1_1_material_property">MaterialProperty</link> &amp; object, lua_State * L, int stack_index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_material_property_1a4d223566b0ede80d533b50bdbe9e6717">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a136a817ad5462dc2946014aab739bddd">initReferences</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a9bbe416abf678f714afc3cedbe235b11">addReference</link> (
+<link linkend="classnjli_1_1_material_property">MaterialProperty</link> * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a9aedcf990d5787c531ae4126d1329c5e">removeReference</link> (
+<link linkend="classnjli_1_1_material_property">MaterialProperty</link> * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="classnjli_1_1_material_property_1aebfaf86035d419025c151dfdd20bd6b1">hasReference</link> (
+<link linkend="classnjli_1_1_material_property">MaterialProperty</link> * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a9952072ad753a049bf653dc55a7089b0">loadGPU_Internal</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a2279e0f7abdce078f62c121520cac369">loadGPU_Internal</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; img)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1aa9a78f32c94e7d5e822dd328eb954ec9">loadGPU_Internal</link> (
+const <link linkend="classnjli_1_1_image">Image</link> &amp; negativeX, const <link linkend="classnjli_1_1_image">Image</link> &amp; negativeY, const <link linkend="classnjli_1_1_image">Image</link> &amp; negativeZ, const <link linkend="classnjli_1_1_image">Image</link> &amp; positiveX, const <link linkend="classnjli_1_1_image">Image</link> &amp; positiveY, const <link linkend="classnjli_1_1_image">Image</link> &amp; positiveZ)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_material_property_1a0e2f5b5c25f4b11f282905cd4492c5f8">loadGPU_Internal</link> (
+<link linkend="classnjli_1_1_abstract_frame_buffer_object">AbstractFrameBufferObject</link> * fbo)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>&lt;#Description#&gt; </para>
+                <para>Definition at line 35 of file MaterialProperty.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>MaterialProperty.h</para></listitem></itemizedlist></para>
+        </simplesect>
+            <section xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855b">
+               <title>enum njliLoadGPUType </title>
+               
+               <formalpara>
+                    <title>Enumerator:</title>
+                    <variablelist>
+                        <varlistentry xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab2312f8edb2846647ff841d4a7813c89">
+                            <term>JLI_LOAD_GPU_TYPE_NONE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba19facd571e661394fd10c4adc26e2de6">
+                            <term>JLI_LOAD_GPU_TYPE_2D_EMPTY</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba84cee2de1a9c1bff7902327c2871a4cf">
+                            <term>JLI_LOAD_GPU_TYPE_2D</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855ba705566d6faa4dc00bf60956035329286">
+                            <term>JLI_LOAD_GPU_TYPE_CUBE</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bac5507e15f557a30a23a193db80d35b57">
+                            <term>JLI_LOAD_GPU_TYPE_FBO</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                        <varlistentry xml:id="classnjli_1_1_material_property_1ae02b26fdb8ff7968cc6def931e69855bab57e4f81335fbb5b1af57ef0dde78a59">
+                            <term>JLI_LOAD_GPU_TYPE_MAX</term>
+                            <listitem>
+                                <para></para>
+                            </listitem>
+                        </varlistentry>
+                     </variablelist>
+                </formalpara>
+                <para>Definition at line 375 of file MaterialProperty.h
+                    <computeroutput><literallayout>
+{
+JLI_LOAD_GPU_TYPE_NONE, 
+JLI_LOAD_GPU_TYPE_2D_EMPTY, 
+JLI_LOAD_GPU_TYPE_2D, 
+JLI_LOAD_GPU_TYPE_CUBE, 
+JLI_LOAD_GPU_TYPE_FBO, 
+JLI_LOAD_GPU_TYPE_MAX, 
+}njliLoadGPUType;
+                    </literallayout></computeroutput>
+                </para>
+            </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_material_property_1a6811e536c0304699a61cfc1024f2ba8f">
+                <title>njli::MaterialProperty::MaterialProperty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1adb5e4547cc2288c3a2eb3ff527550b7e">
+                <title>njli::MaterialProperty::MaterialProperty (const AbstractBuilder &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a7c76ca284edd6d7ac17b90ec0f0367f1">
+                <title>njli::MaterialProperty::MaterialProperty (const MaterialProperty &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ae5c6b3221d3eba4205c5301d440c00ca">
+                <title>njli::MaterialProperty::BT_DECLARE_ALIGNED_ALLOCATOR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a75c8490c52755625c177afc58c229a93">
+                <title>virtual njli::MaterialProperty::~MaterialProperty ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a2be91e903f98e3eea9309485e76a7f79">
+                <title>MaterialProperty&amp; njli::MaterialProperty::operator= (const MaterialProperty &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a50438fb39042ba68cd581bff9658b2b3">
+                <title>u8 njli::MaterialProperty::getTextureIndex () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a1ec8ff2f8e2d6289361d1fe9c8838807">
+                <title>void njli::MaterialProperty::setTextureIndex (u8 index)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a51d5f7827d6a08ab84c0ec549dbaf9de">
+                <title>bool njli::MaterialProperty::bind (ShaderProgram *program)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ae15d33487d858135cb0366bc629fe255">
+                <title>void njli::MaterialProperty::unBind ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a9bf91c2260c96d60ee8ef7eaa491e8de">
+                <title>void njli::MaterialProperty::loadTexImage2DInternal (const Image &amp;img, s32 target)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ad04b3469ee0c493240c55e1294c71727">
+                <title>void njli::MaterialProperty::reLoadTexImage2DInternal (const Image &amp;img, s32 target, const btVector2 &amp;offset=btVector2(0, 0))</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ae72cdc356494add65927cabbb9141d82">
+                <title>virtual void njli::MaterialProperty::loadProperties () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a888f05d2a7c7db1d701aeedc41390943">
+                <title>virtual s32 njli::MaterialProperty::calculateSerializeBufferSize () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a5338183b33812c774e246c9d1827d666">
+                <title>virtual void njli::MaterialProperty::serialize (void *dataBuffer, btSerializer *) const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 15:02:47</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>dataBuffer</entry>
+                                <entry>
+<para>&lt;#dataBuffer description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>btSerializer</entry>
+                                <entry>
+<para>&lt;#btSerializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a10e4f8c062f12361638445530f82bd69">
+                <title>virtual const char* njli::MaterialProperty::getClassName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1aad6d725e907d46679f9aeac68f91ff42">
+                <title>virtual s32 njli::MaterialProperty::getType () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a3ab43fdd4f1a6dd76f5e8e468c1be923">
+                <title>njli::MaterialProperty::operator std::string () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a1c30fb90512ef7eef66f4571d34fc42e">
+                <title>Material* njli::MaterialProperty::getParent ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ab401ed5ab389a124afe832ff9a67777b">
+                <title>const Material* njli::MaterialProperty::getParent () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a252a4ebb78f314af5eeec14ebd794692">
+                <title>void njli::MaterialProperty::setMinificationFilter (njliTextureMinificationValueType val)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>&lt;#val description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1adbfec558090c7a6091b23a0ee4ad0c76">
+                <title>njliTextureMinificationValueType njli::MaterialProperty::getMinificationFilter () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ac8519825cbf12f274d2cfea9d1afcc64">
+                <title>void njli::MaterialProperty::setMagnificationFilter (njliTextureMagnificationValueType val)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>&lt;#val description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1aa5f65e3731941c88cc6600b414a8b1dd">
+                <title>njliTextureMagnificationValueType njli::MaterialProperty::getMagnificationFilter () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a373bb320a2411e19eb79b376bdace858">
+                <title>void njli::MaterialProperty::setWrapS (njliTextureWrapType val)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>&lt;#val description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a88eebd11319add4290b5d7d28a177161">
+                <title>njliTextureWrapType njli::MaterialProperty::getWrapS () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a085c669a1f7e6df12a6e8bcabd70a176">
+                <title>void njli::MaterialProperty::setWrapT (njliTextureWrapType val)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>val</entry>
+                                <entry>
+<para>&lt;#val description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ad83676a4a57a35e1e8f4ece4942ab300">
+                <title>njliTextureWrapType njli::MaterialProperty::getWrapT () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ad96612e3ed0bd7e7ee02007e4a7e6449">
+                <title>void njli::MaterialProperty::loadGPU ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ac710f73d560118360ab73f5bf87cf016">
+                <title>void njli::MaterialProperty::loadGPU (const Image &amp;img)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>img</entry>
+                                <entry>
+<para>&lt;#img description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1aff66a14be2c9117f8620cd2bab88f9b5">
+                <title>void njli::MaterialProperty::loadGPU (const Image &amp;negativeX, const Image &amp;negativeY, const Image &amp;negativeZ, const Image &amp;positiveX, const Image &amp;positiveY, const Image &amp;positiveZ)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>negativeX</entry>
+                                <entry>
+<para>&lt;#negativeX description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>negativeY</entry>
+                                <entry>
+<para>&lt;#negativeY description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>negativeZ</entry>
+                                <entry>
+<para>&lt;#negativeZ description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>positiveX</entry>
+                                <entry>
+<para>&lt;#positiveX description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>positiveY</entry>
+                                <entry>
+<para>&lt;#positiveY description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>positiveZ</entry>
+                                <entry>
+<para>&lt;#positiveZ description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a54a76d538f19e7b4bdd29b1106ca92e1">
+                <title>void njli::MaterialProperty::loadGPU (AbstractFrameBufferObject *fbo)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fbo</entry>
+                                <entry>
+<para>&lt;#fbo description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a26086f9fabd9f206fc89ef9e4d1ab351">
+                <title>void njli::MaterialProperty::unLoadGPU ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1adb0972e7a2a81e22c59252d609ed4134">
+                <title>void njli::MaterialProperty::reLoadGPU (const Image &amp;img, const btVector2 &amp;offset=btVector2(0, 0))</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>img</entry>
+                                <entry>
+<para>&lt;#img description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>offset</entry>
+                                <entry>
+<para>&lt;#0 description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1abb3e55b3f32ba67f6e52b3a1af5672be">
+                <title>void njli::MaterialProperty::reLoadGPU (const Image &amp;img, njliTextureCubeSides cubeSide, const btVector2 &amp;offset=btVector2(0, 0))</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>img</entry>
+                                <entry>
+<para>&lt;#img description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>cubeSide</entry>
+                                <entry>
+<para>&lt;#cubeSide description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>offset</entry>
+                                <entry>
+<para>&lt;#0 description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a8c9ed69e9d9965c8aaaa8e5a79ce1d3f">
+                <title>void njli::MaterialProperty::setTextureTransform (const btTransform &amp;transform)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transform</entry>
+                                <entry>
+<para>&lt;#transform description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a0e93c57d80278fff3bc8f873e0cba4da">
+                <title>const btTransform&amp; njli::MaterialProperty::getTextureTransform () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a03191c04ff259c86536626a6efcaf6d5">
+                <title>u32 njli::MaterialProperty::getWidth () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a15f1ba5be6e2f5da618dea70c3e2700e">
+                <title>u32 njli::MaterialProperty::getHeight () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a80ffe6edad2abff10c36fb54ff7640f6">
+                <title>bool njli::MaterialProperty::isTextureCube () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a839469894a0d05814b6947a107e34516">
+                <title>bool njli::MaterialProperty::isTexture2D () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a81e7c9ce6255bf9a4a07215892b1b5fa">
+                <title>bool njli::MaterialProperty::hasOpacity () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a83a8876ae63b92804004cf3febe76573">
+                <title>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create (const AbstractBuilder &amp;builder) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ac4ca71716ed832be357f15f8262c8448">
+                <title>const void* njli::AbstractFactoryObject::getPointer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a4ffddf141a426a5a07d0ac19f1913811">
+                <title>u64 njli::AbstractFactoryObject::getPointerValue () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a4fc4bcd9d1930911474210c047372fc0">
+                <title>virtual void njli::AbstractFactoryObject::serializeObject (class btSerializer *serializer) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>serializer</entry>
+                                <entry>
+<para>&lt;#serializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ab1577f6ebd7e36432b326dbe37602185">
+                <title>static MaterialProperty** njli::MaterialProperty::createArray (const u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a663827a5878ba71adb46ace8142f823d">
+                <title>static void njli::MaterialProperty::destroyArray (MaterialProperty **array, const u32 size=0)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>array</entry>
+                                <entry>
+<para>&lt;#array description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ab7a5e5535ed79f6ac2c86c8b78214007">
+                <title>static MaterialProperty* njli::MaterialProperty::create ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a030ee6b5b94ec745e83b044ccc6906ff">
+                <title>static MaterialProperty* njli::MaterialProperty::create (const MaterialPropertyBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a7cbf31bfe41a2048c0bd26d99f57a74c">
+                <title>static MaterialProperty* njli::MaterialProperty::clone (const MaterialProperty &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a8347b1bfe6959984904ef14d113bad53">
+                <title>static MaterialProperty* njli::MaterialProperty::copy (const MaterialProperty &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1ae3efb73be6d8d3e1bcca27d438959fe0">
+                <title>static void njli::MaterialProperty::destroy (MaterialProperty *object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a4a3dce836762ad8e911e7965df320b07">
+                <title>static void njli::MaterialProperty::load (MaterialProperty &amp;object, lua_State *L, int stack_index)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>L</entry>
+                                <entry>
+<para>&lt;#L description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stack_index</entry>
+                                <entry>
+<para>&lt;#stack_index description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a4d223566b0ede80d533b50bdbe9e6717">
+                <title>static u32 njli::MaterialProperty::type ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a136a817ad5462dc2946014aab739bddd">
+                <title>static void njli::MaterialProperty::initReferences ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a9bbe416abf678f714afc3cedbe235b11">
+                <title>static void njli::MaterialProperty::addReference (MaterialProperty *)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a9aedcf990d5787c531ae4126d1329c5e">
+                <title>static void njli::MaterialProperty::removeReference (MaterialProperty *)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1aebfaf86035d419025c151dfdd20bd6b1">
+                <title>static bool njli::MaterialProperty::hasReference (MaterialProperty *)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a9952072ad753a049bf653dc55a7089b0">
+                <title>void njli::MaterialProperty::loadGPU_Internal ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a2279e0f7abdce078f62c121520cac369">
+                <title>void njli::MaterialProperty::loadGPU_Internal (const Image &amp;img)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1aa9a78f32c94e7d5e822dd328eb954ec9">
+                <title>void njli::MaterialProperty::loadGPU_Internal (const Image &amp;negativeX, const Image &amp;negativeY, const Image &amp;negativeZ, const Image &amp;positiveX, const Image &amp;positiveY, const Image &amp;positiveZ)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_material_property_1a0e2f5b5c25f4b11f282905cd4492c5f8">
+                <title>void njli::MaterialProperty::loadGPU_Internal (AbstractFrameBufferObject *fbo)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

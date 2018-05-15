@@ -1,0 +1,605 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_abstract_state_machine">
+<title>njli::AbstractStateMachine class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_abstract_state_machine_8h">&lt;AbstractStateMachine.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::AbstractStateMachine</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_state_machine__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::AbstractStateMachine</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_state_machine__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>OWNER_TYPE</declname>
+        <defname>OWNER_TYPE</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AbstractState&lt; OWNER_TYPE &gt; * m_pCurrentState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>AbstractState&lt; OWNER_TYPE &gt; * m_pPreviousState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::queue&lt; AbstractState&lt; OWNER_TYPE &gt; * &gt; m_StateQueue</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_state_machine_1a9656442a1a93737e55b72cdb3f7f6cfd">AbstractStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_state_machine_1a653f5257533125711c79d054265b1fa6">AbstractStateMachine</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_state_machine_1abf78c27c17c84ed7e6e372714e7a87fc">AbstractStateMachine</link> (
+const <link linkend="classnjli_1_1_abstract_state_machine">AbstractStateMachine</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_state_machine_1af05bef63fdcbaedd01df2657fe9b1e7b">~AbstractStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_abstract_state_machine">AbstractStateMachine</link> &amp; <link linkend="classnjli_1_1_abstract_state_machine_1af5d1c414f2ac3aba89c076461b404271">operator=</link> (
+const <link linkend="classnjli_1_1_abstract_state_machine">AbstractStateMachine</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1af975fdfd08f9f6d93d739b12d1a06e52">update</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_abstract_state_machine_1a7741c8bc8e0bf7d3d1b1e5310be6b5eb">handleMessage</link> (
+const <link linkend="classnjli_1_1_telegram">Telegram</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1a0ef8fbf451f61eaccc97319751fe76c3">pushState</link> (
+<link linkend="classnjli_1_1_abstract_state">AbstractState</link>&lt; OWNER_TYPE &gt; * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_abstract_state">AbstractState</link>&lt; OWNER_TYPE &gt; *const <link linkend="classnjli_1_1_abstract_state_machine_1a026a33bc918f423304b442e0dfaa046e">getState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_abstract_state">AbstractState</link>&lt; OWNER_TYPE &gt; *const <link linkend="classnjli_1_1_abstract_state_machine_1a8e946baa055b5dcde6a9916ef10e5c37">getPreviousState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1a9b0f3cb1aed0c33381d85f204cde6f88">clear</link> (
+bool callExit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_abstract_state_machine_1aabf808253d72265695e03c299a434798">getOwner</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_abstract_state_machine_1ade6a658a2ad9ef8c83b900e8b866ae7c">getOwner</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_abstract_state_machine_1a5e4cb433301c576d640fff966b2c87eb">hasOwner</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_abstract_state_machine_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_abstract_state_machine_1a83a8876ae63b92804004cf3febe76573">create</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="classnjli_1_1_abstract_state_machine_1ac4ca71716ed832be357f15f8262c8448">getPointer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link> <link linkend="classnjli_1_1_abstract_state_machine_1a4ffddf141a426a5a07d0ac19f1913811">getPointerValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1a4fc4bcd9d1930911474210c047372fc0">serializeObject</link> (
+class btSerializer * serializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1a6a399ba3abc4dbc2f5a0b6d23193c75e">setState</link> (
+<link linkend="classnjli_1_1_abstract_state">AbstractState</link>&lt; OWNER_TYPE &gt; * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_machine_1a5133f8815d99e63c09179928e2c736b6">changeState</link> (
+<link linkend="classnjli_1_1_abstract_state">AbstractState</link>&lt; OWNER_TYPE &gt; * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>&lt;#Description#&gt; </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a9656442a1a93737e55b72cdb3f7f6cfd">
+                <title>njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::AbstractStateMachine ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a653f5257533125711c79d054265b1fa6">
+                <title>njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::AbstractStateMachine (const AbstractBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1abf78c27c17c84ed7e6e372714e7a87fc">
+                <title>njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::AbstractStateMachine (const AbstractStateMachine &amp;copy)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1af05bef63fdcbaedd01df2657fe9b1e7b">
+                <title>njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::~AbstractStateMachine ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1af5d1c414f2ac3aba89c076461b404271">
+                <title>AbstractStateMachine&lt; OWNER_TYPE &gt; &amp; njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::operator= (const AbstractStateMachine &amp;)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>AbstractStateMachine&amp;</entry>
+                                <entry>
+<para>&lt;<link linkend="classnjli_1_1_abstract_state_machine_1a9656442a1a93737e55b72cdb3f7f6cfd">AbstractStateMachine</link>&amp; description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1af975fdfd08f9f6d93d739b12d1a06e52">
+                <title>void njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::update (f32)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>f32</entry>
+                                <entry>
+<para>&lt;<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a7741c8bc8e0bf7d3d1b1e5310be6b5eb">
+                <title>bool njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::handleMessage (const Telegram &amp;)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry></entry>
+                                <entry>
+<para>description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a0ef8fbf451f61eaccc97319751fe76c3">
+                <title>void njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::pushState (AbstractState&lt; OWNER_TYPE &gt; *)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry><link linkend="classnjli_1_1_abstract_state">AbstractState&lt;OWNER_TYPE&gt;</link></entry>
+                                <entry>
+<para>&lt;<link linkend="classnjli_1_1_abstract_state">AbstractState&lt;OWNER_TYPE&gt;</link> description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a026a33bc918f423304b442e0dfaa046e">
+                <title>AbstractState&lt; OWNER_TYPE &gt; *const njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::getState () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a8e946baa055b5dcde6a9916ef10e5c37">
+                <title>AbstractState&lt; OWNER_TYPE &gt; *const njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::getPreviousState () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a9b0f3cb1aed0c33381d85f204cde6f88">
+                <title>void njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::clear (bool callExit=true)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>callExit</entry>
+                                <entry>
+<para>&lt;#callExit description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1aabf808253d72265695e03c299a434798">
+                <title>AbstractFactoryObject * njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::getOwner ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1ade6a658a2ad9ef8c83b900e8b866ae7c">
+                <title>const AbstractFactoryObject * njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::getOwner () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a5e4cb433301c576d640fff966b2c87eb">
+                <title>bool njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::hasOwner () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a83a8876ae63b92804004cf3febe76573">
+                <title>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create (const AbstractBuilder &amp;builder) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1ac4ca71716ed832be357f15f8262c8448">
+                <title>const void* njli::AbstractFactoryObject::getPointer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a4ffddf141a426a5a07d0ac19f1913811">
+                <title>u64 njli::AbstractFactoryObject::getPointerValue () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a4fc4bcd9d1930911474210c047372fc0">
+                <title>virtual void njli::AbstractFactoryObject::serializeObject (class btSerializer *serializer) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>serializer</entry>
+                                <entry>
+<para>&lt;#serializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a6a399ba3abc4dbc2f5a0b6d23193c75e">
+                <title>void njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::setState (AbstractState&lt; OWNER_TYPE &gt; *)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_machine_1a5133f8815d99e63c09179928e2c736b6">
+                <title>void njli::AbstractStateMachine&lt; OWNER_TYPE &gt;::changeState (AbstractState&lt; OWNER_TYPE &gt; *)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

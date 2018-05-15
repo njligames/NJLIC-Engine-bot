@@ -1,0 +1,543 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_abstract_state">
+<title>njli::AbstractState class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_abstract_state_8h">&lt;AbstractState.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::AbstractState</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_state__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::AbstractState</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_abstract_state__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>OBJECT_TYPE</declname>
+        <defname>OBJECT_TYPE</defname>
+      </param>
+    </templateparamlist>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_isFinished</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_state_1a22638b01fb13e4e7920071d1c3935622">AbstractState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_state_1ad576862504904cabe58e872e316916b6">AbstractState</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_abstract_state_1a0b92c7b010d060a03395ac5874c77019">AbstractState</link> (
+const <link linkend="classnjli_1_1_abstract_state">AbstractState</link> &amp; copy)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_state_1a7a85afddf6feb5908199ac3678225c5b">~AbstractState</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_abstract_state">AbstractState</link> &amp; <link linkend="classnjli_1_1_abstract_state_1a70a074e9ffcc4ad76236052a4f079dc6">operator=</link> (
+const <link linkend="classnjli_1_1_abstract_state">AbstractState</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_abstract_state_1a4c7007210237496fbe169ba114c3750d">isFinished</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1aa4e66d0016cd5c43dc3a485eaf558174">enableFinished</link> (
+const bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1ae10e437370dcfc3261ec0b9f350f16d8">enter</link> (
+OBJECT_TYPE * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1aa1d0341a1b1bd83f9b722488680537ad">update</link> (
+OBJECT_TYPE * , <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1a75207a4c62f813d8d84168024a30c60a">exit</link> (
+OBJECT_TYPE * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_abstract_state_1aa486b2e60e57d789855acdfb555a4cdc">onMessage</link> (
+OBJECT_TYPE * , const <link linkend="classnjli_1_1_telegram">Telegram</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1a4ed007508bd8f80af668a302376b7d1a">enableCanDelete</link> (
+const bool enable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_abstract_state_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_abstract_state_1a83a8876ae63b92804004cf3febe76573">create</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="classnjli_1_1_abstract_state_1ac4ca71716ed832be357f15f8262c8448">getPointer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link> <link linkend="classnjli_1_1_abstract_state_1a4ffddf141a426a5a07d0ac19f1913811">getPointerValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_abstract_state_1a4fc4bcd9d1930911474210c047372fc0">serializeObject</link> (
+class btSerializer * serializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>&lt;#Description#&gt; </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a22638b01fb13e4e7920071d1c3935622">
+                <title>njli::AbstractState&lt; OBJECT_TYPE &gt;::AbstractState ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1ad576862504904cabe58e872e316916b6">
+                <title>njli::AbstractState&lt; OBJECT_TYPE &gt;::AbstractState (const AbstractBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a0b92c7b010d060a03395ac5874c77019">
+                <title>njli::AbstractState&lt; OBJECT_TYPE &gt;::AbstractState (const AbstractState &amp;copy)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a7a85afddf6feb5908199ac3678225c5b">
+                <title>njli::AbstractState&lt; OBJECT_TYPE &gt;::~AbstractState ()=0</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a70a074e9ffcc4ad76236052a4f079dc6">
+                <title>AbstractState&lt; OBJECT_TYPE &gt; &amp; njli::AbstractState&lt; OBJECT_TYPE &gt;::operator= (const AbstractState &amp;)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>AbstractState&amp;</entry>
+                                <entry>
+<para>&lt;<link linkend="classnjli_1_1_abstract_state_1a22638b01fb13e4e7920071d1c3935622">AbstractState</link>&amp; description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a4c7007210237496fbe169ba114c3750d">
+                <title>bool njli::AbstractState&lt; OBJECT_TYPE &gt;::isFinished () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1aa4e66d0016cd5c43dc3a485eaf558174">
+                <title>void njli::AbstractState&lt; OBJECT_TYPE &gt;::enableFinished (const bool=true)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>bool</entry>
+                                <entry>
+<para>&lt;#bool description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1ae10e437370dcfc3261ec0b9f350f16d8">
+                <title>virtual void njli::AbstractState&lt; OBJECT_TYPE &gt;::enter (OBJECT_TYPE *)=0</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>OBJECT_TYPE</entry>
+                                <entry>
+<para>&lt;#OBJECT_TYPE description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1aa1d0341a1b1bd83f9b722488680537ad">
+                <title>virtual void njli::AbstractState&lt; OBJECT_TYPE &gt;::update (OBJECT_TYPE *, f32)=0</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>OBJECT_TYPE</entry>
+                                <entry>
+<para>&lt;#OBJECT_TYPE description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>f32</entry>
+                                <entry>
+<para>&lt;<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a75207a4c62f813d8d84168024a30c60a">
+                <title>virtual void njli::AbstractState&lt; OBJECT_TYPE &gt;::exit (OBJECT_TYPE *)=0</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>OBJECT_TYPE</entry>
+                                <entry>
+<para>&lt;#OBJECT_TYPE description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1aa486b2e60e57d789855acdfb555a4cdc">
+                <title>virtual bool njli::AbstractState&lt; OBJECT_TYPE &gt;::onMessage (OBJECT_TYPE *, const Telegram &amp;) const =0</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>OBJECT_TYPE</entry>
+                                <entry>
+<para>&lt;#OBJECT_TYPE description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>Telegram&amp;</entry>
+                                <entry>
+<para>&lt;#Telegram&amp; description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a4ed007508bd8f80af668a302376b7d1a">
+                <title>void njli::AbstractState&lt; OBJECT_TYPE &gt;::enableCanDelete (const bool enable=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a83a8876ae63b92804004cf3febe76573">
+                <title>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create (const AbstractBuilder &amp;builder) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1ac4ca71716ed832be357f15f8262c8448">
+                <title>const void* njli::AbstractFactoryObject::getPointer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a4ffddf141a426a5a07d0ac19f1913811">
+                <title>u64 njli::AbstractFactoryObject::getPointerValue () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_abstract_state_1a4fc4bcd9d1930911474210c047372fc0">
+                <title>virtual void njli::AbstractFactoryObject::serializeObject (class btSerializer *serializer) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>serializer</entry>
+                                <entry>
+<para>&lt;#serializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

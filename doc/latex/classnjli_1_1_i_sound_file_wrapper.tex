@@ -1,0 +1,221 @@
+\hypertarget{classnjli_1_1_i_sound_file_wrapper}{}\section{njli\+:\+:I\+Sound\+File\+Wrapper Class Reference}
+\label{classnjli_1_1_i_sound_file_wrapper}\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+
+
+{\ttfamily \#include $<$I\+Sound\+File\+Wrapper.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:I\+Sound\+File\+Wrapper\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnjli_1_1_i_sound_file_wrapper__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{S\+E\+E\+K\+\_\+\+P\+OS}} \{ \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e}{S\+T\+A\+RT}} = 0, 
+\mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991}{C\+U\+R\+R\+E\+NT}} = 1
+ \}
+\item 
+typedef enum \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{njli\+::\+I\+Sound\+File\+Wrapper\+::\+S\+E\+E\+K\+\_\+\+P\+OS}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a5374e14efd1564c10852da7cfe31164a}{S\+E\+E\+K\+\_\+\+P\+OS}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a9d584c730a105374c50f9d4e435c6ca4}{I\+Sound\+File\+Wrapper}} (int min\+Decompress\+Length\+At\+Once=-\/1)
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a1d45f4bcf0e8229bc57907f22ce01ab7}{$\sim$\+I\+Sound\+File\+Wrapper}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a2c4dc8cc613f8f545b0e1ead86ee7e4d}{Load\+From\+Memory}} (char $\ast$data, int data\+Size, Sound\+Info $\ast$sound\+Info)=0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a525f86e4bbe65d5b90ee3eda171b5492}{Load\+From\+File}} (F\+I\+LE $\ast$f, Sound\+Info $\ast$sound\+Info)=0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a2e62b8b05da06eb1f9594ffdd5aa0cfd}{Decompress\+Stream}} (std\+::vector$<$ char $>$ \&decompress\+Buffer, bool in\+Loop=false)=0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a9b338a5bbcb5d07acdebce1efab332c5}{Decompress\+All}} (std\+::vector$<$ char $>$ \&decompress\+Buffer)=0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab302d724c78a9a55f6dcb288d31e6854}{Reset\+Stream}} ()=0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a22241a77b7d6adf55045a7a30ec5ef30}{Seek}} (size\+\_\+t pos, \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{S\+E\+E\+K\+\_\+\+P\+OS}} start)=0
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a7468aaf1e53cfd6feb38eae4ecf8ab99}{Get\+Current\+Stream\+Pos}} () const =0
+\item 
+virtual float \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_afefb180620c4a6e17e994a867726eb29}{Get\+Time}} () const =0
+\item 
+virtual float \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a1b22318560969f7cc06ac03dcb78971f}{Get\+Total\+Time}} () const =0
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file I\+Sound\+File\+Wrapper.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a5374e14efd1564c10852da7cfe31164a}\label{classnjli_1_1_i_sound_file_wrapper_a5374e14efd1564c10852da7cfe31164a}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!S\+E\+E\+K\+\_\+\+P\+OS@{S\+E\+E\+K\+\_\+\+P\+OS}}
+\index{S\+E\+E\+K\+\_\+\+P\+OS@{S\+E\+E\+K\+\_\+\+P\+OS}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{S\+E\+E\+K\+\_\+\+P\+OS}{SEEK\_POS}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{njli\+::\+I\+Sound\+File\+Wrapper\+::\+S\+E\+E\+K\+\_\+\+P\+OS}}  \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{njli\+::\+I\+Sound\+File\+Wrapper\+::\+S\+E\+E\+K\+\_\+\+P\+OS}}}
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}\label{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!S\+E\+E\+K\+\_\+\+P\+OS@{S\+E\+E\+K\+\_\+\+P\+OS}}
+\index{S\+E\+E\+K\+\_\+\+P\+OS@{S\+E\+E\+K\+\_\+\+P\+OS}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{S\+E\+E\+K\+\_\+\+P\+OS}{SEEK\_POS}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{njli\+::\+I\+Sound\+File\+Wrapper\+::\+S\+E\+E\+K\+\_\+\+P\+OS}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+T\+A\+RT@{S\+T\+A\+RT}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!S\+T\+A\+RT@{S\+T\+A\+RT}}}\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e}\label{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e}} 
+S\+T\+A\+RT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{C\+U\+R\+R\+E\+NT@{C\+U\+R\+R\+E\+NT}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!C\+U\+R\+R\+E\+NT@{C\+U\+R\+R\+E\+NT}}}\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991}\label{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991}} 
+C\+U\+R\+R\+E\+NT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 17 of file I\+Sound\+File\+Wrapper.\+h.
+
+
+\begin{DoxyCode}
+17 \{ \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e}{START}} = 0, \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991}{CURRENT}} = 1 \} \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{SEEK\_POS}};
+\end{DoxyCode}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a9d584c730a105374c50f9d4e435c6ca4}\label{classnjli_1_1_i_sound_file_wrapper_a9d584c730a105374c50f9d4e435c6ca4}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!I\+Sound\+File\+Wrapper@{I\+Sound\+File\+Wrapper}}
+\index{I\+Sound\+File\+Wrapper@{I\+Sound\+File\+Wrapper}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{I\+Sound\+File\+Wrapper()}{ISoundFileWrapper()}}
+{\footnotesize\ttfamily njli\+::\+I\+Sound\+File\+Wrapper\+::\+I\+Sound\+File\+Wrapper (\begin{DoxyParamCaption}\item[{int}]{min\+Decompress\+Length\+At\+Once = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 19 of file I\+Sound\+File\+Wrapper.\+h.
+
+
+\begin{DoxyCode}
+19 \{\};
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a1d45f4bcf0e8229bc57907f22ce01ab7}\label{classnjli_1_1_i_sound_file_wrapper_a1d45f4bcf0e8229bc57907f22ce01ab7}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!````~I\+Sound\+File\+Wrapper@{$\sim$\+I\+Sound\+File\+Wrapper}}
+\index{````~I\+Sound\+File\+Wrapper@{$\sim$\+I\+Sound\+File\+Wrapper}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{$\sim$\+I\+Sound\+File\+Wrapper()}{~ISoundFileWrapper()}}
+{\footnotesize\ttfamily virtual njli\+::\+I\+Sound\+File\+Wrapper\+::$\sim$\+I\+Sound\+File\+Wrapper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Definition at line 20 of file I\+Sound\+File\+Wrapper.\+h.
+
+
+\begin{DoxyCode}
+20 \{\};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a9b338a5bbcb5d07acdebce1efab332c5}\label{classnjli_1_1_i_sound_file_wrapper_a9b338a5bbcb5d07acdebce1efab332c5}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Decompress\+All@{Decompress\+All}}
+\index{Decompress\+All@{Decompress\+All}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Decompress\+All()}{DecompressAll()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+I\+Sound\+File\+Wrapper\+::\+Decompress\+All (\begin{DoxyParamCaption}\item[{std\+::vector$<$ char $>$ \&}]{decompress\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a530b83b423d29c785889f9783ab08b9b}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_ad33e7975379d1e4f5c15944370a4cf47}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_aa3e0d88a80c5af562903e445ed2a863e}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a2e62b8b05da06eb1f9594ffdd5aa0cfd}\label{classnjli_1_1_i_sound_file_wrapper_a2e62b8b05da06eb1f9594ffdd5aa0cfd}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Decompress\+Stream@{Decompress\+Stream}}
+\index{Decompress\+Stream@{Decompress\+Stream}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Decompress\+Stream()}{DecompressStream()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+I\+Sound\+File\+Wrapper\+::\+Decompress\+Stream (\begin{DoxyParamCaption}\item[{std\+::vector$<$ char $>$ \&}]{decompress\+Buffer,  }\item[{bool}]{in\+Loop = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_aa84e533c55261000594f1889f60d1ef5}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_a47dbddbb35d013d8250adc8e666c4fdd}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_a25b25679205b828a096535b40f3082be}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a7468aaf1e53cfd6feb38eae4ecf8ab99}\label{classnjli_1_1_i_sound_file_wrapper_a7468aaf1e53cfd6feb38eae4ecf8ab99}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Get\+Current\+Stream\+Pos@{Get\+Current\+Stream\+Pos}}
+\index{Get\+Current\+Stream\+Pos@{Get\+Current\+Stream\+Pos}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Get\+Current\+Stream\+Pos()}{GetCurrentStreamPos()}}
+{\footnotesize\ttfamily virtual size\+\_\+t njli\+::\+I\+Sound\+File\+Wrapper\+::\+Get\+Current\+Stream\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ac7f741a2d2db3126eec69b64eb2cacfc}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_a90e11afb177a4085c5925af77436cd91}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_a66e31271020e3b7e7c48ecda73ed0351}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_afefb180620c4a6e17e994a867726eb29}\label{classnjli_1_1_i_sound_file_wrapper_afefb180620c4a6e17e994a867726eb29}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily virtual float njli\+::\+I\+Sound\+File\+Wrapper\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a0cfe149e0e1089f153401f3c80a222df}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_a0fdf09ad6e5bde3de915140c39698a97}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_a1b236f8ef4b7bffe5b5a68d29c855cf3}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a1b22318560969f7cc06ac03dcb78971f}\label{classnjli_1_1_i_sound_file_wrapper_a1b22318560969f7cc06ac03dcb78971f}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Get\+Total\+Time@{Get\+Total\+Time}}
+\index{Get\+Total\+Time@{Get\+Total\+Time}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Get\+Total\+Time()}{GetTotalTime()}}
+{\footnotesize\ttfamily virtual float njli\+::\+I\+Sound\+File\+Wrapper\+::\+Get\+Total\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ae281e2ac23707e6eb2c1f2e7fcb58881}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_adb921d96c9d60b6539fbc05e08989ffa}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_a2aa8be2aa5e292b3375c1a92f007592c}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a525f86e4bbe65d5b90ee3eda171b5492}\label{classnjli_1_1_i_sound_file_wrapper_a525f86e4bbe65d5b90ee3eda171b5492}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Load\+From\+File@{Load\+From\+File}}
+\index{Load\+From\+File@{Load\+From\+File}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Load\+From\+File()}{LoadFromFile()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+I\+Sound\+File\+Wrapper\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{Sound\+Info $\ast$}]{sound\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a43b8306e554b224968ef436020416765}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_a315af49a4e484e1cb8689a11dfe9db2f}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_a9286adcc339118eac5d143ad73b646a7}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a2c4dc8cc613f8f545b0e1ead86ee7e4d}\label{classnjli_1_1_i_sound_file_wrapper_a2c4dc8cc613f8f545b0e1ead86ee7e4d}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Load\+From\+Memory@{Load\+From\+Memory}}
+\index{Load\+From\+Memory@{Load\+From\+Memory}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Load\+From\+Memory()}{LoadFromMemory()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+I\+Sound\+File\+Wrapper\+::\+Load\+From\+Memory (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{data\+Size,  }\item[{Sound\+Info $\ast$}]{sound\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a93b83be038f6d2bc269720b0fa91d841}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_a3ba50f99487d489f0b495cfe7fa77811}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_aca473a80ec7a02e3df6a74b171c2d1fb}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_ab302d724c78a9a55f6dcb288d31e6854}\label{classnjli_1_1_i_sound_file_wrapper_ab302d724c78a9a55f6dcb288d31e6854}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Reset\+Stream@{Reset\+Stream}}
+\index{Reset\+Stream@{Reset\+Stream}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Reset\+Stream()}{ResetStream()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+I\+Sound\+File\+Wrapper\+::\+Reset\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ab24f4e589680e0abe321e105f01468bf}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_a28d1964b0a03208ebeb30e09ef625c90}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_ab48755f1c7d217737288bfe4c6320c16}{njli\+::\+Wrapper\+Raw}}.
+
+\mbox{\Hypertarget{classnjli_1_1_i_sound_file_wrapper_a22241a77b7d6adf55045a7a30ec5ef30}\label{classnjli_1_1_i_sound_file_wrapper_a22241a77b7d6adf55045a7a30ec5ef30}} 
+\index{njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}!Seek@{Seek}}
+\index{Seek@{Seek}!njli\+::\+I\+Sound\+File\+Wrapper@{njli\+::\+I\+Sound\+File\+Wrapper}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+I\+Sound\+File\+Wrapper\+::\+Seek (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos,  }\item[{\mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{S\+E\+E\+K\+\_\+\+P\+OS}}}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_wrapper_wav_aa75e013ec22ca84b54ee33428dcd3d09}{njli\+::\+Wrapper\+Wav}}, \mbox{\hyperlink{classnjli_1_1_wrapper_ogg_adc4b8116a89e8eb48f65276ec46e8dd2}{njli\+::\+Wrapper\+Ogg}}, and \mbox{\hyperlink{classnjli_1_1_wrapper_raw_a9ffac2e6ec0dca3b9592fba9e29ba3f4}{njli\+::\+Wrapper\+Raw}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/sound/openal/\mbox{\hyperlink{_i_sound_file_wrapper_8h}{I\+Sound\+File\+Wrapper.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,551 @@
+\hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring}{}\section{njli\+:\+:Physics\+Constraint\+Generic6\+Dof\+Spring Class Reference}
+\label{classnjli_1_1_physics_constraint_generic6_dof_spring}\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+
+
+{\ttfamily \#include $<$Physics\+Constraint\+Generic6\+Dof\+Spring.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Physics\+Constraint\+Generic6\+Dof\+Spring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{classnjli_1_1_physics_constraint_generic6_dof_spring__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Physics\+Constraint\+Generic6\+Dof\+Spring\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{classnjli_1_1_physics_constraint_generic6_dof_spring__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a2d22369c72fba1c3a477251c14273a2e}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a8d00ec82407e32449b1e9016c13ca301}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a8a44bad32336f595195ccfa836a91068}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a2fecef82051a7d6f1a51a81ca5621798}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a5ac3c1339170b7f94c3cb32cdd1d33ca}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_afe3cd6485847535d9f02c35f289113fd}{set\+Nodes}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$nodeA, \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$nodeB, const bt\+Transform \&frame\+InA=bt\+Transform\+::get\+Identity(), const bt\+Transform \&frame\+InB=bt\+Transform\+::get\+Identity(), bool use\+Linear\+Reference\+FrameA=true)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a48675ca9439612df9cfb029216ec1e6f}{set\+Nodes}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$nodeB, const bt\+Transform \&frame\+InB=bt\+Transform\+::get\+Identity(), bool use\+Linear\+Reference\+FrameB=true)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_ac9ee86dda7ea98b3e06130e5cc07a1d9}{enable\+Spring}} (int index, bool on\+Off)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a21ba981d8b8c8a7ea383e99c94ecf2e0}{set\+Stiffness}} (int index, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} stiffness)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_afd76f8cca3ad0d36b0426c2ee8ed2842}{set\+Damping}} (int index, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} damping)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a40d2ff0ac7576828303e9865f720454c}{set\+Equilibrium\+Point}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a15198ee1c2433da2bee647c18b06b891}{set\+Equilibrium\+Point}} (int index)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_ad29953e4752e238af691d92da16673d1}{set\+Equilibrium\+Point}} (int index, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} val)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_ac8d968dd1b3e929978635ec8fcdf8238}{set\+Axis}} (const bt\+Vector3 \&axis1, const bt\+Vector3 \&axis2)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a1cd2d7b1a7bb8ef56286e178c95f99e7}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a29dd9a920f0c518800bd91270b761394}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a8a50fb176c1795f70770c7736b4b4f61}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_abdf988521a32e8f90555412f5521adf7}{create}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_builder}{Physics\+Constraint\+Generic6\+Dof\+Spring\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a05eb797e000b0e4e1079fa55c3933e3d}{clone}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_ad0f3a2c25060758c236a7341d45ec471}{copy}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_acbcad205ab444a397ec02dfc592fb202}{destroy}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_aae8d77390d43c2fb72bf71e1f6c486fc}{load}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a26622b5bceef3e66e0a3b9f5ac3f60b2}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a3477772fafe8745a8963235b7eddad65}{Physics\+Constraint\+Generic6\+Dof\+Spring}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a9debc78b7868e3d1af4a5e3876f50a19}{Physics\+Constraint\+Generic6\+Dof\+Spring}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a7520f002b92a424ddb5fd19e52c7a47e}{Physics\+Constraint\+Generic6\+Dof\+Spring}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a916ae50f81fd16538e0700f883a84302}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a80a7d57ae9374e5a5a6795d59a9b53ab}{$\sim$\+Physics\+Constraint\+Generic6\+Dof\+Spring}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \& \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a213a2c40144478db8dbb877c6539dcb0}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&)
+\item 
+virtual bt\+Typed\+Constraint $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_aa90bf42f88d0314d834a6b3d670ba90d}{get\+Constraint}} ()
+\item 
+virtual const bt\+Typed\+Constraint $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a072c17a336b74f574c9892e8ccf12278}{get\+Constraint}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_ad8d9013c4e17710207f13cf40d667cd1}{remove\+Constraint}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Generic6\+Dof\+Spring\+Constraint $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_a493a869835cd8138ecf3b347b9aa7373}{m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 32 of file Physics\+Constraint\+Generic6\+Dof\+Spring.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a3477772fafe8745a8963235b7eddad65}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a3477772fafe8745a8963235b7eddad65}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\index{Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Generic6\+Dof\+Spring()}{PhysicsConstraintGeneric6DofSpring()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a9debc78b7868e3d1af4a5e3876f50a19}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a9debc78b7868e3d1af4a5e3876f50a19}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\index{Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Generic6\+Dof\+Spring()}{PhysicsConstraintGeneric6DofSpring()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a7520f002b92a424ddb5fd19e52c7a47e}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a7520f002b92a424ddb5fd19e52c7a47e}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\index{Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Generic6\+Dof\+Spring()}{PhysicsConstraintGeneric6DofSpring()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a80a7d57ae9374e5a5a6795d59a9b53ab}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a80a7d57ae9374e5a5a6795d59a9b53ab}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!````~Physics\+Constraint\+Generic6\+Dof\+Spring@{$\sim$\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\index{````~Physics\+Constraint\+Generic6\+Dof\+Spring@{$\sim$\+Physics\+Constraint\+Generic6\+Dof\+Spring}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Constraint\+Generic6\+Dof\+Spring()}{~PhysicsConstraintGeneric6DofSpring()}}
+{\footnotesize\ttfamily virtual njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::$\sim$\+Physics\+Constraint\+Generic6\+Dof\+Spring (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a916ae50f81fd16538e0700f883a84302}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a916ae50f81fd16538e0700f883a84302}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a2d22369c72fba1c3a477251c14273a2e}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a2d22369c72fba1c3a477251c14273a2e}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_a386006d689e37b554d43d86d718966d8}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a05eb797e000b0e4e1079fa55c3933e3d}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a05eb797e000b0e4e1079fa55c3933e3d}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_ad0f3a2c25060758c236a7341d45ec471}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_ad0f3a2c25060758c236a7341d45ec471}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a8a50fb176c1795f70770c7736b4b4f61}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a8a50fb176c1795f70770c7736b4b4f61}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_abdf988521a32e8f90555412f5521adf7}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_abdf988521a32e8f90555412f5521adf7}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring_builder}{Physics\+Constraint\+Generic6\+Dof\+Spring\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a1cd2d7b1a7bb8ef56286e178c95f99e7}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a1cd2d7b1a7bb8ef56286e178c95f99e7}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}$\ast$$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_acbcad205ab444a397ec02dfc592fb202}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_acbcad205ab444a397ec02dfc592fb202}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a29dd9a920f0c518800bd91270b761394}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a29dd9a920f0c518800bd91270b761394}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_ac9ee86dda7ea98b3e06130e5cc07a1d9}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_ac9ee86dda7ea98b3e06130e5cc07a1d9}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!enable\+Spring@{enable\+Spring}}
+\index{enable\+Spring@{enable\+Spring}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{enable\+Spring()}{enableSpring()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::enable\+Spring (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{bool}]{on\+Off }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$ \\
+\hline
+{\em on\+Off} & $<$\#on\+Off description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a8a44bad32336f595195ccfa836a91068}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a8a44bad32336f595195ccfa836a91068}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_a29b23a079a5d93600a701d7635fb26cd}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_aa90bf42f88d0314d834a6b3d670ba90d}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_aa90bf42f88d0314d834a6b3d670ba90d}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!get\+Constraint@{get\+Constraint}}
+\index{get\+Constraint@{get\+Constraint}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{get\+Constraint()}{getConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bt\+Typed\+Constraint$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::get\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_a0591b18e41f1e1e349ba3cef3e8cf4a4}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a072c17a336b74f574c9892e8ccf12278}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a072c17a336b74f574c9892e8ccf12278}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!get\+Constraint@{get\+Constraint}}
+\index{get\+Constraint@{get\+Constraint}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{get\+Constraint()}{getConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const bt\+Typed\+Constraint$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::get\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_a55d44efd5fb9dcd1f983f3bb5f2ac6d5}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a2fecef82051a7d6f1a51a81ca5621798}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a2fecef82051a7d6f1a51a81ca5621798}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_aa3004e4d926ca03e19209b5ee79817d9}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_aae8d77390d43c2fb72bf71e1f6c486fc}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_aae8d77390d43c2fb72bf71e1f6c486fc}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!load@{load}}
+\index{load@{load}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a5ac3c1339170b7f94c3cb32cdd1d33ca}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a5ac3c1339170b7f94c3cb32cdd1d33ca}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_a8989bd7a2e05a4abf8edcaa7468648f6}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a213a2c40144478db8dbb877c6539dcb0}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a213a2c40144478db8dbb877c6539dcb0}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}\& njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_ad8d9013c4e17710207f13cf40d667cd1}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_ad8d9013c4e17710207f13cf40d667cd1}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!remove\+Constraint@{remove\+Constraint}}
+\index{remove\+Constraint@{remove\+Constraint}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{remove\+Constraint()}{removeConstraint()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::remove\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_ac57766961297ad087fb0ee7dc26e17d8}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a8d00ec82407e32449b1e9016c13ca301}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a8d00ec82407e32449b1e9016c13ca301}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:56
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_adebf86567407706023e5800b59308635}{njli\+::\+Physics\+Constraint\+Generic6\+Dof}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_ac8d968dd1b3e929978635ec8fcdf8238}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_ac8d968dd1b3e929978635ec8fcdf8238}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Axis@{set\+Axis}}
+\index{set\+Axis@{set\+Axis}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Axis()}{setAxis()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Axis (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{axis1,  }\item[{const bt\+Vector3 \&}]{axis2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em axis1} & $<$\#axis1 description\#$>$ \\
+\hline
+{\em axis2} & $<$\#axis2 description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_afd76f8cca3ad0d36b0426c2ee8ed2842}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_afd76f8cca3ad0d36b0426c2ee8ed2842}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Damping@{set\+Damping}}
+\index{set\+Damping@{set\+Damping}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Damping()}{setDamping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Damping (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{damping }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$ \\
+\hline
+{\em damping} & $<$\#damping description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a40d2ff0ac7576828303e9865f720454c}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a40d2ff0ac7576828303e9865f720454c}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Equilibrium\+Point@{set\+Equilibrium\+Point}}
+\index{set\+Equilibrium\+Point@{set\+Equilibrium\+Point}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Equilibrium\+Point()}{setEquilibriumPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Equilibrium\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a15198ee1c2433da2bee647c18b06b891}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a15198ee1c2433da2bee647c18b06b891}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Equilibrium\+Point@{set\+Equilibrium\+Point}}
+\index{set\+Equilibrium\+Point@{set\+Equilibrium\+Point}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Equilibrium\+Point()}{setEquilibriumPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Equilibrium\+Point (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_ad29953e4752e238af691d92da16673d1}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_ad29953e4752e238af691d92da16673d1}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Equilibrium\+Point@{set\+Equilibrium\+Point}}
+\index{set\+Equilibrium\+Point@{set\+Equilibrium\+Point}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Equilibrium\+Point()}{setEquilibriumPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Equilibrium\+Point (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{val }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$ \\
+\hline
+{\em val} & $<$\#val description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_afe3cd6485847535d9f02c35f289113fd}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_afe3cd6485847535d9f02c35f289113fd}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Nodes@{set\+Nodes}}
+\index{set\+Nodes@{set\+Nodes}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Nodes()}{setNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{nodeA,  }\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{nodeB,  }\item[{const bt\+Transform \&}]{frame\+InA = {\ttfamily btTransform\+:\+:getIdentity()},  }\item[{const bt\+Transform \&}]{frame\+InB = {\ttfamily btTransform\+:\+:getIdentity()},  }\item[{bool}]{use\+Linear\+Reference\+FrameA = {\ttfamily true} }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodeA} & $<$\#nodeA description\#$>$ \\
+\hline
+{\em nodeB} & $<$\#nodeB description\#$>$ \\
+\hline
+{\em frame\+InA} & $<$\#frame\+InA description\#$>$ \\
+\hline
+{\em frame\+InB} & $<$\#frame\+InB description\#$>$ \\
+\hline
+{\em use\+Linear\+Reference\+FrameA} & $<$\#use\+Linear\+Reference\+FrameA description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a48675ca9439612df9cfb029216ec1e6f}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a48675ca9439612df9cfb029216ec1e6f}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Nodes@{set\+Nodes}}
+\index{set\+Nodes@{set\+Nodes}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Nodes()}{setNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{nodeB,  }\item[{const bt\+Transform \&}]{frame\+InB = {\ttfamily btTransform\+:\+:getIdentity()},  }\item[{bool}]{use\+Linear\+Reference\+FrameB = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a21ba981d8b8c8a7ea383e99c94ecf2e0}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a21ba981d8b8c8a7ea383e99c94ecf2e0}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!set\+Stiffness@{set\+Stiffness}}
+\index{set\+Stiffness@{set\+Stiffness}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{set\+Stiffness()}{setStiffness()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::set\+Stiffness (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{stiffness }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$ \\
+\hline
+{\em stiffness} & $<$\#stiffness description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a26622b5bceef3e66e0a3b9f5ac3f60b2}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a26622b5bceef3e66e0a3b9f5ac3f60b2}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!type@{type}}
+\index{type@{type}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 35 of file Physics\+Constraint\+Generic6\+Dof\+Spring.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_generic6_dof_spring_a493a869835cd8138ecf3b347b9aa7373}\label{classnjli_1_1_physics_constraint_generic6_dof_spring_a493a869835cd8138ecf3b347b9aa7373}} 
+\index{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}!m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint@{m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint}}
+\index{m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint@{m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint}!njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring@{njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\subsubsection{\texorpdfstring{m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint}{m\_btGeneric6DofSpringConstraint}}
+{\footnotesize\ttfamily bt\+Generic6\+Dof\+Spring\+Constraint$\ast$ njli\+::\+Physics\+Constraint\+Generic6\+Dof\+Spring\+::m\+\_\+bt\+Generic6\+Dof\+Spring\+Constraint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 230 of file Physics\+Constraint\+Generic6\+Dof\+Spring.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/physics/constraint/\mbox{\hyperlink{_physics_constraint_generic6_dof_spring_8h}{Physics\+Constraint\+Generic6\+Dof\+Spring.\+h}}\end{DoxyCompactItemize}

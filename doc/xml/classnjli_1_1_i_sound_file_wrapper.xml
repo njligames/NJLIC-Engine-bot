@@ -1,0 +1,316 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_i_sound_file_wrapper" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>njli::ISoundFileWrapper</compoundname>
+    <derivedcompoundref refid="classnjli_1_1_wrapper_ogg" prot="public" virt="non-virtual">njli::WrapperOgg</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_wrapper_raw" prot="public" virt="non-virtual">njli::WrapperRaw</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_wrapper_wav" prot="public" virt="non-virtual">njli::WrapperWav</derivedcompoundref>
+    <includes refid="_i_sound_file_wrapper_8h" local="no">ISoundFileWrapper.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SEEK_POS</name>
+        <enumvalue id="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e" prot="public">
+          <name>START</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991" prot="public">
+          <name>CURRENT</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="17" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnjli_1_1_i_sound_file_wrapper_1a5374e14efd1564c10852da7cfe31164a" prot="public" static="no">
+        <type>enum <ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">njli::ISoundFileWrapper::SEEK_POS</ref></type>
+        <definition>typedef enum njli::ISoundFileWrapper::SEEK_POS  njli::ISoundFileWrapper::SEEK_POS</definition>
+        <argsstring></argsstring>
+        <name>SEEK_POS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="17" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>njli::ISoundFileWrapper::ISoundFileWrapper</definition>
+        <argsstring>(int minDecompressLengthAtOnce=-1)</argsstring>
+        <name>ISoundFileWrapper</name>
+        <param>
+          <type>int</type>
+          <declname>minDecompressLengthAtOnce</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="19" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type></type>
+        <definition>virtual njli::ISoundFileWrapper::~ISoundFileWrapper</definition>
+        <argsstring>()</argsstring>
+        <name>~ISoundFileWrapper</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="20" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a2c4dc8cc613f8f545b0e1ead86ee7e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ISoundFileWrapper::LoadFromMemory</definition>
+        <argsstring>(char *data, int dataSize, SoundInfo *soundInfo)=0</argsstring>
+        <name>LoadFromMemory</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1aca473a80ec7a02e3df6a74b171c2d1fb">LoadFromMemory</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1a3ba50f99487d489f0b495cfe7fa77811">LoadFromMemory</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1a93b83be038f6d2bc269720b0fa91d841">LoadFromMemory</reimplementedby>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dataSize</declname>
+        </param>
+        <param>
+          <type>SoundInfo *</type>
+          <declname>soundInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a525f86e4bbe65d5b90ee3eda171b5492" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ISoundFileWrapper::LoadFromFile</definition>
+        <argsstring>(FILE *f, SoundInfo *soundInfo)=0</argsstring>
+        <name>LoadFromFile</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1a9286adcc339118eac5d143ad73b646a7">LoadFromFile</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1a315af49a4e484e1cb8689a11dfe9db2f">LoadFromFile</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1a43b8306e554b224968ef436020416765">LoadFromFile</reimplementedby>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>SoundInfo *</type>
+          <declname>soundInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a2e62b8b05da06eb1f9594ffdd5aa0cfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ISoundFileWrapper::DecompressStream</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;decompressBuffer, bool inLoop=false)=0</argsstring>
+        <name>DecompressStream</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1a25b25679205b828a096535b40f3082be">DecompressStream</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1a47dbddbb35d013d8250adc8e666c4fdd">DecompressStream</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1aa84e533c55261000594f1889f60d1ef5">DecompressStream</reimplementedby>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>decompressBuffer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inLoop</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a9b338a5bbcb5d07acdebce1efab332c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ISoundFileWrapper::DecompressAll</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;decompressBuffer)=0</argsstring>
+        <name>DecompressAll</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1aa3e0d88a80c5af562903e445ed2a863e">DecompressAll</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1ad33e7975379d1e4f5c15944370a4cf47">DecompressAll</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1a530b83b423d29c785889f9783ab08b9b">DecompressAll</reimplementedby>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>decompressBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1ab302d724c78a9a55f6dcb288d31e6854" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ISoundFileWrapper::ResetStream</definition>
+        <argsstring>()=0</argsstring>
+        <name>ResetStream</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1ab48755f1c7d217737288bfe4c6320c16">ResetStream</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1a28d1964b0a03208ebeb30e09ef625c90">ResetStream</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1ab24f4e589680e0abe321e105f01468bf">ResetStream</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a22241a77b7d6adf55045a7a30ec5ef30" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ISoundFileWrapper::Seek</definition>
+        <argsstring>(size_t pos, SEEK_POS start)=0</argsstring>
+        <name>Seek</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1a9ffac2e6ec0dca3b9592fba9e29ba3f4">Seek</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1adc4b8116a89e8eb48f65276ec46e8dd2">Seek</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1aa75e013ec22ca84b54ee33428dcd3d09">Seek</reimplementedby>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">SEEK_POS</ref></type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a7468aaf1e53cfd6feb38eae4ecf8ab99" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>size_t</type>
+        <definition>virtual size_t njli::ISoundFileWrapper::GetCurrentStreamPos</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetCurrentStreamPos</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1a66e31271020e3b7e7c48ecda73ed0351">GetCurrentStreamPos</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1a90e11afb177a4085c5925af77436cd91">GetCurrentStreamPos</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1ac7f741a2d2db3126eec69b64eb2cacfc">GetCurrentStreamPos</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="31" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1afefb180620c4a6e17e994a867726eb29" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float njli::ISoundFileWrapper::GetTime</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetTime</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1a1b236f8ef4b7bffe5b5a68d29c855cf3">GetTime</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1a0fdf09ad6e5bde3de915140c39698a97">GetTime</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1a0cfe149e0e1089f153401f3c80a222df">GetTime</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_i_sound_file_wrapper_1a1b22318560969f7cc06ac03dcb78971f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>float</type>
+        <definition>virtual float njli::ISoundFileWrapper::GetTotalTime</definition>
+        <argsstring>() const =0</argsstring>
+        <name>GetTotalTime</name>
+        <reimplementedby refid="classnjli_1_1_wrapper_raw_1a2aa8be2aa5e292b3375c1a92f007592c">GetTotalTime</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_ogg_1adb921d96c9d60b6539fbc05e08989ffa">GetTotalTime</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_wrapper_wav_1ae281e2ac23707e6eb2c1f2e7fcb58881">GetTotalTime</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="34" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="975">
+        <label>njli::WrapperWav</label>
+        <link refid="classnjli_1_1_wrapper_wav"/>
+        <childnode refid="972" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="972">
+        <label>njli::ISoundFileWrapper</label>
+        <link refid="classnjli_1_1_i_sound_file_wrapper"/>
+      </node>
+      <node id="973">
+        <label>njli::WrapperOgg</label>
+        <link refid="classnjli_1_1_wrapper_ogg"/>
+        <childnode refid="972" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="974">
+        <label>njli::WrapperRaw</label>
+        <link refid="classnjli_1_1_wrapper_raw"/>
+        <childnode refid="972" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" line="15" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/ISoundFileWrapper.h" bodystart="14" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991" prot="public" virt="non-virtual"><scope>njli::ISoundFileWrapper</scope><name>CURRENT</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a9b338a5bbcb5d07acdebce1efab332c5" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>DecompressAll</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a2e62b8b05da06eb1f9594ffdd5aa0cfd" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>DecompressStream</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a7468aaf1e53cfd6feb38eae4ecf8ab99" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>GetCurrentStreamPos</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1afefb180620c4a6e17e994a867726eb29" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>GetTime</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a1b22318560969f7cc06ac03dcb78971f" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>GetTotalTime</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4" prot="public" virt="non-virtual"><scope>njli::ISoundFileWrapper</scope><name>ISoundFileWrapper</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a525f86e4bbe65d5b90ee3eda171b5492" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>LoadFromFile</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a2c4dc8cc613f8f545b0e1ead86ee7e4d" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>LoadFromMemory</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab302d724c78a9a55f6dcb288d31e6854" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>ResetStream</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a22241a77b7d6adf55045a7a30ec5ef30" prot="public" virt="pure-virtual"><scope>njli::ISoundFileWrapper</scope><name>Seek</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" prot="public" virt="non-virtual"><scope>njli::ISoundFileWrapper</scope><name>SEEK_POS</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a5374e14efd1564c10852da7cfe31164a" prot="public" virt="non-virtual"><scope>njli::ISoundFileWrapper</scope><name>SEEK_POS</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e" prot="public" virt="non-virtual"><scope>njli::ISoundFileWrapper</scope><name>START</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7" prot="public" virt="virtual"><scope>njli::ISoundFileWrapper</scope><name>~ISoundFileWrapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

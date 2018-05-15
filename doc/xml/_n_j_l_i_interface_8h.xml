@@ -1,0 +1,881 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_n_j_l_i_interface_8h" kind="file" language="C++">
+    <compoundname>NJLIInterface.h</compoundname>
+    <includes local="yes">SDL.h</includes>
+    <includes local="no">map</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="5368">
+        <label>njligames-njlic_engine/njli/platform/NJLIInterface.h</label>
+        <link refid="_n_j_l_i_interface_8h"/>
+        <childnode refid="5369" relation="include">
+        </childnode>
+        <childnode refid="5370" relation="include">
+        </childnode>
+        <childnode refid="5371" relation="include">
+        </childnode>
+      </node>
+      <node id="5369">
+        <label>SDL.h</label>
+      </node>
+      <node id="5370">
+        <label>map</label>
+      </node>
+      <node id="5371">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4" prot="public" static="no">
+        <type>std::map&lt; int, SDL_Joystick * &gt;</type>
+        <definition>typedef std::map&lt;int, SDL_Joystick *&gt; JoystickMap</definition>
+        <argsstring></argsstring>
+        <name>JoystickMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="17" column="1" bodyfile="njligames-njlic_engine/njli/platform/NJLIInterface.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_n_j_l_i_interface_8h_1a49256682c3474ea60e1aa3e4f3726f1d" prot="public" static="no">
+        <type>std::pair&lt; int, SDL_Joystick * &gt;</type>
+        <definition>typedef std::pair&lt;int, SDL_Joystick *&gt; JoystickPair</definition>
+        <argsstring></argsstring>
+        <name>JoystickPair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="18" column="1" bodyfile="njligames-njlic_engine/njli/platform/NJLIInterface.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1ad44d313c047589b11b13ed2b86b8c4db" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; SDL_Joystick * &gt;</type>
+        <definition>std::vector&lt;SDL_Joystick *&gt; gGameJoysticks</definition>
+        <argsstring></argsstring>
+        <name>gGameJoysticks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="16" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1adb79376dd8a0fe575d83acde08cb1047" prot="public" static="no" mutable="no">
+        <type><ref refid="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4" kindref="member">JoystickMap</ref></type>
+        <definition>JoystickMap gGameJoystickMap</definition>
+        <argsstring></argsstring>
+        <name>gGameJoystickMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="20" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a222f53a6a442d8f716dffd665e83528a" prot="public" static="no" mutable="no">
+        <type>SDL_Window *</type>
+        <definition>SDL_Window* gWindow</definition>
+        <argsstring></argsstring>
+        <name>gWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a4735638969a524c4ac90a88f23c59a1f" prot="public" static="no" mutable="no">
+        <type>SDL_Renderer *</type>
+        <definition>SDL_Renderer* gRenderer</definition>
+        <argsstring></argsstring>
+        <name>gRenderer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="23" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a18634b79b95e521c65f8446597af3fa5" prot="public" static="no" mutable="no">
+        <type>SDL_GLContext</type>
+        <definition>SDL_GLContext gGlContext</definition>
+        <argsstring></argsstring>
+        <name>gGlContext</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="24" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1aeea34e2cdf8071c7dcd944e5f40141e5" prot="public" static="no" mutable="no">
+        <type>SDL_DisplayMode</type>
+        <definition>SDL_DisplayMode gDisplayMode</definition>
+        <argsstring></argsstring>
+        <name>gDisplayMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="25" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a0d2385cca83f2f3e3972567646e933c5" prot="public" static="no" mutable="no">
+        <type>SDL_MouseMotionEvent</type>
+        <definition>SDL_MouseMotionEvent gLastEvent</definition>
+        <argsstring></argsstring>
+        <name>gLastEvent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="26" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a01e593ea28db3fae0f4b904a097f392a" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gDone</definition>
+        <argsstring></argsstring>
+        <name>gDone</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a617d46c48dd05c5f04f249d74b27474e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gXOffset</definition>
+        <argsstring></argsstring>
+        <name>gXOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a8832dca79836bee1ed31c0c1943f70eb" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gYOffset</definition>
+        <argsstring></argsstring>
+        <name>gYOffset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_n_j_l_i_interface_8h_1a869dc264b051e5660082d1a9782c7d12" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gNumTouches</definition>
+        <argsstring></argsstring>
+        <name>gNumTouches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="30" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a1e60f47d0b131d5990bdc98dc8279399" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleUpdate</definition>
+        <argsstring>(double timeStep)</argsstring>
+        <name>NJLI_HandleUpdate</name>
+        <param>
+          <type>double</type>
+          <declname>timeStep</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a3ca283031b2c6db0f81d6b8f1ab6594c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleRender</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleRender</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1abd21b292252c420cad4abda6d86d1193" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleLowMemory</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleLowMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1aef46a1be5f0e91410087bb21528d3636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleQuit</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleQuit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a9ab4654023d305ec7788d1f6bd166f29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandlePause</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandlePause</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a490e2957f6cb5c01bcc873b219c13964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleResume</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleResume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a24c9633bdc46d5b8b64456e75fbe5aa6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleDropFile</definition>
+        <argsstring>(const char *filename)</argsstring>
+        <name>NJLI_HandleDropFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a8bf04c69e1bc1c3c08f30aa579cc1d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleResize</definition>
+        <argsstring>(int width, int height, int sdlFormat, float refreshRate)</argsstring>
+        <name>NJLI_HandleResize</name>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sdlFormat</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>refreshRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a33bb6576261605e9bab826bb21a7aa9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NJLI_HandlePadDown</definition>
+        <argsstring>(int device_id, int keycode)</argsstring>
+        <name>NJLI_HandlePadDown</name>
+        <param>
+          <type>int</type>
+          <declname>device_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>keycode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a54e28fcf9d572c82e5d57129f319f43c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NJLI_HandlePadUp</definition>
+        <argsstring>(int device_id, int keycode)</argsstring>
+        <name>NJLI_HandlePadUp</name>
+        <param>
+          <type>int</type>
+          <declname>device_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>keycode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a105d45d4a14e2526ceeb66b1a0b60304" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleJoy</definition>
+        <argsstring>(int device_id, int axis, float value)</argsstring>
+        <name>NJLI_HandleJoy</name>
+        <param>
+          <type>int</type>
+          <declname>device_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1ac8af65c5e0fb2ac87b2f4c5b0271586f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleHat</definition>
+        <argsstring>(int device_id, int hat_id, int x, int y)</argsstring>
+        <name>NJLI_HandleHat</name>
+        <param>
+          <type>int</type>
+          <declname>device_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>hat_id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a68c675ef4b67a621a9b07956a87f164c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleKeyDown</definition>
+        <argsstring>(const std::string &amp;keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>NJLI_HandleKeyDown</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1aae7e9403cfa5ccc5fd54012350fd153d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleKeyUp</definition>
+        <argsstring>(const std::string &amp;keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>NJLI_HandleKeyUp</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1af76d7bc62254b701c7266713652b1578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleKeyboardFocusLost</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleKeyboardFocusLost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1ad3d8b0648b78539ef5da05c66816fdde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleKeyboardFinish</definition>
+        <argsstring>(const unsigned char *state, int numStates)</argsstring>
+        <name>NJLI_HandleKeyboardFinish</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>state</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numStates</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a0df118b26b35f2f4cad823df47ea4ad8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleMouse</definition>
+        <argsstring>(int button, int eventType, float x, float y, int clicks)</argsstring>
+        <name>NJLI_HandleMouse</name>
+        <param>
+          <type>int</type>
+          <declname>button</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clicks</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1aa68746871cc5e2195dbdb38623df5cf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleTouch</definition>
+        <argsstring>(int touchDevId, int pointerFingerId, int eventType, float x, float y, float dx, float dy, float pressure)</argsstring>
+        <name>NJLI_HandleTouch</name>
+        <param>
+          <type>int</type>
+          <declname>touchDevId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pointerFingerId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>eventType</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dx</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>dy</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>pressure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a504780d2532764bd8eca76da693862ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleFinishTouches</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleFinishTouches</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a4a4ec35ea6565fbaf47ffeeeac329ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleAccel</definition>
+        <argsstring>(float x, float y, float z)</argsstring>
+        <name>NJLI_HandleAccel</name>
+        <param>
+          <type>float</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>z</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a5caa8b96a2484e22eaf17f6400254327" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleSurfaceChanged</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleSurfaceChanged</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a9e9547b19cfb4c6c39453d90a155b4f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleSurfaceDestroyed</definition>
+        <argsstring>()</argsstring>
+        <name>NJLI_HandleSurfaceDestroyed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1ab89b70450a79c24a789431c13987f663" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NJLI_HandleAddJoystick</definition>
+        <argsstring>(int device_id, const char *name, int is_accelerometer, int nbuttons, int naxes, int nhats, int nballs)</argsstring>
+        <name>NJLI_HandleAddJoystick</name>
+        <param>
+          <type>int</type>
+          <declname>device_id</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>is_accelerometer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nbuttons</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>naxes</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nhats</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nballs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a8967eda0ee6571bc64d28407cb31ca83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int NJLI_HandleRemoveJoystick</definition>
+        <argsstring>(int device_id)</argsstring>
+        <name>NJLI_HandleRemoveJoystick</name>
+        <param>
+          <type>int</type>
+          <declname>device_id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a521c282a3e54e5d174c07226c29c73e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* NJLI_HandleGetHint</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>NJLI_HandleGetHint</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="69" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a3288c38f85384c3b1d9b4d6ff1fc65d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleCommitText</definition>
+        <argsstring>(const char *text, int newCursorPosition)</argsstring>
+        <name>NJLI_HandleCommitText</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newCursorPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_n_j_l_i_interface_8h_1a825a21d7571cf6c98f65eea33346753d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void NJLI_HandleSetComposingText</definition>
+        <argsstring>(const char *text, int newCursorPosition)</argsstring>
+        <name>NJLI_HandleSetComposingText</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>newCursorPosition</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h" line="72" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>NJLIInterface.hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>macOS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>James<sp/>Folk<sp/>on<sp/>4/27/17.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>NJLIInterface_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NJLIInterface_hpp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SDL.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::vector&lt;SDL_Joystick<sp/>*&gt;<sp/><ref refid="_n_j_l_i_interface_8h_1ad44d313c047589b11b13ed2b86b8c4db" kindref="member">gGameJoysticks</ref>;</highlight></codeline>
+<codeline lineno="17" refid="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;int,<sp/>SDL_Joystick<sp/>*&gt;<sp/><ref refid="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4" kindref="member">JoystickMap</ref>;</highlight></codeline>
+<codeline lineno="18" refid="_n_j_l_i_interface_8h_1a49256682c3474ea60e1aa3e4f3726f1d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;int,<sp/>SDL_Joystick<sp/>*&gt;<sp/><ref refid="_n_j_l_i_interface_8h_1a49256682c3474ea60e1aa3e4f3726f1d" kindref="member">JoystickPair</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a2642a79c3f661b171d671a8faca552c4" kindref="member">JoystickMap</ref><sp/><ref refid="_n_j_l_i_interface_8h_1adb79376dd8a0fe575d83acde08cb1047" kindref="member">gGameJoystickMap</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SDL_Window<sp/>*<ref refid="_n_j_l_i_interface_8h_1a222f53a6a442d8f716dffd665e83528a" kindref="member">gWindow</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SDL_Renderer<sp/>*<ref refid="_n_j_l_i_interface_8h_1a4735638969a524c4ac90a88f23c59a1f" kindref="member">gRenderer</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SDL_GLContext<sp/><ref refid="_n_j_l_i_interface_8h_1a18634b79b95e521c65f8446597af3fa5" kindref="member">gGlContext</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SDL_DisplayMode<sp/><ref refid="_n_j_l_i_interface_8h_1aeea34e2cdf8071c7dcd944e5f40141e5" kindref="member">gDisplayMode</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SDL_MouseMotionEvent<sp/><ref refid="_n_j_l_i_interface_8h_1a0d2385cca83f2f3e3972567646e933c5" kindref="member">gLastEvent</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a01e593ea28db3fae0f4b904a097f392a" kindref="member">gDone</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a617d46c48dd05c5f04f249d74b27474e" kindref="member">gXOffset</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a8832dca79836bee1ed31c0c1943f70eb" kindref="member">gYOffset</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a869dc264b051e5660082d1a9782c7d12" kindref="member">gNumTouches</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a1e60f47d0b131d5990bdc98dc8279399" kindref="member">NJLI_HandleUpdate</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>timeStep);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a3ca283031b2c6db0f81d6b8f1ab6594c" kindref="member">NJLI_HandleRender</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1abd21b292252c420cad4abda6d86d1193" kindref="member">NJLI_HandleLowMemory</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1aef46a1be5f0e91410087bb21528d3636" kindref="member">NJLI_HandleQuit</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a9ab4654023d305ec7788d1f6bd166f29" kindref="member">NJLI_HandlePause</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a490e2957f6cb5c01bcc873b219c13964" kindref="member">NJLI_HandleResume</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a24c9633bdc46d5b8b64456e75fbe5aa6" kindref="member">NJLI_HandleDropFile</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a8bf04c69e1bc1c3c08f30aa579cc1d73" kindref="member">NJLI_HandleResize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sdlFormat,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>refreshRate);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a33bb6576261605e9bab826bb21a7aa9a" kindref="member">NJLI_HandlePadDown</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>keycode);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a54e28fcf9d572c82e5d57129f319f43c" kindref="member">NJLI_HandlePadUp</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>keycode);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a105d45d4a14e2526ceeb66b1a0b60304" kindref="member">NJLI_HandleJoy</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>axis,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1ac8af65c5e0fb2ac87b2f4c5b0271586f" kindref="member">NJLI_HandleHat</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>hat_id,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a68c675ef4b67a621a9b07956a87f164c" kindref="member">NJLI_HandleKeyDown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;keycodeName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withCapsLock,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withControl,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withShift,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withAlt,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withGui);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1aae7e9403cfa5ccc5fd54012350fd153d" kindref="member">NJLI_HandleKeyUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;keycodeName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withCapsLock,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withControl,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withShift,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withAlt,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withGui);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1af76d7bc62254b701c7266713652b1578" kindref="member">NJLI_HandleKeyboardFocusLost</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1ad3d8b0648b78539ef5da05c66816fdde" kindref="member">NJLI_HandleKeyboardFinish</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*state,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numStates);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a0df118b26b35f2f4cad823df47ea4ad8" kindref="member">NJLI_HandleMouse</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eventType,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clicks);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1aa68746871cc5e2195dbdb38623df5cf4" kindref="member">NJLI_HandleTouch</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>touchDevId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointerFingerId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eventType,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dy,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pressure);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a504780d2532764bd8eca76da693862ea" kindref="member">NJLI_HandleFinishTouches</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a4a4ec35ea6565fbaf47ffeeeac329ff9" kindref="member">NJLI_HandleAccel</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a5caa8b96a2484e22eaf17f6400254327" kindref="member">NJLI_HandleSurfaceChanged</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a9e9547b19cfb4c6c39453d90a155b4f6" kindref="member">NJLI_HandleSurfaceDestroyed</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1ab89b70450a79c24a789431c13987f663" kindref="member">NJLI_HandleAddJoystick</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device_id,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>is_accelerometer,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nbuttons,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>naxes,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nhats,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nballs);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a8967eda0ee6571bc64d28407cb31ca83" kindref="member">NJLI_HandleRemoveJoystick</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>device_id);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="_n_j_l_i_interface_8h_1a521c282a3e54e5d174c07226c29c73e2" kindref="member">NJLI_HandleGetHint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a3288c38f85384c3b1d9b4d6ff1fc65d3" kindref="member">NJLI_HandleCommitText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newCursorPosition);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_n_j_l_i_interface_8h_1a825a21d7571cf6c98f65eea33346753d" kindref="member">NJLI_HandleSetComposingText</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newCursorPosition);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>NJLIInterface_hpp<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/platform/NJLIInterface.h"/>
+  </compounddef>
+</doxygen>

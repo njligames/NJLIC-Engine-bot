@@ -1,0 +1,1335 @@
+\hypertarget{classnjli_1_1_physics_body}{}\section{njli\+:\+:Physics\+Body Class Reference}
+\label{classnjli_1_1_physics_body}\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+
+
+{\ttfamily \#include $<$Physics\+Body.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Physics\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnjli_1_1_physics_body__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Physics\+Body\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_physics_body__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_body_ad68e3bd30ca09693f5b03855d020923b}{Physics\+Body}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_body_a58cbc549412fc623f35276d2f18b8785}{Physics\+Body}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_body_ae72cb51b910158466d481481e1042a2e}{Physics\+Body}} (const \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_body_aecae8b7ddd0550b4f685326bf2a723da}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_physics_body_a181de210c6f8af7a7ec4ccbc5198e969}{$\sim$\+Physics\+Body}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \& \mbox{\hyperlink{classnjli_1_1_physics_body_a4259c9604cec6377e90bbf71b15778a3}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \&)
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a21bdbc459532f004dc4cd0e9c99a4765}{calculate\+Serialize\+Buffer\+Size}} () const =0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a3c40378e7f3033557ec6adf9428b6a9d}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const =0
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a9ba235d39a1b994f22a13edeff862ba3}{get\+Class\+Name}} () const =0
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a1338648bed55e4ca2d3c50d953fd60c4}{get\+Type}} () const =0
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_physics_body_a0c12067445dfd7893e37052ae90a9173}{operator std\+::string}} () const =0
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a5e3c626da8fdf32375e0f16f6187934d}{handle\+Collide}} (\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$body, const bt\+Manifold\+Point \&pt)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_ae317118b0cad6699ce9d7c1aa27db7fa}{handle\+Collision\+Near}} (\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$body, const bt\+Dispatcher\+Info \&dispatch\+Info)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a5a4d5f7e9f4c39180f157f42be422358}{set\+Physics\+Shape}} (\mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$shape)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a5ecb49baeaa8c38937ee5fc566702148}{remove\+Physics\+Shape}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a3a502c491f089c573083b9958045924a}{get\+Physics\+Shape}} ()
+\item 
+const \mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_aa03d33a7cb2e4da061f23265c250808c}{get\+Physics\+Shape}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a570891a03ea4f8243ccec9202b3dc965}{set\+World\+Transform}} (const bt\+Transform \&transform)=0
+\item 
+virtual bt\+Transform \mbox{\hyperlink{classnjli_1_1_physics_body_ae8501b09e0eda9f0f82069c537f16663}{get\+World\+Transform}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_aa274a01209a062b130d675bec9aef6ed}{set\+Friction}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} friction)
+\item 
+virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a5140f2a2f0df419db4acfe85aa7ffc1c}{get\+Friction}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a9361f24aea1decf35d872e7509d4e9dc}{set\+Angular\+Friction}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} friction)
+\item 
+virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_body_aacb7f2a5e518977ee8db878286b86884}{get\+Angular\+Friction}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a9741d811656fcd2865d688627ee2ea8b}{set\+Restitution}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} restitution)
+\item 
+virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a1b125030c9a2abf3c450ef4e1dc492c3}{get\+Restitution}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_ae9b3b3115dbc70f21b5f5fb8c66aa18c}{set\+Physics\+Type}} (\mbox{\hyperlink{namespacenjli_a60ba626f4609f81870c92d042c6bc83d}{njli\+Physics\+Type}} \mbox{\hyperlink{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}{type}})
+\item 
+virtual \mbox{\hyperlink{namespacenjli_a60ba626f4609f81870c92d042c6bc83d}{njli\+Physics\+Type}} \mbox{\hyperlink{classnjli_1_1_physics_body_aaed92388b5924746fbd38b87d3bc66b6}{get\+Physics\+Type}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_aad9390d215723749aabf132dac31d455}{set\+Collision\+Group}} (\mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} category\+Bit\+Mask)
+\item 
+virtual \mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} \mbox{\hyperlink{classnjli_1_1_physics_body_a58fdc56103d9aa37f477d7a09d5a91ef}{get\+Collision\+Group}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a15550580fd04daffff4a9f777259fc4a}{set\+Collision\+Mask}} (\mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} category\+Bit\+Mask)
+\item 
+virtual \mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} \mbox{\hyperlink{classnjli_1_1_physics_body_a650d1076cacf8ba50ddbb19691c01324}{get\+Collision\+Mask}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a4c323ff21d529c581207eca237d93fa3}{set\+Static\+Physics}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_ab7747d6463f3bc09b0834f51b3e0d3ee}{set\+Kinematic\+Physics}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a507e920a3e95896173545a631325f52a}{set\+Dynamic\+Physics}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a445e356d3e6757c2d629e307c3579e01}{enable\+Contact\+Response}} (bool enable=true)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a52eca1531519fbd9a3612e36fd797208}{enable\+Handle\+Collide\+Callback}} (bool enable=true)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_a9371ebdae5ef5e8de3ac5d132a98811e}{is\+Static\+Physics}} () const
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_a00c42708cf7cebd2c287b6caae77b589}{is\+Kinematic\+Physics}} () const
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_a37afd50adbf592ba17ff2b4cd45b5311}{is\+Dynamic\+Physics}} () const
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_physics_body_a5aeab5201a9d85013340b2a1fb8af7e3}{is\+Resting}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a03e2635ad02016962cee7df3019e73eb}{enable\+Resting}} (bool enable=true)
+\item 
+virtual const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_physics_body_add437a6d229dfbf74a838d0de7229867}{get\+Velocity}} () const =0
+\item 
+virtual const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_physics_body_a598de298accae3b59c821ab8e640d464}{get\+Angular\+Velocity}} () const =0
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_physics_body_a9f98398ebd273f305ffb8316908d8088}{is\+In\+World}} () const =0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a2418ec20e73cfe304bac23e306daebcd}{set\+Mass}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} mass)=0
+\item 
+virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a6f86b5736d90e252ec239357835377e9}{get\+Mass}} () const =0
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a62a572e1c500a90ade8e279d72664123}{get\+Physics\+Constraints}} (std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$$>$ \&physics\+Constraints) const
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_af17e37b5161cf45c98fb07607ec27eb6}{get\+Physics\+Constraint\+Index}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$object) const
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_aa4e623ba19115b05486b415929a32016}{get\+Physics\+Constraint}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} index)
+\item 
+const \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_ad0f774812e46bf37b786adf13b00ab4f}{get\+Physics\+Constraint}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} index) const
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_a4899553ad56d95577a74893b416db401}{has\+Physics\+Constraint}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a9cd56ee4fa9e3258264ae7fa2a5a3a49}{get\+Parent}} ()
+\item 
+const \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_adb2a13498a34dadc69c7746d88ca4a79}{get\+Parent}} () const
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a4be49988e50146b12c149bf66bb51230}{get\+Collision\+Flags}} () const
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a5c92da5dcc5580adad10fced20266d33}{get\+Activation\+State}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a087eb5f8d9f51cc476f12f1d10a3cb95}{set\+Name}} (const char $\ast$name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_ad41266885be835f3ee602311e20877a4}{get\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a83a8876ae63b92804004cf3febe76573}{create}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&builder) const
+\item 
+const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_ac4ca71716ed832be357f15f8262c8448}{get\+Pointer}} () const
+\item 
+\mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} \mbox{\hyperlink{classnjli_1_1_physics_body_a4ffddf141a426a5a07d0ac19f1913811}{get\+Pointer\+Value}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a4fc4bcd9d1930911474210c047372fc0}{serialize\+Object}} (class bt\+Serializer $\ast$serializer) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a440e12dbc2367ac3676481183bc8869c}{create}} (\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}{type}})
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a3b15b7f0943b31e6c2dd24661c82c4bf}{destroy}} (\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a4f490b34152c1355ca09c1f6cdc0be83}{load}} (\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const bt\+Collision\+Object $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a48031c76bbe2bd9c4540d6d27b8b42bb}{get\+Collision\+Object}} () const =0
+\item 
+virtual bt\+Collision\+Object $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_ad3edabf71cfde91351bb428c9f06931e}{get\+Collision\+Object}} ()=0
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_a674974f0df3db645620c7156177659ee}{set\+Collision\+Object}} (const bt\+Collision\+Object \&obj, \mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$shape)=0
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_physics_body_aa2859a8335e3c38ff71b12bc0b002b0e}{set\+Transform}} (const bt\+Transform \&transform=bt\+Transform\+::get\+Identity())=0
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_physics_body_a832ed4f79a2b52b334d63d094364f86a}{remove\+Physics\+Body}} ()=0
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a144a0d79efe85c3c64da84d28e880768}{set\+Physics\+Constraint}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$constraint)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_a45058a03979e89b0b0fc4dceb07d8b4d}{remove\+Physics\+Constraint}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$constraint)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_body_ae4a8cca611e33c624b287613eac4d72c}{remove\+All\+Physics\+Constraints}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$ $>$ \mbox{\hyperlink{classnjli_1_1_physics_body_ae940a11c675d6434564f8deebbfe45b7}{m\+\_\+\+Physics\+Constraint\+List}}
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_body_a00c2b8d2e86534be769c4984956c00c2}{m\+\_\+\+Physics\+Shape}}
+\item 
+\mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} \mbox{\hyperlink{classnjli_1_1_physics_body_aa474bfee45457dc90f521b1fcc47b4f3}{m\+\_\+\+Category\+Bit\+Mask}}
+\item 
+\mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} \mbox{\hyperlink{classnjli_1_1_physics_body_ad54b0614806637ab666fd9a779e55d51}{m\+\_\+\+Collision\+Bit\+Mask}}
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_ae0f4e419f8e05558232170246fe7ad83}{m\+\_\+\+Resting\+Allowed}}
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_body_a313bb39a706c42bc97c86cff4bd0f309}{m\+\_\+\+Is\+Resting}}
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_aafbdd7a8a90737acd399b56961cbd16c}{m\+\_\+\+Collision\+Flags}}
+\item 
+\mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_body_a63352ab7615e4537f30479062ffb6a48}{m\+\_\+\+Activation\+State}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_abd7959b8cbcd7c25bc6c0c8b1ea26ce6}{Physics\+World}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a6db9d28bd448a131448276ee03de1e6d}{Node}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_ae9fdb8cf9943dbfd76910301cb0ac1bc}{Physics\+Shape\+Box2D}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_aa594c185e502e1b87c998e01dd17a50f}{Physics\+Shape\+Box}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a06afcd7f1b1822af8e15e045e77eed2a}{Physics\+Constraint\+Point\+To\+Point}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a0117dac2d3ca1ac4ebe089ac8c258560}{Physics\+Constraint\+Hinge}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a2ccf10571ac5c97189a4c7d1fe3831ae}{Physics\+Constraint\+Cone\+Twist}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a684f5ece6d7d44c2b9f689e76458a8fb}{Physics\+Constraint\+Fixed}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a1d2185bf07a23cc48cd8f9d4271f3e39}{Physics\+Constraint\+Generic6\+Dof}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_af32c447e4cf588410ecc1a6106157f9a}{Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_a6b9fa11eb22d1cb30e2d4fc2247e9afa}{Physics\+Constraint\+Slider}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_body_aa59c958a66870f0d251ec0dd477d2eff}{Physics\+Constraint}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 34 of file Physics\+Body.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ad68e3bd30ca09693f5b03855d020923b}\label{classnjli_1_1_physics_body_ad68e3bd30ca09693f5b03855d020923b}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Body@{Physics\+Body}}
+\index{Physics\+Body@{Physics\+Body}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Body()}{PhysicsBody()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Body\+::\+Physics\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a58cbc549412fc623f35276d2f18b8785}\label{classnjli_1_1_physics_body_a58cbc549412fc623f35276d2f18b8785}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Body@{Physics\+Body}}
+\index{Physics\+Body@{Physics\+Body}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Body()}{PhysicsBody()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Body\+::\+Physics\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae72cb51b910158466d481481e1042a2e}\label{classnjli_1_1_physics_body_ae72cb51b910158466d481481e1042a2e}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Body@{Physics\+Body}}
+\index{Physics\+Body@{Physics\+Body}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Body()}{PhysicsBody()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Body\+::\+Physics\+Body (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a181de210c6f8af7a7ec4ccbc5198e969}\label{classnjli_1_1_physics_body_a181de210c6f8af7a7ec4ccbc5198e969}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!````~Physics\+Body@{$\sim$\+Physics\+Body}}
+\index{````~Physics\+Body@{$\sim$\+Physics\+Body}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Body()}{~PhysicsBody()}}
+{\footnotesize\ttfamily virtual njli\+::\+Physics\+Body\+::$\sim$\+Physics\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aecae8b7ddd0550b4f685326bf2a723da}\label{classnjli_1_1_physics_body_aecae8b7ddd0550b4f685326bf2a723da}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Body\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a21bdbc459532f004dc4cd0e9c99a4765}\label{classnjli_1_1_physics_body_a21bdbc459532f004dc4cd0e9c99a4765}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a8263223fca42a563b9f2a756d077c8b1}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_aba5336f0f355644716a17ccc03b83535}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_ae2588284d8f625c70e93ed293bb9cb0b}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a83a8876ae63b92804004cf3febe76573}\label{classnjli_1_1_physics_body_a83a8876ae63b92804004cf3febe76573}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::create}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a440e12dbc2367ac3676481183bc8869c}\label{classnjli_1_1_physics_body_a440e12dbc2367ac3676481183bc8869c}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}}$\ast$ njli\+::\+Physics\+Body\+::create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & $<$\mbox{\hyperlink{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}{type}} description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a3b15b7f0943b31e6c2dd24661c82c4bf}\label{classnjli_1_1_physics_body_a3b15b7f0943b31e6c2dd24661c82c4bf}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a445e356d3e6757c2d629e307c3579e01}\label{classnjli_1_1_physics_body_a445e356d3e6757c2d629e307c3579e01}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!enable\+Contact\+Response@{enable\+Contact\+Response}}
+\index{enable\+Contact\+Response@{enable\+Contact\+Response}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{enable\+Contact\+Response()}{enableContactResponse()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::enable\+Contact\+Response (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & $<$\#enable description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a52eca1531519fbd9a3612e36fd797208}\label{classnjli_1_1_physics_body_a52eca1531519fbd9a3612e36fd797208}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!enable\+Handle\+Collide\+Callback@{enable\+Handle\+Collide\+Callback}}
+\index{enable\+Handle\+Collide\+Callback@{enable\+Handle\+Collide\+Callback}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{enable\+Handle\+Collide\+Callback()}{enableHandleCollideCallback()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::enable\+Handle\+Collide\+Callback (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & $<$\#enable description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a03e2635ad02016962cee7df3019e73eb}\label{classnjli_1_1_physics_body_a03e2635ad02016962cee7df3019e73eb}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!enable\+Resting@{enable\+Resting}}
+\index{enable\+Resting@{enable\+Resting}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{enable\+Resting()}{enableResting()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::enable\+Resting (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable} & $<$\#enable description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a5c92da5dcc5580adad10fced20266d33}\label{classnjli_1_1_physics_body_a5c92da5dcc5580adad10fced20266d33}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Activation\+State@{get\+Activation\+State}}
+\index{get\+Activation\+State@{get\+Activation\+State}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Activation\+State()}{getActivationState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::get\+Activation\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aacb7f2a5e518977ee8db878286b86884}\label{classnjli_1_1_physics_body_aacb7f2a5e518977ee8db878286b86884}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Angular\+Friction@{get\+Angular\+Friction}}
+\index{get\+Angular\+Friction@{get\+Angular\+Friction}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Angular\+Friction()}{getAngularFriction()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Body\+::get\+Angular\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a598de298accae3b59c821ab8e640d464}\label{classnjli_1_1_physics_body_a598de298accae3b59c821ab8e640d464}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Angular\+Velocity@{get\+Angular\+Velocity}}
+\index{get\+Angular\+Velocity@{get\+Angular\+Velocity}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Angular\+Velocity()}{getAngularVelocity()}}
+{\footnotesize\ttfamily virtual const bt\+Vector3\& njli\+::\+Physics\+Body\+::get\+Angular\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a13bb91357c547d832411c02be5e89260}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a01a4600e0521f09ec19879c1bdea3b8c}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_abda1dce34eaaf0e2524d2f6afde1c502}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a9ba235d39a1b994f22a13edeff862ba3}\label{classnjli_1_1_physics_body_a9ba235d39a1b994f22a13edeff862ba3}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Physics\+Body\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a13a8810e9ddca12e83bbbe6676e8c906}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_aa04661e7cd05271931351076c53991b2}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a1d3ad459c9527251dfdef541ae44c850}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a4be49988e50146b12c149bf66bb51230}\label{classnjli_1_1_physics_body_a4be49988e50146b12c149bf66bb51230}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Collision\+Flags@{get\+Collision\+Flags}}
+\index{get\+Collision\+Flags@{get\+Collision\+Flags}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Collision\+Flags()}{getCollisionFlags()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::get\+Collision\+Flags (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a58fdc56103d9aa37f477d7a09d5a91ef}\label{classnjli_1_1_physics_body_a58fdc56103d9aa37f477d7a09d5a91ef}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Collision\+Group@{get\+Collision\+Group}}
+\index{get\+Collision\+Group@{get\+Collision\+Group}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Collision\+Group()}{getCollisionGroup()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} njli\+::\+Physics\+Body\+::get\+Collision\+Group (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a650d1076cacf8ba50ddbb19691c01324}\label{classnjli_1_1_physics_body_a650d1076cacf8ba50ddbb19691c01324}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Collision\+Mask@{get\+Collision\+Mask}}
+\index{get\+Collision\+Mask@{get\+Collision\+Mask}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Collision\+Mask()}{getCollisionMask()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} njli\+::\+Physics\+Body\+::get\+Collision\+Mask (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a48031c76bbe2bd9c4540d6d27b8b42bb}\label{classnjli_1_1_physics_body_a48031c76bbe2bd9c4540d6d27b8b42bb}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Collision\+Object@{get\+Collision\+Object}}
+\index{get\+Collision\+Object@{get\+Collision\+Object}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Collision\+Object()}{getCollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const bt\+Collision\+Object$\ast$ njli\+::\+Physics\+Body\+::get\+Collision\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_aa92b1f7c329ae49a2ad80947db1dd7ba}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a79b35eaf9c790ef43ad3e0f4a8a4c518}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a41f7c080d5c79ed719cfcfb0de35a449}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ad3edabf71cfde91351bb428c9f06931e}\label{classnjli_1_1_physics_body_ad3edabf71cfde91351bb428c9f06931e}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Collision\+Object@{get\+Collision\+Object}}
+\index{get\+Collision\+Object@{get\+Collision\+Object}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Collision\+Object()}{getCollisionObject()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bt\+Collision\+Object$\ast$ njli\+::\+Physics\+Body\+::get\+Collision\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a47bfa192d6de09d5ce0486ed2cc09831}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a6e5a9ffb4448b4a73bac8e3e44421698}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a30c0af5e858983da4b549e883e6ca21a}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a5140f2a2f0df419db4acfe85aa7ffc1c}\label{classnjli_1_1_physics_body_a5140f2a2f0df419db4acfe85aa7ffc1c}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Friction@{get\+Friction}}
+\index{get\+Friction@{get\+Friction}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Friction()}{getFriction()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Body\+::get\+Friction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a6f86b5736d90e252ec239357835377e9}\label{classnjli_1_1_physics_body_a6f86b5736d90e252ec239357835377e9}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Mass@{get\+Mass}}
+\index{get\+Mass@{get\+Mass}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Mass()}{getMass()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Body\+::get\+Mass (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a91e536e02eac21b097654263c6298f1b}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_ade6ffdabf6c80a9443b2021848872edb}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_af288891787749f41ddd0097ded18e413}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ad41266885be835f3ee602311e20877a4}\label{classnjli_1_1_physics_body_ad41266885be835f3ee602311e20877a4}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Abstract\+Decorator\+::get\+Name}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a9cd56ee4fa9e3258264ae7fa2a5a3a49}\label{classnjli_1_1_physics_body_a9cd56ee4fa9e3258264ae7fa2a5a3a49}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_node}{Node}}$\ast$ njli\+::\+Physics\+Body\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_adb2a13498a34dadc69c7746d88ca4a79}\label{classnjli_1_1_physics_body_adb2a13498a34dadc69c7746d88ca4a79}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Parent@{get\+Parent}}
+\index{get\+Parent@{get\+Parent}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Parent()}{getParent()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_node}{Node}}$\ast$ njli\+::\+Physics\+Body\+::get\+Parent (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aa4e623ba19115b05486b415929a32016}\label{classnjli_1_1_physics_body_aa4e623ba19115b05486b415929a32016}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Constraint@{get\+Physics\+Constraint}}
+\index{get\+Physics\+Constraint@{get\+Physics\+Constraint}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Constraint()}{getPhysicsConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}}$\ast$ njli\+::\+Physics\+Body\+::get\+Physics\+Constraint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{index }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ad0f774812e46bf37b786adf13b00ab4f}\label{classnjli_1_1_physics_body_ad0f774812e46bf37b786adf13b00ab4f}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Constraint@{get\+Physics\+Constraint}}
+\index{get\+Physics\+Constraint@{get\+Physics\+Constraint}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Constraint()}{getPhysicsConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}}$\ast$ njli\+::\+Physics\+Body\+::get\+Physics\+Constraint (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{index }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_af17e37b5161cf45c98fb07607ec27eb6}\label{classnjli_1_1_physics_body_af17e37b5161cf45c98fb07607ec27eb6}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Constraint\+Index@{get\+Physics\+Constraint\+Index}}
+\index{get\+Physics\+Constraint\+Index@{get\+Physics\+Constraint\+Index}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Constraint\+Index()}{getPhysicsConstraintIndex()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::get\+Physics\+Constraint\+Index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$}]{object }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a62a572e1c500a90ade8e279d72664123}\label{classnjli_1_1_physics_body_a62a572e1c500a90ade8e279d72664123}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Constraints@{get\+Physics\+Constraints}}
+\index{get\+Physics\+Constraints@{get\+Physics\+Constraints}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Constraints()}{getPhysicsConstraints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::get\+Physics\+Constraints (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$$>$ \&}]{physics\+Constraints }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em physics\+Constraints} & $<$\#physics\+Constraints description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a3a502c491f089c573083b9958045924a}\label{classnjli_1_1_physics_body_a3a502c491f089c573083b9958045924a}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Shape@{get\+Physics\+Shape}}
+\index{get\+Physics\+Shape@{get\+Physics\+Shape}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Shape()}{getPhysicsShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}}$\ast$ njli\+::\+Physics\+Body\+::get\+Physics\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aa03d33a7cb2e4da061f23265c250808c}\label{classnjli_1_1_physics_body_aa03d33a7cb2e4da061f23265c250808c}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Shape@{get\+Physics\+Shape}}
+\index{get\+Physics\+Shape@{get\+Physics\+Shape}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Shape()}{getPhysicsShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}}$\ast$ njli\+::\+Physics\+Body\+::get\+Physics\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aaed92388b5924746fbd38b87d3bc66b6}\label{classnjli_1_1_physics_body_aaed92388b5924746fbd38b87d3bc66b6}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Physics\+Type@{get\+Physics\+Type}}
+\index{get\+Physics\+Type@{get\+Physics\+Type}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Physics\+Type()}{getPhysicsType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespacenjli_a60ba626f4609f81870c92d042c6bc83d}{njli\+Physics\+Type}} njli\+::\+Physics\+Body\+::get\+Physics\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ac4ca71716ed832be357f15f8262c8448}\label{classnjli_1_1_physics_body_ac4ca71716ed832be357f15f8262c8448}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Pointer()}{getPointer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_body_a4ffddf141a426a5a07d0ac19f1913811}\label{classnjli_1_1_physics_body_a4ffddf141a426a5a07d0ac19f1913811}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Pointer\+Value()}{getPointerValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer\+Value}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a1b125030c9a2abf3c450ef4e1dc492c3}\label{classnjli_1_1_physics_body_a1b125030c9a2abf3c450ef4e1dc492c3}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Restitution@{get\+Restitution}}
+\index{get\+Restitution@{get\+Restitution}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Restitution()}{getRestitution()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Body\+::get\+Restitution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a1338648bed55e4ca2d3c50d953fd60c4}\label{classnjli_1_1_physics_body_a1338648bed55e4ca2d3c50d953fd60c4}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a701c7a02bd440b03982d7f9509baca03}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a8b7a0599b7da88fbcf61451dc066748f}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_adfe628fd5ab43df08332362414d72b2a}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_add437a6d229dfbf74a838d0de7229867}\label{classnjli_1_1_physics_body_add437a6d229dfbf74a838d0de7229867}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+Velocity@{get\+Velocity}}
+\index{get\+Velocity@{get\+Velocity}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+Velocity()}{getVelocity()}}
+{\footnotesize\ttfamily virtual const bt\+Vector3\& njli\+::\+Physics\+Body\+::get\+Velocity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_abbd7a0ea7ee539d9b84c64859ddf8406}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_aee53dbc6a3aba8ab33c10e3523f1f4dc}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_af8cbddbeb15e03ebdf1e6000d7abb6a4}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae8501b09e0eda9f0f82069c537f16663}\label{classnjli_1_1_physics_body_ae8501b09e0eda9f0f82069c537f16663}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!get\+World\+Transform@{get\+World\+Transform}}
+\index{get\+World\+Transform@{get\+World\+Transform}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{get\+World\+Transform()}{getWorldTransform()}}
+{\footnotesize\ttfamily virtual bt\+Transform njli\+::\+Physics\+Body\+::get\+World\+Transform (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_ad65b1292303642832a18f864bb23cff5}{njli\+::\+Physics\+Body\+Rigid}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a5e3c626da8fdf32375e0f16f6187934d}\label{classnjli_1_1_physics_body_a5e3c626da8fdf32375e0f16f6187934d}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!handle\+Collide@{handle\+Collide}}
+\index{handle\+Collide@{handle\+Collide}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{handle\+Collide()}{handleCollide()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::handle\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$}]{body,  }\item[{const bt\+Manifold\+Point \&}]{pt }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & $<$\#body description\#$>$ \\
+\hline
+{\em bt\+Manifold\+Point\&pt} & $<$\#bt\+Manifold\+Point\&pt description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae317118b0cad6699ce9d7c1aa27db7fa}\label{classnjli_1_1_physics_body_ae317118b0cad6699ce9d7c1aa27db7fa}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!handle\+Collision\+Near@{handle\+Collision\+Near}}
+\index{handle\+Collision\+Near@{handle\+Collision\+Near}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{handle\+Collision\+Near()}{handleCollisionNear()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::handle\+Collision\+Near (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} $\ast$}]{body,  }\item[{const bt\+Dispatcher\+Info \&}]{dispatch\+Info }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em body} & $<$\#body description\#$>$ \\
+\hline
+{\em dispatch\+Info} & $<$\#dispatch\+Info description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a4899553ad56d95577a74893b416db401}\label{classnjli_1_1_physics_body_a4899553ad56d95577a74893b416db401}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!has\+Physics\+Constraint@{has\+Physics\+Constraint}}
+\index{has\+Physics\+Constraint@{has\+Physics\+Constraint}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{has\+Physics\+Constraint()}{hasPhysicsConstraint()}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::has\+Physics\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a37afd50adbf592ba17ff2b4cd45b5311}\label{classnjli_1_1_physics_body_a37afd50adbf592ba17ff2b4cd45b5311}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!is\+Dynamic\+Physics@{is\+Dynamic\+Physics}}
+\index{is\+Dynamic\+Physics@{is\+Dynamic\+Physics}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{is\+Dynamic\+Physics()}{isDynamicPhysics()}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::is\+Dynamic\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a9f98398ebd273f305ffb8316908d8088}\label{classnjli_1_1_physics_body_a9f98398ebd273f305ffb8316908d8088}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!is\+In\+World@{is\+In\+World}}
+\index{is\+In\+World@{is\+In\+World}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{is\+In\+World()}{isInWorld()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Physics\+Body\+::is\+In\+World (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a0679c29d4447ee758cb84234731dfbdd}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a6b131b8407733cc046c4c8fa38b35055}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a22d6c5a0a3572feb0a8888e54b2c0e9a}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a00c42708cf7cebd2c287b6caae77b589}\label{classnjli_1_1_physics_body_a00c42708cf7cebd2c287b6caae77b589}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!is\+Kinematic\+Physics@{is\+Kinematic\+Physics}}
+\index{is\+Kinematic\+Physics@{is\+Kinematic\+Physics}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{is\+Kinematic\+Physics()}{isKinematicPhysics()}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::is\+Kinematic\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a5aeab5201a9d85013340b2a1fb8af7e3}\label{classnjli_1_1_physics_body_a5aeab5201a9d85013340b2a1fb8af7e3}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!is\+Resting@{is\+Resting}}
+\index{is\+Resting@{is\+Resting}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{is\+Resting()}{isResting()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Physics\+Body\+::is\+Resting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a9371ebdae5ef5e8de3ac5d132a98811e}\label{classnjli_1_1_physics_body_a9371ebdae5ef5e8de3ac5d132a98811e}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!is\+Static\+Physics@{is\+Static\+Physics}}
+\index{is\+Static\+Physics@{is\+Static\+Physics}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{is\+Static\+Physics()}{isStaticPhysics()}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::is\+Static\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a4f490b34152c1355ca09c1f6cdc0be83}\label{classnjli_1_1_physics_body_a4f490b34152c1355ca09c1f6cdc0be83}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!load@{load}}
+\index{load@{load}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a0c12067445dfd7893e37052ae90a9173}\label{classnjli_1_1_physics_body_a0c12067445dfd7893e37052ae90a9173}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily virtual njli\+::\+Physics\+Body\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a6fa8e700498136a0a6f64c9c3c45eed8}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a86a29fb8d31a0b8f5cee712b8f84d7b8}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a59efe6d63a15ad3ea002c3f0dbfc3fbd}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a4259c9604cec6377e90bbf71b15778a3}\label{classnjli_1_1_physics_body_a4259c9604cec6377e90bbf71b15778a3}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}}\& njli\+::\+Physics\+Body\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_body}{Physics\+Body}} \&}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae4a8cca611e33c624b287613eac4d72c}\label{classnjli_1_1_physics_body_ae4a8cca611e33c624b287613eac4d72c}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!remove\+All\+Physics\+Constraints@{remove\+All\+Physics\+Constraints}}
+\index{remove\+All\+Physics\+Constraints@{remove\+All\+Physics\+Constraints}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{remove\+All\+Physics\+Constraints()}{removeAllPhysicsConstraints()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::remove\+All\+Physics\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_body_a832ed4f79a2b52b334d63d094364f86a}\label{classnjli_1_1_physics_body_a832ed4f79a2b52b334d63d094364f86a}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!remove\+Physics\+Body@{remove\+Physics\+Body}}
+\index{remove\+Physics\+Body@{remove\+Physics\+Body}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{remove\+Physics\+Body()}{removePhysicsBody()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Physics\+Body\+::remove\+Physics\+Body (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a7efbdfc46e8df26d073b00efaaf0c91c}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a854f866870a887026cfb87d441008595}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_adce1993fe1287488cc5cb42b30a09bcc}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a45058a03979e89b0b0fc4dceb07d8b4d}\label{classnjli_1_1_physics_body_a45058a03979e89b0b0fc4dceb07d8b4d}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!remove\+Physics\+Constraint@{remove\+Physics\+Constraint}}
+\index{remove\+Physics\+Constraint@{remove\+Physics\+Constraint}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{remove\+Physics\+Constraint()}{removePhysicsConstraint()}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::remove\+Physics\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$}]{constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em constraint} & $<$\#constraint description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a5ecb49baeaa8c38937ee5fc566702148}\label{classnjli_1_1_physics_body_a5ecb49baeaa8c38937ee5fc566702148}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!remove\+Physics\+Shape@{remove\+Physics\+Shape}}
+\index{remove\+Physics\+Shape@{remove\+Physics\+Shape}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{remove\+Physics\+Shape()}{removePhysicsShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::remove\+Physics\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_body_a3c40378e7f3033557ec6adf9428b6a9d}\label{classnjli_1_1_physics_body_a3c40378e7f3033557ec6adf9428b6a9d}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:51
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_aa2f009ffadaf78b84bd36c8cb5536f6c}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_ad3f75b8cbff7431afbb14569bda203c4}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a7e38c5df16551787c35fc55c1335ddf1}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a4fc4bcd9d1930911474210c047372fc0}\label{classnjli_1_1_physics_body_a4fc4bcd9d1930911474210c047372fc0}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{serialize\+Object()}{serializeObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Factory\+Object\+::serialize\+Object}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & $<$\#serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a9361f24aea1decf35d872e7509d4e9dc}\label{classnjli_1_1_physics_body_a9361f24aea1decf35d872e7509d4e9dc}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Angular\+Friction@{set\+Angular\+Friction}}
+\index{set\+Angular\+Friction@{set\+Angular\+Friction}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Angular\+Friction()}{setAngularFriction()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Angular\+Friction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{friction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em friction} & $<$\#friction description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aad9390d215723749aabf132dac31d455}\label{classnjli_1_1_physics_body_aad9390d215723749aabf132dac31d455}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Collision\+Group@{set\+Collision\+Group}}
+\index{set\+Collision\+Group@{set\+Collision\+Group}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Collision\+Group()}{setCollisionGroup()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Collision\+Group (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}}}]{category\+Bit\+Mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Bit\+Mask} & $<$\#category\+Bit\+Mask description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a15550580fd04daffff4a9f777259fc4a}\label{classnjli_1_1_physics_body_a15550580fd04daffff4a9f777259fc4a}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Collision\+Mask@{set\+Collision\+Mask}}
+\index{set\+Collision\+Mask@{set\+Collision\+Mask}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Collision\+Mask()}{setCollisionMask()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Collision\+Mask (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}}}]{category\+Bit\+Mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em category\+Bit\+Mask} & $<$\#category\+Bit\+Mask description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a674974f0df3db645620c7156177659ee}\label{classnjli_1_1_physics_body_a674974f0df3db645620c7156177659ee}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Collision\+Object@{set\+Collision\+Object}}
+\index{set\+Collision\+Object@{set\+Collision\+Object}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Collision\+Object()}{setCollisionObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Collision\+Object (\begin{DoxyParamCaption}\item[{const bt\+Collision\+Object \&}]{obj,  }\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a772e64b569e190f647047c0c5be2a852}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a87c4ba0c2317a6e6e40231f58a1c9ed5}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_ac84a68c18afab8bf7cabdf51461d52fb}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a507e920a3e95896173545a631325f52a}\label{classnjli_1_1_physics_body_a507e920a3e95896173545a631325f52a}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Dynamic\+Physics@{set\+Dynamic\+Physics}}
+\index{set\+Dynamic\+Physics@{set\+Dynamic\+Physics}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Dynamic\+Physics()}{setDynamicPhysics()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Dynamic\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_body_aa274a01209a062b130d675bec9aef6ed}\label{classnjli_1_1_physics_body_aa274a01209a062b130d675bec9aef6ed}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Friction@{set\+Friction}}
+\index{set\+Friction@{set\+Friction}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Friction()}{setFriction()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Friction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{friction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em friction} & $<$\#friction description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ab7747d6463f3bc09b0834f51b3e0d3ee}\label{classnjli_1_1_physics_body_ab7747d6463f3bc09b0834f51b3e0d3ee}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Kinematic\+Physics@{set\+Kinematic\+Physics}}
+\index{set\+Kinematic\+Physics@{set\+Kinematic\+Physics}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Kinematic\+Physics()}{setKinematicPhysics()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Kinematic\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_body_a2418ec20e73cfe304bac23e306daebcd}\label{classnjli_1_1_physics_body_a2418ec20e73cfe304bac23e306daebcd}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Mass@{set\+Mass}}
+\index{set\+Mass@{set\+Mass}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Mass()}{setMass()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Mass (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{mass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a1c8b45c013666e4cd575fc6e3c6db031}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a1edc30655aa0495dbf60c59138cb52e2}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a23766e4c1a649a93680f37592cd56060}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a087eb5f8d9f51cc476f12f1d10a3cb95}\label{classnjli_1_1_physics_body_a087eb5f8d9f51cc476f12f1d10a3cb95}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Decorator\+::set\+Name}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & $<$\#name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a144a0d79efe85c3c64da84d28e880768}\label{classnjli_1_1_physics_body_a144a0d79efe85c3c64da84d28e880768}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Physics\+Constraint@{set\+Physics\+Constraint}}
+\index{set\+Physics\+Constraint@{set\+Physics\+Constraint}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Physics\+Constraint()}{setPhysicsConstraint()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::set\+Physics\+Constraint (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$}]{constraint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em constraint} & $<$\#constraint description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a5a4d5f7e9f4c39180f157f42be422358}\label{classnjli_1_1_physics_body_a5a4d5f7e9f4c39180f157f42be422358}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Physics\+Shape@{set\+Physics\+Shape}}
+\index{set\+Physics\+Shape@{set\+Physics\+Shape}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Physics\+Shape()}{setPhysicsShape()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Physics\+Shape (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}} $\ast$}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & $<$\#shape description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae9b3b3115dbc70f21b5f5fb8c66aa18c}\label{classnjli_1_1_physics_body_ae9b3b3115dbc70f21b5f5fb8c66aa18c}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Physics\+Type@{set\+Physics\+Type}}
+\index{set\+Physics\+Type@{set\+Physics\+Type}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Physics\+Type()}{setPhysicsType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Physics\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacenjli_a60ba626f4609f81870c92d042c6bc83d}{njli\+Physics\+Type}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & $<$\mbox{\hyperlink{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}{type}} description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a9741d811656fcd2865d688627ee2ea8b}\label{classnjli_1_1_physics_body_a9741d811656fcd2865d688627ee2ea8b}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Restitution@{set\+Restitution}}
+\index{set\+Restitution@{set\+Restitution}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Restitution()}{setRestitution()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Restitution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{restitution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em restitution} & $<$\#restitution description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a4c323ff21d529c581207eca237d93fa3}\label{classnjli_1_1_physics_body_a4c323ff21d529c581207eca237d93fa3}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Static\+Physics@{set\+Static\+Physics}}
+\index{set\+Static\+Physics@{set\+Static\+Physics}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Static\+Physics()}{setStaticPhysics()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+Static\+Physics (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_physics_body_aa2859a8335e3c38ff71b12bc0b002b0e}\label{classnjli_1_1_physics_body_aa2859a8335e3c38ff71b12bc0b002b0e}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+Transform@{set\+Transform}}
+\index{set\+Transform@{set\+Transform}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+Transform()}{setTransform()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Physics\+Body\+::set\+Transform (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{transform = {\ttfamily btTransform\+:\+:getIdentity()} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a45c724055d7d0192f4e3c154b2c944f4}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_aa6f6ca168453f49b48d295a1bb8d7228}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_ae0db3e9ff0ab9525f3f1b8e694ce25e5}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a570891a03ea4f8243ccec9202b3dc965}\label{classnjli_1_1_physics_body_a570891a03ea4f8243ccec9202b3dc965}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!set\+World\+Transform@{set\+World\+Transform}}
+\index{set\+World\+Transform@{set\+World\+Transform}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{set\+World\+Transform()}{setWorldTransform()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Body\+::set\+World\+Transform (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{transform }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em transform} & $<$\#transform description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_physics_body_rigid_a70afa1817272e87547d6fccd8ca91ff4}{njli\+::\+Physics\+Body\+Rigid}}, \mbox{\hyperlink{classnjli_1_1_physics_body_ghost_a489d0e67788ff5c74033824814470855}{njli\+::\+Physics\+Body\+Ghost}}, and \mbox{\hyperlink{classnjli_1_1_physics_body_soft_a500a0a1f0e9d729bd0ac23da18202af4}{njli\+::\+Physics\+Body\+Soft}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}\label{classnjli_1_1_physics_body_a98036bcbea6e3269603a83e532d2e5ab}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!type@{type}}
+\index{type@{type}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Physics\+Body\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a6db9d28bd448a131448276ee03de1e6d}\label{classnjli_1_1_physics_body_a6db9d28bd448a131448276ee03de1e6d}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Node@{Node}}
+\index{Node@{Node}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Node}{Node}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_node}{Node}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 39 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aa59c958a66870f0d251ec0dd477d2eff}\label{classnjli_1_1_physics_body_aa59c958a66870f0d251ec0dd477d2eff}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint@{Physics\+Constraint}}
+\index{Physics\+Constraint@{Physics\+Constraint}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint}{PhysicsConstraint}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 50 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a2ccf10571ac5c97189a4c7d1fe3831ae}\label{classnjli_1_1_physics_body_a2ccf10571ac5c97189a4c7d1fe3831ae}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}}
+\index{Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Cone\+Twist}{PhysicsConstraintConeTwist}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 44 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a684f5ece6d7d44c2b9f689e76458a8fb}\label{classnjli_1_1_physics_body_a684f5ece6d7d44c2b9f689e76458a8fb}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Fixed@{Physics\+Constraint\+Fixed}}
+\index{Physics\+Constraint\+Fixed@{Physics\+Constraint\+Fixed}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Fixed}{PhysicsConstraintFixed}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_fixed}{Physics\+Constraint\+Fixed}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 45 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a1d2185bf07a23cc48cd8f9d4271f3e39}\label{classnjli_1_1_physics_body_a1d2185bf07a23cc48cd8f9d4271f3e39}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Generic6\+Dof@{Physics\+Constraint\+Generic6\+Dof}}
+\index{Physics\+Constraint\+Generic6\+Dof@{Physics\+Constraint\+Generic6\+Dof}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Generic6\+Dof}{PhysicsConstraintGeneric6Dof}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof}{Physics\+Constraint\+Generic6\+Dof}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 46 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_af32c447e4cf588410ecc1a6106157f9a}\label{classnjli_1_1_physics_body_af32c447e4cf588410ecc1a6106157f9a}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}}
+\index{Physics\+Constraint\+Generic6\+Dof\+Spring@{Physics\+Constraint\+Generic6\+Dof\+Spring}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Generic6\+Dof\+Spring}{PhysicsConstraintGeneric6DofSpring}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_generic6_dof_spring}{Physics\+Constraint\+Generic6\+Dof\+Spring}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 47 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a0117dac2d3ca1ac4ebe089ac8c258560}\label{classnjli_1_1_physics_body_a0117dac2d3ca1ac4ebe089ac8c258560}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Hinge@{Physics\+Constraint\+Hinge}}
+\index{Physics\+Constraint\+Hinge@{Physics\+Constraint\+Hinge}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Hinge}{PhysicsConstraintHinge}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_hinge}{Physics\+Constraint\+Hinge}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 43 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a06afcd7f1b1822af8e15e045e77eed2a}\label{classnjli_1_1_physics_body_a06afcd7f1b1822af8e15e045e77eed2a}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Point\+To\+Point@{Physics\+Constraint\+Point\+To\+Point}}
+\index{Physics\+Constraint\+Point\+To\+Point@{Physics\+Constraint\+Point\+To\+Point}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Point\+To\+Point}{PhysicsConstraintPointToPoint}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_point_to_point}{Physics\+Constraint\+Point\+To\+Point}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 42 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a6b9fa11eb22d1cb30e2d4fc2247e9afa}\label{classnjli_1_1_physics_body_a6b9fa11eb22d1cb30e2d4fc2247e9afa}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Constraint\+Slider@{Physics\+Constraint\+Slider}}
+\index{Physics\+Constraint\+Slider@{Physics\+Constraint\+Slider}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Slider}{PhysicsConstraintSlider}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_constraint_slider}{Physics\+Constraint\+Slider}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 48 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aa594c185e502e1b87c998e01dd17a50f}\label{classnjli_1_1_physics_body_aa594c185e502e1b87c998e01dd17a50f}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Shape\+Box@{Physics\+Shape\+Box}}
+\index{Physics\+Shape\+Box@{Physics\+Shape\+Box}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Box}{PhysicsShapeBox}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_shape_box}{Physics\+Shape\+Box}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 41 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae9fdb8cf9943dbfd76910301cb0ac1bc}\label{classnjli_1_1_physics_body_ae9fdb8cf9943dbfd76910301cb0ac1bc}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+Shape\+Box2D@{Physics\+Shape\+Box2D}}
+\index{Physics\+Shape\+Box2D@{Physics\+Shape\+Box2D}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Box2D}{PhysicsShapeBox2D}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_shape_box2_d}{Physics\+Shape\+Box2D}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 40 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_abd7959b8cbcd7c25bc6c0c8b1ea26ce6}\label{classnjli_1_1_physics_body_abd7959b8cbcd7c25bc6c0c8b1ea26ce6}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!Physics\+World@{Physics\+World}}
+\index{Physics\+World@{Physics\+World}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{Physics\+World}{PhysicsWorld}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_physics_world}{Physics\+World}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 38 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_physics_body_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 37 of file Physics\+Body.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a63352ab7615e4537f30479062ffb6a48}\label{classnjli_1_1_physics_body_a63352ab7615e4537f30479062ffb6a48}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Activation\+State@{m\+\_\+\+Activation\+State}}
+\index{m\+\_\+\+Activation\+State@{m\+\_\+\+Activation\+State}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Activation\+State}{m\_ActivationState}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::m\+\_\+\+Activation\+State\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 449 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aa474bfee45457dc90f521b1fcc47b4f3}\label{classnjli_1_1_physics_body_aa474bfee45457dc90f521b1fcc47b4f3}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Category\+Bit\+Mask@{m\+\_\+\+Category\+Bit\+Mask}}
+\index{m\+\_\+\+Category\+Bit\+Mask@{m\+\_\+\+Category\+Bit\+Mask}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Category\+Bit\+Mask}{m\_CategoryBitMask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} njli\+::\+Physics\+Body\+::m\+\_\+\+Category\+Bit\+Mask\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 441 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ad54b0614806637ab666fd9a779e55d51}\label{classnjli_1_1_physics_body_ad54b0614806637ab666fd9a779e55d51}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Collision\+Bit\+Mask@{m\+\_\+\+Collision\+Bit\+Mask}}
+\index{m\+\_\+\+Collision\+Bit\+Mask@{m\+\_\+\+Collision\+Bit\+Mask}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Collision\+Bit\+Mask}{m\_CollisionBitMask}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespacenjli_af7b302a2b48bb644f85c88080925c974}{njli\+Bit\+Categories}} njli\+::\+Physics\+Body\+::m\+\_\+\+Collision\+Bit\+Mask\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 442 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_aafbdd7a8a90737acd399b56961cbd16c}\label{classnjli_1_1_physics_body_aafbdd7a8a90737acd399b56961cbd16c}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Collision\+Flags@{m\+\_\+\+Collision\+Flags}}
+\index{m\+\_\+\+Collision\+Flags@{m\+\_\+\+Collision\+Flags}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Collision\+Flags}{m\_CollisionFlags}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Body\+::m\+\_\+\+Collision\+Flags\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 448 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a313bb39a706c42bc97c86cff4bd0f309}\label{classnjli_1_1_physics_body_a313bb39a706c42bc97c86cff4bd0f309}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Is\+Resting@{m\+\_\+\+Is\+Resting}}
+\index{m\+\_\+\+Is\+Resting@{m\+\_\+\+Is\+Resting}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Is\+Resting}{m\_IsResting}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::m\+\_\+\+Is\+Resting\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 445 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae940a11c675d6434564f8deebbfe45b7}\label{classnjli_1_1_physics_body_ae940a11c675d6434564f8deebbfe45b7}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Physics\+Constraint\+List@{m\+\_\+\+Physics\+Constraint\+List}}
+\index{m\+\_\+\+Physics\+Constraint\+List@{m\+\_\+\+Physics\+Constraint\+List}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Physics\+Constraint\+List}{m\_PhysicsConstraintList}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classnjli_1_1_physics_constraint}{Physics\+Constraint}} $\ast$$>$ njli\+::\+Physics\+Body\+::m\+\_\+\+Physics\+Constraint\+List\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 437 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_a00c2b8d2e86534be769c4984956c00c2}\label{classnjli_1_1_physics_body_a00c2b8d2e86534be769c4984956c00c2}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Physics\+Shape@{m\+\_\+\+Physics\+Shape}}
+\index{m\+\_\+\+Physics\+Shape@{m\+\_\+\+Physics\+Shape}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Physics\+Shape}{m\_PhysicsShape}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_shape}{Physics\+Shape}}$\ast$ njli\+::\+Physics\+Body\+::m\+\_\+\+Physics\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 440 of file Physics\+Body.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_body_ae0f4e419f8e05558232170246fe7ad83}\label{classnjli_1_1_physics_body_ae0f4e419f8e05558232170246fe7ad83}} 
+\index{njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}!m\+\_\+\+Resting\+Allowed@{m\+\_\+\+Resting\+Allowed}}
+\index{m\+\_\+\+Resting\+Allowed@{m\+\_\+\+Resting\+Allowed}!njli\+::\+Physics\+Body@{njli\+::\+Physics\+Body}}
+\subsubsection{\texorpdfstring{m\+\_\+\+Resting\+Allowed}{m\_RestingAllowed}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Body\+::m\+\_\+\+Resting\+Allowed\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 444 of file Physics\+Body.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/physics/body/\mbox{\hyperlink{_physics_body_8h}{Physics\+Body.\+h}}\end{DoxyCompactItemize}

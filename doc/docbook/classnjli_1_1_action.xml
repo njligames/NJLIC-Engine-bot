@@ -1,0 +1,1631 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_action">
+<title>njli::Action class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_action_8h">&lt;Action.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::Action</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_action__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::Action</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_action__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structnjli_1_1_action_1_1_sequence">njli::Action::Sequence</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Sequence * &gt; m_ActionGroups</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f32 m_SpeedFactor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f32 m_Duration</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>njliActionTimingMode m_TimingMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f64 m_timeLeft</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>s32 m_RepeatCount</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1ae86773a5e972de01ad5203b333c01bcc">linear</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1afb82d5679cbf9870b790347db75f4b93">exponentialIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1aa510c92b26f6f456f7d8cafd5eea66e7">exponentialOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a5454f0bc57ff81f3fc268e9561f4941b">exponentialInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a4fbf94cf5e13c8b4556f1907086f2b65">sineIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a6c6b65d55075ec64e5fb1f55d9d61686">sineOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a7b3215f5fb1f5410f22159133068d56a">sineInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a98487f4c9e65ac3541506488171c0c5f">qinticIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a14c373ab33f7e878e83f33bcf9844b72">qinticOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a3949e3edf9e27c8e0bec91d4a482fb02">qinticInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a329377b16fb22814ab3c2a3325c8661d">quarticIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1ad45f3afb32fe4b25900fae78faa1fc8b">quarticOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a6c8c029d9eecd90f2c267319a88d0c35">quarticInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1ae511e66934d161fc157bb9c564e7c2be">quadraticInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a8aa0baf279e5f063495bd974b312baae">quadraticIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1aef13ae615852df07b02a200554c517be">quadraticOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a95dc3002cea9c237eda7e6c38866f7f9">cubicIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1aa324a492852f73c940e54bc991b91826">cubicOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a2c4c1e6e2a225d5104ec6736f3036a45">cubicInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1af89d90b8b772764145b8efb367958c69">elasticIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a6b42a2698d6b55614eeece5870af0f08">elasticOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a8fc6173595ee8efb7849bf28e635cbfd">elasticInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a56c6f671a7f57115207c14152f100460">circularIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a742f42953df58693dd7dbf4c104e1d89">circularOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a008a0a7853db18242a35c744c39400b6">circularInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a11fcfa042ebf4eb68c8fa59b3e1ee08a">bounceOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1ac5fc969457877f55eb7db183cbcde90c">bounceIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a7b22ee890ce89aeb747dc1891233228a">bounceInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a134b999b4e1fd9c95a70ffc8b1436a61">backIn</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a0aa07d335453dd7b7ee828b1166c7a20">backOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static float <link linkend="classnjli_1_1_action_1a201655b8f132351399eec03dead46a05">backInOut</link> (
+float t)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> ** <link linkend="classnjli_1_1_action_1a8f74322c9c8a1c256a423886feee255e">createArray</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1ad811fdb14878475fc47449b9484bac5d">destroyArray</link> (
+<link linkend="classnjli_1_1_action">Action</link> ** array, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_action_1a62fc29bc5c18f70547b0769eef7c7dba">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_action_1a1bce37d99fd72302c469c60ec97cfbcf">create</link> (
+const <link linkend="classnjli_1_1_action_builder">ActionBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_action_1ae07d8cc55040de9a55fe4db2bf530796">clone</link> (
+const <link linkend="classnjli_1_1_action">Action</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_action_1a3c461aaa03e81dfc294720d0c543a2de">copy</link> (
+const <link linkend="classnjli_1_1_action">Action</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a2700b8178a01910f7002e40a9864bd00">destroy</link> (
+<link linkend="classnjli_1_1_action">Action</link> * object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1ad9a591ace0350439b796698f75b4665b">load</link> (
+<link linkend="classnjli_1_1_action">Action</link> &amp; object, lua_State * L, int stack_index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_action_1a02d99cc47d811640803da7d9fd000d84">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_action_1ac4ab7217919a1c0a7858854aa1e18b6d">createGroup</link> (
+<link linkend="classnjli_1_1_action">Action</link> ** actions, <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_action">Action</link> * <link linkend="classnjli_1_1_action_1a292d91fdb630cc406dd6a0f113e977cd">createSequence</link> (
+<link linkend="classnjli_1_1_action">Action</link> ** actions, <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_action_1a8eea8ac4abc1e39cf11326854633736b">Action</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_action_1a06624fdbd7e7d8d6b814b17106520c3c">Action</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_action_1afc2efdef9092be597613173a32ffd6f9">Action</link> (
+const <link linkend="classnjli_1_1_action">Action</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_action_1ae04ff281cd7a1305d6045cdd2927d338">~Action</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_action">Action</link> &amp; <link linkend="classnjli_1_1_action_1a37b0d25b50c21f8eaedeb357ddd9227d">operator=</link> (
+const <link linkend="classnjli_1_1_action">Action</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1aa1e2033b0f03fa1dce4c39fa707b84fe">update</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> timeStep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_action_1a43b0e8f7215465c8feeb575df61553a7">isFinished</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_action_1aee872536b8ca9280f18297981b7c503d">isFinishedRepeating</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_action_1ac60289bdccce76f0ca044b2bde60f9e6">isChildrenFinished</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1ab787c5769b5be7861a921ee20aa6c9b7">handleActionChildren</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> timeStep)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a39b7125ce9d6462992899cd9b1d16182">decrementRepeatCounter</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_action_1a6b97581cbad92f763e70e0f1885c3d05">BT_DECLARE_ALIGNED_ALLOCATOR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_action_1a43afd1030b91fcef5a949af8ffc452da">calculateSerializeBufferSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a12e735927e2340525708f522d8daff88">serialize</link> (
+<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * dataBuffer, btSerializer * )<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_action_1a72329c3d6bc5e8b701aad6732bbf5537">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_action_1a16970f3b547f326476ffd6d0d1feb3bf">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_action_1a38686442a833ff5d6039d61b7f0ef6e1">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1ac660ece5790dced62b28f6ec0199c1d7">setRepeat</link> (
+<link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> count)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a63707be93052a5843662ca386ff39fca">setRepeatForever</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a3aeafe981e3b127eb9ad728e88e31315">setSpeedFactor</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> factor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_action_1acccdab60df21ef125bc43e2d914203e8">getSpeedFactor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a036937b57eea213ffeb977e3c22e51f6">setDuration</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> duration)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_action_1a3473d3b336d30b21976a8aa14f105b50">getDuration</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a134104e9db058f54d9724eea552a16fd">setTimingMode</link> (
+<link linkend="namespacenjli_1affc383078a5935be1509062828a1824b">njliActionTimingMode</link> mode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="namespacenjli_1affc383078a5935be1509062828a1824b">njliActionTimingMode</link> <link linkend="classnjli_1_1_action_1ab0c079cfbeb80643e147ea7899e32a50">getTimingMode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_action_1a62fdaf50d4555346103e8f4fd388ed38">getTimeLeft</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_action_1af53c39e134a055c410ccccdf94943ff0">isRepeatingForever</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_action_1a1f46ddf3b7469fc24cc50ce184ee1926">getRepeatCount</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_node">Node</link> * <link linkend="classnjli_1_1_action_1a53e72e1dd95f30c07e97ad59a721669c">getParent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_node">Node</link> * <link linkend="classnjli_1_1_action_1af12f2df2adb1048d1fbe625f9be44122">getParent</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_action_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_action_1a83a8876ae63b92804004cf3febe76573">create</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="classnjli_1_1_action_1ac4ca71716ed832be357f15f8262c8448">getPointer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link> <link linkend="classnjli_1_1_action_1a4ffddf141a426a5a07d0ac19f1913811">getPointerValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_action_1a4fc4bcd9d1930911474210c047372fc0">serializeObject</link> (
+class btSerializer * serializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_action_1ae86773a5e972de01ad5203b333c01bcc">
+                <title>static float njli::Action::linear (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1afb82d5679cbf9870b790347db75f4b93">
+                <title>static float njli::Action::exponentialIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1aa510c92b26f6f456f7d8cafd5eea66e7">
+                <title>static float njli::Action::exponentialOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a5454f0bc57ff81f3fc268e9561f4941b">
+                <title>static float njli::Action::exponentialInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a4fbf94cf5e13c8b4556f1907086f2b65">
+                <title>static float njli::Action::sineIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a6c6b65d55075ec64e5fb1f55d9d61686">
+                <title>static float njli::Action::sineOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a7b3215f5fb1f5410f22159133068d56a">
+                <title>static float njli::Action::sineInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a98487f4c9e65ac3541506488171c0c5f">
+                <title>static float njli::Action::qinticIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a14c373ab33f7e878e83f33bcf9844b72">
+                <title>static float njli::Action::qinticOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a3949e3edf9e27c8e0bec91d4a482fb02">
+                <title>static float njli::Action::qinticInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a329377b16fb22814ab3c2a3325c8661d">
+                <title>static float njli::Action::quarticIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1ad45f3afb32fe4b25900fae78faa1fc8b">
+                <title>static float njli::Action::quarticOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a6c8c029d9eecd90f2c267319a88d0c35">
+                <title>static float njli::Action::quarticInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1ae511e66934d161fc157bb9c564e7c2be">
+                <title>static float njli::Action::quadraticInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a8aa0baf279e5f063495bd974b312baae">
+                <title>static float njli::Action::quadraticIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1aef13ae615852df07b02a200554c517be">
+                <title>static float njli::Action::quadraticOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a95dc3002cea9c237eda7e6c38866f7f9">
+                <title>static float njli::Action::cubicIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1aa324a492852f73c940e54bc991b91826">
+                <title>static float njli::Action::cubicOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a2c4c1e6e2a225d5104ec6736f3036a45">
+                <title>static float njli::Action::cubicInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1af89d90b8b772764145b8efb367958c69">
+                <title>static float njli::Action::elasticIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a6b42a2698d6b55614eeece5870af0f08">
+                <title>static float njli::Action::elasticOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a8fc6173595ee8efb7849bf28e635cbfd">
+                <title>static float njli::Action::elasticInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a56c6f671a7f57115207c14152f100460">
+                <title>static float njli::Action::circularIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a742f42953df58693dd7dbf4c104e1d89">
+                <title>static float njli::Action::circularOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a008a0a7853db18242a35c744c39400b6">
+                <title>static float njli::Action::circularInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a11fcfa042ebf4eb68c8fa59b3e1ee08a">
+                <title>static float njli::Action::bounceOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1ac5fc969457877f55eb7db183cbcde90c">
+                <title>static float njli::Action::bounceIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a7b22ee890ce89aeb747dc1891233228a">
+                <title>static float njli::Action::bounceInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a134b999b4e1fd9c95a70ffc8b1436a61">
+                <title>static float njli::Action::backIn (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a0aa07d335453dd7b7ee828b1166c7a20">
+                <title>static float njli::Action::backOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a201655b8f132351399eec03dead46a05">
+                <title>static float njli::Action::backInOut (float t)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a8f74322c9c8a1c256a423886feee255e">
+                <title>static Action** njli::Action::createArray (const u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ad811fdb14878475fc47449b9484bac5d">
+                <title>static void njli::Action::destroyArray (Action **array, const u32 size=0)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>array</entry>
+                                <entry>
+<para>&lt;#array description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a62fc29bc5c18f70547b0769eef7c7dba">
+                <title>static Action* njli::Action::create ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a1bce37d99fd72302c469c60ec97cfbcf">
+                <title>static Action* njli::Action::create (const ActionBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ae07d8cc55040de9a55fe4db2bf530796">
+                <title>static Action* njli::Action::clone (const Action &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a3c461aaa03e81dfc294720d0c543a2de">
+                <title>static Action* njli::Action::copy (const Action &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a2700b8178a01910f7002e40a9864bd00">
+                <title>static void njli::Action::destroy (Action *object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ad9a591ace0350439b796698f75b4665b">
+                <title>static void njli::Action::load (Action &amp;object, lua_State *L, int stack_index)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>L</entry>
+                                <entry>
+<para>&lt;#L description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stack_index</entry>
+                                <entry>
+<para>&lt;#stack_index description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a02d99cc47d811640803da7d9fd000d84">
+                <title>static u32 njli::Action::type ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ac4ab7217919a1c0a7858854aa1e18b6d">
+                <title>static Action* njli::Action::createGroup (Action **actions, u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>actions</entry>
+                                <entry>
+<para>&lt;#actions description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a292d91fdb630cc406dd6a0f113e977cd">
+                <title>static Action* njli::Action::createSequence (Action **actions, u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>actions</entry>
+                                <entry>
+<para>&lt;#actions description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a8eea8ac4abc1e39cf11326854633736b">
+                <title>njli::Action::Action ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a06624fdbd7e7d8d6b814b17106520c3c">
+                <title>njli::Action::Action (const AbstractBuilder &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1afc2efdef9092be597613173a32ffd6f9">
+                <title>njli::Action::Action (const Action &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1ae04ff281cd7a1305d6045cdd2927d338">
+                <title>virtual njli::Action::~Action ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a37b0d25b50c21f8eaedeb357ddd9227d">
+                <title>Action&amp; njli::Action::operator= (const Action &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1aa1e2033b0f03fa1dce4c39fa707b84fe">
+                <title>virtual void njli::Action::update (f32 timeStep)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a43b0e8f7215465c8feeb575df61553a7">
+                <title>virtual bool njli::Action::isFinished () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1aee872536b8ca9280f18297981b7c503d">
+                <title>virtual bool njli::Action::isFinishedRepeating () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1ac60289bdccce76f0ca044b2bde60f9e6">
+                <title>virtual bool njli::Action::isChildrenFinished () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1ab787c5769b5be7861a921ee20aa6c9b7">
+                <title>void njli::Action::handleActionChildren (f32 timeStep)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a39b7125ce9d6462992899cd9b1d16182">
+                <title>void njli::Action::decrementRepeatCounter ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a6b97581cbad92f763e70e0f1885c3d05">
+                <title>njli::Action::BT_DECLARE_ALIGNED_ALLOCATOR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_action_1a43afd1030b91fcef5a949af8ffc452da">
+                <title>virtual s32 njli::Action::calculateSerializeBufferSize () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a12e735927e2340525708f522d8daff88">
+                <title>virtual void njli::Action::serialize (void *dataBuffer, btSerializer *) const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 15:02:42</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>dataBuffer</entry>
+                                <entry>
+<para>&lt;#dataBuffer description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>btSerializer</entry>
+                                <entry>
+<para>&lt;#btSerializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a72329c3d6bc5e8b701aad6732bbf5537">
+                <title>virtual const char* njli::Action::getClassName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a16970f3b547f326476ffd6d0d1feb3bf">
+                <title>virtual s32 njli::Action::getType () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a38686442a833ff5d6039d61b7f0ef6e1">
+                <title>njli::Action::operator std::string () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ac660ece5790dced62b28f6ec0199c1d7">
+                <title>void njli::Action::setRepeat (u32 count)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>count</entry>
+                                <entry>
+<para>&lt;#count description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a63707be93052a5843662ca386ff39fca">
+                <title>void njli::Action::setRepeatForever ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a3aeafe981e3b127eb9ad728e88e31315">
+                <title>void njli::Action::setSpeedFactor (f32 factor)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>factor</entry>
+                                <entry>
+<para>&lt;#factor description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1acccdab60df21ef125bc43e2d914203e8">
+                <title>f32 njli::Action::getSpeedFactor () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a036937b57eea213ffeb977e3c22e51f6">
+                <title>void njli::Action::setDuration (f32 duration)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>duration</entry>
+                                <entry>
+<para>&lt;#duration description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a3473d3b336d30b21976a8aa14f105b50">
+                <title>f32 njli::Action::getDuration () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a134104e9db058f54d9724eea552a16fd">
+                <title>void njli::Action::setTimingMode (njliActionTimingMode mode)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mode</entry>
+                                <entry>
+<para>&lt;#mode description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ab0c079cfbeb80643e147ea7899e32a50">
+                <title>njliActionTimingMode njli::Action::getTimingMode () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a62fdaf50d4555346103e8f4fd388ed38">
+                <title>f32 njli::Action::getTimeLeft () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1af53c39e134a055c410ccccdf94943ff0">
+                <title>bool njli::Action::isRepeatingForever () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a1f46ddf3b7469fc24cc50ce184ee1926">
+                <title>s32 njli::Action::getRepeatCount () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a53e72e1dd95f30c07e97ad59a721669c">
+                <title>Node* njli::Action::getParent ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1af12f2df2adb1048d1fbe625f9be44122">
+                <title>const Node* njli::Action::getParent () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a83a8876ae63b92804004cf3febe76573">
+                <title>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create (const AbstractBuilder &amp;builder) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1ac4ca71716ed832be357f15f8262c8448">
+                <title>const void* njli::AbstractFactoryObject::getPointer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a4ffddf141a426a5a07d0ac19f1913811">
+                <title>u64 njli::AbstractFactoryObject::getPointerValue () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_action_1a4fc4bcd9d1930911474210c047372fc0">
+                <title>virtual void njli::AbstractFactoryObject::serializeObject (class btSerializer *serializer) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>serializer</entry>
+                                <entry>
+<para>&lt;#serializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+</section>

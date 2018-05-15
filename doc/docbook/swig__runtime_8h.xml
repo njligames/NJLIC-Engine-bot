@@ -1,0 +1,1345 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="swig__runtime_8h">
+    <title>swig_runtime.h File Reference</title>
+    <programlisting>#include &lt;string.h&gt;</programlisting>
+    <programlisting>#include &quot;lauxlib.h&quot;</programlisting>
+    <programlisting>#include &quot;lua.h&quot;</programlisting>
+    <programlisting>#include &lt;assert.h&gt;</programlisting>
+    <programlisting>#include &lt;stdlib.h&gt;</programlisting>
+<para>Include dependency diagram for swig_runtime.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="swig__runtime_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for swig_runtime.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="swig__runtime_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__type__info">swig_type_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__cast__info">swig_cast_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__module__info">swig_module_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__var__info">swig_lua_var_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__const__info">swig_lua_const_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__attribute">swig_lua_attribute</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__namespace">swig_lua_namespace</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__class">swig_lua_class</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__userdata">swig_lua_userdata</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structswig__lua__rawdata">swig_lua_rawdata</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a7e84031693895e512662f5b390c6d0e4">SWIGTEMPLATEDISAMBIGUATOR</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a6d0a7c65b3712775e92c8bdb7acdd0ee">SWIGINLINE</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a6a54164d0685c632e7540c5ad32a453a">SWIGUNUSEDPARM</link> p <link linkend="swig__runtime_8h_1a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> static <link linkend="swig__runtime_8h_1a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1afc5b08bb3c3cd2e3fb2e34b775346153">SWIGINTERNINLINE</link> <link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="swig__runtime_8h_1a6d0a7c65b3712775e92c8bdb7acdd0ee">SWIGINLINE</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1aea3c8b056dcc8c1ab93f6b825cd1371b">SWIGEXPORT</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1adcd6410456ea7a76147d3ad95b9bcb36">SWIGSTDCALL</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a45817cd389e6f40d0ffb004ff0678031">SWIG_UnknownError</link> -1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a9fcdfcd79ad6f30120990223ea16879a">SWIG_IOError</link> -2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a34d3d1c1310427d00140bf1cc8de3ef6">SWIG_RuntimeError</link> -3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af1ed73e454bdee28cc19369784f56eed">SWIG_IndexError</link> -4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a2685345a18f9d5fe8a390ec8500cb916">SWIG_TypeError</link> -5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ae4cc0f5599402526dd5c2fdb80d87517">SWIG_DivisionByZero</link> -6</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ae9c11d011d8390489595f718d7565a8a">SWIG_OverflowError</link> -7</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a1c4e29c043d3220cedca539360e07148">SWIG_SyntaxError</link> -8</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a4c1b15a2401d60351d98df9327886280">SWIG_ValueError</link> -9</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ae4a7b4ce78e031cbf5227bea38d81221">SWIG_SystemError</link> -10</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a5c83bd4d8f39d6eed1df7d3444caa2e1">SWIG_AttributeError</link> -11</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ae1cd9de0a75c6d814815a9de66a4a46d">SWIG_MemoryError</link> -12</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1aa11fe417abd4c5a02d31cc1a51dee007">SWIG_NullReferenceError</link> -13</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a4895907de5539551925ab5c03ea05d28">SWIG_RUNTIME_VERSION</link> &quot;4&quot;</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ac619a84edecccb5e00c1b4a3180b8c3a">SWIG_TYPE_TABLE_NAME</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</link> <link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="swig__runtime_8h_1a6d0a7c65b3712775e92c8bdb7acdd0ee">SWIGINLINE</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a26324fcd1baceab72680dfec078da440">SWIG_BUFFER_SIZE</link> 1024</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1aa56139a289829795ed651d533826b65e">SWIG_POINTER_DISOWN</link> 0x1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ac8216459bfd45cbd2be36175ef6f1ccc">SWIG_CAST_NEW_MEMORY</link> 0x2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a1a125b0e9c551bb9cdeb21b8e5be5b57">SWIG_POINTER_OWN</link> 0x1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</link> (0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</link> (-1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link> (r &gt;= 0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a95bab7504841595502bac5ed195becc1">SWIG_ArgError</link> ((r != <link linkend="swig__runtime_8h_1acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</link>) ? r : <link linkend="swig__runtime_8h_1a2685345a18f9d5fe8a390ec8500cb916">SWIG_TypeError</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a2f15c36f8b66185937b8232640be62e4">SWIG_CASTRANKLIMIT</link> (1 &lt;&lt; 8)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a0021b435c31c3ab285b5a6f4547719e3">SWIG_NEWOBJMASK</link> (<link linkend="swig__runtime_8h_1a2f15c36f8b66185937b8232640be62e4">SWIG_CASTRANKLIMIT</link> &lt;&lt; 1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</link> (<link linkend="swig__runtime_8h_1a0021b435c31c3ab285b5a6f4547719e3">SWIG_NEWOBJMASK</link> &lt;&lt; 1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a8268a243a8a840396db70f745c23c37c">SWIG_BADOBJ</link> (<link linkend="swig__runtime_8h_1acfa11a770d66f9ca6ba170b173c56c94">SWIG_ERROR</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a4afcf490ff5b4abbca27ca23d9af288e">SWIG_OLDOBJ</link> (<link linkend="swig__runtime_8h_1af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ab00ef4fde02a6d8d9653ea9edb28d3c9">SWIG_NEWOBJ</link> (<link linkend="swig__runtime_8h_1af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</link> | <link linkend="swig__runtime_8h_1a0021b435c31c3ab285b5a6f4547719e3">SWIG_NEWOBJMASK</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ab1fe70ae34b39b709eb4cfb084862236">SWIG_TMPOBJ</link> (<link linkend="swig__runtime_8h_1af9ecbac56d4c5cd6104ae8f6bb82e9f7">SWIG_OK</link> | <link linkend="swig__runtime_8h_1a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</link>)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af7ac7e424b623712f70e9b6640a54853">SWIG_AddNewMask</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) ? (r | <link linkend="swig__runtime_8h_1a0021b435c31c3ab285b5a6f4547719e3">SWIG_NEWOBJMASK</link>) : r)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ab3ead1d5cb36e1d79daf0bb4732957be">SWIG_DelNewMask</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) ? (r &amp; ~<link linkend="swig__runtime_8h_1a0021b435c31c3ab285b5a6f4547719e3">SWIG_NEWOBJMASK</link>) : r)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a5246ae38052e6fa0e3cca2026cdda153">SWIG_IsNewObj</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) &amp;&amp; (r &amp; <link linkend="swig__runtime_8h_1a0021b435c31c3ab285b5a6f4547719e3">SWIG_NEWOBJMASK</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af8527f0123949ec90e05d0fb156c11e3">SWIG_AddTmpMask</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) ? (r | <link linkend="swig__runtime_8h_1a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</link>) : r)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ac08b44ea4ae9f73b19d915969f301a5d">SWIG_DelTmpMask</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) ? (r &amp; ~<link linkend="swig__runtime_8h_1a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</link>) : r)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1aa8f2563a536468b40dc33843d4bb7efe">SWIG_IsTmpObj</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) &amp;&amp; (r &amp; <link linkend="swig__runtime_8h_1a399dafc6302bd9b309041d5570ae94c9">SWIG_TMPOBJMASK</link>))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a4f6f5e0444e44e48aef51f6620438a5f">SWIG_AddCast</link> (r)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a1faed8ca17e98c961611bc35fde708a9">SWIG_CheckState</link> (<link linkend="swig__runtime_8h_1aea8ef410fde907633cb76d9d18131fa1">SWIG_IsOK</link>(r) ? 1 : 0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a84d911ffa9c41b3a66cc7e7d3645671f">SWIG_LUA_TARGET</link> <link linkend="swig__runtime_8h_1a6e2b880437634cb73e882be20de53d32">SWIG_LUA_FLAVOR_LUA</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a6e2b880437634cb73e882be20de53d32">SWIG_LUA_FLAVOR_LUA</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a00a6f75261552001dd1ac741f712d82f">SWIG_LUA_FLAVOR_ELUA</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a351d33087485b24840afe357df576385">SWIG_LUA_FLAVOR_ELUAC</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a81533fe9e3e23fc8a0caad2a15ddc953">SWIG_LUA_CONSTTAB_INT</link> <link linkend="swig__runtime_8h_1ae486ba0f8ccf6c87507633344d3f6a96">SWIG_LUA_INT</link>, (char *)B, (long)C, 0, 0, 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a86474eb3525b32c80966dde2330e9596">SWIG_LUA_CONSTTAB_FLOAT</link> <link linkend="swig__runtime_8h_1a9c4ea7e25de05f5a501e7163fd480b67">SWIG_LUA_FLOAT</link>, (char *)B, 0, (double)C, 0, 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a9bcdad1f49921f12301ceb55b31f7f48">SWIG_LUA_CONSTTAB_STRING</link> <link linkend="swig__runtime_8h_1af6a25edb9ad2ab838e1b1fa3e4450121">SWIG_LUA_STRING</link>, (char *)B, 0, 0, (<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)C, 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af21b898b6e053c8bb73855969e0888b0">SWIG_LUA_CONSTTAB_CHAR</link> <link linkend="swig__runtime_8h_1a50c58df5c9bd1cea902021a7f7fc9896">SWIG_LUA_CHAR</link>, (char *)B, (long)C, 0, 0, 0</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ab5c3df1096e1d0596e6401e9aaf91f4b">SWIG_LUA_CONSTTAB_POINTER</link> <link linkend="swig__runtime_8h_1a2f4d58f9ce413585253063575c033082">SWIG_LUA_POINTER</link>, (char *)B, 0, 0, (<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)C, &amp;D</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a38564dfb0235d7ba0f543836919b6dac">SWIG_LUA_CONSTTAB_BINARY</link> <link linkend="swig__runtime_8h_1af2062cfc3a6907d38c2587cdab77ae38">SWIG_LUA_BINARY</link>, (char *)B, S, 0, (<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)C, &amp;D</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a0a129d773aae7e71b7c30370cd3c3dd9">lua_rawlen</link> lua_strlen</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1abf88c897458bd9848010301cb46ade18">lua_pushglobaltable</link> lua_pushvalue(L, LUA_GLOBALSINDEX)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a9c4332806d14eef7167aac79d101b5ff">lua_absindex</link> ((i) &gt; 0 || (i) &lt;= LUA_REGISTRYINDEX ? (i) : lua_gettop(L) + (i) + 1)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a703a7b5ef04cbe6e627f04bcdcebc153">lua_rawsetp</link> lua_pushlightuserdata(L, (<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)(ptr));                                     \
+  lua_insert(L, -2);                                                           \
+  lua_rawset(L, index);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1afda1448f711f5b5351c3fa779e487724">lua_rawgetp</link> lua_pushlightuserdata(L, (<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)(ptr));                                     \
+  lua_rawget(L, index);</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ae486ba0f8ccf6c87507633344d3f6a96">SWIG_LUA_INT</link> 1</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a9c4ea7e25de05f5a501e7163fd480b67">SWIG_LUA_FLOAT</link> 2</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af6a25edb9ad2ab838e1b1fa3e4450121">SWIG_LUA_STRING</link> 3</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a2f4d58f9ce413585253063575c033082">SWIG_LUA_POINTER</link> 4</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1af2062cfc3a6907d38c2587cdab77ae38">SWIG_LUA_BINARY</link> 5</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a50c58df5c9bd1cea902021a7f7fc9896">SWIG_LUA_CHAR</link> 6</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a8eb06167550295873af166db6a49cf36">SWIG_NewPointerObj</link> <link linkend="swig__runtime_8h_1a96c4cba9e0940983c98de6a9d6f339c8">SWIG_Lua_NewPointerObj</link>(L, (<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)ptr, type, owner)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a3a4e5f587d3994722b0628b2cc96ed42">SWIG_ConvertPtr</link> <link linkend="swig__runtime_8h_1a0d0394796468d0001b1d3d358a19891f">SWIG_Lua_ConvertPtr</link>(L, idx, ptr, type, flags)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a59f926cc14b21f2e478ac27541df0162">SWIG_MustGetPtr</link> <link linkend="swig__runtime_8h_1a8ed84d67fe041f17069ed2e28e23d1e4">SWIG_Lua_MustGetPtr</link>(L, idx, type, flags, argnum, fnname)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a019c90e4471fdd37ef65653afe55fb5c">SWIG_ConvertMember</link> <link linkend="swig__runtime_8h_1a34313b58896afa8f8a27f1d0bfd2b7c4">SWIG_Lua_ConvertPacked</link>(L, idx, ptr, sz, ty)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a20c6437f49ae257857683ba0e7b2100f">SWIG_NewMemberObj</link> <link linkend="swig__runtime_8h_1ab98924e8e52ff8f34ace1515120ccda6">SWIG_Lua_NewPackedObj</link>(L, ptr, sz, type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ab97db3bbfc9e3a73de01e1ee95fa0bb5">SWIG_GetModule</link> <link linkend="swig__runtime_8h_1aa7e1ff7a89ff12ee84b36802220fae51">SWIG_Lua_GetModule</link>((lua_State *)(clientdata))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a673a7dcc5c15f5cffa7072785a6c7972">SWIG_SetModule</link> <link linkend="swig__runtime_8h_1a127abd2d6d37e5b1e86d2421c751492e">SWIG_Lua_SetModule</link>((lua_State *)(clientdata), pointer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a50d0a80dccc1d34749f07c82d6a04169">SWIG_MODULE_CLIENTDATA_TYPE</link> lua_State *</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1aca11636b220cff70dac286c268c95ee6">SWIG_contract_assert</link> if (!(expr))                                                                 \
+    {                                                                          \
+      <link linkend="swig__runtime_8h_1a17d5e7cfbab0914882ec82e36d22381e">SWIG_Lua_pusherrstring</link>(L, (char *)msg);                                  \
+      goto fail;                                                               \
+    }                                                                          \
+  else</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ababf56889b69e7a569556eb38cd4f157">SWIG_fail</link> {                                                                            \
+    goto fail;                                                                 \
+  }</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a41cf11e6c8c4513cbca00772e8aef9fd">SWIG_fail_arg</link> {                                                                            \
+    <link linkend="swig__runtime_8h_1ad4708a823127d389179291ebcace732d">SWIG_Lua_pushferrstring</link>(L, &quot;Error in %s (arg %d), expected &apos;%s&apos; got &apos;%s&apos;&quot;, \
+                            func_name, argnum, type,                           \
+                            <link linkend="swig__runtime_8h_1a3ebd284134ee5f4877fe86f646aebde6">SWIG_Lua_typename</link>(L, argnum));                     \
+    goto fail;                                                                 \
+  }</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a2075b3c34e15bf3feb67887a633ccddf">SWIG_fail_ptr</link> <link linkend="swig__runtime_8h_1a41cf11e6c8c4513cbca00772e8aef9fd">SWIG_fail_arg</link>(func_name, argnum, (type &amp;&amp; type-&gt;str) ? type-&gt;str : &quot;void*&quot;)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a7e3daad25f96879be557754a9e2ed6b4">SWIG_check_num_args</link> if (lua_gettop(L) &lt; a || lua_gettop(L) &gt; b)                                  \
+    {                                                                          \
+      <link linkend="swig__runtime_8h_1ad4708a823127d389179291ebcace732d">SWIG_Lua_pushferrstring</link>(L, &quot;Error in %s expected %d..%d args, got %d&quot;,   \
+                              func_name, a, b, lua_gettop(L));                 \
+      goto fail;                                                               \
+    }</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a45e06ea798b759df9853467b13abcdfc">SWIG_Lua_get_table</link> (lua_pushstring(L, n), lua_rawget(L, -2))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a4e0088e1d53848f80738e5a49f1c0cf3">SWIG_Lua_add_function</link> (lua_pushstring(L, n), lua_pushcfunction(L, f), lua_rawset(L, -3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1afd5580acc2cb0c0eeaf0644bac06f99e">SWIG_Lua_add_boolean</link> (lua_pushstring(L, n), lua_pushboolean(L, b), lua_rawset(L, -3))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1ac24315f20782462ad057bf1c8309a616">SWIG_isptrtype</link> (lua_isuserdata(L, I) || lua_isnil(L, I))</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="swig__runtime_8h_1a054a85a15c821ad190018e106214a1ac">SWIG_DOSTRING_FAIL</link> fprintf(stderr, &quot;%s\n&quot;, S)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *(*  <link linkend="swig__runtime_8h_1a9a51597c7c2041da303a65468011f59b">swig_converter_func</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structswig__type__info">swig_type_info</link> *(*  <link linkend="swig__runtime_8h_1aee981c41d733723d60337a77630106af">swig_dycast_func</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structswig__type__info">swig_type_info</link>  <link linkend="swig__runtime_8h_1a838fee418372997705a565cd6ecd3b22">swig_type_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structswig__cast__info">swig_cast_info</link>  <link linkend="swig__runtime_8h_1a9a04e6e78de723759e5450cd29429d1f">swig_cast_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structswig__module__info">swig_module_info</link>  <link linkend="swig__runtime_8h_1acf7d83901372902dd5cf59a611dfb320">swig_module_info</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef luaL_Reg  <link linkend="swig__runtime_8h_1a89958881f4c9d723a197b20ac42f6946">swig_lua_method</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structswig__lua__namespace">swig_lua_namespace</link>  <link linkend="swig__runtime_8h_1aa881a157e50736ba2ad83a4f6faad472">swig_lua_namespace</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef struct <link linkend="structswig__lua__class">swig_lua_class</link>  <link linkend="swig__runtime_8h_1a6923d1145cdb4f743ce8082c79172b39">swig_lua_class</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int(*  <link linkend="swig__runtime_8h_1acb5ead7109df678f22b2ec7d2203ce62">swig_lua_base_iterator_func</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a2f69ad4207037cb391a2b2d5915fcba2">SWIG_TypeNameComp</link> (
+const char * f1, const char * l1, const char * f2, const char * l2)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a73131c439c907ed987c34da85b95a597">SWIG_TypeCmp</link> (
+const char * nb, const char * tb)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a23ecf039d651082ffc7582c4f50af780">SWIG_TypeEquiv</link> (
+const char * nb, const char * tb)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="structswig__cast__info">swig_cast_info</link> * <link linkend="swig__runtime_8h_1abd0cb78a9663e41312c8f14ab6715f04">SWIG_TypeCheck</link> (
+const char * c, <link linkend="structswig__type__info">swig_type_info</link> * ty)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="structswig__cast__info">swig_cast_info</link> * <link linkend="swig__runtime_8h_1a898a1dfcdf96d53a2c7fd90e8500b36e">SWIG_TypeCheckStruct</link> (
+<link linkend="structswig__type__info">swig_type_info</link> * from, <link linkend="structswig__type__info">swig_type_info</link> * ty)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="swig__runtime_8h_1a334486cb1e8f569c949a0384cbdb2a16">SWIG_TypeCast</link> (
+<link linkend="structswig__cast__info">swig_cast_info</link> * ty, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, int * newmemory)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="structswig__type__info">swig_type_info</link> * <link linkend="swig__runtime_8h_1add8cb1a47628b36915ffa37d61452b1e">SWIG_TypeDynamicCast</link> (
+<link linkend="structswig__type__info">swig_type_info</link> * ty, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> ** ptr)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</link> const char * <link linkend="swig__runtime_8h_1a68560e0bf641c9691704d6d05bac4358">SWIG_TypeName</link> (
+const <link linkend="structswig__type__info">swig_type_info</link> * ty)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> const char * <link linkend="swig__runtime_8h_1a3f38ea686cb3f85bf6a15b08416f2684">SWIG_TypePrettyName</link> (
+const <link linkend="structswig__type__info">swig_type_info</link> * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a4b0a40223812f7d43bc2f0c2342fe2f7">SWIG_TypeClientData</link> (
+<link linkend="structswig__type__info">swig_type_info</link> * ti, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * clientdata)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a710082a7ea6978d654bad712dbebc0ee">SWIG_TypeNewClientData</link> (
+<link linkend="structswig__type__info">swig_type_info</link> * ti, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * clientdata)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="structswig__type__info">swig_type_info</link> * <link linkend="swig__runtime_8h_1ac63ad9b58a96793188f944c92ff40ec6">SWIG_MangledTypeQueryModule</link> (
+<link linkend="structswig__module__info">swig_module_info</link> * start, <link linkend="structswig__module__info">swig_module_info</link> * end, const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="structswig__type__info">swig_type_info</link> * <link linkend="swig__runtime_8h_1a5b6a2719f95288678fa55ade4493b175">SWIG_TypeQueryModule</link> (
+<link linkend="structswig__module__info">swig_module_info</link> * start, <link linkend="structswig__module__info">swig_module_info</link> * end, const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> char * <link linkend="swig__runtime_8h_1a02c2ac3db8ce87dd62813334e66c9a3a">SWIG_PackData</link> (
+char * c, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, size_t sz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> const char * <link linkend="swig__runtime_8h_1a80e9e66f66413297452de92c69cdf9d7">SWIG_UnpackData</link> (
+const char * c, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, size_t sz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> char * <link linkend="swig__runtime_8h_1a10c5572eb6206df7c95c8a2fcde90911">SWIG_PackVoidPtr</link> (
+char * buff, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, const char * name, size_t bsz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> const char * <link linkend="swig__runtime_8h_1ae3e13f3464cb74f7e5d9f7a50a6855c0">SWIG_UnpackVoidPtr</link> (
+const char * c, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> ** ptr, const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> char * <link linkend="swig__runtime_8h_1af903e6809a1fb2ba06deff49795c6e65">SWIG_PackDataName</link> (
+char * buff, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, size_t sz, const char * name, size_t bsz)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> const char * <link linkend="swig__runtime_8h_1a99540d89d9ffca957892cf22af3e49dd">SWIG_UnpackDataName</link> (
+const char * c, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, size_t sz, const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a17d5e7cfbab0914882ec82e36d22381e">SWIG_Lua_pusherrstring</link> (
+lua_State * L, const char * str)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1ad4708a823127d389179291ebcace732d">SWIG_Lua_pushferrstring</link> (
+lua_State * L, const char * fmt, ... )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="structswig__module__info">swig_module_info</link> * <link linkend="swig__runtime_8h_1aa7e1ff7a89ff12ee84b36802220fae51">SWIG_Lua_GetModule</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a127abd2d6d37e5b1e86d2421c751492e">SWIG_Lua_SetModule</link> (
+lua_State * L, <link linkend="structswig__module__info">swig_module_info</link> * module)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a98115a70232aa660ee341e0ea4353485">SWIG_Lua_set_immutable</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a82a3c5d46b7bdaa57cc1106ff5a89663">SWIG_Lua_namespace_get</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1aa56ce48dad661ece0586e2b0477d04d6">SWIG_Lua_namespace_set</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1af6d78a7441d3788ad73c978698a0cc1e">SWIG_Lua_InstallConstants</link> (
+lua_State * L, <link linkend="structswig__lua__const__info">swig_lua_const_info</link> constants)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a7d4fb4ca1944b99a7ac54467d8a11866">SWIG_Lua_add_variable</link> (
+lua_State * L, const char * name, lua_CFunction getFn, lua_CFunction setFn)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a96a75364a5f20fd525bb603440f698d3">SWIG_Lua_class_register</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a9ee5ba0a0bf072010a447d4b2f98d545">SWIG_Lua_add_namespace_details</link> (
+lua_State * L, <link linkend="structswig__lua__namespace">swig_lua_namespace</link> * ns)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a1eaf1788c7d2da312e1ebd9f251017f1">SWIG_Lua_add_namespace_classes</link> (
+lua_State * L, <link linkend="structswig__lua__namespace">swig_lua_namespace</link> * ns)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a85ebfe3fdce248c83e2e3620dc6f330e">SWIG_Lua_namespace_register</link> (
+lua_State * L, <link linkend="structswig__lua__namespace">swig_lua_namespace</link> * ns, int reg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1af93e8f0a3beec1aefa768abb89fe7485">SWIG_Lua_get_class_metatable</link> (
+lua_State * L, const char * cname)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a355fae01cf3c5ae6e3ce7e947a3116ae">SWIG_Lua_iterate_bases</link> (
+lua_State * L, <link linkend="structswig__type__info">swig_type_info</link> *<link linkend="swig__runtime_8h_1a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</link> swig_type, int first_arg, <link linkend="swig__runtime_8h_1acb5ead7109df678f22b2ec7d2203ce62">swig_lua_base_iterator_func</link> func, int *const ret)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a4d600ac112b2281f2b7b77355eed2fba">SWIG_Lua_class_do_get_item</link> (
+lua_State * L, <link linkend="structswig__type__info">swig_type_info</link> * type, int <link linkend="swig__runtime_8h_1a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</link> first_arg, int * ret)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a194016b571a78a06fd25c82e95325a02">SWIG_Lua_class_do_get</link> (
+lua_State * L, <link linkend="structswig__type__info">swig_type_info</link> * type, int <link linkend="swig__runtime_8h_1a6ee41cd160d397aa76668bf4db65e2d1">SWIGUNUSED</link> first_arg, int * ret)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a85b5ba6bf2bdbe0d21a3611f3b5f8df3">SWIG_Lua_class_get</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1ab2fdf092684471f1833cdac0ee86c9e4">SWIG_Lua_class_do_set</link> (
+lua_State * L, <link linkend="structswig__type__info">swig_type_info</link> * type, int first_arg, int * ret)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1ab75aeed852fd5b630a45dd2312ced041">SWIG_Lua_class_set</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1aba87e0d4ef2c7e61e81b4f685eef7b7b">SWIG_Lua_class_destruct</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1aeabb40f074f78d6ff46831b93e4750e1">SWIG_Lua_class_tostring</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1aa6dab0ada88ba05ba8067207c79efbd8">SWIG_Lua_class_disown</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a0063e5175fc7c3ee38480307c0d857f5">SWIG_Lua_class_equal</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a5a21c7c1eaf4626aa084fd8a3110498e">SWIG_Lua_populate_inheritable_metamethods</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1ace2a621c1ad2f0c94f5bbf96cff871a2">SWIG_Lua_create_class_registry</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a882b457b337f778c6925c77b59cbae79">SWIG_Lua_get_class_registry</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a787cb072f40cbd1801240c0c84226cb0">SWIG_Lua_get_inheritable_metamethods</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1ac765a0526209ac87f7e209669ce959d0">SWIG_Lua_init_base_class</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a893afdb43641c6f2a334bc28b2bc5d90">SWIG_Lua_add_class_static_details</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a21c9d5d2b378d7fdd5aada2924df05ba">SWIG_Lua_add_class_user_metamethods</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1afbf47dea1fc0e472f8599c32b6b1ea29">SWIG_Lua_add_class_instance_details</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a19b76c2a9ea81187953f48fbfbf5d4ac">SWIG_Lua_resolve_metamethod</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a147dffa5775be5d916031e37e068d187">SWIG_Lua_do_resolve_metamethod</link> (
+lua_State * L, const <link linkend="structswig__lua__class">swig_lua_class</link> * clss, int metamethod_name_idx, int skip_check)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a57ec001b1cd68ba7e26ded840d06363d">SWIG_Lua_add_class_user_metamethod</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss, const int metatable_index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a2451693ac83d6d677ab826b113491760">SWIG_Lua_class_register_static</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1aa8ec77fb7e1350b87d183a7708f5bdae">SWIG_Lua_class_register_instance</link> (
+lua_State * L, <link linkend="structswig__lua__class">swig_lua_class</link> * clss)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a8f7e025e07d705726404f14e59195797">SWIG_Lua_AddMetatable</link> (
+lua_State * L, <link linkend="structswig__type__info">swig_type_info</link> * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1a96c4cba9e0940983c98de6a9d6f339c8">SWIG_Lua_NewPointerObj</link> (
+lua_State * L, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, <link linkend="structswig__type__info">swig_type_info</link> * type, int own)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a0d0394796468d0001b1d3d358a19891f">SWIG_Lua_ConvertPtr</link> (
+lua_State * L, int index, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> ** ptr, <link linkend="structswig__type__info">swig_type_info</link> * type, int flags)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="swig__runtime_8h_1a8ed84d67fe041f17069ed2e28e23d1e4">SWIG_Lua_MustGetPtr</link> (
+lua_State * L, int index, <link linkend="structswig__type__info">swig_type_info</link> * type, int flags, int argnum, const char * func_name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="swig__runtime_8h_1ab98924e8e52ff8f34ace1515120ccda6">SWIG_Lua_NewPackedObj</link> (
+lua_State * L, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, size_t size, <link linkend="structswig__type__info">swig_type_info</link> * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a34313b58896afa8f8a27f1d0bfd2b7c4">SWIG_Lua_ConvertPacked</link> (
+lua_State * L, int index, <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * ptr, size_t size, <link linkend="structswig__type__info">swig_type_info</link> * type)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> const char * <link linkend="swig__runtime_8h_1a3ebd284134ee5f4877fe86f646aebde6">SWIG_Lua_typename</link> (
+lua_State * L, int tp)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a42cd9c1d67d803040a3e78515945afcb">SWIGRUNTIME</link> int <link linkend="swig__runtime_8h_1a85bb429fb2e29e3681bbda49ce8c34c1">SWIG_Lua_type</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1a8f2319f775e5b9d5906c9ef25d9b819a">SWIGINTERN</link> int <link linkend="swig__runtime_8h_1a3af0c40da7cc32dc9af81d722828ad63">SWIG_Lua_dostring</link> (
+lua_State * L, const char * str)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</link> <link linkend="structswig__type__info">swig_type_info</link> * <link linkend="swig__runtime_8h_1a7dd78b07dde208ce1a05f97f1b6d2501">SWIG_TypeQuery</link> (
+<link linkend="swig__runtime_8h_1a50d0a80dccc1d34749f07c82d6a04169">SWIG_MODULE_CLIENTDATA_TYPE</link> clientdata, const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="swig__runtime_8h_1affa7aa2bcce5bea24a20e5b184ae0533">SWIGRUNTIMEINLINE</link> <link linkend="structswig__type__info">swig_type_info</link> * <link linkend="swig__runtime_8h_1a810714d8aa076f5821d7af57872b38cf">SWIG_MangledTypeQuery</link> (
+<link linkend="swig__runtime_8h_1a50d0a80dccc1d34749f07c82d6a04169">SWIG_MODULE_CLIENTDATA_TYPE</link> clientdata, const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/njli/generated/swig/lua/swig_runtime.h</para>
+    </simplesect>
+</section>

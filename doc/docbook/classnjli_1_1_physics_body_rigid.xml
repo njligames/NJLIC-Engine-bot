@@ -1,0 +1,1454 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_physics_body_rigid">
+<title>njli::PhysicsBodyRigid class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_physics_body_rigid_8h">&lt;PhysicsBodyRigid.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::PhysicsBodyRigid</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_physics_body_rigid__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::PhysicsBodyRigid</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_physics_body_rigid__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="classnjli_1_1_physics_body_rigid_1_1_force_and_position">njli::PhysicsBodyRigid::ForceAndPosition</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f32 m_Mass</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btDefaultMotionState * m_btDefaultMotionState</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btRigidBody * m_btRigidBody</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; ForceAndPosition * &gt; m_LinearForceAndPositionArray</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>s32 m_LinearForceAndPositionArrayIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; ForceAndPosition * &gt; m_AngularForceAndPositionArray</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>s32 m_AngularForceAndPositionArrayIndex</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btTransform * m_btTransform</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>f32 m_Charge</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_body_rigid_1ae94e7b3c64a48854e5e35a8e1d298afb">PhysicsBodyRigid</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_body_rigid_1a43b90ad880516b3b0c007b598cccfb21">PhysicsBodyRigid</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_body_rigid_1a448ff60fc10c6608e182165535c73bd7">PhysicsBodyRigid</link> (
+const <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_body_rigid_1a2c023043cbc9f56703704cb4f822f963">BT_DECLARE_ALIGNED_ALLOCATOR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_physics_body_rigid_1a7721538446401b34a6922d400412fc29">~PhysicsBodyRigid</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> &amp; <link linkend="classnjli_1_1_physics_body_rigid_1a5dadde62b5baa8c4c9c30d318b03c1f7">operator=</link> (
+const <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const btCollisionObject * <link linkend="classnjli_1_1_physics_body_rigid_1aa92b1f7c329ae49a2ad80947db1dd7ba">getCollisionObject</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual btCollisionObject * <link linkend="classnjli_1_1_physics_body_rigid_1a47bfa192d6de09d5ce0486ed2cc09831">getCollisionObject</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a772e64b569e190f647047c0c5be2a852">setCollisionObject</link> (
+const btCollisionObject &amp; obj, <link linkend="classnjli_1_1_physics_shape">PhysicsShape</link> * shape)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const btRigidBody * <link linkend="classnjli_1_1_physics_body_rigid_1a03cf3d38b4083b61dcffcb1a5327213d">getBody</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual btRigidBody * <link linkend="classnjli_1_1_physics_body_rigid_1abe9121bf7697467e7eddd8cd5da2cdd5">getBody</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a46509fb78aac02dc21c6f801b1f61bf1">applyFinalForce</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1aa8971d87ad91419622dd6438ee00f58c">applyFinalAngularForce</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_physics_body_rigid_1a45c724055d7d0192f4e3c154b2c944f4">setTransform</link> (
+const btTransform &amp; transform)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_physics_body_rigid_1a7efbdfc46e8df26d073b00efaaf0c91c">removePhysicsBody</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_physics_body_rigid_1a8263223fca42a563b9f2a756d077c8b1">calculateSerializeBufferSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1aa2f009ffadaf78b84bd36c8cb5536f6c">serialize</link> (
+<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * dataBuffer, btSerializer * )<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_physics_body_rigid_1a13a8810e9ddca12e83bbbe6676e8c906">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_physics_body_rigid_1a701c7a02bd440b03982d7f9509baca03">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_physics_body_rigid_1a6fa8e700498136a0a6f64c9c3c45eed8">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a70afa1817272e87547d6fccd8ca91ff4">setWorldTransform</link> (
+const btTransform &amp; transform)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual btTransform <link linkend="classnjli_1_1_physics_body_rigid_1ad65b1292303642832a18f864bb23cff5">getWorldTransform</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a3d02fd518a3031f48f3512b8026a8a75">setLinearFactor</link> (
+const btVector3 &amp; factor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const btVector3 &amp; <link linkend="classnjli_1_1_physics_body_rigid_1ae098aa8333a7f82efabd8e3945eedf87">getLinearFactor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1aea1f079a7abc6817bb53ed59e816e4e9">setAngularFactor</link> (
+const btVector3 &amp; factor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a20c0ae6e0bc489646c4d3206fdda2662">setAngularFactor</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> factor)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const btVector3 &amp; <link linkend="classnjli_1_1_physics_body_rigid_1a2c2f3087ebc43b32ceb3fdb13935fcca">getAngularFactor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a1c8b45c013666e4cd575fc6e3c6db031">setMass</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> mass)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_physics_body_rigid_1a91e536e02eac21b097654263c6298f1b">getMass</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a620b7e704797642da0594762ff24a0b8">setCharge</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> charge)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_physics_body_rigid_1acbf656bd51d8b91a3795a615eb364f9c">getCharge</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a18a20381b14bf38c1dd731a9e25fc278">setDamping</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> damping)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_physics_body_rigid_1ac9d68b1764effd8b44c48559705fbcd1">getDamping</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a9cf475f63ddb4962e95dc47d2f0bc8c5">setAngularDamping</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> damping)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_physics_body_rigid_1ab6d50a3ae1ec1756ed4d530bf7a4a9d4">getAngularDamping</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a48e65253892e04f83648e9e9fde34f69">applyForce</link> (
+const btVector3 &amp; direction, bool impulse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a905d2e7b94681a30744a32f134611c15">applyForce</link> (
+const btVector3 &amp; direction, const btVector3 &amp; position, bool impulse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1ab6ade2b1326ef586c71fa61d49a580b6">applyAngularForce</link> (
+const btVector3 &amp; direction, bool impulse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a7d170e0159d7d8003dd937867dfecbf7">clearAllForces</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1aabbcffe4b49667b4b0d285940c775ced">setVelocity</link> (
+const btVector3 &amp; velocity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const btVector3 &amp; <link linkend="classnjli_1_1_physics_body_rigid_1abbd7a0ea7ee539d9b84c64859ddf8406">getVelocity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1ab6e5a5e5d9ee063013bb04502508d9ab">setAngularVelocity</link> (
+const btVector3 &amp; velocity)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const btVector3 &amp; <link linkend="classnjli_1_1_physics_body_rigid_1a13bb91357c547d832411c02be5e89260">getAngularVelocity</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual bool <link linkend="classnjli_1_1_physics_body_rigid_1a0679c29d4447ee758cb84234731dfbdd">isInWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> ** <link linkend="classnjli_1_1_physics_body_rigid_1a26ae91f4189d4e858907035bbd485967">createArray</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1aa7454c3658a28f869dbcc5d6c0386673">destroyArray</link> (
+<link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> ** array, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * <link linkend="classnjli_1_1_physics_body_rigid_1a9cb801c257f66cf5c58dea67b10115e6">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * <link linkend="classnjli_1_1_physics_body_rigid_1a701d02af43bfc3c058252d907b7a091c">create</link> (
+const <link linkend="classnjli_1_1_physics_body_rigid_builder">PhysicsBodyRigidBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * <link linkend="classnjli_1_1_physics_body_rigid_1a2ea6d80ad8df71463cfe0b2c3c627b4c">clone</link> (
+const <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * <link linkend="classnjli_1_1_physics_body_rigid_1a7e1f73eba8cbf9860638b600f292eaee">copy</link> (
+const <link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1a537eeedf7da62318ae0d3a2d076b5fd4">destroy</link> (
+<link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> * object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_physics_body_rigid_1af57a409d8e39b06aa74c0c742fe6ff22">load</link> (
+<link linkend="classnjli_1_1_physics_body_rigid">PhysicsBodyRigid</link> &amp; object, lua_State * L, int stack_index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_physics_body_rigid_1a99dba252410763fe9ac82424321add06">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>&lt;#Description#&gt; </para>
+                <para>Definition at line 27 of file PhysicsBodyRigid.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>PhysicsBodyRigid.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ae94e7b3c64a48854e5e35a8e1d298afb">
+                <title>njli::PhysicsBodyRigid::PhysicsBodyRigid ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a43b90ad880516b3b0c007b598cccfb21">
+                <title>njli::PhysicsBodyRigid::PhysicsBodyRigid (const AbstractBuilder &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a448ff60fc10c6608e182165535c73bd7">
+                <title>njli::PhysicsBodyRigid::PhysicsBodyRigid (const PhysicsBodyRigid &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a2c023043cbc9f56703704cb4f822f963">
+                <title>njli::PhysicsBodyRigid::BT_DECLARE_ALIGNED_ALLOCATOR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a7721538446401b34a6922d400412fc29">
+                <title>virtual njli::PhysicsBodyRigid::~PhysicsBodyRigid ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a5dadde62b5baa8c4c9c30d318b03c1f7">
+                <title>PhysicsBodyRigid&amp; njli::PhysicsBodyRigid::operator= (const PhysicsBodyRigid &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1aa92b1f7c329ae49a2ad80947db1dd7ba">
+                <title>virtual const btCollisionObject* njli::PhysicsBodyRigid::getCollisionObject () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a47bfa192d6de09d5ce0486ed2cc09831">
+                <title>virtual btCollisionObject* njli::PhysicsBodyRigid::getCollisionObject ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a772e64b569e190f647047c0c5be2a852">
+                <title>virtual void njli::PhysicsBodyRigid::setCollisionObject (const btCollisionObject &amp;obj, PhysicsShape *shape)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a03cf3d38b4083b61dcffcb1a5327213d">
+                <title>virtual const btRigidBody* njli::PhysicsBodyRigid::getBody () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1abe9121bf7697467e7eddd8cd5da2cdd5">
+                <title>virtual btRigidBody* njli::PhysicsBodyRigid::getBody ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a46509fb78aac02dc21c6f801b1f61bf1">
+                <title>virtual void njli::PhysicsBodyRigid::applyFinalForce ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1aa8971d87ad91419622dd6438ee00f58c">
+                <title>virtual void njli::PhysicsBodyRigid::applyFinalAngularForce ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a45c724055d7d0192f4e3c154b2c944f4">
+                <title>virtual bool njli::PhysicsBodyRigid::setTransform (const btTransform &amp;transform=btTransform::getIdentity())</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a7efbdfc46e8df26d073b00efaaf0c91c">
+                <title>virtual bool njli::PhysicsBodyRigid::removePhysicsBody ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a8263223fca42a563b9f2a756d077c8b1">
+                <title>virtual s32 njli::PhysicsBodyRigid::calculateSerializeBufferSize () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1aa2f009ffadaf78b84bd36c8cb5536f6c">
+                <title>virtual void njli::PhysicsBodyRigid::serialize (void *dataBuffer, btSerializer *) const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 15:02:12</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>dataBuffer</entry>
+                                <entry>
+<para>&lt;#dataBuffer description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>btSerializer</entry>
+                                <entry>
+<para>&lt;#btSerializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a13a8810e9ddca12e83bbbe6676e8c906">
+                <title>virtual const char* njli::PhysicsBodyRigid::getClassName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a701c7a02bd440b03982d7f9509baca03">
+                <title>virtual s32 njli::PhysicsBodyRigid::getType () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a6fa8e700498136a0a6f64c9c3c45eed8">
+                <title>njli::PhysicsBodyRigid::operator std::string () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a70afa1817272e87547d6fccd8ca91ff4">
+                <title>virtual void njli::PhysicsBodyRigid::setWorldTransform (const btTransform &amp;transform)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transform</entry>
+                                <entry>
+<para>&lt;#transform description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ad65b1292303642832a18f864bb23cff5">
+                <title>virtual btTransform njli::PhysicsBodyRigid::getWorldTransform () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a3d02fd518a3031f48f3512b8026a8a75">
+                <title>virtual void njli::PhysicsBodyRigid::setLinearFactor (const btVector3 &amp;factor)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>factor</entry>
+                                <entry>
+<para>&lt;#factor description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ae098aa8333a7f82efabd8e3945eedf87">
+                <title>virtual const btVector3&amp; njli::PhysicsBodyRigid::getLinearFactor () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1aea1f079a7abc6817bb53ed59e816e4e9">
+                <title>virtual void njli::PhysicsBodyRigid::setAngularFactor (const btVector3 &amp;factor)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>factor</entry>
+                                <entry>
+<para>&lt;#factor description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a20c0ae6e0bc489646c4d3206fdda2662">
+                <title>virtual void njli::PhysicsBodyRigid::setAngularFactor (f32 factor)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>factor</entry>
+                                <entry>
+<para>&lt;#factor description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a2c2f3087ebc43b32ceb3fdb13935fcca">
+                <title>virtual const btVector3&amp; njli::PhysicsBodyRigid::getAngularFactor () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a1c8b45c013666e4cd575fc6e3c6db031">
+                <title>virtual void njli::PhysicsBodyRigid::setMass (f32 mass)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mass</entry>
+                                <entry>
+<para>&lt;#mass description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a91e536e02eac21b097654263c6298f1b">
+                <title>virtual f32 njli::PhysicsBodyRigid::getMass () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a620b7e704797642da0594762ff24a0b8">
+                <title>virtual void njli::PhysicsBodyRigid::setCharge (f32 charge)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>charge</entry>
+                                <entry>
+<para>&lt;#charge description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1acbf656bd51d8b91a3795a615eb364f9c">
+                <title>virtual f32 njli::PhysicsBodyRigid::getCharge () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a18a20381b14bf38c1dd731a9e25fc278">
+                <title>virtual void njli::PhysicsBodyRigid::setDamping (f32 damping)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>damping</entry>
+                                <entry>
+<para>&lt;#damping description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ac9d68b1764effd8b44c48559705fbcd1">
+                <title>virtual f32 njli::PhysicsBodyRigid::getDamping () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a9cf475f63ddb4962e95dc47d2f0bc8c5">
+                <title>virtual void njli::PhysicsBodyRigid::setAngularDamping (f32 damping)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>damping</entry>
+                                <entry>
+<para>&lt;#damping description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ab6d50a3ae1ec1756ed4d530bf7a4a9d4">
+                <title>virtual f32 njli::PhysicsBodyRigid::getAngularDamping () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a48e65253892e04f83648e9e9fde34f69">
+                <title>virtual void njli::PhysicsBodyRigid::applyForce (const btVector3 &amp;direction, bool impulse=false)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>direction</entry>
+                                <entry>
+<para>&lt;#direction description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>impulse</entry>
+                                <entry>
+<para>&lt;#impulse description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a905d2e7b94681a30744a32f134611c15">
+                <title>virtual void njli::PhysicsBodyRigid::applyForce (const btVector3 &amp;direction, const btVector3 &amp;position, bool impulse=false)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>direction</entry>
+                                <entry>
+<para>&lt;#direction description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>position</entry>
+                                <entry>
+<para>&lt;#position description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>impulse</entry>
+                                <entry>
+<para>&lt;#impulse description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ab6ade2b1326ef586c71fa61d49a580b6">
+                <title>virtual void njli::PhysicsBodyRigid::applyAngularForce (const btVector3 &amp;direction, bool impulse=false)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>direction</entry>
+                                <entry>
+<para>&lt;#direction description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>impulse</entry>
+                                <entry>
+<para>&lt;#impulse description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a7d170e0159d7d8003dd937867dfecbf7">
+                <title>virtual void njli::PhysicsBodyRigid::clearAllForces ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1aabbcffe4b49667b4b0d285940c775ced">
+                <title>virtual void njli::PhysicsBodyRigid::setVelocity (const btVector3 &amp;velocity)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>velocity</entry>
+                                <entry>
+<para>&lt;#velocity description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1abbd7a0ea7ee539d9b84c64859ddf8406">
+                <title>virtual const btVector3&amp; njli::PhysicsBodyRigid::getVelocity () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1ab6e5a5e5d9ee063013bb04502508d9ab">
+                <title>virtual void njli::PhysicsBodyRigid::setAngularVelocity (const btVector3 &amp;velocity)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>velocity</entry>
+                                <entry>
+<para>&lt;#velocity description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a13bb91357c547d832411c02be5e89260">
+                <title>virtual const btVector3&amp; njli::PhysicsBodyRigid::getAngularVelocity () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a0679c29d4447ee758cb84234731dfbdd">
+                <title>virtual bool njli::PhysicsBodyRigid::isInWorld () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a26ae91f4189d4e858907035bbd485967">
+                <title>static PhysicsBodyRigid** njli::PhysicsBodyRigid::createArray (const u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1aa7454c3658a28f869dbcc5d6c0386673">
+                <title>static void njli::PhysicsBodyRigid::destroyArray (PhysicsBodyRigid **array, const u32 size=0)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>array</entry>
+                                <entry>
+<para>&lt;#array description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a9cb801c257f66cf5c58dea67b10115e6">
+                <title>static PhysicsBodyRigid* njli::PhysicsBodyRigid::create ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a701d02af43bfc3c058252d907b7a091c">
+                <title>static PhysicsBodyRigid* njli::PhysicsBodyRigid::create (const PhysicsBodyRigidBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a2ea6d80ad8df71463cfe0b2c3c627b4c">
+                <title>static PhysicsBodyRigid* njli::PhysicsBodyRigid::clone (const PhysicsBodyRigid &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a7e1f73eba8cbf9860638b600f292eaee">
+                <title>static PhysicsBodyRigid* njli::PhysicsBodyRigid::copy (const PhysicsBodyRigid &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a537eeedf7da62318ae0d3a2d076b5fd4">
+                <title>static void njli::PhysicsBodyRigid::destroy (PhysicsBodyRigid *object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1af57a409d8e39b06aa74c0c742fe6ff22">
+                <title>static void njli::PhysicsBodyRigid::load (PhysicsBodyRigid &amp;object, lua_State *L, int stack_index)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>L</entry>
+                                <entry>
+<para>&lt;#L description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stack_index</entry>
+                                <entry>
+<para>&lt;#stack_index description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_physics_body_rigid_1a99dba252410763fe9ac82424321add06">
+                <title>static u32 njli::PhysicsBodyRigid::type ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

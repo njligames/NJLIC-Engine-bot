@@ -1,0 +1,1461 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_button_h_u_d" kind="class" language="C++" prot="public">
+    <compoundname>njli::ButtonHUD</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <basecompoundref refid="classnjli_1_1_abstract_frame_buffer_object" prot="public" virt="non-virtual">njli::AbstractFrameBufferObject</basecompoundref>
+    <includes refid="_button_h_u_d_8h" local="no">ButtonHUD.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_button_h_u_d_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="30" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1ae8dc759bddad5462c7a0928f109977e6" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::ButtonHUD::m_fontSize</definition>
+        <argsstring></argsstring>
+        <name>m_fontSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="306" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1a4301c64a091ff9abf32f6a6add14593c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::ButtonHUD::m_fontFace</definition>
+        <argsstring></argsstring>
+        <name>m_fontFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="307" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1aa17394aa8dfdb299d76ac1effd5bbbd5" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::ButtonHUD::m_align</definition>
+        <argsstring></argsstring>
+        <name>m_align</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="308" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1a9b6b903e46fb1369f15560b2bb710336" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::ButtonHUD::m_position</definition>
+        <argsstring></argsstring>
+        <name>m_position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="309" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="309" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1ac09c838f0985be02e905d1476d698e9b" prot="private" static="no" mutable="no">
+        <type>btVector2 *</type>
+        <definition>btVector2* njli::ButtonHUD::m_dimensions</definition>
+        <argsstring></argsstring>
+        <name>m_dimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="310" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1a6a83ddc2b584f7e83191dbfb9024df1c" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::ButtonHUD::m_text</definition>
+        <argsstring></argsstring>
+        <name>m_text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="311" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1a1162e0793f09db4e3e5d62d93b967598" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::ButtonHUD::m_fillColor</definition>
+        <argsstring></argsstring>
+        <name>m_fillColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="312" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1abbaaf649b3c55c5644cd59827caa00a9" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::ButtonHUD::m_borderColor</definition>
+        <argsstring></argsstring>
+        <name>m_borderColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="313" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1ac2561e2838776df33d2c0eff6aa3e145" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::ButtonHUD::m_textColor</definition>
+        <argsstring></argsstring>
+        <name>m_textColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="314" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1a2acbd93bdfa31be57d9a00fdd411e735" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::ButtonHUD::m_textShadowColor</definition>
+        <argsstring></argsstring>
+        <name>m_textShadowColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="315" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1ad252ad621b7f1f8903773f3167da7cac" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::ButtonHUD::m_gradientStartColor</definition>
+        <argsstring></argsstring>
+        <name>m_gradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="316" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1af633bca7b8c4643687c2db6efee9c0e1" prot="private" static="no" mutable="no">
+        <type>btVector4 *</type>
+        <definition>btVector4* njli::ButtonHUD::m_gradientEndColor</definition>
+        <argsstring></argsstring>
+        <name>m_gradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="317" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_button_h_u_d_1ac098deb37ba7aff504d4d65c5c243fb9" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::ButtonHUD::m_cornerRadius</definition>
+        <argsstring></argsstring>
+        <name>m_cornerRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="318" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="318" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a506d6b5e9296d605dbb84a8a1f8866ef" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ButtonHUD::ButtonHUD</definition>
+        <argsstring>()</argsstring>
+        <name>ButtonHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a2bb41974899ae34203aaca05acb3fefb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ButtonHUD::ButtonHUD</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>ButtonHUD</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ac20c00ea9c089549275ac33f528ff5a4" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ButtonHUD::ButtonHUD</definition>
+        <argsstring>(const ButtonHUD &amp;)</argsstring>
+        <name>ButtonHUD</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="35" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ad157ec80fdc2bd473d02fa4adcf74bfa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ButtonHUD::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a8330cb4675664992c08c2dcba7e382e5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::ButtonHUD::~ButtonHUD</definition>
+        <argsstring>()</argsstring>
+        <name>~ButtonHUD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a4dec6cd3d342055256adf12caa8fd089" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> &amp;</type>
+        <definition>ButtonHUD&amp; njli::ButtonHUD::operator=</definition>
+        <argsstring>(const ButtonHUD &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="38" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1add44501f95991324e5733c8bfc18f166" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ButtonHUD::renderFunction</definition>
+        <argsstring>(Camera *camera)</argsstring>
+        <name>renderFunction</name>
+        <reimplements refid="classnjli_1_1_abstract_frame_buffer_object_1aa75a537f5745e4be8f749892d195b43c">renderFunction</reimplements>
+        <param>
+          <type><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref> *</type>
+          <declname>camera</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="39" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a72a6b396ec221a2b33cc14217c936d0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::ButtonHUD::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a35bd5342f1ac5ea121d50f0a4c4b9981" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ButtonHUD::serialize</definition>
+        <argsstring>(void *dataBuffer, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+          <declname>dataBuffer</declname>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 15:02:57</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dataBuffer description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="68" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1aedbe9f0c1dea6d31dd13ff9e7e7e2b08" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::ButtonHUD::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="75" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1add116dc958c02dbc33d7e686c4aff429" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::ButtonHUD::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="81" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a7f1e4ffa23020919a96f41fad281d601" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::ButtonHUD::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ab43182f8de5edb34d84d0284acb0e909" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setFontSize</definition>
+        <argsstring>(f32 size)</argsstring>
+        <name>setFontSize</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a3b92a6bd18407b356492489408317fbf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setFontFace</definition>
+        <argsstring>(const char *face)</argsstring>
+        <name>setFontFace</name>
+        <param>
+          <type>const char *</type>
+          <declname>face</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>face</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#face description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a3a5f2b5ddaab37fc50633902f8365927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setPosition</definition>
+        <argsstring>(const btVector2 &amp;pos)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>pos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pos description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a94ef2e932df76cb8b390420dce0ecfe2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setDimensions</definition>
+        <argsstring>(const btVector2 &amp;dim)</argsstring>
+        <name>setDimensions</name>
+        <param>
+          <type>const btVector2 &amp;</type>
+          <declname>dim</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dim</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dim description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="179" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a8346d046cb538f1c0269f1ce10354024" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setText</definition>
+        <argsstring>(const char *text)</argsstring>
+        <name>setText</name>
+        <param>
+          <type>const char *</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#text description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a845ff0e5328fe156aff8d20e90b04602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setFillColor</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setFillColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1aaf91ad4aac85500c011a9b0bd658dc7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setBorderColor</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setBorderColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a478e096b1d257953d612fabd1e2eaf62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setTextColor</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setTextColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="203" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a8fededdc4f97b54d54568a6acfd43e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setTextShadowColor</definition>
+        <argsstring>(const btVector4 &amp;color)</argsstring>
+        <name>setTextShadowColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#color description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="209" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ab2cca8ad90957d9d2baf24ce1d844d5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setGradientStartColor</definition>
+        <argsstring>(const btVector4 &amp;start)</argsstring>
+        <name>setGradientStartColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#start description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a6b842db44f87687d59ba28d1a090da61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setGradientEndColor</definition>
+        <argsstring>(const btVector4 &amp;end)</argsstring>
+        <name>setGradientEndColor</name>
+        <param>
+          <type>const btVector4 &amp;</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>end</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#end description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a38b826893d35569f5f4bad03282523da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ButtonHUD::setCornerRadius</definition>
+        <argsstring>(f32 radius)</argsstring>
+        <name>setCornerRadius</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>radius</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#radius description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a256f464d6b5893f9cfa3eceb15f46220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::ButtonHUD::getFontSize</definition>
+        <argsstring>(f32 size)</argsstring>
+        <name>getFontSize</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="236" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a83f04cb866e1b369fd0b93605b1237a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::ButtonHUD::getFontFace</definition>
+        <argsstring>() const</argsstring>
+        <name>getFontFace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1aa421a6d2aa947e9085fcf2341d0f053e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::ButtonHUD::getPosition</definition>
+        <argsstring>() const</argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a5b0987df2a6b670226c12dc364d6e3a3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector2 &amp;</type>
+        <definition>const btVector2&amp; njli::ButtonHUD::getDimensions</definition>
+        <argsstring>() const</argsstring>
+        <name>getDimensions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="254" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a0861390deacc178bb5d8d3f5795f2257" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::ButtonHUD::getText</definition>
+        <argsstring>() const</argsstring>
+        <name>getText</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a2b5873b247fac1bd17ff2729a372f4b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::ButtonHUD::getFillColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getFillColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="266" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a1c85e36e3bee7d12f8af5b2b25cf660a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::ButtonHUD::getBorderColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getBorderColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="272" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a0216f72b83c5d25ed269d5d18b58f4ac" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::ButtonHUD::getTextColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="278" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a990306059d39800f64dc3d02a12f2dda" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::ButtonHUD::getTextShadowColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getTextShadowColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="284" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a7e8db31df5123c9d9a70f83aa4d1edb0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::ButtonHUD::getGradientStartColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getGradientStartColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a8527937688cb50f4c57af65e51df2d6a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const btVector4 &amp;</type>
+        <definition>const btVector4&amp; njli::ButtonHUD::getGradientEndColor</definition>
+        <argsstring>() const</argsstring>
+        <name>getGradientEndColor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a378f76c76951ad2d48df16ef43971ed2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>f32 njli::ButtonHUD::getCornerRadius</definition>
+        <argsstring>() const</argsstring>
+        <name>getCornerRadius</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a3009efb11b4bcd56bd933c21b230a125" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::AbstractFrameBufferObject::isHidden</definition>
+        <argsstring>() const</argsstring>
+        <name>isHidden</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a5d7b8b3bc421084f282343e506a6d289" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractFrameBufferObject::hide</definition>
+        <argsstring>()</argsstring>
+        <name>hide</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a73ffd499fceaacd59b518a541ed2133e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractFrameBufferObject::show</definition>
+        <argsstring>()</argsstring>
+        <name>show</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1aa1d06fd625897be831ed75aacb99631f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> **</type>
+        <definition>static ButtonHUD** njli::ButtonHUD::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a493b9dd71eb34cfee436005674a92f12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::ButtonHUD::destroyArray</definition>
+        <argsstring>(ButtonHUD **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ab24831855246bea2728f14c7c657d1a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> *</type>
+        <definition>static ButtonHUD* njli::ButtonHUD::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="108" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a3de59d29761170b76b44eff099b4b649" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> *</type>
+        <definition>static ButtonHUD* njli::ButtonHUD::create</definition>
+        <argsstring>(const ButtonHUDBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_button_h_u_d_builder" kindref="compound">ButtonHUDBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a9ba2fb86b1b725d947ddb21d338ef1cf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> *</type>
+        <definition>static ButtonHUD* njli::ButtonHUD::clone</definition>
+        <argsstring>(const ButtonHUD &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="124" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ab4f81ff5e8720b507354e5d9254e1ddf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> *</type>
+        <definition>static ButtonHUD* njli::ButtonHUD::copy</definition>
+        <argsstring>(const ButtonHUD &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="132" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a92a3967c328fb717935fb4667544e1c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::ButtonHUD::destroy</definition>
+        <argsstring>(ButtonHUD *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1a2584ca1f6eb5a9dd7db13261f7a01cb3" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::ButtonHUD::load</definition>
+        <argsstring>(ButtonHUD &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_button_h_u_d" kindref="compound">ButtonHUD</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="146" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_button_h_u_d_1ad2c1e7f0adb647dea2f8fd6b2b77dd9a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::ButtonHUD::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="152" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="737">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="738" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="736">
+        <label>njli::ButtonHUD</label>
+        <link refid="classnjli_1_1_button_h_u_d"/>
+        <childnode refid="737" relation="public-inheritance">
+        </childnode>
+        <childnode refid="740" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="740">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="738">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="739" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="742">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="743" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="744">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="744" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="741">
+        <label>njli::ButtonHUD</label>
+        <link refid="classnjli_1_1_button_h_u_d"/>
+        <childnode refid="742" relation="public-inheritance">
+        </childnode>
+        <childnode refid="745" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="745">
+        <label>njli::AbstractFrameBufferObject</label>
+        <link refid="classnjli_1_1_abstract_frame_buffer_object"/>
+      </node>
+      <node id="743">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="744" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/ButtonHUD.h" line="29" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ButtonHUD.h" bodystart="27" bodyend="319"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ac8d66ca8d605b2c45873fc4020c579ee" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ad157ec80fdc2bd473d02fa4adcf74bfa" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a506d6b5e9296d605dbb84a8a1f8866ef" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>ButtonHUD</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a2bb41974899ae34203aaca05acb3fefb" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>ButtonHUD</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ac20c00ea9c089549275ac33f528ff5a4" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>ButtonHUD</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a72a6b396ec221a2b33cc14217c936d0b" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a9ba2fb86b1b725d947ddb21d338ef1cf" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ButtonHUD</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ab4f81ff5e8720b507354e5d9254e1ddf" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ab24831855246bea2728f14c7c657d1a5" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a3de59d29761170b76b44eff099b4b649" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ButtonHUD</scope><name>create</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1aa1d06fd625897be831ed75aacb99631f" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a92a3967c328fb717935fb4667544e1c4" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ButtonHUD</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a493b9dd71eb34cfee436005674a92f12" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1aded6f9fc4da10af752cf90a97aaa751d" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getAspectRatio</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a1c85e36e3bee7d12f8af5b2b25cf660a" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getBorderColor</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1aedbe9f0c1dea6d31dd13ff9e7e7e2b08" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a378f76c76951ad2d48df16ef43971ed2" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getCornerRadius</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a5b0987df2a6b670226c12dc364d6e3a3" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getDimensions</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a2b5873b247fac1bd17ff2729a372f4b7" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getFillColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a83f04cb866e1b369fd0b93605b1237a5" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getFontFace</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a256f464d6b5893f9cfa3eceb15f46220" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getFontSize</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a8527937688cb50f4c57af65e51df2d6a" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getGradientEndColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a7e8db31df5123c9d9a70f83aa4d1edb0" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getGradientStartColor</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a95ae9779550ed7496011f859ec3d4766" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getHeight</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::ButtonHUD</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ButtonHUD</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ButtonHUD</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1aa421a6d2aa947e9085fcf2341d0f053e" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getPosition</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a0861390deacc178bb5d8d3f5795f2257" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getText</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a0216f72b83c5d25ed269d5d18b58f4ac" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getTextColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a990306059d39800f64dc3d02a12f2dda" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getTextShadowColor</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ae5fdf18cef91c86d8e1cf97d4728d144" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getTextureID</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1add116dc958c02dbc33d7e686c4aff429" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1aa4ab66fbdcb04f1834d1dc05b4c7a10c" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>getWidth</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a5d7b8b3bc421084f282343e506a6d289" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a5d7b8b3bc421084f282343e506a6d289" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::ButtonHUD</scope><name>hide</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a3009efb11b4bcd56bd933c21b230a125" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a3009efb11b4bcd56bd933c21b230a125" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::ButtonHUD</scope><name>isHidden</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a166068d3dbc251ce28daf2564fdb2e99" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>isLoadedGPU</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a2584ca1f6eb5a9dd7db13261f7a01cb3" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>load</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a9fa4ab667a74a7a23b18ae3418e56f7d" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>loadGPU</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1aa17394aa8dfdb299d76ac1effd5bbbd5" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_align</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1abbaaf649b3c55c5644cd59827caa00a9" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_borderColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ac098deb37ba7aff504d4d65c5c243fb9" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_cornerRadius</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ac09c838f0985be02e905d1476d698e9b" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_dimensions</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a1162e0793f09db4e3e5d62d93b967598" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_fillColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a4301c64a091ff9abf32f6a6add14593c" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_fontFace</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ae8dc759bddad5462c7a0928f109977e6" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_fontSize</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1af633bca7b8c4643687c2db6efee9c0e1" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_gradientEndColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ad252ad621b7f1f8903773f3167da7cac" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_gradientStartColor</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a9b6b903e46fb1369f15560b2bb710336" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_position</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a6a83ddc2b584f7e83191dbfb9024df1c" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_text</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ac2561e2838776df33d2c0eff6aa3e145" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_textColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a2acbd93bdfa31be57d9a00fdd411e735" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>m_textShadowColor</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a7f1e4ffa23020919a96f41fad281d601" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a4dec6cd3d342055256adf12caa8fd089" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1ababe9973dc3593e158adf12033f66b71" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>render</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1add44501f95991324e5733c8bfc18f166" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>renderFunction</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a35bd5342f1ac5ea121d50f0a4c4b9981" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ButtonHUD</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1aaf91ad4aac85500c011a9b0bd658dc7f" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setBorderColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a38b826893d35569f5f4bad03282523da" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setCornerRadius</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a94ef2e932df76cb8b390420dce0ecfe2" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setDimensions</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a845ff0e5328fe156aff8d20e90b04602" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setFillColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a3b92a6bd18407b356492489408317fbf" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setFontFace</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ab43182f8de5edb34d84d0284acb0e909" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setFontSize</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a6b842db44f87687d59ba28d1a090da61" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setGradientEndColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ab2cca8ad90957d9d2baf24ce1d844d5e" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setGradientStartColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::ButtonHUD</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a3a5f2b5ddaab37fc50633902f8365927" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setPosition</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a8346d046cb538f1c0269f1ce10354024" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setText</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a478e096b1d257953d612fabd1e2eaf62" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setTextColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a8fededdc4f97b54d54568a6acfd43e4e" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>setTextShadowColor</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a73ffd499fceaacd59b518a541ed2133e" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>show</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a73ffd499fceaacd59b518a541ed2133e" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFrameBufferObject::"><scope>njli::ButtonHUD</scope><name>show</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1ad2c1e7f0adb647dea2f8fd6b2b77dd9a" prot="public" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>type</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a66d234282238e25ef245d64d087be8d8" prot="protected" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>unLoadGPU</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::ButtonHUD</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_frame_buffer_object_1a7899eafef8e2f57953a5d1aa799085eb" prot="public" virt="virtual"><scope>njli::ButtonHUD</scope><name>~AbstractFrameBufferObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_button_h_u_d_1a8330cb4675664992c08c2dcba7e382e5" prot="protected" virt="virtual"><scope>njli::ButtonHUD</scope><name>~ButtonHUD</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

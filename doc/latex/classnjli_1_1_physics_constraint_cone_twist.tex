@@ -1,0 +1,813 @@
+\hypertarget{classnjli_1_1_physics_constraint_cone_twist}{}\section{njli\+:\+:Physics\+Constraint\+Cone\+Twist Class Reference}
+\label{classnjli_1_1_physics_constraint_cone_twist}\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+
+
+{\ttfamily \#include $<$Physics\+Constraint\+Cone\+Twist.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Physics\+Constraint\+Cone\+Twist\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classnjli_1_1_physics_constraint_cone_twist__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Physics\+Constraint\+Cone\+Twist\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=276pt]{classnjli_1_1_physics_constraint_cone_twist__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a0d6e6a5ffced973aca49898094745d75}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a0525276852c678e2dcda35d864d035db}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_af65735ee847bd4d4bc72978f52c238ec}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a78562bcb3f15cde1a2628732cc917fd7}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_ad24f7b9f50dded24bcef6a3ca0683a1c}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a62ccb09aa4eb5e21fa325888b619b434}{set\+Nodes}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$nodeA, const bt\+Transform \&rb\+A\+Frame=bt\+Transform\+::get\+Identity())
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_ade9557985d29d2dbef78d0dc232ed367}{set\+Nodes}} (\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$nodeA, \mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$nodeB, const bt\+Transform \&rb\+A\+Frame=bt\+Transform\+::get\+Identity(), const bt\+Transform \&rb\+B\+Frame=bt\+Transform\+::get\+Identity())
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a6c8c071ebac0a8b00d66a17044c9d62a}{set\+Angular\+Only}} (bool angular\+Only)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aeed1b0161940309464c6f5f56de1dd22}{set\+Limit}} (int limit\+Index, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} limit\+Value)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a708e02ef79f7e67c13eb5bfb82a76115}{set\+Limit}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \+\_\+swing\+Span1, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \+\_\+swing\+Span2, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \+\_\+twist\+Span, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \+\_\+softness=1.f, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \+\_\+bias\+Factor=0.\+3f, f32 \+\_\+relaxation\+Factor=1.\+0f)
+\item 
+const bt\+Transform \& \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a1a17ffd697fdd1028e5e2518ea86b75a}{get\+A\+Frame}} ()
+\item 
+const bt\+Transform \& \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a5f3cb5d2c160fec5ec92de024df68a3c}{get\+B\+Frame}} ()
+\item 
+int \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aa9a5bdf9fcbebce5686c4fc630597dcc}{get\+Solve\+Twist\+Limit}} ()
+\item 
+int \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_abe8033d8ead97feb20871704c0ac81a0}{get\+Solve\+Swing\+Limit}} ()
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_acee80e920f51081de9354094379f7b11}{get\+Twist\+Limit\+Sign}} ()
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a027923af16628517d65094297cb3a575}{get\+Swing\+Span1}} ()
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a08296e8ff84c002fda396b348ec622de}{get\+Swing\+Span2}} ()
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a38d2f9a65c88de728a2a1f5d3255ae24}{get\+Twist\+Span}} ()
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a456096ba5a6602c65e1cfdacd2e155ad}{get\+Twist\+Angle}} ()
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aa88ef9a706160dba1e9805171bfcbd43}{is\+Past\+Swing\+Limit}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a9552eedd807cd2833d584d0ccbf74f91}{set\+Damping}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} damping)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a7903e56124cef31df66e81467f4fd597}{enable\+Motor}} (bool b)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_ad80eeca857c3ba2977181a2db59ea185}{set\+Max\+Motor\+Impulse}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} max\+Motor\+Impulse)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a6c0ffec35cf8e2d669f7333c1d889a21}{set\+Max\+Motor\+Impulse\+Normalized}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} max\+Motor\+Impulse)
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a86bb590a043c9e7604e144081a86ee0d}{get\+Fix\+Thresh}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a0bfeee1933ef308fc523f58421dcb9a2}{set\+Fix\+Thresh}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} fix\+Thresh)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aa9330c775b1d77026c0b3b23d8750bab}{set\+Motor\+Target}} (const bt\+Quaternion \&q)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a8e8f494383a0db257761c61924481232}{set\+Motor\+Target\+In\+Constraint\+Space}} (const bt\+Quaternion \&q)
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a3df16444695d8a3d406a7efe742106fb}{get\+Point\+For\+Angle}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} f\+Angle\+In\+Radians, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} f\+Length) const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a8bbcee31a07d672830c0079e8559fde4}{set\+Frames}} (const bt\+Transform \&frameA, const bt\+Transform \&frameB)
+\item 
+const bt\+Transform \& \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_af59e5ea018cd7346aa8cbb63ba54e9e6}{get\+Frame\+OffsetA}} () const
+\item 
+const bt\+Transform \& \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a4e7b8678b101ddc4e0ead4d12a9e802e}{get\+Frame\+OffsetB}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a9320581689ebce20210ed1d0239d1257}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aa963148686e225ef41a5f101a4ae51c1}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a038c356380d19df8c4cf8830298e4092}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_ad5435f5177a5d4980ba8f1073e91eafa}{create}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_builder}{Physics\+Constraint\+Cone\+Twist\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aae501e94d550f61640012cda44d6d690}{clone}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_afeb1730a2b010167a283cb04f94a154a}{copy}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a4744a8d88fc827477a9ca1deb3781f4c}{destroy}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a3174e2995c524ac300bed364e4816080}{load}} (\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_aee319aec49b4989f389054f69b0e522f}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a947d157eba75740eb5ef4cd2a2d84fa7}{Physics\+Constraint\+Cone\+Twist}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a6f984ff219ec12b993910004831aa06f}{Physics\+Constraint\+Cone\+Twist}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a691aaa4b2f4ea930445a8ee05d50f66b}{Physics\+Constraint\+Cone\+Twist}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a3c54783fbe28ac8b26ab032bc34a8418}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_adad948a62aa3f635cd06f1799c3a1312}{$\sim$\+Physics\+Constraint\+Cone\+Twist}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \& \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a5eeb8731d6c64f9b37e00202f14fc9db}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&)
+\item 
+virtual bt\+Typed\+Constraint $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a50abadf06a0a68049c69a905cf09d1c7}{get\+Constraint}} ()
+\item 
+virtual const bt\+Typed\+Constraint $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a51dfe168c4b70ea71ce210079394b22b}{get\+Constraint}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a975d5736a7ef4c440f9138dfdfcec357}{remove\+Constraint}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Cone\+Twist\+Constraint $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_a9a2b6ba85104cb0aacc840dfa28625cf}{m\+\_\+bt\+Cone\+Twist\+Constraint}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 30 of file Physics\+Constraint\+Cone\+Twist.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a947d157eba75740eb5ef4cd2a2d84fa7}\label{classnjli_1_1_physics_constraint_cone_twist_a947d157eba75740eb5ef4cd2a2d84fa7}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}}
+\index{Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Cone\+Twist()}{PhysicsConstraintConeTwist()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Cone\+Twist\+::\+Physics\+Constraint\+Cone\+Twist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a6f984ff219ec12b993910004831aa06f}\label{classnjli_1_1_physics_constraint_cone_twist_a6f984ff219ec12b993910004831aa06f}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}}
+\index{Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Cone\+Twist()}{PhysicsConstraintConeTwist()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Cone\+Twist\+::\+Physics\+Constraint\+Cone\+Twist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a691aaa4b2f4ea930445a8ee05d50f66b}\label{classnjli_1_1_physics_constraint_cone_twist_a691aaa4b2f4ea930445a8ee05d50f66b}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}}
+\index{Physics\+Constraint\+Cone\+Twist@{Physics\+Constraint\+Cone\+Twist}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{Physics\+Constraint\+Cone\+Twist()}{PhysicsConstraintConeTwist()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Cone\+Twist\+::\+Physics\+Constraint\+Cone\+Twist (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_adad948a62aa3f635cd06f1799c3a1312}\label{classnjli_1_1_physics_constraint_cone_twist_adad948a62aa3f635cd06f1799c3a1312}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!````~Physics\+Constraint\+Cone\+Twist@{$\sim$\+Physics\+Constraint\+Cone\+Twist}}
+\index{````~Physics\+Constraint\+Cone\+Twist@{$\sim$\+Physics\+Constraint\+Cone\+Twist}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Constraint\+Cone\+Twist()}{~PhysicsConstraintConeTwist()}}
+{\footnotesize\ttfamily virtual njli\+::\+Physics\+Constraint\+Cone\+Twist\+::$\sim$\+Physics\+Constraint\+Cone\+Twist (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a3c54783fbe28ac8b26ab032bc34a8418}\label{classnjli_1_1_physics_constraint_cone_twist_a3c54783fbe28ac8b26ab032bc34a8418}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Cone\+Twist\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a0d6e6a5ffced973aca49898094745d75}\label{classnjli_1_1_physics_constraint_cone_twist_a0d6e6a5ffced973aca49898094745d75}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_aeda6c35ab271897cfe3192870d4ac7a4}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aae501e94d550f61640012cda44d6d690}\label{classnjli_1_1_physics_constraint_cone_twist_aae501e94d550f61640012cda44d6d690}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_afeb1730a2b010167a283cb04f94a154a}\label{classnjli_1_1_physics_constraint_cone_twist_afeb1730a2b010167a283cb04f94a154a}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a038c356380d19df8c4cf8830298e4092}\label{classnjli_1_1_physics_constraint_cone_twist_a038c356380d19df8c4cf8830298e4092}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_ad5435f5177a5d4980ba8f1073e91eafa}\label{classnjli_1_1_physics_constraint_cone_twist_ad5435f5177a5d4980ba8f1073e91eafa}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist_builder}{Physics\+Constraint\+Cone\+Twist\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a9320581689ebce20210ed1d0239d1257}\label{classnjli_1_1_physics_constraint_cone_twist_a9320581689ebce20210ed1d0239d1257}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}$\ast$$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a4744a8d88fc827477a9ca1deb3781f4c}\label{classnjli_1_1_physics_constraint_cone_twist_a4744a8d88fc827477a9ca1deb3781f4c}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aa963148686e225ef41a5f101a4ae51c1}\label{classnjli_1_1_physics_constraint_cone_twist_aa963148686e225ef41a5f101a4ae51c1}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a7903e56124cef31df66e81467f4fd597}\label{classnjli_1_1_physics_constraint_cone_twist_a7903e56124cef31df66e81467f4fd597}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!enable\+Motor@{enable\+Motor}}
+\index{enable\+Motor@{enable\+Motor}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{enable\+Motor()}{enableMotor()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::enable\+Motor (\begin{DoxyParamCaption}\item[{bool}]{b }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & $<$\#b description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a1a17ffd697fdd1028e5e2518ea86b75a}\label{classnjli_1_1_physics_constraint_cone_twist_a1a17ffd697fdd1028e5e2518ea86b75a}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+A\+Frame@{get\+A\+Frame}}
+\index{get\+A\+Frame@{get\+A\+Frame}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+A\+Frame()}{getAFrame()}}
+{\footnotesize\ttfamily const bt\+Transform\& njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+A\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a5f3cb5d2c160fec5ec92de024df68a3c}\label{classnjli_1_1_physics_constraint_cone_twist_a5f3cb5d2c160fec5ec92de024df68a3c}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+B\+Frame@{get\+B\+Frame}}
+\index{get\+B\+Frame@{get\+B\+Frame}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+B\+Frame()}{getBFrame()}}
+{\footnotesize\ttfamily const bt\+Transform\& njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+B\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_af65735ee847bd4d4bc72978f52c238ec}\label{classnjli_1_1_physics_constraint_cone_twist_af65735ee847bd4d4bc72978f52c238ec}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_a4d31c5267199972942d66b3480374010}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a50abadf06a0a68049c69a905cf09d1c7}\label{classnjli_1_1_physics_constraint_cone_twist_a50abadf06a0a68049c69a905cf09d1c7}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Constraint@{get\+Constraint}}
+\index{get\+Constraint@{get\+Constraint}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Constraint()}{getConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual bt\+Typed\+Constraint$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_constraint_a0a22d54c2c896af49fa57db9be76a5da}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a51dfe168c4b70ea71ce210079394b22b}\label{classnjli_1_1_physics_constraint_cone_twist_a51dfe168c4b70ea71ce210079394b22b}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Constraint@{get\+Constraint}}
+\index{get\+Constraint@{get\+Constraint}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Constraint()}{getConstraint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual const bt\+Typed\+Constraint$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_constraint_af4cb8c0158a044f75fe61f89cc278338}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a86bb590a043c9e7604e144081a86ee0d}\label{classnjli_1_1_physics_constraint_cone_twist_a86bb590a043c9e7604e144081a86ee0d}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Fix\+Thresh@{get\+Fix\+Thresh}}
+\index{get\+Fix\+Thresh@{get\+Fix\+Thresh}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Fix\+Thresh()}{getFixThresh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Fix\+Thresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_af59e5ea018cd7346aa8cbb63ba54e9e6}\label{classnjli_1_1_physics_constraint_cone_twist_af59e5ea018cd7346aa8cbb63ba54e9e6}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Frame\+OffsetA@{get\+Frame\+OffsetA}}
+\index{get\+Frame\+OffsetA@{get\+Frame\+OffsetA}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Frame\+Offset\+A()}{getFrameOffsetA()}}
+{\footnotesize\ttfamily const bt\+Transform\& njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Frame\+OffsetA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a4e7b8678b101ddc4e0ead4d12a9e802e}\label{classnjli_1_1_physics_constraint_cone_twist_a4e7b8678b101ddc4e0ead4d12a9e802e}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Frame\+OffsetB@{get\+Frame\+OffsetB}}
+\index{get\+Frame\+OffsetB@{get\+Frame\+OffsetB}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Frame\+Offset\+B()}{getFrameOffsetB()}}
+{\footnotesize\ttfamily const bt\+Transform\& njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Frame\+OffsetB (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a3df16444695d8a3d406a7efe742106fb}\label{classnjli_1_1_physics_constraint_cone_twist_a3df16444695d8a3d406a7efe742106fb}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Point\+For\+Angle@{get\+Point\+For\+Angle}}
+\index{get\+Point\+For\+Angle@{get\+Point\+For\+Angle}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Point\+For\+Angle()}{getPointForAngle()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Point\+For\+Angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{f\+Angle\+In\+Radians,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{f\+Length }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em f\+Angle\+In\+Radians} & $<$\#f\+Angle\+In\+Radians description\#$>$ \\
+\hline
+{\em f\+Length} & $<$\#f\+Length description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_abe8033d8ead97feb20871704c0ac81a0}\label{classnjli_1_1_physics_constraint_cone_twist_abe8033d8ead97feb20871704c0ac81a0}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Solve\+Swing\+Limit@{get\+Solve\+Swing\+Limit}}
+\index{get\+Solve\+Swing\+Limit@{get\+Solve\+Swing\+Limit}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Solve\+Swing\+Limit()}{getSolveSwingLimit()}}
+{\footnotesize\ttfamily int njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Solve\+Swing\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aa9a5bdf9fcbebce5686c4fc630597dcc}\label{classnjli_1_1_physics_constraint_cone_twist_aa9a5bdf9fcbebce5686c4fc630597dcc}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Solve\+Twist\+Limit@{get\+Solve\+Twist\+Limit}}
+\index{get\+Solve\+Twist\+Limit@{get\+Solve\+Twist\+Limit}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Solve\+Twist\+Limit()}{getSolveTwistLimit()}}
+{\footnotesize\ttfamily int njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Solve\+Twist\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a027923af16628517d65094297cb3a575}\label{classnjli_1_1_physics_constraint_cone_twist_a027923af16628517d65094297cb3a575}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Swing\+Span1@{get\+Swing\+Span1}}
+\index{get\+Swing\+Span1@{get\+Swing\+Span1}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Swing\+Span1()}{getSwingSpan1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Swing\+Span1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a08296e8ff84c002fda396b348ec622de}\label{classnjli_1_1_physics_constraint_cone_twist_a08296e8ff84c002fda396b348ec622de}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Swing\+Span2@{get\+Swing\+Span2}}
+\index{get\+Swing\+Span2@{get\+Swing\+Span2}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Swing\+Span2()}{getSwingSpan2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Swing\+Span2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a456096ba5a6602c65e1cfdacd2e155ad}\label{classnjli_1_1_physics_constraint_cone_twist_a456096ba5a6602c65e1cfdacd2e155ad}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Twist\+Angle@{get\+Twist\+Angle}}
+\index{get\+Twist\+Angle@{get\+Twist\+Angle}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Twist\+Angle()}{getTwistAngle()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Twist\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_acee80e920f51081de9354094379f7b11}\label{classnjli_1_1_physics_constraint_cone_twist_acee80e920f51081de9354094379f7b11}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Twist\+Limit\+Sign@{get\+Twist\+Limit\+Sign}}
+\index{get\+Twist\+Limit\+Sign@{get\+Twist\+Limit\+Sign}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Twist\+Limit\+Sign()}{getTwistLimitSign()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Twist\+Limit\+Sign (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a38d2f9a65c88de728a2a1f5d3255ae24}\label{classnjli_1_1_physics_constraint_cone_twist_a38d2f9a65c88de728a2a1f5d3255ae24}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Twist\+Span@{get\+Twist\+Span}}
+\index{get\+Twist\+Span@{get\+Twist\+Span}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Twist\+Span()}{getTwistSpan()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Twist\+Span (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a78562bcb3f15cde1a2628732cc917fd7}\label{classnjli_1_1_physics_constraint_cone_twist_a78562bcb3f15cde1a2628732cc917fd7}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_a3234aefaf2706165fbc52b5b37c05888}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aa88ef9a706160dba1e9805171bfcbd43}\label{classnjli_1_1_physics_constraint_cone_twist_aa88ef9a706160dba1e9805171bfcbd43}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!is\+Past\+Swing\+Limit@{is\+Past\+Swing\+Limit}}
+\index{is\+Past\+Swing\+Limit@{is\+Past\+Swing\+Limit}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{is\+Past\+Swing\+Limit()}{isPastSwingLimit()}}
+{\footnotesize\ttfamily bool njli\+::\+Physics\+Constraint\+Cone\+Twist\+::is\+Past\+Swing\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a3174e2995c524ac300bed364e4816080}\label{classnjli_1_1_physics_constraint_cone_twist_a3174e2995c524ac300bed364e4816080}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!load@{load}}
+\index{load@{load}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_ad24f7b9f50dded24bcef6a3ca0683a1c}\label{classnjli_1_1_physics_constraint_cone_twist_ad24f7b9f50dded24bcef6a3ca0683a1c}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Constraint\+Cone\+Twist\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_a4cb967ebae1b139bc7511bc9fcc074c5}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a5eeb8731d6c64f9b37e00202f14fc9db}\label{classnjli_1_1_physics_constraint_cone_twist_a5eeb8731d6c64f9b37e00202f14fc9db}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}}\& njli\+::\+Physics\+Constraint\+Cone\+Twist\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_constraint_cone_twist}{Physics\+Constraint\+Cone\+Twist}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a975d5736a7ef4c440f9138dfdfcec357}\label{classnjli_1_1_physics_constraint_cone_twist_a975d5736a7ef4c440f9138dfdfcec357}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!remove\+Constraint@{remove\+Constraint}}
+\index{remove\+Constraint@{remove\+Constraint}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{remove\+Constraint()}{removeConstraint()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::remove\+Constraint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_ae3dc487da3069d859bb4ddb05aa2e779}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a0525276852c678e2dcda35d864d035db}\label{classnjli_1_1_physics_constraint_cone_twist_a0525276852c678e2dcda35d864d035db}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:15
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classnjli_1_1_physics_constraint_ae294d089963246a8e65b41913730efb1}{njli\+::\+Physics\+Constraint}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a6c8c071ebac0a8b00d66a17044c9d62a}\label{classnjli_1_1_physics_constraint_cone_twist_a6c8c071ebac0a8b00d66a17044c9d62a}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Angular\+Only@{set\+Angular\+Only}}
+\index{set\+Angular\+Only@{set\+Angular\+Only}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Angular\+Only()}{setAngularOnly()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Angular\+Only (\begin{DoxyParamCaption}\item[{bool}]{angular\+Only }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em angular\+Only} & $<$\#angular\+Only description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a9552eedd807cd2833d584d0ccbf74f91}\label{classnjli_1_1_physics_constraint_cone_twist_a9552eedd807cd2833d584d0ccbf74f91}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Damping@{set\+Damping}}
+\index{set\+Damping@{set\+Damping}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Damping()}{setDamping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Damping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{damping }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em damping} & $<$\#damping description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a0bfeee1933ef308fc523f58421dcb9a2}\label{classnjli_1_1_physics_constraint_cone_twist_a0bfeee1933ef308fc523f58421dcb9a2}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Fix\+Thresh@{set\+Fix\+Thresh}}
+\index{set\+Fix\+Thresh@{set\+Fix\+Thresh}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Fix\+Thresh()}{setFixThresh()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Fix\+Thresh (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{fix\+Thresh }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em fix\+Thresh} & $<$\#fix\+Thresh description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a8bbcee31a07d672830c0079e8559fde4}\label{classnjli_1_1_physics_constraint_cone_twist_a8bbcee31a07d672830c0079e8559fde4}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Frames@{set\+Frames}}
+\index{set\+Frames@{set\+Frames}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Frames()}{setFrames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Frames (\begin{DoxyParamCaption}\item[{const bt\+Transform \&}]{frameA,  }\item[{const bt\+Transform \&}]{frameB }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em frameA} & $<$\#frameA description\#$>$ \\
+\hline
+{\em frameB} & $<$\#frameB description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aeed1b0161940309464c6f5f56de1dd22}\label{classnjli_1_1_physics_constraint_cone_twist_aeed1b0161940309464c6f5f56de1dd22}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Limit@{set\+Limit}}
+\index{set\+Limit@{set\+Limit}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Limit()}{setLimit()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Limit (\begin{DoxyParamCaption}\item[{int}]{limit\+Index,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{limit\+Value }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em limit\+Index} & $<$\#limit\+Index description\#$>$ \\
+\hline
+{\em limit\+Value} & $<$\#limit\+Value description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a708e02ef79f7e67c13eb5bfb82a76115}\label{classnjli_1_1_physics_constraint_cone_twist_a708e02ef79f7e67c13eb5bfb82a76115}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Limit@{set\+Limit}}
+\index{set\+Limit@{set\+Limit}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Limit()}{setLimit()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Limit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{\+\_\+swing\+Span1,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{\+\_\+swing\+Span2,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{\+\_\+twist\+Span,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{\+\_\+softness = {\ttfamily 1.f},  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{\+\_\+bias\+Factor = {\ttfamily 0.3f},  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{\+\_\+relaxation\+Factor = {\ttfamily 1.0f} }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+swing\+Span1} & $<$\#\+\_\+swing\+Span1 description\#$>$ \\
+\hline
+{\em \+\_\+swing\+Span2} & $<$\#\+\_\+swing\+Span2 description\#$>$ \\
+\hline
+{\em \+\_\+twist\+Span} & $<$\#\+\_\+twist\+Span description\#$>$ \\
+\hline
+{\em \+\_\+softness} & $<$\#.f description\#$>$ \\
+\hline
+{\em \+\_\+bias\+Factor} & $<$\#.3f description\#$>$ \\
+\hline
+{\em \+\_\+relaxation\+Factor} & $<$\#.0f description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_ad80eeca857c3ba2977181a2db59ea185}\label{classnjli_1_1_physics_constraint_cone_twist_ad80eeca857c3ba2977181a2db59ea185}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Max\+Motor\+Impulse@{set\+Max\+Motor\+Impulse}}
+\index{set\+Max\+Motor\+Impulse@{set\+Max\+Motor\+Impulse}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Max\+Motor\+Impulse()}{setMaxMotorImpulse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Max\+Motor\+Impulse (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{max\+Motor\+Impulse }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Motor\+Impulse} & $<$\#max\+Motor\+Impulse description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a6c0ffec35cf8e2d669f7333c1d889a21}\label{classnjli_1_1_physics_constraint_cone_twist_a6c0ffec35cf8e2d669f7333c1d889a21}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Max\+Motor\+Impulse\+Normalized@{set\+Max\+Motor\+Impulse\+Normalized}}
+\index{set\+Max\+Motor\+Impulse\+Normalized@{set\+Max\+Motor\+Impulse\+Normalized}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Max\+Motor\+Impulse\+Normalized()}{setMaxMotorImpulseNormalized()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Max\+Motor\+Impulse\+Normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{max\+Motor\+Impulse }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Motor\+Impulse} & $<$\#max\+Motor\+Impulse description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aa9330c775b1d77026c0b3b23d8750bab}\label{classnjli_1_1_physics_constraint_cone_twist_aa9330c775b1d77026c0b3b23d8750bab}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Motor\+Target@{set\+Motor\+Target}}
+\index{set\+Motor\+Target@{set\+Motor\+Target}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Motor\+Target()}{setMotorTarget()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Motor\+Target (\begin{DoxyParamCaption}\item[{const bt\+Quaternion \&}]{q }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & $<$\#q description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a8e8f494383a0db257761c61924481232}\label{classnjli_1_1_physics_constraint_cone_twist_a8e8f494383a0db257761c61924481232}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Motor\+Target\+In\+Constraint\+Space@{set\+Motor\+Target\+In\+Constraint\+Space}}
+\index{set\+Motor\+Target\+In\+Constraint\+Space@{set\+Motor\+Target\+In\+Constraint\+Space}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Motor\+Target\+In\+Constraint\+Space()}{setMotorTargetInConstraintSpace()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Motor\+Target\+In\+Constraint\+Space (\begin{DoxyParamCaption}\item[{const bt\+Quaternion \&}]{q }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em q} & $<$\#q description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a62ccb09aa4eb5e21fa325888b619b434}\label{classnjli_1_1_physics_constraint_cone_twist_a62ccb09aa4eb5e21fa325888b619b434}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Nodes@{set\+Nodes}}
+\index{set\+Nodes@{set\+Nodes}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Nodes()}{setNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{nodeA,  }\item[{const bt\+Transform \&}]{rb\+A\+Frame = {\ttfamily btTransform\+:\+:getIdentity()} }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodeA} & $<$\#nodeA description\#$>$ \\
+\hline
+{\em rb\+A\+Frame} & $<$\#rb\+A\+Frame description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_ade9557985d29d2dbef78d0dc232ed367}\label{classnjli_1_1_physics_constraint_cone_twist_ade9557985d29d2dbef78d0dc232ed367}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!set\+Nodes@{set\+Nodes}}
+\index{set\+Nodes@{set\+Nodes}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{set\+Nodes()}{setNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::set\+Nodes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{nodeA,  }\item[{\mbox{\hyperlink{classnjli_1_1_node}{Node}} $\ast$}]{nodeB,  }\item[{const bt\+Transform \&}]{rb\+A\+Frame = {\ttfamily btTransform\+:\+:getIdentity()},  }\item[{const bt\+Transform \&}]{rb\+B\+Frame = {\ttfamily btTransform\+:\+:getIdentity()} }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodeA} & $<$\#nodeA description\#$>$ \\
+\hline
+{\em nodeB} & $<$\#nodeB description\#$>$ \\
+\hline
+{\em rb\+A\+Frame} & $<$\#rb\+A\+Frame description\#$>$ \\
+\hline
+{\em rb\+B\+Frame} & $<$\#rb\+B\+Frame description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_aee319aec49b4989f389054f69b0e522f}\label{classnjli_1_1_physics_constraint_cone_twist_aee319aec49b4989f389054f69b0e522f}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!type@{type}}
+\index{type@{type}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Physics\+Constraint\+Cone\+Twist\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_physics_constraint_cone_twist_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 33 of file Physics\+Constraint\+Cone\+Twist.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_constraint_cone_twist_a9a2b6ba85104cb0aacc840dfa28625cf}\label{classnjli_1_1_physics_constraint_cone_twist_a9a2b6ba85104cb0aacc840dfa28625cf}} 
+\index{njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}!m\+\_\+bt\+Cone\+Twist\+Constraint@{m\+\_\+bt\+Cone\+Twist\+Constraint}}
+\index{m\+\_\+bt\+Cone\+Twist\+Constraint@{m\+\_\+bt\+Cone\+Twist\+Constraint}!njli\+::\+Physics\+Constraint\+Cone\+Twist@{njli\+::\+Physics\+Constraint\+Cone\+Twist}}
+\subsubsection{\texorpdfstring{m\+\_\+bt\+Cone\+Twist\+Constraint}{m\_btConeTwistConstraint}}
+{\footnotesize\ttfamily bt\+Cone\+Twist\+Constraint$\ast$ njli\+::\+Physics\+Constraint\+Cone\+Twist\+::m\+\_\+bt\+Cone\+Twist\+Constraint\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 337 of file Physics\+Constraint\+Cone\+Twist.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/physics/constraint/\mbox{\hyperlink{_physics_constraint_cone_twist_8h}{Physics\+Constraint\+Cone\+Twist.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,907 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_world_8h" kind="file" language="C++">
+    <compoundname>World.h</compoundname>
+    <includes refid="_util_8h" local="yes">Util.h</includes>
+    <includes local="no">cstddef</includes>
+    <includes refid="_world_factory_8h" local="yes">WorldFactory.h</includes>
+    <includes refid="_world_lua_virtual_machine_8h" local="yes">WorldLuaVirtualMachine.h</includes>
+    <includes refid="_world_sound_8h" local="yes">WorldSound.h</includes>
+    <includes refid="_camera_8h" local="yes">Camera.h</includes>
+    <includes refid="_world_clock_8h" local="yes">WorldClock.h</includes>
+    <includes refid="_world_debug_drawer_8h" local="yes">WorldDebugDrawer.h</includes>
+    <includes refid="_world_input_8h" local="yes">WorldInput.h</includes>
+    <includes refid="_world_resource_loader_8h" local="yes">WorldResourceLoader.h</includes>
+    <includes refid="_world_socket_8h" local="yes">WorldSocket.h</includes>
+    <includes refid="_world_state_8h" local="yes">WorldState.h</includes>
+    <includes refid="_world_state_machine_8h" local="yes">WorldStateMachine.h</includes>
+    <includes local="no">string</includes>
+    <includedby refid="_j_l_i_engine_8h" local="yes">njligames-njlic_engine/njli/JLIEngine.h</includedby>
+    <incdepgraph>
+      <node id="6466">
+        <label>list</label>
+      </node>
+      <node id="6476">
+        <label>btIDebugDraw.h</label>
+      </node>
+      <node id="6443">
+        <label>lua.hpp</label>
+      </node>
+      <node id="6481">
+        <label>WorldResourceLoader.h</label>
+        <link refid="_world_resource_loader_8h"/>
+        <childnode refid="6432" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+        <childnode refid="6428" relation="include">
+        </childnode>
+        <childnode refid="6438" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+      </node>
+      <node id="6465">
+        <label>AbstractTransform.h</label>
+        <link refid="_abstract_transform_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+      </node>
+      <node id="6483">
+        <label>netinet/in.h</label>
+      </node>
+      <node id="6439">
+        <label>queue</label>
+      </node>
+      <node id="6471">
+        <label>AbstractClock.h</label>
+        <link refid="_abstract_clock_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6472" relation="include">
+        </childnode>
+      </node>
+      <node id="6449">
+        <label>btVector2.h</label>
+      </node>
+      <node id="6456">
+        <label>Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6427" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+      </node>
+      <node id="6470">
+        <label>WorldClock.h</label>
+        <link refid="_world_clock_8h"/>
+        <childnode refid="6471" relation="include">
+        </childnode>
+        <childnode refid="6432" relation="include">
+        </childnode>
+        <childnode refid="6473" relation="include">
+        </childnode>
+        <childnode refid="6474" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+      </node>
+      <node id="6459">
+        <label>Action.h</label>
+        <link refid="_action_8h"/>
+        <childnode refid="6453" relation="include">
+        </childnode>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+        <childnode refid="6427" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+        <childnode refid="6439" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+      </node>
+      <node id="6479">
+        <label>SDL.h</label>
+      </node>
+      <node id="6461">
+        <label>WorldSound.h</label>
+        <link refid="_world_sound_8h"/>
+        <childnode refid="6462" relation="include">
+        </childnode>
+        <childnode refid="6463" relation="include">
+        </childnode>
+        <childnode refid="6432" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6464" relation="include">
+        </childnode>
+        <childnode refid="6466" relation="include">
+        </childnode>
+        <childnode refid="6467" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+      </node>
+      <node id="6454">
+        <label>PhysicsBody.h</label>
+        <link refid="_physics_body_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+        <childnode refid="6455" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+      </node>
+      <node id="6475">
+        <label>WorldDebugDrawer.h</label>
+        <link refid="_world_debug_drawer_8h"/>
+        <childnode refid="6462" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6476" relation="include">
+        </childnode>
+        <childnode refid="6477" relation="include">
+        </childnode>
+        <childnode refid="6478" relation="include">
+        </childnode>
+        <childnode refid="6479" relation="include">
+        </childnode>
+      </node>
+      <node id="6423">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6431">
+        <label>AbstractFactoryObject.h</label>
+        <link refid="_abstract_factory_object_8h"/>
+        <childnode refid="6427" relation="include">
+        </childnode>
+        <childnode refid="6432" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6429" relation="include">
+        </childnode>
+      </node>
+      <node id="6417">
+        <label>Log.h</label>
+        <link refid="_log_8h"/>
+        <childnode refid="6418" relation="include">
+        </childnode>
+        <childnode refid="6419" relation="include">
+        </childnode>
+        <childnode refid="6420" relation="include">
+        </childnode>
+        <childnode refid="6421" relation="include">
+        </childnode>
+      </node>
+      <node id="6488">
+        <label>btQuickprof.h</label>
+      </node>
+      <node id="6460">
+        <label>PhysicsRayContact.h</label>
+        <link refid="_physics_ray_contact_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+      </node>
+      <node id="6486">
+        <label>WorldStateMachine.h</label>
+        <link refid="_world_state_machine_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6487" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+      </node>
+      <node id="6430">
+        <label>AbstractBuilder.h</label>
+        <link refid="_abstract_builder_8h"/>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6429" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+      </node>
+      <node id="6419">
+        <label>SDL_assert.h</label>
+      </node>
+      <node id="6436">
+        <label>string</label>
+      </node>
+      <node id="6420">
+        <label>SDL_config.h</label>
+      </node>
+      <node id="6482">
+        <label>WorldSocket.h</label>
+        <link refid="_world_socket_8h"/>
+        <childnode refid="6483" relation="include">
+        </childnode>
+        <childnode refid="6432" relation="include">
+        </childnode>
+        <childnode refid="6439" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6484" relation="include">
+        </childnode>
+      </node>
+      <node id="6438">
+        <label>map</label>
+      </node>
+      <node id="6469">
+        <label>btVector3.h</label>
+      </node>
+      <node id="6421">
+        <label>SDL_log.h</label>
+      </node>
+      <node id="6427">
+        <label>btAlignedObjectArray.h</label>
+      </node>
+      <node id="6474">
+        <label>stddef.h</label>
+      </node>
+      <node id="6485">
+        <label>WorldState.h</label>
+        <link refid="_world_state_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6444" relation="include">
+        </childnode>
+        <childnode refid="6450" relation="include">
+        </childnode>
+        <childnode refid="6451" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+      </node>
+      <node id="6450">
+        <label>DeviceMouse.h</label>
+        <link refid="_device_mouse_8h"/>
+        <childnode refid="6447" relation="include">
+        </childnode>
+        <childnode refid="6449" relation="include">
+        </childnode>
+      </node>
+      <node id="6480">
+        <label>WorldInput.h</label>
+        <link refid="_world_input_8h"/>
+        <childnode refid="6432" relation="include">
+        </childnode>
+        <childnode refid="6450" relation="include">
+        </childnode>
+        <childnode refid="6451" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6467" relation="include">
+        </childnode>
+      </node>
+      <node id="6418">
+        <label>Macros.h</label>
+        <link refid="_macros_8h"/>
+      </node>
+      <node id="6429">
+        <label>btSerializer.h</label>
+      </node>
+      <node id="6468">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+        <childnode refid="6469" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+      </node>
+      <node id="6477">
+        <label>debug_draw.hpp</label>
+      </node>
+      <node id="6441">
+        <label>btBroadphaseProxy.h</label>
+      </node>
+      <node id="6458">
+        <label>btManifoldPoint.h</label>
+      </node>
+      <node id="6415">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6425" relation="include">
+        </childnode>
+        <childnode refid="6426" relation="include">
+        </childnode>
+        <childnode refid="6442" relation="include">
+        </childnode>
+        <childnode refid="6461" relation="include">
+        </childnode>
+        <childnode refid="6468" relation="include">
+        </childnode>
+        <childnode refid="6470" relation="include">
+        </childnode>
+        <childnode refid="6475" relation="include">
+        </childnode>
+        <childnode refid="6480" relation="include">
+        </childnode>
+        <childnode refid="6481" relation="include">
+        </childnode>
+        <childnode refid="6482" relation="include">
+        </childnode>
+        <childnode refid="6485" relation="include">
+        </childnode>
+        <childnode refid="6486" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+      </node>
+      <node id="6445">
+        <label>btScalar.h</label>
+      </node>
+      <node id="6440">
+        <label>JLIFactoryTypes.h</label>
+        <link refid="_j_l_i_factory_types_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6441" relation="include">
+        </childnode>
+      </node>
+      <node id="6487">
+        <label>AbstractStateMachine.h</label>
+        <link refid="_abstract_state_machine_8h"/>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6444" relation="include">
+        </childnode>
+        <childnode refid="6488" relation="include">
+        </childnode>
+        <childnode refid="6439" relation="include">
+        </childnode>
+      </node>
+      <node id="6428">
+        <label>btHashMap.h</label>
+      </node>
+      <node id="6426">
+        <label>WorldFactory.h</label>
+        <link refid="_world_factory_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6427" relation="include">
+        </childnode>
+        <childnode refid="6428" relation="include">
+        </childnode>
+        <childnode refid="6429" relation="include">
+        </childnode>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6438" relation="include">
+        </childnode>
+        <childnode refid="6439" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+      </node>
+      <node id="6446">
+        <label>DeviceKey.h</label>
+        <link refid="_device_key_8h"/>
+        <childnode refid="6447" relation="include">
+        </childnode>
+        <childnode refid="6448" relation="include">
+        </childnode>
+        <childnode refid="6449" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+      </node>
+      <node id="6463">
+        <label>SoundPlatform.h</label>
+      </node>
+      <node id="6437">
+        <label>vector</label>
+      </node>
+      <node id="6432">
+        <label>AbstractObject.h</label>
+        <link refid="_abstract_object_8h"/>
+        <childnode refid="6433" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+      </node>
+      <node id="6457">
+        <label>btDispatcher.h</label>
+      </node>
+      <node id="6451">
+        <label>DeviceTouch.h</label>
+        <link refid="_device_touch_8h"/>
+        <childnode refid="6447" relation="include">
+        </childnode>
+        <childnode refid="6448" relation="include">
+        </childnode>
+        <childnode refid="6449" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+      </node>
+      <node id="6448">
+        <label>Game.h</label>
+        <link refid="_game_8h"/>
+      </node>
+      <node id="6442">
+        <label>WorldLuaVirtualMachine.h</label>
+        <link refid="_world_lua_virtual_machine_8h"/>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+        <childnode refid="6444" relation="include">
+        </childnode>
+        <childnode refid="6446" relation="include">
+        </childnode>
+        <childnode refid="6450" relation="include">
+        </childnode>
+        <childnode refid="6451" relation="include">
+        </childnode>
+        <childnode refid="6452" relation="include">
+        </childnode>
+        <childnode refid="6456" relation="include">
+        </childnode>
+        <childnode refid="6457" relation="include">
+        </childnode>
+        <childnode refid="6458" relation="include">
+        </childnode>
+        <childnode refid="6459" relation="include">
+        </childnode>
+        <childnode refid="6460" relation="include">
+        </childnode>
+        <childnode refid="6427" relation="include">
+        </childnode>
+      </node>
+      <node id="6472">
+        <label>time.h</label>
+      </node>
+      <node id="6424">
+        <label>math.h</label>
+      </node>
+      <node id="6453">
+        <label>AbstractActionable.h</label>
+        <link refid="_abstract_actionable_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6439" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+      </node>
+      <node id="6473">
+        <label>LinearMath/btQuickprof.h</label>
+      </node>
+      <node id="6425">
+        <label>cstddef</label>
+      </node>
+      <node id="6467">
+        <label>unordered_map</label>
+      </node>
+      <node id="6416">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="6417" relation="include">
+        </childnode>
+        <childnode refid="6422" relation="include">
+        </childnode>
+        <childnode refid="6423" relation="include">
+        </childnode>
+        <childnode refid="6424" relation="include">
+        </childnode>
+      </node>
+      <node id="6462">
+        <label>GraphicsPlatform.h</label>
+      </node>
+      <node id="6452">
+        <label>Node.h</label>
+        <link refid="_node_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6453" relation="include">
+        </childnode>
+        <childnode refid="6440" relation="include">
+        </childnode>
+        <childnode refid="6449" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6454" relation="include">
+        </childnode>
+        <childnode refid="6455" relation="include">
+        </childnode>
+      </node>
+      <node id="6464">
+        <label>Sound.h</label>
+        <link refid="_sound_8h"/>
+        <childnode refid="6462" relation="include">
+        </childnode>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6431" relation="include">
+        </childnode>
+        <childnode refid="6465" relation="include">
+        </childnode>
+        <childnode refid="6443" relation="include">
+        </childnode>
+        <childnode refid="6463" relation="include">
+        </childnode>
+      </node>
+      <node id="6444">
+        <label>AbstractState.h</label>
+        <link refid="_abstract_state_8h"/>
+        <childnode refid="6430" relation="include">
+        </childnode>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6445" relation="include">
+        </childnode>
+        <childnode refid="6423" relation="include">
+        </childnode>
+      </node>
+      <node id="6455">
+        <label>btTransform.h</label>
+      </node>
+      <node id="6478">
+        <label>thread</label>
+      </node>
+      <node id="6434">
+        <label>algorithm</label>
+      </node>
+      <node id="6433">
+        <label>AbstractDecorator.h</label>
+        <link refid="_abstract_decorator_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+        <childnode refid="6434" relation="include">
+        </childnode>
+        <childnode refid="6435" relation="include">
+        </childnode>
+        <childnode refid="6436" relation="include">
+        </childnode>
+        <childnode refid="6437" relation="include">
+        </childnode>
+      </node>
+      <node id="6447">
+        <label>DeviceInputTime.h</label>
+        <link refid="_device_input_time_8h"/>
+        <childnode refid="6416" relation="include">
+        </childnode>
+      </node>
+      <node id="6422">
+        <label>stdio.h</label>
+      </node>
+      <node id="6435">
+        <label>cstring</label>
+      </node>
+      <node id="6484">
+        <label>File.h</label>
+        <link refid="_file_8h"/>
+        <childnode refid="6418" relation="include">
+        </childnode>
+        <childnode refid="6422" relation="include">
+        </childnode>
+        <childnode refid="6423" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6490">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="6489">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="6490" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnjli_1_1_world" prot="public">njli::World</innerclass>
+    <innernamespace refid="namespacenjli">njli</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>World.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>JLIGameEngineTest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>James<sp/>Folk<sp/>on<sp/>11/21/14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2014<sp/>James<sp/>Folk.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__JLIGameEngineTest__World__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__JLIGameEngineTest__World__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_util_8h" kindref="compound">Util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;btAlignedObjectArray.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_factory_8h" kindref="compound">WorldFactory.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_lua_virtual_machine_8h" kindref="compound">WorldLuaVirtualMachine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;WorldSQLite.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_sound_8h" kindref="compound">WorldSound.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;WorldPythonVirtualMachine.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_camera_8h" kindref="compound">Camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_clock_8h" kindref="compound">WorldClock.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_debug_drawer_8h" kindref="compound">WorldDebugDrawer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;WorldHUD.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_input_8h" kindref="compound">WorldInput.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_resource_loader_8h" kindref="compound">WorldResourceLoader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_socket_8h" kindref="compound">WorldSocket.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_sound_8h" kindref="compound">WorldSound.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_state_8h" kindref="compound">WorldState.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_world_state_machine_8h" kindref="compound">WorldStateMachine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;WorldFacebook.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenjli" kindref="compound">njli</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">WorldHUD;</highlight></codeline>
+<codeline lineno="38" refid="classnjli_1_1_world" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_world" kindref="compound">World</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_object" kindref="compound">AbstractObject</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" kindref="member">AbstractDecorator::setName</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" kindref="member">AbstractDecorator::getName</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a7e31e4dff9169bd82c24e69ff29b53b6" kindref="member">createInstance</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a3bddccf6aeb57d953f358a2e66fc2c00" kindref="member">destroyInstance</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world" kindref="compound">World</ref><sp/>*<ref refid="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4" kindref="member">getInstance</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a9c8ccd2a51131b026b1ee6c9135eea8b" kindref="member">hasInstance</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_1af01e96219aea73e611ba28179b3532ed" kindref="member">World</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1aaf74d0ac73e1bf62d7b26bf7fdb6b5cd" kindref="member">~World</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref><sp/>*<ref refid="classnjli_1_1_world_1a28299874538b8a714bcbae908760a364" kindref="member">getWorldFactory</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref><sp/>*<ref refid="classnjli_1_1_world_1a28299874538b8a714bcbae908760a364" kindref="member">getWorldFactory</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_resource_loader" kindref="compound">WorldResourceLoader</ref><sp/>*<ref refid="classnjli_1_1_world_1a094d454c35f0afea279bb5fbb39c196a" kindref="member">getWorldResourceLoader</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_resource_loader" kindref="compound">WorldResourceLoader</ref><sp/>*<ref refid="classnjli_1_1_world_1a094d454c35f0afea279bb5fbb39c196a" kindref="member">getWorldResourceLoader</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref><sp/>*<ref refid="classnjli_1_1_world_1a00797432cd913a07ad852e703cbf7278" kindref="member">getWorldClock</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref><sp/>*<ref refid="classnjli_1_1_world_1a00797432cd913a07ad852e703cbf7278" kindref="member">getWorldClock</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref><sp/>*<ref refid="classnjli_1_1_world_1a6ebccef746ad4e44455bae7698839e29" kindref="member">getWorldLuaVirtualMachine</ref>();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref><sp/>*<ref refid="classnjli_1_1_world_1a6ebccef746ad4e44455bae7698839e29" kindref="member">getWorldLuaVirtualMachine</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WorldPythonVirtualMachine<sp/>*getWorldPythonVirtualMachine();</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>WorldPythonVirtualMachine<sp/>*getWorldPythonVirtualMachine()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref><sp/>*<ref refid="classnjli_1_1_world_1a245f64dbfb8ac4b9aa405c05c58a77e5" kindref="member">getWorldSocket</ref>();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref><sp/>*<ref refid="classnjli_1_1_world_1a245f64dbfb8ac4b9aa405c05c58a77e5" kindref="member">getWorldSocket</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="comment">//<sp/>WorldFacebook<sp/>*getWorldFacebook();</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"></highlight><highlight class="comment">//<sp/>const<sp/>WorldFacebook<sp/>*getWorldFacebook()<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(USE_NANOVG_LIBRARY)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_h_u_d" kindref="compound">WorldHUD</ref><sp/>*getWorldHUD();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_h_u_d" kindref="compound">WorldHUD</ref><sp/>*getWorldHUD()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_input" kindref="compound">WorldInput</ref><sp/>*<ref refid="classnjli_1_1_world_1a9b8a2755f4643d169d54e047554ba8f2" kindref="member">getWorldInput</ref>();</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_input" kindref="compound">WorldInput</ref><sp/>*<ref refid="classnjli_1_1_world_1a9b8a2755f4643d169d54e047554ba8f2" kindref="member">getWorldInput</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_sound" kindref="compound">WorldSound</ref><sp/>*<ref refid="classnjli_1_1_world_1aeafce2408df830b6d0d4f4cc70a502f6" kindref="member">getWorldSound</ref>();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_sound" kindref="compound">WorldSound</ref><sp/>*<ref refid="classnjli_1_1_world_1aeafce2408df830b6d0d4f4cc70a502f6" kindref="member">getWorldSound</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_state_machine" kindref="compound">WorldStateMachine</ref><sp/>*<ref refid="classnjli_1_1_world_1a779f9ee41d7e73e013654dcdb1d83cf9" kindref="member">getStateMachine</ref>();</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_state_machine" kindref="compound">WorldStateMachine</ref><sp/>*<ref refid="classnjli_1_1_world_1a779f9ee41d7e73e013654dcdb1d83cf9" kindref="member">getStateMachine</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_debug_drawer" kindref="compound">WorldDebugDrawer</ref><sp/>*<ref refid="classnjli_1_1_world_1abd9b6751260b5e6c28fa9cfd874cfaad" kindref="member">getDebugDrawer</ref>();</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_debug_drawer" kindref="compound">WorldDebugDrawer</ref><sp/>*<ref refid="classnjli_1_1_world_1abd9b6751260b5e6c28fa9cfd874cfaad" kindref="member">getDebugDrawer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WorldSQLite*<sp/>getWorldSQLite();</highlight></codeline>
+<codeline lineno="224"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>const<sp/>WorldSQLite*<sp/>getWorldSQLite()<sp/>const;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a027fc2766ebe49b79f974e7e808610f8" kindref="member">touchDown</ref>(<ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>**touches);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a1b2be462f5455b01856968eea7ee96bb" kindref="member">touchUp</ref>(<ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>**touches);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a19b6222b4d9eaa0f83ab74f555ed6e68" kindref="member">touchMove</ref>(<ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>**touches);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a456be839bfe441022745d2790ac44942" kindref="member">touchCancelled</ref>(<ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>**touches);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a027fc2766ebe49b79f974e7e808610f8" kindref="member">touchDown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>&amp;touch);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a1b2be462f5455b01856968eea7ee96bb" kindref="member">touchUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>&amp;touch);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a19b6222b4d9eaa0f83ab74f555ed6e68" kindref="member">touchMove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>&amp;touch);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a484e8c77cd1ed5613189c503326a310b" kindref="member">mouseDown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref><sp/>&amp;touch);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a4f3f72ae362ffc3aa5636d30dd84224e" kindref="member">mouseUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref><sp/>&amp;touch);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a6c13bee0e9fca64f619dd92b927f948a" kindref="member">mouseMove</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref><sp/>&amp;touch);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ad64c93b5f93db6e9df3ce7b9869d12d4" kindref="member">keyUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keycodeName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withCapsLock,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withControl,</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withShift,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withAlt,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withGui);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a6fc507c345272128f64cd5c6d4e6ca08" kindref="member">keyDown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keycodeName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withCapsLock,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withControl,</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withShift,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withAlt,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withGui);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1abd97ee22f8fbfa29ace0f4859b16d6e0" kindref="member">keyboardShow</ref>();</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a5ecc9ab5fe1c940ae021489d5574edf7" kindref="member">keyboardCancel</ref>();</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a6e7f30cb39fb2cc23148a3765d0fed3e" kindref="member">keyboardReturn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>void<sp/>setTouchCamera(Camera*<sp/>camera);</highlight></codeline>
+<codeline lineno="280"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Camera*<sp/>getTouchCamera();</highlight></codeline>
+<codeline lineno="286"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>const<sp/>Camera*<sp/>getTouchCamera()<sp/>const;</highlight></codeline>
+<codeline lineno="292"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ab816a3e089fafc8fe7723723fb201bee" kindref="member">getViewPort</ref>(<ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>*viewPort)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a32797f128d963f99839c12faf4b4dc12" kindref="member">createScript</ref>();</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ad27af4cf142639c3436f4163d0526442" kindref="member">destroyScript</ref>();</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a248c324a0a97b0f286eaedf8f997688e" kindref="member">update</ref>(<ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>timeStep,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref><sp/>numSubSteps);</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a3e7f68f7467d421971e13dfcc5e2100e" kindref="member">render</ref>();</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a04acd6d056b32f996c165d2d9a8ee34d" kindref="member">resize</ref>(<ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>x,<sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>y,<sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>width,<sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>height,<sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/>orientation);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector2<sp/>&amp;<ref refid="classnjli_1_1_world_1a0d888d6664fed006bde6e9fd806bc41c" kindref="member">getViewportDimensions</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/><ref refid="classnjli_1_1_world_1a4f3d49c5cc8e3a3a2c2439e663a9c60b" kindref="member">getAspectRatio</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classnjli_1_1_world_1a2811263a084944cded212cd714a165cf" kindref="member">getClassName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/><ref refid="classnjli_1_1_world_1a35e88a33b35fa6de44f10e3a93a62468" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>std::string()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a80c42c94ab3fbf4242f3d9b5e7866379" kindref="member">setScene</ref>(<ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref><sp/>*scene);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1aabf2a07e2fab640f5800357ad1fd7717" kindref="member">removeScene</ref>();</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref><sp/>*<ref refid="classnjli_1_1_world_1aacef8d7932cbc6df28524a15b30b50f5" kindref="member">getScene</ref>();</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref><sp/>*<ref refid="classnjli_1_1_world_1aacef8d7932cbc6df28524a15b30b50f5" kindref="member">getScene</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ad67785776209cbbaa6140fcc90b4913a" kindref="member">enableDebugDraw</ref>(<ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref><sp/>*camera);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a4894e4a53f692a503661a7836bf7713f" kindref="member">disableDebugDraw</ref>();</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a5b67da9acd56cec605ad0dccc2b957cd" kindref="member">startSocket</ref>(<ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>n0,<sp/><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>n1,<sp/><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>n2,<sp/><ref refid="_util_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>n3,<sp/><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/>port<sp/>=<sp/>2223);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a5b67da9acd56cec605ad0dccc2b957cd" kindref="member">startSocket</ref>(<ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/>port<sp/>=<sp/>2223);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a776f8bf7c461ecac1db1b485828f6894" kindref="member">isSocketEnabled</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a7d217f38577d72d349e2df64761dc4c5" kindref="member">stopSocket</ref>();</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classnjli_1_1_world_1ac65ea60b2f5033c2e8a7504820d59ac5" kindref="member">getSocketAddress</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/><ref refid="classnjli_1_1_world_1af108b41273b0ff7abbf88fa6e311304e" kindref="member">getSocketPort</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a7eebf55a7920061d87e5dc03feb692da" kindref="member">setBackgroundAlpha</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>alpha);</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5" kindref="member">setBackgroundColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector3<sp/>&amp;color);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5" kindref="member">setBackgroundColor</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector4<sp/>&amp;color);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5" kindref="member">setBackgroundColor</ref>(<ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>red,<sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>green,<sp/><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref><sp/>blue);</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>btVector4<sp/>&amp;<ref refid="classnjli_1_1_world_1a7805d9b4c5ef0943a5c1c32b507d2151" kindref="member">getBackgroundColor</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classnjli_1_1_world_1a5ddb30abad714d14694863bb89af14b9" kindref="member">getDeviceName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a5c9cc63ac7cb847e6d581a867614e47d" kindref="member">setDeviceName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*name);</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a41b67b3dea3196afa6ff1b0d961b39d2" kindref="member">enablePauseAnimation</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ac84f5b1da4bbd124829f30b7a3fbd4d0" kindref="member">isAnimationPaused</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"></highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ae8f238cc0f23ce6b8a05ad5a3da555f7" kindref="member">enablePauseGame</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1abfbc1b055160d3c6a6ccd4f1ec784b0b" kindref="member">isPausedGame</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a6470e58e64be02c4bf71a201417bcbbc" kindref="member">isDebug</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a72aa272f2e66633642e069106f09c9e9" kindref="member">runJavascript</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*script);</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"></highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>void<sp/>parseSocketMessage(const<sp/>char<sp/>*msg);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a4118fbcbb82b872369b235bbc7cde67f" kindref="member">processMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;msg,</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>delimeter<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;root&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a322956de68eb15d43bfb39083942edee" kindref="member">handleSocketMessage</ref>();</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669" kindref="member">checkRayCollision</ref>(<ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>**touches,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*code,</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableNodeTouched<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669" kindref="member">checkRayCollision</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref><sp/>&amp;touch,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*code,</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableNodeTouched<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669" kindref="member">checkRayCollision</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref><sp/>&amp;mouse,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*code,</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>disableNodeTouched<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="505" refid="classnjli_1_1_world_1a96897049ea6e799e334d53f8e8735e35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btAlignedObjectArray&lt;njli::PhysicsRayContact<sp/>*&gt;<sp/><ref refid="classnjli_1_1_world_1a96897049ea6e799e334d53f8e8735e35" kindref="member">m_RayContacts</ref>;</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_1af01e96219aea73e611ba28179b3532ed" kindref="member">World</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world" kindref="compound">World</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world" kindref="compound">World</ref><sp/>&amp;<ref refid="classnjli_1_1_world_1a2fe83dc2d899a91ef21ac20220e2ada4" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world" kindref="compound">World</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"></highlight></codeline>
+<codeline lineno="510" refid="classnjli_1_1_world_1afbef76d7d011571721a36b2eb625e997" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world" kindref="compound">World</ref><sp/>*<ref refid="classnjli_1_1_world_1afbef76d7d011571721a36b2eb625e997" kindref="member">s_Instance</ref>;</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"></highlight></codeline>
+<codeline lineno="512" refid="classnjli_1_1_world_1ae50678873f637941aa87ec45c33e9a1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref><sp/>*<ref refid="classnjli_1_1_world_1ae50678873f637941aa87ec45c33e9a1c" kindref="member">m_WorldFactory</ref>;</highlight></codeline>
+<codeline lineno="513" refid="classnjli_1_1_world_1a4ebb658eba80c17e930b96881d3a4e19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_resource_loader" kindref="compound">WorldResourceLoader</ref><sp/>*<ref refid="classnjli_1_1_world_1a4ebb658eba80c17e930b96881d3a4e19" kindref="member">m_WorldResourceLoader</ref>;</highlight></codeline>
+<codeline lineno="514" refid="classnjli_1_1_world_1aacebc8d861e42a409cf1a875972da641" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_clock" kindref="compound">WorldClock</ref><sp/>*<ref refid="classnjli_1_1_world_1aacebc8d861e42a409cf1a875972da641" kindref="member">m_WorldClock</ref>;</highlight></codeline>
+<codeline lineno="515" refid="classnjli_1_1_world_1ab3878c3df6c61327dfd7a08864e567a9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref><sp/>*<ref refid="classnjli_1_1_world_1ab3878c3df6c61327dfd7a08864e567a9" kindref="member">m_WorldLuaVirtualMachine</ref>;</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WorldPythonVirtualMachine<sp/>*m_WorldPythonVirtualMachine;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="517" refid="classnjli_1_1_world_1a14412bd1ed14fca506732c0234db2b28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_state_machine" kindref="compound">WorldStateMachine</ref><sp/>*<ref refid="classnjli_1_1_world_1a14412bd1ed14fca506732c0234db2b28" kindref="member">m_stateMachine</ref>;</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519" refid="classnjli_1_1_world_1a0ac18bfa72f55b16c00703e1035a0af7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btVector2<sp/>*<ref refid="classnjli_1_1_world_1a0ac18bfa72f55b16c00703e1035a0af7" kindref="member">m_ViewPortDimensions</ref>;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521" refid="classnjli_1_1_world_1a9c9279cbbb77ef973cb7d003198789b7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref><sp/>*<ref refid="classnjli_1_1_world_1a9c9279cbbb77ef973cb7d003198789b7" kindref="member">m_Scene</ref>;</highlight></codeline>
+<codeline lineno="522" refid="classnjli_1_1_world_1a0f6ea126555fa904aa246baba084c9de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_socket" kindref="compound">WorldSocket</ref><sp/>*<ref refid="classnjli_1_1_world_1a0f6ea126555fa904aa246baba084c9de" kindref="member">m_WorldSocket</ref>;</highlight></codeline>
+<codeline lineno="523" refid="classnjli_1_1_world_1a922a3ec1f96ac87f97faee6329f39686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_h_u_d" kindref="compound">WorldHUD</ref><sp/>*<ref refid="classnjli_1_1_world_1a922a3ec1f96ac87f97faee6329f39686" kindref="member">m_WorldHUD</ref>;</highlight></codeline>
+<codeline lineno="524" refid="classnjli_1_1_world_1a87601ddb30dead7b8b0bd05bcc1f7ff3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_input" kindref="compound">WorldInput</ref><sp/>*<ref refid="classnjli_1_1_world_1a87601ddb30dead7b8b0bd05bcc1f7ff3" kindref="member">m_WorldInput</ref>;</highlight></codeline>
+<codeline lineno="525" refid="classnjli_1_1_world_1a004cd4a3a730b83733b3ff91bfaedce2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_sound" kindref="compound">WorldSound</ref><sp/>*<ref refid="classnjli_1_1_world_1a004cd4a3a730b83733b3ff91bfaedce2" kindref="member">m_WorldSound</ref>;</highlight></codeline>
+<codeline lineno="526" refid="classnjli_1_1_world_1aa92f105e6f53c7d8c30b8e453e1181c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_world_debug_drawer" kindref="compound">WorldDebugDrawer</ref><sp/>*<ref refid="classnjli_1_1_world_1aa92f105e6f53c7d8c30b8e453e1181c8" kindref="member">m_WorldDebugDrawer</ref>;</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WorldSQLite*<sp/>m_WorldSQLite;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>WorldFacebook<sp/>*m_WorldFacebook;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="529" refid="classnjli_1_1_world_1ac9ab0b237e486a28bd08adf913b3908c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ac9ab0b237e486a28bd08adf913b3908c" kindref="member">m_enableDebugDraw</ref>;</highlight></codeline>
+<codeline lineno="530" refid="classnjli_1_1_world_1a5ae1a42d02339871c60b45ecacc92753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_camera" kindref="compound">Camera</ref><sp/>*<ref refid="classnjli_1_1_world_1a5ae1a42d02339871c60b45ecacc92753" kindref="member">m_DebugDrawCamera</ref>;</highlight></codeline>
+<codeline lineno="531" refid="classnjli_1_1_world_1a180a3f557467c6bb6d88cf05b691a6f4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_material" kindref="compound">Material</ref><sp/>*<ref refid="classnjli_1_1_world_1a180a3f557467c6bb6d88cf05b691a6f4" kindref="member">m_DebugDrawMaterial</ref>;</highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Camera*<sp/>m_TouchCamera;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535" refid="classnjli_1_1_world_1ab701cb678bcb47262db407e4684608a2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1ab701cb678bcb47262db407e4684608a2" kindref="member">m_SocketEnabled</ref>;</highlight></codeline>
+<codeline lineno="536" refid="classnjli_1_1_world_1a51c1d3b5047c2e10c2850faf137efa9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classnjli_1_1_world_1a51c1d3b5047c2e10c2850faf137efa9a" kindref="member">m_SocketAddress</ref>;</highlight></codeline>
+<codeline lineno="537" refid="classnjli_1_1_world_1aafbdf669fc3dbc91c2b746b653ac4f17" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054" kindref="member">u16</ref><sp/><ref refid="classnjli_1_1_world_1aafbdf669fc3dbc91c2b746b653ac4f17" kindref="member">m_SocketPort</ref>;</highlight></codeline>
+<codeline lineno="538" refid="classnjli_1_1_world_1acf0b94b1d7cba8d62158065b03de9012" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>btVector4<sp/>*<ref refid="classnjli_1_1_world_1acf0b94b1d7cba8d62158065b03de9012" kindref="member">m_BackgroundColor</ref>;</highlight></codeline>
+<codeline lineno="539" refid="classnjli_1_1_world_1a9dc158249ba20ca7b1523cce0d8d309f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classnjli_1_1_world_1a9dc158249ba20ca7b1523cce0d8d309f" kindref="member">m_DeviceName</ref>;</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight></codeline>
+<codeline lineno="541" refid="classnjli_1_1_world_1a5a261c335c55b2fd0e678e815a6cc85a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a5a261c335c55b2fd0e678e815a6cc85a" kindref="member">m_AnimationPaused</ref>;</highlight></codeline>
+<codeline lineno="542" refid="classnjli_1_1_world_1af387313aec7a62f3792e76d9610b70a8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1af387313aec7a62f3792e76d9610b70a8" kindref="member">m_GamePaused</ref>;</highlight></codeline>
+<codeline lineno="543"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="544"><highlight class="normal"></highlight></codeline>
+<codeline lineno="545" refid="namespacenjli_1a7cd195555cbed7b1657e1d48aa0070f5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>btVector2<sp/><ref refid="namespacenjli_1a7cd195555cbed7b1657e1d48aa0070f5" kindref="member">SCREEN</ref>()</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4" kindref="member">njli::World::getInstance</ref>())</highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4" kindref="member">njli::World::getInstance</ref>()-&gt;<ref refid="classnjli_1_1_world_1a0d888d6664fed006bde6e9fd806bc41c" kindref="member">getViewportDimensions</ref>();</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>btVector2(0,<sp/>0);</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="551"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="553"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>defined(__JLIGameEngineTest__World__)<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/World.h"/>
+  </compounddef>
+</doxygen>

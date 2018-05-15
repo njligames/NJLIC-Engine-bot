@@ -1,0 +1,746 @@
+\hypertarget{classeasylogger_1_1_logger}{}\section{easylogger\+:\+:Logger Class Reference}
+\label{classeasylogger_1_1_logger}\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+
+
+\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} system core class.  
+
+
+
+
+{\ttfamily \#include $<$easylogger.\+h$>$}
+
+
+
+Collaboration diagram for easylogger\+:\+:Logger\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classeasylogger_1_1_logger__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger_a2cb8c991ae2c651f18d3c4d7ded9b3e9}{Logger}} (const std\+::string \&name)
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger_ad0895803e8ba35e55acd32b3a1572526}{Logger}} (const std\+::string \&name, \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} \&parent)
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger_a2e3ab6ee87be3ac9b44857972dcd411f}{$\sim$\+Logger}} ()
+\item 
+const \+::std\+::string \& \mbox{\hyperlink{classeasylogger_1_1_logger_af4c45483c08f4a44ffaff4e86b7012b0}{Name}} () const
+\item 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} \mbox{\hyperlink{classeasylogger_1_1_logger_a350e161f9afb8a6dd764b297aa0baf93}{Level}} () const
+\item 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} \mbox{\hyperlink{classeasylogger_1_1_logger_a66ab7ca8dbdfcdeda3395bc39efc8c1c}{Level}} (\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} level)
+\item 
+bool \mbox{\hyperlink{classeasylogger_1_1_logger_a51a95dca60052b6d2f16bb0f0da7fe45}{Is\+Level}} (\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} level) const
+\item 
+\mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{\+\_\+private\+::\+Log\+Sink}} \mbox{\hyperlink{classeasylogger_1_1_logger_abbf5fd5ac40a75ed8303e520d99c9b81}{Log}} (\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} level, const char $\ast$file, unsigned int line, const char $\ast$func)
+\item 
+bool \mbox{\hyperlink{classeasylogger_1_1_logger_a12a61baa5ec56a9150a41104a34f0b05}{Add\+Stream}} (const \+::std\+::string \&name, \+::std\+::ostream \&stream)
+\item 
+bool \mbox{\hyperlink{classeasylogger_1_1_logger_a5fbcc23c2e8defc0862d48844703cdd2}{Remove\+Stream}} (const \+::std\+::string \&name)
+\item 
+\+::std\+::ostream $\ast$ \mbox{\hyperlink{classeasylogger_1_1_logger_ac4a1ce9232d6c0c7ec7668957d4a35ba}{Get\+Stream}} (const std\+::string \&name)
+\item 
+const \+::std\+::string \& \mbox{\hyperlink{classeasylogger_1_1_logger_a5289aa36c7ae745fa960af5b59a6ed54}{Format}} () const
+\item 
+const \+::std\+::string \& \mbox{\hyperlink{classeasylogger_1_1_logger_ae4f6966ba512d06584b83118909a2f73}{Time\+Format}} () const
+\item 
+const \+::std\+::string \& \mbox{\hyperlink{classeasylogger_1_1_logger_ab9395d1199d0ef5539f14552834d42a7}{Format}} (const \+::std\+::string \&format)
+\item 
+const \+::std\+::string \& \mbox{\hyperlink{classeasylogger_1_1_logger_a0b0ff3f703f2e6c04e86e8877d5a906c}{Time\+Format}} (const \+::std\+::string \&format)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classeasylogger_1_1_logger_ae5f1bdb76764e5cb673d27bead3f84b0}{Flush}} ()
+\begin{DoxyCompactList}\small\item\em Flushes underlying output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::std\+::map$<$ std\+::string, \+::std\+::ostream $\ast$ $>$ \mbox{\hyperlink{classeasylogger_1_1_logger_a27625e597ce11062ffd04fc8ca5154cd}{Stream\+Map}}
+\item 
+typedef \+::std\+::pair$<$ std\+::string, std\+::ostream $\ast$ $>$ \mbox{\hyperlink{classeasylogger_1_1_logger_a8c37cd26d5210c8ede4cd355a6bceb95}{Stream\+Pair}}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger_a8c5b5637694907e900012d300bf23033}{Logger}} ()
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger_a9338a86dffe3f96185b22a179eb96ce4}{Logger}} (const \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} \&rhs)
+\item 
+std\+::string \mbox{\hyperlink{classeasylogger_1_1_logger_abee0060678a306c347edf917c311dfce}{Now}} (const char $\ast$format=\char`\"{}\%c\char`\"{})
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classeasylogger_1_1_logger_ac0e7b45cf7f2ce015fd4b510a76bd5b5}{Write\+Log}} (\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} level, \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} $\ast$logger, const char $\ast$file, unsigned int line, const char $\ast$func, const char $\ast$message)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classeasylogger_1_1_logger_a2d09f2ce77a5eb571fb3436967651a12}{Write\+Log}} (\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} level, \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} $\ast$logger, const char $\ast$file, unsigned int line, const char $\ast$func, const char $\ast$message, \+::std\+::ostream $\ast$stream)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\+::std\+::string \mbox{\hyperlink{classeasylogger_1_1_logger_a3055e76f000f45c8db2b5390776bc131}{\+\_\+name}}
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} $\ast$ \mbox{\hyperlink{classeasylogger_1_1_logger_a83412985aecf3bc456c78a0b1425af85}{\+\_\+parent}}
+\item 
+\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} \mbox{\hyperlink{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}{\+\_\+level}}
+\item 
+\mbox{\hyperlink{classeasylogger_1_1_logger_a27625e597ce11062ffd04fc8ca5154cd}{Stream\+Map}} \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\+\_\+stream\+Map}}
+\item 
+\+::std\+::string \mbox{\hyperlink{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}{\+\_\+format}}
+\item 
+\+::std\+::string \mbox{\hyperlink{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}{\+\_\+time\+Format}} =\char`\"{}\%c\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classeasylogger_1_1_logger_a27353f6b5bf33ecd1b185b743973fb72}{\+\_\+private\+::\+Log\+Sink}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} system core class. 
+
+Definition at line 94 of file easylogger.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a27625e597ce11062ffd04fc8ca5154cd}\label{classeasylogger_1_1_logger_a27625e597ce11062ffd04fc8ca5154cd}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Stream\+Map@{Stream\+Map}}
+\index{Stream\+Map@{Stream\+Map}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Stream\+Map}{StreamMap}}
+{\footnotesize\ttfamily typedef \+::std\+::map$<$std\+::string, \+::std\+::ostream$\ast$$>$ \mbox{\hyperlink{classeasylogger_1_1_logger_a27625e597ce11062ffd04fc8ca5154cd}{easylogger\+::\+Logger\+::\+Stream\+Map}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 344 of file easylogger.\+h.
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a8c37cd26d5210c8ede4cd355a6bceb95}\label{classeasylogger_1_1_logger_a8c37cd26d5210c8ede4cd355a6bceb95}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Stream\+Pair@{Stream\+Pair}}
+\index{Stream\+Pair@{Stream\+Pair}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Stream\+Pair}{StreamPair}}
+{\footnotesize\ttfamily typedef \+::std\+::pair$<$std\+::string, std\+::ostream$\ast$$>$ \mbox{\hyperlink{classeasylogger_1_1_logger_a8c37cd26d5210c8ede4cd355a6bceb95}{easylogger\+::\+Logger\+::\+Stream\+Pair}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 345 of file easylogger.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a8c5b5637694907e900012d300bf23033}\label{classeasylogger_1_1_logger_a8c5b5637694907e900012d300bf23033}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily easylogger\+::\+Logger\+::\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a9338a86dffe3f96185b22a179eb96ce4}\label{classeasylogger_1_1_logger_a9338a86dffe3f96185b22a179eb96ce4}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily easylogger\+::\+Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a2cb8c991ae2c651f18d3c4d7ded9b3e9}\label{classeasylogger_1_1_logger_a2cb8c991ae2c651f18d3c4d7ded9b3e9}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily easylogger\+::\+Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of logger used in log messages. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 102 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+102                                       :
+103         \mbox{\hyperlink{classeasylogger_1_1_logger_a3055e76f000f45c8db2b5390776bc131}{\_name}}(name),
+104         \mbox{\hyperlink{classeasylogger_1_1_logger_a83412985aecf3bc456c78a0b1425af85}{\_parent}}(0),
+105         \mbox{\hyperlink{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}{\_level}}(\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61}{LEVEL\_INFO}}),
+106         \mbox{\hyperlink{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}{\_format}}(\textcolor{stringliteral}{"[%F:%C %P] %N %L: %S"}),
+107         \mbox{\hyperlink{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}{\_timeFormat}}(\textcolor{stringliteral}{"%c"})\{
+108             \mbox{\hyperlink{classeasylogger_1_1_logger_a12a61baa5ec56a9150a41104a34f0b05}{AddStream}}(\textcolor{stringliteral}{"default"}, ::std::cout);
+109         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ad0895803e8ba35e55acd32b3a1572526}\label{classeasylogger_1_1_logger_ad0895803e8ba35e55acd32b3a1572526}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Logger@{Logger}}
+\index{Logger@{Logger}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Logger()}{Logger()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily easylogger\+::\+Logger\+::\+Logger (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} \&}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Construct a new \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} with a parent
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of logger used in log messages. \\
+\hline
+{\em parent} & Parent \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} all messages are forwarded to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 115 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+115                                                       :
+116         \mbox{\hyperlink{classeasylogger_1_1_logger_a3055e76f000f45c8db2b5390776bc131}{\_name}}(name),
+117         \mbox{\hyperlink{classeasylogger_1_1_logger_a83412985aecf3bc456c78a0b1425af85}{\_parent}}(&parent),
+118         \mbox{\hyperlink{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}{\_level}}(\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61}{LEVEL\_INFO}}),
+119         \mbox{\hyperlink{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}{\_format}}(\textcolor{stringliteral}{"[%F:%C %P] %N %L: %S"}),
+120         \mbox{\hyperlink{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}{\_timeFormat}}(\textcolor{stringliteral}{"%c"})\{
+121             \mbox{\hyperlink{classeasylogger_1_1_logger_a12a61baa5ec56a9150a41104a34f0b05}{AddStream}}(\textcolor{stringliteral}{"default"}, ::std::cout);
+122         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a2e3ab6ee87be3ac9b44857972dcd411f}\label{classeasylogger_1_1_logger_a2e3ab6ee87be3ac9b44857972dcd411f}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!````~Logger@{$\sim$\+Logger}}
+\index{````~Logger@{$\sim$\+Logger}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{$\sim$\+Logger()}{~Logger()}}
+{\footnotesize\ttfamily easylogger\+::\+Logger\+::$\sim$\+Logger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 124 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+124 \{\mbox{\hyperlink{classeasylogger_1_1_logger_ae5f1bdb76764e5cb673d27bead3f84b0}{Flush}}();\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a12a61baa5ec56a9150a41104a34f0b05}\label{classeasylogger_1_1_logger_a12a61baa5ec56a9150a41104a34f0b05}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Add\+Stream@{Add\+Stream}}
+\index{Add\+Stream@{Add\+Stream}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Add\+Stream()}{AddStream()}}
+{\footnotesize\ttfamily bool easylogger\+::\+Logger\+::\+Add\+Stream (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{name,  }\item[{\+::std\+::ostream \&}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 169 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+170         \{
+171             \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.insert(\mbox{\hyperlink{classeasylogger_1_1_logger_a8c37cd26d5210c8ede4cd355a6bceb95}{StreamPair}}(name, &stream)).second;
+172         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ae5f1bdb76764e5cb673d27bead3f84b0}\label{classeasylogger_1_1_logger_ae5f1bdb76764e5cb673d27bead3f84b0}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Flush@{Flush}}
+\index{Flush@{Flush}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Flush()}{Flush()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} easylogger\+::\+Logger\+::\+Flush (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Flushes underlying output stream. 
+
+
+
+Definition at line 216 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+216                      \{
+217             \textcolor{keywordflow}{for}(StreamMap::iterator i = \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.begin(); i != 
+      \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.end(); i++)
+218             \{
+219                 \textcolor{keywordflow}{if}(i->second)
+220                     i->second->flush();
+221             \}
+222         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a5289aa36c7ae745fa960af5b59a6ed54}\label{classeasylogger_1_1_logger_a5289aa36c7ae745fa960af5b59a6ed54}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Format@{Format}}
+\index{Format@{Format}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Format()}{Format()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \+::std\+::string\& easylogger\+::\+Logger\+::\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the log format string
+
+\begin{DoxyReturn}{Returns}
+Log format string. 
+\end{DoxyReturn}
+
+
+Definition at line 192 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+192 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}{\_format}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ab9395d1199d0ef5539f14552834d42a7}\label{classeasylogger_1_1_logger_ab9395d1199d0ef5539f14552834d42a7}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Format@{Format}}
+\index{Format@{Format}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Format()}{Format()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \+::std\+::string\& easylogger\+::\+Logger\+::\+Format (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the log format string
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & New log format string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Log format string. 
+\end{DoxyReturn}
+
+
+Definition at line 203 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+203                                                          \{
+204             \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}{\_format}} = format;
+205         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ac4a1ce9232d6c0c7ec7668957d4a35ba}\label{classeasylogger_1_1_logger_ac4a1ce9232d6c0c7ec7668957d4a35ba}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Get\+Stream@{Get\+Stream}}
+\index{Get\+Stream@{Get\+Stream}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Get\+Stream()}{GetStream()}}
+{\footnotesize\ttfamily \+::std\+::ostream$\ast$ easylogger\+::\+Logger\+::\+Get\+Stream (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 179 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+180         \{
+181             \textcolor{keyword}{auto} search = \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.find(name);
+182             \textcolor{keywordflow}{if}(search != \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.end())
+183             \{
+184                 \textcolor{keywordflow}{return} (search->second != 0)?search->second:\mbox{\hyperlink{classeasylogger_1_1_logger_a83412985aecf3bc456c78a0b1425af85}{\_parent}}->
+      \mbox{\hyperlink{classeasylogger_1_1_logger_ac4a1ce9232d6c0c7ec7668957d4a35ba}{GetStream}}(name);
+185             \}
+186             \textcolor{keywordflow}{return} 0;
+187         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a51a95dca60052b6d2f16bb0f0da7fe45}\label{classeasylogger_1_1_logger_a51a95dca60052b6d2f16bb0f0da7fe45}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Is\+Level@{Is\+Level}}
+\index{Is\+Level@{Is\+Level}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Is\+Level()}{IsLevel()}}
+{\footnotesize\ttfamily bool easylogger\+::\+Logger\+::\+Is\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}}}]{level }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if this \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} or any ancestor accepts a given log level
+
+Each \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} will only log messages of a particular level or higher. This method will check if this \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} instance or any of its parents are willing to log a message of a given log level.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Log level to check for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if any ancestor will accept log level 
+\end{DoxyReturn}
+
+
+Definition at line 152 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+152                                            \{
+153             \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}{\_level}} <= level;
+154         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a350e161f9afb8a6dd764b297aa0baf93}\label{classeasylogger_1_1_logger_a350e161f9afb8a6dd764b297aa0baf93}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Level@{Level}}
+\index{Level@{Level}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} easylogger\+::\+Logger\+::\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the minimum log level of the \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}}
+
+\begin{DoxyReturn}{Returns}
+Minimum log level 
+\end{DoxyReturn}
+
+
+Definition at line 134 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+134 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}{\_level}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a66ab7ca8dbdfcdeda3395bc39efc8c1c}\label{classeasylogger_1_1_logger_a66ab7ca8dbdfcdeda3395bc39efc8c1c}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Level@{Level}}
+\index{Level@{Level}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Level()}{Level()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} easylogger\+::\+Logger\+::\+Level (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}}}]{level }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the minimum log level of the \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}}
+
+\begin{DoxyReturn}{Returns}
+New minimum log level 
+\end{DoxyReturn}
+
+
+Definition at line 139 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+139                                        \{
+140             \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}{\_level}} = level;
+141         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_abbf5fd5ac40a75ed8303e520d99c9b81}\label{classeasylogger_1_1_logger_abbf5fd5ac40a75ed8303e520d99c9b81}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Log@{Log}}
+\index{Log@{Log}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Log()}{Log()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{\+\_\+private\+::\+Log\+Sink}} easylogger\+::\+Logger\+::\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}}}]{level,  }\item[{const char $\ast$}]{file,  }\item[{unsigned int}]{line,  }\item[{const char $\ast$}]{func }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Create a new log sink
+
+Does the actual work of writing log message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Level of log message. \\
+\hline
+{\em file} & Name of file at point of log. \\
+\hline
+{\em line} & Line of file at point of log. \\
+\hline
+{\em func} & Name of function at point of log. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 164 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+165                                                                    \{
+166             \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a27353f6b5bf33ecd1b185b743973fb72}{\_private::LogSink}}(\textcolor{keyword}{this}, level, file, line, func);
+167         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_af4c45483c08f4a44ffaff4e86b7012b0}\label{classeasylogger_1_1_logger_af4c45483c08f4a44ffaff4e86b7012b0}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Name@{Name}}
+\index{Name@{Name}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Name()}{Name()}}
+{\footnotesize\ttfamily const \+::std\+::string\& easylogger\+::\+Logger\+::\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the name of the \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}}
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}}\textquotesingle{}s name 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+129 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a3055e76f000f45c8db2b5390776bc131}{\_name}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_abee0060678a306c347edf917c311dfce}\label{classeasylogger_1_1_logger_abee0060678a306c347edf917c311dfce}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Now@{Now}}
+\index{Now@{Now}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Now()}{Now()}}
+{\footnotesize\ttfamily std\+::string easylogger\+::\+Logger\+::\+Now (\begin{DoxyParamCaption}\item[{const char $\ast$}]{format = {\ttfamily \char`\"{}\%c\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Definition at line 226 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+227         \{
+228             std::time\_t t = std::time(0) ;
+229             \textcolor{keywordtype}{char} cstr[128] ;
+230             std::strftime( cstr, \textcolor{keyword}{sizeof}(cstr), format, std::localtime(&t) ) ;
+231             \textcolor{keywordflow}{return} cstr ;
+232         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a5fbcc23c2e8defc0862d48844703cdd2}\label{classeasylogger_1_1_logger_a5fbcc23c2e8defc0862d48844703cdd2}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Remove\+Stream@{Remove\+Stream}}
+\index{Remove\+Stream@{Remove\+Stream}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Remove\+Stream()}{RemoveStream()}}
+{\footnotesize\ttfamily bool easylogger\+::\+Logger\+::\+Remove\+Stream (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 174 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+175         \{
+176             \textcolor{keywordflow}{return} (\mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.erase(\mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.find(name)) != 
+      \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.end());
+177         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ae4f6966ba512d06584b83118909a2f73}\label{classeasylogger_1_1_logger_ae4f6966ba512d06584b83118909a2f73}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Time\+Format@{Time\+Format}}
+\index{Time\+Format@{Time\+Format}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Time\+Format()}{TimeFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const \+::std\+::string\& easylogger\+::\+Logger\+::\+Time\+Format (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the log time format string
+
+\begin{DoxyReturn}{Returns}
+Log time format string. 
+\end{DoxyReturn}
+
+
+Definition at line 197 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+197 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}{\_timeFormat}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a0b0ff3f703f2e6c04e86e8877d5a906c}\label{classeasylogger_1_1_logger_a0b0ff3f703f2e6c04e86e8877d5a906c}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Time\+Format@{Time\+Format}}
+\index{Time\+Format@{Time\+Format}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Time\+Format()}{TimeFormat()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const \+::std\+::string\& easylogger\+::\+Logger\+::\+Time\+Format (\begin{DoxyParamCaption}\item[{const \+::std\+::string \&}]{format }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the log format string
+
+
+\begin{DoxyParams}{Parameters}
+{\em format} & New log time format string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Log time format string. 
+\end{DoxyReturn}
+
+
+Definition at line 211 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+211                                                              \{
+212             \textcolor{keywordflow}{return} \mbox{\hyperlink{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}{\_timeFormat}} = format;
+213         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ac0e7b45cf7f2ce015fd4b510a76bd5b5}\label{classeasylogger_1_1_logger_ac0e7b45cf7f2ce015fd4b510a76bd5b5}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Write\+Log@{Write\+Log}}
+\index{Write\+Log@{Write\+Log}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Write\+Log()}{WriteLog()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} easylogger\+::\+Logger\+::\+Write\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}}}]{level,  }\item[{\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} $\ast$}]{logger,  }\item[{const char $\ast$}]{file,  }\item[{unsigned int}]{line,  }\item[{const char $\ast$}]{func,  }\item[{const char $\ast$}]{message }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Write log to stream
+
+Does the actual work of writing log message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Level of log message. \\
+\hline
+{\em logger} & Original \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} target of message. \\
+\hline
+{\em file} & Name of file at point of log. \\
+\hline
+{\em line} & Line of file at point of log. \\
+\hline
+{\em func} & Name of function at point of log. \\
+\hline
+{\em message} & The log message. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 244 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+245                                                                                 \{
+246             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.size() > 0)
+247             \{
+248                 \textcolor{keywordflow}{for}(StreamMap::iterator i = \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.begin();
+249                     i != \mbox{\hyperlink{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}{\_streamMap}}.end();
+250                     ++i)
+251                 \{
+252                     ::std::ostream *stream = \mbox{\hyperlink{classeasylogger_1_1_logger_ac4a1ce9232d6c0c7ec7668957d4a35ba}{GetStream}}(i->first);
+253                     this->\mbox{\hyperlink{classeasylogger_1_1_logger_ac0e7b45cf7f2ce015fd4b510a76bd5b5}{WriteLog}}(level, logger, file, line, func, message, stream);
+254                 \}
+255             \}
+256         \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a2d09f2ce77a5eb571fb3436967651a12}\label{classeasylogger_1_1_logger_a2d09f2ce77a5eb571fb3436967651a12}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!Write\+Log@{Write\+Log}}
+\index{Write\+Log@{Write\+Log}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{Write\+Log()}{WriteLog()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} easylogger\+::\+Logger\+::\+Write\+Log (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}}}]{level,  }\item[{\mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} $\ast$}]{logger,  }\item[{const char $\ast$}]{file,  }\item[{unsigned int}]{line,  }\item[{const char $\ast$}]{func,  }\item[{const char $\ast$}]{message,  }\item[{\+::std\+::ostream $\ast$}]{stream }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Write log to stream
+
+Does the actual work of writing log message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & Level of log message. \\
+\hline
+{\em logger} & Original \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}} target of message. \\
+\hline
+{\em file} & Name of file at point of log. \\
+\hline
+{\em line} & Line of file at point of log. \\
+\hline
+{\em func} & Name of function at point of log. \\
+\hline
+{\em message} & The log message. \\
+\hline
+{\em stream} & The stream to write to. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 269 of file easylogger.\+h.
+
+
+\begin{DoxyCode}
+270                                                                                                    \{
+271             
+272             \textcolor{keywordflow}{if} (stream != 0) \{
+273                 \textcolor{keyword}{const} \textcolor{keywordtype}{char}* cptr = \mbox{\hyperlink{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}{\_format}}.c\_str();
+274                 \textcolor{keywordflow}{while} (*cptr != 0) \{
+275                     \textcolor{keywordflow}{if} (*cptr == \textcolor{charliteral}{'%'}) \{
+276                         \textcolor{keywordflow}{switch} (*++cptr) \{
+277                                 \textcolor{comment}{// % at end of stream}
+278                             \textcolor{keywordflow}{case} 0:
+279                                 *stream << \textcolor{charliteral}{'%'} << ::std::endl;
+280                                 \textcolor{keywordflow}{return};
+281                                 \textcolor{comment}{// %% - literal escape}
+282                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'%'}:
+283                                 *stream << \textcolor{charliteral}{'%'};
+284                                 \textcolor{keywordflow}{break};
+285                                 \textcolor{comment}{// %F - file name}
+286                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'F'}:
+287                                 *stream << \textcolor{stringliteral}{"file://"} << file;
+288                                 \textcolor{keywordflow}{break};
+289                                 \textcolor{comment}{// %C - line counter}
+290                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'C'}:
+291                                 \textcolor{keywordflow}{if} (line != 0) \{
+292                                     *stream << line;
+293                                 \} \textcolor{keywordflow}{else} \{
+294                                     *stream << \textcolor{charliteral}{'?'};
+295                                 \}
+296                                 \textcolor{keywordflow}{break};
+297                                 \textcolor{comment}{// %P - function name}
+298                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'P'}:
+299                                 *stream << func;
+300                                 \textcolor{keywordflow}{break};
+301                                 \textcolor{comment}{// %N - logger name}
+302                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'N'}:
+303                                 *stream << logger->Name();
+304                                 \textcolor{keywordflow}{break};
+305                                 \textcolor{comment}{// %L - log level}
+306                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'L'}:
+307                                 \textcolor{keywordflow}{switch} (level) \{
+308                                     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e}{LEVEL\_TRACE}}: *stream << \textcolor{stringliteral}{"TRACE"}; \textcolor{keywordflow}{break};
+309                                     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f}{LEVEL\_DEBUG}}: *stream << \textcolor{stringliteral}{"DEBUG"}; \textcolor{keywordflow}{break};
+310                                     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61}{LEVEL\_INFO}}: *stream << \textcolor{stringliteral}{"INFO"}; \textcolor{keywordflow}{break};
+311                                     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571}{LEVEL\_WARNING}}: *stream << \textcolor{stringliteral}{"WARNING"}; \textcolor{keywordflow}{break};
+312                                     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245}{LEVEL\_ERROR}}: *stream << \textcolor{stringliteral}{"ERROR"}; \textcolor{keywordflow}{break};
+313                                     \textcolor{keywordflow}{case} \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb}{LEVEL\_FATAL}}: *stream << \textcolor{stringliteral}{"FATAL"}; \textcolor{keywordflow}{break};
+314                                     \textcolor{keywordflow}{default}: *stream << \textcolor{stringliteral}{"UNKNOWN"}; \textcolor{keywordflow}{break};
+315                                 \}
+316                                 \textcolor{keywordflow}{break};
+317                                 \textcolor{comment}{// %M - message}
+318                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'S'}:
+319                                 *stream << message;
+320                                 \textcolor{keywordflow}{break};
+321                                 \textcolor{comment}{// %T - time}
+322                             \textcolor{keywordflow}{case} \textcolor{charliteral}{'T'}:
+323                                 *stream << \mbox{\hyperlink{classeasylogger_1_1_logger_abee0060678a306c347edf917c311dfce}{Now}}(\mbox{\hyperlink{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}{\_timeFormat}}.c\_str());
+324                                 \textcolor{keywordflow}{break};
+325                         \}
+326                     \} \textcolor{keywordflow}{else} \{
+327                         *stream << *cptr;
+328                     \}
+329                     
+330                     ++cptr;
+331                 \}
+332                 *stream << ::std::endl;
+333             \}
+334         \}
+\end{DoxyCode}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a27353f6b5bf33ecd1b185b743973fb72}\label{classeasylogger_1_1_logger_a27353f6b5bf33ecd1b185b743973fb72}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+private\+::\+Log\+Sink@{\+\_\+private\+::\+Log\+Sink}}
+\index{\+\_\+private\+::\+Log\+Sink@{\+\_\+private\+::\+Log\+Sink}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+private\+::\+Log\+Sink}{\_private::LogSink}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classeasylogger_1_1__private_1_1_log_sink}{\+\_\+private\+::\+Log\+Sink}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 353 of file easylogger.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}\label{classeasylogger_1_1_logger_ab45891277952285a459ec39a03a91226}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+format@{\+\_\+format}}
+\index{\+\_\+format@{\+\_\+format}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+format}{\_format}}
+{\footnotesize\ttfamily \+::std\+::string easylogger\+::\+Logger\+::\+\_\+format\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 349 of file easylogger.\+h.
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}\label{classeasylogger_1_1_logger_a123849db1e8dd97fa7e0eeedc4bcb747}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+level@{\+\_\+level}}
+\index{\+\_\+level@{\+\_\+level}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+level}{\_level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceeasylogger_a68cb882ead21af982c40e3621fcd50b0}{Log\+Level}} easylogger\+::\+Logger\+::\+\_\+level\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 342 of file easylogger.\+h.
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a3055e76f000f45c8db2b5390776bc131}\label{classeasylogger_1_1_logger_a3055e76f000f45c8db2b5390776bc131}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+name@{\+\_\+name}}
+\index{\+\_\+name@{\+\_\+name}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+name}{\_name}}
+{\footnotesize\ttfamily \+::std\+::string easylogger\+::\+Logger\+::\+\_\+name\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 338 of file easylogger.\+h.
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a83412985aecf3bc456c78a0b1425af85}\label{classeasylogger_1_1_logger_a83412985aecf3bc456c78a0b1425af85}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+parent@{\+\_\+parent}}
+\index{\+\_\+parent@{\+\_\+parent}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+parent}{\_parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classeasylogger_1_1_logger}{Logger}}$\ast$ easylogger\+::\+Logger\+::\+\_\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 340 of file easylogger.\+h.
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}\label{classeasylogger_1_1_logger_a9290bed24c12786abef2c421158268f8}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+stream\+Map@{\+\_\+stream\+Map}}
+\index{\+\_\+stream\+Map@{\+\_\+stream\+Map}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+stream\+Map}{\_streamMap}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classeasylogger_1_1_logger_a27625e597ce11062ffd04fc8ca5154cd}{Stream\+Map}} easylogger\+::\+Logger\+::\+\_\+stream\+Map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 347 of file easylogger.\+h.
+
+\mbox{\Hypertarget{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}\label{classeasylogger_1_1_logger_a692cc5f57c16a7399d5630b1623bd613}} 
+\index{easylogger\+::\+Logger@{easylogger\+::\+Logger}!\+\_\+time\+Format@{\+\_\+time\+Format}}
+\index{\+\_\+time\+Format@{\+\_\+time\+Format}!easylogger\+::\+Logger@{easylogger\+::\+Logger}}
+\subsubsection{\texorpdfstring{\+\_\+time\+Format}{\_timeFormat}}
+{\footnotesize\ttfamily \+::std\+::string easylogger\+::\+Logger\+::\+\_\+time\+Format =\char`\"{}\%c\char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 351 of file easylogger.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/platform/\mbox{\hyperlink{easylogger_8h}{easylogger.\+h}}\end{DoxyCompactItemize}

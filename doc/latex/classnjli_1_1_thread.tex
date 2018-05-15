@@ -1,0 +1,579 @@
+\hypertarget{classnjli_1_1_thread}{}\section{njli\+:\+:Thread Class Reference}
+\label{classnjli_1_1_thread}\index{njli\+::\+Thread@{njli\+::\+Thread}}
+
+
+{\ttfamily \#include $<$Thread.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classnjli_1_1_thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Thread\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_thread_aa3b2e7df4ade1f690d8325d788c67bef}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_ae1acf75828f1ab2ee4a0f818dc849292}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$, bt\+Serializer $\ast$) const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_a212e294b12cb653e82d9e4ab96ebf006}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_thread_a38cbb608d012da083fd9d35ed87ba277}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_thread_ad44cbca3ce255ac199d745ea3bd072de}{operator std\+::string}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_a644871703e3eaa5f500f8ee9d38e64b9}{setup}} (const std\+::string \&lua\+Function\+Name, int \+\_\+priority)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_add29f8799756f141a64f8b559445aa72}{enable\+Pause}} (bool enable=true)
+\item 
+bool \mbox{\hyperlink{classnjli_1_1_thread_ab0d4353d5fbca34da213eb4cbeb8bfe3}{is\+Paused}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_a337a98642b6c61d7af26ecc942b7d12c}{stop}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_a14bd06414dc70facee0ec6840ab52c7b}{run}} ()
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_a087eb5f8d9f51cc476f12f1d10a3cb95}{set\+Name}} (const char $\ast$name)
+\item 
+const char $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_ad41266885be835f3ee602311e20877a4}{get\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_a83a8876ae63b92804004cf3febe76573}{create}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&builder) const
+\item 
+const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_ac4ca71716ed832be357f15f8262c8448}{get\+Pointer}} () const
+\item 
+\mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} \mbox{\hyperlink{classnjli_1_1_thread_a4ffddf141a426a5a07d0ac19f1913811}{get\+Pointer\+Value}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_a4fc4bcd9d1930911474210c047372fc0}{serialize\+Object}} (class bt\+Serializer $\ast$serializer) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_thread_a30ca432834fe539f3560b9964f789a0f}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_abfca36fb1618366c5c196a2c7076c245}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_a1d5d960366afef7d49c9798d2ee7e6f0}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_afc6765a4e6e64e05e28013bdbc2dd38c}{create}} (const \mbox{\hyperlink{classnjli_1_1_thread_builder}{Thread\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_a704923b90ea123659acaa4545b76c8b3}{clone}} (const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_ae4597841975827e25aaeea32f4e465fa}{copy}} (const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_a9fa49919c924343758d9148294ad8e6e}{destroy}} (\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_abf32abdd7ee4778ae166033b2295e444}{load}} (\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_thread_ae805bd8ca1582bfe6da7c73516c76d6d}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_thread_a317e23ba8f0ced14960249e4c54c6090}{Thread}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_thread_a0c051d119b52f3daec20229275c5f889}{Thread}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_thread_ab2c08ff55a50001e1da7e03b2a91f59f}{Thread}} (const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_thread_afb0a6e67e331179054954ece61fc0b9c}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_thread_aa7d7a6a932929386936089618d4d7e3e}{$\sim$\+Thread}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \& \mbox{\hyperlink{classnjli_1_1_thread_a6de32ea344863fe165a1200e36b36dc4}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_thread_ad6f6f4cf48168e85787ad3c0d91f4d3d}{setup}} (J\+L\+Ithreadcallback $\ast$\+\_\+\+J\+L\+Ithreadcallback, \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$\+\_\+userdata, int \+\_\+priority)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \mbox{\hyperlink{classnjli_1_1_thread_a71f3ffb5bb782ea51fc7965a73d26228}{m\+\_\+state}}
+\item 
+int \mbox{\hyperlink{classnjli_1_1_thread_ad565b076bed5d905b4c8b55446106515}{m\+\_\+priority}}
+\item 
+pthread\+\_\+t \mbox{\hyperlink{classnjli_1_1_thread_a585b618ef3f37b59ed87b9a260b75316}{m\+\_\+thread}}
+\item 
+unsigned int \mbox{\hyperlink{classnjli_1_1_thread_ac9a03c44d01aaa3103b179edf04ba488}{m\+\_\+thread\+\_\+hdl}}
+\item 
+J\+L\+Ithreadcallback $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_ac180ff8a9b724385c44beafb47988a3a}{m\+\_\+\+J\+L\+Ithreadcallback}}
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$ \mbox{\hyperlink{classnjli_1_1_thread_a402f192eba9cdf6c041e050b9dd1a5f5}{m\+\_\+userdata}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_thread_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\item 
+struct \mbox{\hyperlink{classnjli_1_1_thread_a4e3bf95b63db6ec0ddadd05ed67dde6c}{wrap}}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_thread_a6db9d28bd448a131448276ee03de1e6d}{Node}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 32 of file Thread.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_thread_a317e23ba8f0ced14960249e4c54c6090}\label{classnjli_1_1_thread_a317e23ba8f0ced14960249e4c54c6090}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{Thread()}{Thread()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Thread\+::\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a0c051d119b52f3daec20229275c5f889}\label{classnjli_1_1_thread_a0c051d119b52f3daec20229275c5f889}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{Thread()}{Thread()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Thread\+::\+Thread (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ab2c08ff55a50001e1da7e03b2a91f59f}\label{classnjli_1_1_thread_ab2c08ff55a50001e1da7e03b2a91f59f}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!Thread@{Thread}}
+\index{Thread@{Thread}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{Thread()}{Thread()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Thread\+::\+Thread (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_aa7d7a6a932929386936089618d4d7e3e}\label{classnjli_1_1_thread_aa7d7a6a932929386936089618d4d7e3e}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!````~Thread@{$\sim$\+Thread}}
+\index{````~Thread@{$\sim$\+Thread}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{$\sim$\+Thread()}{~Thread()}}
+{\footnotesize\ttfamily virtual njli\+::\+Thread\+::$\sim$\+Thread (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_thread_afb0a6e67e331179054954ece61fc0b9c}\label{classnjli_1_1_thread_afb0a6e67e331179054954ece61fc0b9c}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Thread\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_aa3b2e7df4ade1f690d8325d788c67bef}\label{classnjli_1_1_thread_aa3b2e7df4ade1f690d8325d788c67bef}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Thread\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Calculate the buffer size of this object.
+
+\begin{DoxyReturn}{Returns}
+The buffer size. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a4763d05bc9dc37c559111f8bb30e1dd8}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a704923b90ea123659acaa4545b76c8b3}\label{classnjli_1_1_thread_a704923b90ea123659acaa4545b76c8b3}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}}$\ast$ njli\+::\+Thread\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a shallow copy of an instance of this class (sharing pointers).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to clone. \begin{DoxyVerb} @return Pointer to the newly created instance.\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_ae4597841975827e25aaeea32f4e465fa}\label{classnjli_1_1_thread_ae4597841975827e25aaeea32f4e465fa}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}}$\ast$ njli\+::\+Thread\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create a deep copy of an instance of this class (N\+OT sharing pointers).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to clone. \begin{DoxyVerb} @return Pointer to the newly created instance.\end{DoxyVerb}
+ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_a83a8876ae63b92804004cf3febe76573}\label{classnjli_1_1_thread_a83a8876ae63b92804004cf3febe76573}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!create@{create}}
+\index{create@{create}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classnjli_1_1_abstract_factory_object}{Abstract\+Factory\+Object}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::create}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_thread_a1d5d960366afef7d49c9798d2ee7e6f0}\label{classnjli_1_1_thread_a1d5d960366afef7d49c9798d2ee7e6f0}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!create@{create}}
+\index{create@{create}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}}$\ast$ njli\+::\+Thread\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an instance of this class.
+
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_thread_afc6765a4e6e64e05e28013bdbc2dd38c}\label{classnjli_1_1_thread_afc6765a4e6e64e05e28013bdbc2dd38c}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!create@{create}}
+\index{create@{create}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}}$\ast$ njli\+::\+Thread\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_thread_builder}{Thread\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an instance of this class using a builder.
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & The builder to use for construction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created instance. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_thread_a30ca432834fe539f3560b9964f789a0f}\label{classnjli_1_1_thread_a30ca432834fe539f3560b9964f789a0f}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_thread}{Thread}}$\ast$$\ast$ njli\+::\+Thread\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Create an Array of instances of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & The amount of elements in the array.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly created array. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_thread_a9fa49919c924343758d9148294ad8e6e}\label{classnjli_1_1_thread_a9fa49919c924343758d9148294ad8e6e}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy an instance of this class.
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to destroy. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_abfca36fb1618366c5c196a2c7076c245}\label{classnjli_1_1_thread_abfca36fb1618366c5c196a2c7076c245}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Destroy an Array of this class type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & The Pointer to the array to delete. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_add29f8799756f141a64f8b559445aa72}\label{classnjli_1_1_thread_add29f8799756f141a64f8b559445aa72}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!enable\+Pause@{enable\+Pause}}
+\index{enable\+Pause@{enable\+Pause}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{enable\+Pause()}{enablePause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::enable\+Pause (\begin{DoxyParamCaption}\item[{bool}]{enable = {\ttfamily true} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a212e294b12cb653e82d9e4ab96ebf006}\label{classnjli_1_1_thread_a212e294b12cb653e82d9e4ab96ebf006}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Thread\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The name of this class.
+
+\begin{DoxyReturn}{Returns}
+The name of this class. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_af4151e41b80d5bc3fc42822c67fc2278}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ad41266885be835f3ee602311e20877a4}\label{classnjli_1_1_thread_ad41266885be835f3ee602311e20877a4}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{get\+Name()}{getName()}}
+{\footnotesize\ttfamily const char$\ast$ njli\+::\+Abstract\+Decorator\+::get\+Name}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_thread_ac4ca71716ed832be357f15f8262c8448}\label{classnjli_1_1_thread_ac4ca71716ed832be357f15f8262c8448}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!get\+Pointer@{get\+Pointer}}
+\index{get\+Pointer@{get\+Pointer}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{get\+Pointer()}{getPointer()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer}
+
+$<$\#\+Description\#$>$ \mbox{\Hypertarget{classnjli_1_1_thread_a4ffddf141a426a5a07d0ac19f1913811}\label{classnjli_1_1_thread_a4ffddf141a426a5a07d0ac19f1913811}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!get\+Pointer\+Value@{get\+Pointer\+Value}}
+\index{get\+Pointer\+Value@{get\+Pointer\+Value}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{get\+Pointer\+Value()}{getPointerValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_ad758b7a5c3f18ed79d2fcd23d9f16357}{u64}} njli\+::\+Abstract\+Factory\+Object\+::get\+Pointer\+Value}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_thread_a38cbb608d012da083fd9d35ed87ba277}\label{classnjli_1_1_thread_a38cbb608d012da083fd9d35ed87ba277}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Thread\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Get the type of \mbox{\hyperlink{namespacenjli_a6d56d4fbaf89fcf3e3d32839df05b444}{njli\+Object\+Enum\+Type}} enum value.
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{namespacenjli_a6d56d4fbaf89fcf3e3d32839df05b444}{njli\+Object\+Enum\+Type}} enum value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a207c86146d40d0794708ae7f2d4e60a7}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ab0d4353d5fbca34da213eb4cbeb8bfe3}\label{classnjli_1_1_thread_ab0d4353d5fbca34da213eb4cbeb8bfe3}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!is\+Paused@{is\+Paused}}
+\index{is\+Paused@{is\+Paused}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{is\+Paused()}{isPaused()}}
+{\footnotesize\ttfamily bool njli\+::\+Thread\+::is\+Paused (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_abf32abdd7ee4778ae166033b2295e444}\label{classnjli_1_1_thread_abf32abdd7ee4778ae166033b2295e444}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!load@{load}}
+\index{load@{load}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Load a lua table representation of this class. This is used for J\+L\+I\+M.\+create(object).
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & The object to load. \\
+\hline
+{\em L} & The current lua state. \\
+\hline
+{\em stack\+\_\+index} & The stack index of the lua stack. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_ad44cbca3ce255ac199d745ea3bd072de}\label{classnjli_1_1_thread_ad44cbca3ce255ac199d745ea3bd072de}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Thread\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+The string value for this object, which can be used for debugging.
+
+\begin{DoxyReturn}{Returns}
+"The string value for this object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_a838f4fa7e65cace6098aab5222892942}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a6de32ea344863fe165a1200e36b36dc4}\label{classnjli_1_1_thread_a6de32ea344863fe165a1200e36b36dc4}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_thread}{Thread}}\& njli\+::\+Thread\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_thread}{Thread}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a14bd06414dc70facee0ec6840ab52c7b}\label{classnjli_1_1_thread_a14bd06414dc70facee0ec6840ab52c7b}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!run@{run}}
+\index{run@{run}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ae1acf75828f1ab2ee4a0f818dc849292}\label{classnjli_1_1_thread_ae1acf75828f1ab2ee4a0f818dc849292}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Serialize this object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bt\+Serializer} & the serializer which does the serialize. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_factory_object_aad2fbe86fb3bdecf02918a96b9c57976}{njli\+::\+Abstract\+Factory\+Object}}.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a4fc4bcd9d1930911474210c047372fc0}\label{classnjli_1_1_thread_a4fc4bcd9d1930911474210c047372fc0}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!serialize\+Object@{serialize\+Object}}
+\index{serialize\+Object@{serialize\+Object}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{serialize\+Object()}{serializeObject()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Factory\+Object\+::serialize\+Object}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em serializer} & $<$\#serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_a087eb5f8d9f51cc476f12f1d10a3cb95}\label{classnjli_1_1_thread_a087eb5f8d9f51cc476f12f1d10a3cb95}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!set\+Name@{set\+Name}}
+\index{set\+Name@{set\+Name}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{set\+Name()}{setName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Abstract\+Decorator\+::set\+Name}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & $<$\#name description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_thread_a644871703e3eaa5f500f8ee9d38e64b9}\label{classnjli_1_1_thread_a644871703e3eaa5f500f8ee9d38e64b9}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!setup@{setup}}
+\index{setup@{setup}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{setup()}{setup()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::setup (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{lua\+Function\+Name,  }\item[{int}]{\+\_\+priority }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ad6f6f4cf48168e85787ad3c0d91f4d3d}\label{classnjli_1_1_thread_ad6f6f4cf48168e85787ad3c0d91f4d3d}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!setup@{setup}}
+\index{setup@{setup}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{setup()}{setup()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::setup (\begin{DoxyParamCaption}\item[{J\+L\+Ithreadcallback $\ast$}]{\+\_\+\+J\+L\+Ithreadcallback,  }\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{\+\_\+userdata,  }\item[{int}]{\+\_\+priority }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a337a98642b6c61d7af26ecc942b7d12c}\label{classnjli_1_1_thread_a337a98642b6c61d7af26ecc942b7d12c}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!stop@{stop}}
+\index{stop@{stop}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{stop()}{stop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Thread\+::stop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ae805bd8ca1582bfe6da7c73516c76d6d}\label{classnjli_1_1_thread_ae805bd8ca1582bfe6da7c73516c76d6d}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!type@{type}}
+\index{type@{type}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Thread\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Get the type of \mbox{\hyperlink{namespacenjli_a6d56d4fbaf89fcf3e3d32839df05b444}{njli\+Object\+Enum\+Type}} enum value.
+
+\begin{DoxyReturn}{Returns}
+The \mbox{\hyperlink{namespacenjli_a6d56d4fbaf89fcf3e3d32839df05b444}{njli\+Object\+Enum\+Type}} enum value. 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_thread_a6db9d28bd448a131448276ee03de1e6d}\label{classnjli_1_1_thread_a6db9d28bd448a131448276ee03de1e6d}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!Node@{Node}}
+\index{Node@{Node}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{Node}{Node}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_node}{Node}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 37 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_thread_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 35 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a4e3bf95b63db6ec0ddadd05ed67dde6c}\label{classnjli_1_1_thread_a4e3bf95b63db6ec0ddadd05ed67dde6c}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!wrap@{wrap}}
+\index{wrap@{wrap}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{wrap}{wrap}}
+{\footnotesize\ttfamily friend struct \mbox{\hyperlink{structnjli_1_1wrap}{wrap}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 36 of file Thread.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_thread_ac180ff8a9b724385c44beafb47988a3a}\label{classnjli_1_1_thread_ac180ff8a9b724385c44beafb47988a3a}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!m\+\_\+\+J\+L\+Ithreadcallback@{m\+\_\+\+J\+L\+Ithreadcallback}}
+\index{m\+\_\+\+J\+L\+Ithreadcallback@{m\+\_\+\+J\+L\+Ithreadcallback}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{m\+\_\+\+J\+L\+Ithreadcallback}{m\_JLIthreadcallback}}
+{\footnotesize\ttfamily J\+L\+Ithreadcallback$\ast$ njli\+::\+Thread\+::m\+\_\+\+J\+L\+Ithreadcallback\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 178 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ad565b076bed5d905b4c8b55446106515}\label{classnjli_1_1_thread_ad565b076bed5d905b4c8b55446106515}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!m\+\_\+priority@{m\+\_\+priority}}
+\index{m\+\_\+priority@{m\+\_\+priority}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{m\+\_\+priority}{m\_priority}}
+{\footnotesize\ttfamily int njli\+::\+Thread\+::m\+\_\+priority\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 173 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a71f3ffb5bb782ea51fc7965a73d26228}\label{classnjli_1_1_thread_a71f3ffb5bb782ea51fc7965a73d26228}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!m\+\_\+state@{m\+\_\+state}}
+\index{m\+\_\+state@{m\+\_\+state}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{m\+\_\+state}{m\_state}}
+{\footnotesize\ttfamily unsigned char njli\+::\+Thread\+::m\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 171 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a585b618ef3f37b59ed87b9a260b75316}\label{classnjli_1_1_thread_a585b618ef3f37b59ed87b9a260b75316}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!m\+\_\+thread@{m\+\_\+thread}}
+\index{m\+\_\+thread@{m\+\_\+thread}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{m\+\_\+thread}{m\_thread}}
+{\footnotesize\ttfamily pthread\+\_\+t njli\+::\+Thread\+::m\+\_\+thread\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 175 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_ac9a03c44d01aaa3103b179edf04ba488}\label{classnjli_1_1_thread_ac9a03c44d01aaa3103b179edf04ba488}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!m\+\_\+thread\+\_\+hdl@{m\+\_\+thread\+\_\+hdl}}
+\index{m\+\_\+thread\+\_\+hdl@{m\+\_\+thread\+\_\+hdl}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{m\+\_\+thread\+\_\+hdl}{m\_thread\_hdl}}
+{\footnotesize\ttfamily unsigned int njli\+::\+Thread\+::m\+\_\+thread\+\_\+hdl\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 176 of file Thread.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_thread_a402f192eba9cdf6c041e050b9dd1a5f5}\label{classnjli_1_1_thread_a402f192eba9cdf6c041e050b9dd1a5f5}} 
+\index{njli\+::\+Thread@{njli\+::\+Thread}!m\+\_\+userdata@{m\+\_\+userdata}}
+\index{m\+\_\+userdata@{m\+\_\+userdata}!njli\+::\+Thread@{njli\+::\+Thread}}
+\subsubsection{\texorpdfstring{m\+\_\+userdata}{m\_userdata}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}}$\ast$ njli\+::\+Thread\+::m\+\_\+userdata\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 180 of file Thread.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/\mbox{\hyperlink{_thread_8h}{Thread.\+h}}\end{DoxyCompactItemize}

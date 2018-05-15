@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="namespace_im_guizmo">
+<title>ImGuizmo</title>
+        <section>
+            <title>Enumerations</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="namespace_im_guizmo_1a3559e88fd6409ce121ee4d9847867cd1">OPERATION</link> {
+<link linkend="namespace_im_guizmo_1a3559e88fd6409ce121ee4d9847867cd1a87d39725b76eb0cdd7d8803632faba68">TRANSLATE</link>,
+<link linkend="namespace_im_guizmo_1a3559e88fd6409ce121ee4d9847867cd1a002a0a905af7f2fd542df7d6e34c1d1f">ROTATE</link>,
+<link linkend="namespace_im_guizmo_1a3559e88fd6409ce121ee4d9847867cd1a17ec357fe247a9aa2d1f368353690fdc">SCALE</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para><literallayout>enum <link linkend="namespace_im_guizmo_1a555eafa3970d08a1afb7b47bce89d05a">MODE</link> {
+<link linkend="namespace_im_guizmo_1a555eafa3970d08a1afb7b47bce89d05aaf0baed0c04cc42cc097e385019888fe7">LOCAL</link>,
+<link linkend="namespace_im_guizmo_1a555eafa3970d08a1afb7b47bce89d05aa0db6bcb67dbf7b93b609e4d142320421">WORLD</link>
+}</literallayout>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="namespace_im_guizmo_1a2dfada1eb84fda54a892be444caf0588">BeginFrame</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="namespace_im_guizmo_1a258cf4380b3da155f7eb721542b50f67">IsOver</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="namespace_im_guizmo_1ac9bdd0b810d82ed4fa06e0dd2d1f3cc1">IsUsing</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="namespace_im_guizmo_1a849497d6fd8adb2569adfa18c2841d77">Enable</link> (
+bool enable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="namespace_im_guizmo_1a8cc3ef9e0b149b8276fe69817360ee25">DecomposeMatrixToComponents</link> (
+const float * matrix, float * translation, float * rotation, float * scale)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="namespace_im_guizmo_1a70bc9423194e2ab58e351ea881126b17">RecomposeMatrixFromComponents</link> (
+const float * translation, const float * rotation, const float * scale, float * matrix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="namespace_im_guizmo_1acc60c99158253466671e9aac426f52f2">DrawCube</link> (
+const float * view, const float * projection, float * matrix)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="namespace_im_guizmo_1a6b1cb04f6a6cacb5029c1163848a510e">Manipulate</link> (
+const float * view, const float * projection, <link linkend="namespace_im_guizmo_1a3559e88fd6409ce121ee4d9847867cd1">OPERATION</link> operation, <link linkend="namespace_im_guizmo_1a555eafa3970d08a1afb7b47bce89d05a">MODE</link> mode, float * matrix, float * deltaMatrix, float * snap, float * localBounds, float * boundsSnap)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+</section>

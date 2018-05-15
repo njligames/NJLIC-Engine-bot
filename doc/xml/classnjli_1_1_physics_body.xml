@@ -1,0 +1,1939 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_physics_body" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>njli::PhysicsBody</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_body_ghost" prot="public" virt="non-virtual">njli::PhysicsBodyGhost</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_body_rigid" prot="public" virt="non-virtual">njli::PhysicsBodyRigid</derivedcompoundref>
+    <derivedcompoundref refid="classnjli_1_1_physics_body_soft" prot="public" virt="non-virtual">njli::PhysicsBodySoft</derivedcompoundref>
+    <includes refid="_physics_body_8h" local="no">PhysicsBody.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="37" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1abd7959b8cbcd7c25bc6c0c8b1ea26ce6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsWorld</definition>
+        <argsstring></argsstring>
+        <name>PhysicsWorld</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="38" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a6db9d28bd448a131448276ee03de1e6d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Node</definition>
+        <argsstring></argsstring>
+        <name>Node</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="39" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1ae9fdb8cf9943dbfd76910301cb0ac1bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsShapeBox2D</definition>
+        <argsstring></argsstring>
+        <name>PhysicsShapeBox2D</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="40" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1aa594c185e502e1b87c998e01dd17a50f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsShapeBox</definition>
+        <argsstring></argsstring>
+        <name>PhysicsShapeBox</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="41" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a06afcd7f1b1822af8e15e045e77eed2a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintPointToPoint</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintPointToPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="42" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a0117dac2d3ca1ac4ebe089ac8c258560" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintHinge</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintHinge</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="43" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a2ccf10571ac5c97189a4c7d1fe3831ae" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintConeTwist</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintConeTwist</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="44" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a684f5ece6d7d44c2b9f689e76458a8fb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintFixed</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintFixed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="45" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a1d2185bf07a23cc48cd8f9d4271f3e39" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintGeneric6Dof</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintGeneric6Dof</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="46" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1af32c447e4cf588410ecc1a6106157f9a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintGeneric6DofSpring</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintGeneric6DofSpring</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="47" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1a6b9fa11eb22d1cb30e2d4fc2247e9afa" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraintSlider</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraintSlider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="48" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_physics_body_1aa59c958a66870f0d251ec0dd477d2eff" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class PhysicsConstraint</definition>
+        <argsstring></argsstring>
+        <name>PhysicsConstraint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="50" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1ae940a11c675d6434564f8deebbfe45b7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> * &gt;</type>
+        <definition>std::vector&lt;PhysicsConstraint *&gt; njli::PhysicsBody::m_PhysicsConstraintList</definition>
+        <argsstring></argsstring>
+        <name>m_PhysicsConstraintList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="437" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="437" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1a00c2b8d2e86534be769c4984956c00c2" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+        <definition>PhysicsShape* njli::PhysicsBody::m_PhysicsShape</definition>
+        <argsstring></argsstring>
+        <name>m_PhysicsShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="440" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="440" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1aa474bfee45457dc90f521b1fcc47b4f3" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+        <definition>njliBitCategories njli::PhysicsBody::m_CategoryBitMask</definition>
+        <argsstring></argsstring>
+        <name>m_CategoryBitMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="441" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="441" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1ad54b0614806637ab666fd9a779e55d51" prot="private" static="no" mutable="no">
+        <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+        <definition>njliBitCategories njli::PhysicsBody::m_CollisionBitMask</definition>
+        <argsstring></argsstring>
+        <name>m_CollisionBitMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="442" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="442" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1ae0f4e419f8e05558232170246fe7ad83" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::m_RestingAllowed</definition>
+        <argsstring></argsstring>
+        <name>m_RestingAllowed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="444" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1a313bb39a706c42bc97c86cff4bd0f309" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::m_IsResting</definition>
+        <argsstring></argsstring>
+        <name>m_IsResting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="445" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="445" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1aafbdd7a8a90737acd399b56961cbd16c" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::PhysicsBody::m_CollisionFlags</definition>
+        <argsstring></argsstring>
+        <name>m_CollisionFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="448" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="448" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_physics_body_1a63352ab7615e4537f30479062ffb6a48" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::PhysicsBody::m_ActivationState</definition>
+        <argsstring></argsstring>
+        <name>m_ActivationState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="449" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="449" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ad68e3bd30ca09693f5b03855d020923b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsBody::PhysicsBody</definition>
+        <argsstring>()</argsstring>
+        <name>PhysicsBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a58cbc549412fc623f35276d2f18b8785" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsBody::PhysicsBody</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>PhysicsBody</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ae72cb51b910158466d481481e1042a2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsBody::PhysicsBody</definition>
+        <argsstring>(const PhysicsBody &amp;)</argsstring>
+        <name>PhysicsBody</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aecae8b7ddd0550b4f685326bf2a723da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::PhysicsBody::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a181de210c6f8af7a7ec4ccbc5198e969" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::PhysicsBody::~PhysicsBody</definition>
+        <argsstring>()</argsstring>
+        <name>~PhysicsBody</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4259c9604cec6377e90bbf71b15778a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+        <definition>PhysicsBody&amp; njli::PhysicsBody::operator=</definition>
+        <argsstring>(const PhysicsBody &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a21bdbc459532f004dc4cd0e9c99a4765" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::PhysicsBody::calculateSerializeBufferSize</definition>
+        <argsstring>() const =0</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1ae2588284d8f625c70e93ed293bb9cb0b">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1aba5336f0f355644716a17ccc03b83535">calculateSerializeBufferSize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a8263223fca42a563b9f2a756d077c8b1">calculateSerializeBufferSize</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a3c40378e7f3033557ec6adf9428b6a9d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::serialize</definition>
+        <argsstring>(void *dataBuffer, btSerializer *) const =0</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a7e38c5df16551787c35fc55c1335ddf1">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1ad3f75b8cbff7431afbb14569bda203c4">serialize</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1aa2f009ffadaf78b84bd36c8cb5536f6c">serialize</reimplementedby>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+          <declname>dataBuffer</declname>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 15:02:51</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dataBuffer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dataBuffer description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a9ba235d39a1b994f22a13edeff862ba3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::PhysicsBody::getClassName</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a1d3ad459c9527251dfdef541ae44c850">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1aa04661e7cd05271931351076c53991b2">getClassName</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a13a8810e9ddca12e83bbbe6676e8c906">getClassName</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a1338648bed55e4ca2d3c50d953fd60c4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::PhysicsBody::getType</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1adfe628fd5ab43df08332362414d72b2a">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a8b7a0599b7da88fbcf61451dc066748f">getType</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a701c7a02bd440b03982d7f9509baca03">getType</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="96" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a0c12067445dfd7893e37052ae90a9173" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type></type>
+        <definition>virtual njli::PhysicsBody::operator std::string</definition>
+        <argsstring>() const =0</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a59efe6d63a15ad3ea002c3f0dbfc3fbd">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a86a29fb8d31a0b8f5cee712b8f84d7b8">operator std::string</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a6fa8e700498136a0a6f64c9c3c45eed8">operator std::string</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="102" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a5e3c626da8fdf32375e0f16f6187934d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsBody::handleCollide</definition>
+        <argsstring>(PhysicsBody *body, const btManifoldPoint &amp;pt)</argsstring>
+        <name>handleCollide</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const btManifoldPoint &amp;</type>
+          <declname>pt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#body description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>btManifoldPoint&amp;pt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btManifoldPoint&amp;pt description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ae317118b0cad6699ce9d7c1aa27db7fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsBody::handleCollisionNear</definition>
+        <argsstring>(PhysicsBody *body, const btDispatcherInfo &amp;dispatchInfo)</argsstring>
+        <name>handleCollisionNear</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> *</type>
+          <declname>body</declname>
+        </param>
+        <param>
+          <type>const btDispatcherInfo &amp;</type>
+          <declname>dispatchInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>body</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#body description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dispatchInfo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#dispatchInfo description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="148" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a5a4d5f7e9f4c39180f157f42be422358" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setPhysicsShape</definition>
+        <argsstring>(PhysicsShape *shape)</argsstring>
+        <name>setPhysicsShape</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shape</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#shape description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="156" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a5ecb49baeaa8c38937ee5fc566702148" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsBody::removePhysicsShape</definition>
+        <argsstring>()</argsstring>
+        <name>removePhysicsShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a3a502c491f089c573083b9958045924a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+        <definition>PhysicsShape* njli::PhysicsBody::getPhysicsShape</definition>
+        <argsstring>()</argsstring>
+        <name>getPhysicsShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aa03d33a7cb2e4da061f23265c250808c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+        <definition>const PhysicsShape* njli::PhysicsBody::getPhysicsShape</definition>
+        <argsstring>() const</argsstring>
+        <name>getPhysicsShape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="167" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a570891a03ea4f8243ccec9202b3dc965" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setWorldTransform</definition>
+        <argsstring>(const btTransform &amp;transform)=0</argsstring>
+        <name>setWorldTransform</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a500a0a1f0e9d729bd0ac23da18202af4">setWorldTransform</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a489d0e67788ff5c74033824814470855">setWorldTransform</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a70afa1817272e87547d6fccd8ca91ff4">setWorldTransform</reimplementedby>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>transform</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#transform description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="174" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ae8501b09e0eda9f0f82069c537f16663" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>btTransform</type>
+        <definition>virtual btTransform njli::PhysicsBody::getWorldTransform</definition>
+        <argsstring>() const</argsstring>
+        <name>getWorldTransform</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1ad65b1292303642832a18f864bb23cff5">getWorldTransform</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="180" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aa274a01209a062b130d675bec9aef6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setFriction</definition>
+        <argsstring>(f32 friction)</argsstring>
+        <name>setFriction</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>friction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>friction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#friction description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a5140f2a2f0df419db4acfe85aa7ffc1c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>virtual f32 njli::PhysicsBody::getFriction</definition>
+        <argsstring>() const</argsstring>
+        <name>getFriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="193" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a9361f24aea1decf35d872e7509d4e9dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setAngularFriction</definition>
+        <argsstring>(f32 friction)</argsstring>
+        <name>setAngularFriction</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>friction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>friction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#friction description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aacb7f2a5e518977ee8db878286b86884" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>virtual f32 njli::PhysicsBody::getAngularFriction</definition>
+        <argsstring>() const</argsstring>
+        <name>getAngularFriction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="206" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a9741d811656fcd2865d688627ee2ea8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setRestitution</definition>
+        <argsstring>(f32 restitution)</argsstring>
+        <name>setRestitution</name>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>restitution</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>restitution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#restitution description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="213" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a1b125030c9a2abf3c450ef4e1dc492c3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>virtual f32 njli::PhysicsBody::getRestitution</definition>
+        <argsstring>() const</argsstring>
+        <name>getRestitution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="219" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ae9b3b3115dbc70f21b5f5fb8c66aa18c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setPhysicsType</definition>
+        <argsstring>(njliPhysicsType type)</argsstring>
+        <name>setPhysicsType</name>
+        <param>
+          <type><ref refid="namespacenjli_1a60ba626f4609f81870c92d042c6bc83d" kindref="member">njliPhysicsType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;<ref refid="classnjli_1_1_physics_body_1a98036bcbea6e3269603a83e532d2e5ab" kindref="member">type</ref> description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="226" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aaed92388b5924746fbd38b87d3bc66b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacenjli_1a60ba626f4609f81870c92d042c6bc83d" kindref="member">njliPhysicsType</ref></type>
+        <definition>virtual njliPhysicsType njli::PhysicsBody::getPhysicsType</definition>
+        <argsstring>() const</argsstring>
+        <name>getPhysicsType</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aad9390d215723749aabf132dac31d455" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setCollisionGroup</definition>
+        <argsstring>(njliBitCategories categoryBitMask)</argsstring>
+        <name>setCollisionGroup</name>
+        <param>
+          <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+          <declname>categoryBitMask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>categoryBitMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#categoryBitMask description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="239" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a58fdc56103d9aa37f477d7a09d5a91ef" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+        <definition>virtual njliBitCategories njli::PhysicsBody::getCollisionGroup</definition>
+        <argsstring>() const</argsstring>
+        <name>getCollisionGroup</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a15550580fd04daffff4a9f777259fc4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setCollisionMask</definition>
+        <argsstring>(njliBitCategories categoryBitMask)</argsstring>
+        <name>setCollisionMask</name>
+        <param>
+          <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+          <declname>categoryBitMask</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>categoryBitMask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#categoryBitMask description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="252" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a650d1076cacf8ba50ddbb19691c01324" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="namespacenjli_1af7b302a2b48bb644f85c88080925c974" kindref="member">njliBitCategories</ref></type>
+        <definition>virtual njliBitCategories njli::PhysicsBody::getCollisionMask</definition>
+        <argsstring>() const</argsstring>
+        <name>getCollisionMask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="258" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4c323ff21d529c581207eca237d93fa3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setStaticPhysics</definition>
+        <argsstring>()</argsstring>
+        <name>setStaticPhysics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="263" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ab7747d6463f3bc09b0834f51b3e0d3ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setKinematicPhysics</definition>
+        <argsstring>()</argsstring>
+        <name>setKinematicPhysics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="267" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a507e920a3e95896173545a631325f52a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setDynamicPhysics</definition>
+        <argsstring>()</argsstring>
+        <name>setDynamicPhysics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="271" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a445e356d3e6757c2d629e307c3579e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::enableContactResponse</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableContactResponse</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#enable description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="277" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a52eca1531519fbd9a3612e36fd797208" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::enableHandleCollideCallback</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableHandleCollideCallback</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#enable description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="283" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a9371ebdae5ef5e8de3ac5d132a98811e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::isStaticPhysics</definition>
+        <argsstring>() const</argsstring>
+        <name>isStaticPhysics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="290" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a00c42708cf7cebd2c287b6caae77b589" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::isKinematicPhysics</definition>
+        <argsstring>() const</argsstring>
+        <name>isKinematicPhysics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a37afd50adbf592ba17ff2b4cd45b5311" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::isDynamicPhysics</definition>
+        <argsstring>() const</argsstring>
+        <name>isDynamicPhysics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="302" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a5aeab5201a9d85013340b2a1fb8af7e3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::PhysicsBody::isResting</definition>
+        <argsstring>() const</argsstring>
+        <name>isResting</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="309" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a03e2635ad02016962cee7df3019e73eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::enableResting</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableResting</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#enable description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="315" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1add437a6d229dfbf74a838d0de7229867" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>virtual const btVector3&amp; njli::PhysicsBody::getVelocity</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getVelocity</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1af8cbddbeb15e03ebdf1e6000d7abb6a4">getVelocity</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1aee53dbc6a3aba8ab33c10e3523f1f4dc">getVelocity</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1abbd7a0ea7ee539d9b84c64859ddf8406">getVelocity</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="322" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a598de298accae3b59c821ab8e640d464" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const btVector3 &amp;</type>
+        <definition>virtual const btVector3&amp; njli::PhysicsBody::getAngularVelocity</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getAngularVelocity</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1abda1dce34eaaf0e2524d2f6afde1c502">getAngularVelocity</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a01a4600e0521f09ec19879c1bdea3b8c">getAngularVelocity</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a13bb91357c547d832411c02be5e89260">getAngularVelocity</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="328" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a9f98398ebd273f305ffb8316908d8088" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::PhysicsBody::isInWorld</definition>
+        <argsstring>() const =0</argsstring>
+        <name>isInWorld</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a22d6c5a0a3572feb0a8888e54b2c0e9a">isInWorld</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a6b131b8407733cc046c4c8fa38b35055">isInWorld</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a0679c29d4447ee758cb84234731dfbdd">isInWorld</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="335" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a2418ec20e73cfe304bac23e306daebcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setMass</definition>
+        <argsstring>(f32 mass)=0</argsstring>
+        <name>setMass</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a23766e4c1a649a93680f37592cd56060">setMass</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a1edc30655aa0495dbf60c59138cb52e2">setMass</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a1c8b45c013666e4cd575fc6e3c6db031">setMass</reimplementedby>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="337" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a6f86b5736d90e252ec239357835377e9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+        <definition>virtual f32 njli::PhysicsBody::getMass</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getMass</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1af288891787749f41ddd0097ded18e413">getMass</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1ade6ffdabf6c80a9443b2021848872edb">getMass</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a91e536e02eac21b097654263c6298f1b">getMass</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="338" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a62a572e1c500a90ade8e279d72664123" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsBody::getPhysicsConstraints</definition>
+        <argsstring>(std::vector&lt; PhysicsConstraint *&gt; &amp;physicsConstraints) const</argsstring>
+        <name>getPhysicsConstraints</name>
+        <param>
+          <type>std::vector&lt; <ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> *&gt; &amp;</type>
+          <declname>physicsConstraints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>physicsConstraints</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#physicsConstraints description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="381" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1af17e37b5161cf45c98fb07607ec27eb6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::PhysicsBody::getPhysicsConstraintIndex</definition>
+        <argsstring>(PhysicsConstraint *object) const</argsstring>
+        <name>getPhysicsConstraintIndex</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="390" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aa4e623ba19115b05486b415929a32016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> *</type>
+        <definition>PhysicsConstraint* njli::PhysicsBody::getPhysicsConstraint</definition>
+        <argsstring>(const u32 index)</argsstring>
+        <name>getPhysicsConstraint</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="398" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ad0f774812e46bf37b786adf13b00ab4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> *</type>
+        <definition>const PhysicsConstraint* njli::PhysicsBody::getPhysicsConstraint</definition>
+        <argsstring>(const u32 index) const</argsstring>
+        <name>getPhysicsConstraint</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#index description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="406" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4899553ad56d95577a74893b416db401" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::hasPhysicsConstraint</definition>
+        <argsstring>() const</argsstring>
+        <name>hasPhysicsConstraint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="408" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a9cd56ee4fa9e3258264ae7fa2a5a3a49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>Node* njli::PhysicsBody::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="415" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1adb2a13498a34dadc69c7746d88ca4a79" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+        <definition>const Node* njli::PhysicsBody::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="421" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4be49988e50146b12c149bf66bb51230" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::PhysicsBody::getCollisionFlags</definition>
+        <argsstring>() const</argsstring>
+        <name>getCollisionFlags</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="428" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a5c92da5dcc5580adad10fced20266d33" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::PhysicsBody::getActivationState</definition>
+        <argsstring>() const</argsstring>
+        <name>getActivationState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="434" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="59" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a440e12dbc2367ac3676481183bc8869c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> *</type>
+        <definition>static PhysicsBody* njli::PhysicsBody::create</definition>
+        <argsstring>(u32 type)</argsstring>
+        <name>create</name>
+        <param>
+          <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;<ref refid="classnjli_1_1_physics_body_1a98036bcbea6e3269603a83e532d2e5ab" kindref="member">type</ref> description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a3b15b7f0943b31e6c2dd24661c82c4bf" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsBody::destroy</definition>
+        <argsstring>(PhysicsBody *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a4f490b34152c1355ca09c1f6cdc0be83" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::PhysicsBody::load</definition>
+        <argsstring>(PhysicsBody &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_body" kindref="compound">PhysicsBody</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="125" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a98036bcbea6e3269603a83e532d2e5ab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::PhysicsBody::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="131" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a48031c76bbe2bd9c4540d6d27b8b42bb" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>const btCollisionObject *</type>
+        <definition>virtual const btCollisionObject* njli::PhysicsBody::getCollisionObject</definition>
+        <argsstring>() const =0</argsstring>
+        <name>getCollisionObject</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a41f7c080d5c79ed719cfcfb0de35a449">getCollisionObject</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a79b35eaf9c790ef43ad3e0f4a8a4c518">getCollisionObject</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1aa92b1f7c329ae49a2ad80947db1dd7ba">getCollisionObject</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="341" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ad3edabf71cfde91351bb428c9f06931e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>btCollisionObject *</type>
+        <definition>virtual btCollisionObject* njli::PhysicsBody::getCollisionObject</definition>
+        <argsstring>()=0</argsstring>
+        <name>getCollisionObject</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1a30c0af5e858983da4b549e883e6ca21a">getCollisionObject</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a6e5a9ffb4448b4a73bac8e3e44421698">getCollisionObject</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a47bfa192d6de09d5ce0486ed2cc09831">getCollisionObject</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="342" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a674974f0df3db645620c7156177659ee" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::PhysicsBody::setCollisionObject</definition>
+        <argsstring>(const btCollisionObject &amp;obj, PhysicsShape *shape)=0</argsstring>
+        <name>setCollisionObject</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1ac84a68c18afab8bf7cabdf51461d52fb">setCollisionObject</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a87c4ba0c2317a6e6e40231f58a1c9ed5">setCollisionObject</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a772e64b569e190f647047c0c5be2a852">setCollisionObject</reimplementedby>
+        <param>
+          <type>const btCollisionObject &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_shape" kindref="compound">PhysicsShape</ref> *</type>
+          <declname>shape</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="343" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1aa2859a8335e3c38ff71b12bc0b002b0e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::PhysicsBody::setTransform</definition>
+        <argsstring>(const btTransform &amp;transform=btTransform::getIdentity())=0</argsstring>
+        <name>setTransform</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1ae0db3e9ff0ab9525f3f1b8e694ce25e5">setTransform</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1aa6f6ca168453f49b48d295a1bb8d7228">setTransform</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a45c724055d7d0192f4e3c154b2c944f4">setTransform</reimplementedby>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>transform</declname>
+          <defval>btTransform::getIdentity()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a832ed4f79a2b52b334d63d094364f86a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool njli::PhysicsBody::removePhysicsBody</definition>
+        <argsstring>()=0</argsstring>
+        <name>removePhysicsBody</name>
+        <reimplementedby refid="classnjli_1_1_physics_body_soft_1adce1993fe1287488cc5cb42b30a09bcc">removePhysicsBody</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_ghost_1a854f866870a887026cfb87d441008595">removePhysicsBody</reimplementedby>
+        <reimplementedby refid="classnjli_1_1_physics_body_rigid_1a7efbdfc46e8df26d073b00efaaf0c91c">removePhysicsBody</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="348" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a144a0d79efe85c3c64da84d28e880768" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::PhysicsBody::setPhysicsConstraint</definition>
+        <argsstring>(PhysicsConstraint *constraint)</argsstring>
+        <name>setPhysicsConstraint</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> *</type>
+          <declname>constraint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#constraint description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="359" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1a45058a03979e89b0b0fc4dceb07d8b4d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::PhysicsBody::removePhysicsConstraint</definition>
+        <argsstring>(PhysicsConstraint *constraint)</argsstring>
+        <name>removePhysicsConstraint</name>
+        <param>
+          <type><ref refid="classnjli_1_1_physics_constraint" kindref="compound">PhysicsConstraint</ref> *</type>
+          <declname>constraint</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>constraint</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#constraint description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="368" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_physics_body_1ae4a8cca611e33c624b287613eac4d72c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::PhysicsBody::removeAllPhysicsConstraints</definition>
+        <argsstring>()</argsstring>
+        <name>removeAllPhysicsConstraints</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="373" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1255">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1256" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1257">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="1259">
+        <label>njli::PhysicsBodyRigid</label>
+        <link refid="classnjli_1_1_physics_body_rigid"/>
+        <childnode refid="1254" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1256">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1257" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1260">
+        <label>njli::PhysicsBodySoft</label>
+        <link refid="classnjli_1_1_physics_body_soft"/>
+        <childnode refid="1254" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1254">
+        <label>njli::PhysicsBody</label>
+        <link refid="classnjli_1_1_physics_body"/>
+        <childnode refid="1255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1258">
+        <label>njli::PhysicsBodyGhost</label>
+        <link refid="classnjli_1_1_physics_body_ghost"/>
+        <childnode refid="1254" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1262">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1263" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1264">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="1264" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1263">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1264" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1265">
+        <label>njli::PhysicsShape</label>
+        <link refid="classnjli_1_1_physics_shape"/>
+        <childnode refid="1262" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1261">
+        <label>njli::PhysicsBody</label>
+        <link refid="classnjli_1_1_physics_body"/>
+        <childnode refid="1262" relation="public-inheritance">
+        </childnode>
+        <childnode refid="1265" relation="usage">
+          <edgelabel>m_PhysicsShape</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" line="36" column="1" bodyfile="njligames-njlic_engine/njli/physics/body/PhysicsBody.h" bodystart="34" bodyend="450"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_physics_body_1aecae8b7ddd0550b4f685326bf2a723da" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_physics_body_1a21bdbc459532f004dc4cd0e9c99a4765" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::PhysicsBody</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_physics_body_1a440e12dbc2367ac3676481183bc8869c" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_body_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsBody</scope><name>create</name></member>
+      <member refid="classnjli_1_1_physics_body_1a3b15b7f0943b31e6c2dd24661c82c4bf" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsBody</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::PhysicsBody</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_physics_body_1a445e356d3e6757c2d629e307c3579e01" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>enableContactResponse</name></member>
+      <member refid="classnjli_1_1_physics_body_1a52eca1531519fbd9a3612e36fd797208" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>enableHandleCollideCallback</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1a03e2635ad02016962cee7df3019e73eb" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>enableResting</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_physics_body_1a5c92da5dcc5580adad10fced20266d33" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getActivationState</name></member>
+      <member refid="classnjli_1_1_physics_body_1aacb7f2a5e518977ee8db878286b86884" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getAngularFriction</name></member>
+      <member refid="classnjli_1_1_physics_body_1a598de298accae3b59c821ab8e640d464" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getAngularVelocity</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_physics_body_1a9ba235d39a1b994f22a13edeff862ba3" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4be49988e50146b12c149bf66bb51230" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getCollisionFlags</name></member>
+      <member refid="classnjli_1_1_physics_body_1a58fdc56103d9aa37f477d7a09d5a91ef" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getCollisionGroup</name></member>
+      <member refid="classnjli_1_1_physics_body_1a650d1076cacf8ba50ddbb19691c01324" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getCollisionMask</name></member>
+      <member refid="classnjli_1_1_physics_body_1a48031c76bbe2bd9c4540d6d27b8b42bb" prot="protected" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getCollisionObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1ad3edabf71cfde91351bb428c9f06931e" prot="protected" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getCollisionObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1a5140f2a2f0df419db4acfe85aa7ffc1c" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getFriction</name></member>
+      <member refid="classnjli_1_1_physics_body_1a6f86b5736d90e252ec239357835377e9" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getMass</name></member>
+      <member refid="classnjli_1_1_physics_body_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::PhysicsBody</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_physics_body_1a9cd56ee4fa9e3258264ae7fa2a5a3a49" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_physics_body_1adb2a13498a34dadc69c7746d88ca4a79" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa4e623ba19115b05486b415929a32016" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsConstraint</name></member>
+      <member refid="classnjli_1_1_physics_body_1ad0f774812e46bf37b786adf13b00ab4f" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsConstraint</name></member>
+      <member refid="classnjli_1_1_physics_body_1af17e37b5161cf45c98fb07607ec27eb6" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsConstraintIndex</name></member>
+      <member refid="classnjli_1_1_physics_body_1a62a572e1c500a90ade8e279d72664123" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsConstraints</name></member>
+      <member refid="classnjli_1_1_physics_body_1a3a502c491f089c573083b9958045924a" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsShape</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa03d33a7cb2e4da061f23265c250808c" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsShape</name></member>
+      <member refid="classnjli_1_1_physics_body_1aaed92388b5924746fbd38b87d3bc66b6" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getPhysicsType</name></member>
+      <member refid="classnjli_1_1_physics_body_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsBody</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsBody</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_physics_body_1a1b125030c9a2abf3c450ef4e1dc492c3" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getRestitution</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_physics_body_1a1338648bed55e4ca2d3c50d953fd60c4" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_physics_body_1add437a6d229dfbf74a838d0de7229867" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>getVelocity</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae8501b09e0eda9f0f82069c537f16663" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>getWorldTransform</name></member>
+      <member refid="classnjli_1_1_physics_body_1a5e3c626da8fdf32375e0f16f6187934d" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>handleCollide</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae317118b0cad6699ce9d7c1aa27db7fa" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>handleCollisionNear</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4899553ad56d95577a74893b416db401" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>hasPhysicsConstraint</name></member>
+      <member refid="classnjli_1_1_physics_body_1a37afd50adbf592ba17ff2b4cd45b5311" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>isDynamicPhysics</name></member>
+      <member refid="classnjli_1_1_physics_body_1a9f98398ebd273f305ffb8316908d8088" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>isInWorld</name></member>
+      <member refid="classnjli_1_1_physics_body_1a00c42708cf7cebd2c287b6caae77b589" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>isKinematicPhysics</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1a5aeab5201a9d85013340b2a1fb8af7e3" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>isResting</name></member>
+      <member refid="classnjli_1_1_physics_body_1a9371ebdae5ef5e8de3ac5d132a98811e" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>isStaticPhysics</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4f490b34152c1355ca09c1f6cdc0be83" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>load</name></member>
+      <member refid="classnjli_1_1_physics_body_1a63352ab7615e4537f30479062ffb6a48" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_ActivationState</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa474bfee45457dc90f521b1fcc47b4f3" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_CategoryBitMask</name></member>
+      <member refid="classnjli_1_1_physics_body_1ad54b0614806637ab666fd9a779e55d51" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_CollisionBitMask</name></member>
+      <member refid="classnjli_1_1_physics_body_1aafbdd7a8a90737acd399b56961cbd16c" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_CollisionFlags</name></member>
+      <member refid="classnjli_1_1_physics_body_1a313bb39a706c42bc97c86cff4bd0f309" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_IsResting</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae940a11c675d6434564f8deebbfe45b7" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_PhysicsConstraintList</name></member>
+      <member refid="classnjli_1_1_physics_body_1a00c2b8d2e86534be769c4984956c00c2" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_PhysicsShape</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae0f4e419f8e05558232170246fe7ad83" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>m_RestingAllowed</name></member>
+      <member refid="classnjli_1_1_physics_body_1a6db9d28bd448a131448276ee03de1e6d" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>Node</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_physics_body_1a0c12067445dfd7893e37052ae90a9173" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4259c9604cec6377e90bbf71b15778a3" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_physics_body_1ad68e3bd30ca09693f5b03855d020923b" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsBody</name></member>
+      <member refid="classnjli_1_1_physics_body_1a58cbc549412fc623f35276d2f18b8785" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsBody</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae72cb51b910158466d481481e1042a2e" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsBody</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa59c958a66870f0d251ec0dd477d2eff" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraint</name></member>
+      <member refid="classnjli_1_1_physics_body_1a2ccf10571ac5c97189a4c7d1fe3831ae" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintConeTwist</name></member>
+      <member refid="classnjli_1_1_physics_body_1a684f5ece6d7d44c2b9f689e76458a8fb" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintFixed</name></member>
+      <member refid="classnjli_1_1_physics_body_1a1d2185bf07a23cc48cd8f9d4271f3e39" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintGeneric6Dof</name></member>
+      <member refid="classnjli_1_1_physics_body_1af32c447e4cf588410ecc1a6106157f9a" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintGeneric6DofSpring</name></member>
+      <member refid="classnjli_1_1_physics_body_1a0117dac2d3ca1ac4ebe089ac8c258560" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintHinge</name></member>
+      <member refid="classnjli_1_1_physics_body_1a06afcd7f1b1822af8e15e045e77eed2a" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintPointToPoint</name></member>
+      <member refid="classnjli_1_1_physics_body_1a6b9fa11eb22d1cb30e2d4fc2247e9afa" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsConstraintSlider</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa594c185e502e1b87c998e01dd17a50f" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsShapeBox</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae9fdb8cf9943dbfd76910301cb0ac1bc" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsShapeBox2D</name></member>
+      <member refid="classnjli_1_1_physics_body_1abd7959b8cbcd7c25bc6c0c8b1ea26ce6" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>PhysicsWorld</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae4a8cca611e33c624b287613eac4d72c" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removeAllPhysicsConstraints</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_physics_body_1a832ed4f79a2b52b334d63d094364f86a" prot="protected" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>removePhysicsBody</name></member>
+      <member refid="classnjli_1_1_physics_body_1a45058a03979e89b0b0fc4dceb07d8b4d" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removePhysicsConstraint</name></member>
+      <member refid="classnjli_1_1_physics_body_1a5ecb49baeaa8c38937ee5fc566702148" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>removePhysicsShape</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_physics_body_1a3c40378e7f3033557ec6adf9428b6a9d" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::PhysicsBody</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1a9361f24aea1decf35d872e7509d4e9dc" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setAngularFriction</name></member>
+      <member refid="classnjli_1_1_physics_body_1aad9390d215723749aabf132dac31d455" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setCollisionGroup</name></member>
+      <member refid="classnjli_1_1_physics_body_1a15550580fd04daffff4a9f777259fc4a" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setCollisionMask</name></member>
+      <member refid="classnjli_1_1_physics_body_1a674974f0df3db645620c7156177659ee" prot="protected" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>setCollisionObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1a507e920a3e95896173545a631325f52a" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setDynamicPhysics</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa274a01209a062b130d675bec9aef6ed" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setFriction</name></member>
+      <member refid="classnjli_1_1_physics_body_1ab7747d6463f3bc09b0834f51b3e0d3ee" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setKinematicPhysics</name></member>
+      <member refid="classnjli_1_1_physics_body_1a2418ec20e73cfe304bac23e306daebcd" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>setMass</name></member>
+      <member refid="classnjli_1_1_physics_body_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::PhysicsBody</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::PhysicsBody</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_physics_body_1a144a0d79efe85c3c64da84d28e880768" prot="protected" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>setPhysicsConstraint</name></member>
+      <member refid="classnjli_1_1_physics_body_1a5a4d5f7e9f4c39180f157f42be422358" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setPhysicsShape</name></member>
+      <member refid="classnjli_1_1_physics_body_1ae9b3b3115dbc70f21b5f5fb8c66aa18c" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setPhysicsType</name></member>
+      <member refid="classnjli_1_1_physics_body_1a9741d811656fcd2865d688627ee2ea8b" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setRestitution</name></member>
+      <member refid="classnjli_1_1_physics_body_1a4c323ff21d529c581207eca237d93fa3" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>setStaticPhysics</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_physics_body_1aa2859a8335e3c38ff71b12bc0b002b0e" prot="protected" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>setTransform</name></member>
+      <member refid="classnjli_1_1_physics_body_1a570891a03ea4f8243ccec9202b3dc965" prot="public" virt="pure-virtual"><scope>njli::PhysicsBody</scope><name>setWorldTransform</name></member>
+      <member refid="classnjli_1_1_physics_body_1a98036bcbea6e3269603a83e532d2e5ab" prot="public" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>type</name></member>
+      <member refid="classnjli_1_1_physics_body_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::PhysicsBody</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::PhysicsBody</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::PhysicsBody</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_physics_body_1a181de210c6f8af7a7ec4ccbc5198e969" prot="public" virt="virtual"><scope>njli::PhysicsBody</scope><name>~PhysicsBody</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

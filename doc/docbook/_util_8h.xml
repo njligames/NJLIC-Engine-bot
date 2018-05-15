@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_util_8h">
+    <title>Util.h File Reference</title>
+    <programlisting>#include &quot;Log.h&quot;</programlisting>
+    <programlisting>#include &lt;stdio.h&gt;</programlisting>
+    <programlisting>#include &lt;stdlib.h&gt;</programlisting>
+    <programlisting>#include &lt;math.h&gt;</programlisting>
+<para>Include dependency diagram for Util.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_util_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for Util.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_util_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title> Classes </title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structrgb">rgb</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>struct <link linkend="structhsv">hsv</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Macros</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_util_8h_1a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</link> ((<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> *)0)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_util_8h_1a598a3330b3c21701223ee0ca14316eca">PI</link> 3.14159265358979323846264338327f</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>#define <link linkend="_util_8h_1a6b20d41d6252e9871430c242cb1a56e7">BUFFER_SIZE</link> 512</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Typedefs</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef char  <link linkend="_util_8h_1a2ff401e087cf786c38a6812723e94473">s8</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned char  <link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef short  <link linkend="_util_8h_1a2e9bf6983da73775aa86158c825bf777">s16</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned short  <link linkend="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054">u16</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef int  <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned int  <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef signed long long  <link linkend="_util_8h_1a4258bfb2c3a440d06c4aaa3c2b450dde">s64</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef unsigned long long  <link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef float  <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                            <para>typedef double  <link linkend="_util_8h_1a94dab5770726ccbef8c7d026cfbdf8e5">f64</link></para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Functions</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>char <link linkend="_util_8h_1ae88bd4b701da0facce543b4b1cf2913e">IsOn</link> (
+const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> value, const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> bit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="_util_8h_1a86d8a45efa3de86d9cbd56e47f817ae5">On</link> (
+const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> value, const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> bit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="_util_8h_1ad1051d2c3a51590b7ff6d8eebf207767">Off</link> (
+const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> value, const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> bit)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="_util_8h_1a49d91d981da3589ae6425aec87b8b2ba">clampf</link> (
+const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> value, const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> min, const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> max)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="_util_8h_1a2ab20be98ddc67c99178eecd4e4fce2d">clamp</link> (
+const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> value, const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> min, const <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> max)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="_util_8h_1a06c3fcc0066b352d32be5c1af8836395">clampColor</link> (
+const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="_util_8h_1aa1324f2b342af4bee334ecbba1f0d8ea">isPowerOfTwo</link> (
+<link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="_util_8h_1a9f316c57e6595e69794eb7404799cef3">fixPowerOfTwo</link> (
+<link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> v)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="structhsv">hsv</link> <link linkend="_util_8h_1aa9504068d05a6b4a9f772dbfa9d0e0ca">rgb2hsv</link> (
+<link linkend="structrgb">rgb</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="structrgb">rgb</link> <link linkend="_util_8h_1a4a66ca1d47428638881abe32bfd7affc">hsv2rgb</link> (
+<link linkend="structhsv">hsv</link> in)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/njli/platform/Util.h</para>
+    </simplesect>
+</section>

@@ -1,0 +1,271 @@
+\hypertarget{classnjli_1_1_wrapper_wav}{}\section{njli\+:\+:Wrapper\+Wav Class Reference}
+\label{classnjli_1_1_wrapper_wav}\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+
+
+{\ttfamily \#include $<$Wrapper\+\_\+\+W\+A\+V.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Wrapper\+Wav\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classnjli_1_1_wrapper_wav__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Wrapper\+Wav\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnjli_1_1_wrapper_wav__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_wrapper_wav_a53dde3ca2091dae93b2153f32dba6c4d}{Wrapper\+Wav}} (int min\+Decompress\+Length\+At\+Once=-\/1)
+\item 
+\mbox{\hyperlink{classnjli_1_1_wrapper_wav_a8b4fecfd6d212c0df75bf5fa34239c51}{$\sim$\+Wrapper\+Wav}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a93b83be038f6d2bc269720b0fa91d841}{Load\+From\+Memory}} (char $\ast$data, int data\+Size, Sound\+Info $\ast$sound\+Info)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a43b8306e554b224968ef436020416765}{Load\+From\+File}} (F\+I\+LE $\ast$f, Sound\+Info $\ast$sound\+Info)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_aa84e533c55261000594f1889f60d1ef5}{Decompress\+Stream}} (std\+::vector$<$ char $>$ \&decompress\+Buffer, bool in\+Loop=false)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a530b83b423d29c785889f9783ab08b9b}{Decompress\+All}} (std\+::vector$<$ char $>$ \&decompress\+Buffer)
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ab24f4e589680e0abe321e105f01468bf}{Reset\+Stream}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_aa75e013ec22ca84b54ee33428dcd3d09}{Seek}} (size\+\_\+t pos, \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{S\+E\+E\+K\+\_\+\+P\+OS}} start)
+\item 
+virtual size\+\_\+t \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ac7f741a2d2db3126eec69b64eb2cacfc}{Get\+Current\+Stream\+Pos}} () const
+\item 
+virtual float \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a0cfe149e0e1089f153401f3c80a222df}{Get\+Time}} () const
+\item 
+virtual float \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ae281e2ac23707e6eb2c1f2e7fcb58881}{Get\+Total\+Time}} () const
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a8e5df03af7dc8f841c9e316caa00a13d}{Read\+Data}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$dst, size\+\_\+t size)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structwav__file}{wav\+\_\+file}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_ad32ca04f4229e8b702a427dca72b9957}{t}}
+\item 
+char \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a9b66f4b65280f952349f526c7012e9b8}{buf\+Array}} \mbox{[}\mbox{\hyperlink{_wrapper___w_a_v_8h_a9a6da6d572cf36f4c8df9df32f289291}{W\+A\+V\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}
+\item 
+int \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a89b4f2b0d96ed110de07c17f395b40b7}{min\+Processs\+Length\+At\+Once}}
+\item 
+\mbox{\hyperlink{struct_w_a_v___d_e_s_c}{W\+A\+V\+\_\+\+D\+E\+SC}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_abcaa318c09e942ca3a3bad1e34187d46}{desc}}
+\item 
+\mbox{\hyperlink{struct_w_a_v___f_o_r_m_a_t}{W\+A\+V\+\_\+\+F\+O\+R\+M\+AT}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a7ae72bc3d456ddcf99ed6e78d05c6ca7}{format}}
+\item 
+\mbox{\hyperlink{struct_w_a_v___c_h_u_n_k}{W\+A\+V\+\_\+\+C\+H\+U\+NK}} \mbox{\hyperlink{classnjli_1_1_wrapper_wav_af0615f38310011eed743fbeab3356f86}{cur\+Chunk}}
+\item 
+int \mbox{\hyperlink{classnjli_1_1_wrapper_wav_a4915a4654f047eedb569dbe03b73f1f6}{cur\+Buf\+Size}}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 56 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a53dde3ca2091dae93b2153f32dba6c4d}\label{classnjli_1_1_wrapper_wav_a53dde3ca2091dae93b2153f32dba6c4d}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Wrapper\+Wav@{Wrapper\+Wav}}
+\index{Wrapper\+Wav@{Wrapper\+Wav}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Wrapper\+Wav()}{WrapperWav()}}
+{\footnotesize\ttfamily njli\+::\+Wrapper\+Wav\+::\+Wrapper\+Wav (\begin{DoxyParamCaption}\item[{int}]{min\+Decompress\+Length\+At\+Once = {\ttfamily -\/1} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a8b4fecfd6d212c0df75bf5fa34239c51}\label{classnjli_1_1_wrapper_wav_a8b4fecfd6d212c0df75bf5fa34239c51}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!````~Wrapper\+Wav@{$\sim$\+Wrapper\+Wav}}
+\index{````~Wrapper\+Wav@{$\sim$\+Wrapper\+Wav}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{$\sim$\+Wrapper\+Wav()}{~WrapperWav()}}
+{\footnotesize\ttfamily njli\+::\+Wrapper\+Wav\+::$\sim$\+Wrapper\+Wav (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a530b83b423d29c785889f9783ab08b9b}\label{classnjli_1_1_wrapper_wav_a530b83b423d29c785889f9783ab08b9b}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Decompress\+All@{Decompress\+All}}
+\index{Decompress\+All@{Decompress\+All}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Decompress\+All()}{DecompressAll()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Decompress\+All (\begin{DoxyParamCaption}\item[{std\+::vector$<$ char $>$ \&}]{decompress\+Buffer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a9b338a5bbcb5d07acdebce1efab332c5}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_aa84e533c55261000594f1889f60d1ef5}\label{classnjli_1_1_wrapper_wav_aa84e533c55261000594f1889f60d1ef5}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Decompress\+Stream@{Decompress\+Stream}}
+\index{Decompress\+Stream@{Decompress\+Stream}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Decompress\+Stream()}{DecompressStream()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Decompress\+Stream (\begin{DoxyParamCaption}\item[{std\+::vector$<$ char $>$ \&}]{decompress\+Buffer,  }\item[{bool}]{in\+Loop = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a2e62b8b05da06eb1f9594ffdd5aa0cfd}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_ac7f741a2d2db3126eec69b64eb2cacfc}\label{classnjli_1_1_wrapper_wav_ac7f741a2d2db3126eec69b64eb2cacfc}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Get\+Current\+Stream\+Pos@{Get\+Current\+Stream\+Pos}}
+\index{Get\+Current\+Stream\+Pos@{Get\+Current\+Stream\+Pos}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Get\+Current\+Stream\+Pos()}{GetCurrentStreamPos()}}
+{\footnotesize\ttfamily virtual size\+\_\+t njli\+::\+Wrapper\+Wav\+::\+Get\+Current\+Stream\+Pos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a7468aaf1e53cfd6feb38eae4ecf8ab99}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a0cfe149e0e1089f153401f3c80a222df}\label{classnjli_1_1_wrapper_wav_a0cfe149e0e1089f153401f3c80a222df}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Get\+Time()}{GetTime()}}
+{\footnotesize\ttfamily virtual float njli\+::\+Wrapper\+Wav\+::\+Get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_afefb180620c4a6e17e994a867726eb29}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_ae281e2ac23707e6eb2c1f2e7fcb58881}\label{classnjli_1_1_wrapper_wav_ae281e2ac23707e6eb2c1f2e7fcb58881}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Get\+Total\+Time@{Get\+Total\+Time}}
+\index{Get\+Total\+Time@{Get\+Total\+Time}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Get\+Total\+Time()}{GetTotalTime()}}
+{\footnotesize\ttfamily virtual float njli\+::\+Wrapper\+Wav\+::\+Get\+Total\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a1b22318560969f7cc06ac03dcb78971f}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a43b8306e554b224968ef436020416765}\label{classnjli_1_1_wrapper_wav_a43b8306e554b224968ef436020416765}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Load\+From\+File@{Load\+From\+File}}
+\index{Load\+From\+File@{Load\+From\+File}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Load\+From\+File()}{LoadFromFile()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Load\+From\+File (\begin{DoxyParamCaption}\item[{F\+I\+LE $\ast$}]{f,  }\item[{Sound\+Info $\ast$}]{sound\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a525f86e4bbe65d5b90ee3eda171b5492}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a93b83be038f6d2bc269720b0fa91d841}\label{classnjli_1_1_wrapper_wav_a93b83be038f6d2bc269720b0fa91d841}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Load\+From\+Memory@{Load\+From\+Memory}}
+\index{Load\+From\+Memory@{Load\+From\+Memory}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Load\+From\+Memory()}{LoadFromMemory()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Load\+From\+Memory (\begin{DoxyParamCaption}\item[{char $\ast$}]{data,  }\item[{int}]{data\+Size,  }\item[{Sound\+Info $\ast$}]{sound\+Info }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a2c4dc8cc613f8f545b0e1ead86ee7e4d}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a8e5df03af7dc8f841c9e316caa00a13d}\label{classnjli_1_1_wrapper_wav_a8e5df03af7dc8f841c9e316caa00a13d}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Read\+Data@{Read\+Data}}
+\index{Read\+Data@{Read\+Data}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Read\+Data()}{ReadData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Read\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{dst,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_ab24f4e589680e0abe321e105f01468bf}\label{classnjli_1_1_wrapper_wav_ab24f4e589680e0abe321e105f01468bf}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Reset\+Stream@{Reset\+Stream}}
+\index{Reset\+Stream@{Reset\+Stream}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Reset\+Stream()}{ResetStream()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Reset\+Stream (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab302d724c78a9a55f6dcb288d31e6854}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_aa75e013ec22ca84b54ee33428dcd3d09}\label{classnjli_1_1_wrapper_wav_aa75e013ec22ca84b54ee33428dcd3d09}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!Seek@{Seek}}
+\index{Seek@{Seek}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{Seek()}{Seek()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Wrapper\+Wav\+::\+Seek (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{pos,  }\item[{\mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_ab4b07720cb2823b4f3f9fa98ee07a6e7}{S\+E\+E\+K\+\_\+\+P\+OS}}}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_i_sound_file_wrapper_a22241a77b7d6adf55045a7a30ec5ef30}{njli\+::\+I\+Sound\+File\+Wrapper}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a9b66f4b65280f952349f526c7012e9b8}\label{classnjli_1_1_wrapper_wav_a9b66f4b65280f952349f526c7012e9b8}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!buf\+Array@{buf\+Array}}
+\index{buf\+Array@{buf\+Array}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{buf\+Array}{bufArray}}
+{\footnotesize\ttfamily char njli\+::\+Wrapper\+Wav\+::buf\+Array\mbox{[}\mbox{\hyperlink{_wrapper___w_a_v_8h_a9a6da6d572cf36f4c8df9df32f289291}{W\+A\+V\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+S\+I\+ZE}}\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 77 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a4915a4654f047eedb569dbe03b73f1f6}\label{classnjli_1_1_wrapper_wav_a4915a4654f047eedb569dbe03b73f1f6}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!cur\+Buf\+Size@{cur\+Buf\+Size}}
+\index{cur\+Buf\+Size@{cur\+Buf\+Size}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{cur\+Buf\+Size}{curBufSize}}
+{\footnotesize\ttfamily int njli\+::\+Wrapper\+Wav\+::cur\+Buf\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 85 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_af0615f38310011eed743fbeab3356f86}\label{classnjli_1_1_wrapper_wav_af0615f38310011eed743fbeab3356f86}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!cur\+Chunk@{cur\+Chunk}}
+\index{cur\+Chunk@{cur\+Chunk}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{cur\+Chunk}{curChunk}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_w_a_v___c_h_u_n_k}{W\+A\+V\+\_\+\+C\+H\+U\+NK}} njli\+::\+Wrapper\+Wav\+::cur\+Chunk\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 84 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_abcaa318c09e942ca3a3bad1e34187d46}\label{classnjli_1_1_wrapper_wav_abcaa318c09e942ca3a3bad1e34187d46}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!desc@{desc}}
+\index{desc@{desc}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{desc}{desc}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_w_a_v___d_e_s_c}{W\+A\+V\+\_\+\+D\+E\+SC}} njli\+::\+Wrapper\+Wav\+::desc\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 81 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a7ae72bc3d456ddcf99ed6e78d05c6ca7}\label{classnjli_1_1_wrapper_wav_a7ae72bc3d456ddcf99ed6e78d05c6ca7}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!format@{format}}
+\index{format@{format}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_w_a_v___f_o_r_m_a_t}{W\+A\+V\+\_\+\+F\+O\+R\+M\+AT}} njli\+::\+Wrapper\+Wav\+::format\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 82 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_a89b4f2b0d96ed110de07c17f395b40b7}\label{classnjli_1_1_wrapper_wav_a89b4f2b0d96ed110de07c17f395b40b7}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!min\+Processs\+Length\+At\+Once@{min\+Processs\+Length\+At\+Once}}
+\index{min\+Processs\+Length\+At\+Once@{min\+Processs\+Length\+At\+Once}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{min\+Processs\+Length\+At\+Once}{minProcesssLengthAtOnce}}
+{\footnotesize\ttfamily int njli\+::\+Wrapper\+Wav\+::min\+Processs\+Length\+At\+Once\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 79 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_wrapper_wav_ad32ca04f4229e8b702a427dca72b9957}\label{classnjli_1_1_wrapper_wav_ad32ca04f4229e8b702a427dca72b9957}} 
+\index{njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}!t@{t}}
+\index{t@{t}!njli\+::\+Wrapper\+Wav@{njli\+::\+Wrapper\+Wav}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structwav__file}{wav\+\_\+file}} njli\+::\+Wrapper\+Wav\+::t\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 76 of file Wrapper\+\_\+\+W\+A\+V.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/sound/openal/\mbox{\hyperlink{_wrapper___w_a_v_8h}{Wrapper\+\_\+\+W\+A\+V.\+h}}\end{DoxyCompactItemize}

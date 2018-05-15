@@ -1,0 +1,1953 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_world">
+<title>njli::World class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_world_8h">&lt;World.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::World</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_world__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::World</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_world__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; njli::PhysicsRayContact * &gt; m_RayContacts</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldFactory * m_WorldFactory</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldResourceLoader * m_WorldResourceLoader</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldClock * m_WorldClock</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldLuaVirtualMachine * m_WorldLuaVirtualMachine</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldStateMachine * m_stateMachine</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btVector2 * m_ViewPortDimensions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Scene * m_Scene</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldSocket * m_WorldSocket</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldHUD * m_WorldHUD</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldInput * m_WorldInput</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldSound * m_WorldSound</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>WorldDebugDrawer * m_WorldDebugDrawer</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_enableDebugDraw</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Camera * m_DebugDrawCamera</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Material * m_DebugDrawMaterial</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_SocketEnabled</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string m_SocketAddress</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>u16 m_SocketPort</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btVector4 * m_BackgroundColor</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::string m_DeviceName</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_AnimationPaused</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool m_GamePaused</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static World * s_Instance</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a7e31e4dff9169bd82c24e69ff29b53b6">createInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a3bddccf6aeb57d953f358a2e66fc2c00">destroyInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_world">World</link> * <link linkend="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4">getInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static bool <link linkend="classnjli_1_1_world_1a9c8ccd2a51131b026b1ee6c9135eea8b">hasInstance</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_world_1af01e96219aea73e611ba28179b3532ed">World</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_world_1aaf74d0ac73e1bf62d7b26bf7fdb6b5cd">~World</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_world_1abf9c0b24c17244baf76d760e81974cfe">World</link> (
+const <link linkend="classnjli_1_1_world">World</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world">World</link> &amp; <link linkend="classnjli_1_1_world_1a2fe83dc2d899a91ef21ac20220e2ada4">operator=</link> (
+const <link linkend="classnjli_1_1_world">World</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_factory">WorldFactory</link> * <link linkend="classnjli_1_1_world_1a28299874538b8a714bcbae908760a364">getWorldFactory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_factory">WorldFactory</link> * <link linkend="classnjli_1_1_world_1abfd08290519a0525e79f8961cff41c33">getWorldFactory</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_resource_loader">WorldResourceLoader</link> * <link linkend="classnjli_1_1_world_1a094d454c35f0afea279bb5fbb39c196a">getWorldResourceLoader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_resource_loader">WorldResourceLoader</link> * <link linkend="classnjli_1_1_world_1a78357165d6bc4ef06ef774d4e0606bc9">getWorldResourceLoader</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_clock">WorldClock</link> * <link linkend="classnjli_1_1_world_1a00797432cd913a07ad852e703cbf7278">getWorldClock</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_clock">WorldClock</link> * <link linkend="classnjli_1_1_world_1a7edeaa8b2caed5240128952e85ea5b12">getWorldClock</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_lua_virtual_machine">WorldLuaVirtualMachine</link> * <link linkend="classnjli_1_1_world_1a6ebccef746ad4e44455bae7698839e29">getWorldLuaVirtualMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_lua_virtual_machine">WorldLuaVirtualMachine</link> * <link linkend="classnjli_1_1_world_1a82f0b1f8d27a311ec99b67d778e121a5">getWorldLuaVirtualMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_socket">WorldSocket</link> * <link linkend="classnjli_1_1_world_1a245f64dbfb8ac4b9aa405c05c58a77e5">getWorldSocket</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_socket">WorldSocket</link> * <link linkend="classnjli_1_1_world_1a58cd945663087fae147a88f76a984f83">getWorldSocket</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_input">WorldInput</link> * <link linkend="classnjli_1_1_world_1a9b8a2755f4643d169d54e047554ba8f2">getWorldInput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_input">WorldInput</link> * <link linkend="classnjli_1_1_world_1aefbda7b9bf38ace818503473814d8b18">getWorldInput</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_sound">WorldSound</link> * <link linkend="classnjli_1_1_world_1aeafce2408df830b6d0d4f4cc70a502f6">getWorldSound</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_sound">WorldSound</link> * <link linkend="classnjli_1_1_world_1aa0df2fe274aae44a7c3f4df0bfc2b2c8">getWorldSound</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_state_machine">WorldStateMachine</link> * <link linkend="classnjli_1_1_world_1a779f9ee41d7e73e013654dcdb1d83cf9">getStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_state_machine">WorldStateMachine</link> * <link linkend="classnjli_1_1_world_1aa78f8be7d30ab1d38cea248c3017f0a7">getStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_debug_drawer">WorldDebugDrawer</link> * <link linkend="classnjli_1_1_world_1abd9b6751260b5e6c28fa9cfd874cfaad">getDebugDrawer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_world_debug_drawer">WorldDebugDrawer</link> * <link linkend="classnjli_1_1_world_1a88ce760cdc314298a58f96af3ef9d492">getDebugDrawer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a027fc2766ebe49b79f974e7e808610f8">touchDown</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a1b2be462f5455b01856968eea7ee96bb">touchUp</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a19b6222b4d9eaa0f83ab74f555ed6e68">touchMove</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a456be839bfe441022745d2790ac44942">touchCancelled</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1aa1bc8ac0264f93580c6629d41dbd00b3">touchDown</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a9d64d3a8310bba9935bf998ec9d341e8">touchUp</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a625c469136089b896cc94c7f151ec8e6">touchMove</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a484e8c77cd1ed5613189c503326a310b">mouseDown</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a4f3f72ae362ffc3aa5636d30dd84224e">mouseUp</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a6c13bee0e9fca64f619dd92b927f948a">mouseMove</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ad64c93b5f93db6e9df3ce7b9869d12d4">keyUp</link> (
+const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a6fc507c345272128f64cd5c6d4e6ca08">keyDown</link> (
+const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1abd97ee22f8fbfa29ace0f4859b16d6e0">keyboardShow</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a5ecc9ab5fe1c940ae021489d5574edf7">keyboardCancel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a6e7f30cb39fb2cc23148a3765d0fed3e">keyboardReturn</link> (
+const char * text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ab816a3e089fafc8fe7723723fb201bee">getViewPort</link> (
+<link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> * viewPort)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a32797f128d963f99839c12faf4b4dc12">createScript</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ad27af4cf142639c3436f4163d0526442">destroyScript</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a248c324a0a97b0f286eaedf8f997688e">update</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> timeStep, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> numSubSteps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a3e7f68f7467d421971e13dfcc5e2100e">render</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a04acd6d056b32f996c165d2d9a8ee34d">resize</link> (
+<link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> x, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> y, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> width, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> height, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> orientation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const btVector2 &amp; <link linkend="classnjli_1_1_world_1a0d888d6664fed006bde6e9fd806bc41c">getViewportDimensions</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> <link linkend="classnjli_1_1_world_1a4f3d49c5cc8e3a3a2c2439e663a9c60b">getAspectRatio</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_world_1a2811263a084944cded212cd714a165cf">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_world_1a35e88a33b35fa6de44f10e3a93a62468">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_world_1a2a892d17f7e21b51784e45ecc4aa642e">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a80c42c94ab3fbf4242f3d9b5e7866379">setScene</link> (
+<link linkend="classnjli_1_1_scene">Scene</link> * scene)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1aabf2a07e2fab640f5800357ad1fd7717">removeScene</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_scene">Scene</link> * <link linkend="classnjli_1_1_world_1aacef8d7932cbc6df28524a15b30b50f5">getScene</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_scene">Scene</link> * <link linkend="classnjli_1_1_world_1a007a67243897e4dd1448e97b6b860389">getScene</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ad67785776209cbbaa6140fcc90b4913a">enableDebugDraw</link> (
+<link linkend="classnjli_1_1_camera">Camera</link> * camera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a4894e4a53f692a503661a7836bf7713f">disableDebugDraw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a5b67da9acd56cec605ad0dccc2b957cd">startSocket</link> (
+<link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link> n0, <link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link> n1, <link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link> n2, <link linkend="_util_8h_1aed742c436da53c1080638ce6ef7d13de">u8</link> n3, <link linkend="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054">u16</link> port)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ac4b819fe8d34e6661d8f47138c318ff5">startSocket</link> (
+<link linkend="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054">u16</link> port)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_1a776f8bf7c461ecac1db1b485828f6894">isSocketEnabled</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a7d217f38577d72d349e2df64761dc4c5">stopSocket</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_world_1ac65ea60b2f5033c2e8a7504820d59ac5">getSocketAddress</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1a9e6c91d77e24643b888dbd1a1a590054">u16</link> <link linkend="classnjli_1_1_world_1af108b41273b0ff7abbf88fa6e311304e">getSocketPort</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a7eebf55a7920061d87e5dc03feb692da">setBackgroundAlpha</link> (
+const <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> alpha)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5">setBackgroundColor</link> (
+const btVector3 &amp; color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ab7bbd4dee42bec416fb2b64e9843ddf1">setBackgroundColor</link> (
+const btVector4 &amp; color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a9f1b7c924b237316f9529a319c2ca055">setBackgroundColor</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> red, <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> green, <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> blue)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const btVector4 &amp; <link linkend="classnjli_1_1_world_1a7805d9b4c5ef0943a5c1c32b507d2151">getBackgroundColor</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_world_1a5ddb30abad714d14694863bb89af14b9">getDeviceName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a5c9cc63ac7cb847e6d581a867614e47d">setDeviceName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a41b67b3dea3196afa6ff1b0d961b39d2">enablePauseAnimation</link> (
+bool enable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_1ac84f5b1da4bbd124829f30b7a3fbd4d0">isAnimationPaused</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ae8f238cc0f23ce6b8a05ad5a3da555f7">enablePauseGame</link> (
+bool enable)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_1abfbc1b055160d3c6a6ccd4f1ec784b0b">isPausedGame</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_1a6470e58e64be02c4bf71a201417bcbbc">isDebug</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_1a72aa272f2e66633642e069106f09c9e9">runJavascript</link> (
+const char * script)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_world_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a4118fbcbb82b872369b235bbc7cde67f">processMessage</link> (
+const std::string &amp; msg, const std::string delimeter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a322956de68eb15d43bfb39083942edee">handleSocketMessage</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669">checkRayCollision</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches, const char * code, bool disableNodeTouched)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1a3e3cfdf16d875d3fc64c7428c07d23d7">checkRayCollision</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch, const char * code, bool disableNodeTouched)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_1ae023b659a2be3ea9dd38ff1fdef93bd6">checkRayCollision</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse, const char * code, bool disableNodeTouched)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>&lt;#Description#&gt; </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_world_1a7e31e4dff9169bd82c24e69ff29b53b6">
+                <title>static void njli::World::createInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a3bddccf6aeb57d953f358a2e66fc2c00">
+                <title>static void njli::World::destroyInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a17a72893105bc732fdf5751a2a23b6d4">
+                <title>static World* njli::World::getInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a9c8ccd2a51131b026b1ee6c9135eea8b">
+                <title>static bool njli::World::hasInstance ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1af01e96219aea73e611ba28179b3532ed">
+                <title>njli::World::World ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1aaf74d0ac73e1bf62d7b26bf7fdb6b5cd">
+                <title>virtual njli::World::~World ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1abf9c0b24c17244baf76d760e81974cfe">
+                <title>njli::World::World (const World &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a2fe83dc2d899a91ef21ac20220e2ada4">
+                <title>World&amp; njli::World::operator= (const World &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a28299874538b8a714bcbae908760a364">
+                <title>WorldFactory* njli::World::getWorldFactory ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1abfd08290519a0525e79f8961cff41c33">
+                <title>const WorldFactory* njli::World::getWorldFactory () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a094d454c35f0afea279bb5fbb39c196a">
+                <title>WorldResourceLoader* njli::World::getWorldResourceLoader ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a78357165d6bc4ef06ef774d4e0606bc9">
+                <title>const WorldResourceLoader* njli::World::getWorldResourceLoader () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a00797432cd913a07ad852e703cbf7278">
+                <title>WorldClock* njli::World::getWorldClock ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a7edeaa8b2caed5240128952e85ea5b12">
+                <title>const WorldClock* njli::World::getWorldClock () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a6ebccef746ad4e44455bae7698839e29">
+                <title>WorldLuaVirtualMachine* njli::World::getWorldLuaVirtualMachine ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a82f0b1f8d27a311ec99b67d778e121a5">
+                <title>const WorldLuaVirtualMachine* njli::World::getWorldLuaVirtualMachine () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a245f64dbfb8ac4b9aa405c05c58a77e5">
+                <title>WorldSocket* njli::World::getWorldSocket ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+<simplesect/>
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+<simplesect/>
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a58cd945663087fae147a88f76a984f83">
+                <title>const WorldSocket* njli::World::getWorldSocket () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a9b8a2755f4643d169d54e047554ba8f2">
+                <title>WorldInput* njli::World::getWorldInput ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+<simplesect/>
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+<simplesect/>
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aefbda7b9bf38ace818503473814d8b18">
+                <title>const WorldInput* njli::World::getWorldInput () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aeafce2408df830b6d0d4f4cc70a502f6">
+                <title>WorldSound* njli::World::getWorldSound ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aa0df2fe274aae44a7c3f4df0bfc2b2c8">
+                <title>const WorldSound* njli::World::getWorldSound () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a779f9ee41d7e73e013654dcdb1d83cf9">
+                <title>WorldStateMachine* njli::World::getStateMachine ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aa78f8be7d30ab1d38cea248c3017f0a7">
+                <title>const WorldStateMachine* njli::World::getStateMachine () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1abd9b6751260b5e6c28fa9cfd874cfaad">
+                <title>WorldDebugDrawer* njli::World::getDebugDrawer ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a88ce760cdc314298a58f96af3ef9d492">
+                <title>const WorldDebugDrawer* njli::World::getDebugDrawer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a027fc2766ebe49b79f974e7e808610f8">
+                <title>void njli::World::touchDown (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+<simplesect/>
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a1b2be462f5455b01856968eea7ee96bb">
+                <title>void njli::World::touchUp (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a19b6222b4d9eaa0f83ab74f555ed6e68">
+                <title>void njli::World::touchMove (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a456be839bfe441022745d2790ac44942">
+                <title>void njli::World::touchCancelled (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aa1bc8ac0264f93580c6629d41dbd00b3">
+                <title>void njli::World::touchDown (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a9d64d3a8310bba9935bf998ec9d341e8">
+                <title>void njli::World::touchUp (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a625c469136089b896cc94c7f151ec8e6">
+                <title>void njli::World::touchMove (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a484e8c77cd1ed5613189c503326a310b">
+                <title>void njli::World::mouseDown (const DeviceMouse &amp;touch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a4f3f72ae362ffc3aa5636d30dd84224e">
+                <title>void njli::World::mouseUp (const DeviceMouse &amp;touch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a6c13bee0e9fca64f619dd92b927f948a">
+                <title>void njli::World::mouseMove (const DeviceMouse &amp;touch)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1ad64c93b5f93db6e9df3ce7b9869d12d4">
+                <title>void njli::World::keyUp (const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a6fc507c345272128f64cd5c6d4e6ca08">
+                <title>void njli::World::keyDown (const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1abd97ee22f8fbfa29ace0f4859b16d6e0">
+                <title>void njli::World::keyboardShow ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a5ecc9ab5fe1c940ae021489d5574edf7">
+                <title>void njli::World::keyboardCancel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a6e7f30cb39fb2cc23148a3765d0fed3e">
+                <title>void njli::World::keyboardReturn (const char *text)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1ab816a3e089fafc8fe7723723fb201bee">
+                <title>void njli::World::getViewPort (s32 *viewPort) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>camera</entry>
+                                <entry>
+<para>&lt;#camera description#&gt; &lt;#Description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+<simplesect/>
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>viewPort</entry>
+                                <entry>
+<para>&lt;#viewPort description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a32797f128d963f99839c12faf4b4dc12">
+                <title>void njli::World::createScript ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ad27af4cf142639c3436f4163d0526442">
+                <title>void njli::World::destroyScript ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a248c324a0a97b0f286eaedf8f997688e">
+                <title>void njli::World::update (f32 timeStep, const u32 numSubSteps)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>timeStep</entry>
+                                <entry>
+<para>&lt;#timeStep description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a3e7f68f7467d421971e13dfcc5e2100e">
+                <title>void njli::World::render ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a04acd6d056b32f996c165d2d9a8ee34d">
+                <title>void njli::World::resize (s32 x, s32 y, s32 width, s32 height, s32 orientation)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>width</entry>
+                                <entry>
+<para>&lt;#width description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>height</entry>
+                                <entry>
+<para>&lt;#height description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>orientation</entry>
+                                <entry>
+<para>&lt;#orientation description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a0d888d6664fed006bde6e9fd806bc41c">
+                <title>const btVector2&amp; njli::World::getViewportDimensions () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a4f3d49c5cc8e3a3a2c2439e663a9c60b">
+                <title>f32 njli::World::getAspectRatio () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a2811263a084944cded212cd714a165cf">
+                <title>virtual const char* njli::World::getClassName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a35e88a33b35fa6de44f10e3a93a62468">
+                <title>virtual s32 njli::World::getType () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a2a892d17f7e21b51784e45ecc4aa642e">
+                <title>virtual njli::World::operator std::string () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a80c42c94ab3fbf4242f3d9b5e7866379">
+                <title>void njli::World::setScene (Scene *scene)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>scene</entry>
+                                <entry>
+<para>&lt;#scene description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aabf2a07e2fab640f5800357ad1fd7717">
+                <title>void njli::World::removeScene ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1aacef8d7932cbc6df28524a15b30b50f5">
+                <title>Scene* njli::World::getScene ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a007a67243897e4dd1448e97b6b860389">
+                <title>const Scene* njli::World::getScene () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ad67785776209cbbaa6140fcc90b4913a">
+                <title>void njli::World::enableDebugDraw (Camera *camera)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>camera</entry>
+                                <entry>
+<para>&lt;#camera description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a4894e4a53f692a503661a7836bf7713f">
+                <title>void njli::World::disableDebugDraw ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a5b67da9acd56cec605ad0dccc2b957cd">
+                <title>void njli::World::startSocket (u8 n0, u8 n1, u8 n2, u8 n3, u16 port=2223)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>n0</entry>
+                                <entry>
+<para>&lt;#n0 description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>n1</entry>
+                                <entry>
+<para>&lt;#n1 description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>n2</entry>
+                                <entry>
+<para>&lt;#n2 description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>n3</entry>
+                                <entry>
+<para>&lt;#n3 description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>port</entry>
+                                <entry>
+<para>&lt;#port description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ac4b819fe8d34e6661d8f47138c318ff5">
+                <title>void njli::World::startSocket (u16 port=2223)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a776f8bf7c461ecac1db1b485828f6894">
+                <title>bool njli::World::isSocketEnabled () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a7d217f38577d72d349e2df64761dc4c5">
+                <title>void njli::World::stopSocket ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ac65ea60b2f5033c2e8a7504820d59ac5">
+                <title>const char* njli::World::getSocketAddress () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1af108b41273b0ff7abbf88fa6e311304e">
+                <title>u16 njli::World::getSocketPort () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a7eebf55a7920061d87e5dc03feb692da">
+                <title>void njli::World::setBackgroundAlpha (const f32 alpha)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>alpha</entry>
+                                <entry>
+<para>&lt;#alpha description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a011db5e9383aa6628892cd431c3657a5">
+                <title>void njli::World::setBackgroundColor (const btVector3 &amp;color)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ab7bbd4dee42bec416fb2b64e9843ddf1">
+                <title>void njli::World::setBackgroundColor (const btVector4 &amp;color)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a9f1b7c924b237316f9529a319c2ca055">
+                <title>void njli::World::setBackgroundColor (f32 red, f32 green, f32 blue)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>red</entry>
+                                <entry>
+<para>&lt;#red description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>green</entry>
+                                <entry>
+<para>&lt;#green description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>blue</entry>
+                                <entry>
+<para>&lt;#blue description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a7805d9b4c5ef0943a5c1c32b507d2151">
+                <title>const btVector4&amp; njli::World::getBackgroundColor () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a5ddb30abad714d14694863bb89af14b9">
+                <title>const char* njli::World::getDeviceName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a5c9cc63ac7cb847e6d581a867614e47d">
+                <title>void njli::World::setDeviceName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a41b67b3dea3196afa6ff1b0d961b39d2">
+                <title>void njli::World::enablePauseAnimation (bool enable=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1ac84f5b1da4bbd124829f30b7a3fbd4d0">
+                <title>bool njli::World::isAnimationPaused () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ae8f238cc0f23ce6b8a05ad5a3da555f7">
+                <title>void njli::World::enablePauseGame (bool enable=true)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1abfbc1b055160d3c6a6ccd4f1ec784b0b">
+                <title>bool njli::World::isPausedGame () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a6470e58e64be02c4bf71a201417bcbbc">
+                <title>bool njli::World::isDebug () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a72aa272f2e66633642e069106f09c9e9">
+                <title>bool njli::World::runJavascript (const char *script)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_1a4118fbcbb82b872369b235bbc7cde67f">
+                <title>void njli::World::processMessage (const std::string &amp;msg, const std::string delimeter=&quot;root&quot;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a322956de68eb15d43bfb39083942edee">
+                <title>void njli::World::handleSocketMessage ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a9e884bc811dcdf6821f2d5a2edccf669">
+                <title>void njli::World::checkRayCollision (DeviceTouch **touches, const char *code, bool disableNodeTouched=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1a3e3cfdf16d875d3fc64c7428c07d23d7">
+                <title>void njli::World::checkRayCollision (const DeviceTouch &amp;touch, const char *code, bool disableNodeTouched=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_1ae023b659a2be3ea9dd38ff1fdef93bd6">
+                <title>void njli::World::checkRayCollision (const DeviceMouse &amp;mouse, const char *code, bool disableNodeTouched=false)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

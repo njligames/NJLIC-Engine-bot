@@ -1,0 +1,243 @@
+\hypertarget{classnjli_1_1_device_input_time}{}\section{njli\+:\+:Device\+Input\+Time Class Reference}
+\label{classnjli_1_1_device_input_time}\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+
+
+{\ttfamily \#include $<$Device\+Input\+Time.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Device\+Input\+Time\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classnjli_1_1_device_input_time__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_device_input_time_a2e5cdadd44d1ee2d7d7136e91f2bcafb}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_device_input_time_a69e4bb4be69f3ac53f4514a58fd61021}{get\+Type}} () const =0
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_device_input_time_a03eca1e2b0725a5be925f6ec5cd33b7b}{set\+Time\+Stamp\+Frame}} (const \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} time\+Stamp)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_device_input_time_a6a06c7800f1925631dafb54671b2abd7}{set\+Time\+Stamp\+Tick}} (const \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} time\+Stamp)
+\item 
+\mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} \mbox{\hyperlink{classnjli_1_1_device_input_time_ad5e181aebc12a0f9c662a9af1d559bd9}{get\+Time\+Stamp\+Frame}} () const
+\item 
+\mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} \mbox{\hyperlink{classnjli_1_1_device_input_time_ad68f0958e6f363d09772286650891b3b}{get\+Time\+Stamp\+Tick}} () const
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_input_time_a2c5cc0a5ead654efbbce74d08f490fa5}{Device\+Input\+Time}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_input_time_af34c8fdf7626c83b3a106984c6218332}{Device\+Input\+Time}} (const \mbox{\hyperlink{classnjli_1_1_device_input_time}{Device\+Input\+Time}} \&rhs)
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_input_time}{Device\+Input\+Time}} \& \mbox{\hyperlink{classnjli_1_1_device_input_time_ab1ca58d01db67a7ca5eb57bbbe07d929}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_device_input_time}{Device\+Input\+Time}} \&rhs)
+\item 
+\mbox{\hyperlink{classnjli_1_1_device_input_time_a2c421a428c0d4fdc1311d91b7001f9fc}{$\sim$\+Device\+Input\+Time}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} \mbox{\hyperlink{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}{m\+\_\+timestamp\+\_\+frame}}
+\item 
+\mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} \mbox{\hyperlink{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}{m\+\_\+timestamp\+\_\+soundtick}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Device\+Input\+Time.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a2c5cc0a5ead654efbbce74d08f490fa5}\label{classnjli_1_1_device_input_time_a2c5cc0a5ead654efbbce74d08f490fa5}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!Device\+Input\+Time@{Device\+Input\+Time}}
+\index{Device\+Input\+Time@{Device\+Input\+Time}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{Device\+Input\+Time()}{DeviceInputTime()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily njli\+::\+Device\+Input\+Time\+::\+Device\+Input\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 35 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+35 : \mbox{\hyperlink{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}{m\_timestamp\_frame}}(0), \mbox{\hyperlink{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}{m\_timestamp\_soundtick}}(0) \{\}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_af34c8fdf7626c83b3a106984c6218332}\label{classnjli_1_1_device_input_time_af34c8fdf7626c83b3a106984c6218332}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!Device\+Input\+Time@{Device\+Input\+Time}}
+\index{Device\+Input\+Time@{Device\+Input\+Time}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{Device\+Input\+Time()}{DeviceInputTime()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily njli\+::\+Device\+Input\+Time\+::\+Device\+Input\+Time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_device_input_time}{Device\+Input\+Time}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 36 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+37         : \mbox{\hyperlink{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}{m\_timestamp\_frame}}(rhs.m\_timestamp\_frame),
+38           \mbox{\hyperlink{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}{m\_timestamp\_soundtick}}(rhs.m\_timestamp\_soundtick)
+39     \{
+40     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a2c421a428c0d4fdc1311d91b7001f9fc}\label{classnjli_1_1_device_input_time_a2c421a428c0d4fdc1311d91b7001f9fc}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!````~Device\+Input\+Time@{$\sim$\+Device\+Input\+Time}}
+\index{````~Device\+Input\+Time@{$\sim$\+Device\+Input\+Time}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{$\sim$\+Device\+Input\+Time()}{~DeviceInputTime()}}
+{\footnotesize\ttfamily njli\+::\+Device\+Input\+Time\+::$\sim$\+Device\+Input\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 50 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+50 \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a2e5cdadd44d1ee2d7d7136e91f2bcafb}\label{classnjli_1_1_device_input_time_a2e5cdadd44d1ee2d7d7136e91f2bcafb}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Device\+Input\+Time\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Reimplemented in \mbox{\hyperlink{classnjli_1_1_device_touch_a0bf7b53fef161666e8c70bf2482be1c8}{njli\+::\+Device\+Touch}}, and \mbox{\hyperlink{classnjli_1_1_device_key_a14f6e0865bbf44c100b34448e9d67f24}{njli\+::\+Device\+Key}}.
+
+
+
+Definition at line 20 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+20 \{ \textcolor{keywordflow}{return} \textcolor{stringliteral}{"DeviceInputTime"}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_ad5e181aebc12a0f9c662a9af1d559bd9}\label{classnjli_1_1_device_input_time_ad5e181aebc12a0f9c662a9af1d559bd9}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!get\+Time\+Stamp\+Frame@{get\+Time\+Stamp\+Frame}}
+\index{get\+Time\+Stamp\+Frame@{get\+Time\+Stamp\+Frame}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{get\+Time\+Stamp\+Frame()}{getTimeStampFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} njli\+::\+Device\+Input\+Time\+::get\+Time\+Stamp\+Frame (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 31 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+31 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}{m\_timestamp\_frame}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_ad68f0958e6f363d09772286650891b3b}\label{classnjli_1_1_device_input_time_ad68f0958e6f363d09772286650891b3b}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!get\+Time\+Stamp\+Tick@{get\+Time\+Stamp\+Tick}}
+\index{get\+Time\+Stamp\+Tick@{get\+Time\+Stamp\+Tick}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{get\+Time\+Stamp\+Tick()}{getTimeStampTick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} njli\+::\+Device\+Input\+Time\+::get\+Time\+Stamp\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 32 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+32 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}{m\_timestamp\_soundtick}}; \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a69e4bb4be69f3ac53f4514a58fd61021}\label{classnjli_1_1_device_input_time_a69e4bb4be69f3ac53f4514a58fd61021}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Device\+Input\+Time\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classnjli_1_1_device_touch_a1920ad95ef19b482f4285c44a1675ee6}{njli\+::\+Device\+Touch}}, \mbox{\hyperlink{classnjli_1_1_device_key_aa7b5696085bd6c8a1a935d422ae51e1f}{njli\+::\+Device\+Key}}, and \mbox{\hyperlink{classnjli_1_1_device_mouse_acfb2479b7c88042d6fb5ce58b4482264}{njli\+::\+Device\+Mouse}}.
+
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_ab1ca58d01db67a7ca5eb57bbbe07d929}\label{classnjli_1_1_device_input_time_ab1ca58d01db67a7ca5eb57bbbe07d929}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_device_input_time}{Device\+Input\+Time}}\& njli\+::\+Device\+Input\+Time\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_device_input_time}{Device\+Input\+Time}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 41 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+42     \{
+43       \textcolor{keywordflow}{if} (\textcolor{keyword}{this} != &rhs)
+44         \{
+45           \mbox{\hyperlink{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}{m\_timestamp\_frame}} = rhs.m\_timestamp\_frame;
+46           \mbox{\hyperlink{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}{m\_timestamp\_soundtick}} = rhs.m\_timestamp\_soundtick;
+47         \}
+48       \textcolor{keywordflow}{return} *\textcolor{keyword}{this};
+49     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a03eca1e2b0725a5be925f6ec5cd33b7b}\label{classnjli_1_1_device_input_time_a03eca1e2b0725a5be925f6ec5cd33b7b}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!set\+Time\+Stamp\+Frame@{set\+Time\+Stamp\+Frame}}
+\index{set\+Time\+Stamp\+Frame@{set\+Time\+Stamp\+Frame}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{set\+Time\+Stamp\+Frame()}{setTimeStampFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Device\+Input\+Time\+::set\+Time\+Stamp\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}}}]{time\+Stamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 23 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+24     \{
+25       \mbox{\hyperlink{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}{m\_timestamp\_frame}} = timeStamp;
+26     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a6a06c7800f1925631dafb54671b2abd7}\label{classnjli_1_1_device_input_time_a6a06c7800f1925631dafb54671b2abd7}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!set\+Time\+Stamp\+Tick@{set\+Time\+Stamp\+Tick}}
+\index{set\+Time\+Stamp\+Tick@{set\+Time\+Stamp\+Tick}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{set\+Time\+Stamp\+Tick()}{setTimeStampTick()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Device\+Input\+Time\+::set\+Time\+Stamp\+Tick (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}}}]{time\+Stamp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 27 of file Device\+Input\+Time.\+h.
+
+
+\begin{DoxyCode}
+28     \{
+29       \mbox{\hyperlink{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}{m\_timestamp\_soundtick}} = timeStamp;
+30     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}\label{classnjli_1_1_device_input_time_a798d29d739522cad83bd37986ed15a20}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!m\+\_\+timestamp\+\_\+frame@{m\+\_\+timestamp\+\_\+frame}}
+\index{m\+\_\+timestamp\+\_\+frame@{m\+\_\+timestamp\+\_\+frame}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{m\+\_\+timestamp\+\_\+frame}{m\_timestamp\_frame}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} njli\+::\+Device\+Input\+Time\+::m\+\_\+timestamp\+\_\+frame\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 53 of file Device\+Input\+Time.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}\label{classnjli_1_1_device_input_time_a20e05f326dd3a3836a549cba6b536e85}} 
+\index{njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}!m\+\_\+timestamp\+\_\+soundtick@{m\+\_\+timestamp\+\_\+soundtick}}
+\index{m\+\_\+timestamp\+\_\+soundtick@{m\+\_\+timestamp\+\_\+soundtick}!njli\+::\+Device\+Input\+Time@{njli\+::\+Device\+Input\+Time}}
+\subsubsection{\texorpdfstring{m\+\_\+timestamp\+\_\+soundtick}{m\_timestamp\_soundtick}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a94dab5770726ccbef8c7d026cfbdf8e5}{f64}} njli\+::\+Device\+Input\+Time\+::m\+\_\+timestamp\+\_\+soundtick\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 54 of file Device\+Input\+Time.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/platform/\mbox{\hyperlink{_device_input_time_8h}{Device\+Input\+Time.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_game_8h" kind="file" language="C++">
+    <compoundname>Game.h</compoundname>
+    <includedby refid="_device_key_8h" local="yes">njligames-njlic_engine/njli/platform/DeviceKey.h</includedby>
+    <includedby refid="_device_touch_8h" local="yes">njligames-njlic_engine/njli/platform/DeviceTouch.h</includedby>
+    <invincdepgraph>
+      <node id="4940">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="4943">
+        <label>njligames-njlic_engine/njli/SceneState.h</label>
+        <link refid="_scene_state_8h"/>
+        <childnode refid="4940" relation="include">
+        </childnode>
+      </node>
+      <node id="4942">
+        <label>njligames-njlic_engine/njli/WorldState.h</label>
+        <link refid="_world_state_8h"/>
+        <childnode refid="4939" relation="include">
+        </childnode>
+        <childnode refid="4940" relation="include">
+        </childnode>
+      </node>
+      <node id="4944">
+        <label>njligames-njlic_engine/njli/platform/WorldInput.h</label>
+        <link refid="_world_input_8h"/>
+        <childnode refid="4939" relation="include">
+        </childnode>
+      </node>
+      <node id="4939">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="4940" relation="include">
+        </childnode>
+      </node>
+      <node id="4937">
+        <label>njligames-njlic_engine/njli/platform/DeviceKey.h</label>
+        <link refid="_device_key_8h"/>
+        <childnode refid="4938" relation="include">
+        </childnode>
+      </node>
+      <node id="4941">
+        <label>njligames-njlic_engine/njli/platform/DeviceTouch.h</label>
+        <link refid="_device_touch_8h"/>
+        <childnode refid="4938" relation="include">
+        </childnode>
+        <childnode refid="4942" relation="include">
+        </childnode>
+        <childnode refid="4943" relation="include">
+        </childnode>
+        <childnode refid="4944" relation="include">
+        </childnode>
+      </node>
+      <node id="4936">
+        <label>njligames-njlic_engine/njli/platform/Game.h</label>
+        <link refid="_game_8h"/>
+        <childnode refid="4937" relation="include">
+        </childnode>
+        <childnode refid="4941" relation="include">
+        </childnode>
+      </node>
+      <node id="4938">
+        <label>njligames-njlic_engine/njli/WorldLuaVirtualMachine.h</label>
+        <link refid="_world_lua_virtual_machine_8h"/>
+        <childnode refid="4939" relation="include">
+        </childnode>
+        <childnode refid="4940" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnjli_1_1_n_j_l_i_game_engine" prot="public">njli::NJLIGameEngine</innerclass>
+    <innernamespace refid="namespacenjli">njli</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__NJLIGameEngine__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__NJLIGameEngine__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenjli" kindref="compound">njli</ref></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6" refid="classnjli_1_1_n_j_l_i_game_engine" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_n_j_l_i_game_engine" kindref="compound">NJLIGameEngine</ref></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a18bdada0e3ba0fb40de703fe7a958f60" kindref="member">isIOS</ref>();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a2728fbe484c5e56c75525839c144555b" kindref="member">isANDROID</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1ac4d956dc87db55cfa0b5bfe0096b976d" kindref="member">isEMSCRIPTEN</ref>();</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a10a676b87e8a0e467de8e98c595d181c" kindref="member">isMACOSX</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a053716ee7a9de6ef968df7756b20a341" kindref="member">isTVOS</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1af6225412a3586fdcda3af0cf468a2d4c" kindref="member">create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*deviceName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>initLua<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>bool<sp/>create(int<sp/>x,<sp/>int<sp/>y,<sp/>int<sp/>width,<sp/>int<sp/>height,<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>orientation,<sp/>const<sp/>char*<sp/>deviceName,<sp/>bool<sp/>initLua<sp/>=<sp/>true);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a68f8a09df140f3275e9063fabc52aa4f" kindref="member">resize</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a3b27833c0d69e5e4a2dec09335b38673" kindref="member">width</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a56ca64c01ac4d79123229af44a8c2228" kindref="member">height</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a6fcc45cad0ceac29634f0f76bd922362" kindref="member">orientation</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a3b27833c0d69e5e4a2dec09335b38673" kindref="member">width</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a56ca64c01ac4d79123229af44a8c2228" kindref="member">height</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a6fcc45cad0ceac29634f0f76bd922362" kindref="member">orientation</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a9b08da977237bdf3b47bc4796c6a62e2" kindref="member">start</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>**argv);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a0cc3ea87f7451156b3d2b493688bf90a" kindref="member">update</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>step);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a6a82035066c2f958f588df82bbee5d40" kindref="member">render</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1ac672aa4d352a38dee9a98e64609509db" kindref="member">destroy</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>setTouch(const<sp/>void*<sp/>touch,<sp/>const<sp/>int<sp/>index,<sp/>const</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>unsigned<sp/>long<sp/>num_touches);</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>setTouch(const<sp/>int<sp/>x,<sp/>const<sp/>int<sp/>y);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>setTouch(int<sp/>touchDevId,<sp/>int<sp/>pointerFingerId,<sp/>int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>eventType,<sp/>float<sp/>x,<sp/>float<sp/>y,<sp/>float<sp/>dx,<sp/>float<sp/>dy,<sp/>float<sp/>pressure);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a30fa9ebe2167c4f69febe5248378b030" kindref="member">handleFinger</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>touchDevId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pointerFingerId,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eventType,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dx,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dy,</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pressure);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a136a6550305dec3c346255c55419f691" kindref="member">handleFingers</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>startHandleFingers();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a73a62c2624ce57bf6ba7493c096c2c21" kindref="member">mouse</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>button,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>eventType,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clicks);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1aae0cb673e9330ca776cca5edb369ef8b" kindref="member">keyUp</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keycodeName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withCapsLock,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withControl,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withShift,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withAlt,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withGui);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a3b56f22140c20e3459824f3239182cf3" kindref="member">keyDown</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*keycodeName,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withCapsLock,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withControl,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withShift,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withAlt,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>withGui);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1af17d124611303256bff71fffe4dca8df" kindref="member">handleEvent</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*event);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>clearNodeTouches();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>touchDown();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>touchUp();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>touchMove();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>touchCancelled();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1ab57113e9ef7c184f12ffb7b8417639ad" kindref="member">willResignActive</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a98c166ee40919fbf616f358a8bcb9bdc" kindref="member">didBecomeActive</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a500f73154090764efccd084c56c7d0f1" kindref="member">didEnterBackground</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1ac0150f9ccf3a8b1e4fea04ac39526187" kindref="member">willEnterForeground</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a830dbe46713d362957ac1a0671967b75" kindref="member">willTerminate</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5e157d71043942716317aaab5fe62914" kindref="member">interrupt</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a976e9615ffb50e23b57d46d5e3e0958c" kindref="member">resumeInterrupt</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>pauseGame();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>unpauseGame();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>pauseSound();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>static<sp/>void<sp/>unpauseSound();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5ce47bb1bdc5bafdaae6528e100d2316" kindref="member">keyboardShow</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a885ab8ad0939bf6fa51009b5854ef2be" kindref="member">keyboardCancel</ref>();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a360672d3cfecffb69a91462256da9da4" kindref="member">keyboardReturn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1ae2c3d2427e9e19edefd222c692143975" kindref="member">receivedMemoryWarning</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4ed" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4ed" kindref="member">PlatformID</ref></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda6cf2daab29241b0e763ff97c8f4f53e7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda6cf2daab29241b0e763ff97c8f4f53e7" kindref="member">PlatformID_iOS</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="83" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda6c558271f40073f76d00143d7cb6ff8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda6c558271f40073f76d00143d7cb6ff8e" kindref="member">PlatformID_Android</ref>,</highlight></codeline>
+<codeline lineno="84" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda4aea7a4dcf787eccd5eeb27f18a4353f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda4aea7a4dcf787eccd5eeb27f18a4353f" kindref="member">PlatformID_Emscripten</ref>,</highlight></codeline>
+<codeline lineno="85" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda0957148df4fb1940266bf4153d5cfa48" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda0957148df4fb1940266bf4153d5cfa48" kindref="member">PlatformID_MacOSx</ref>,</highlight></codeline>
+<codeline lineno="86" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda9e5108023740f93fa7a49845aa0d72dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4eda9e5108023740f93fa7a49845aa0d72dc" kindref="member">PlatformID_tvOS</ref>,</highlight></codeline>
+<codeline lineno="87" refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4edaaa85a957f94a226990385d06106eee62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4edaaa85a957f94a226990385d06106eee62" kindref="member">PlatformID_Linux</ref></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a5a2bbb7c337d3918056ba12307f2a4ed" kindref="member">PlatformID</ref><sp/><ref refid="classnjli_1_1_n_j_l_i_game_engine_1a84194db2322fdba0ce7942f4fbb4a345" kindref="member">platformID</ref>();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/platform/Game.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,685 @@
+\hypertarget{classnjli_1_1_physics_shape_cylinder}{}\section{njli\+:\+:Physics\+Shape\+Cylinder Class Reference}
+\label{classnjli_1_1_physics_shape_cylinder}\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+
+
+{\ttfamily \#include $<$Physics\+Shape\+Cylinder.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Physics\+Shape\+Cylinder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classnjli_1_1_physics_shape_cylinder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Physics\+Shape\+Cylinder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{classnjli_1_1_physics_shape_cylinder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a594a3ced7daabd53c425d79f6bfb4173}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ad7ec0be0f27ab4b0248fa1231491fd20}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$, bt\+Serializer $\ast$) const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_aa8ed8409e1a6ba5ed2c5de028558425a}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a512461c5827b246cdd5e037b2dc38d7c}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_afdffa5511a58e1bd0898716ecfb111cd}{operator std\+::string}} () const
+\item 
+virtual int \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_af865d6862f4dd8849f4b9290a3907337}{get\+Num\+Vertices}} () const
+\item 
+virtual int \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a05334d41b8bad6261922842a5c204015}{get\+Num\+Edges}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a9e73e95275b9127ce3cf25fa51bad8ba}{get\+Edge}} (int i, bt\+Vector3 \&pa, bt\+Vector3 \&pb) const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a8e138b8eefcf94a6d8a7296ac2c883bf}{get\+Vertex}} (int i, bt\+Vector3 \&vtx) const
+\item 
+virtual int \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ac0494575204d508cc5f91ebe68d3addf}{get\+Num\+Planes}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ad5f230b6c39911b3737f8e1d956ec390}{get\+Plane}} (bt\+Vector3 \&plane\+Normal, bt\+Vector3 \&plane\+Support, int i) const
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a74ebf6b5c2ca835e1cfaaa1bec156ef3}{is\+Inside}} (const bt\+Vector3 \&pt, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} tolerance) const
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a528cb67c172a04787f7f1fa8239dc205}{get\+Half\+Extents\+With\+Margin}} () const
+\item 
+const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_aae8b9aef78ec51c51ed8a3fe875df5b4}{get\+Half\+Extents\+Without\+Margin}} () const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a685026badc2ed6c9bd64ec4784fbfd15}{set\+Half\+ExtentsX}} (const bt\+Vector3 \&half\+Extents)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_afac940ffcb588c11962642b4d0329d10}{set\+Half\+ExtentsY}} (const bt\+Vector3 \&half\+Extents)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ab11198a4980fc34eed9c4c4d53bb41e1}{set\+Half\+ExtentsZ}} (const bt\+Vector3 \&half\+Extents)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a844ba3ec7a53212951e0b2b9021a6832}{calculate\+Local\+Inertia}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} mass, bt\+Vector3 \&inertia) const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ab264eaa033bd9f0d19030290c12b58b4}{set\+Margin}} (\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} collision\+Margin)
+\item 
+int \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a540d188e51168afbcc758b0ddeb74c9f}{get\+Up\+Axis}} () const
+\item 
+bt\+Vector3 \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ad725634ae3a5f9b140db0847ed6b10a2}{get\+Anisotropic\+Rolling\+Friction\+Direction}} () const
+\item 
+\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a7827d143353f66b460e6cd679da4ae2e}{get\+Radius}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a85f5ae5b9a6df49f9b6235ca37fe7496}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a206e5561c42493f64037429253d5b715}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a1c47189018afd4ce17ebc2628ccf4288}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a50af85972d00bad9e0ea3cb6df4636e3}{create}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_builder}{Physics\+Shape\+Cylinder\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a00d9bbd12c316e95087402a703fbfe17}{clone}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a0f46fea25774f8b6c9b5f11b662e2ea6}{copy}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a4af110c841b136ee56c4cd6185ab4633}{destroy}} (\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a86823cfc30c2f53f5e6d93bad2c13d60}{load}} (\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a3a7aa75547f61cdfbb292e64ac18190a}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a7e9b42a5baf9eab31f6d3f447eae56f8}{Physics\+Shape\+Cylinder}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_afe635fca063da9463ced31e09d241745}{Physics\+Shape\+Cylinder}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a6faad4aa97c6275c9dae35313e3f8b66}{Physics\+Shape\+Cylinder}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_ae2dc8177ccf121405a2d3aeaa5a5c513}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a83539bdbdb5bf4b8e270475070a39199}{$\sim$\+Physics\+Shape\+Cylinder}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \& \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a0d44e40875147bc6999adf0693268099}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&)
+\item 
+virtual const bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_aa3676c39e8377b6798b034b67ba07d31}{get\+Collision\+Shape}} () const
+\item 
+virtual bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a9a87d86c692a3b1ce42c68354f312440}{get\+Collision\+Shape}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_aca6f41dfec9b3287717357cbfa57935a}{set\+Collision\+Shape}} (const bt\+Collision\+Shape \&shape)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Cylinder\+Shape $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_a59ebaac81520be5fee6e86ff8b937737}{m\+\_\+bt\+Cylinder\+Shape}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 29 of file Physics\+Shape\+Cylinder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a7e9b42a5baf9eab31f6d3f447eae56f8}\label{classnjli_1_1_physics_shape_cylinder_a7e9b42a5baf9eab31f6d3f447eae56f8}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!Physics\+Shape\+Cylinder@{Physics\+Shape\+Cylinder}}
+\index{Physics\+Shape\+Cylinder@{Physics\+Shape\+Cylinder}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Cylinder()}{PhysicsShapeCylinder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Cylinder\+::\+Physics\+Shape\+Cylinder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_afe635fca063da9463ced31e09d241745}\label{classnjli_1_1_physics_shape_cylinder_afe635fca063da9463ced31e09d241745}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!Physics\+Shape\+Cylinder@{Physics\+Shape\+Cylinder}}
+\index{Physics\+Shape\+Cylinder@{Physics\+Shape\+Cylinder}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Cylinder()}{PhysicsShapeCylinder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Cylinder\+::\+Physics\+Shape\+Cylinder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a6faad4aa97c6275c9dae35313e3f8b66}\label{classnjli_1_1_physics_shape_cylinder_a6faad4aa97c6275c9dae35313e3f8b66}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!Physics\+Shape\+Cylinder@{Physics\+Shape\+Cylinder}}
+\index{Physics\+Shape\+Cylinder@{Physics\+Shape\+Cylinder}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Cylinder()}{PhysicsShapeCylinder()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Cylinder\+::\+Physics\+Shape\+Cylinder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a83539bdbdb5bf4b8e270475070a39199}\label{classnjli_1_1_physics_shape_cylinder_a83539bdbdb5bf4b8e270475070a39199}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!````~Physics\+Shape\+Cylinder@{$\sim$\+Physics\+Shape\+Cylinder}}
+\index{````~Physics\+Shape\+Cylinder@{$\sim$\+Physics\+Shape\+Cylinder}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Shape\+Cylinder()}{~PhysicsShapeCylinder()}}
+{\footnotesize\ttfamily virtual njli\+::\+Physics\+Shape\+Cylinder\+::$\sim$\+Physics\+Shape\+Cylinder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ae2dc8177ccf121405a2d3aeaa5a5c513}\label{classnjli_1_1_physics_shape_cylinder_ae2dc8177ccf121405a2d3aeaa5a5c513}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Cylinder\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a844ba3ec7a53212951e0b2b9021a6832}\label{classnjli_1_1_physics_shape_cylinder_a844ba3ec7a53212951e0b2b9021a6832}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!calculate\+Local\+Inertia@{calculate\+Local\+Inertia}}
+\index{calculate\+Local\+Inertia@{calculate\+Local\+Inertia}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{calculate\+Local\+Inertia()}{calculateLocalInertia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::calculate\+Local\+Inertia (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{mass,  }\item[{bt\+Vector3 \&}]{inertia }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em mass} & $<$\#mass description\#$>$ \\
+\hline
+{\em inertia} & $<$\#inertia description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a594a3ced7daabd53c425d79f6bfb4173}\label{classnjli_1_1_physics_shape_cylinder_a594a3ced7daabd53c425d79f6bfb4173}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Shape\+Cylinder\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a0612a1c8c3f4520d78cb7f5838f03074}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a00d9bbd12c316e95087402a703fbfe17}\label{classnjli_1_1_physics_shape_cylinder_a00d9bbd12c316e95087402a703fbfe17}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}}$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a0f46fea25774f8b6c9b5f11b662e2ea6}\label{classnjli_1_1_physics_shape_cylinder_a0f46fea25774f8b6c9b5f11b662e2ea6}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}}$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a1c47189018afd4ce17ebc2628ccf4288}\label{classnjli_1_1_physics_shape_cylinder_a1c47189018afd4ce17ebc2628ccf4288}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}}$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a50af85972d00bad9e0ea3cb6df4636e3}\label{classnjli_1_1_physics_shape_cylinder_a50af85972d00bad9e0ea3cb6df4636e3}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}}$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder_builder}{Physics\+Shape\+Cylinder\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a85f5ae5b9a6df49f9b6235ca37fe7496}\label{classnjli_1_1_physics_shape_cylinder_a85f5ae5b9a6df49f9b6235ca37fe7496}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}}$\ast$$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a4af110c841b136ee56c4cd6185ab4633}\label{classnjli_1_1_physics_shape_cylinder_a4af110c841b136ee56c4cd6185ab4633}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a206e5561c42493f64037429253d5b715}\label{classnjli_1_1_physics_shape_cylinder_a206e5561c42493f64037429253d5b715}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ad725634ae3a5f9b140db0847ed6b10a2}\label{classnjli_1_1_physics_shape_cylinder_ad725634ae3a5f9b140db0847ed6b10a2}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Anisotropic\+Rolling\+Friction\+Direction@{get\+Anisotropic\+Rolling\+Friction\+Direction}}
+\index{get\+Anisotropic\+Rolling\+Friction\+Direction@{get\+Anisotropic\+Rolling\+Friction\+Direction}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Anisotropic\+Rolling\+Friction\+Direction()}{getAnisotropicRollingFrictionDirection()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Physics\+Shape\+Cylinder\+::get\+Anisotropic\+Rolling\+Friction\+Direction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_aa8ed8409e1a6ba5ed2c5de028558425a}\label{classnjli_1_1_physics_shape_cylinder_aa8ed8409e1a6ba5ed2c5de028558425a}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a72cb98a55614a3e264b8e4a157b45c64}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_aa3676c39e8377b6798b034b67ba07d31}\label{classnjli_1_1_physics_shape_cylinder_aa3676c39e8377b6798b034b67ba07d31}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Collision\+Shape@{get\+Collision\+Shape}}
+\index{get\+Collision\+Shape@{get\+Collision\+Shape}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Collision\+Shape()}{getCollisionShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const bt\+Collision\+Shape$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a527e956caca24bf16ed0d47f69ff14e8}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a9a87d86c692a3b1ce42c68354f312440}\label{classnjli_1_1_physics_shape_cylinder_a9a87d86c692a3b1ce42c68354f312440}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Collision\+Shape@{get\+Collision\+Shape}}
+\index{get\+Collision\+Shape@{get\+Collision\+Shape}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Collision\+Shape()}{getCollisionShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bt\+Collision\+Shape$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a2910f0362035c971f245349a55378b01}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a9e73e95275b9127ce3cf25fa51bad8ba}\label{classnjli_1_1_physics_shape_cylinder_a9e73e95275b9127ce3cf25fa51bad8ba}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Edge@{get\+Edge}}
+\index{get\+Edge@{get\+Edge}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Edge()}{getEdge()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::get\+Edge (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{bt\+Vector3 \&}]{pa,  }\item[{bt\+Vector3 \&}]{pb }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & $<$\#i description\#$>$ \\
+\hline
+{\em pa} & $<$\#pa description\#$>$ \\
+\hline
+{\em pb} & $<$\#pb description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a657e98309a2a171ccb02a054a04c9b57}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a528cb67c172a04787f7f1fa8239dc205}\label{classnjli_1_1_physics_shape_cylinder_a528cb67c172a04787f7f1fa8239dc205}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Half\+Extents\+With\+Margin@{get\+Half\+Extents\+With\+Margin}}
+\index{get\+Half\+Extents\+With\+Margin@{get\+Half\+Extents\+With\+Margin}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Half\+Extents\+With\+Margin()}{getHalfExtentsWithMargin()}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Physics\+Shape\+Cylinder\+::get\+Half\+Extents\+With\+Margin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_aae8b9aef78ec51c51ed8a3fe875df5b4}\label{classnjli_1_1_physics_shape_cylinder_aae8b9aef78ec51c51ed8a3fe875df5b4}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Half\+Extents\+Without\+Margin@{get\+Half\+Extents\+Without\+Margin}}
+\index{get\+Half\+Extents\+Without\+Margin@{get\+Half\+Extents\+Without\+Margin}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Half\+Extents\+Without\+Margin()}{getHalfExtentsWithoutMargin()}}
+{\footnotesize\ttfamily const bt\+Vector3\& njli\+::\+Physics\+Shape\+Cylinder\+::get\+Half\+Extents\+Without\+Margin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a05334d41b8bad6261922842a5c204015}\label{classnjli_1_1_physics_shape_cylinder_a05334d41b8bad6261922842a5c204015}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Num\+Edges@{get\+Num\+Edges}}
+\index{get\+Num\+Edges@{get\+Num\+Edges}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Num\+Edges()}{getNumEdges()}}
+{\footnotesize\ttfamily virtual int njli\+::\+Physics\+Shape\+Cylinder\+::get\+Num\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a24df999ba2b7ac0d9abda09c4f17c2fe}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ac0494575204d508cc5f91ebe68d3addf}\label{classnjli_1_1_physics_shape_cylinder_ac0494575204d508cc5f91ebe68d3addf}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Num\+Planes@{get\+Num\+Planes}}
+\index{get\+Num\+Planes@{get\+Num\+Planes}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Num\+Planes()}{getNumPlanes()}}
+{\footnotesize\ttfamily virtual int njli\+::\+Physics\+Shape\+Cylinder\+::get\+Num\+Planes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a11cb80220393bfce177b8bdc34f7f359}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_af865d6862f4dd8849f4b9290a3907337}\label{classnjli_1_1_physics_shape_cylinder_af865d6862f4dd8849f4b9290a3907337}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Num\+Vertices@{get\+Num\+Vertices}}
+\index{get\+Num\+Vertices@{get\+Num\+Vertices}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Num\+Vertices()}{getNumVertices()}}
+{\footnotesize\ttfamily virtual int njli\+::\+Physics\+Shape\+Cylinder\+::get\+Num\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_ac3f7cc28341fd58ace164bf8666480f0}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ad5f230b6c39911b3737f8e1d956ec390}\label{classnjli_1_1_physics_shape_cylinder_ad5f230b6c39911b3737f8e1d956ec390}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Plane@{get\+Plane}}
+\index{get\+Plane@{get\+Plane}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Plane()}{getPlane()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::get\+Plane (\begin{DoxyParamCaption}\item[{bt\+Vector3 \&}]{plane\+Normal,  }\item[{bt\+Vector3 \&}]{plane\+Support,  }\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane\+Normal} & $<$\#plane\+Normal description\#$>$ \\
+\hline
+{\em plane\+Support} & $<$\#plane\+Support description\#$>$ \\
+\hline
+{\em i} & $<$\#i description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_ad5418af48c1210d6d5119244826cacbb}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a7827d143353f66b460e6cd679da4ae2e}\label{classnjli_1_1_physics_shape_cylinder_a7827d143353f66b460e6cd679da4ae2e}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Radius@{get\+Radius}}
+\index{get\+Radius@{get\+Radius}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Radius()}{getRadius()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} njli\+::\+Physics\+Shape\+Cylinder\+::get\+Radius (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a512461c5827b246cdd5e037b2dc38d7c}\label{classnjli_1_1_physics_shape_cylinder_a512461c5827b246cdd5e037b2dc38d7c}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Shape\+Cylinder\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_ac7c6b2ac373892095f8220d56f8ad6de}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a540d188e51168afbcc758b0ddeb74c9f}\label{classnjli_1_1_physics_shape_cylinder_a540d188e51168afbcc758b0ddeb74c9f}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Up\+Axis@{get\+Up\+Axis}}
+\index{get\+Up\+Axis@{get\+Up\+Axis}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Up\+Axis()}{getUpAxis()}}
+{\footnotesize\ttfamily int njli\+::\+Physics\+Shape\+Cylinder\+::get\+Up\+Axis (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a8e138b8eefcf94a6d8a7296ac2c883bf}\label{classnjli_1_1_physics_shape_cylinder_a8e138b8eefcf94a6d8a7296ac2c883bf}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!get\+Vertex@{get\+Vertex}}
+\index{get\+Vertex@{get\+Vertex}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{get\+Vertex()}{getVertex()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::get\+Vertex (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{bt\+Vector3 \&}]{vtx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & $<$\#i description\#$>$ \\
+\hline
+{\em vtx} & $<$\#vtx description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_acb05a16bdbfa5cee6dcbab5c253eb78e}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a74ebf6b5c2ca835e1cfaaa1bec156ef3}\label{classnjli_1_1_physics_shape_cylinder_a74ebf6b5c2ca835e1cfaaa1bec156ef3}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!is\+Inside@{is\+Inside}}
+\index{is\+Inside@{is\+Inside}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{is\+Inside()}{isInside()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Physics\+Shape\+Cylinder\+::is\+Inside (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{pt,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{tolerance }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & $<$\#pt description\#$>$ \\
+\hline
+{\em tolerance} & $<$\#tolerance description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a86823cfc30c2f53f5e6d93bad2c13d60}\label{classnjli_1_1_physics_shape_cylinder_a86823cfc30c2f53f5e6d93bad2c13d60}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!load@{load}}
+\index{load@{load}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_afdffa5511a58e1bd0898716ecfb111cd}\label{classnjli_1_1_physics_shape_cylinder_afdffa5511a58e1bd0898716ecfb111cd}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Cylinder\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a890d915f88af06dcf1ac1fa4f5943dc2}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a0d44e40875147bc6999adf0693268099}\label{classnjli_1_1_physics_shape_cylinder_a0d44e40875147bc6999adf0693268099}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}}\& njli\+::\+Physics\+Shape\+Cylinder\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_cylinder}{Physics\+Shape\+Cylinder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ad7ec0be0f27ab4b0248fa1231491fd20}\label{classnjli_1_1_physics_shape_cylinder_ad7ec0be0f27ab4b0248fa1231491fd20}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a2ac8a109a5ad67ee79f40ce8f28337cf}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_aca6f41dfec9b3287717357cbfa57935a}\label{classnjli_1_1_physics_shape_cylinder_aca6f41dfec9b3287717357cbfa57935a}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!set\+Collision\+Shape@{set\+Collision\+Shape}}
+\index{set\+Collision\+Shape@{set\+Collision\+Shape}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{set\+Collision\+Shape()}{setCollisionShape()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::set\+Collision\+Shape (\begin{DoxyParamCaption}\item[{const bt\+Collision\+Shape \&}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a441e82a42f3b588a409c3b6c41288abd}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a685026badc2ed6c9bd64ec4784fbfd15}\label{classnjli_1_1_physics_shape_cylinder_a685026badc2ed6c9bd64ec4784fbfd15}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!set\+Half\+ExtentsX@{set\+Half\+ExtentsX}}
+\index{set\+Half\+ExtentsX@{set\+Half\+ExtentsX}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{set\+Half\+Extents\+X()}{setHalfExtentsX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::set\+Half\+ExtentsX (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{half\+Extents }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em half\+Extents} & $<$\#half\+Extents description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_afac940ffcb588c11962642b4d0329d10}\label{classnjli_1_1_physics_shape_cylinder_afac940ffcb588c11962642b4d0329d10}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!set\+Half\+ExtentsY@{set\+Half\+ExtentsY}}
+\index{set\+Half\+ExtentsY@{set\+Half\+ExtentsY}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{set\+Half\+Extents\+Y()}{setHalfExtentsY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::set\+Half\+ExtentsY (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{half\+Extents }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em half\+Extents} & $<$\#half\+Extents description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ab11198a4980fc34eed9c4c4d53bb41e1}\label{classnjli_1_1_physics_shape_cylinder_ab11198a4980fc34eed9c4c4d53bb41e1}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!set\+Half\+ExtentsZ@{set\+Half\+ExtentsZ}}
+\index{set\+Half\+ExtentsZ@{set\+Half\+ExtentsZ}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{set\+Half\+Extents\+Z()}{setHalfExtentsZ()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::set\+Half\+ExtentsZ (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{half\+Extents }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em half\+Extents} & $<$\#half\+Extents description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_ab264eaa033bd9f0d19030290c12b58b4}\label{classnjli_1_1_physics_shape_cylinder_ab264eaa033bd9f0d19030290c12b58b4}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!set\+Margin@{set\+Margin}}
+\index{set\+Margin@{set\+Margin}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{set\+Margin()}{setMargin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Cylinder\+::set\+Margin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{collision\+Margin }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em collision\+Margin} & $<$\#collision\+Margin description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a3a7aa75547f61cdfbb292e64ac18190a}\label{classnjli_1_1_physics_shape_cylinder_a3a7aa75547f61cdfbb292e64ac18190a}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!type@{type}}
+\index{type@{type}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Physics\+Shape\+Cylinder\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_physics_shape_cylinder_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 31 of file Physics\+Shape\+Cylinder.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_cylinder_a59ebaac81520be5fee6e86ff8b937737}\label{classnjli_1_1_physics_shape_cylinder_a59ebaac81520be5fee6e86ff8b937737}} 
+\index{njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}!m\+\_\+bt\+Cylinder\+Shape@{m\+\_\+bt\+Cylinder\+Shape}}
+\index{m\+\_\+bt\+Cylinder\+Shape@{m\+\_\+bt\+Cylinder\+Shape}!njli\+::\+Physics\+Shape\+Cylinder@{njli\+::\+Physics\+Shape\+Cylinder}}
+\subsubsection{\texorpdfstring{m\+\_\+bt\+Cylinder\+Shape}{m\_btCylinderShape}}
+{\footnotesize\ttfamily bt\+Cylinder\+Shape$\ast$ njli\+::\+Physics\+Shape\+Cylinder\+::m\+\_\+bt\+Cylinder\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 271 of file Physics\+Shape\+Cylinder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/physics/shape/\mbox{\hyperlink{_physics_shape_cylinder_8h}{Physics\+Shape\+Cylinder.\+h}}\end{DoxyCompactItemize}

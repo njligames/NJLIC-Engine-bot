@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_wrapper_ogg" kind="class" language="C++" prot="public">
+    <compoundname>njli::WrapperOgg</compoundname>
+    <basecompoundref refid="classnjli_1_1_i_sound_file_wrapper" prot="public" virt="non-virtual">njli::ISoundFileWrapper</basecompoundref>
+    <includes refid="_wrapper___o_g_g_8h" local="no">Wrapper_OGG.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_wrapper_ogg_1a295c445a708ee989fdc9e4baaf8aa998" prot="private" static="no" mutable="no">
+        <type>OggVorbis_File *</type>
+        <definition>OggVorbis_File* njli::WrapperOgg::ov</definition>
+        <argsstring></argsstring>
+        <name>ov</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="46" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_wrapper_ogg_1a38f58ccb93324aaf7aca3aa77c810efe" prot="private" static="no" mutable="no">
+        <type><ref refid="structogg__file" kindref="compound">ogg_file</ref></type>
+        <definition>ogg_file njli::WrapperOgg::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="47" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_wrapper_ogg_1aa353b7ba5e112e1160689397d0a90de1" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char njli::WrapperOgg::bufArray[OGG_BUFFER_SIZE]</definition>
+        <argsstring>[OGG_BUFFER_SIZE]</argsstring>
+        <name>bufArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="48" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_wrapper_ogg_1ae96fb224e50879ef50c3021fa09ea890" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int njli::WrapperOgg::minDecompressLengthAtOnce</definition>
+        <argsstring></argsstring>
+        <name>minDecompressLengthAtOnce</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="49" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_wrapper_ogg_1a51417abb4c7c95e860b92a95146e7b2d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool njli::WrapperOgg::seekable</definition>
+        <argsstring></argsstring>
+        <name>seekable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="51" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a48f5522a7407346d58fa69c57ffbd369" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WrapperOgg::WrapperOgg</definition>
+        <argsstring>(int minDecompressLengthAtOnce=-1)</argsstring>
+        <name>WrapperOgg</name>
+        <param>
+          <type>int</type>
+          <declname>minDecompressLengthAtOnce</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="29" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a0ca14ff5c8de2e1b024081cd4ee36900" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WrapperOgg::~WrapperOgg</definition>
+        <argsstring>()</argsstring>
+        <name>~WrapperOgg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="30" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a3ba50f99487d489f0b495cfe7fa77811" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WrapperOgg::LoadFromMemory</definition>
+        <argsstring>(char *data, int dataSize, SoundInfo *soundInfo)</argsstring>
+        <name>LoadFromMemory</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a2c4dc8cc613f8f545b0e1ead86ee7e4d">LoadFromMemory</reimplements>
+        <param>
+          <type>char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dataSize</declname>
+        </param>
+        <param>
+          <type>SoundInfo *</type>
+          <declname>soundInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a315af49a4e484e1cb8689a11dfe9db2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WrapperOgg::LoadFromFile</definition>
+        <argsstring>(FILE *f, SoundInfo *soundInfo)</argsstring>
+        <name>LoadFromFile</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a525f86e4bbe65d5b90ee3eda171b5492">LoadFromFile</reimplements>
+        <param>
+          <type>FILE *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>SoundInfo *</type>
+          <declname>soundInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a47dbddbb35d013d8250adc8e666c4fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WrapperOgg::DecompressStream</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;decompressBuffer, bool inLoop=false)</argsstring>
+        <name>DecompressStream</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a2e62b8b05da06eb1f9594ffdd5aa0cfd">DecompressStream</reimplements>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>decompressBuffer</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inLoop</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1ad33e7975379d1e4f5c15944370a4cf47" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WrapperOgg::DecompressAll</definition>
+        <argsstring>(std::vector&lt; char &gt; &amp;decompressBuffer)</argsstring>
+        <name>DecompressAll</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a9b338a5bbcb5d07acdebce1efab332c5">DecompressAll</reimplements>
+        <param>
+          <type>std::vector&lt; char &gt; &amp;</type>
+          <declname>decompressBuffer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a28d1964b0a03208ebeb30e09ef625c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WrapperOgg::ResetStream</definition>
+        <argsstring>()</argsstring>
+        <name>ResetStream</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1ab302d724c78a9a55f6dcb288d31e6854">ResetStream</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="37" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1adc4b8116a89e8eb48f65276ec46e8dd2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::WrapperOgg::Seek</definition>
+        <argsstring>(size_t pos, SEEK_POS start)</argsstring>
+        <name>Seek</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a22241a77b7d6adf55045a7a30ec5ef30">Seek</reimplements>
+        <param>
+          <type>size_t</type>
+          <declname>pos</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" kindref="member">SEEK_POS</ref></type>
+          <declname>start</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="39" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a90e11afb177a4085c5925af77436cd91" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>virtual size_t njli::WrapperOgg::GetCurrentStreamPos</definition>
+        <argsstring>() const</argsstring>
+        <name>GetCurrentStreamPos</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a7468aaf1e53cfd6feb38eae4ecf8ab99">GetCurrentStreamPos</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1a0fdf09ad6e5bde3de915140c39698a97" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float njli::WrapperOgg::GetTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTime</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1afefb180620c4a6e17e994a867726eb29">GetTime</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="42" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_wrapper_ogg_1adb921d96c9d60b6539fbc05e08989ffa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>float</type>
+        <definition>virtual float njli::WrapperOgg::GetTotalTime</definition>
+        <argsstring>() const</argsstring>
+        <name>GetTotalTime</name>
+        <reimplements refid="classnjli_1_1_i_sound_file_wrapper_1a1b22318560969f7cc06ac03dcb78971f">GetTotalTime</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="43" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2815">
+        <label>njli::ISoundFileWrapper</label>
+        <link refid="classnjli_1_1_i_sound_file_wrapper"/>
+      </node>
+      <node id="2814">
+        <label>njli::WrapperOgg</label>
+        <link refid="classnjli_1_1_wrapper_ogg"/>
+        <childnode refid="2815" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2818">
+        <label>ogg_file</label>
+        <link refid="structogg__file"/>
+      </node>
+      <node id="2817">
+        <label>njli::ISoundFileWrapper</label>
+        <link refid="classnjli_1_1_i_sound_file_wrapper"/>
+      </node>
+      <node id="2816">
+        <label>njli::WrapperOgg</label>
+        <link refid="classnjli_1_1_wrapper_ogg"/>
+        <childnode refid="2817" relation="public-inheritance">
+        </childnode>
+        <childnode refid="2818" relation="usage">
+          <edgelabel>t</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" line="27" column="1" bodyfile="njligames-njlic_engine/njli/sound/openal/Wrapper_OGG.h" bodystart="26" bodyend="52"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_wrapper_ogg_1aa353b7ba5e112e1160689397d0a90de1" prot="private" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>bufArray</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a32ec778d5282ca8c51937d66b6db9991" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>CURRENT</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1ad33e7975379d1e4f5c15944370a4cf47" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>DecompressAll</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a47dbddbb35d013d8250adc8e666c4fdd" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>DecompressStream</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a90e11afb177a4085c5925af77436cd91" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>GetCurrentStreamPos</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a0fdf09ad6e5bde3de915140c39698a97" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>GetTime</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1adb921d96c9d60b6539fbc05e08989ffa" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>GetTotalTime</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a9d584c730a105374c50f9d4e435c6ca4" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>ISoundFileWrapper</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a315af49a4e484e1cb8689a11dfe9db2f" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>LoadFromFile</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a3ba50f99487d489f0b495cfe7fa77811" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>LoadFromMemory</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1ae96fb224e50879ef50c3021fa09ea890" prot="private" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>minDecompressLengthAtOnce</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a295c445a708ee989fdc9e4baaf8aa998" prot="private" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>ov</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a28d1964b0a03208ebeb30e09ef625c90" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>ResetStream</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1adc4b8116a89e8eb48f65276ec46e8dd2" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>Seek</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>SEEK_POS</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a5374e14efd1564c10852da7cfe31164a" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>SEEK_POS</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a51417abb4c7c95e860b92a95146e7b2d" prot="private" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>seekable</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1ab4b07720cb2823b4f3f9fa98ee07a6e7a1f8c3cbe37d39eb58733a1d67615827e" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>START</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a38f58ccb93324aaf7aca3aa77c810efe" prot="private" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>t</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a48f5522a7407346d58fa69c57ffbd369" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>WrapperOgg</name></member>
+      <member refid="classnjli_1_1_i_sound_file_wrapper_1a1d45f4bcf0e8229bc57907f22ce01ab7" prot="public" virt="virtual"><scope>njli::WrapperOgg</scope><name>~ISoundFileWrapper</name></member>
+      <member refid="classnjli_1_1_wrapper_ogg_1a0ca14ff5c8de2e1b024081cd4ee36900" prot="public" virt="non-virtual"><scope>njli::WrapperOgg</scope><name>~WrapperOgg</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

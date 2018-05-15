@@ -1,0 +1,2321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_scene">
+<title>njli::Scene class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_scene_8h">&lt;Scene.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::Scene</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_scene__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::Scene</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_scene__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Node * m_RootNode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>SceneStateMachine * m_SceneStateMachine</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Material * m_BackgroundMaterial</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>PhysicsWorld * m_PhysicsWorld</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Clock * &gt; m_ClockList</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>std::vector&lt; Geometry * &gt; m_ActiveGeometries</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; Camera * &gt; * m_ActiveCameras</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; Node * &gt; * m_ActiveNodes</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; ParticleEmitter * &gt; * m_ActiveParticleEmitters</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; Clock * &gt; * m_ActiveClocks</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>btAlignedObjectArray&lt; Geometry * &gt; * m_ActiveGeometry</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Camera * m_TouchCamera</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_scene_1af5b5f627027c8c24f6a9eb27c1cb1dbf">Scene</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_scene_1ab7db7cebb1627f136ea6831bb455a073">Scene</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_scene_1a833d4549a6020037969b44d7dc766027">Scene</link> (
+const <link linkend="classnjli_1_1_scene">Scene</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_scene_1a04e4c63725b6fc0df8581eb71231d18d">BT_DECLARE_ALIGNED_ALLOCATOR</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_scene_1aff30fbf404fd4112c54759d33960d78f">~Scene</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_scene">Scene</link> &amp; <link linkend="classnjli_1_1_scene_1a6d9e503fc33bad3dc24f884a72e17d08">operator=</link> (
+const <link linkend="classnjli_1_1_scene">Scene</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1aad491cfead02896db73ba6271d58a298">update</link> (
+<link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> timeStep, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> numSubSteps)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1adc510ff6029dca669031a031d9ca0069">render</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a8dadc66e35d70f7d51bceee337aa268d">addActiveCamera</link> (
+<link linkend="classnjli_1_1_camera">Camera</link> * camera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a27894158aebeba1a3251efa33c41aa71">removeActiveCamera</link> (
+<link linkend="classnjli_1_1_camera">Camera</link> * camera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1af1b996e40edb70d8eff9b3aef11f9197">addActiveNode</link> (
+<link linkend="classnjli_1_1_node">Node</link> * node)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a5a826df53ef02ccb6bdcd7969c186162">removeActiveNode</link> (
+<link linkend="classnjli_1_1_node">Node</link> * node)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1aafc49de895ac5cdf65bdd2668b186333">getActiveNodes</link> (
+btAlignedObjectArray&lt; <link linkend="classnjli_1_1_node">Node</link> *&gt; &amp; activeNodes)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ac4345dcab380f4f28240047f684100a8">addActiveParticleEmitter</link> (
+<link linkend="classnjli_1_1_particle_emitter">ParticleEmitter</link> * particleEmitter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a09172111155b23406c7110982fbce2bc">removeActiveParticleEmitter</link> (
+<link linkend="classnjli_1_1_particle_emitter">ParticleEmitter</link> * particleEmitter)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a8ccfdf570bddfeda002ab780f14223a0">addActiveClock</link> (
+<link linkend="classnjli_1_1_clock">Clock</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a31e1f83511a7340324c21cb1285ed0a2">removeActiveClock</link> (
+<link linkend="classnjli_1_1_clock">Clock</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1aadb34e2132fede8f4a3dc0a9fdbb9d2c">addActiveGeometry</link> (
+<link linkend="classnjli_1_1_geometry">Geometry</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1af4f7c3b7b136bbf4f8aad6640814b9a3">removeActiveGeometry</link> (
+<link linkend="classnjli_1_1_geometry">Geometry</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ad8f34eff6d8d4fff8c293936b316f4b9">clearNodeTouches</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a7a3b03d4a7537c7716f88ba8e10af13a">clearAllStates</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_scene_1aca382ffb528d7cb055a4b3cf09545050">calculateSerializeBufferSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a09f66453d56234e0c2e7d85116b8d6d6">serialize</link> (
+<link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * , btSerializer * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_scene_1acc03bc01043d647c64d512abd9fd44e3">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_scene_1aac1c30b93e02095431fbc7a2739269e3">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_scene_1a264f0ffff37c50ec083d14305484d33c">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a3118fbf195018c52cc493efdec177f9e">setRootNode</link> (
+<link linkend="classnjli_1_1_node">Node</link> * node)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ae29659499a79266189dbed583e262873">removeRootNode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_node">Node</link> * <link linkend="classnjli_1_1_scene_1a6bb6c79820215734862915f282c08058">getRootNode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_node">Node</link> * <link linkend="classnjli_1_1_scene_1a9b9405d1a8582835baabce12fdcd8c1c">getRootNode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_scene_state_machine">SceneStateMachine</link> * <link linkend="classnjli_1_1_scene_1affbc7b7b0c3ad6bc2cba663e4359fc2d">getStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_scene_state_machine">SceneStateMachine</link> * <link linkend="classnjli_1_1_scene_1a8975e7ec684eaea3563acd6c10f50814">getStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ab67517186a935dae9dca439f31c5154a">removeStateMachine</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a1df198e68ada8de3eb23caa2eba04f5b">addBackground</link> (
+<link linkend="classnjli_1_1_material">Material</link> * material)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a9186fa26416275bd05fdcc0357fa1745">removeBackground</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_material">Material</link> * <link linkend="classnjli_1_1_scene_1ae2f72caffbca0a65f601ee99827e1c81">getBackground</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_material">Material</link> * <link linkend="classnjli_1_1_scene_1afbd5cc6d18028c8e948b4e4fb72bd891">getBackground</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a81fba745ce70cb12f08c522627ff43fc">setPhysicsWorld</link> (
+<link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * world)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a967c76f1e30d1690cd5c7425f3dd2f29">removePhysicsWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * <link linkend="classnjli_1_1_scene_1aacdcd2433fadc469c85c16ea50f9123d">getPhysicsWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_physics_world">PhysicsWorld</link> * <link linkend="classnjli_1_1_scene_1a9f348500b14218f8f4bc7f2bc3b16c63">getPhysicsWorld</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_scene_1a666d9639161eaad751d3ff373325b33e">addClock</link> (
+<link linkend="classnjli_1_1_clock">Clock</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_scene_1a52ebc14871130c84d52d2db461cdd1fe">removeClock</link> (
+<link linkend="classnjli_1_1_clock">Clock</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a245ec2b188fb22f97e58d2bbca676424">removeAllClocks</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a3a97afacd1d6a151b0405788ed5b8b63">getClocks</link> (
+std::vector&lt; <link linkend="classnjli_1_1_clock">Clock</link> *&gt; &amp; clocks)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_scene_1a7988c5db188ad35b0a4d474ea493e611">getClockIndex</link> (
+<link linkend="classnjli_1_1_clock">Clock</link> * clock)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_clock">Clock</link> * <link linkend="classnjli_1_1_scene_1a825e7bfa517703751e9263464b220911">getClock</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_clock">Clock</link> * <link linkend="classnjli_1_1_scene_1ae03ad36c1fa1f906ad9affb26f03e519">getClock</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ac843c56be80b5c13c602cb324f38fc65">touchDown</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a292488e27e7feeccb28d36f827cff719">touchUp</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a8e22ab9072c414608daa632c3cff9c96">touchMove</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1adfa4d5941916d1716d9015a22a5976dc">touchCancelled</link> (
+<link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1af38110449fc118d5656bb95ff8885ccb">touchDown</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1adbe3003a2a52c0fff0b00deb461692cd">touchUp</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a4861fe63ac950cec785a15fd8d778edc">touchMove</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ae9191f23764b22fb14f84d8875306431">mouseDown</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a2b765b00a1f01803ed6c06556751af80">mouseUp</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a76e20645cea133ed0fe5082ddd1d6dd1">mouseMove</link> (
+const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a37ce7fc85fdb926bc66835ebd9f927b9">keyUp</link> (
+const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a4404a903bf1230b4933891bae10a9c86">keyDown</link> (
+const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ad517760d7c2c0de588cfffb99bc225a6">touchCancelled</link> (
+const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a292f2f69409c9f30a2c16d20d40ffda6">keyboardShow</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a2b864950aeb5d0b6687faa6b20840428">keyboardCancel</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ad59791aaacc4de7aaed6925c7328838b">keyboardReturn</link> (
+const char * text)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1af5834a2fc653e8f4dd1dfca5b530d5c7">renderHUD</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a0cfb41baa6a570e3e298ff7b455da617">pauseGame</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1adbc56ddd00f3388e58112a75725f341b">unPauseGame</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ac2b5630b706a264ebfd89582e6f1b58e">willResignActive</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a1cdee932514ef030b48aba4aa23f899f">didBecomeActive</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1abea5b18900978c635d8504ca14436e79">didEnterBackground</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a86245ab3697f318800abeee65135895e">willEnterForeground</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a48d0ef16f60e90db786bbfcda684d017">willTerminate</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ac567928cfa8c10e45a100792559d1d2b">interrupt</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a5f6ff76f0029b35b9b0ec17ea0be302e">resumeInterrupt</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ad68f6a92d484bc021051b8d12b4eaf38">receivedMemoryWarning</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a5fbe046c6f2d690408381f2ef4c4f3ae">updateViewSize</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a5cdd2ddd0c077b542290e3d2c04c52c6">addCameraNode</link> (
+<link linkend="classnjli_1_1_node">Node</link> * cameraNode, bool touchCamera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a4a926234963cc9b8f14928e559dbd82f">setTouchCamera</link> (
+<link linkend="classnjli_1_1_camera">Camera</link> * camera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_camera">Camera</link> * <link linkend="classnjli_1_1_scene_1ad964360f4cf41a7db15a1407bc4d551d">getTouchCamera</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="classnjli_1_1_camera">Camera</link> * <link linkend="classnjli_1_1_scene_1a82306455f32f71f1865d185ae4588e09">getTouchCamera</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_scene_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_abstract_factory_object">AbstractFactoryObject</link> * <link linkend="classnjli_1_1_scene_1a83a8876ae63b92804004cf3febe76573">create</link> (
+const <link linkend="classnjli_1_1_abstract_builder">AbstractBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * <link linkend="classnjli_1_1_scene_1ac4ca71716ed832be357f15f8262c8448">getPointer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357">u64</link> <link linkend="classnjli_1_1_scene_1a4ffddf141a426a5a07d0ac19f1913811">getPointerValue</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a4fc4bcd9d1930911474210c047372fc0">serializeObject</link> (
+class btSerializer * serializer)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_scene">Scene</link> ** <link linkend="classnjli_1_1_scene_1a941f75f0519b1ffa1a9bc02cabb33d1d">createArray</link> (
+const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a0214dc61cbd3b427fc1642c5f7288c16">destroyArray</link> (
+<link linkend="classnjli_1_1_scene">Scene</link> ** array, const <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> size)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_scene">Scene</link> * <link linkend="classnjli_1_1_scene_1a51f95c5217cfcf9968bcebc8e874a689">create</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_scene">Scene</link> * <link linkend="classnjli_1_1_scene_1a23a898b795e134892fce27924e89c1d8">create</link> (
+const <link linkend="classnjli_1_1_scene_builder">SceneBuilder</link> &amp; builder)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_scene">Scene</link> * <link linkend="classnjli_1_1_scene_1ad3630f0e75efb992b123c89654607040">clone</link> (
+const <link linkend="classnjli_1_1_scene">Scene</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="classnjli_1_1_scene">Scene</link> * <link linkend="classnjli_1_1_scene_1a7f779488f52836cea51f1a38488f876b">copy</link> (
+const <link linkend="classnjli_1_1_scene">Scene</link> &amp; object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1ab37540b9164d318889e1323be7fa3b8b">destroy</link> (
+<link linkend="classnjli_1_1_scene">Scene</link> * object)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_scene_1a89333f10a40329f55271c794685575db">load</link> (
+<link linkend="classnjli_1_1_scene">Scene</link> &amp; object, lua_State * L, int stack_index)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049">u32</link> <link linkend="classnjli_1_1_scene_1aa760cdf1cda1dd3a460f11e257fd46b1">type</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <simplesect>
+            <title>Detailed Description</title>
+
+<para>&lt;#Description#&gt; </para>
+                <para>Definition at line 47 of file Scene.h</para>
+                <para>The Documentation for this struct was generated from the following file: </para>
+                <para><itemizedlist><listitem><para>Scene.h</para></listitem></itemizedlist></para>
+        </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_scene_1af5b5f627027c8c24f6a9eb27c1cb1dbf">
+                <title>njli::Scene::Scene ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ab7db7cebb1627f136ea6831bb455a073">
+                <title>njli::Scene::Scene (const AbstractBuilder &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a833d4549a6020037969b44d7dc766027">
+                <title>njli::Scene::Scene (const Scene &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a04e4c63725b6fc0df8581eb71231d18d">
+                <title>njli::Scene::BT_DECLARE_ALIGNED_ALLOCATOR ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aff30fbf404fd4112c54759d33960d78f">
+                <title>virtual njli::Scene::~Scene ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a6d9e503fc33bad3dc24f884a72e17d08">
+                <title>Scene&amp; njli::Scene::operator= (const Scene &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aad491cfead02896db73ba6271d58a298">
+                <title>void njli::Scene::update (f32 timeStep, const u32 numSubSteps=2)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1adc510ff6029dca669031a031d9ca0069">
+                <title>void njli::Scene::render ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a8dadc66e35d70f7d51bceee337aa268d">
+                <title>void njli::Scene::addActiveCamera (Camera *camera=NULL)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a27894158aebeba1a3251efa33c41aa71">
+                <title>void njli::Scene::removeActiveCamera (Camera *camera)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1af1b996e40edb70d8eff9b3aef11f9197">
+                <title>void njli::Scene::addActiveNode (Node *node)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a5a826df53ef02ccb6bdcd7969c186162">
+                <title>void njli::Scene::removeActiveNode (Node *node)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aafc49de895ac5cdf65bdd2668b186333">
+                <title>void njli::Scene::getActiveNodes (btAlignedObjectArray&lt; Node *&gt; &amp;activeNodes) const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ac4345dcab380f4f28240047f684100a8">
+                <title>void njli::Scene::addActiveParticleEmitter (ParticleEmitter *particleEmitter)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a09172111155b23406c7110982fbce2bc">
+                <title>void njli::Scene::removeActiveParticleEmitter (ParticleEmitter *particleEmitter)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a8ccfdf570bddfeda002ab780f14223a0">
+                <title>void njli::Scene::addActiveClock (Clock *clock)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a31e1f83511a7340324c21cb1285ed0a2">
+                <title>void njli::Scene::removeActiveClock (Clock *clock)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aadb34e2132fede8f4a3dc0a9fdbb9d2c">
+                <title>void njli::Scene::addActiveGeometry (Geometry *clock)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1af4f7c3b7b136bbf4f8aad6640814b9a3">
+                <title>void njli::Scene::removeActiveGeometry (Geometry *clock)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad8f34eff6d8d4fff8c293936b316f4b9">
+                <title>void njli::Scene::clearNodeTouches ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a7a3b03d4a7537c7716f88ba8e10af13a">
+                <title>void njli::Scene::clearAllStates ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aca382ffb528d7cb055a4b3cf09545050">
+                <title>virtual s32 njli::Scene::calculateSerializeBufferSize () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a09f66453d56234e0c2e7d85116b8d6d6">
+                <title>virtual void njli::Scene::serialize (void *, btSerializer *) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>btSerializer</entry>
+                                <entry>
+<para>&lt;#btSerializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1acc03bc01043d647c64d512abd9fd44e3">
+                <title>virtual const char* njli::Scene::getClassName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aac1c30b93e02095431fbc7a2739269e3">
+                <title>virtual s32 njli::Scene::getType () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a264f0ffff37c50ec083d14305484d33c">
+                <title>njli::Scene::operator std::string () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a3118fbf195018c52cc493efdec177f9e">
+                <title>void njli::Scene::setRootNode (Node *node)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ae29659499a79266189dbed583e262873">
+                <title>void njli::Scene::removeRootNode ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a6bb6c79820215734862915f282c08058">
+                <title>Node* njli::Scene::getRootNode ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a9b9405d1a8582835baabce12fdcd8c1c">
+                <title>const Node* njli::Scene::getRootNode () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1affbc7b7b0c3ad6bc2cba663e4359fc2d">
+                <title>SceneStateMachine* njli::Scene::getStateMachine ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a8975e7ec684eaea3563acd6c10f50814">
+                <title>const SceneStateMachine* njli::Scene::getStateMachine () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ab67517186a935dae9dca439f31c5154a">
+                <title>void njli::Scene::removeStateMachine ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a1df198e68ada8de3eb23caa2eba04f5b">
+                <title>void njli::Scene::addBackground (Material *material)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>emitter</entry>
+                                <entry>
+<para>&lt;#emitter description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>emitter</entry>
+                                <entry>
+<para>&lt;#emitter description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>particleEmitters</entry>
+                                <entry>
+<para>&lt;#particleEmitters description#&gt; &lt;#Description#&gt;</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>index</entry>
+                                <entry>
+<para>&lt;#index description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; &lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>index</entry>
+                                <entry>
+<para>&lt;#index description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+<formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 17:02:26</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>material</entry>
+                                <entry>
+<para>&lt;#material description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a9186fa26416275bd05fdcc0357fa1745">
+                <title>void njli::Scene::removeBackground ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ae2f72caffbca0a65f601ee99827e1c81">
+                <title>Material* njli::Scene::getBackground ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1afbd5cc6d18028c8e948b4e4fb72bd891">
+                <title>const Material* njli::Scene::getBackground () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a81fba745ce70cb12f08c522627ff43fc">
+                <title>void njli::Scene::setPhysicsWorld (PhysicsWorld *world)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>world</entry>
+                                <entry>
+<para>&lt;#world description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a967c76f1e30d1690cd5c7425f3dd2f29">
+                <title>void njli::Scene::removePhysicsWorld ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aacdcd2433fadc469c85c16ea50f9123d">
+                <title>PhysicsWorld* njli::Scene::getPhysicsWorld ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a9f348500b14218f8f4bc7f2bc3b16c63">
+                <title>const PhysicsWorld* njli::Scene::getPhysicsWorld () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a666d9639161eaad751d3ff373325b33e">
+                <title>s32 njli::Scene::addClock (Clock *clock)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>clock</entry>
+                                <entry>
+<para>&lt;#clock description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a52ebc14871130c84d52d2db461cdd1fe">
+                <title>bool njli::Scene::removeClock (Clock *clock)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>clock</entry>
+                                <entry>
+<para>&lt;#clock description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a245ec2b188fb22f97e58d2bbca676424">
+                <title>void njli::Scene::removeAllClocks ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a3a97afacd1d6a151b0405788ed5b8b63">
+                <title>void njli::Scene::getClocks (std::vector&lt; Clock *&gt; &amp;clocks) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>clocks</entry>
+                                <entry>
+<para>&lt;#clocks description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a7988c5db188ad35b0a4d474ea493e611">
+                <title>s32 njli::Scene::getClockIndex (Clock *clock) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>clock</entry>
+                                <entry>
+<para>&lt;#clock description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a825e7bfa517703751e9263464b220911">
+                <title>Clock* njli::Scene::getClock (const u32 index)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>index</entry>
+                                <entry>
+<para>&lt;#index description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ae03ad36c1fa1f906ad9affb26f03e519">
+                <title>const Clock* njli::Scene::getClock (const u32 index) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>index</entry>
+                                <entry>
+<para>&lt;#index description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ac843c56be80b5c13c602cb324f38fc65">
+                <title>void njli::Scene::touchDown (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; &lt;#Description#&gt; &lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; 
+<literallayout>
+</literallayout>
+&lt;#Description#&gt;</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a292488e27e7feeccb28d36f827cff719">
+                <title>void njli::Scene::touchUp (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a8e22ab9072c414608daa632c3cff9c96">
+                <title>void njli::Scene::touchMove (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1adfa4d5941916d1716d9015a22a5976dc">
+                <title>void njli::Scene::touchCancelled (DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1af38110449fc118d5656bb95ff8885ccb">
+                <title>void njli::Scene::touchDown (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1adbe3003a2a52c0fff0b00deb461692cd">
+                <title>void njli::Scene::touchUp (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a4861fe63ac950cec785a15fd8d778edc">
+                <title>void njli::Scene::touchMove (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ae9191f23764b22fb14f84d8875306431">
+                <title>void njli::Scene::mouseDown (const DeviceMouse &amp;mouse)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a2b765b00a1f01803ed6c06556751af80">
+                <title>void njli::Scene::mouseUp (const DeviceMouse &amp;mouse)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a76e20645cea133ed0fe5082ddd1d6dd1">
+                <title>void njli::Scene::mouseMove (const DeviceMouse &amp;mouse)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a37ce7fc85fdb926bc66835ebd9f927b9">
+                <title>void njli::Scene::keyUp (const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a4404a903bf1230b4933891bae10a9c86">
+                <title>void njli::Scene::keyDown (const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad517760d7c2c0de588cfffb99bc225a6">
+                <title>void njli::Scene::touchCancelled (const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a292f2f69409c9f30a2c16d20d40ffda6">
+                <title>void njli::Scene::keyboardShow ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a2b864950aeb5d0b6687faa6b20840428">
+                <title>void njli::Scene::keyboardCancel ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad59791aaacc4de7aaed6925c7328838b">
+                <title>void njli::Scene::keyboardReturn (const char *text)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1af5834a2fc653e8f4dd1dfca5b530d5c7">
+                <title>void njli::Scene::renderHUD ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a0cfb41baa6a570e3e298ff7b455da617">
+                <title>void njli::Scene::pauseGame ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1adbc56ddd00f3388e58112a75725f341b">
+                <title>void njli::Scene::unPauseGame ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ac2b5630b706a264ebfd89582e6f1b58e">
+                <title>void njli::Scene::willResignActive ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a1cdee932514ef030b48aba4aa23f899f">
+                <title>void njli::Scene::didBecomeActive ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1abea5b18900978c635d8504ca14436e79">
+                <title>void njli::Scene::didEnterBackground ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a86245ab3697f318800abeee65135895e">
+                <title>void njli::Scene::willEnterForeground ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a48d0ef16f60e90db786bbfcda684d017">
+                <title>void njli::Scene::willTerminate ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ac567928cfa8c10e45a100792559d1d2b">
+                <title>void njli::Scene::interrupt ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a5f6ff76f0029b35b9b0ec17ea0be302e">
+                <title>void njli::Scene::resumeInterrupt ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad68f6a92d484bc021051b8d12b4eaf38">
+                <title>void njli::Scene::receivedMemoryWarning ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a5fbe046c6f2d690408381f2ef4c4f3ae">
+                <title>void njli::Scene::updateViewSize ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a5cdd2ddd0c077b542290e3d2c04c52c6">
+                <title>void njli::Scene::addCameraNode (Node *cameraNode, bool touchCamera=false)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a4a926234963cc9b8f14928e559dbd82f">
+                <title>void njli::Scene::setTouchCamera (Camera *camera)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>camera</entry>
+                                <entry>
+<para>&lt;#camera description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad964360f4cf41a7db15a1407bc4d551d">
+                <title>Camera* njli::Scene::getTouchCamera ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a82306455f32f71f1865d185ae4588e09">
+                <title>const Camera* njli::Scene::getTouchCamera () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a83a8876ae63b92804004cf3febe76573">
+                <title>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create (const AbstractBuilder &amp;builder) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ac4ca71716ed832be357f15f8262c8448">
+                <title>const void* njli::AbstractFactoryObject::getPointer () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt; </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a4ffddf141a426a5a07d0ac19f1913811">
+                <title>u64 njli::AbstractFactoryObject::getPointerValue () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a4fc4bcd9d1930911474210c047372fc0">
+                <title>virtual void njli::AbstractFactoryObject::serializeObject (class btSerializer *serializer) const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>serializer</entry>
+                                <entry>
+<para>&lt;#serializer description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a941f75f0519b1ffa1a9bc02cabb33d1d">
+                <title>static Scene** njli::Scene::createArray (const u32 size)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a0214dc61cbd3b427fc1642c5f7288c16">
+                <title>static void njli::Scene::destroyArray (Scene **array, const u32 size=0)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>array</entry>
+                                <entry>
+<para>&lt;#array description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a51f95c5217cfcf9968bcebc8e874a689">
+                <title>static Scene* njli::Scene::create ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a23a898b795e134892fce27924e89c1d8">
+                <title>static Scene* njli::Scene::create (const SceneBuilder &amp;builder)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>builder</entry>
+                                <entry>
+<para>&lt;#builder description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ad3630f0e75efb992b123c89654607040">
+                <title>static Scene* njli::Scene::clone (const Scene &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a7f779488f52836cea51f1a38488f876b">
+                <title>static Scene* njli::Scene::copy (const Scene &amp;object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1ab37540b9164d318889e1323be7fa3b8b">
+                <title>static void njli::Scene::destroy (Scene *object)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1a89333f10a40329f55271c794685575db">
+                <title>static void njli::Scene::load (Scene &amp;object, lua_State *L, int stack_index)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>object</entry>
+                                <entry>
+<para>&lt;#object description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>L</entry>
+                                <entry>
+<para>&lt;#L description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>stack_index</entry>
+                                <entry>
+<para>&lt;#stack_index description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_scene_1aa760cdf1cda1dd3a460f11e257fd46b1">
+                <title>static u32 njli::Scene::type ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+</section>

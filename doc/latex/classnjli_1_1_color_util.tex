@@ -1,0 +1,868 @@
+\hypertarget{classnjli_1_1_color_util}{}\section{njli\+:\+:Color\+Util Class Reference}
+\label{classnjli_1_1_color_util}\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+
+
+{\ttfamily \#include $<$Color\+Util.\+h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform \mbox{\hyperlink{classnjli_1_1_color_util_a85a15dfc97aa9126dc33b0b745b745c2}{create\+Matrix\+From\+Array}} (const bt\+Scalar $\ast$matrix)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform \mbox{\hyperlink{classnjli_1_1_color_util_a7df3c9ab1162ce070ff7ad84b8b34306}{create\+Hue\+Rotation\+Matrix}} (const double rot)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform \mbox{\hyperlink{classnjli_1_1_color_util_a7e24d543b65d6e9cd535fb99e87fe31e}{create\+Brightness\+Matrix}} (const double brightness)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform \mbox{\hyperlink{classnjli_1_1_color_util_a0114e6d4fd8f02fb82ac5947030ab87d}{create\+Black\+And\+White\+Matrix}} ()
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform \mbox{\hyperlink{classnjli_1_1_color_util_a3612463fc463d7fb5edad289bf02edb8}{create\+Saturation\+Matrix}} (const double saturation)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform \mbox{\hyperlink{classnjli_1_1_color_util_a2c4280f030420f1cf84d97dc4c2eba98}{create\+Color\+Offset\+Matrix}} (const bt\+Vector3 \&color\+Offset)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_a2142ab81f044133e0614dc341f699bb0}{applymatrix}} (unsigned long $\ast$lptr, double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, int n)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}} (const double a\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double b\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, double c\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_af683cd23fbe9098e277248be18047422}{identmat}} (double $\ast$matrix)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_a7db2133606fdf47afcbf7b8511a33dbe}{xformpnt}} (const double matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double x, const double y, const double z, double $\ast$tx, double $\ast$ty, double $\ast$tz)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_a7b35d824b18625ef4fa732cd130cfeb3}{cscalemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double rscale, const double gscale, const double bscale)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_aeebe354f55f34c2671f42a6d0f4d1620}{lummat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]})
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_aa24bfa3faf934a7e9cb5fcb6551ada23}{saturatemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double sat)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_a41a9d5c0daa4ab6c0bf04aa9c66ea6d2}{offsetmat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double roffset, const double goffset, const double boffset)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}{xrotatemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double rs, const double rc)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}{yrotatemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double rs, const double rc)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_ab43ec520ddd37266b3fb9a2e4f4a4ec3}{zrotatemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double rs, const double rc)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_a97183f17df4c96e96351e96c94fc587a}{zshearmat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double dx, const double dy)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_ad8878d29f6f4f7cc09cad4a0decd18cf}{simplehuerotatemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double rot)
+\item 
+static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_color_util_ac05958efe06cd5958961a0f79da8f1eb}{huerotatemat}} (double mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]}, const double rot)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_color_util_ae2d34d7e93ee1c81451fe469ea001b5e}{Color\+Util}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_color_util_a53757b38edaf819ee9d92ec6241544f1}{Color\+Util}} (const \mbox{\hyperlink{classnjli_1_1_color_util}{Color\+Util}} \&)
+\item 
+const \mbox{\hyperlink{classnjli_1_1_color_util}{Color\+Util}} \& \mbox{\hyperlink{classnjli_1_1_color_util_a2e1a337beed33d364c29a4f2140ba215}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_color_util}{Color\+Util}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classnjli_1_1_color_util_af8c30d8240cec7a999c78faf633f5672}{U\+\_\+\+V\+A\+L\+UE}} (const double H)
+\item 
+static double \mbox{\hyperlink{classnjli_1_1_color_util_a546dcc4ae049c5b45d9bd20870226768}{W\+\_\+\+V\+A\+L\+UE}} (const double H)
+\item 
+static bt\+Matrix3x3 \mbox{\hyperlink{classnjli_1_1_color_util_a500118a29045f966fb8c6ed8ea505e49}{H\+UE}} (const double hue\+Transform\+Degree\+Amount)
+\item 
+static bt\+Matrix3x3 \mbox{\hyperlink{classnjli_1_1_color_util_ad4d4feb55fb385c1720dbae9ae5a0d20}{S\+A\+T\+U\+R\+A\+T\+I\+ON}} (const double saturation\+Amount)
+\item 
+static bt\+Matrix3x3 \mbox{\hyperlink{classnjli_1_1_color_util_a683449ea8eec905409c9b746858cf14d}{V\+A\+L\+UE}} (const double value\+Amount)
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const bt\+Matrix3x3 \mbox{\hyperlink{classnjli_1_1_color_util_ae8aa4830ab0c084398eb830628323217}{R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ}}
+\item 
+static const bt\+Matrix3x3 \mbox{\hyperlink{classnjli_1_1_color_util_a9b3a5642a95a4cf7fbc782ac56acba4f}{Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 30 of file Color\+Util.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ae2d34d7e93ee1c81451fe469ea001b5e}\label{classnjli_1_1_color_util_ae2d34d7e93ee1c81451fe469ea001b5e}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!Color\+Util@{Color\+Util}}
+\index{Color\+Util@{Color\+Util}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{Color\+Util()}{ColorUtil()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily njli\+::\+Color\+Util\+::\+Color\+Util (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classnjli_1_1_color_util_a53757b38edaf819ee9d92ec6241544f1}\label{classnjli_1_1_color_util_a53757b38edaf819ee9d92ec6241544f1}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!Color\+Util@{Color\+Util}}
+\index{Color\+Util@{Color\+Util}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{Color\+Util()}{ColorUtil()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily njli\+::\+Color\+Util\+::\+Color\+Util (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_color_util}{Color\+Util}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a2142ab81f044133e0614dc341f699bb0}\label{classnjli_1_1_color_util_a2142ab81f044133e0614dc341f699bb0}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!applymatrix@{applymatrix}}
+\index{applymatrix@{applymatrix}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{applymatrix()}{applymatrix()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::applymatrix (\begin{DoxyParamCaption}\item[{unsigned long $\ast$}]{lptr,  }\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 135 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+137     \{
+138       \textcolor{keywordtype}{int} ir, ig, ib, r, g, b;
+139       \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *cptr;
+140 
+141       cptr = (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *)lptr;
+142       \textcolor{keywordflow}{while} (n--)
+143         \{
+144           ir = cptr[\mbox{\hyperlink{_color_util_8h_a0e82449b80c647bc55a73418ea52ec86}{OFFSET\_R}}];
+145           ig = cptr[\mbox{\hyperlink{_color_util_8h_a7b64ecaea2b294f8f43f1872abee598f}{OFFSET\_G}}];
+146           ib = cptr[\mbox{\hyperlink{_color_util_8h_a64f7c4af2b52d3d7076c2996f5980988}{OFFSET\_B}}];
+147           r = ir * mat[0][0] + ig * mat[1][0] + ib * mat[2][0] + mat[3][0];
+148           g = ir * mat[0][1] + ig * mat[1][1] + ib * mat[2][1] + mat[3][1];
+149           b = ir * mat[0][2] + ig * mat[1][2] + ib * mat[2][2] + mat[3][2];
+150           \textcolor{keywordflow}{if} (r < 0)
+151             r = 0;
+152           \textcolor{keywordflow}{if} (r > 255)
+153             r = 255;
+154           \textcolor{keywordflow}{if} (g < 0)
+155             g = 0;
+156           \textcolor{keywordflow}{if} (g > 255)
+157             g = 255;
+158           \textcolor{keywordflow}{if} (b < 0)
+159             b = 0;
+160           \textcolor{keywordflow}{if} (b > 255)
+161             b = 255;
+162           cptr[\mbox{\hyperlink{_color_util_8h_a0e82449b80c647bc55a73418ea52ec86}{OFFSET\_R}}] = r;
+163           cptr[\mbox{\hyperlink{_color_util_8h_a7b64ecaea2b294f8f43f1872abee598f}{OFFSET\_G}}] = g;
+164           cptr[\mbox{\hyperlink{_color_util_8h_a64f7c4af2b52d3d7076c2996f5980988}{OFFSET\_B}}] = b;
+165           cptr += 4;
+166         \}
+167     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a0114e6d4fd8f02fb82ac5947030ab87d}\label{classnjli_1_1_color_util_a0114e6d4fd8f02fb82ac5947030ab87d}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!create\+Black\+And\+White\+Matrix@{create\+Black\+And\+White\+Matrix}}
+\index{create\+Black\+And\+White\+Matrix@{create\+Black\+And\+White\+Matrix}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{create\+Black\+And\+White\+Matrix()}{createBlackAndWhiteMatrix()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform njli\+::\+Color\+Util\+::create\+Black\+And\+White\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 101 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+102     \{
+103       \textcolor{keywordtype}{double} mat[4][4];
+104       \mbox{\hyperlink{classnjli_1_1_color_util_af683cd23fbe9098e277248be18047422}{identmat}}((\textcolor{keywordtype}{double} *)mat);
+105       \mbox{\hyperlink{classnjli_1_1_color_util_aeebe354f55f34c2671f42a6d0f4d1620}{lummat}}(mat);
+106 
+107       btTransform ret;
+108       ret.setFromOpenGLMatrix((\textcolor{keywordtype}{float} *)mat);
+109       \textcolor{keywordflow}{return} ret;
+110     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a7e24d543b65d6e9cd535fb99e87fe31e}\label{classnjli_1_1_color_util_a7e24d543b65d6e9cd535fb99e87fe31e}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!create\+Brightness\+Matrix@{create\+Brightness\+Matrix}}
+\index{create\+Brightness\+Matrix@{create\+Brightness\+Matrix}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{create\+Brightness\+Matrix()}{createBrightnessMatrix()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform njli\+::\+Color\+Util\+::create\+Brightness\+Matrix (\begin{DoxyParamCaption}\item[{const double}]{brightness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 96 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+97     \{
+98       \textcolor{keywordflow}{return} btTransform(\mbox{\hyperlink{classnjli_1_1_color_util_ae8aa4830ab0c084398eb830628323217}{RGB\_TO\_YIQ}} * \mbox{\hyperlink{classnjli_1_1_color_util_a683449ea8eec905409c9b746858cf14d}{VALUE}}(brightness) * 
+      \mbox{\hyperlink{classnjli_1_1_color_util_a9b3a5642a95a4cf7fbc782ac56acba4f}{YIQ\_TO\_RGB}});
+99     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a2c4280f030420f1cf84d97dc4c2eba98}\label{classnjli_1_1_color_util_a2c4280f030420f1cf84d97dc4c2eba98}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!create\+Color\+Offset\+Matrix@{create\+Color\+Offset\+Matrix}}
+\index{create\+Color\+Offset\+Matrix@{create\+Color\+Offset\+Matrix}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{create\+Color\+Offset\+Matrix()}{createColorOffsetMatrix()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform njli\+::\+Color\+Util\+::create\+Color\+Offset\+Matrix (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{color\+Offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 119 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+120     \{
+121       \textcolor{keywordtype}{double} mat[4][4];
+122       \mbox{\hyperlink{classnjli_1_1_color_util_af683cd23fbe9098e277248be18047422}{identmat}}((\textcolor{keywordtype}{double} *)mat);
+123       \mbox{\hyperlink{classnjli_1_1_color_util_a41a9d5c0daa4ab6c0bf04aa9c66ea6d2}{offsetmat}}(mat, colorOffset.x(), colorOffset.y(), colorOffset.z());
+124 
+125       btTransform ret;
+126       ret.setFromOpenGLMatrix((\textcolor{keywordtype}{float} *)mat);
+127       \textcolor{keywordflow}{return} ret;
+128     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a7df3c9ab1162ce070ff7ad84b8b34306}\label{classnjli_1_1_color_util_a7df3c9ab1162ce070ff7ad84b8b34306}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!create\+Hue\+Rotation\+Matrix@{create\+Hue\+Rotation\+Matrix}}
+\index{create\+Hue\+Rotation\+Matrix@{create\+Hue\+Rotation\+Matrix}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{create\+Hue\+Rotation\+Matrix()}{createHueRotationMatrix()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform njli\+::\+Color\+Util\+::create\+Hue\+Rotation\+Matrix (\begin{DoxyParamCaption}\item[{const double}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 90 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+91     \{
+92       \textcolor{keywordflow}{return} btTransform(\mbox{\hyperlink{classnjli_1_1_color_util_ae8aa4830ab0c084398eb830628323217}{RGB\_TO\_YIQ}} * \mbox{\hyperlink{classnjli_1_1_color_util_a500118a29045f966fb8c6ed8ea505e49}{HUE}}(rot) * \mbox{\hyperlink{classnjli_1_1_color_util_a9b3a5642a95a4cf7fbc782ac56acba4f}{YIQ\_TO\_RGB}});
+93     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a85a15dfc97aa9126dc33b0b745b745c2}\label{classnjli_1_1_color_util_a85a15dfc97aa9126dc33b0b745b745c2}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!create\+Matrix\+From\+Array@{create\+Matrix\+From\+Array}}
+\index{create\+Matrix\+From\+Array@{create\+Matrix\+From\+Array}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{create\+Matrix\+From\+Array()}{createMatrixFromArray()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform njli\+::\+Color\+Util\+::create\+Matrix\+From\+Array (\begin{DoxyParamCaption}\item[{const bt\+Scalar $\ast$}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 80 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+81     \{
+82       SDL\_assert(matrix);
+83 
+84       btTransform t;
+85       t.setFromOpenGLMatrix(matrix);
+86       \textcolor{keywordflow}{return} t;
+87     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a3612463fc463d7fb5edad289bf02edb8}\label{classnjli_1_1_color_util_a3612463fc463d7fb5edad289bf02edb8}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!create\+Saturation\+Matrix@{create\+Saturation\+Matrix}}
+\index{create\+Saturation\+Matrix@{create\+Saturation\+Matrix}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{create\+Saturation\+Matrix()}{createSaturationMatrix()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE bt\+Transform njli\+::\+Color\+Util\+::create\+Saturation\+Matrix (\begin{DoxyParamCaption}\item[{const double}]{saturation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Definition at line 113 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+114     \{
+115       \textcolor{keywordflow}{return} btTransform(\mbox{\hyperlink{classnjli_1_1_color_util_ae8aa4830ab0c084398eb830628323217}{RGB\_TO\_YIQ}} * \mbox{\hyperlink{classnjli_1_1_color_util_ad4d4feb55fb385c1720dbae9ae5a0d20}{SATURATION}}(saturation) * 
+      \mbox{\hyperlink{classnjli_1_1_color_util_a9b3a5642a95a4cf7fbc782ac56acba4f}{YIQ\_TO\_RGB}});
+116     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a7b35d824b18625ef4fa732cd130cfeb3}\label{classnjli_1_1_color_util_a7b35d824b18625ef4fa732cd130cfeb3}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!cscalemat@{cscalemat}}
+\index{cscalemat@{cscalemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{cscalemat()}{cscalemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::cscalemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{rscale,  }\item[{const double}]{gscale,  }\item[{const double}]{bscale }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 235 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+239     \{
+240       \textcolor{keywordtype}{double} mmat[4][4];
+241 
+242       mmat[0][0] = rscale;
+243       mmat[0][1] = 0.0;
+244       mmat[0][2] = 0.0;
+245       mmat[0][3] = 0.0;
+246 
+247       mmat[1][0] = 0.0;
+248       mmat[1][1] = gscale;
+249       mmat[1][2] = 0.0;
+250       mmat[1][3] = 0.0;
+251 
+252       mmat[2][0] = 0.0;
+253       mmat[2][1] = 0.0;
+254       mmat[2][2] = bscale;
+255       mmat[2][3] = 0.0;
+256 
+257       mmat[3][0] = 0.0;
+258       mmat[3][1] = 0.0;
+259       mmat[3][2] = 0.0;
+260       mmat[3][3] = 1.0;
+261       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+262     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a500118a29045f966fb8c6ed8ea505e49}\label{classnjli_1_1_color_util_a500118a29045f966fb8c6ed8ea505e49}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!H\+UE@{H\+UE}}
+\index{H\+UE@{H\+UE}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{H\+U\+E()}{HUE()}}
+{\footnotesize\ttfamily static bt\+Matrix3x3 njli\+::\+Color\+Util\+::\+H\+UE (\begin{DoxyParamCaption}\item[{const double}]{hue\+Transform\+Degree\+Amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 48 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+49     \{
+50 
+51       \textcolor{keyword}{const} \textcolor{keywordtype}{double} U = \mbox{\hyperlink{classnjli_1_1_color_util_af8c30d8240cec7a999c78faf633f5672}{U\_VALUE}}(hueTransformDegreeAmount);
+52 
+53       \textcolor{keyword}{const} \textcolor{keywordtype}{double} W = \mbox{\hyperlink{classnjli_1_1_color_util_a546dcc4ae049c5b45d9bd20870226768}{W\_VALUE}}(hueTransformDegreeAmount);
+54 
+55       \textcolor{keywordflow}{return} btMatrix3x3(1, 0, 0, 0, U, -W, 0, W, U);
+56     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ac05958efe06cd5958961a0f79da8f1eb}\label{classnjli_1_1_color_util_ac05958efe06cd5958961a0f79da8f1eb}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!huerotatemat@{huerotatemat}}
+\index{huerotatemat@{huerotatemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{huerotatemat()}{huerotatemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::huerotatemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 539 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+541     \{
+542       \textcolor{keywordtype}{double} mmat[4][4];
+543       \textcolor{keywordtype}{double} mag;
+544       \textcolor{keywordtype}{double} lx, ly, lz;
+545       \textcolor{keywordtype}{double} xrs, xrc;
+546       \textcolor{keywordtype}{double} yrs, yrc;
+547       \textcolor{keywordtype}{double} zrs, zrc;
+548       \textcolor{keywordtype}{double} zsx, zsy;
+549 
+550       \mbox{\hyperlink{classnjli_1_1_color_util_af683cd23fbe9098e277248be18047422}{identmat}}((\textcolor{keywordtype}{double} *)mmat);
+551 
+552       \textcolor{comment}{/* rotate the grey vector into positive Z */}
+553       mag = sqrt(2.0);
+554       xrs = 1.0 / mag;
+555       xrc = 1.0 / mag;
+556       \mbox{\hyperlink{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}{xrotatemat}}(mmat, xrs, xrc);
+557       mag = sqrt(3.0);
+558       yrs = -1.0 / mag;
+559       yrc = sqrt(2.0) / mag;
+560       \mbox{\hyperlink{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}{yrotatemat}}(mmat, yrs, yrc);
+561 
+562       \textcolor{comment}{/* shear the space to make the luminance plane horizontal */}
+563       \mbox{\hyperlink{classnjli_1_1_color_util_a7db2133606fdf47afcbf7b8511a33dbe}{xformpnt}}(mmat, \mbox{\hyperlink{_color_util_8h_a463792f2fa66c99a8329aae43be4c7fd}{RLUM}}, \mbox{\hyperlink{_color_util_8h_a0faedcf9d84cbca5ee944af29148f6c1}{GLUM}}, \mbox{\hyperlink{_color_util_8h_af5ec63b487cb34b43575bb5bf7589513}{BLUM}}, &lx, &ly, &lz);
+564       zsx = lx / lz;
+565       zsy = ly / lz;
+566       \mbox{\hyperlink{classnjli_1_1_color_util_a97183f17df4c96e96351e96c94fc587a}{zshearmat}}(mmat, zsx, zsy);
+567 
+568       \textcolor{comment}{/* rotate the hue */}
+569       zrs = sin(rot * M\_PI / 180.0);
+570       zrc = cos(rot * M\_PI / 180.0);
+571       \mbox{\hyperlink{classnjli_1_1_color_util_ab43ec520ddd37266b3fb9a2e4f4a4ec3}{zrotatemat}}(mmat, zrs, zrc);
+572 
+573       \textcolor{comment}{/* unshear the space to put the luminance plane back */}
+574       \mbox{\hyperlink{classnjli_1_1_color_util_a97183f17df4c96e96351e96c94fc587a}{zshearmat}}(mmat, -zsx, -zsy);
+575 
+576       \textcolor{comment}{/* rotate the grey vector back into place */}
+577       \mbox{\hyperlink{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}{yrotatemat}}(mmat, -yrs, yrc);
+578       \mbox{\hyperlink{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}{xrotatemat}}(mmat, -xrs, xrc);
+579 
+580       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+581     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_af683cd23fbe9098e277248be18047422}\label{classnjli_1_1_color_util_af683cd23fbe9098e277248be18047422}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!identmat@{identmat}}
+\index{identmat@{identmat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{identmat()}{identmat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::identmat (\begin{DoxyParamCaption}\item[{double $\ast$}]{matrix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 194 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+195     \{
+196       *matrix++ = 1.0; \textcolor{comment}{/* row 1        */}
+197       *matrix++ = 0.0;
+198       *matrix++ = 0.0;
+199       *matrix++ = 0.0;
+200       *matrix++ = 0.0; \textcolor{comment}{/* row 2        */}
+201       *matrix++ = 1.0;
+202       *matrix++ = 0.0;
+203       *matrix++ = 0.0;
+204       *matrix++ = 0.0; \textcolor{comment}{/* row 3        */}
+205       *matrix++ = 0.0;
+206       *matrix++ = 1.0;
+207       *matrix++ = 0.0;
+208       *matrix++ = 0.0; \textcolor{comment}{/* row 4        */}
+209       *matrix++ = 0.0;
+210       *matrix++ = 0.0;
+211       *matrix++ = 1.0;
+212     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_aeebe354f55f34c2671f42a6d0f4d1620}\label{classnjli_1_1_color_util_aeebe354f55f34c2671f42a6d0f4d1620}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!lummat@{lummat}}
+\index{lummat@{lummat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{lummat()}{lummat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::lummat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 269 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+270     \{
+271       \textcolor{keywordtype}{double} mmat[4][4];
+272       \textcolor{keywordtype}{double} rwgt, gwgt, bwgt;
+273 
+274       rwgt = \mbox{\hyperlink{_color_util_8h_a463792f2fa66c99a8329aae43be4c7fd}{RLUM}};
+275       gwgt = \mbox{\hyperlink{_color_util_8h_a0faedcf9d84cbca5ee944af29148f6c1}{GLUM}};
+276       bwgt = \mbox{\hyperlink{_color_util_8h_af5ec63b487cb34b43575bb5bf7589513}{BLUM}};
+277       mmat[0][0] = rwgt;
+278       mmat[0][1] = rwgt;
+279       mmat[0][2] = rwgt;
+280       mmat[0][3] = 0.0;
+281 
+282       mmat[1][0] = gwgt;
+283       mmat[1][1] = gwgt;
+284       mmat[1][2] = gwgt;
+285       mmat[1][3] = 0.0;
+286 
+287       mmat[2][0] = bwgt;
+288       mmat[2][1] = bwgt;
+289       mmat[2][2] = bwgt;
+290       mmat[2][3] = 0.0;
+291 
+292       mmat[3][0] = 0.0;
+293       mmat[3][1] = 0.0;
+294       mmat[3][2] = 0.0;
+295       mmat[3][3] = 1.0;
+296       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+297     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}\label{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!matrixmult@{matrixmult}}
+\index{matrixmult@{matrixmult}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{matrixmult()}{matrixmult()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::matrixmult (\begin{DoxyParamCaption}\item[{const double}]{a\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{b\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{double}]{c\mbox{[}4\mbox{]}\mbox{[}4\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 174 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+175     \{
+176       \textcolor{keywordtype}{int} x, y;
+177       \textcolor{keywordtype}{double} temp[4][4];
+178 
+179       \textcolor{keywordflow}{for} (y = 0; y < 4; y++)
+180         \textcolor{keywordflow}{for} (x = 0; x < 4; x++)
+181           \{
+182             temp[y][x] = b[y][0] * a[0][x] + b[y][1] * a[1][x] +
+183                          b[y][2] * a[2][x] + b[y][3] * a[3][x];
+184           \}
+185       \textcolor{keywordflow}{for} (y = 0; y < 4; y++)
+186         \textcolor{keywordflow}{for} (x = 0; x < 4; x++)
+187           c[y][x] = temp[y][x];
+188     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a41a9d5c0daa4ab6c0bf04aa9c66ea6d2}\label{classnjli_1_1_color_util_a41a9d5c0daa4ab6c0bf04aa9c66ea6d2}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!offsetmat@{offsetmat}}
+\index{offsetmat@{offsetmat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{offsetmat()}{offsetmat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::offsetmat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{roffset,  }\item[{const double}]{goffset,  }\item[{const double}]{boffset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 349 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+353     \{
+354       \textcolor{keywordtype}{double} mmat[4][4];
+355 
+356       mmat[0][0] = 1.0;
+357       mmat[0][1] = 0.0;
+358       mmat[0][2] = 0.0;
+359       mmat[0][3] = 0.0;
+360 
+361       mmat[1][0] = 0.0;
+362       mmat[1][1] = 1.0;
+363       mmat[1][2] = 0.0;
+364       mmat[1][3] = 0.0;
+365 
+366       mmat[2][0] = 0.0;
+367       mmat[2][1] = 0.0;
+368       mmat[2][2] = 1.0;
+369       mmat[2][3] = 0.0;
+370 
+371       mmat[3][0] = roffset;
+372       mmat[3][1] = goffset;
+373       mmat[3][2] = boffset;
+374       mmat[3][3] = 1.0;
+375       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+376     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a2e1a337beed33d364c29a4f2140ba215}\label{classnjli_1_1_color_util_a2e1a337beed33d364c29a4f2140ba215}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classnjli_1_1_color_util}{Color\+Util}}\& njli\+::\+Color\+Util\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_color_util}{Color\+Util}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classnjli_1_1_color_util_aa24bfa3faf934a7e9cb5fcb6551ada23}\label{classnjli_1_1_color_util_aa24bfa3faf934a7e9cb5fcb6551ada23}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!saturatemat@{saturatemat}}
+\index{saturatemat@{saturatemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{saturatemat()}{saturatemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::saturatemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{sat }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 303 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+305     \{
+306       \textcolor{keywordtype}{double} mmat[4][4];
+307       \textcolor{keywordtype}{double} a, b, c, d, e, f, g, h, i;
+308       \textcolor{keywordtype}{double} rwgt, gwgt, bwgt;
+309 
+310       rwgt = \mbox{\hyperlink{_color_util_8h_a463792f2fa66c99a8329aae43be4c7fd}{RLUM}};
+311       gwgt = \mbox{\hyperlink{_color_util_8h_a0faedcf9d84cbca5ee944af29148f6c1}{GLUM}};
+312       bwgt = \mbox{\hyperlink{_color_util_8h_af5ec63b487cb34b43575bb5bf7589513}{BLUM}};
+313 
+314       a = (1.0 - sat) * rwgt + sat;
+315       b = (1.0 - sat) * rwgt;
+316       c = (1.0 - sat) * rwgt;
+317       d = (1.0 - sat) * gwgt;
+318       e = (1.0 - sat) * gwgt + sat;
+319       f = (1.0 - sat) * gwgt;
+320       g = (1.0 - sat) * bwgt;
+321       h = (1.0 - sat) * bwgt;
+322       i = (1.0 - sat) * bwgt + sat;
+323       mmat[0][0] = a;
+324       mmat[0][1] = b;
+325       mmat[0][2] = c;
+326       mmat[0][3] = 0.0;
+327 
+328       mmat[1][0] = d;
+329       mmat[1][1] = e;
+330       mmat[1][2] = f;
+331       mmat[1][3] = 0.0;
+332 
+333       mmat[2][0] = g;
+334       mmat[2][1] = h;
+335       mmat[2][2] = i;
+336       mmat[2][3] = 0.0;
+337 
+338       mmat[3][0] = 0.0;
+339       mmat[3][1] = 0.0;
+340       mmat[3][2] = 0.0;
+341       mmat[3][3] = 1.0;
+342       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+343     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ad4d4feb55fb385c1720dbae9ae5a0d20}\label{classnjli_1_1_color_util_ad4d4feb55fb385c1720dbae9ae5a0d20}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!S\+A\+T\+U\+R\+A\+T\+I\+ON@{S\+A\+T\+U\+R\+A\+T\+I\+ON}}
+\index{S\+A\+T\+U\+R\+A\+T\+I\+ON@{S\+A\+T\+U\+R\+A\+T\+I\+ON}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{S\+A\+T\+U\+R\+A\+T\+I\+O\+N()}{SATURATION()}}
+{\footnotesize\ttfamily static bt\+Matrix3x3 njli\+::\+Color\+Util\+::\+S\+A\+T\+U\+R\+A\+T\+I\+ON (\begin{DoxyParamCaption}\item[{const double}]{saturation\+Amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 62 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+63     \{
+64       \textcolor{keywordflow}{return} btMatrix3x3(1, 0, 0, 0, saturationAmount, 0, 0, 0,
+65                          saturationAmount);
+66     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ad8878d29f6f4f7cc09cad4a0decd18cf}\label{classnjli_1_1_color_util_ad8878d29f6f4f7cc09cad4a0decd18cf}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!simplehuerotatemat@{simplehuerotatemat}}
+\index{simplehuerotatemat@{simplehuerotatemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{simplehuerotatemat()}{simplehuerotatemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::simplehuerotatemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{rot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 506 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+508     \{
+509       \textcolor{keywordtype}{double} mag;
+510       \textcolor{keywordtype}{double} xrs, xrc;
+511       \textcolor{keywordtype}{double} yrs, yrc;
+512       \textcolor{keywordtype}{double} zrs, zrc;
+513 
+514       \textcolor{comment}{/* rotate the grey vector into positive Z */}
+515       mag = sqrt(2.0);
+516       xrs = 1.0 / mag;
+517       xrc = 1.0 / mag;
+518       \mbox{\hyperlink{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}{xrotatemat}}(mat, xrs, xrc);
+519 
+520       mag = sqrt(3.0);
+521       yrs = -1.0 / mag;
+522       yrc = sqrt(2.0) / mag;
+523       \mbox{\hyperlink{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}{yrotatemat}}(mat, yrs, yrc);
+524 
+525       \textcolor{comment}{/* rotate the hue */}
+526       zrs = sin(rot * M\_PI / 180.0);
+527       zrc = cos(rot * M\_PI / 180.0);
+528       \mbox{\hyperlink{classnjli_1_1_color_util_ab43ec520ddd37266b3fb9a2e4f4a4ec3}{zrotatemat}}(mat, zrs, zrc);
+529 
+530       \textcolor{comment}{/* rotate the grey vector back into place */}
+531       \mbox{\hyperlink{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}{yrotatemat}}(mat, -yrs, yrc);
+532       \mbox{\hyperlink{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}{xrotatemat}}(mat, -xrs, xrc);
+533     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_af8c30d8240cec7a999c78faf633f5672}\label{classnjli_1_1_color_util_af8c30d8240cec7a999c78faf633f5672}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!U\+\_\+\+V\+A\+L\+UE@{U\+\_\+\+V\+A\+L\+UE}}
+\index{U\+\_\+\+V\+A\+L\+UE@{U\+\_\+\+V\+A\+L\+UE}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{U\+\_\+\+V\+A\+L\+U\+E()}{U\_VALUE()}}
+{\footnotesize\ttfamily static double njli\+::\+Color\+Util\+::\+U\+\_\+\+V\+A\+L\+UE (\begin{DoxyParamCaption}\item[{const double}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 40 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+40 \{ \textcolor{keywordflow}{return} (cos(H * M\_PI / 180.0)); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a683449ea8eec905409c9b746858cf14d}\label{classnjli_1_1_color_util_a683449ea8eec905409c9b746858cf14d}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!V\+A\+L\+UE@{V\+A\+L\+UE}}
+\index{V\+A\+L\+UE@{V\+A\+L\+UE}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{V\+A\+L\+U\+E()}{VALUE()}}
+{\footnotesize\ttfamily static bt\+Matrix3x3 njli\+::\+Color\+Util\+::\+V\+A\+L\+UE (\begin{DoxyParamCaption}\item[{const double}]{value\+Amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 72 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+73     \{
+74       \textcolor{keywordflow}{return} btMatrix3x3(valueAmount, 0, 0, 0, valueAmount, 0, 0, 0,
+75                          valueAmount);
+76     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a546dcc4ae049c5b45d9bd20870226768}\label{classnjli_1_1_color_util_a546dcc4ae049c5b45d9bd20870226768}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!W\+\_\+\+V\+A\+L\+UE@{W\+\_\+\+V\+A\+L\+UE}}
+\index{W\+\_\+\+V\+A\+L\+UE@{W\+\_\+\+V\+A\+L\+UE}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{W\+\_\+\+V\+A\+L\+U\+E()}{W\_VALUE()}}
+{\footnotesize\ttfamily static double njli\+::\+Color\+Util\+::\+W\+\_\+\+V\+A\+L\+UE (\begin{DoxyParamCaption}\item[{const double}]{H }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 42 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+42 \{ \textcolor{keywordflow}{return} (cos(H * M\_PI / 180.0)); \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a7db2133606fdf47afcbf7b8511a33dbe}\label{classnjli_1_1_color_util_a7db2133606fdf47afcbf7b8511a33dbe}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!xformpnt@{xformpnt}}
+\index{xformpnt@{xformpnt}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{xformpnt()}{xformpnt()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::xformpnt (\begin{DoxyParamCaption}\item[{const double}]{matrix\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{x,  }\item[{const double}]{y,  }\item[{const double}]{z,  }\item[{double $\ast$}]{tx,  }\item[{double $\ast$}]{ty,  }\item[{double $\ast$}]{tz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 218 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+222     \{
+223       *tx =
+224           x * matrix[0][0] + y * matrix[1][0] + z * matrix[2][0] + matrix[3][0];
+225       *ty =
+226           x * matrix[0][1] + y * matrix[1][1] + z * matrix[2][1] + matrix[3][1];
+227       *tz =
+228           x * matrix[0][2] + y * matrix[1][2] + z * matrix[2][2] + matrix[3][2];
+229     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}\label{classnjli_1_1_color_util_aa2f35809a653366ba6cfc11a34227af0}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!xrotatemat@{xrotatemat}}
+\index{xrotatemat@{xrotatemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{xrotatemat()}{xrotatemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::xrotatemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{rs,  }\item[{const double}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 382 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+384     \{
+385       \textcolor{keywordtype}{double} mmat[4][4];
+386 
+387       mmat[0][0] = 1.0;
+388       mmat[0][1] = 0.0;
+389       mmat[0][2] = 0.0;
+390       mmat[0][3] = 0.0;
+391 
+392       mmat[1][0] = 0.0;
+393       mmat[1][1] = rc;
+394       mmat[1][2] = rs;
+395       mmat[1][3] = 0.0;
+396 
+397       mmat[2][0] = 0.0;
+398       mmat[2][1] = -rs;
+399       mmat[2][2] = rc;
+400       mmat[2][3] = 0.0;
+401 
+402       mmat[3][0] = 0.0;
+403       mmat[3][1] = 0.0;
+404       mmat[3][2] = 0.0;
+405       mmat[3][3] = 1.0;
+406       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+407     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}\label{classnjli_1_1_color_util_ac37c7eb0af14d9171809c8a1cab9a834}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!yrotatemat@{yrotatemat}}
+\index{yrotatemat@{yrotatemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{yrotatemat()}{yrotatemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::yrotatemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{rs,  }\item[{const double}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 413 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+415     \{
+416       \textcolor{keywordtype}{double} mmat[4][4];
+417 
+418       mmat[0][0] = rc;
+419       mmat[0][1] = 0.0;
+420       mmat[0][2] = -rs;
+421       mmat[0][3] = 0.0;
+422 
+423       mmat[1][0] = 0.0;
+424       mmat[1][1] = 1.0;
+425       mmat[1][2] = 0.0;
+426       mmat[1][3] = 0.0;
+427 
+428       mmat[2][0] = rs;
+429       mmat[2][1] = 0.0;
+430       mmat[2][2] = rc;
+431       mmat[2][3] = 0.0;
+432 
+433       mmat[3][0] = 0.0;
+434       mmat[3][1] = 0.0;
+435       mmat[3][2] = 0.0;
+436       mmat[3][3] = 1.0;
+437       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+438     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ab43ec520ddd37266b3fb9a2e4f4a4ec3}\label{classnjli_1_1_color_util_ab43ec520ddd37266b3fb9a2e4f4a4ec3}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!zrotatemat@{zrotatemat}}
+\index{zrotatemat@{zrotatemat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{zrotatemat()}{zrotatemat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::zrotatemat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{rs,  }\item[{const double}]{rc }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 444 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+446     \{
+447       \textcolor{keywordtype}{double} mmat[4][4];
+448 
+449       mmat[0][0] = rc;
+450       mmat[0][1] = rs;
+451       mmat[0][2] = 0.0;
+452       mmat[0][3] = 0.0;
+453 
+454       mmat[1][0] = -rs;
+455       mmat[1][1] = rc;
+456       mmat[1][2] = 0.0;
+457       mmat[1][3] = 0.0;
+458 
+459       mmat[2][0] = 0.0;
+460       mmat[2][1] = 0.0;
+461       mmat[2][2] = 1.0;
+462       mmat[2][3] = 0.0;
+463 
+464       mmat[3][0] = 0.0;
+465       mmat[3][1] = 0.0;
+466       mmat[3][2] = 0.0;
+467       mmat[3][3] = 1.0;
+468       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+469     \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classnjli_1_1_color_util_a97183f17df4c96e96351e96c94fc587a}\label{classnjli_1_1_color_util_a97183f17df4c96e96351e96c94fc587a}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!zshearmat@{zshearmat}}
+\index{zshearmat@{zshearmat}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{zshearmat()}{zshearmat()}}
+{\footnotesize\ttfamily static S\+I\+M\+D\+\_\+\+F\+O\+R\+C\+E\+\_\+\+I\+N\+L\+I\+NE \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Color\+Util\+::zshearmat (\begin{DoxyParamCaption}\item[{double}]{mat\mbox{[}4\mbox{]}\mbox{[}4\mbox{]},  }\item[{const double}]{dx,  }\item[{const double}]{dy }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}, {\ttfamily [protected]}}
+
+
+
+Definition at line 475 of file Color\+Util.\+h.
+
+
+\begin{DoxyCode}
+477     \{
+478       \textcolor{keywordtype}{double} mmat[4][4];
+479 
+480       mmat[0][0] = 1.0;
+481       mmat[0][1] = 0.0;
+482       mmat[0][2] = dx;
+483       mmat[0][3] = 0.0;
+484 
+485       mmat[1][0] = 0.0;
+486       mmat[1][1] = 1.0;
+487       mmat[1][2] = dy;
+488       mmat[1][3] = 0.0;
+489 
+490       mmat[2][0] = 0.0;
+491       mmat[2][1] = 0.0;
+492       mmat[2][2] = 1.0;
+493       mmat[2][3] = 0.0;
+494 
+495       mmat[3][0] = 0.0;
+496       mmat[3][1] = 0.0;
+497       mmat[3][2] = 0.0;
+498       mmat[3][3] = 1.0;
+499       \mbox{\hyperlink{classnjli_1_1_color_util_a5cb3576c8177f303c88dc4e7283367c7}{matrixmult}}(mmat, mat, mat);
+500     \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_color_util_ae8aa4830ab0c084398eb830628323217}\label{classnjli_1_1_color_util_ae8aa4830ab0c084398eb830628323217}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ@{R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ}}
+\index{R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ@{R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ}{RGB\_TO\_YIQ}}
+{\footnotesize\ttfamily const bt\+Matrix3x3 njli\+::\+Color\+Util\+::\+R\+G\+B\+\_\+\+T\+O\+\_\+\+Y\+IQ\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 37 of file Color\+Util.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_color_util_a9b3a5642a95a4cf7fbc782ac56acba4f}\label{classnjli_1_1_color_util_a9b3a5642a95a4cf7fbc782ac56acba4f}} 
+\index{njli\+::\+Color\+Util@{njli\+::\+Color\+Util}!Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB@{Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB}}
+\index{Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB@{Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB}!njli\+::\+Color\+Util@{njli\+::\+Color\+Util}}
+\subsubsection{\texorpdfstring{Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB}{YIQ\_TO\_RGB}}
+{\footnotesize\ttfamily const bt\+Matrix3x3 njli\+::\+Color\+Util\+::\+Y\+I\+Q\+\_\+\+T\+O\+\_\+\+R\+GB\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+
+
+Definition at line 38 of file Color\+Util.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/platform/\mbox{\hyperlink{_color_util_8h}{Color\+Util.\+h}}\end{DoxyCompactItemize}

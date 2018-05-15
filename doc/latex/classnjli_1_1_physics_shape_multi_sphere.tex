@@ -1,0 +1,667 @@
+\hypertarget{classnjli_1_1_physics_shape_multi_sphere}{}\section{njli\+:\+:Physics\+Shape\+Multi\+Sphere Class Reference}
+\label{classnjli_1_1_physics_shape_multi_sphere}\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+
+
+{\ttfamily \#include $<$Physics\+Shape\+Multi\+Sphere.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Physics\+Shape\+Multi\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{classnjli_1_1_physics_shape_multi_sphere__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Physics\+Shape\+Multi\+Sphere\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{classnjli_1_1_physics_shape_multi_sphere__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a0a9f8e9382af4fb1115abf8bcb035931}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a11acca92dfad6bbfc36017267362f128}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$, bt\+Serializer $\ast$) const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a9a1d33140c781451ceccc749e0233033}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_abfd5533159ecea36c3f9147b49dfe7c2}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a34d365099e710fa7dfb1bf010674eb2c}{operator std\+::string}} () const
+\item 
+virtual int \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a8ffb7cb487afc5582cb4c1ae4997a065}{get\+Num\+Vertices}} () const
+\item 
+virtual int \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a24afd8e689b4111391f8079376edfbc6}{get\+Num\+Edges}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a4bf4fdd81dfddc61b0c40adf04bdddde}{get\+Edge}} (int i, bt\+Vector3 \&pa, bt\+Vector3 \&pb) const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a467600545bb56fe471cb930f5a7b8aad}{get\+Vertex}} (int i, bt\+Vector3 \&vtx) const
+\item 
+virtual int \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ac89627a1d9681838e4539f30bd06ea82}{get\+Num\+Planes}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ae0b4b79c9708c963406aabf07e699d5b}{get\+Plane}} (bt\+Vector3 \&plane\+Normal, bt\+Vector3 \&plane\+Support, int i) const
+\item 
+virtual bool \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a839ea1301fdc8e1442f4ab4fb5a7cc30}{is\+Inside}} (const bt\+Vector3 \&pt, \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} tolerance) const
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a9f72bb39a016aa5115af51a9e62638e1}{add\+Sphere}} (const bt\+Vector3 \&position, const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} radius)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a3bb2481f06e880597dafdb8c9da1a54b}{remove\+Sphere}} (const bt\+Vector3 \&position, const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}} radius)
+\item 
+\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a27795bd39ee7a3dbde335ec454d0e1de}{calculate\+Local\+Inertia}} (bt\+Scalar mass, bt\+Vector3 \&inertia) const
+\item 
+int \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a3d5187930b555c1c421928e642af206b}{get\+Sphere\+Count}} () const
+\item 
+const bt\+Vector3 \& \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a679dc7de50f2783428f31c8be37a47c2}{get\+Sphere\+Position}} (int index) const
+\item 
+bt\+Scalar \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a6833432afbb47a8800e3bbd12999954a}{get\+Sphere\+Radius}} (int index) const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a27f19ac79c5e8b7034fcfb4fc05b2388}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a67cf27c9dcf4d1dd68ea1c603eb054dd}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a5a3b9657b148c2e4e4ea26c89097c679}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_af29257cf63678fe9718a821300d5575b}{create}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_builder}{Physics\+Shape\+Multi\+Sphere\+Builder}} \&builder)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a465246d891108d982e8c18bdf2c49917}{clone}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&object)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a64000bc87d83940963e1b323328377c2}{copy}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ab662607b3880e2239637469d75955ec3}{destroy}} (\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_acc4f13c0be21f65b1eaa63c357981a0c}{load}} (\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ab3bdb3d0b0d07962fc85babae7026614}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_abaccfac08f371c6f00f234abaffe5252}{Physics\+Shape\+Multi\+Sphere}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ae260f03b0b26e25c8491fa36cf0c6273}{Physics\+Shape\+Multi\+Sphere}} (const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ac9f725ca1a8bde780079e66a3a1d500c}{Physics\+Shape\+Multi\+Sphere}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&)
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a353c1255f1e87086f2055d8abe20e490}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a5e4c8a59fdba9c2aa22f13568443470e}{$\sim$\+Physics\+Shape\+Multi\+Sphere}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \& \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_aea1e4639bb29535b236e1e56b90f9e44}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&)
+\item 
+virtual const bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a3e11137ac6e9e9ef6e76ee396db9297a}{get\+Collision\+Shape}} () const
+\item 
+virtual bt\+Collision\+Shape $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a591dec07102b432fbced1b4bfd093512}{get\+Collision\+Shape}} ()
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ae54e42a11d5b7737dad326aa1c11b2ad}{set\+Collision\+Shape}} (const bt\+Collision\+Shape \&shape)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Multi\+Sphere\+Shape $\ast$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_ac43b193d22e235ea71f17d93021e0967}{m\+\_\+bt\+Multi\+Sphere\+Shape}}
+\item 
+bt\+Aligned\+Object\+Array$<$ bt\+Vector3 $>$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a20192615e273ac465050fb139edcae76}{m\+\_\+local\+Position\+Array}}
+\item 
+bt\+Aligned\+Object\+Array$<$ bt\+Scalar $>$ \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_a9a7781979e6a9f6b62e5c621b14ccc6c}{m\+\_\+radi\+Array}}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 29 of file Physics\+Shape\+Multi\+Sphere.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_abaccfac08f371c6f00f234abaffe5252}\label{classnjli_1_1_physics_shape_multi_sphere_abaccfac08f371c6f00f234abaffe5252}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!Physics\+Shape\+Multi\+Sphere@{Physics\+Shape\+Multi\+Sphere}}
+\index{Physics\+Shape\+Multi\+Sphere@{Physics\+Shape\+Multi\+Sphere}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Multi\+Sphere()}{PhysicsShapeMultiSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Multi\+Sphere\+::\+Physics\+Shape\+Multi\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ae260f03b0b26e25c8491fa36cf0c6273}\label{classnjli_1_1_physics_shape_multi_sphere_ae260f03b0b26e25c8491fa36cf0c6273}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!Physics\+Shape\+Multi\+Sphere@{Physics\+Shape\+Multi\+Sphere}}
+\index{Physics\+Shape\+Multi\+Sphere@{Physics\+Shape\+Multi\+Sphere}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Multi\+Sphere()}{PhysicsShapeMultiSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Multi\+Sphere\+::\+Physics\+Shape\+Multi\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_abstract_builder}{Abstract\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ac9f725ca1a8bde780079e66a3a1d500c}\label{classnjli_1_1_physics_shape_multi_sphere_ac9f725ca1a8bde780079e66a3a1d500c}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!Physics\+Shape\+Multi\+Sphere@{Physics\+Shape\+Multi\+Sphere}}
+\index{Physics\+Shape\+Multi\+Sphere@{Physics\+Shape\+Multi\+Sphere}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{Physics\+Shape\+Multi\+Sphere()}{PhysicsShapeMultiSphere()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Multi\+Sphere\+::\+Physics\+Shape\+Multi\+Sphere (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a5e4c8a59fdba9c2aa22f13568443470e}\label{classnjli_1_1_physics_shape_multi_sphere_a5e4c8a59fdba9c2aa22f13568443470e}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!````~Physics\+Shape\+Multi\+Sphere@{$\sim$\+Physics\+Shape\+Multi\+Sphere}}
+\index{````~Physics\+Shape\+Multi\+Sphere@{$\sim$\+Physics\+Shape\+Multi\+Sphere}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{$\sim$\+Physics\+Shape\+Multi\+Sphere()}{~PhysicsShapeMultiSphere()}}
+{\footnotesize\ttfamily virtual njli\+::\+Physics\+Shape\+Multi\+Sphere\+::$\sim$\+Physics\+Shape\+Multi\+Sphere (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a9f72bb39a016aa5115af51a9e62638e1}\label{classnjli_1_1_physics_shape_multi_sphere_a9f72bb39a016aa5115af51a9e62638e1}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!add\+Sphere@{add\+Sphere}}
+\index{add\+Sphere@{add\+Sphere}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{add\+Sphere()}{addSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::add\+Sphere (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{position,  }\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{radius }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & $<$\#position description\#$>$ \\
+\hline
+{\em radius} & $<$\#radius description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a353c1255f1e87086f2055d8abe20e490}\label{classnjli_1_1_physics_shape_multi_sphere_a353c1255f1e87086f2055d8abe20e490}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Multi\+Sphere\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a27795bd39ee7a3dbde335ec454d0e1de}\label{classnjli_1_1_physics_shape_multi_sphere_a27795bd39ee7a3dbde335ec454d0e1de}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!calculate\+Local\+Inertia@{calculate\+Local\+Inertia}}
+\index{calculate\+Local\+Inertia@{calculate\+Local\+Inertia}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{calculate\+Local\+Inertia()}{calculateLocalInertia()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::calculate\+Local\+Inertia (\begin{DoxyParamCaption}\item[{bt\+Scalar}]{mass,  }\item[{bt\+Vector3 \&}]{inertia }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em mass} & $<$\#mass description\#$>$ \\
+\hline
+{\em inertia} & $<$\#inertia description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a0a9f8e9382af4fb1115abf8bcb035931}\label{classnjli_1_1_physics_shape_multi_sphere_a0a9f8e9382af4fb1115abf8bcb035931}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a0612a1c8c3f4520d78cb7f5838f03074}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a465246d891108d982e8c18bdf2c49917}\label{classnjli_1_1_physics_shape_multi_sphere_a465246d891108d982e8c18bdf2c49917}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}}$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a64000bc87d83940963e1b323328377c2}\label{classnjli_1_1_physics_shape_multi_sphere_a64000bc87d83940963e1b323328377c2}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!copy@{copy}}
+\index{copy@{copy}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}}$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::copy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a5a3b9657b148c2e4e4ea26c89097c679}\label{classnjli_1_1_physics_shape_multi_sphere_a5a3b9657b148c2e4e4ea26c89097c679}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}}$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_af29257cf63678fe9718a821300d5575b}\label{classnjli_1_1_physics_shape_multi_sphere_af29257cf63678fe9718a821300d5575b}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!create@{create}}
+\index{create@{create}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{create()}{create()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}}$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::create (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere_builder}{Physics\+Shape\+Multi\+Sphere\+Builder}} \&}]{builder }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & $<$\#builder description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a27f19ac79c5e8b7034fcfb4fc05b2388}\label{classnjli_1_1_physics_shape_multi_sphere_a27f19ac79c5e8b7034fcfb4fc05b2388}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}}$\ast$$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ab662607b3880e2239637469d75955ec3}\label{classnjli_1_1_physics_shape_multi_sphere_ab662607b3880e2239637469d75955ec3}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a67cf27c9dcf4d1dd68ea1c603eb054dd}\label{classnjli_1_1_physics_shape_multi_sphere_a67cf27c9dcf4d1dd68ea1c603eb054dd}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a9a1d33140c781451ceccc749e0233033}\label{classnjli_1_1_physics_shape_multi_sphere_a9a1d33140c781451ceccc749e0233033}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a72cb98a55614a3e264b8e4a157b45c64}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a3e11137ac6e9e9ef6e76ee396db9297a}\label{classnjli_1_1_physics_shape_multi_sphere_a3e11137ac6e9e9ef6e76ee396db9297a}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Collision\+Shape@{get\+Collision\+Shape}}
+\index{get\+Collision\+Shape@{get\+Collision\+Shape}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Collision\+Shape()}{getCollisionShape()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual const bt\+Collision\+Shape$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a527e956caca24bf16ed0d47f69ff14e8}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a591dec07102b432fbced1b4bfd093512}\label{classnjli_1_1_physics_shape_multi_sphere_a591dec07102b432fbced1b4bfd093512}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Collision\+Shape@{get\+Collision\+Shape}}
+\index{get\+Collision\+Shape@{get\+Collision\+Shape}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Collision\+Shape()}{getCollisionShape()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual bt\+Collision\+Shape$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Collision\+Shape (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a2910f0362035c971f245349a55378b01}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a4bf4fdd81dfddc61b0c40adf04bdddde}\label{classnjli_1_1_physics_shape_multi_sphere_a4bf4fdd81dfddc61b0c40adf04bdddde}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Edge@{get\+Edge}}
+\index{get\+Edge@{get\+Edge}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Edge()}{getEdge()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Edge (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{bt\+Vector3 \&}]{pa,  }\item[{bt\+Vector3 \&}]{pb }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & $<$\#i description\#$>$ \\
+\hline
+{\em pa} & $<$\#pa description\#$>$ \\
+\hline
+{\em pb} & $<$\#pb description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a657e98309a2a171ccb02a054a04c9b57}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a24afd8e689b4111391f8079376edfbc6}\label{classnjli_1_1_physics_shape_multi_sphere_a24afd8e689b4111391f8079376edfbc6}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Num\+Edges@{get\+Num\+Edges}}
+\index{get\+Num\+Edges@{get\+Num\+Edges}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Num\+Edges()}{getNumEdges()}}
+{\footnotesize\ttfamily virtual int njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Num\+Edges (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a24df999ba2b7ac0d9abda09c4f17c2fe}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ac89627a1d9681838e4539f30bd06ea82}\label{classnjli_1_1_physics_shape_multi_sphere_ac89627a1d9681838e4539f30bd06ea82}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Num\+Planes@{get\+Num\+Planes}}
+\index{get\+Num\+Planes@{get\+Num\+Planes}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Num\+Planes()}{getNumPlanes()}}
+{\footnotesize\ttfamily virtual int njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Num\+Planes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a11cb80220393bfce177b8bdc34f7f359}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a8ffb7cb487afc5582cb4c1ae4997a065}\label{classnjli_1_1_physics_shape_multi_sphere_a8ffb7cb487afc5582cb4c1ae4997a065}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Num\+Vertices@{get\+Num\+Vertices}}
+\index{get\+Num\+Vertices@{get\+Num\+Vertices}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Num\+Vertices()}{getNumVertices()}}
+{\footnotesize\ttfamily virtual int njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Num\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_ac3f7cc28341fd58ace164bf8666480f0}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ae0b4b79c9708c963406aabf07e699d5b}\label{classnjli_1_1_physics_shape_multi_sphere_ae0b4b79c9708c963406aabf07e699d5b}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Plane@{get\+Plane}}
+\index{get\+Plane@{get\+Plane}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Plane()}{getPlane()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Plane (\begin{DoxyParamCaption}\item[{bt\+Vector3 \&}]{plane\+Normal,  }\item[{bt\+Vector3 \&}]{plane\+Support,  }\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em plane\+Normal} & $<$\#plane\+Normal description\#$>$ \\
+\hline
+{\em plane\+Support} & $<$\#plane\+Support description\#$>$ \\
+\hline
+{\em i} & $<$\#i description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_ad5418af48c1210d6d5119244826cacbb}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a3d5187930b555c1c421928e642af206b}\label{classnjli_1_1_physics_shape_multi_sphere_a3d5187930b555c1c421928e642af206b}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Sphere\+Count@{get\+Sphere\+Count}}
+\index{get\+Sphere\+Count@{get\+Sphere\+Count}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Sphere\+Count()}{getSphereCount()}}
+{\footnotesize\ttfamily int njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Sphere\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a679dc7de50f2783428f31c8be37a47c2}\label{classnjli_1_1_physics_shape_multi_sphere_a679dc7de50f2783428f31c8be37a47c2}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Sphere\+Position@{get\+Sphere\+Position}}
+\index{get\+Sphere\+Position@{get\+Sphere\+Position}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Sphere\+Position()}{getSpherePosition()}}
+{\footnotesize\ttfamily const bt\+Vector3\& njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Sphere\+Position (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a6833432afbb47a8800e3bbd12999954a}\label{classnjli_1_1_physics_shape_multi_sphere_a6833432afbb47a8800e3bbd12999954a}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Sphere\+Radius@{get\+Sphere\+Radius}}
+\index{get\+Sphere\+Radius@{get\+Sphere\+Radius}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Sphere\+Radius()}{getSphereRadius()}}
+{\footnotesize\ttfamily bt\+Scalar njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Sphere\+Radius (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & $<$\#index description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_abfd5533159ecea36c3f9147b49dfe7c2}\label{classnjli_1_1_physics_shape_multi_sphere_abfd5533159ecea36c3f9147b49dfe7c2}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_ac7c6b2ac373892095f8220d56f8ad6de}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a467600545bb56fe471cb930f5a7b8aad}\label{classnjli_1_1_physics_shape_multi_sphere_a467600545bb56fe471cb930f5a7b8aad}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!get\+Vertex@{get\+Vertex}}
+\index{get\+Vertex@{get\+Vertex}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{get\+Vertex()}{getVertex()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::get\+Vertex (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{bt\+Vector3 \&}]{vtx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & $<$\#i description\#$>$ \\
+\hline
+{\em vtx} & $<$\#vtx description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_acb05a16bdbfa5cee6dcbab5c253eb78e}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a839ea1301fdc8e1442f4ab4fb5a7cc30}\label{classnjli_1_1_physics_shape_multi_sphere_a839ea1301fdc8e1442f4ab4fb5a7cc30}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!is\+Inside@{is\+Inside}}
+\index{is\+Inside@{is\+Inside}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{is\+Inside()}{isInside()}}
+{\footnotesize\ttfamily virtual bool njli\+::\+Physics\+Shape\+Multi\+Sphere\+::is\+Inside (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{pt,  }\item[{\mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{tolerance }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em pt} & $<$\#pt description\#$>$ \\
+\hline
+{\em tolerance} & $<$\#tolerance description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_acc4f13c0be21f65b1eaa63c357981a0c}\label{classnjli_1_1_physics_shape_multi_sphere_acc4f13c0be21f65b1eaa63c357981a0c}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!load@{load}}
+\index{load@{load}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a34d365099e710fa7dfb1bf010674eb2c}\label{classnjli_1_1_physics_shape_multi_sphere_a34d365099e710fa7dfb1bf010674eb2c}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Physics\+Shape\+Multi\+Sphere\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a890d915f88af06dcf1ac1fa4f5943dc2}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_aea1e4639bb29535b236e1e56b90f9e44}\label{classnjli_1_1_physics_shape_multi_sphere_aea1e4639bb29535b236e1e56b90f9e44}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}}\& njli\+::\+Physics\+Shape\+Multi\+Sphere\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_physics_shape_multi_sphere}{Physics\+Shape\+Multi\+Sphere}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a3bb2481f06e880597dafdb8c9da1a54b}\label{classnjli_1_1_physics_shape_multi_sphere_a3bb2481f06e880597dafdb8c9da1a54b}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!remove\+Sphere@{remove\+Sphere}}
+\index{remove\+Sphere@{remove\+Sphere}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{remove\+Sphere()}{removeSphere()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::remove\+Sphere (\begin{DoxyParamCaption}\item[{const bt\+Vector3 \&}]{position,  }\item[{const \mbox{\hyperlink{_util_8h_a5f6906312a689f27d70e9d086649d3fd}{f32}}}]{radius }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & $<$\#position description\#$>$ \\
+\hline
+{\em radius} & $<$\#radius description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a11acca92dfad6bbfc36017267362f128}\label{classnjli_1_1_physics_shape_multi_sphere_a11acca92dfad6bbfc36017267362f128}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a2ac8a109a5ad67ee79f40ce8f28337cf}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ae54e42a11d5b7737dad326aa1c11b2ad}\label{classnjli_1_1_physics_shape_multi_sphere_ae54e42a11d5b7737dad326aa1c11b2ad}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!set\+Collision\+Shape@{set\+Collision\+Shape}}
+\index{set\+Collision\+Shape@{set\+Collision\+Shape}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{set\+Collision\+Shape()}{setCollisionShape()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::set\+Collision\+Shape (\begin{DoxyParamCaption}\item[{const bt\+Collision\+Shape \&}]{shape }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_physics_shape_a441e82a42f3b588a409c3b6c41288abd}{njli\+::\+Physics\+Shape}}.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ab3bdb3d0b0d07962fc85babae7026614}\label{classnjli_1_1_physics_shape_multi_sphere_ab3bdb3d0b0d07962fc85babae7026614}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!type@{type}}
+\index{type@{type}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Physics\+Shape\+Multi\+Sphere\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_physics_shape_multi_sphere_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 31 of file Physics\+Shape\+Multi\+Sphere.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_ac43b193d22e235ea71f17d93021e0967}\label{classnjli_1_1_physics_shape_multi_sphere_ac43b193d22e235ea71f17d93021e0967}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!m\+\_\+bt\+Multi\+Sphere\+Shape@{m\+\_\+bt\+Multi\+Sphere\+Shape}}
+\index{m\+\_\+bt\+Multi\+Sphere\+Shape@{m\+\_\+bt\+Multi\+Sphere\+Shape}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+bt\+Multi\+Sphere\+Shape}{m\_btMultiSphereShape}}
+{\footnotesize\ttfamily bt\+Multi\+Sphere\+Shape$\ast$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::m\+\_\+bt\+Multi\+Sphere\+Shape\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 252 of file Physics\+Shape\+Multi\+Sphere.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a20192615e273ac465050fb139edcae76}\label{classnjli_1_1_physics_shape_multi_sphere_a20192615e273ac465050fb139edcae76}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!m\+\_\+local\+Position\+Array@{m\+\_\+local\+Position\+Array}}
+\index{m\+\_\+local\+Position\+Array@{m\+\_\+local\+Position\+Array}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+local\+Position\+Array}{m\_localPositionArray}}
+{\footnotesize\ttfamily bt\+Aligned\+Object\+Array$<$bt\+Vector3$>$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::m\+\_\+local\+Position\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 253 of file Physics\+Shape\+Multi\+Sphere.\+h.
+
+\mbox{\Hypertarget{classnjli_1_1_physics_shape_multi_sphere_a9a7781979e6a9f6b62e5c621b14ccc6c}\label{classnjli_1_1_physics_shape_multi_sphere_a9a7781979e6a9f6b62e5c621b14ccc6c}} 
+\index{njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}!m\+\_\+radi\+Array@{m\+\_\+radi\+Array}}
+\index{m\+\_\+radi\+Array@{m\+\_\+radi\+Array}!njli\+::\+Physics\+Shape\+Multi\+Sphere@{njli\+::\+Physics\+Shape\+Multi\+Sphere}}
+\subsubsection{\texorpdfstring{m\+\_\+radi\+Array}{m\_radiArray}}
+{\footnotesize\ttfamily bt\+Aligned\+Object\+Array$<$bt\+Scalar$>$ njli\+::\+Physics\+Shape\+Multi\+Sphere\+::m\+\_\+radi\+Array\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 254 of file Physics\+Shape\+Multi\+Sphere.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/physics/shape/\mbox{\hyperlink{_physics_shape_multi_sphere_8h}{Physics\+Shape\+Multi\+Sphere.\+h}}\end{DoxyCompactItemize}

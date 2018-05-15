@@ -1,0 +1,346 @@
+\hypertarget{classnjli_1_1_action_builder}{}\section{njli\+:\+:Action\+Builder Class Reference}
+\label{classnjli_1_1_action_builder}\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+
+
+{\ttfamily \#include $<$Action\+Builder.\+h$>$}
+
+
+
+Inheritance diagram for njli\+:\+:Action\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{classnjli_1_1_action_builder__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for njli\+:\+:Action\+Builder\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{classnjli_1_1_action_builder__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_action_builder_a410b750e7ae37ac7133400541cc22591}{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}} ()
+\item 
+virtual \mbox{\hyperlink{classnjli_1_1_action_builder_a7673ea681ab0ff5e3590e322f44798b7}{$\sim$\+Action\+Builder}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \& \mbox{\hyperlink{classnjli_1_1_action_builder_ae8e386f93a681e8a4ad15c81c2317256}{operator=}} (const \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&)
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_action_builder_a463dfb3486b50ee4b3ae234deafd9ad2}{calculate\+Serialize\+Buffer\+Size}} () const
+\item 
+virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_action_builder_a08a4404af37bd53504e5b72e1c431442}{serialize}} (\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$data\+Buffer, bt\+Serializer $\ast$) const
+\begin{DoxyCompactList}\small\item\em $<$\#\+Description\#$>$ \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_action_builder_afe754e36661339a9e9fed27aa8d98580}{get\+Object\+Type}} () const
+\item 
+virtual const char $\ast$ \mbox{\hyperlink{classnjli_1_1_action_builder_ad94f927c3c793b70caf04ac4170fce18}{get\+Class\+Name}} () const
+\item 
+virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} \mbox{\hyperlink{classnjli_1_1_action_builder_afbc316d229d1cc330b0bc432eefbf5d9}{get\+Type}} () const
+\item 
+\mbox{\hyperlink{classnjli_1_1_action_builder_ad3f87a956a7a92ea16a5f35f9d1608f7}{operator std\+::string}} () const
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$$\ast$ \mbox{\hyperlink{classnjli_1_1_action_builder_a43d1a1223217032a1c9e1f7c0312b89a}{create\+Array}} (const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_action_builder_aa1ef775a2c7fa6f4b82c205c2aa815db}{destroy\+Array}} (\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$$\ast$array, const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} size=0)
+\item 
+static \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$ \mbox{\hyperlink{classnjli_1_1_action_builder_a8bbc5b7faffee5487928032a955bba6b}{create}} ()
+\item 
+static \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$ \mbox{\hyperlink{classnjli_1_1_action_builder_aa04be710105bbb879fccf8b5f950519a}{clone}} (const \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_action_builder_a41bc319da348dc6a8388bbec26cfd93e}{destroy}} (\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$object)
+\item 
+static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} \mbox{\hyperlink{classnjli_1_1_action_builder_a86ba01c9ee80e198442a46b3cd5f9d7f}{load}} (\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&object, lua\+\_\+\+State $\ast$L, int stack\+\_\+index)
+\item 
+static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} \mbox{\hyperlink{classnjli_1_1_action_builder_a569cbb4a019aabaf3f77c13f20625d8b}{type}} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classnjli_1_1_action_builder_a4722e62e278de2668faf92c26fe7f71b}{Action\+Builder}} ()
+\item 
+\mbox{\hyperlink{classnjli_1_1_action_builder_abc0b4b0332ee13e9e1a8f7121196ef10}{Action\+Builder}} (const \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classnjli_1_1_action_builder_acb96ebb09abe8f2a37a915a842babfac}{World\+Factory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+$<$\#\+Description\#$>$ 
+
+Definition at line 23 of file Action\+Builder.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a4722e62e278de2668faf92c26fe7f71b}\label{classnjli_1_1_action_builder_a4722e62e278de2668faf92c26fe7f71b}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!Action\+Builder@{Action\+Builder}}
+\index{Action\+Builder@{Action\+Builder}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{Action\+Builder()}{ActionBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily njli\+::\+Action\+Builder\+::\+Action\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_abc0b4b0332ee13e9e1a8f7121196ef10}\label{classnjli_1_1_action_builder_abc0b4b0332ee13e9e1a8f7121196ef10}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!Action\+Builder@{Action\+Builder}}
+\index{Action\+Builder@{Action\+Builder}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{Action\+Builder()}{ActionBuilder()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily njli\+::\+Action\+Builder\+::\+Action\+Builder (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a7673ea681ab0ff5e3590e322f44798b7}\label{classnjli_1_1_action_builder_a7673ea681ab0ff5e3590e322f44798b7}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!````~Action\+Builder@{$\sim$\+Action\+Builder}}
+\index{````~Action\+Builder@{$\sim$\+Action\+Builder}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{$\sim$\+Action\+Builder()}{~ActionBuilder()}}
+{\footnotesize\ttfamily virtual njli\+::\+Action\+Builder\+::$\sim$\+Action\+Builder (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a410b750e7ae37ac7133400541cc22591}\label{classnjli_1_1_action_builder_a410b750e7ae37ac7133400541cc22591}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}}
+\index{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR@{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+O\+R()}{BT\_DECLARE\_ALIGNED\_ALLOCATOR()}}
+{\footnotesize\ttfamily njli\+::\+Action\+Builder\+::\+B\+T\+\_\+\+D\+E\+C\+L\+A\+R\+E\+\_\+\+A\+L\+I\+G\+N\+E\+D\+\_\+\+A\+L\+L\+O\+C\+A\+T\+OR (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a463dfb3486b50ee4b3ae234deafd9ad2}\label{classnjli_1_1_action_builder_a463dfb3486b50ee4b3ae234deafd9ad2}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}}
+\index{calculate\+Serialize\+Buffer\+Size@{calculate\+Serialize\+Buffer\+Size}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{calculate\+Serialize\+Buffer\+Size()}{calculateSerializeBufferSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Action\+Builder\+::calculate\+Serialize\+Buffer\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_builder_aa1d220053e182c37b31b427499c6eacf}{njli\+::\+Abstract\+Builder}}.
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_aa04be710105bbb879fccf8b5f950519a}\label{classnjli_1_1_action_builder_aa04be710105bbb879fccf8b5f950519a}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!clone@{clone}}
+\index{clone@{clone}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}}$\ast$ njli\+::\+Action\+Builder\+::clone (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a8bbc5b7faffee5487928032a955bba6b}\label{classnjli_1_1_action_builder_a8bbc5b7faffee5487928032a955bba6b}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!create@{create}}
+\index{create@{create}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}}$\ast$ njli\+::\+Action\+Builder\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a43d1a1223217032a1c9e1f7c0312b89a}\label{classnjli_1_1_action_builder_a43d1a1223217032a1c9e1f7c0312b89a}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!create\+Array@{create\+Array}}
+\index{create\+Array@{create\+Array}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{create\+Array()}{createArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}}$\ast$$\ast$ njli\+::\+Action\+Builder\+::create\+Array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em size} & $<$\#size description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a41bc319da348dc6a8388bbec26cfd93e}\label{classnjli_1_1_action_builder_a41bc319da348dc6a8388bbec26cfd93e}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!destroy@{destroy}}
+\index{destroy@{destroy}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{destroy()}{destroy()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Action\+Builder\+::destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$}]{object }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_aa1ef775a2c7fa6f4b82c205c2aa815db}\label{classnjli_1_1_action_builder_aa1ef775a2c7fa6f4b82c205c2aa815db}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!destroy\+Array@{destroy\+Array}}
+\index{destroy\+Array@{destroy\+Array}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{destroy\+Array()}{destroyArray()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Action\+Builder\+::destroy\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} $\ast$$\ast$}]{array,  }\item[{const \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}}}]{size = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & $<$\#array description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_ad94f927c3c793b70caf04ac4170fce18}\label{classnjli_1_1_action_builder_ad94f927c3c793b70caf04ac4170fce18}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{get\+Class\+Name()}{getClassName()}}
+{\footnotesize\ttfamily virtual const char$\ast$ njli\+::\+Action\+Builder\+::get\+Class\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_builder_a902f73ea78031b06aca183a417f3413b}{njli\+::\+Abstract\+Builder}}.
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_afe754e36661339a9e9fed27aa8d98580}\label{classnjli_1_1_action_builder_afe754e36661339a9e9fed27aa8d98580}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!get\+Object\+Type@{get\+Object\+Type}}
+\index{get\+Object\+Type@{get\+Object\+Type}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{get\+Object\+Type()}{getObjectType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Action\+Builder\+::get\+Object\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_builder_a0f2d344fcf697b167f4f2b1122b5fb33}{njli\+::\+Abstract\+Builder}}.
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_afbc316d229d1cc330b0bc432eefbf5d9}\label{classnjli_1_1_action_builder_afbc316d229d1cc330b0bc432eefbf5d9}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_util_8h_aa62c75d314a0d1f37f79c4b73b2292e2}{s32}} njli\+::\+Action\+Builder\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_builder_abb4a8161cd71be12807fe85864b67050}{njli\+::\+Abstract\+Builder}}.
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a86ba01c9ee80e198442a46b3cd5f9d7f}\label{classnjli_1_1_action_builder_a86ba01c9ee80e198442a46b3cd5f9d7f}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!load@{load}}
+\index{load@{load}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{load()}{load()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Action\+Builder\+::load (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&}]{object,  }\item[{lua\+\_\+\+State $\ast$}]{L,  }\item[{int}]{stack\+\_\+index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}{Parameters}
+{\em object} & $<$\#object description\#$>$ \\
+\hline
+{\em L} & $<$\#L description\#$>$ \\
+\hline
+{\em stack\+\_\+index} & $<$\#stack\+\_\+index description\#$>$ \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_ad3f87a956a7a92ea16a5f35f9d1608f7}\label{classnjli_1_1_action_builder_ad3f87a956a7a92ea16a5f35f9d1608f7}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Action\+Builder\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_builder_a3e6e553e06d1ca30517ad5fb0bd4d000}{njli\+::\+Abstract\+Builder}}.
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_ae8e386f93a681e8a4ad15c81c2317256}\label{classnjli_1_1_action_builder_ae8e386f93a681e8a4ad15c81c2317256}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!operator=@{operator=}}
+\index{operator=@{operator=}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}}\& njli\+::\+Action\+Builder\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classnjli_1_1_action_builder}{Action\+Builder}} \&}]{ }\end{DoxyParamCaption})}
+
+$<$\#\+Description\#$>$
+
+
+\begin{DoxyParams}[1]{Parameters}
+$<$ & {\em } & description\#$>$\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a08a4404af37bd53504e5b72e1c431442}\label{classnjli_1_1_action_builder_a08a4404af37bd53504e5b72e1c431442}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!serialize@{serialize}}
+\index{serialize@{serialize}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{serialize()}{serialize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} njli\+::\+Action\+Builder\+::serialize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_thread_8h_af1e856da2e658414cb2456cb6f7ebc66}{void}} $\ast$}]{data\+Buffer,  }\item[{bt\+Serializer $\ast$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+$<$\#\+Description\#$>$ 
+
+\begin{DoxyAuthor}{Author}
+James Folk, 16-\/02-\/11 15\+:02\+:50
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em data\+Buffer} & $<$\#data\+Buffer description\#$>$ \\
+\hline
+{\em bt\+Serializer} & $<$\#bt\+Serializer description\#$>$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classnjli_1_1_abstract_builder_ab66b774e02ccb9da554c9aab7fa6d981}{njli\+::\+Abstract\+Builder}}.
+
+\mbox{\Hypertarget{classnjli_1_1_action_builder_a569cbb4a019aabaf3f77c13f20625d8b}\label{classnjli_1_1_action_builder_a569cbb4a019aabaf3f77c13f20625d8b}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!type@{type}}
+\index{type@{type}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{type()}{type()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{_util_8h_a10e94b422ef0c20dcdec20d31a1f5049}{u32}} njli\+::\+Action\+Builder\+::type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+$<$\#\+Description\#$>$
+
+\begin{DoxyReturn}{Returns}
+$<$\#return value description\#$>$ 
+\end{DoxyReturn}
+
+
+\subsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classnjli_1_1_action_builder_acb96ebb09abe8f2a37a915a842babfac}\label{classnjli_1_1_action_builder_acb96ebb09abe8f2a37a915a842babfac}} 
+\index{njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}!World\+Factory@{World\+Factory}}
+\index{World\+Factory@{World\+Factory}!njli\+::\+Action\+Builder@{njli\+::\+Action\+Builder}}
+\subsubsection{\texorpdfstring{World\+Factory}{WorldFactory}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classnjli_1_1_world_factory}{World\+Factory}}\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Definition at line 25 of file Action\+Builder.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/builders/\mbox{\hyperlink{_action_builder_8h}{Action\+Builder.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_j_l_i_engine_8h">
+    <title>JLIEngine.h File Reference</title>
+    <programlisting>#include &quot;AbstractActionable.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractClock.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractDecorator.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractFactoryObject.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractFrameBufferObject.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractObject.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractState.h&quot;</programlisting>
+    <programlisting>#include &quot;AbstractStateMachine.h&quot;</programlisting>
+    <programlisting>#include &quot;JLIFactoryTypes.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBody.h&quot;</programlisting>
+    <programlisting>#include &quot;Geometry.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShape.h&quot;</programlisting>
+    <programlisting>#include &quot;World.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldFactory.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldLuaVirtualMachine.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldSQLite.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldClock.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldDebugDrawer.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldResourceLoader.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldSocket.h&quot;</programlisting>
+    <programlisting>#include &quot;Action.h&quot;</programlisting>
+    <programlisting>#include &quot;ActionBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Camera.h&quot;</programlisting>
+    <programlisting>#include &quot;CameraBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Clock.h&quot;</programlisting>
+    <programlisting>#include &quot;ClockBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;CollisionResponse.h&quot;</programlisting>
+    <programlisting>#include &quot;CollisionResponseBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Cube.h&quot;</programlisting>
+    <programlisting>#include &quot;CubeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Font.h&quot;</programlisting>
+    <programlisting>#include &quot;FontBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Image.h&quot;</programlisting>
+    <programlisting>#include &quot;ImageBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;JsonJLI.h&quot;</programlisting>
+    <programlisting>#include &quot;JsonJLIBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;LevelOfDetail.h&quot;</programlisting>
+    <programlisting>#include &quot;LevelOfDetailBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Light.h&quot;</programlisting>
+    <programlisting>#include &quot;LightBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Material.h&quot;</programlisting>
+    <programlisting>#include &quot;MaterialBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;MaterialProperty.h&quot;</programlisting>
+    <programlisting>#include &quot;MaterialPropertyBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Node.h&quot;</programlisting>
+    <programlisting>#include &quot;NodeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;NodeState.h&quot;</programlisting>
+    <programlisting>#include &quot;NodeStateBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;NodeStateMachine.h&quot;</programlisting>
+    <programlisting>#include &quot;NodeStateMachineBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;ParticleEmitter.h&quot;</programlisting>
+    <programlisting>#include &quot;ParticleEmitterBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBodyGhost.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBodyGhostBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBodyRigid.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBodyRigidBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBodySoft.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsBodySoftBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsCloseContact.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsCloseContactBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraint.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintHinge.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintHingeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintPointToPoint.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintPointToPointBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintConeTwist.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintConeTwistBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintFixed.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintFixedBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintGeneric6Dof.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintGeneric6DofBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintGeneric6DofSpring.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintGeneric6DofSpringBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintSlider.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsConstraintSliderBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsContact.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsContactBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsField.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsFieldBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsRayContact.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsRayContactBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeBox.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeBox2D.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeBox2DBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeBoxBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeBvhTriangleMesh.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeBvhTriangleMeshBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeCapsule.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeCapsuleBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeCone.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeConeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeConvexHull.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeConvexHullBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeConvexTriangleMesh.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeConvexTriangleMeshBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeCylinder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeCylinderBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeHeightfieldTerrain.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeHeightfieldTerrainBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeMultiSphere.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeMultiSphereBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeSphere.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeSphereBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeStaticPlane.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsShapeStaticPlaneBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsWorld.h&quot;</programlisting>
+    <programlisting>#include &quot;PhysicsWorldBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Plane.h&quot;</programlisting>
+    <programlisting>#include &quot;PlaneBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Scene.h&quot;</programlisting>
+    <programlisting>#include &quot;SceneBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SceneState.h&quot;</programlisting>
+    <programlisting>#include &quot;SceneStateBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SceneStateMachine.h&quot;</programlisting>
+    <programlisting>#include &quot;SceneStateMachineBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;ShaderProgram.h&quot;</programlisting>
+    <programlisting>#include &quot;ShaderProgramBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Skinner.h&quot;</programlisting>
+    <programlisting>#include &quot;SkinnerBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Sound.h&quot;</programlisting>
+    <programlisting>#include &quot;SoundBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Sprite2D.h&quot;</programlisting>
+    <programlisting>#include &quot;Sprite2DBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SpriteFrameAtlas.h&quot;</programlisting>
+    <programlisting>#include &quot;SpriteFrameAtlasBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehavior.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorAlignment.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorAlignmentBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorArrive.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorArriveBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorCohesion.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorCohesionBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorEvade.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorEvadeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorFlee.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorFleeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorFollowPath.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorFollowPathBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorHide.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorHideBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorInterpose.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorInterposeBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachine.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachineBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachineDithered.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachineDitheredBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachinePrioritized.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachinePrioritizedBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachineWeighted.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorMachineWeightedBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorObstacleAvoidance.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorObstacleAvoidanceBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorOffsetPursuit.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorOffsetPursuitBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorPursuit.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorPursuitBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorSeek.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorSeekBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorSeparation.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorSeparationBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorWallAvoidance.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorWallAvoidanceBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorWander.h&quot;</programlisting>
+    <programlisting>#include &quot;SteeringBehaviorWanderBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;StopWatch.h&quot;</programlisting>
+    <programlisting>#include &quot;StopWatchBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Thread.h&quot;</programlisting>
+    <programlisting>#include &quot;ThreadBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Timer.h&quot;</programlisting>
+    <programlisting>#include &quot;TimerBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldState.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldStateBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldStateMachine.h&quot;</programlisting>
+    <programlisting>#include &quot;WorldStateMachineBuilder.h&quot;</programlisting>
+    <programlisting>#include &quot;Xml.h&quot;</programlisting>
+    <programlisting>#include &quot;XmlBuilder.h&quot;</programlisting>
+<para>Include dependency diagram for JLIEngine.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_j_l_i_engine_8h__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Included by dependency diagram for JLIEngine.h</para>
+<para>
+    <figure>
+        <title>Dependency diagram</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="_j_l_i_engine_8h__dep__incl.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+    <simplesect>
+        <title>Detailed Description</title>
+    <para>Definition in file /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/njli/JLIEngine.h</para>
+    </simplesect>
+</section>

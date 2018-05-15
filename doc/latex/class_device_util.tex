@@ -1,0 +1,361 @@
+\hypertarget{class_device_util}{}\section{Device\+Util Class Reference}
+\label{class_device_util}\index{Device\+Util@{Device\+Util}}
+
+
+{\ttfamily \#include $<$Device\+Util.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6}{Hardware\+Id}} \{ \newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a59dfa2248607f7e6a83d18fae8306b5f}{N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a426756b6e91e32d8787381edb82e2f99}{I\+P\+H\+O\+N\+E\+\_\+2G}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aef9f2cde0d6264b94a3b0b4a8401a857}{I\+P\+H\+O\+N\+E\+\_\+3G}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ad5d2d991e046187f0c8125524af89dcc}{I\+P\+H\+O\+N\+E\+\_\+3\+GS}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6bc46fcd2e969285170bb3820edfbb53}{I\+P\+H\+O\+N\+E\+\_\+4}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a0bda6882d66a01056b8b27407cf04dde}{I\+P\+H\+O\+N\+E\+\_\+4\+\_\+\+C\+D\+MA}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaa6bc9531710ba79ea16e0a5282aad2d}{I\+P\+H\+O\+N\+E\+\_\+4S}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a3a685b702a361e4b8f7644a0db02edec}{I\+P\+H\+O\+N\+E\+\_\+5}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5a458f705f8a7c11a8c40e276b8f3435}{I\+P\+H\+O\+N\+E\+\_\+5\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c61baf0087c75d5e1065706c6882891}{I\+P\+H\+O\+N\+E\+\_\+5C}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af34c861978cbdc2dfb7a817618a05c75}{I\+P\+H\+O\+N\+E\+\_\+5\+C\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a29ea42b1c0889a0dfd11ee44a4ebc196}{I\+P\+H\+O\+N\+E\+\_\+5S}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a72f08b0879de13801118446a8b35232e}{I\+P\+H\+O\+N\+E\+\_\+5\+S\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a7caadb319881dbe21f56c25c53dbaefa}{I\+P\+H\+O\+N\+E\+\_\+6\+\_\+\+P\+L\+US}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac006c12e0d8ef8b704d660cdf2cc73eb}{I\+P\+H\+O\+N\+E\+\_\+6}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2eafaf5d3af8ef5d74609323291012f0}{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+1G}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a67489fe12e9113a843b947b7a1aa1222}{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+2G}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a1609005bd5421a79ad24e5f904c1e5bb}{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+3G}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aa83e7eabe18529a42e39cbe83b713f8f}{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+4G}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a559d772e788b42914ceba6ea51cba65c}{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+5G}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a970f5a61fb5328c9be3df7218d66252c}{I\+P\+AD}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a10f567693a3e3ed95e54604e8c704761}{I\+P\+A\+D\+\_\+2}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6b9313e7d99fdf150b4caef42bb20eb4}{I\+P\+A\+D\+\_\+2\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac788b25de5b19b3898e3d3dd74bebeda}{I\+P\+A\+D\+\_\+2\+\_\+\+C\+D\+MA}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a27aa5176f402cd18a622becc95417a27}{I\+P\+A\+D\+\_\+3}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abd8e2401ae0544ef020921bf548811e9}{I\+P\+A\+D\+\_\+3G}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a15e7a40f6f34e8d9510fd25c03b1b900}{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a611853ccaf008a1196c11c96f4065dd3}{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abaaf347119652f3afcf4f9a3092c293a}{I\+P\+A\+D\+\_\+4}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6affc073377d7cb597375656ee0af524a5}{I\+P\+A\+D\+\_\+4\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a58ced1898dc35555f9a0be5e75249012}{I\+P\+A\+D\+\_\+4\+\_\+\+G\+S\+M\+\_\+\+C\+D\+MA}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6756ec07502f339b4ce75fcaf5f94530}{I\+P\+A\+D\+\_\+\+M\+I\+NI}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9f6e25f225538424d8daf905e8386bb4}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a203bc1f67712655dcc9ce307afe14a86}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11e3ab97fb5f6f2cc58ea96d3f61617d}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11488d352dd3632a73434624ed12fe52}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9fee968dee865d79828d5323796c4fb6}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af142fa5b1a88460175197feea19d9471}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2506c50cb92a515f86166936b3ace015}{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+A\+R\+\_\+\+CN}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a4f2548335b89faae77423ceb443387da}{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+FI}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5806cb025d9d3d380ddb5bf58e0d3f58}{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+G\+SM}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c35811bc1218577794b0320ff7740df}{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a448de67eccb6fb2cb667da6836f59edb}{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+FI}}, 
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaf6e21e19c261926b25ed94a09cd5742}{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR}}, 
+\newline
+\mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5cb482919e3998b2e07aefe149afd8f9}{S\+I\+M\+U\+L\+A\+T\+OR}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \mbox{\hyperlink{class_device_util_a169613511f0399d3e0d1b3d8674808ba}{hardware\+String}} ()
+\item 
+static std\+::string \mbox{\hyperlink{class_device_util_a0b41896ef1ac3277c1126341bee50d26}{hardware\+Description}} ()
+\item 
+static \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6}{Hardware\+Id}} \mbox{\hyperlink{class_device_util_aeacce8246f59676945b5f1914a08fb4a}{hardware\+Id}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 14 of file Device\+Util.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6}} 
+\index{Device\+Util@{Device\+Util}!Hardware\+Id@{Hardware\+Id}}
+\index{Hardware\+Id@{Hardware\+Id}!Device\+Util@{Device\+Util}}
+\subsubsection{\texorpdfstring{Hardware\+Id}{HardwareId}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6}{Device\+Util\+::\+Hardware\+Id}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE@{N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a59dfa2248607f7e6a83d18fae8306b5f}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a59dfa2248607f7e6a83d18fae8306b5f}} 
+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+LE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+2G@{I\+P\+H\+O\+N\+E\+\_\+2G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+2G@{I\+P\+H\+O\+N\+E\+\_\+2G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a426756b6e91e32d8787381edb82e2f99}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a426756b6e91e32d8787381edb82e2f99}} 
+I\+P\+H\+O\+N\+E\+\_\+2G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+3G@{I\+P\+H\+O\+N\+E\+\_\+3G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+3G@{I\+P\+H\+O\+N\+E\+\_\+3G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aef9f2cde0d6264b94a3b0b4a8401a857}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aef9f2cde0d6264b94a3b0b4a8401a857}} 
+I\+P\+H\+O\+N\+E\+\_\+3G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+3\+GS@{I\+P\+H\+O\+N\+E\+\_\+3\+GS}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+3\+GS@{I\+P\+H\+O\+N\+E\+\_\+3\+GS}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ad5d2d991e046187f0c8125524af89dcc}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ad5d2d991e046187f0c8125524af89dcc}} 
+I\+P\+H\+O\+N\+E\+\_\+3\+GS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+4@{I\+P\+H\+O\+N\+E\+\_\+4}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+4@{I\+P\+H\+O\+N\+E\+\_\+4}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6bc46fcd2e969285170bb3820edfbb53}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6bc46fcd2e969285170bb3820edfbb53}} 
+I\+P\+H\+O\+N\+E\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+4\+\_\+\+C\+D\+MA@{I\+P\+H\+O\+N\+E\+\_\+4\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+4\+\_\+\+C\+D\+MA@{I\+P\+H\+O\+N\+E\+\_\+4\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a0bda6882d66a01056b8b27407cf04dde}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a0bda6882d66a01056b8b27407cf04dde}} 
+I\+P\+H\+O\+N\+E\+\_\+4\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+4S@{I\+P\+H\+O\+N\+E\+\_\+4S}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+4S@{I\+P\+H\+O\+N\+E\+\_\+4S}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaa6bc9531710ba79ea16e0a5282aad2d}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaa6bc9531710ba79ea16e0a5282aad2d}} 
+I\+P\+H\+O\+N\+E\+\_\+4S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+5@{I\+P\+H\+O\+N\+E\+\_\+5}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+5@{I\+P\+H\+O\+N\+E\+\_\+5}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a3a685b702a361e4b8f7644a0db02edec}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a3a685b702a361e4b8f7644a0db02edec}} 
+I\+P\+H\+O\+N\+E\+\_\+5&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+5\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM@{I\+P\+H\+O\+N\+E\+\_\+5\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+5\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM@{I\+P\+H\+O\+N\+E\+\_\+5\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5a458f705f8a7c11a8c40e276b8f3435}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5a458f705f8a7c11a8c40e276b8f3435}} 
+I\+P\+H\+O\+N\+E\+\_\+5\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+5C@{I\+P\+H\+O\+N\+E\+\_\+5C}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+5C@{I\+P\+H\+O\+N\+E\+\_\+5C}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c61baf0087c75d5e1065706c6882891}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c61baf0087c75d5e1065706c6882891}} 
+I\+P\+H\+O\+N\+E\+\_\+5C&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+5\+C\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM@{I\+P\+H\+O\+N\+E\+\_\+5\+C\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+5\+C\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM@{I\+P\+H\+O\+N\+E\+\_\+5\+C\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af34c861978cbdc2dfb7a817618a05c75}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af34c861978cbdc2dfb7a817618a05c75}} 
+I\+P\+H\+O\+N\+E\+\_\+5\+C\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+5S@{I\+P\+H\+O\+N\+E\+\_\+5S}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+5S@{I\+P\+H\+O\+N\+E\+\_\+5S}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a29ea42b1c0889a0dfd11ee44a4ebc196}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a29ea42b1c0889a0dfd11ee44a4ebc196}} 
+I\+P\+H\+O\+N\+E\+\_\+5S&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+5\+S\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM@{I\+P\+H\+O\+N\+E\+\_\+5\+S\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+5\+S\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM@{I\+P\+H\+O\+N\+E\+\_\+5\+S\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a72f08b0879de13801118446a8b35232e}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a72f08b0879de13801118446a8b35232e}} 
+I\+P\+H\+O\+N\+E\+\_\+5\+S\+\_\+\+C\+D\+M\+A\+\_\+\+G\+SM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+6\+\_\+\+P\+L\+US@{I\+P\+H\+O\+N\+E\+\_\+6\+\_\+\+P\+L\+US}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+6\+\_\+\+P\+L\+US@{I\+P\+H\+O\+N\+E\+\_\+6\+\_\+\+P\+L\+US}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a7caadb319881dbe21f56c25c53dbaefa}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a7caadb319881dbe21f56c25c53dbaefa}} 
+I\+P\+H\+O\+N\+E\+\_\+6\+\_\+\+P\+L\+US&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+H\+O\+N\+E\+\_\+6@{I\+P\+H\+O\+N\+E\+\_\+6}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+H\+O\+N\+E\+\_\+6@{I\+P\+H\+O\+N\+E\+\_\+6}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac006c12e0d8ef8b704d660cdf2cc73eb}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac006c12e0d8ef8b704d660cdf2cc73eb}} 
+I\+P\+H\+O\+N\+E\+\_\+6&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+1G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+1G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+1G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+1G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2eafaf5d3af8ef5d74609323291012f0}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2eafaf5d3af8ef5d74609323291012f0}} 
+I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+1G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+2G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+2G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+2G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+2G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a67489fe12e9113a843b947b7a1aa1222}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a67489fe12e9113a843b947b7a1aa1222}} 
+I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+2G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+3G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+3G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+3G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+3G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a1609005bd5421a79ad24e5f904c1e5bb}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a1609005bd5421a79ad24e5f904c1e5bb}} 
+I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+3G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+4G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+4G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+4G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+4G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aa83e7eabe18529a42e39cbe83b713f8f}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aa83e7eabe18529a42e39cbe83b713f8f}} 
+I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+4G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+5G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+5G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+5G@{I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+5G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a559d772e788b42914ceba6ea51cba65c}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a559d772e788b42914ceba6ea51cba65c}} 
+I\+P\+O\+D\+\_\+\+T\+O\+U\+C\+H\+\_\+5G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+AD@{I\+P\+AD}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+AD@{I\+P\+AD}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a970f5a61fb5328c9be3df7218d66252c}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a970f5a61fb5328c9be3df7218d66252c}} 
+I\+P\+AD&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+2@{I\+P\+A\+D\+\_\+2}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+2@{I\+P\+A\+D\+\_\+2}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a10f567693a3e3ed95e54604e8c704761}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a10f567693a3e3ed95e54604e8c704761}} 
+I\+P\+A\+D\+\_\+2&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+2\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+2\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+2\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+2\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6b9313e7d99fdf150b4caef42bb20eb4}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6b9313e7d99fdf150b4caef42bb20eb4}} 
+I\+P\+A\+D\+\_\+2\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+2\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+2\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+2\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+2\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac788b25de5b19b3898e3d3dd74bebeda}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac788b25de5b19b3898e3d3dd74bebeda}} 
+I\+P\+A\+D\+\_\+2\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+3@{I\+P\+A\+D\+\_\+3}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+3@{I\+P\+A\+D\+\_\+3}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a27aa5176f402cd18a622becc95417a27}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a27aa5176f402cd18a622becc95417a27}} 
+I\+P\+A\+D\+\_\+3&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+3G@{I\+P\+A\+D\+\_\+3G}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+3G@{I\+P\+A\+D\+\_\+3G}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abd8e2401ae0544ef020921bf548811e9}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abd8e2401ae0544ef020921bf548811e9}} 
+I\+P\+A\+D\+\_\+3G&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a15e7a40f6f34e8d9510fd25c03b1b900}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a15e7a40f6f34e8d9510fd25c03b1b900}} 
+I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a611853ccaf008a1196c11c96f4065dd3}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a611853ccaf008a1196c11c96f4065dd3}} 
+I\+P\+A\+D\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+4@{I\+P\+A\+D\+\_\+4}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+4@{I\+P\+A\+D\+\_\+4}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abaaf347119652f3afcf4f9a3092c293a}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abaaf347119652f3afcf4f9a3092c293a}} 
+I\+P\+A\+D\+\_\+4&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+4\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+4\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+4\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+4\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6affc073377d7cb597375656ee0af524a5}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6affc073377d7cb597375656ee0af524a5}} 
+I\+P\+A\+D\+\_\+4\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+4\+\_\+\+G\+S\+M\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+4\+\_\+\+G\+S\+M\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+4\+\_\+\+G\+S\+M\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+4\+\_\+\+G\+S\+M\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a58ced1898dc35555f9a0be5e75249012}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a58ced1898dc35555f9a0be5e75249012}} 
+I\+P\+A\+D\+\_\+4\+\_\+\+G\+S\+M\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+NI@{I\+P\+A\+D\+\_\+\+M\+I\+NI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+NI@{I\+P\+A\+D\+\_\+\+M\+I\+NI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6756ec07502f339b4ce75fcaf5f94530}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6756ec07502f339b4ce75fcaf5f94530}} 
+I\+P\+A\+D\+\_\+\+M\+I\+NI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9f6e25f225538424d8daf905e8386bb4}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9f6e25f225538424d8daf905e8386bb4}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a203bc1f67712655dcc9ce307afe14a86}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a203bc1f67712655dcc9ce307afe14a86}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11e3ab97fb5f6f2cc58ea96d3f61617d}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11e3ab97fb5f6f2cc58ea96d3f61617d}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11488d352dd3632a73434624ed12fe52}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11488d352dd3632a73434624ed12fe52}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9fee968dee865d79828d5323796c4fb6}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9fee968dee865d79828d5323796c4fb6}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af142fa5b1a88460175197feea19d9471}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af142fa5b1a88460175197feea19d9471}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+3\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+A\+R\+\_\+\+CN@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+A\+R\+\_\+\+CN}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+A\+R\+\_\+\+CN@{I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+A\+R\+\_\+\+CN}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2506c50cb92a515f86166936b3ace015}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2506c50cb92a515f86166936b3ace015}} 
+I\+P\+A\+D\+\_\+\+M\+I\+N\+I\+\_\+\+R\+E\+T\+I\+N\+A\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+A\+R\+\_\+\+CN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a4f2548335b89faae77423ceb443387da}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a4f2548335b89faae77423ceb443387da}} 
+I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+G\+SM@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+G\+SM}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+G\+SM@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+G\+SM}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5806cb025d9d3d380ddb5bf58e0d3f58}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5806cb025d9d3d380ddb5bf58e0d3f58}} 
+I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+G\+SM&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c35811bc1218577794b0320ff7740df}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c35811bc1218577794b0320ff7740df}} 
+I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+\+W\+I\+F\+I\+\_\+\+C\+D\+MA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+FI}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+FI@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+FI}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a448de67eccb6fb2cb667da6836f59edb}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a448de67eccb6fb2cb667da6836f59edb}} 
+I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+FI&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR@{I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaf6e21e19c261926b25ed94a09cd5742}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaf6e21e19c261926b25ed94a09cd5742}} 
+I\+P\+A\+D\+\_\+\+A\+I\+R\+\_\+2\+\_\+\+W\+I\+F\+I\+\_\+\+C\+E\+L\+L\+U\+L\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{S\+I\+M\+U\+L\+A\+T\+OR@{S\+I\+M\+U\+L\+A\+T\+OR}!Device\+Util@{Device\+Util}}\index{Device\+Util@{Device\+Util}!S\+I\+M\+U\+L\+A\+T\+OR@{S\+I\+M\+U\+L\+A\+T\+OR}}}\mbox{\Hypertarget{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5cb482919e3998b2e07aefe149afd8f9}\label{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5cb482919e3998b2e07aefe149afd8f9}} 
+S\+I\+M\+U\+L\+A\+T\+OR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 17 of file Device\+Util.\+h.
+
+
+\begin{DoxyCode}
+18   \{
+19     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a59dfa2248607f7e6a83d18fae8306b5f}{NOT\_AVAILABLE}},
+20 
+21     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a426756b6e91e32d8787381edb82e2f99}{IPHONE\_2G}},
+22     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aef9f2cde0d6264b94a3b0b4a8401a857}{IPHONE\_3G}},
+23     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ad5d2d991e046187f0c8125524af89dcc}{IPHONE\_3GS}},
+24     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6bc46fcd2e969285170bb3820edfbb53}{IPHONE\_4}},
+25     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a0bda6882d66a01056b8b27407cf04dde}{IPHONE\_4\_CDMA}},
+26     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaa6bc9531710ba79ea16e0a5282aad2d}{IPHONE\_4S}},
+27     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a3a685b702a361e4b8f7644a0db02edec}{IPHONE\_5}},
+28     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5a458f705f8a7c11a8c40e276b8f3435}{IPHONE\_5\_CDMA\_GSM}},
+29     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c61baf0087c75d5e1065706c6882891}{IPHONE\_5C}},
+30     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af34c861978cbdc2dfb7a817618a05c75}{IPHONE\_5C\_CDMA\_GSM}},
+31     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a29ea42b1c0889a0dfd11ee44a4ebc196}{IPHONE\_5S}},
+32     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a72f08b0879de13801118446a8b35232e}{IPHONE\_5S\_CDMA\_GSM}},
+33     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a7caadb319881dbe21f56c25c53dbaefa}{IPHONE\_6\_PLUS}},
+34     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac006c12e0d8ef8b704d660cdf2cc73eb}{IPHONE\_6}},
+35 
+36     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2eafaf5d3af8ef5d74609323291012f0}{IPOD\_TOUCH\_1G}},
+37     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a67489fe12e9113a843b947b7a1aa1222}{IPOD\_TOUCH\_2G}},
+38     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a1609005bd5421a79ad24e5f904c1e5bb}{IPOD\_TOUCH\_3G}},
+39     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aa83e7eabe18529a42e39cbe83b713f8f}{IPOD\_TOUCH\_4G}},
+40     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a559d772e788b42914ceba6ea51cba65c}{IPOD\_TOUCH\_5G}},
+41 
+42     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a970f5a61fb5328c9be3df7218d66252c}{IPAD}},
+43     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a10f567693a3e3ed95e54604e8c704761}{IPAD\_2}},
+44     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6b9313e7d99fdf150b4caef42bb20eb4}{IPAD\_2\_WIFI}},
+45     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6ac788b25de5b19b3898e3d3dd74bebeda}{IPAD\_2\_CDMA}},
+46     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a27aa5176f402cd18a622becc95417a27}{IPAD\_3}},
+47     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abd8e2401ae0544ef020921bf548811e9}{IPAD\_3G}},
+48     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a15e7a40f6f34e8d9510fd25c03b1b900}{IPAD\_3\_WIFI}},
+49     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a611853ccaf008a1196c11c96f4065dd3}{IPAD\_3\_WIFI\_CDMA}},
+50     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6abaaf347119652f3afcf4f9a3092c293a}{IPAD\_4}},
+51     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6affc073377d7cb597375656ee0af524a5}{IPAD\_4\_WIFI}},
+52     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a58ced1898dc35555f9a0be5e75249012}{IPAD\_4\_GSM\_CDMA}},
+53 
+54     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a6756ec07502f339b4ce75fcaf5f94530}{IPAD\_MINI}},
+55     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9f6e25f225538424d8daf905e8386bb4}{IPAD\_MINI\_WIFI}},
+56     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a203bc1f67712655dcc9ce307afe14a86}{IPAD\_MINI\_WIFI\_CDMA}},
+57     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11e3ab97fb5f6f2cc58ea96d3f61617d}{IPAD\_MINI\_RETINA\_WIFI}},
+58     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a11488d352dd3632a73434624ed12fe52}{IPAD\_MINI\_RETINA\_WIFI\_CDMA}},
+59     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a9fee968dee865d79828d5323796c4fb6}{IPAD\_MINI\_3\_WIFI}},
+60     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6af142fa5b1a88460175197feea19d9471}{IPAD\_MINI\_3\_WIFI\_CELLULAR}},
+61     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a2506c50cb92a515f86166936b3ace015}{IPAD\_MINI\_RETINA\_WIFI\_CELLULAR\_CN}},
+62 
+63     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a4f2548335b89faae77423ceb443387da}{IPAD\_AIR\_WIFI}},
+64     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5806cb025d9d3d380ddb5bf58e0d3f58}{IPAD\_AIR\_WIFI\_GSM}},
+65     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a8c35811bc1218577794b0320ff7740df}{IPAD\_AIR\_WIFI\_CDMA}},
+66     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a448de67eccb6fb2cb667da6836f59edb}{IPAD\_AIR\_2\_WIFI}},
+67     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6aaf6e21e19c261926b25ed94a09cd5742}{IPAD\_AIR\_2\_WIFI\_CELLULAR}},
+68 
+69     \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6a5cb482919e3998b2e07aefe149afd8f9}{SIMULATOR}}
+70   \};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_device_util_a0b41896ef1ac3277c1126341bee50d26}\label{class_device_util_a0b41896ef1ac3277c1126341bee50d26}} 
+\index{Device\+Util@{Device\+Util}!hardware\+Description@{hardware\+Description}}
+\index{hardware\+Description@{hardware\+Description}!Device\+Util@{Device\+Util}}
+\subsubsection{\texorpdfstring{hardware\+Description()}{hardwareDescription()}}
+{\footnotesize\ttfamily static std\+::string Device\+Util\+::hardware\+Description (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_device_util_aeacce8246f59676945b5f1914a08fb4a}\label{class_device_util_aeacce8246f59676945b5f1914a08fb4a}} 
+\index{Device\+Util@{Device\+Util}!hardware\+Id@{hardware\+Id}}
+\index{hardware\+Id@{hardware\+Id}!Device\+Util@{Device\+Util}}
+\subsubsection{\texorpdfstring{hardware\+Id()}{hardwareId()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_device_util_a45e0ab9d49e3a0583798709c4613d9b6}{Hardware\+Id}} Device\+Util\+::hardware\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_device_util_a169613511f0399d3e0d1b3d8674808ba}\label{class_device_util_a169613511f0399d3e0d1b3d8674808ba}} 
+\index{Device\+Util@{Device\+Util}!hardware\+String@{hardware\+String}}
+\index{hardware\+String@{hardware\+String}!Device\+Util@{Device\+Util}}
+\subsubsection{\texorpdfstring{hardware\+String()}{hardwareString()}}
+{\footnotesize\ttfamily static std\+::string Device\+Util\+::hardware\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/platform/\mbox{\hyperlink{_device_util_8h}{Device\+Util.\+h}}\end{DoxyCompactItemize}

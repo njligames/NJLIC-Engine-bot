@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="easylogger_8h" kind="file" language="C++">
+    <compoundname>easylogger.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">sstream</includes>
+    <includes local="no">string</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">ctime</includes>
+    <includes local="no">map</includes>
+    <incdepgraph>
+      <node id="4918">
+        <label>string</label>
+      </node>
+      <node id="4921">
+        <label>map</label>
+      </node>
+      <node id="4920">
+        <label>ctime</label>
+      </node>
+      <node id="4917">
+        <label>sstream</label>
+      </node>
+      <node id="4919">
+        <label>cstdlib</label>
+      </node>
+      <node id="4916">
+        <label>iostream</label>
+      </node>
+      <node id="4915">
+        <label>njligames-njlic_engine/njli/platform/easylogger.h</label>
+        <link refid="easylogger_8h"/>
+        <childnode refid="4916" relation="include">
+        </childnode>
+        <childnode refid="4917" relation="include">
+        </childnode>
+        <childnode refid="4918" relation="include">
+        </childnode>
+        <childnode refid="4919" relation="include">
+        </childnode>
+        <childnode refid="4920" relation="include">
+        </childnode>
+        <childnode refid="4921" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classeasylogger_1_1__private_1_1_log_sink" prot="public">easylogger::_private::LogSink</innerclass>
+    <innerclass refid="classeasylogger_1_1_logger" prot="public">easylogger::Logger</innerclass>
+    <innernamespace refid="namespaceeasylogger">easylogger</innernamespace>
+    <innernamespace refid="namespaceeasylogger_1_1__private">easylogger::_private</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="easylogger_8h_1afb6571d7648f15e63bddc3b877a87ba4" prot="public" static="no">
+        <name>EASYLOGGER_LOGSINK_H</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="357" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="357" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" prot="public" static="no">
+        <name>_EASY_LOG</name>
+        <param><defname>logger</defname></param>
+        <param><defname>level</defname></param>
+        <param><defname>message</defname></param>
+        <initializer>do{ \
+if ((logger).IsLevel((level))) { \
+do { \
+::<ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">easylogger::_private::LogSink</ref> _easy_sink((logger).Log(level, __FILE__, __LINE__, __PRETTY_FUNCTION__)); \
+_easy_sink &lt;&lt; message; \
+} while(0); \
+if ((level) == ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" kindref="member">easylogger::LEVEL_FATAL</ref>) { \
+(logger).Flush(); \
+std::abort(); \
+} \
+} \
+}while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>General logging helper </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="385" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1ad10e813294614a8850fd241db5bcd653" prot="public" static="no">
+        <name>LOG_TRACE</name>
+        <param><defname>logger</defname></param>
+        <param><defname>message</defname></param>
+        <initializer><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger), ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e" kindref="member">easylogger::LEVEL_TRACE</ref>, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="420" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1adb268ee8276a4b312d31ed9db04e9926" prot="public" static="no">
+        <name>LOG_DEBUG</name>
+        <param><defname>logger</defname></param>
+        <param><defname>message</defname></param>
+        <initializer><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger), ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f" kindref="member">easylogger::LEVEL_DEBUG</ref>, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="421" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1a0c30634de010bc24deacc2cb5a123bec" prot="public" static="no">
+        <name>LOG_INFO</name>
+        <param><defname>logger</defname></param>
+        <param><defname>message</defname></param>
+        <initializer><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger), ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" kindref="member">easylogger::LEVEL_INFO</ref>, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="422" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1a32705d9b1868f3dc5918d6af2f45575a" prot="public" static="no">
+        <name>LOG_WARNING</name>
+        <param><defname>logger</defname></param>
+        <param><defname>message</defname></param>
+        <initializer><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger), ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571" kindref="member">easylogger::LEVEL_WARNING</ref>, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="423" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="423" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1ab3dff3a4b05f59968670e28caf19134b" prot="public" static="no">
+        <name>LOG_ERROR</name>
+        <param><defname>logger</defname></param>
+        <param><defname>message</defname></param>
+        <initializer><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger), ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245" kindref="member">easylogger::LEVEL_ERROR</ref>, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="424" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="easylogger_8h_1a5eb2cc752383b4ac1bb2eb9e1109ce7a" prot="public" static="no">
+        <name>LOG_FATAL</name>
+        <param><defname>logger</defname></param>
+        <param><defname>message</defname></param>
+        <initializer><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger), ::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" kindref="member">easylogger::LEVEL_FATAL</ref>, message)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="425" column="9" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="easylogger_8h_1abc9dffd7ca03c110900fdb1e7426fb6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>::<ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">easylogger::_private::LogSink</ref> &amp;</type>
+        <definition>::easylogger::_private::LogSink&amp; operator&lt;&lt;</definition>
+        <argsstring>(::easylogger::_private::LogSink &amp;sink, const T &amp;val)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>::<ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">easylogger::_private::LogSink</ref> &amp;</type>
+          <declname>sink</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+<para>Stream operator for LogSink. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/platform/easylogger.h" line="369" column="1" bodyfile="njligames-njlic_engine/njli/platform/easylogger.h" bodystart="370" bodyend="373"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(EASYLOGGER_H)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EASYLOGGER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctime&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="namespaceeasylogger" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceeasylogger" kindref="compound">easylogger</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceeasylogger" kindref="compound">easylogger</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>{</highlight></codeline>
+<codeline lineno="30" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e" kindref="member">LEVEL_TRACE</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f" kindref="member">LEVEL_DEBUG</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" kindref="member">LEVEL_INFO</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571" kindref="member">LEVEL_WARNING</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245" kindref="member">LEVEL_ERROR</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35" refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" kindref="member">LEVEL_FATAL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40" refid="namespaceeasylogger_1_1__private" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">_private<sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45" refid="classeasylogger_1_1__private_1_1_log_sink" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">LogSink</ref><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="54" refid="classeasylogger_1_1__private_1_1_log_sink_1a3b9242d120d168d80ec77d4941588a6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a3b9242d120d168d80ec77d4941588a6e" kindref="member">LogSink</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>*<sp/>logger,<sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func)<sp/>:<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a60f3bf0555fd5c7d97b27749d87f125b" kindref="member">_logger</ref>(logger),</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa95e04bfd9dddc7bb38fcfb9b2033d91" kindref="member">_level</ref>(level),<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a9496a68363124d15396253627d2702bb" kindref="member">_file</ref>(file),<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a66cce9a59d42737916fba00a549fd4ef" kindref="member">_line</ref>(line),<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a147321aae0346917642528aa81aedf32" kindref="member">_func</ref>(func)<sp/>{}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61" refid="classeasylogger_1_1__private_1_1_log_sink_1a2f7f651290b941c6fe13f2357854a3c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a2f7f651290b941c6fe13f2357854a3c3" kindref="member">LogSink</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">LogSink</ref>&amp;<sp/>sink)<sp/>:<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a60f3bf0555fd5c7d97b27749d87f125b" kindref="member">_logger</ref>(sink.<ref refid="classeasylogger_1_1__private_1_1_log_sink_1a60f3bf0555fd5c7d97b27749d87f125b" kindref="member">_logger</ref>),</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa95e04bfd9dddc7bb38fcfb9b2033d91" kindref="member">_level</ref>(sink.<ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa95e04bfd9dddc7bb38fcfb9b2033d91" kindref="member">_level</ref>),<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a9496a68363124d15396253627d2702bb" kindref="member">_file</ref>(sink.<ref refid="classeasylogger_1_1__private_1_1_log_sink_1a9496a68363124d15396253627d2702bb" kindref="member">_file</ref>),<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a66cce9a59d42737916fba00a549fd4ef" kindref="member">_line</ref>(sink.<ref refid="classeasylogger_1_1__private_1_1_log_sink_1a66cce9a59d42737916fba00a549fd4ef" kindref="member">_line</ref>),</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a147321aae0346917642528aa81aedf32" kindref="member">_func</ref>(sink.<ref refid="classeasylogger_1_1__private_1_1_log_sink_1a147321aae0346917642528aa81aedf32" kindref="member">_func</ref>)<sp/>{}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="68" refid="classeasylogger_1_1__private_1_1_log_sink_1a6d6aa70a384a424a1c566320bf1cdcdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::ostream&amp;<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a6d6aa70a384a424a1c566320bf1cdcdf" kindref="member">Stream</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa75fd29fc9b5f119faf3cf98972c7992" kindref="member">_os</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a73dbb1df32e0ec8b6c6def939cae7b5c" kindref="member">~LogSink</ref>();</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75" refid="classeasylogger_1_1__private_1_1_log_sink_1a00fcf48f0e15153d33f05822f3ca006d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a00fcf48f0e15153d33f05822f3ca006d" kindref="member">Level</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa95e04bfd9dddc7bb38fcfb9b2033d91" kindref="member">_level</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="78" refid="classeasylogger_1_1__private_1_1_log_sink_1aa75fd29fc9b5f119faf3cf98972c7992" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::ostringstream<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa75fd29fc9b5f119faf3cf98972c7992" kindref="member">_os</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="80" refid="classeasylogger_1_1__private_1_1_log_sink_1a60f3bf0555fd5c7d97b27749d87f125b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>*<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a60f3bf0555fd5c7d97b27749d87f125b" kindref="member">_logger</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82" refid="classeasylogger_1_1__private_1_1_log_sink_1aa95e04bfd9dddc7bb38fcfb9b2033d91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1aa95e04bfd9dddc7bb38fcfb9b2033d91" kindref="member">_level</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84" refid="classeasylogger_1_1__private_1_1_log_sink_1a9496a68363124d15396253627d2702bb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a9496a68363124d15396253627d2702bb" kindref="member">_file</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86" refid="classeasylogger_1_1__private_1_1_log_sink_1a66cce9a59d42737916fba00a549fd4ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a66cce9a59d42737916fba00a549fd4ef" kindref="member">_line</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="88" refid="classeasylogger_1_1__private_1_1_log_sink_1a147321aae0346917642528aa81aedf32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink_1a147321aae0346917642528aa81aedf32" kindref="member">_func</ref>;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>_private</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94" refid="classeasylogger_1_1_logger" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a8c5b5637694907e900012d300bf23033" kindref="member">Logger</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a8c5b5637694907e900012d300bf23033" kindref="member">Logger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref><sp/>&amp;rhs);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="102" refid="classeasylogger_1_1_logger_1a2cb8c991ae2c651f18d3c4d7ded9b3e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a2cb8c991ae2c651f18d3c4d7ded9b3e9" kindref="member">Logger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name)<sp/>:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" kindref="member">_name</ref>(name),</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" kindref="member">_parent</ref>(0),</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" kindref="member">_level</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" kindref="member">LEVEL_INFO</ref>),</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" kindref="member">_format</ref>(</highlight><highlight class="stringliteral">&quot;[%F:%C<sp/>%P]<sp/>%N<sp/>%L:<sp/>%S&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" kindref="member">_timeFormat</ref>(</highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05" kindref="member">AddStream</ref>(</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">,<sp/>::std::cout);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="115" refid="classeasylogger_1_1_logger_1ad0895803e8ba35e55acd32b3a1572526" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1ad0895803e8ba35e55acd32b3a1572526" kindref="member">Logger</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>&amp;<sp/>parent)<sp/>:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" kindref="member">_name</ref>(name),</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" kindref="member">_parent</ref>(&amp;parent),</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" kindref="member">_level</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" kindref="member">LEVEL_INFO</ref>),</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" kindref="member">_format</ref>(</highlight><highlight class="stringliteral">&quot;[%F:%C<sp/>%P]<sp/>%N<sp/>%L:<sp/>%S&quot;</highlight><highlight class="normal">),</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" kindref="member">_timeFormat</ref>(</highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05" kindref="member">AddStream</ref>(</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">,<sp/>::std::cout);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="124" refid="classeasylogger_1_1_logger_1a2e3ab6ee87be3ac9b44857972dcd411f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a2e3ab6ee87be3ac9b44857972dcd411f" kindref="member">~Logger</ref>()<sp/>{<ref refid="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0" kindref="member">Flush</ref>();}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="129" refid="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>::std::string&amp;<sp/><ref refid="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0" kindref="member">Name</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" kindref="member">_name</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="134" refid="classeasylogger_1_1_logger_1a350e161f9afb8a6dd764b297aa0baf93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/><ref refid="classeasylogger_1_1_logger_1a350e161f9afb8a6dd764b297aa0baf93" kindref="member">Level</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" kindref="member">_level</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="139" refid="classeasylogger_1_1_logger_1a66ab7ca8dbdfcdeda3395bc39efc8c1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/><ref refid="classeasylogger_1_1_logger_1a66ab7ca8dbdfcdeda3395bc39efc8c1c" kindref="member">Level</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>level)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" kindref="member">_level</ref><sp/>=<sp/>level;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="152" refid="classeasylogger_1_1_logger_1a51a95dca60052b6d2f16bb0f0da7fe45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a51a95dca60052b6d2f16bb0f0da7fe45" kindref="member">IsLevel</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>level)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" kindref="member">_level</ref><sp/>&lt;=<sp/>level;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="164" refid="classeasylogger_1_1_logger_1abbf5fd5ac40a75ed8303e520d99c9b81" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">_private::LogSink</ref><sp/><ref refid="classeasylogger_1_1_logger_1abbf5fd5ac40a75ed8303e520d99c9b81" kindref="member">Log</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">_private::LogSink</ref>(</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>level,<sp/>file,<sp/>line,<sp/>func);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169" refid="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a12a61baa5ec56a9150a41104a34f0b05" kindref="member">AddStream</ref>(const<sp/>::std::string<sp/>&amp;name,<sp/>::std::ostream&amp;<sp/>stream)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.insert(<ref refid="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95" kindref="member">StreamPair</ref>(name,<sp/>&amp;stream)).second;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="174" refid="classeasylogger_1_1_logger_1a5fbcc23c2e8defc0862d48844703cdd2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a5fbcc23c2e8defc0862d48844703cdd2" kindref="member">RemoveStream</ref>(const<sp/>::std::string<sp/>&amp;name)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.erase(<ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.find(name))<sp/>!=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.end());</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="179" refid="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::ostream*<sp/><ref refid="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba" kindref="member">GetStream</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;name)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>search<sp/>=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.find(name);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(search<sp/>!=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.end())</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(search-&gt;second<sp/>!=<sp/>0)?search-&gt;second:<ref refid="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" kindref="member">_parent</ref>-&gt;<ref refid="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba" kindref="member">GetStream</ref>(name);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="192" refid="classeasylogger_1_1_logger_1a5289aa36c7ae745fa960af5b59a6ed54" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>::std::string&amp;<sp/><ref refid="classeasylogger_1_1_logger_1a5289aa36c7ae745fa960af5b59a6ed54" kindref="member">Format</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" kindref="member">_format</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="197" refid="classeasylogger_1_1_logger_1ae4f6966ba512d06584b83118909a2f73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>::std::string&amp;<sp/><ref refid="classeasylogger_1_1_logger_1ae4f6966ba512d06584b83118909a2f73" kindref="member">TimeFormat</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" kindref="member">_timeFormat</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="203" refid="classeasylogger_1_1_logger_1ab9395d1199d0ef5539f14552834d42a7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>::std::string&amp;<sp/><ref refid="classeasylogger_1_1_logger_1ab9395d1199d0ef5539f14552834d42a7" kindref="member">Format</ref>(const<sp/>::std::string&amp;<sp/>format)<sp/>{</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" kindref="member">_format</ref><sp/>=<sp/>format;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211" refid="classeasylogger_1_1_logger_1a0b0ff3f703f2e6c04e86e8877d5a906c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>const<sp/>::std::string&amp;<sp/><ref refid="classeasylogger_1_1_logger_1a0b0ff3f703f2e6c04e86e8877d5a906c" kindref="member">TimeFormat</ref>(const<sp/>::std::string&amp;<sp/>format)<sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" kindref="member">_timeFormat</ref><sp/>=<sp/>format;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="216" refid="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1ae5f1bdb76764e5cb673d27bead3f84b0" kindref="member">Flush</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(StreamMap::iterator<sp/>i<sp/>=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.begin();<sp/>i<sp/>!=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.end();<sp/>i++)</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i-&gt;second)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i-&gt;second-&gt;flush();</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="226" refid="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce" kindref="member">Now</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>format<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::time_t<sp/>t<sp/>=<sp/>std::time(0)<sp/>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cstr[128]<sp/>;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::strftime(<sp/>cstr,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(cstr),<sp/>format,<sp/>std::localtime(&amp;t)<sp/>)<sp/>;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cstr<sp/>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244" refid="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5" kindref="member">WriteLog</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>level,<sp/><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>*<sp/>logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message)<sp/>{</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.size()<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(StreamMap::iterator<sp/>i<sp/>=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.begin();</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i<sp/>!=<sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>.end();</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++i)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::ostream<sp/>*stream<sp/>=<sp/><ref refid="classeasylogger_1_1_logger_1ac4a1ce9232d6c0c7ec7668957d4a35ba" kindref="member">GetStream</ref>(i-&gt;first);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classeasylogger_1_1_logger_1ac0e7b45cf7f2ce015fd4b510a76bd5b5" kindref="member">WriteLog</ref>(level,<sp/>logger,<sp/>file,<sp/>line,<sp/>func,<sp/>message,<sp/>stream);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="269" refid="classeasylogger_1_1_logger_1a2d09f2ce77a5eb571fb3436967651a12" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classeasylogger_1_1_logger_1a2d09f2ce77a5eb571fb3436967651a12" kindref="member">WriteLog</ref>(<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/>level,<sp/><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>*<sp/>logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>file,</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>line,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>func,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>message,<sp/>::std::ostream<sp/>*stream){</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(stream<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>cptr<sp/>=<sp/><ref refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" kindref="member">_format</ref>.c_str();</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(*cptr<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*cptr<sp/>==<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(*++cptr)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%<sp/>at<sp/>end<sp/>of<sp/>stream</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>::std::endl;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%%<sp/>-<sp/>literal<sp/>escape</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;%&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%F<sp/>-<sp/>file<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;file://&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>file;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%C<sp/>-<sp/>line<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;C&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(line<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/>line;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;?&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%P<sp/>-<sp/>function<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;P&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/>func;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%N<sp/>-<sp/>logger<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/>logger-&gt;<ref refid="classeasylogger_1_1_logger_1af4c45483c08f4a44ffaff4e86b7012b0" kindref="member">Name</ref>();</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%L<sp/>-<sp/>log<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;L&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(level)<sp/>{</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e" kindref="member">LEVEL_TRACE</ref>:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;TRACE&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f" kindref="member">LEVEL_DEBUG</ref>:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;DEBUG&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" kindref="member">LEVEL_INFO</ref>:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;INFO&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571" kindref="member">LEVEL_WARNING</ref>:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;WARNING&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245" kindref="member">LEVEL_ERROR</ref>:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;ERROR&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" kindref="member">LEVEL_FATAL</ref>:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;FATAL&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:<sp/>*stream<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;UNKNOWN&quot;</highlight><highlight class="normal">;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%M<sp/>-<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/>message;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>%T<sp/>-<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;T&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/><ref refid="classeasylogger_1_1_logger_1abee0060678a306c347edf917c311dfce" kindref="member">Now</ref>(<ref refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" kindref="member">_timeFormat</ref>.c_str());</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/>*cptr;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++cptr;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*stream<sp/>&lt;&lt;<sp/>::std::endl;</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="338" refid="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::string<sp/><ref refid="classeasylogger_1_1_logger_1a3055e76f000f45c8db2b5390776bc131" kindref="member">_name</ref>;</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="340" refid="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger" kindref="compound">Logger</ref>*<sp/><ref refid="classeasylogger_1_1_logger_1a83412985aecf3bc456c78a0b1425af85" kindref="member">_parent</ref>;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="342" refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">LogLevel</ref><sp/><ref refid="classeasylogger_1_1_logger_1a123849db1e8dd97fa7e0eeedc4bcb747" kindref="member">_level</ref>;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="344" refid="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>::std::map&lt;std::string,<sp/>::std::ostream*&gt;<sp/><ref refid="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd" kindref="member">StreamMap</ref>;</highlight></codeline>
+<codeline lineno="345" refid="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>typedef<sp/>::std::pair&lt;std::string,<sp/>std::ostream*&gt;<sp/><ref refid="classeasylogger_1_1_logger_1a8c37cd26d5210c8ede4cd355a6bceb95" kindref="member">StreamPair</ref>;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="347" refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1_logger_1a27625e597ce11062ffd04fc8ca5154cd" kindref="member">StreamMap</ref><sp/><ref refid="classeasylogger_1_1_logger_1a9290bed24c12786abef2c421158268f8" kindref="member">_streamMap</ref>;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="349" refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::string<sp/><ref refid="classeasylogger_1_1_logger_1ab45891277952285a459ec39a03a91226" kindref="member">_format</ref>;</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="351" refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::string<sp/><ref refid="classeasylogger_1_1_logger_1a692cc5f57c16a7399d5630b1623bd613" kindref="member">_timeFormat</ref>=</highlight><highlight class="stringliteral">&quot;%c&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="353" refid="classeasylogger_1_1_logger_1a27353f6b5bf33ecd1b185b743973fb72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">_private::LogSink</ref>;</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(EASYLOGGER_LOGSINK_H)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357" refid="easylogger_8h_1afb6571d7648f15e63bddc3b877a87ba4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EASYLOGGER_LOGSINK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>namespace<sp/>_private<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_private::LogSink::~LogSink()<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_logger-&gt;WriteLog(Level(),<sp/>_logger,<sp/>_file,<sp/>_line,<sp/>_func,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_os.str().c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="366"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>easylogger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="370" refid="easylogger_8h_1abc9dffd7ca03c110900fdb1e7426fb6f" refkind="member"><highlight class="normal"><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">::easylogger::_private::LogSink</ref>&amp;<sp/><ref refid="easylogger_8h_1abc9dffd7ca03c110900fdb1e7426fb6f" kindref="member">operator&lt;&lt;</ref>(::<ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">easylogger::_private::LogSink</ref>&amp;<sp/>sink,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>sink.<ref refid="classeasylogger_1_1__private_1_1_log_sink_1a6d6aa70a384a424a1c566320bf1cdcdf" kindref="member">Stream</ref>()<sp/>&lt;&lt;<sp/>val;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sink;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>DEBUG_LOG_FUNCTIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>DEBUG_LOG_FUNCTIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="preprocessor">#if<sp/>!defined(DEBUG_LOG_FUNCTIONS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385" refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_EASY_LOG(logger,<sp/>level,<sp/>message)<sp/>do{<sp/>\</highlight></codeline>
+<codeline lineno="386"><highlight class="preprocessor">if<sp/>((logger).IsLevel((level)))<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="387"><highlight class="preprocessor">do<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="388"><highlight class="preprocessor">::easylogger::_private::LogSink<sp/>_easy_sink((logger).Log(level,<sp/>__FILE__,<sp/>__LINE__,<sp/>__PRETTY_FUNCTION__));<sp/>\</highlight></codeline>
+<codeline lineno="389"><highlight class="preprocessor">_easy_sink<sp/>&lt;&lt;<sp/>message;<sp/>\</highlight></codeline>
+<codeline lineno="390"><highlight class="preprocessor">}<sp/>while(0);<sp/>\</highlight></codeline>
+<codeline lineno="391"><highlight class="preprocessor">if<sp/>((level)<sp/>==<sp/>::easylogger::LEVEL_FATAL)<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="392"><highlight class="preprocessor">(logger).Flush();<sp/>\</highlight></codeline>
+<codeline lineno="393"><highlight class="preprocessor">std::abort();<sp/>\</highlight></codeline>
+<codeline lineno="394"><highlight class="preprocessor">}<sp/>\</highlight></codeline>
+<codeline lineno="395"><highlight class="preprocessor">}<sp/>\</highlight></codeline>
+<codeline lineno="396"><highlight class="preprocessor">}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="397"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="398"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0" kindref="member">easylogger::LogLevel</ref><sp/>level,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="399"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((logger).IsLevel((level)))</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classeasylogger_1_1__private_1_1_log_sink" kindref="compound">::easylogger::_private::LogSink</ref><sp/>_easy_sink((logger).Log(level,<sp/>__FILE__,<sp/>__LINE__,<sp/>__FUNCTION__));</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_easy_sink<sp/>&lt;&lt;<sp/>message;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(0);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((level)<sp/>==<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" kindref="member">easylogger::LEVEL_FATAL</ref>)</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(logger).Flush();</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::abort();</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(0);</highlight></codeline>
+<codeline lineno="416"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!defined(DEBUG_LOG_FUNCTIONS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="420" refid="easylogger_8h_1ad10e813294614a8850fd241db5bcd653" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_TRACE(logger,<sp/>message)<sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_TRACE,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421" refid="easylogger_8h_1adb268ee8276a4b312d31ed9db04e9926" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_DEBUG(logger,<sp/>message)<sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_DEBUG,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422" refid="easylogger_8h_1a0c30634de010bc24deacc2cb5a123bec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_INFO(logger,<sp/>message)<sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_INFO,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423" refid="easylogger_8h_1a32705d9b1868f3dc5918d6af2f45575a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_WARNING(logger,<sp/>message)<sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_WARNING,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="424" refid="easylogger_8h_1ab3dff3a4b05f59968670e28caf19134b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_ERROR(logger,<sp/>message)<sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_ERROR,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425" refid="easylogger_8h_1a5eb2cc752383b4ac1bb2eb9e1109ce7a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_FATAL(logger,<sp/>message)<sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_FATAL,<sp/>message)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1ad10e813294614a8850fd241db5bcd653" kindref="member">LOG_TRACE</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="428"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger),<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a2820ea169aea891644b08b235caac53e" kindref="member">easylogger::LEVEL_TRACE</ref>,<sp/>message);</highlight></codeline>
+<codeline lineno="430"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1adb268ee8276a4b312d31ed9db04e9926" kindref="member">LOG_DEBUG</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="433"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger),<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ac27a3104e9819d964346ff0c35d4ec9f" kindref="member">easylogger::LEVEL_DEBUG</ref>,<sp/>message);</highlight></codeline>
+<codeline lineno="435"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1a0c30634de010bc24deacc2cb5a123bec" kindref="member">LOG_INFO</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="438"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger),<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0a8149af81702a21899a109cf25d6bcf61" kindref="member">easylogger::LEVEL_INFO</ref>,<sp/>message);</highlight></codeline>
+<codeline lineno="440"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1a32705d9b1868f3dc5918d6af2f45575a" kindref="member">LOG_WARNING</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="443"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger),<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0adfc13211fa89ecd524f3d99796b81571" kindref="member">easylogger::LEVEL_WARNING</ref>,<sp/>message);</highlight></codeline>
+<codeline lineno="445"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1ab3dff3a4b05f59968670e28caf19134b" kindref="member">LOG_ERROR</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="448"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger),<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ab2ae9ec5d59b37d395bfa8d83d135245" kindref="member">easylogger::LEVEL_ERROR</ref>,<sp/>message);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="easylogger_8h_1a5eb2cc752383b4ac1bb2eb9e1109ce7a" kindref="member">LOG_FATAL</ref>(<ref refid="classeasylogger_1_1_logger" kindref="compound">easylogger:: Logger</ref><sp/>&amp;logger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;message)</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="easylogger_8h_1a872e0c2b8a887f8afb8491c36e155421" kindref="member">_EASY_LOG</ref>((logger),<sp/>::<ref refid="namespaceeasylogger_1a68cb882ead21af982c40e3621fcd50b0ad3f4aa5426450f9c171cb4c30a7f5ebb" kindref="member">easylogger::LEVEL_FATAL</ref>,<sp/>message);</highlight></codeline>
+<codeline lineno="455"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight><highlight class="comment">//#if<sp/>!defined(NDEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight><highlight class="comment">//#<sp/>define<sp/>ASSERT(logger,<sp/>expr,<sp/>msg)<sp/>do{<sp/>\</highlight></codeline>
+<codeline lineno="460"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>if<sp/>(!(expr))<sp/>{<sp/>\</highlight></codeline>
+<codeline lineno="461"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_EASY_LOG((logger),<sp/>::easylogger::LEVEL_FATAL,<sp/>&quot;ASSERTION<sp/>FAILED:<sp/>&quot;<sp/>#expr<sp/>&quot;:<sp/>&quot;<sp/>msg);<sp/>\</highlight></codeline>
+<codeline lineno="462"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>\</highlight></codeline>
+<codeline lineno="463"><highlight class="comment">//<sp/><sp/><sp/><sp/>}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight><highlight class="comment">//#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight><highlight class="comment">//#<sp/>define<sp/>ASSERT(logger,<sp/>expr,<sp/>msg)<sp/>do{<sp/>}while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="comment">//#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ASSERT_NOTNULL(logger,<sp/>expr,<sp/>msg)<sp/>ASSERT((logger),<sp/>(expr)<sp/>!=<sp/>NULL,<sp/>msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ASSERT_EQ(logger,<sp/>lhs,<sp/>rhs,<sp/>msg)<sp/>ASSERT((logger),<sp/>(lhs)<sp/>==<sp/>(rhs),<sp/>msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ASSERT_NE(logger,<sp/>lhs,<sp/>rhs,<sp/>msg)<sp/>ASSERT((logger),<sp/>(lhs)<sp/>!=<sp/>(rhs),<sp/>msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ASSERT_TRUE(logger,<sp/>expr,<sp/>msg)<sp/>ASSERT((logger),<sp/>(expr)<sp/>==<sp/>true,<sp/>msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ASSERT_FALSE(logger,<sp/>expr,<sp/>msg)<sp/>ASSERT((logger),<sp/>(expr)<sp/>==<sp/>false,<sp/>msg)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="474"><highlight class="normal"></highlight><highlight class="comment">//namespace<sp/>easylogger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>_private::LogSink::~LogSink()<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_logger-&gt;WriteLog(Level(),<sp/>_logger,<sp/>_file,<sp/>_line,<sp/>_func,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_os.str().c_str());</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/platform/easylogger.h"/>
+  </compounddef>
+</doxygen>

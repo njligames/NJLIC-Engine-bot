@@ -1,0 +1,2172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_world_lua_virtual_machine">
+<title>njli::WorldLuaVirtualMachine class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_world_lua_virtual_machine_8h">&lt;WorldLuaVirtualMachine.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::WorldLuaVirtualMachine</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_world_lua_virtual_machine__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::WorldLuaVirtualMachine</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_world_lua_virtual_machine__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Protected Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>lua_State * m_lua_State</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static std::string m_previousMessage</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static lua_State * globalL</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_world_lua_virtual_machine_1aa8699ef660c3378db4bfbcc1914fc95a">WorldLuaVirtualMachine</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_world_lua_virtual_machine_1a688270d6bda8e9da30ce87cdba0b83bd">~WorldLuaVirtualMachine</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_world_lua_virtual_machine_1a8c957eaa6dffc96baccfa2d02e3f9bcf">getClassName</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1a59bdb7db8ae46e9bac0f928cb5115499">getType</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_world_lua_virtual_machine_1a2103a96c08471f07dda2d3b118780018">operator std::string</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1a64ad43f3f5c5ce88f83a399116be7851">printStack</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1adc172de3b59b78472ff5867f5e16041c">loadFile</link> (
+const char * filePath)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1ab7d712b7c1b78da1f32e70791adc1ac2">loadString</link> (
+const char * code)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a859edc6a83d71fec3722ad76313eef43">doFile</link> (
+const char * filePath)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a56e072d74d6c9810533e395ae44ec49c">doString</link> (
+const char * code)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1a267ae71c6d3064e2baf0ac9e48e4ec24">reset</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a5d04b69a8ca98a5e77ec1a03abd6ece1">execute</link> (
+const char * code)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1af9efb7780458024e60c886b5c30cc594">execute</link> (
+const char * code, const char * str)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a1e20adef1ec977bc52e3343320ac7ff6">execute</link> (
+const char * code, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> num)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a8e4cfb46cfc326f39c95f87abf1ed570">execute</link> (
+const char * code, <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> num)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a063c843476fae634bfa3b37341bf6bc7">execute</link> (
+const char * code, const <link linkend="classnjli_1_1_telegram">Telegram</link> &amp; tele, bool &amp; b)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a2bf26f519cdd10cded878aeb2bdf1f98">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * scene)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1af9efd06a3f45642e82f7f5089518a4d1">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * scene, const char * str)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a6fa89f17cc97432e1bbbad2a94d93eb8">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * scene, <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> num)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a5f84df3f3b820cf49bd362285adb5d7c">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * scene, const <link linkend="classnjli_1_1_telegram">Telegram</link> &amp; tele, bool &amp; b)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1aeaf2624365c5c37dd5d90d7c9ab6d6a4">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * node)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1af224a80d62b53a01e22e64a9813af3c9">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * node, <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> num)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a1ffc2b1e696b6c1a2d5955eaeca22d48">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * node, const <link linkend="classnjli_1_1_telegram">Telegram</link> &amp; tele, bool &amp; b)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1aa8c117a3268c12bee71d31be64a877d9">execute</link> (
+const char * code, <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1afd80dd6a43e8f7579ee9cd91ab2dc5e2">execute</link> (
+const char * code, <link linkend="classnjli_1_1_device_key">DeviceKey</link> ** keys)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1ab0a3f94a9fe51d41d8c8cef35c6295e5">execute</link> (
+const char * code, const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1ae307c15aca8546f2df15a38514073b58">execute</link> (
+const char * code, const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1aae3f6a29e70b136722d01b316220bee8">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * pEntity, <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a2ea566a1d2d4ad3c6b817e5e2d408b8f">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * pEntity, const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a30f05b73d451fc58e5e64263a4de58f7">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * pEntity, const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a21227c3230633061ac2cc99a05c41e4e">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * node, <link linkend="classnjli_1_1_node">Node</link> * node2, const btManifoldPoint &amp; mani)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a2b0155a6ae5dc65eea24fef0bac79821">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * node, <link linkend="classnjli_1_1_node">Node</link> * node2, const btDispatcherInfo &amp; mani)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a0c9cac6960558de8c59c03f331c00afc">execute</link> (
+const char * code, const <link linkend="classnjli_1_1_physics_ray_contact">PhysicsRayContact</link> &amp; rayContact)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1af58e380cbfb31f9b0628dacbd528a10f">execute</link> (
+const char * code, const btAlignedObjectArray&lt; <link linkend="classnjli_1_1_physics_ray_contact">njli::PhysicsRayContact</link> *&gt; &amp; rayContacts)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a104f43ff49f5478040eb592686cca9fa">execute</link> (
+const char * code, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> width, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> height, <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> orientation)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a02bcf617fdf1b7958846e585e870506e">execute</link> (
+const char * code, <link linkend="classnjli_1_1_action">Action</link> * action)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a4fce503e637d2425c53e9e6afd486e02">execute</link> (
+const char * code, <link linkend="classnjli_1_1_action">Action</link> * action, <link linkend="_util_8h_1a5f6906312a689f27d70e9d086649d3fd">f32</link> num)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a177236bafc9183342e861ac9595c05be">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * pEntity, <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> ** touches)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a5482e7a538b9456f67d247df309093e9">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * pEntity, const <link linkend="classnjli_1_1_device_touch">DeviceTouch</link> &amp; touch)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a3e51d4df76d364b8affa254b1cce2ee6">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * pEntity, const <link linkend="classnjli_1_1_device_mouse">DeviceMouse</link> &amp; mouse)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1ad12a6636f0f41cdf9bff6b5db1862f8d">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * node, const char * str)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1ad0fbb36053be2f50906af392d3d3f378">execute</link> (
+const char * code, const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1ad08f708d623dbd72a3a57768c2857eaa">execute</link> (
+const char * code, <link linkend="classnjli_1_1_node">Node</link> * pEntity, const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a5a4a0d3957888c3095c691a7a4731599">execute</link> (
+const char * code, <link linkend="classnjli_1_1_scene">Scene</link> * pEntity, const char * keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double <link linkend="classnjli_1_1_world_lua_virtual_machine_1aec42f43252d57dc00fa8a40ea18ebdfc">getMaxNumber</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>double <link linkend="classnjli_1_1_world_lua_virtual_machine_1a4674a9aa6bfac9659dde91c205fe5f11">getMinNumber</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1adafe224987a62685972c4ee97a3e9ac4">compile</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1aa1e76cc8b225a56fc59f095ca08cedc5">compileString</link> (
+const char * code)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1a6a254a4bfca013863e429cc0189145c9">compileFile</link> (
+const char * filePath)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1af42ee292e12ae835a77eee13a1fb4c45">init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1af32f979aa34ff932fc1a358e3fcd44c0">unInit</link> (
+)<para><emphasis>&lt;#Description#&gt;</emphasis></para>
+</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_lua_virtual_machine_1aec9489519647fa9080f40a233ed03b70">error</link> (
+const char * description)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1a087eb5f8d9f51cc476f12f1d10a3cb95">setName</link> (
+const char * name)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>const char * <link linkend="classnjli_1_1_world_lua_virtual_machine_1ad41266885be835f3ee602311e20877a4">getName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1a3656304f995527d8888ad13d98770108">getError</link> (
+const char * code, int error)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_world_lua_virtual_machine_1ae1cb82578d5b11df857c605468bb539f">WorldLuaVirtualMachine</link> (
+const <link linkend="classnjli_1_1_world_lua_virtual_machine">WorldLuaVirtualMachine</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="classnjli_1_1_world_lua_virtual_machine">WorldLuaVirtualMachine</link> &amp; <link linkend="classnjli_1_1_world_lua_virtual_machine_1aad84aef1b87d168be779005926e412d7">operator=</link> (
+const <link linkend="classnjli_1_1_world_lua_virtual_machine">WorldLuaVirtualMachine</link> &amp; )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1abd4e5bf538e5f1a0ad8d6309b199d4a4">lstop</link> (
+lua_State * L, lua_Debug * ar)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1a84c29e3d8208c634419d1974c63ad245">laction</link> (
+int i)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="classnjli_1_1_world_lua_virtual_machine_1a3bf7729fa29a8e83715d34aa2332bdfd">msghandler</link> (
+lua_State * L)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static int <link linkend="classnjli_1_1_world_lua_virtual_machine_1a0a8abcf8b42eec41fa76dcaba191fbda">docall</link> (
+lua_State * L, int narg, int nres)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>static <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_lua_virtual_machine_1aec5b70c9d15f38ca79a5f2a803152196">l_message</link> (
+const char * pname, const char * msg)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+    <simplesect>
+
+<para>&lt;#Description#&gt; </para>
+    </simplesect>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aa8699ef660c3378db4bfbcc1914fc95a">
+                <title>njli::WorldLuaVirtualMachine::WorldLuaVirtualMachine ()</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:10 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a688270d6bda8e9da30ce87cdba0b83bd">
+                <title>virtual njli::WorldLuaVirtualMachine::~WorldLuaVirtualMachine ()</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:14</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a8c957eaa6dffc96baccfa2d02e3f9bcf">
+                <title>virtual const char* njli::WorldLuaVirtualMachine::getClassName () const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:17</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a59bdb7db8ae46e9bac0f928cb5115499">
+                <title>virtual s32 njli::WorldLuaVirtualMachine::getType () const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:21</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a2103a96c08471f07dda2d3b118780018">
+                <title>virtual njli::WorldLuaVirtualMachine::operator std::string () const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:24</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a64ad43f3f5c5ce88f83a399116be7851">
+                <title>void njli::WorldLuaVirtualMachine::printStack ()</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:30 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1adc172de3b59b78472ff5867f5e16041c">
+                <title>bool njli::WorldLuaVirtualMachine::loadFile (const char *filePath)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:33</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>filePath</entry>
+                                <entry>
+<para>&lt;#filePath description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ab7d712b7c1b78da1f32e70791adc1ac2">
+                <title>bool njli::WorldLuaVirtualMachine::loadString (const char *code)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:37</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a859edc6a83d71fec3722ad76313eef43">
+                <title>bool njli::WorldLuaVirtualMachine::doFile (const char *filePath)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:43</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>filePath</entry>
+                                <entry>
+<para>&lt;#filePath description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a56e072d74d6c9810533e395ae44ec49c">
+                <title>bool njli::WorldLuaVirtualMachine::doString (const char *code)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:46</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a267ae71c6d3064e2baf0ac9e48e4ec24">
+                <title>void njli::WorldLuaVirtualMachine::reset ()</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:48 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a5d04b69a8ca98a5e77ec1a03abd6ece1">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:53</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1af9efb7780458024e60c886b5c30cc594">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const char *str)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:57</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>str</entry>
+                                <entry>
+<para>&lt;#str description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a1e20adef1ec977bc52e3343320ac7ff6">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, s32 num)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:00</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>num</entry>
+                                <entry>
+<para>&lt;#num description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a8e4cfb46cfc326f39c95f87abf1ed570">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, f32 num)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:04</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>num</entry>
+                                <entry>
+<para>&lt;#num description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a063c843476fae634bfa3b37341bf6bc7">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const Telegram &amp;tele, bool &amp;b)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:10</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>tele</entry>
+                                <entry>
+<para>&lt;#tele description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>&lt;#b description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a2bf26f519cdd10cded878aeb2bdf1f98">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *scene)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:15</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scene</entry>
+                                <entry>
+<para>&lt;#scene description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1af9efd06a3f45642e82f7f5089518a4d1">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *scene, const char *str)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scene</entry>
+                                <entry>
+<para>&lt;#scene description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>str</entry>
+                                <entry>
+<para>&lt;#str description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a6fa89f17cc97432e1bbbad2a94d93eb8">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *scene, f32 num)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:19</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scene</entry>
+                                <entry>
+<para>&lt;#scene description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>num</entry>
+                                <entry>
+<para>&lt;#num description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a5f84df3f3b820cf49bd362285adb5d7c">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *scene, const Telegram &amp;tele, bool &amp;b)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:23</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scene</entry>
+                                <entry>
+<para>&lt;#scene description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>tele</entry>
+                                <entry>
+<para>&lt;#tele description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>&lt;#b description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aeaf2624365c5c37dd5d90d7c9ab6d6a4">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *node)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:28</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1af224a80d62b53a01e22e64a9813af3c9">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *node, f32 num)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:31</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>num</entry>
+                                <entry>
+<para>&lt;#num description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a1ffc2b1e696b6c1a2d5955eaeca22d48">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *node, const Telegram &amp;tele, bool &amp;b)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:35</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>tele</entry>
+                                <entry>
+<para>&lt;#tele description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>b</entry>
+                                <entry>
+<para>&lt;#b description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aa8c117a3268c12bee71d31be64a877d9">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1afd80dd6a43e8f7579ee9cd91ab2dc5e2">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, DeviceKey **keys)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ab0a3f94a9fe51d41d8c8cef35c6295e5">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ae307c15aca8546f2df15a38514073b58">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const DeviceMouse &amp;mouse)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mouse</entry>
+                                <entry>
+<para>&lt;#mouse description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aae3f6a29e70b136722d01b316220bee8">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *pEntity, DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pEntity</entry>
+                                <entry>
+<para>&lt;#pEntity description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a2ea566a1d2d4ad3c6b817e5e2d408b8f">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *pEntity, const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pEntity</entry>
+                                <entry>
+<para>&lt;#pEntity description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a30f05b73d451fc58e5e64263a4de58f7">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *pEntity, const DeviceMouse &amp;mouse)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pEntity</entry>
+                                <entry>
+<para>&lt;#pEntity description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mouse</entry>
+                                <entry>
+<para>&lt;#mouse description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a21227c3230633061ac2cc99a05c41e4e">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *node, Node *node2, const btManifoldPoint &amp;mani)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:43</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node2</entry>
+                                <entry>
+<para>&lt;#node2 description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mani</entry>
+                                <entry>
+<para>&lt;#mani description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a2b0155a6ae5dc65eea24fef0bac79821">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *node, Node *node2, const btDispatcherInfo &amp;mani)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:47</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node2</entry>
+                                <entry>
+<para>&lt;#node2 description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mani</entry>
+                                <entry>
+<para>&lt;#mani description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a0c9cac6960558de8c59c03f331c00afc">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const PhysicsRayContact &amp;rayContact)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:51</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>rayContact</entry>
+                                <entry>
+<para>&lt;#rayContact description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1af58e380cbfb31f9b0628dacbd528a10f">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const btAlignedObjectArray&lt; njli::PhysicsRayContact *&gt; &amp;rayContacts)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:55</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>rayContacts</entry>
+                                <entry>
+<para>&lt;#rayContacts description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a104f43ff49f5478040eb592686cca9fa">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, s32 width, s32 height, s32 orientation)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a02bcf617fdf1b7958846e585e870506e">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Action *action)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:58</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>action</entry>
+                                <entry>
+<para>&lt;#action description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a4fce503e637d2425c53e9e6afd486e02">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Action *action, f32 num)</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:02</para>
+</formalpara>
+
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>action</entry>
+                                <entry>
+<para>&lt;#action description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>num</entry>
+                                <entry>
+<para>&lt;#num description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a177236bafc9183342e861ac9595c05be">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *pEntity, DeviceTouch **touches)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pEntity</entry>
+                                <entry>
+<para>&lt;#pEntity description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>touches</entry>
+                                <entry>
+<para>&lt;#touches description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a5482e7a538b9456f67d247df309093e9">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *pEntity, const DeviceTouch &amp;touch)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pEntity</entry>
+                                <entry>
+<para>&lt;#pEntity description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>touch</entry>
+                                <entry>
+<para>&lt;#touch description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a3e51d4df76d364b8affa254b1cce2ee6">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *pEntity, const DeviceMouse &amp;mouse)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pEntity</entry>
+                                <entry>
+<para>&lt;#pEntity description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>mouse</entry>
+                                <entry>
+<para>&lt;#mouse description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ad12a6636f0f41cdf9bff6b5db1862f8d">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *node, const char *str)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>code</entry>
+                                <entry>
+<para>&lt;#code description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>node</entry>
+                                <entry>
+<para>&lt;#node description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>str</entry>
+                                <entry>
+<para>&lt;#str description#&gt;</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                <formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ad0fbb36053be2f50906af392d3d3f378">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ad08f708d623dbd72a3a57768c2857eaa">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Node *pEntity, const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a5a4a0d3957888c3095c691a7a4731599">
+                <title>bool njli::WorldLuaVirtualMachine::execute (const char *code, Scene *pEntity, const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aec42f43252d57dc00fa8a40ea18ebdfc">
+                <title>double njli::WorldLuaVirtualMachine::getMaxNumber () const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:04</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a4674a9aa6bfac9659dde91c205fe5f11">
+                <title>double njli::WorldLuaVirtualMachine::getMinNumber () const</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:07</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1adafe224987a62685972c4ee97a3e9ac4">
+                <title>bool njli::WorldLuaVirtualMachine::compile ()</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:10</para>
+</formalpara>
+<formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aa1e76cc8b225a56fc59f095ca08cedc5">
+                <title>bool njli::WorldLuaVirtualMachine::compileString (const char *code)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a6a254a4bfca013863e429cc0189145c9">
+                <title>bool njli::WorldLuaVirtualMachine::compileFile (const char *filePath)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1af42ee292e12ae835a77eee13a1fb4c45">
+                <title>void njli::WorldLuaVirtualMachine::init ()</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><itemizedlist>
+<listitem>
+<para>returns: &lt;#return value description#&gt; </para>
+</listitem></itemizedlist>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1af32f979aa34ff932fc1a358e3fcd44c0">
+                <title>void njli::WorldLuaVirtualMachine::unInit ()</title> <emphasis>&lt;#Description#&gt;</emphasis>
+                
+<para><formalpara><title>Author: </title>
+
+<para>James Folk, 16-02-11 18:02:16 </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aec9489519647fa9080f40a233ed03b70">
+                <title>bool njli::WorldLuaVirtualMachine::error (const char *description)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a087eb5f8d9f51cc476f12f1d10a3cb95">
+                <title>void njli::AbstractDecorator::setName (const char *name)</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>name</entry>
+                                <entry>
+<para>&lt;#name description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ad41266885be835f3ee602311e20877a4">
+                <title>const char* njli::AbstractDecorator::getName () const</title> <emphasis></emphasis>
+                
+<para>&lt;#Description#&gt;</para>
+
+<para><formalpara><title>Returns: </title>
+
+<para>&lt;#return value description#&gt; </para>
+</formalpara>
+</para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a3656304f995527d8888ad13d98770108">
+                <title>void njli::WorldLuaVirtualMachine::getError (const char *code, int error)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1ae1cb82578d5b11df857c605468bb539f">
+                <title>njli::WorldLuaVirtualMachine::WorldLuaVirtualMachine (const WorldLuaVirtualMachine &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aad84aef1b87d168be779005926e412d7">
+                <title>WorldLuaVirtualMachine&amp; njli::WorldLuaVirtualMachine::operator= (const WorldLuaVirtualMachine &amp;)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1abd4e5bf538e5f1a0ad8d6309b199d4a4">
+                <title>static void njli::WorldLuaVirtualMachine::lstop (lua_State *L, lua_Debug *ar)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a84c29e3d8208c634419d1974c63ad245">
+                <title>static void njli::WorldLuaVirtualMachine::laction (int i)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a3bf7729fa29a8e83715d34aa2332bdfd">
+                <title>static int njli::WorldLuaVirtualMachine::msghandler (lua_State *L)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1a0a8abcf8b42eec41fa76dcaba191fbda">
+                <title>static int njli::WorldLuaVirtualMachine::docall (lua_State *L, int narg, int nres)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_lua_virtual_machine_1aec5b70c9d15f38ca79a5f2a803152196">
+                <title>static void njli::WorldLuaVirtualMachine::l_message (const char *pname, const char *msg)</title> <emphasis></emphasis>
+                
+            </section>
+</section>

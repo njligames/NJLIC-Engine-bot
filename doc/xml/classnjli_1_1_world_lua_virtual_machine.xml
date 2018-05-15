@@ -1,0 +1,2168 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_world_lua_virtual_machine" kind="class" language="C++" prot="public">
+    <compoundname>njli::WorldLuaVirtualMachine</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_object" prot="public" virt="non-virtual">njli::AbstractObject</basecompoundref>
+    <includes refid="_world_lua_virtual_machine_8h" local="no">WorldLuaVirtualMachine.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_lua_virtual_machine_1abe1c0bd72cd6dc032a3c52886bf3f920" prot="protected" static="no" mutable="no">
+        <type>lua_State *</type>
+        <definition>lua_State* njli::WorldLuaVirtualMachine::m_lua_State</definition>
+        <argsstring></argsstring>
+        <name>m_lua_State</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="541" column="1" bodyfile="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" bodystart="541" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_world_lua_virtual_machine_1ac786f57d118424a273a1e04f9a0d6c53" prot="private" static="yes" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::WorldLuaVirtualMachine::m_previousMessage</definition>
+        <argsstring></argsstring>
+        <name>m_previousMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="556" column="1" bodyfile="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" bodystart="556" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_world_lua_virtual_machine_1a510bd0513272a37d5837555719f658de" prot="private" static="yes" mutable="no">
+        <type>lua_State *</type>
+        <definition>lua_State* njli::WorldLuaVirtualMachine::globalL</definition>
+        <argsstring></argsstring>
+        <name>globalL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="557" column="1" bodyfile="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aa8699ef660c3378db4bfbcc1914fc95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldLuaVirtualMachine::WorldLuaVirtualMachine</definition>
+        <argsstring>()</argsstring>
+        <name>WorldLuaVirtualMachine</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:10 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a688270d6bda8e9da30ce87cdba0b83bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::WorldLuaVirtualMachine::~WorldLuaVirtualMachine</definition>
+        <argsstring>()</argsstring>
+        <name>~WorldLuaVirtualMachine</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:14</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a8c957eaa6dffc96baccfa2d02e3f9bcf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::WorldLuaVirtualMachine::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afdabb48c4bf763e297ffe810b433a863">getClassName</reimplements>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:17</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a59bdb7db8ae46e9bac0f928cb5115499" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::WorldLuaVirtualMachine::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1a08dcf202a47f0782813b8bc98c659e78">getType</reimplements>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:21</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a2103a96c08471f07dda2d3b118780018" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::WorldLuaVirtualMachine::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_object_1afc07f4138bd3003910e7aa7fa0fe11ad">operator std::string</reimplements>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:24</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a64ad43f3f5c5ce88f83a399116be7851" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldLuaVirtualMachine::printStack</definition>
+        <argsstring>()</argsstring>
+        <name>printStack</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:30 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1adc172de3b59b78472ff5867f5e16041c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::loadFile</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>loadFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:33</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#filePath description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="98" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ab7d712b7c1b78da1f32e70791adc1ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::loadString</definition>
+        <argsstring>(const char *code)</argsstring>
+        <name>loadString</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:37</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a859edc6a83d71fec3722ad76313eef43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::doFile</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>doFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:43</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#filePath description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a56e072d74d6c9810533e395ae44ec49c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::doString</definition>
+        <argsstring>(const char *code)</argsstring>
+        <name>doString</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:46</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="131" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a267ae71c6d3064e2baf0ac9e48e4ec24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldLuaVirtualMachine::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:48 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="138" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a5d04b69a8ca98a5e77ec1a03abd6ece1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:53</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1af9efb7780458024e60c886b5c30cc594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const char *str)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:57</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#str description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="161" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a1e20adef1ec977bc52e3343320ac7ff6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, s32 num)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:00</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#num description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="173" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a8e4cfb46cfc326f39c95f87abf1ed570" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, f32 num)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:04</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#num description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a063c843476fae634bfa3b37341bf6bc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const Telegram &amp;tele, bool &amp;b)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_telegram" kindref="compound">Telegram</ref> &amp;</type>
+          <declname>tele</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:10</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tele</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#tele description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#b description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a2bf26f519cdd10cded878aeb2bdf1f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *scene)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:15</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#scene description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="210" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1af9efd06a3f45642e82f7f5089518a4d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *scene, const char *str)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#scene description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#str description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a6fa89f17cc97432e1bbbad2a94d93eb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *scene, f32 num)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:19</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#scene description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#num description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a5f84df3f3b820cf49bd362285adb5d7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *scene, const Telegram &amp;tele, bool &amp;b)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>scene</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_telegram" kindref="compound">Telegram</ref> &amp;</type>
+          <declname>tele</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:23</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scene</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#scene description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tele</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#tele description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#b description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aeaf2624365c5c37dd5d90d7c9ab6d6a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *node)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:28</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="260" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1af224a80d62b53a01e22e64a9813af3c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *node, f32 num)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:31</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#num description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="273" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a1ffc2b1e696b6c1a2d5955eaeca22d48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *node, const Telegram &amp;tele, bool &amp;b)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_telegram" kindref="compound">Telegram</ref> &amp;</type>
+          <declname>tele</declname>
+        </param>
+        <param>
+          <type>bool &amp;</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:35</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tele</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#tele description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#b description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="287" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aa8c117a3268c12bee71d31be64a877d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, DeviceTouch **touches)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="296" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1afd80dd6a43e8f7579ee9cd91ab2dc5e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, DeviceKey **keys)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_device_key" kindref="compound">DeviceKey</ref> **</type>
+          <declname>keys</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="298" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ab0a3f94a9fe51d41d8c8cef35c6295e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const DeviceTouch &amp;touch)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>touch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touch description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="307" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ae307c15aca8546f2df15a38514073b58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const DeviceMouse &amp;mouse)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>mouse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mouse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mouse description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="316" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aae3f6a29e70b136722d01b316220bee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *pEntity, DeviceTouch **touches)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEntity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pEntity description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="326" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a2ea566a1d2d4ad3c6b817e5e2d408b8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *pEntity, const DeviceTouch &amp;touch)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEntity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pEntity description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>touch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touch description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="336" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a30f05b73d451fc58e5e64263a4de58f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *pEntity, const DeviceMouse &amp;mouse)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>mouse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEntity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pEntity description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mouse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mouse description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="346" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a21227c3230633061ac2cc99a05c41e4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *node, Node *node2, const btManifoldPoint &amp;mani)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node2</declname>
+        </param>
+        <param>
+          <type>const btManifoldPoint &amp;</type>
+          <declname>mani</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:43</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node2 description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mani</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mani description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="360" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a2b0155a6ae5dc65eea24fef0bac79821" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *node, Node *node2, const btDispatcherInfo &amp;mani)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node2</declname>
+        </param>
+        <param>
+          <type>const btDispatcherInfo &amp;</type>
+          <declname>mani</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:47</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node2 description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mani</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mani description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="375" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a0c9cac6960558de8c59c03f331c00afc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const PhysicsRayContact &amp;rayContact)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">PhysicsRayContact</ref> &amp;</type>
+          <declname>rayContact</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:51</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rayContact</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#rayContact description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="388" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1af58e380cbfb31f9b0628dacbd528a10f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const btAlignedObjectArray&lt; njli::PhysicsRayContact *&gt; &amp;rayContacts)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const btAlignedObjectArray&lt; <ref refid="classnjli_1_1_physics_ray_contact" kindref="compound">njli::PhysicsRayContact</ref> *&gt; &amp;</type>
+          <declname>rayContacts</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:55</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rayContacts</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#rayContacts description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="401" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a104f43ff49f5478040eb592686cca9fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, s32 width, s32 height, s32 orientation)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>orientation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="404" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a02bcf617fdf1b7958846e585e870506e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Action *action)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_action" kindref="compound">Action</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:58</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#action description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="416" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a4fce503e637d2425c53e9e6afd486e02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Action *action, f32 num)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_action" kindref="compound">Action</ref> *</type>
+          <declname>action</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1a5f6906312a689f27d70e9d086649d3fd" kindref="member">f32</ref></type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:02</para></simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>action</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#action description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#num description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="429" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a177236bafc9183342e861ac9595c05be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *pEntity, DeviceTouch **touches)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> **</type>
+          <declname>touches</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEntity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pEntity description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>touches</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touches description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="440" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a5482e7a538b9456f67d247df309093e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *pEntity, const DeviceTouch &amp;touch)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_touch" kindref="compound">DeviceTouch</ref> &amp;</type>
+          <declname>touch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEntity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pEntity description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>touch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#touch description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="450" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a3e51d4df76d364b8affa254b1cce2ee6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *pEntity, const DeviceMouse &amp;mouse)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classnjli_1_1_device_mouse" kindref="compound">DeviceMouse</ref> &amp;</type>
+          <declname>mouse</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pEntity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#pEntity description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mouse</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#mouse description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="460" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ad12a6636f0f41cdf9bff6b5db1862f8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *node, const char *str)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>code</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#code description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>node</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#node description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>str</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#str description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="471" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ad0fbb36053be2f50906af392d3d3f378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="473" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ad08f708d623dbd72a3a57768c2857eaa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Node *pEntity, const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_node" kindref="compound">Node</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="476" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a5a4a0d3957888c3095c691a7a4731599" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::execute</definition>
+        <argsstring>(const char *code, Scene *pEntity, const char *keycodeName, bool withCapsLock, bool withControl, bool withShift, bool withAlt, bool withGui)</argsstring>
+        <name>execute</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type><ref refid="classnjli_1_1_scene" kindref="compound">Scene</ref> *</type>
+          <declname>pEntity</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>keycodeName</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withCapsLock</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withControl</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withShift</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withAlt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>withGui</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="480" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aec42f43252d57dc00fa8a40ea18ebdfc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double njli::WorldLuaVirtualMachine::getMaxNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getMaxNumber</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:04</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="491" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a4674a9aa6bfac9659dde91c205fe5f11" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double njli::WorldLuaVirtualMachine::getMinNumber</definition>
+        <argsstring>() const</argsstring>
+        <name>getMinNumber</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:07</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="500" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1adafe224987a62685972c4ee97a3e9ac4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::compile</definition>
+        <argsstring>()</argsstring>
+        <name>compile</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:10</para></simplesect>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="509" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aa1e76cc8b225a56fc59f095ca08cedc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::compileString</definition>
+        <argsstring>(const char *code)</argsstring>
+        <name>compileString</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="511" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a6a254a4bfca013863e429cc0189145c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::compileFile</definition>
+        <argsstring>(const char *filePath)</argsstring>
+        <name>compileFile</name>
+        <param>
+          <type>const char *</type>
+          <declname>filePath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="512" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1af42ee292e12ae835a77eee13a1fb4c45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldLuaVirtualMachine::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><itemizedlist>
+<listitem><para>returns: &lt;#return value description#&gt; </para></listitem></itemizedlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="519" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1af32f979aa34ff932fc1a358e3fcd44c0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldLuaVirtualMachine::unInit</definition>
+        <argsstring>()</argsstring>
+        <name>unInit</name>
+        <briefdescription>
+<para>&lt;#Description#&gt; </para>        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="author"><para>James Folk, 16-02-11 18:02:16 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="528" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aec9489519647fa9080f40a233ed03b70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::WorldLuaVirtualMachine::error</definition>
+        <argsstring>(const char *description)</argsstring>
+        <name>error</name>
+        <param>
+          <type>const char *</type>
+          <declname>description</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="530" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="37" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a3656304f995527d8888ad13d98770108" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::WorldLuaVirtualMachine::getError</definition>
+        <argsstring>(const char *code, int error)</argsstring>
+        <name>getError</name>
+        <param>
+          <type>const char *</type>
+          <declname>code</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="539" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1ae1cb82578d5b11df857c605468bb539f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::WorldLuaVirtualMachine::WorldLuaVirtualMachine</definition>
+        <argsstring>(const WorldLuaVirtualMachine &amp;)</argsstring>
+        <name>WorldLuaVirtualMachine</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="544" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aad84aef1b87d168be779005926e412d7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref> &amp;</type>
+        <definition>WorldLuaVirtualMachine&amp; njli::WorldLuaVirtualMachine::operator=</definition>
+        <argsstring>(const WorldLuaVirtualMachine &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_world_lua_virtual_machine" kindref="compound">WorldLuaVirtualMachine</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="545" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1abd4e5bf538e5f1a0ad8d6309b199d4a4" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::WorldLuaVirtualMachine::lstop</definition>
+        <argsstring>(lua_State *L, lua_Debug *ar)</argsstring>
+        <name>lstop</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>lua_Debug *</type>
+          <declname>ar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="558" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a84c29e3d8208c634419d1974c63ad245" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::WorldLuaVirtualMachine::laction</definition>
+        <argsstring>(int i)</argsstring>
+        <name>laction</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="559" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a3bf7729fa29a8e83715d34aa2332bdfd" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int njli::WorldLuaVirtualMachine::msghandler</definition>
+        <argsstring>(lua_State *L)</argsstring>
+        <name>msghandler</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="560" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1a0a8abcf8b42eec41fa76dcaba191fbda" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>static int njli::WorldLuaVirtualMachine::docall</definition>
+        <argsstring>(lua_State *L, int narg, int nres)</argsstring>
+        <name>docall</name>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>narg</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nres</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="561" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_world_lua_virtual_machine_1aec5b70c9d15f38ca79a5f2a803152196" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::WorldLuaVirtualMachine::l_message</definition>
+        <argsstring>(const char *pname, const char *msg)</argsstring>
+        <name>l_message</name>
+        <param>
+          <type>const char *</type>
+          <declname>pname</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="563" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;#Description#&gt; </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2745">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="2744">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2745" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2743">
+        <label>njli::WorldLuaVirtualMachine</label>
+        <link refid="classnjli_1_1_world_lua_virtual_machine"/>
+        <childnode refid="2744" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2748">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="2748" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="2747">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="2748" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2746">
+        <label>njli::WorldLuaVirtualMachine</label>
+        <link refid="classnjli_1_1_world_lua_virtual_machine"/>
+        <childnode refid="2747" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" line="34" column="1" bodyfile="njligames-njlic_engine/njli/WorldLuaVirtualMachine.h" bodystart="33" bodyend="565"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1adafe224987a62685972c4ee97a3e9ac4" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>compile</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a6a254a4bfca013863e429cc0189145c9" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>compileFile</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aa1e76cc8b225a56fc59f095ca08cedc5" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>compileString</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a0a8abcf8b42eec41fa76dcaba191fbda" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>docall</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a859edc6a83d71fec3722ad76313eef43" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>doFile</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a56e072d74d6c9810533e395ae44ec49c" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>doString</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aec9489519647fa9080f40a233ed03b70" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>error</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a5d04b69a8ca98a5e77ec1a03abd6ece1" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1af9efb7780458024e60c886b5c30cc594" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a1e20adef1ec977bc52e3343320ac7ff6" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a8e4cfb46cfc326f39c95f87abf1ed570" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a063c843476fae634bfa3b37341bf6bc7" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a2bf26f519cdd10cded878aeb2bdf1f98" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1af9efd06a3f45642e82f7f5089518a4d1" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a6fa89f17cc97432e1bbbad2a94d93eb8" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a5f84df3f3b820cf49bd362285adb5d7c" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aeaf2624365c5c37dd5d90d7c9ab6d6a4" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1af224a80d62b53a01e22e64a9813af3c9" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a1ffc2b1e696b6c1a2d5955eaeca22d48" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aa8c117a3268c12bee71d31be64a877d9" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1afd80dd6a43e8f7579ee9cd91ab2dc5e2" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ab0a3f94a9fe51d41d8c8cef35c6295e5" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ae307c15aca8546f2df15a38514073b58" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aae3f6a29e70b136722d01b316220bee8" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a2ea566a1d2d4ad3c6b817e5e2d408b8f" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a30f05b73d451fc58e5e64263a4de58f7" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a21227c3230633061ac2cc99a05c41e4e" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a2b0155a6ae5dc65eea24fef0bac79821" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a0c9cac6960558de8c59c03f331c00afc" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1af58e380cbfb31f9b0628dacbd528a10f" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a104f43ff49f5478040eb592686cca9fa" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a02bcf617fdf1b7958846e585e870506e" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a4fce503e637d2425c53e9e6afd486e02" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a177236bafc9183342e861ac9595c05be" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a5482e7a538b9456f67d247df309093e9" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a3e51d4df76d364b8affa254b1cce2ee6" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ad12a6636f0f41cdf9bff6b5db1862f8d" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ad0fbb36053be2f50906af392d3d3f378" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ad08f708d623dbd72a3a57768c2857eaa" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a5a4a0d3957888c3095c691a7a4731599" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>execute</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a8c957eaa6dffc96baccfa2d02e3f9bcf" prot="public" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a3656304f995527d8888ad13d98770108" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getError</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aec42f43252d57dc00fa8a40ea18ebdfc" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getMaxNumber</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a4674a9aa6bfac9659dde91c205fe5f11" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getMinNumber</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::WorldLuaVirtualMachine</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a02e7976cdd7bcc8852e2e6b6dcc5b7ac" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5a27f06290d6561218c1932ee4f0bb1c" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a59bdb7db8ae46e9bac0f928cb5115499" prot="public" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a510bd0513272a37d5837555719f658de" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>globalL</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1af42ee292e12ae835a77eee13a1fb4c45" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>init</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aec5b70c9d15f38ca79a5f2a803152196" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>l_message</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a84c29e3d8208c634419d1974c63ad245" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>laction</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1adc172de3b59b78472ff5867f5e16041c" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>loadFile</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ab7d712b7c1b78da1f32e70791adc1ac2" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>loadString</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1abd4e5bf538e5f1a0ad8d6309b199d4a4" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>lstop</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1abe1c0bd72cd6dc032a3c52886bf3f920" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>m_lua_State</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ac786f57d118424a273a1e04f9a0d6c53" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>m_previousMessage</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a3bf7729fa29a8e83715d34aa2332bdfd" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>msghandler</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a2103a96c08471f07dda2d3b118780018" prot="public" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aad84aef1b87d168be779005926e412d7" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a64ad43f3f5c5ce88f83a399116be7851" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>printStack</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a267ae71c6d3064e2baf0ac9e48e4ec24" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>reset</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::WorldLuaVirtualMachine</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1af32f979aa34ff932fc1a358e3fcd44c0" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>unInit</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1aa8699ef660c3378db4bfbcc1914fc95a" prot="public" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>WorldLuaVirtualMachine</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1ae1cb82578d5b11df857c605468bb539f" prot="private" virt="non-virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>WorldLuaVirtualMachine</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_world_lua_virtual_machine_1a688270d6bda8e9da30ce87cdba0b83bd" prot="public" virt="virtual"><scope>njli::WorldLuaVirtualMachine</scope><name>~WorldLuaVirtualMachine</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classnjli_1_1_shader_program" kind="class" language="C++" prot="public">
+    <compoundname>njli::ShaderProgram</compoundname>
+    <basecompoundref refid="classnjli_1_1_abstract_factory_object" prot="public" virt="non-virtual">njli::AbstractFactoryObject</basecompoundref>
+    <includes refid="_shader_program_8h" local="no">ShaderProgram.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classnjli_1_1_shader_program_1a36ecea1b480769cf2a125e5fb13f122a" prot="private" static="no">
+        <type>std::map&lt; std::string, <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref> &gt;</type>
+        <definition>typedef std::map&lt;std::string, s32&gt; njli::ShaderProgram::UniformValueMap</definition>
+        <argsstring></argsstring>
+        <name>UniformValueMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="259" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classnjli_1_1_shader_program_1a784188d8ab62d1eb541432ce756689a9" prot="private" static="no">
+        <type>std::pair&lt; std::string, <ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref> &gt;</type>
+        <definition>typedef std::pair&lt;std::string, s32&gt; njli::ShaderProgram::UniformValuePair</definition>
+        <argsstring></argsstring>
+        <name>UniformValuePair</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="260" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classnjli_1_1_shader_program_1acb96ebb09abe8f2a37a915a842babfac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class WorldFactory</definition>
+        <argsstring></argsstring>
+        <name>WorldFactory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="39" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_shader_program_1a9aca7b7350e6ffa0e2d6320834ad1857" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class Geometry</definition>
+        <argsstring></argsstring>
+        <name>Geometry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="40" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="friend" id="classnjli_1_1_shader_program_1ae7c7f3376b81514442fbc2a5fe2f5ec9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class MaterialProperty</definition>
+        <argsstring></argsstring>
+        <name>MaterialProperty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="41" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1a8391542fc26ae41466b6fe713a5ded2f" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::ShaderProgram::m_Program</definition>
+        <argsstring></argsstring>
+        <name>m_Program</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="252" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1a8f1c16c8132f6680d0fd8e7cd0f53ad9" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::ShaderProgram::m_vertShader</definition>
+        <argsstring></argsstring>
+        <name>m_vertShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="253" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1a9b528190f997c332ccd7f4605a2ba5c7" prot="private" static="no" mutable="no">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>s32 njli::ShaderProgram::m_fragShader</definition>
+        <argsstring></argsstring>
+        <name>m_fragShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="254" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1a36b6891a72ec4e6f7ee89add79884282" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::ShaderProgram::m_VertexShaderSource</definition>
+        <argsstring></argsstring>
+        <name>m_VertexShaderSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="256" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1aa1e64cb2fabffbafbff9f7c707672643" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string njli::ShaderProgram::m_FragmentShaderSource</definition>
+        <argsstring></argsstring>
+        <name>m_FragmentShaderSource</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="257" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1a20e228a576a90ddd2e232fa490cde560" prot="private" static="no" mutable="no">
+        <type><ref refid="classnjli_1_1_shader_program_1a36ecea1b480769cf2a125e5fb13f122a" kindref="member">UniformValueMap</ref></type>
+        <definition>UniformValueMap njli::ShaderProgram::m_uniformValueMap</definition>
+        <argsstring></argsstring>
+        <name>m_uniformValueMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="261" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classnjli_1_1_shader_program_1a2de7645fd10fecfe9bd3e128984c93e7" prot="private" static="no" mutable="no">
+        <type>float *</type>
+        <definition>float* njli::ShaderProgram::m_mat4Buffer</definition>
+        <argsstring></argsstring>
+        <name>m_mat4Buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="262" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a5def475147030f4b08273f0dc0d8d0eb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ShaderProgram::ShaderProgram</definition>
+        <argsstring>()</argsstring>
+        <name>ShaderProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a46ab4a8c88ca20c55202c9a152a57838" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ShaderProgram::ShaderProgram</definition>
+        <argsstring>(const AbstractBuilder &amp;)</argsstring>
+        <name>ShaderProgram</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a45a93b1279f11a5323e28070ccc778a8" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ShaderProgram::ShaderProgram</definition>
+        <argsstring>(const ShaderProgram &amp;)</argsstring>
+        <name>ShaderProgram</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a091874e0063dade5799d8061f156fe3c" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>njli::ShaderProgram::BT_DECLARE_ALIGNED_ALLOCATOR</definition>
+        <argsstring>()</argsstring>
+        <name>BT_DECLARE_ALIGNED_ALLOCATOR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a8b08a64a5724aba5cc614c2288846044" prot="protected" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>virtual njli::ShaderProgram::~ShaderProgram</definition>
+        <argsstring>()</argsstring>
+        <name>~ShaderProgram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1aba28741515ef99ccd725473aadd26a93" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> &amp;</type>
+        <definition>ShaderProgram&amp; njli::ShaderProgram::operator=</definition>
+        <argsstring>(const ShaderProgram &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1add1203b770ecde00cf3089433cdc372e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::link</definition>
+        <argsstring>()</argsstring>
+        <name>link</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="176" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a0f30cbd74175ed6967bafc46b35bb928" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::bindAttribute</definition>
+        <argsstring>(const char *attributeName)</argsstring>
+        <name>bindAttribute</name>
+        <param>
+          <type>const char *</type>
+          <declname>attributeName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attributeName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#attributeName description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a44caba1039485701689f734de28462e7" prot="protected" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::ShaderProgram::getAttributeLocation</definition>
+        <argsstring>(const char *attributeName) const</argsstring>
+        <name>getAttributeLocation</name>
+        <param>
+          <type>const char *</type>
+          <declname>attributeName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>attributeName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#attributeName description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="192" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1ae6b8ee664db016d247d1969a80a4d0f0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::ShaderProgram::calculateSerializeBufferSize</definition>
+        <argsstring>() const</argsstring>
+        <name>calculateSerializeBufferSize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8">calculateSerializeBufferSize</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1afe83d2e58961011b642a25e7c15a6953" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::ShaderProgram::serialize</definition>
+        <argsstring>(void *, btSerializer *) const</argsstring>
+        <name>serialize</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976">serialize</reimplements>
+        <param>
+          <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        </param>
+        <param>
+          <type>btSerializer *</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>btSerializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#btSerializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a61698287de4dadfd88151f40038569cf" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>const char *</type>
+        <definition>virtual const char* njli::ShaderProgram::getClassName</definition>
+        <argsstring>() const</argsstring>
+        <name>getClassName</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278">getClassName</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1af2f154eef9904f4b5078983ae025cd7a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+        <definition>virtual s32 njli::ShaderProgram::getType</definition>
+        <argsstring>() const</argsstring>
+        <name>getType</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7">getType</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="84" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a2af9c6b24ed749e698c3fce3fabda18f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>njli::ShaderProgram::operator std::string</definition>
+        <argsstring>() const</argsstring>
+        <name>operator std::string</name>
+        <reimplements refid="classnjli_1_1_abstract_factory_object_1a838f4fa7e65cace6098aab5222892942">operator std::string</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a302cf231b252535230e1eaa794c0dc3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ShaderProgram::saveSource</definition>
+        <argsstring>(const std::string &amp;vertexShaderSource, const std::string &amp;fragmentShaderSource)</argsstring>
+        <name>saveSource</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>vertexShaderSource</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>fragmentShaderSource</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="160" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a232cb84b51bfdd0d3ace500fedde45a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::isLinked</definition>
+        <argsstring>() const</argsstring>
+        <name>isLinked</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="163" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1af93d37d88d0d56ae1dfe0a902ec7391e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::ShaderProgram::unLoadGPU</definition>
+        <argsstring>()</argsstring>
+        <name>unLoadGPU</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="168" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1aa48f0968f86931295b686cb31d6aadfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::setUniformValue</definition>
+        <argsstring>(const char *uniformName, s32 value)</argsstring>
+        <name>setUniformValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>uniformName</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref></type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="195" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a01aeae9437f32732e8d2d3b59c962139" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::getUniformValue</definition>
+        <argsstring>(const char *uniformName, s32 &amp;value)</argsstring>
+        <name>getUniformValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>uniformName</declname>
+        </param>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref> &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="196" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1ab55e9cbbf6a0921259a38c50ff0c6c80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::setUniformValue</definition>
+        <argsstring>(const char *uniformName, const btTransform &amp;value, bool transpose=false)</argsstring>
+        <name>setUniformValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>uniformName</declname>
+        </param>
+        <param>
+          <type>const btTransform &amp;</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>transpose</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="198" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a3a27d20080728fd333fb013f6492ee34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::getUniformValue</definition>
+        <argsstring>(const char *uniformName, btTransform &amp;value)</argsstring>
+        <name>getUniformValue</name>
+        <param>
+          <type>const char *</type>
+          <declname>uniformName</declname>
+        </param>
+        <param>
+          <type>btTransform &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="200" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1aa870b331b82002024be451a7d556d99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>u32 njli::ShaderProgram::getUniformLocation</definition>
+        <argsstring>(const char *uniformName)</argsstring>
+        <name>getUniformLocation</name>
+        <param>
+          <type>const char *</type>
+          <declname>uniformName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>uniformName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#uniformName description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="208" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a132663261df4c7029260a59afb91a19d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::ShaderProgram::vertexShaderLog</definition>
+        <argsstring>() const</argsstring>
+        <name>vertexShaderLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="215" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a3f4444c90822c63fee69261f476774b7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::ShaderProgram::fragmentShaderLog</definition>
+        <argsstring>() const</argsstring>
+        <name>fragmentShaderLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a28dfbce737ee0481f6a8199a0b1b226f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::ShaderProgram::programLog</definition>
+        <argsstring>() const</argsstring>
+        <name>programLog</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="227" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a1295b3e2656bc24f485dc97a7d920b67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::use</definition>
+        <argsstring>()</argsstring>
+        <name>use</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="232" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a5a6c623a0321cfc305b6edc6e514b049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::compile</definition>
+        <argsstring>(const char *fileContent, njliShaderType type)</argsstring>
+        <name>compile</name>
+        <param>
+          <type>const char *</type>
+          <declname>fileContent</declname>
+        </param>
+        <param>
+          <type><ref refid="namespacenjli_1a8f2b6cfac9213576c34bcf711ac39fbd" kindref="member">njliShaderType</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fileContent</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#fileContent description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;<ref refid="classnjli_1_1_shader_program_1a92e24de59f2e44318baab955895910ba" kindref="member">type</ref> description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="242" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a47e7e27178632533e9d8c805f5482812" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool njli::ShaderProgram::compileShader</definition>
+        <argsstring>(s32 *shader, const u32 type, const char *source)</argsstring>
+        <name>compileShader</name>
+        <param>
+          <type><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref> *</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>source</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="244" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a73023771e5e565e69571188ebc59a471" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::ShaderProgram::logForOpenGLObject</definition>
+        <argsstring>(u32 object, GLInfoFunction infoFunc, GLLogFunction logFunc) const</argsstring>
+        <name>logForOpenGLObject</name>
+        <param>
+          <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type><ref refid="_shader_program_8h_1a50070b167d585b9e4ba6faa4e3063cc7" kindref="member">GLInfoFunction</ref></type>
+          <declname>infoFunc</declname>
+        </param>
+        <param>
+          <type><ref refid="_shader_program_8h_1a946b6792efe50de240df436a3d028764" kindref="member">GLLogFunction</ref></type>
+          <declname>logFunc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="245" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a663abf703712e6cbdffd9ac7ee2631b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>Geometry* njli::ShaderProgram::getParent</definition>
+        <argsstring>()</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="248" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1af1c05ca7d7c97f0abeedf3c34426ddc1" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="classnjli_1_1_geometry" kindref="compound">Geometry</ref> *</type>
+        <definition>const Geometry* njli::ShaderProgram::getParent</definition>
+        <argsstring>() const</argsstring>
+        <name>getParent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="249" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>void njli::AbstractDecorator::setName</definition>
+        <argsstring>(const char *name)</argsstring>
+        <name>setName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#name description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="52" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1ad41266885be835f3ee602311e20877a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const char *</type>
+        <definition>const char* njli::AbstractDecorator::getName</definition>
+        <argsstring>() const</argsstring>
+        <name>getName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a83a8876ae63b92804004cf3febe76573" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref> *</type>
+        <definition>virtual AbstractFactoryObject* njli::AbstractFactoryObject::create</definition>
+        <argsstring>(const AbstractBuilder &amp;builder) const</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1ac4ca71716ed832be357f15f8262c8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref> *</type>
+        <definition>const void* njli::AbstractFactoryObject::getPointer</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref></type>
+        <definition>u64 njli::AbstractFactoryObject::getPointerValue</definition>
+        <argsstring>() const</argsstring>
+        <name>getPointerValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a4fc4bcd9d1930911474210c047372fc0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>virtual void njli::AbstractFactoryObject::serializeObject</definition>
+        <argsstring>(class btSerializer *serializer) const</argsstring>
+        <name>serializeObject</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>serializer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#serializer description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="58" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a78a8831d8b2c160381b3f00b5bd0a9f1" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> **</type>
+        <definition>static ShaderProgram** njli::ShaderProgram::createArray</definition>
+        <argsstring>(const u32 size)</argsstring>
+        <name>createArray</name>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#size description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="99" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a86ca7eb980e28330ee6ca6a7d17e0a12" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::ShaderProgram::destroyArray</definition>
+        <argsstring>(ShaderProgram **array, const u32 size=0)</argsstring>
+        <name>destroyArray</name>
+        <param>
+          <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> **</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const <ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+          <declname>size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#array description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="105" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a0d6c86874feb9ca5e1203afe5c30b216" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>static ShaderProgram* njli::ShaderProgram::create</definition>
+        <argsstring>()</argsstring>
+        <name>create</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a425842368a91fb2d82d550a36d3d440a" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>static ShaderProgram* njli::ShaderProgram::create</definition>
+        <argsstring>(const ShaderProgramBuilder &amp;builder)</argsstring>
+        <name>create</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_shader_program_builder" kindref="compound">ShaderProgramBuilder</ref> &amp;</type>
+          <declname>builder</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>builder</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#builder description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a65c36d0386ef8a58f55d14918d0d8096" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>static ShaderProgram* njli::ShaderProgram::clone</definition>
+        <argsstring>(const ShaderProgram &amp;object)</argsstring>
+        <name>clone</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="127" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1ac5ccaeffeccdfc14a2579eddb07e0a36" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+        <definition>static ShaderProgram* njli::ShaderProgram::copy</definition>
+        <argsstring>(const ShaderProgram &amp;object)</argsstring>
+        <name>copy</name>
+        <param>
+          <type>const <ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt;</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1ae162b5b68d88e47b14b507fec798da1c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::ShaderProgram::destroy</definition>
+        <argsstring>(ShaderProgram *object)</argsstring>
+        <name>destroy</name>
+        <param>
+          <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="141" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1af1b37f6cb592d8ebd4f5a31a80a373c2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66" kindref="member">void</ref></type>
+        <definition>static void njli::ShaderProgram::load</definition>
+        <argsstring>(ShaderProgram &amp;object, lua_State *L, int stack_index)</argsstring>
+        <name>load</name>
+        <param>
+          <type><ref refid="classnjli_1_1_shader_program" kindref="compound">ShaderProgram</ref> &amp;</type>
+          <declname>object</declname>
+        </param>
+        <param>
+          <type>lua_State *</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>stack_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#object description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#L description#&gt; </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>stack_index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&lt;#stack_index description#&gt; </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="149" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classnjli_1_1_shader_program_1a92e24de59f2e44318baab955895910ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_util_8h_1a10e94b422ef0c20dcdec20d31a1f5049" kindref="member">u32</ref></type>
+        <definition>static u32 njli::ShaderProgram::type</definition>
+        <argsstring>()</argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>&lt;#Description#&gt;</para><para><simplesect kind="return"><para>&lt;#return value description#&gt; </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="155" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>&lt;#Description#&gt; </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="1983">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1984" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1985">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+      </node>
+      <node id="1984">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1985" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1982">
+        <label>njli::ShaderProgram</label>
+        <link refid="classnjli_1_1_shader_program"/>
+        <childnode refid="1983" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1987">
+        <label>njli::AbstractFactoryObject</label>
+        <link refid="classnjli_1_1_abstract_factory_object"/>
+        <childnode refid="1988" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1989">
+        <label>njli::AbstractDecorator</label>
+        <link refid="classnjli_1_1_abstract_decorator"/>
+        <childnode refid="1989" relation="usage">
+          <edgelabel>m_pParent</edgelabel>
+        </childnode>
+      </node>
+      <node id="1988">
+        <label>njli::AbstractObject</label>
+        <link refid="classnjli_1_1_abstract_object"/>
+        <childnode refid="1989" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1986">
+        <label>njli::ShaderProgram</label>
+        <link refid="classnjli_1_1_shader_program"/>
+        <childnode refid="1987" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="njligames-njlic_engine/njli/graphics/ShaderProgram.h" line="38" column="1" bodyfile="njligames-njlic_engine/njli/graphics/ShaderProgram.h" bodystart="36" bodyend="263"/>
+    <listofallmembers>
+      <member refid="classnjli_1_1_abstract_decorator_1aeebcf1e20165c7d17da774f57eb2a989" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ad8a2eaf0b14375ad9739a8968429739e" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a6b94b03ed7bcf783795e02a628d46bca" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>addChild</name></member>
+      <member refid="classnjli_1_1_shader_program_1a0f30cbd74175ed6967bafc46b35bb928" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>bindAttribute</name></member>
+      <member refid="classnjli_1_1_shader_program_1a091874e0063dade5799d8061f156fe3c" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>BT_DECLARE_ALIGNED_ALLOCATOR</name></member>
+      <member refid="classnjli_1_1_shader_program_1ae6b8ee664db016d247d1969a80a4d0f0" prot="public" virt="virtual"><scope>njli::ShaderProgram</scope><name>calculateSerializeBufferSize</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" prot="protected" virt="virtual"><scope>njli::ShaderProgram</scope><name>canDelete</name></member>
+      <member refid="classnjli_1_1_shader_program_1a65c36d0386ef8a58f55d14918d0d8096" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ShaderProgram</scope><name>clone</name></member>
+      <member refid="classnjli_1_1_shader_program_1a5a6c623a0321cfc305b6edc6e514b049" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>compile</name></member>
+      <member refid="classnjli_1_1_shader_program_1a47e7e27178632533e9d8c805f5482812" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>compileShader</name></member>
+      <member refid="classnjli_1_1_shader_program_1ac5ccaeffeccdfc14a2579eddb07e0a36" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>copy</name></member>
+      <member refid="classnjli_1_1_shader_program_1a0d6c86874feb9ca5e1203afe5c30b216" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>create</name></member>
+      <member refid="classnjli_1_1_shader_program_1a425842368a91fb2d82d550a36d3d440a" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>create</name></member>
+      <member refid="classnjli_1_1_shader_program_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>create</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ShaderProgram</scope><name>create</name></member>
+      <member refid="classnjli_1_1_shader_program_1a78a8831d8b2c160381b3f00b5bd0a9f1" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>createArray</name></member>
+      <member refid="classnjli_1_1_shader_program_1ae162b5b68d88e47b14b507fec798da1c" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ShaderProgram</scope><name>destroy</name></member>
+      <member refid="classnjli_1_1_shader_program_1a86ca7eb980e28330ee6ca6a7d17e0a12" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>destroyArray</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" prot="protected" virt="virtual"><scope>njli::ShaderProgram</scope><name>enableCanDelete</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>enableRenderObject</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8bdc7cebaaeae22a9519a8839ff3eba0" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1af924f47defa4cd007308847e1c6d9c2a" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>findChild</name></member>
+      <member refid="classnjli_1_1_shader_program_1a3f4444c90822c63fee69261f476774b7" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>fragmentShaderLog</name></member>
+      <member refid="classnjli_1_1_shader_program_1a9aca7b7350e6ffa0e2d6320834ad1857" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>Geometry</name></member>
+      <member refid="classnjli_1_1_shader_program_1a44caba1039485701689f734de28462e7" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getAttributeLocation</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ab4685efa1283c203aabd7e8b4aa86fb4" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a47f431982092b823d925ac031491d344" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad34934f1a89ae3a586af2ce17ab598d1" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a87aedeab22233d8e57b870abbaa61941" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getChildIndex</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7bfa660dbfaeed3531c9041569bc23b3" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getChildren</name></member>
+      <member refid="classnjli_1_1_shader_program_1a61698287de4dadfd88151f40038569cf" prot="public" virt="virtual"><scope>njli::ShaderProgram</scope><name>getClassName</name></member>
+      <member refid="classnjli_1_1_shader_program_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::ShaderProgram</scope><name>getName</name></member>
+      <member refid="classnjli_1_1_shader_program_1a663abf703712e6cbdffd9ac7ee2631b9" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_shader_program_1af1c05ca7d7c97f0abeedf3c34426ddc1" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getParent</name></member>
+      <member refid="classnjli_1_1_shader_program_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ShaderProgram</scope><name>getPointer</name></member>
+      <member refid="classnjli_1_1_shader_program_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ShaderProgram</scope><name>getPointerValue</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a1892eb8a5216ffbbe937e747a0d1d141" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getTag</name></member>
+      <member refid="classnjli_1_1_shader_program_1af2f154eef9904f4b5078983ae025cd7a" prot="public" virt="virtual"><scope>njli::ShaderProgram</scope><name>getType</name></member>
+      <member refid="classnjli_1_1_shader_program_1aa870b331b82002024be451a7d556d99c" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getUniformLocation</name></member>
+      <member refid="classnjli_1_1_shader_program_1a01aeae9437f32732e8d2d3b59c962139" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getUniformValue</name></member>
+      <member refid="classnjli_1_1_shader_program_1a3a27d20080728fd333fb013f6492ee34" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>getUniformValue</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ad483ceb78102e1a2ac489d2d5d58674c" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>hasChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a64c272cd1d9c212dacad178db49e2b20" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>hasChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1ae68a7fd88bfd50c2d3dd7831f9e95e09" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>hasParent</name></member>
+      <member refid="classnjli_1_1_shader_program_1a232cb84b51bfdd0d3ace500fedde45a2" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>isLinked</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>isRenderObject</name></member>
+      <member refid="classnjli_1_1_shader_program_1add1203b770ecde00cf3089433cdc372e" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>link</name></member>
+      <member refid="classnjli_1_1_shader_program_1af1b37f6cb592d8ebd4f5a31a80a373c2" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>load</name></member>
+      <member refid="classnjli_1_1_shader_program_1a73023771e5e565e69571188ebc59a471" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>logForOpenGLObject</name></member>
+      <member refid="classnjli_1_1_shader_program_1aa1e64cb2fabffbafbff9f7c707672643" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_FragmentShaderSource</name></member>
+      <member refid="classnjli_1_1_shader_program_1a9b528190f997c332ccd7f4605a2ba5c7" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_fragShader</name></member>
+      <member refid="classnjli_1_1_shader_program_1a2de7645fd10fecfe9bd3e128984c93e7" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_mat4Buffer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_pointer</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_pointerVal</name></member>
+      <member refid="classnjli_1_1_shader_program_1a8391542fc26ae41466b6fe713a5ded2f" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_Program</name></member>
+      <member refid="classnjli_1_1_shader_program_1a20e228a576a90ddd2e232fa490cde560" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_uniformValueMap</name></member>
+      <member refid="classnjli_1_1_shader_program_1a36b6891a72ec4e6f7ee89add79884282" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_VertexShaderSource</name></member>
+      <member refid="classnjli_1_1_shader_program_1a8f1c16c8132f6680d0fd8e7cd0f53ad9" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>m_vertShader</name></member>
+      <member refid="classnjli_1_1_shader_program_1ae7c7f3376b81514442fbc2a5fe2f5ec9" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>MaterialProperty</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a7c725af71849474d7a5e05ae79b38661" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>numberOfChildren</name></member>
+      <member refid="classnjli_1_1_shader_program_1a2af9c6b24ed749e698c3fce3fabda18f" prot="public" virt="virtual"><scope>njli::ShaderProgram</scope><name>operator std::string</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator!=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator&lt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator&lt;=</name></member>
+      <member refid="classnjli_1_1_shader_program_1aba28741515ef99ccd725473aadd26a93" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator=</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator==</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator&gt;</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>operator&gt;=</name></member>
+      <member refid="classnjli_1_1_shader_program_1a28dfbce737ee0481f6a8199a0b1b226f" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>programLog</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a907a417691a2e3bfef5fd7d0f0eb0417" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a3de9eaa0ff8afc7ccd4378efdaadc191" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>removeChild</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1accd814c7ee5dd1b5e00a3e44e79bff27" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>removeChildren</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a04b797ac24b5de658d1e6dc165167d8f" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>removeFromParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a5ef875734a96eca9b3c7aa3be482ff29" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>removeParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1afd5844a76f88ee1271f228c6dab2dc6d" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>replaceChild</name></member>
+      <member refid="classnjli_1_1_shader_program_1a302cf231b252535230e1eaa794c0dc3e" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>saveSource</name></member>
+      <member refid="classnjli_1_1_shader_program_1afe83d2e58961011b642a25e7c15a6953" prot="public" virt="virtual"><scope>njli::ShaderProgram</scope><name>serialize</name></member>
+      <member refid="classnjli_1_1_shader_program_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" prot="public" virt="virtual" ambiguityscope="njli::AbstractFactoryObject::"><scope>njli::ShaderProgram</scope><name>serializeObject</name></member>
+      <member refid="classnjli_1_1_shader_program_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" prot="public" virt="non-virtual" ambiguityscope="njli::AbstractObject::"><scope>njli::ShaderProgram</scope><name>setName</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a292c49c95d3fd287d0e4799554288520" prot="protected" virt="virtual"><scope>njli::ShaderProgram</scope><name>setParent</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a45a6af60b195efd39b1b56f19a8ef14a" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>setTag</name></member>
+      <member refid="classnjli_1_1_shader_program_1aa48f0968f86931295b686cb31d6aadfd" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>setUniformValue</name></member>
+      <member refid="classnjli_1_1_shader_program_1ab55e9cbbf6a0921259a38c50ff0c6c80" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>setUniformValue</name></member>
+      <member refid="classnjli_1_1_shader_program_1a5def475147030f4b08273f0dc0d8d0eb" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>ShaderProgram</name></member>
+      <member refid="classnjli_1_1_shader_program_1a46ab4a8c88ca20c55202c9a152a57838" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>ShaderProgram</name></member>
+      <member refid="classnjli_1_1_shader_program_1a45a93b1279f11a5323e28070ccc778a8" prot="protected" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>ShaderProgram</name></member>
+      <member refid="classnjli_1_1_shader_program_1a92e24de59f2e44318baab955895910ba" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>type</name></member>
+      <member refid="classnjli_1_1_shader_program_1a36ecea1b480769cf2a125e5fb13f122a" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>UniformValueMap</name></member>
+      <member refid="classnjli_1_1_shader_program_1a784188d8ab62d1eb541432ce756689a9" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>UniformValuePair</name></member>
+      <member refid="classnjli_1_1_shader_program_1af93d37d88d0d56ae1dfe0a902ec7391e" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>unLoadGPU</name></member>
+      <member refid="classnjli_1_1_shader_program_1a1295b3e2656bc24f485dc97a7d920b67" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>use</name></member>
+      <member refid="classnjli_1_1_shader_program_1a132663261df4c7029260a59afb91a19d" prot="public" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>vertexShaderLog</name></member>
+      <member refid="classnjli_1_1_shader_program_1acb96ebb09abe8f2a37a915a842babfac" prot="private" virt="non-virtual"><scope>njli::ShaderProgram</scope><name>WorldFactory</name></member>
+      <member refid="classnjli_1_1_abstract_decorator_1a8c5ac466e74e908ecc8286af04937d72" prot="protected" virt="virtual"><scope>njli::ShaderProgram</scope><name>~AbstractDecorator</name></member>
+      <member refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" prot="public" virt="virtual"><scope>njli::ShaderProgram</scope><name>~AbstractFactoryObject</name></member>
+      <member refid="classnjli_1_1_abstract_object_1aadfc508440196d05461ebf48fd3d3625" prot="protected" virt="virtual"><scope>njli::ShaderProgram</scope><name>~AbstractObject</name></member>
+      <member refid="classnjli_1_1_shader_program_1a8b08a64a5724aba5cc614c2288846044" prot="protected" virt="virtual"><scope>njli::ShaderProgram</scope><name>~ShaderProgram</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

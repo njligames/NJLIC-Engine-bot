@@ -1,0 +1,2002 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="_abstract_factory_object_8h" kind="file" language="C++">
+    <compoundname>AbstractFactoryObject.h</compoundname>
+    <includes local="yes">btAlignedObjectArray.h</includes>
+    <includes refid="_abstract_object_8h" local="yes">AbstractObject.h</includes>
+    <includes refid="_util_8h" local="yes">Util.h</includes>
+    <includes local="yes">btSerializer.h</includes>
+    <includedby refid="_abstract_state_machine_8h" local="yes">njligames-njlic_engine/njli/AbstractStateMachine.h</includedby>
+    <includedby refid="_action_8h" local="yes">njligames-njlic_engine/njli/Action.h</includedby>
+    <includedby refid="_abstract_builder_8h" local="yes">njligames-njlic_engine/njli/builders/AbstractBuilder.h</includedby>
+    <includedby refid="_camera_8h" local="yes">njligames-njlic_engine/njli/Camera.h</includedby>
+    <includedby refid="_clock_8h" local="yes">njligames-njlic_engine/njli/Clock.h</includedby>
+    <includedby refid="_collision_response_8h" local="yes">njligames-njlic_engine/njli/CollisionResponse.h</includedby>
+    <includedby refid="_font_8h" local="yes">njligames-njlic_engine/njli/Font.h</includedby>
+    <includedby refid="_button_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/ButtonHUD.h</includedby>
+    <includedby refid="_checkbox_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/CheckboxHUD.h</includedby>
+    <includedby refid="_geometry_8h" local="yes">njligames-njlic_engine/njli/graphics/Geometry.h</includedby>
+    <includedby refid="_dropdown_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/DropdownHUD.h</includedby>
+    <includedby refid="_label_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/LabelHUD.h</includedby>
+    <includedby refid="_level_of_detail_8h" local="yes">njligames-njlic_engine/njli/graphics/LevelOfDetail.h</includedby>
+    <includedby refid="_light_8h" local="yes">njligames-njlic_engine/njli/graphics/Light.h</includedby>
+    <includedby refid="_material_8h" local="yes">njligames-njlic_engine/njli/graphics/Material.h</includedby>
+    <includedby refid="_material_property_8h" local="yes">njligames-njlic_engine/njli/graphics/MaterialProperty.h</includedby>
+    <includedby refid="_particle_emitter_8h" local="yes">njligames-njlic_engine/njli/graphics/ParticleEmitter.h</includedby>
+    <includedby refid="_shader_program_8h" local="yes">njligames-njlic_engine/njli/graphics/ShaderProgram.h</includedby>
+    <includedby refid="_skinner_8h" local="yes">njligames-njlic_engine/njli/graphics/Skinner.h</includedby>
+    <includedby refid="_slider_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/SliderHUD.h</includedby>
+    <includedby refid="_sprite_frame_atlas_8h" local="yes">njligames-njlic_engine/njli/graphics/SpriteFrameAtlas.h</includedby>
+    <includedby refid="_textbox_h_u_d_8h" local="yes">njligames-njlic_engine/njli/graphics/TextboxHUD.h</includedby>
+    <includedby refid="_image_8h" local="yes">njligames-njlic_engine/njli/Image.h</includedby>
+    <includedby refid="_j_l_i_engine_8h" local="yes">njligames-njlic_engine/njli/JLIEngine.h</includedby>
+    <includedby refid="_world_factory_8h" local="yes">njligames-njlic_engine/njli/WorldFactory.h</includedby>
+    <includedby refid="_node_8h" local="yes">njligames-njlic_engine/njli/Node.h</includedby>
+    <includedby refid="_scene_8h" local="yes">njligames-njlic_engine/njli/Scene.h</includedby>
+    <includedby refid="_json_j_l_i_8h" local="yes">njligames-njlic_engine/njli/JsonJLI.h</includedby>
+    <includedby refid="_stop_watch_8h" local="yes">njligames-njlic_engine/njli/StopWatch.h</includedby>
+    <includedby refid="_thread_8h" local="yes">njligames-njlic_engine/njli/Thread.h</includedby>
+    <includedby refid="_timer_8h" local="yes">njligames-njlic_engine/njli/Timer.h</includedby>
+    <includedby refid="_xml_8h" local="yes">njligames-njlic_engine/njli/Xml.h</includedby>
+    <includedby refid="_physics_body_8h" local="yes">njligames-njlic_engine/njli/physics/body/PhysicsBody.h</includedby>
+    <includedby refid="_physics_constraint_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraint.h</includedby>
+    <includedby refid="_physics_constraint_cone_twist_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintConeTwist.h</includedby>
+    <includedby refid="_physics_constraint_fixed_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintFixed.h</includedby>
+    <includedby refid="_physics_constraint_generic6_dof_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintGeneric6Dof.h</includedby>
+    <includedby refid="_physics_constraint_generic6_dof_spring_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintGeneric6DofSpring.h</includedby>
+    <includedby refid="_physics_constraint_hinge_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintHinge.h</includedby>
+    <includedby refid="_physics_constraint_point_to_point_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintPointToPoint.h</includedby>
+    <includedby refid="_physics_constraint_slider_8h" local="yes">njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintSlider.h</includedby>
+    <includedby refid="_physics_close_contact_8h" local="yes">njligames-njlic_engine/njli/physics/PhysicsCloseContact.h</includedby>
+    <includedby refid="_physics_contact_8h" local="yes">njligames-njlic_engine/njli/physics/PhysicsContact.h</includedby>
+    <includedby refid="_physics_field_8h" local="yes">njligames-njlic_engine/njli/physics/PhysicsField.h</includedby>
+    <includedby refid="_physics_ray_contact_8h" local="yes">njligames-njlic_engine/njli/physics/PhysicsRayContact.h</includedby>
+    <includedby refid="_physics_world_8h" local="yes">njligames-njlic_engine/njli/physics/PhysicsWorld.h</includedby>
+    <includedby refid="_physics_shape_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShape.h</includedby>
+    <includedby refid="_physics_shape_bvh_triangle_mesh_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeBvhTriangleMesh.h</includedby>
+    <includedby refid="_physics_shape_capsule_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeCapsule.h</includedby>
+    <includedby refid="_physics_shape_cone_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeCone.h</includedby>
+    <includedby refid="_physics_shape_convex_hull_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeConvexHull.h</includedby>
+    <includedby refid="_physics_shape_convex_triangle_mesh_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeConvexTriangleMesh.h</includedby>
+    <includedby refid="_physics_shape_cylinder_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeCylinder.h</includedby>
+    <includedby refid="_physics_shape_heightfield_terrain_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeHeightfieldTerrain.h</includedby>
+    <includedby refid="_physics_shape_multi_sphere_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeMultiSphere.h</includedby>
+    <includedby refid="_physics_shape_sphere_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeSphere.h</includedby>
+    <includedby refid="_physics_shape_static_plane_8h" local="yes">njligames-njlic_engine/njli/physics/shape/PhysicsShapeStaticPlane.h</includedby>
+    <includedby refid="_sound_8h" local="yes">njligames-njlic_engine/njli/sound/Sound.h</includedby>
+    <includedby refid="_steering_behavior_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehavior.h</includedby>
+    <includedby refid="_steering_behavior_alignment_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorAlignment.h</includedby>
+    <includedby refid="_steering_behavior_arrive_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorArrive.h</includedby>
+    <includedby refid="_steering_behavior_cohesion_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorCohesion.h</includedby>
+    <includedby refid="_steering_behavior_evade_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorEvade.h</includedby>
+    <includedby refid="_steering_behavior_flee_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorFlee.h</includedby>
+    <includedby refid="_steering_behavior_follow_path_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorFollowPath.h</includedby>
+    <includedby refid="_steering_behavior_hide_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorHide.h</includedby>
+    <includedby refid="_steering_behavior_interpose_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorInterpose.h</includedby>
+    <includedby refid="_steering_behavior_obstacle_avoidance_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorObstacleAvoidance.h</includedby>
+    <includedby refid="_steering_behavior_offset_pursuit_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorOffsetPursuit.h</includedby>
+    <includedby refid="_steering_behavior_pursuit_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorPursuit.h</includedby>
+    <includedby refid="_steering_behavior_seek_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorSeek.h</includedby>
+    <includedby refid="_steering_behavior_separation_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorSeparation.h</includedby>
+    <includedby refid="_steering_behavior_wall_avoidance_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorWallAvoidance.h</includedby>
+    <includedby refid="_steering_behavior_wander_8h" local="yes">njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorWander.h</includedby>
+    <includedby refid="_steering_behavior_machine_8h" local="yes">njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h</includedby>
+    <includedby refid="_steering_behavior_machine_dithered_8h" local="yes">njligames-njlic_engine/njli/steering/SteeringBehaviorMachineDithered.h</includedby>
+    <includedby refid="_steering_behavior_machine_prioritized_8h" local="yes">njligames-njlic_engine/njli/steering/SteeringBehaviorMachinePrioritized.h</includedby>
+    <includedby refid="_steering_behavior_machine_weighted_8h" local="yes">njligames-njlic_engine/njli/steering/SteeringBehaviorMachineWeighted.h</includedby>
+    <incdepgraph>
+      <node id="256">
+        <label>stdlib.h</label>
+      </node>
+      <node id="245">
+        <label>njligames-njlic_engine/njli/AbstractFactoryObject.h</label>
+        <link refid="_abstract_factory_object_8h"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="250">
+        <label>Log.h</label>
+        <link refid="_log_8h"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>SDL_assert.h</label>
+      </node>
+      <node id="260">
+        <label>string</label>
+      </node>
+      <node id="253">
+        <label>SDL_config.h</label>
+      </node>
+      <node id="254">
+        <label>SDL_log.h</label>
+      </node>
+      <node id="246">
+        <label>btAlignedObjectArray.h</label>
+      </node>
+      <node id="251">
+        <label>Macros.h</label>
+        <link refid="_macros_8h"/>
+      </node>
+      <node id="262">
+        <label>btSerializer.h</label>
+      </node>
+      <node id="261">
+        <label>vector</label>
+      </node>
+      <node id="247">
+        <label>AbstractObject.h</label>
+        <link refid="_abstract_object_8h"/>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>math.h</label>
+      </node>
+      <node id="249">
+        <label>Util.h</label>
+        <link refid="_util_8h"/>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="257" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>algorithm</label>
+      </node>
+      <node id="248">
+        <label>AbstractDecorator.h</label>
+        <link refid="_abstract_decorator_8h"/>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>stdio.h</label>
+      </node>
+      <node id="259">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="407">
+        <label>njligames-njlic_engine/njli/physics/PhysicsField.h</label>
+        <link refid="_physics_field_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="303">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintBuilder.h</label>
+        <link refid="_physics_constraint_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeConvexTriangleMesh.h</label>
+        <link refid="_physics_shape_convex_triangle_mesh_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>njligames-njlic_engine/njli/graphics/LevelOfDetail.h</label>
+        <link refid="_level_of_detail_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConeBuilder.h</label>
+        <link refid="_physics_shape_cone_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="305">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintFixedBuilder.h</label>
+        <link refid="_physics_constraint_fixed_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="317">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBoxBuilder.h</label>
+        <link refid="_physics_shape_box_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorArrive.h</label>
+        <link refid="_steering_behavior_arrive_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="344">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorObstacleAvoidanceBuilder.h</label>
+        <link refid="_steering_behavior_obstacle_avoidance_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>njligames-njlic_engine/njli/graphics/LabelHUD.h</label>
+        <link refid="_label_h_u_d_8h"/>
+      </node>
+      <node id="285">
+        <label>njligames-njlic_engine/njli/builders/graphics/LabelHUDBuilder.h</label>
+        <link refid="_label_h_u_d_builder_8h"/>
+      </node>
+      <node id="306">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintGeneric6DofBuilder.h</label>
+        <link refid="_physics_constraint_generic6_dof_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="424">
+        <label>njligames-njlic_engine/njli/sound/openal/Wrapper_RAW.h</label>
+        <link refid="_wrapper___r_a_w_8h"/>
+      </node>
+      <node id="387">
+        <label>njligames-njlic_engine/njli/Scene.h</label>
+        <link refid="_scene_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+      <node id="277">
+        <label>njligames-njlic_engine/njli/builders/ActionBuilder.h</label>
+        <link refid="_action_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintGeneric6DofSpring.h</label>
+        <link refid="_physics_constraint_generic6_dof_spring_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBodyRigid.h</label>
+        <link refid="_physics_body_rigid_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachinePrioritizedBuilder.h</label>
+        <link refid="_steering_behavior_machine_prioritized_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineDitheredBuilder.h</label>
+        <link refid="_steering_behavior_machine_dithered_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>njligames-njlic_engine/njli/Action.h</label>
+        <link refid="_action_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>njligames-njlic_engine/njli/graphics/TextboxHUD.h</label>
+        <link refid="_textbox_h_u_d_8h"/>
+      </node>
+      <node id="380">
+        <label>njligames-njlic_engine/njli/graphics/Skinner.h</label>
+        <link refid="_skinner_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBox2DBuilder.h</label>
+        <link refid="_physics_shape_box2_d_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="301">
+        <label>njligames-njlic_engine/njli/builders/physics/body/PhysicsBodyRigidBuilder.h</label>
+        <link refid="_physics_body_rigid_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="440">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorWallAvoidance.h</label>
+        <link refid="_steering_behavior_wall_avoidance_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>njligames-njlic_engine/njli/sound/WorldSound.h</label>
+        <link refid="_world_sound_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="393">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBody.h</label>
+        <link refid="_physics_body_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+      </node>
+      <node id="398">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintConeTwist.h</label>
+        <link refid="_physics_constraint_cone_twist_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>njligames-njlic_engine/njli/builders/SceneStateBuilder.h</label>
+        <link refid="_scene_state_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehavior.h</label>
+        <link refid="_steering_behavior_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+      </node>
+      <node id="302">
+        <label>njligames-njlic_engine/njli/builders/physics/body/PhysicsBodySoftBuilder.h</label>
+        <link refid="_physics_body_soft_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="366">
+        <label>njligames-njlic_engine/njli/graphics/ButtonHUD.h</label>
+        <link refid="_button_h_u_d_8h"/>
+      </node>
+      <node id="367">
+        <label>njligames-njlic_engine/njli/graphics/CheckboxHUD.h</label>
+        <link refid="_checkbox_h_u_d_8h"/>
+      </node>
+      <node id="429">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorCohesion.h</label>
+        <link refid="_steering_behavior_cohesion_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>njligames-njlic_engine/njli/AbstractFactoryObject.h</label>
+        <link refid="_abstract_factory_object_8h"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConvexHullBuilder.h</label>
+        <link refid="_physics_shape_convex_hull_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>njligames-njlic_engine/njli/JLIEngine.h</label>
+        <link refid="_j_l_i_engine_8h"/>
+      </node>
+      <node id="430">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorEvade.h</label>
+        <link refid="_steering_behavior_evade_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="279">
+        <label>njligames-njlic_engine/njli/builders/ClockBuilder.h</label>
+        <link refid="_clock_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="368">
+        <label>njligames-njlic_engine/njli/graphics/Cube.h</label>
+        <link refid="_cube_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachinePrioritized.h</label>
+        <link refid="_steering_behavior_machine_prioritized_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="408">
+        <label>njligames-njlic_engine/njli/physics/PhysicsRayContact.h</label>
+        <link refid="_physics_ray_contact_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>njligames-njlic_engine/njli/builders/TimerBuilder.h</label>
+        <link refid="_timer_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>njligames-njlic_engine/njli/builders/StopWatchBuilder.h</label>
+        <link refid="_stop_watch_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>njligames-njlic_engine/njli/SceneState.h</label>
+        <link refid="_scene_state_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="266">
+        <label>njligames-njlic_engine/njli/WorldStateMachine.h</label>
+        <link refid="_world_state_machine_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="300">
+        <label>njligames-njlic_engine/njli/builders/physics/body/PhysicsBodyGhostBuilder.h</label>
+        <link refid="_physics_body_ghost_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="324">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeHeightfieldTerrainBuilder.h</label>
+        <link refid="_physics_shape_heightfield_terrain_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeCapsuleBuilder.h</label>
+        <link refid="_physics_shape_capsule_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>njligames-njlic_engine/njli/builders/AbstractBuilder.h</label>
+        <link refid="_abstract_builder_8h"/>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="279" relation="include">
+        </childnode>
+        <childnode refid="280" relation="include">
+        </childnode>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+        <childnode refid="284" relation="include">
+        </childnode>
+        <childnode refid="285" relation="include">
+        </childnode>
+        <childnode refid="286" relation="include">
+        </childnode>
+        <childnode refid="287" relation="include">
+        </childnode>
+        <childnode refid="288" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+        <childnode refid="293" relation="include">
+        </childnode>
+        <childnode refid="294" relation="include">
+        </childnode>
+        <childnode refid="295" relation="include">
+        </childnode>
+        <childnode refid="296" relation="include">
+        </childnode>
+        <childnode refid="297" relation="include">
+        </childnode>
+        <childnode refid="298" relation="include">
+        </childnode>
+        <childnode refid="299" relation="include">
+        </childnode>
+        <childnode refid="300" relation="include">
+        </childnode>
+        <childnode refid="301" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
+        </childnode>
+        <childnode refid="304" relation="include">
+        </childnode>
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="306" relation="include">
+        </childnode>
+        <childnode refid="307" relation="include">
+        </childnode>
+        <childnode refid="308" relation="include">
+        </childnode>
+        <childnode refid="309" relation="include">
+        </childnode>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+        <childnode refid="361" relation="include">
+        </childnode>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="389" relation="include">
+        </childnode>
+        <childnode refid="390" relation="include">
+        </childnode>
+        <childnode refid="391" relation="include">
+        </childnode>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+        <childnode refid="405" relation="include">
+        </childnode>
+        <childnode refid="406" relation="include">
+        </childnode>
+        <childnode refid="407" relation="include">
+        </childnode>
+        <childnode refid="408" relation="include">
+        </childnode>
+        <childnode refid="409" relation="include">
+        </childnode>
+        <childnode refid="410" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="431" relation="include">
+        </childnode>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+        <childnode refid="434" relation="include">
+        </childnode>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+        <childnode refid="441" relation="include">
+        </childnode>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>njligames-njlic_engine/njli/graphics/DropdownHUD.h</label>
+        <link refid="_dropdown_h_u_d_8h"/>
+      </node>
+      <node id="400">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintGeneric6Dof.h</label>
+        <link refid="_physics_constraint_generic6_dof_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="401" relation="include">
+        </childnode>
+      </node>
+      <node id="286">
+        <label>njligames-njlic_engine/njli/builders/graphics/MaterialBuilder.h</label>
+        <link refid="_material_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="295">
+        <label>njligames-njlic_engine/njli/builders/LightBuilder.h</label>
+        <link refid="_light_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintHinge.h</label>
+        <link refid="_physics_constraint_hinge_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorCohesionBuilder.h</label>
+        <link refid="_steering_behavior_cohesion_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>njligames-njlic_engine/njli/builders/ThreadBuilder.h</label>
+        <link refid="_thread_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorArriveBuilder.h</label>
+        <link refid="_steering_behavior_arrive_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorHideBuilder.h</label>
+        <link refid="_steering_behavior_hide_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorWander.h</label>
+        <link refid="_steering_behavior_wander_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintSlider.h</label>
+        <link refid="_physics_constraint_slider_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorWanderBuilder.h</label>
+        <link refid="_steering_behavior_wander_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>njligames-njlic_engine/njli/physics/PhysicsWorld.h</label>
+        <link refid="_physics_world_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>njligames-njlic_engine/njli/builders/ImageBuilder.h</label>
+        <link refid="_image_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="298">
+        <label>njligames-njlic_engine/njli/builders/NodeStateMachineBuilder.h</label>
+        <link refid="_node_state_machine_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>njligames-njlic_engine/njli/SceneStateMachine.h</label>
+        <link refid="_scene_state_machine_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>njligames-njlic_engine/njli/builders/CollisionResponseBuilder.h</label>
+        <link refid="_collision_response_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="296">
+        <label>njligames-njlic_engine/njli/builders/NodeBuilder.h</label>
+        <link refid="_node_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="438">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorSeek.h</label>
+        <link refid="_steering_behavior_seek_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="304">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintConeTwistBuilder.h</label>
+        <link refid="_physics_constraint_cone_twist_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeConvexTriangleMeshBuilder.h</label>
+        <link refid="_physics_shape_convex_triangle_mesh_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorSeparationBuilder.h</label>
+        <link refid="_steering_behavior_separation_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeBox.h</label>
+        <link refid="_physics_shape_box_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>njligames-njlic_engine/njli/builders/SpriteFrameAtlasBuilder.h</label>
+        <link refid="_sprite_frame_atlas_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachineWeighted.h</label>
+        <link refid="_steering_behavior_machine_weighted_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>njligames-njlic_engine/njli/WorldState.h</label>
+        <link refid="_world_state_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>njligames-njlic_engine/njli/graphics/SpriteFrameAtlas.h</label>
+        <link refid="_sprite_frame_atlas_8h"/>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorSeekBuilder.h</label>
+        <link refid="_steering_behavior_seek_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="403">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintPointToPoint.h</label>
+        <link refid="_physics_constraint_point_to_point_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachineDithered.h</label>
+        <link refid="_steering_behavior_machine_dithered_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeCylinderBuilder.h</label>
+        <link refid="_physics_shape_cylinder_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>njligames-njlic_engine/njli/Font.h</label>
+        <link refid="_font_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsFieldBuilder.h</label>
+        <link refid="_physics_field_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="396">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBodySoft.h</label>
+        <link refid="_physics_body_soft_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>njligames-njlic_engine/njli/graphics/ParticleEmitter.h</label>
+        <link refid="_particle_emitter_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="315">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsWorldBuilder.h</label>
+        <link refid="_physics_world_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="297">
+        <label>njligames-njlic_engine/njli/builders/NodeStateBuilder.h</label>
+        <link refid="_node_state_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>njligames-njlic_engine/njli/steering/SteeringBehaviorMachine.h</label>
+        <link refid="_steering_behavior_machine_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="443" relation="include">
+        </childnode>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="421">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeSphere.h</label>
+        <link refid="_physics_shape_sphere_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="361">
+        <label>njligames-njlic_engine/njli/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeCylinder.h</label>
+        <link refid="_physics_shape_cylinder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="312">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsContactBuilder.h</label>
+        <link refid="_physics_contact_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeHeightfieldTerrain.h</label>
+        <link refid="_physics_shape_heightfield_terrain_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeSphereBuilder.h</label>
+        <link refid="_physics_shape_sphere_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorEvadeBuilder.h</label>
+        <link refid="_steering_behavior_evade_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorInterposeBuilder.h</label>
+        <link refid="_steering_behavior_interpose_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="439">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorSeparation.h</label>
+        <link refid="_steering_behavior_separation_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorWallAvoidanceBuilder.h</label>
+        <link refid="_steering_behavior_wall_avoidance_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="405">
+        <label>njligames-njlic_engine/njli/physics/PhysicsCloseContact.h</label>
+        <link refid="_physics_close_contact_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>njligames-njlic_engine/njli/World.h</label>
+        <link refid="_world_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="434">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorInterpose.h</label>
+        <link refid="_steering_behavior_interpose_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraintFixed.h</label>
+        <link refid="_physics_constraint_fixed_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="311">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsCloseContactBuilder.h</label>
+        <link refid="_physics_close_contact_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="436">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorOffsetPursuit.h</label>
+        <link refid="_steering_behavior_offset_pursuit_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>njligames-njlic_engine/njli/AbstractStateMachine.h</label>
+        <link refid="_abstract_state_machine_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+      </node>
+      <node id="389">
+        <label>njligames-njlic_engine/njli/StopWatch.h</label>
+        <link refid="_stop_watch_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>njligames-njlic_engine/njli/NodeState.h</label>
+        <link refid="_node_state_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="294">
+        <label>njligames-njlic_engine/njli/builders/LevelOfDetailBuilder.h</label>
+        <link refid="_level_of_detail_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="328">
+        <label>njligames-njlic_engine/njli/builders/PlaneBuilder.h</label>
+        <link refid="_plane_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="385">
+        <label>njligames-njlic_engine/njli/WorldFactory.h</label>
+        <link refid="_world_factory_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintSliderBuilder.h</label>
+        <link refid="_physics_constraint_slider_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorAlignmentBuilder.h</label>
+        <link refid="_steering_behavior_alignment_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>njligames-njlic_engine/njli/graphics/Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorBuilder.h</label>
+        <link refid="_steering_behavior_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>njligames-njlic_engine/njli/graphics/Geometry.h</label>
+        <link refid="_geometry_8h"/>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="432">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorFollowPath.h</label>
+        <link refid="_steering_behavior_follow_path_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>njligames-njlic_engine/njli/WorldLuaVirtualMachine.h</label>
+        <link refid="_world_lua_virtual_machine_8h"/>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="437">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorPursuit.h</label>
+        <link refid="_steering_behavior_pursuit_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>njligames-njlic_engine/njli/builders/physics/PhysicsRayContactBuilder.h</label>
+        <link refid="_physics_ray_contact_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorFleeBuilder.h</label>
+        <link refid="_steering_behavior_flee_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorPursuitBuilder.h</label>
+        <link refid="_steering_behavior_pursuit_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="278">
+        <label>njligames-njlic_engine/njli/builders/CameraBuilder.h</label>
+        <link refid="_camera_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="362">
+        <label>njligames-njlic_engine/njli/Clock.h</label>
+        <link refid="_clock_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>njligames-njlic_engine/njli/graphics/Sprite2D.h</label>
+        <link refid="_sprite2_d_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>njligames-njlic_engine/njli/builders/SkinnerBuilder.h</label>
+        <link refid="_skinner_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="289">
+        <label>njligames-njlic_engine/njli/builders/graphics/SliderHUDBuilder.h</label>
+        <link refid="_slider_h_u_d_builder_8h"/>
+      </node>
+      <node id="293">
+        <label>njligames-njlic_engine/njli/builders/JsonJLIBuilder.h</label>
+        <link refid="_json_j_l_i_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="394">
+        <label>njligames-njlic_engine/njli/physics/body/PhysicsBodyGhost.h</label>
+        <link refid="_physics_body_ghost_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>njligames-njlic_engine/njli/graphics/Plane.h</label>
+        <link refid="_plane_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>njligames-njlic_engine/njli/builders/XmlBuilder.h</label>
+        <link refid="_xml_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="390">
+        <label>njligames-njlic_engine/njli/Thread.h</label>
+        <link refid="_thread_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeCone.h</label>
+        <link refid="_physics_shape_cone_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>njligames-njlic_engine/njli/graphics/Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>njligames-njlic_engine/njli/Xml.h</label>
+        <link refid="_xml_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeBvhTriangleMeshBuilder.h</label>
+        <link refid="_physics_shape_bvh_triangle_mesh_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineBuilder.h</label>
+        <link refid="_steering_behavior_machine_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>njligames-njlic_engine/njli/Image.h</label>
+        <link refid="_image_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorOffsetPursuitBuilder.h</label>
+        <link refid="_steering_behavior_offset_pursuit_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>njligames-njlic_engine/njli/JsonJLI.h</label>
+        <link refid="_json_j_l_i_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="433">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorHide.h</label>
+        <link refid="_steering_behavior_hide_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="412">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeBox2D.h</label>
+        <link refid="_physics_shape_box2_d_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorAlignment.h</label>
+        <link refid="_steering_behavior_alignment_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>njligames-njlic_engine/njli/builders/FontBuilder.h</label>
+        <link refid="_font_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeConvexHull.h</label>
+        <link refid="_physics_shape_convex_hull_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorObstacleAvoidance.h</label>
+        <link refid="_steering_behavior_obstacle_avoidance_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="397">
+        <label>njligames-njlic_engine/njli/physics/constraint/PhysicsConstraint.h</label>
+        <link refid="_physics_constraint_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="398" relation="include">
+        </childnode>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="400" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>njligames-njlic_engine/njli/builders/sound/SoundBuilder.h</label>
+        <link refid="_sound_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="386">
+        <label>njligames-njlic_engine/njli/Node.h</label>
+        <link refid="_node_8h"/>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>njligames-njlic_engine/njli/NodeStateMachine.h</label>
+        <link refid="_node_state_machine_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="288">
+        <label>njligames-njlic_engine/njli/builders/graphics/ShaderProgramBuilder.h</label>
+        <link refid="_shader_program_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="341">
+        <label>njligames-njlic_engine/njli/builders/steering/behavior/SteeringBehaviorFollowPathBuilder.h</label>
+        <link refid="_steering_behavior_follow_path_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="363">
+        <label>njligames-njlic_engine/njli/CollisionResponse.h</label>
+        <link refid="_collision_response_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="291">
+        <label>njligames-njlic_engine/njli/builders/graphics/TextboxHUDBuilder.h</label>
+        <link refid="_textbox_h_u_d_builder_8h"/>
+      </node>
+      <node id="423">
+        <label>njligames-njlic_engine/njli/sound/Sound.h</label>
+        <link refid="_sound_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeStaticPlane.h</label>
+        <link refid="_physics_shape_static_plane_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>njligames-njlic_engine/njli/AbstractState.h</label>
+        <link refid="_abstract_state_8h"/>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeMultiSphere.h</label>
+        <link refid="_physics_shape_multi_sphere_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>njligames-njlic_engine/njli/builders/SceneBuilder.h</label>
+        <link refid="_scene_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>njligames-njlic_engine/njli/builders/steering/SteeringBehaviorMachineWeightedBuilder.h</label>
+        <link refid="_steering_behavior_machine_weighted_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="309">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintPointToPointBuilder.h</label>
+        <link refid="_physics_constraint_point_to_point_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="283">
+        <label>njligames-njlic_engine/njli/builders/graphics/CheckboxHUDBuilder.h</label>
+        <link refid="_checkbox_h_u_d_builder_8h"/>
+      </node>
+      <node id="331">
+        <label>njligames-njlic_engine/njli/builders/SceneStateMachineBuilder.h</label>
+        <link refid="_scene_state_machine_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintHingeBuilder.h</label>
+        <link refid="_physics_constraint_hinge_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>njligames-njlic_engine/njli/graphics/ShaderProgram.h</label>
+        <link refid="_shader_program_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="358">
+        <label>njligames-njlic_engine/njli/builders/WorldStateBuilder.h</label>
+        <link refid="_world_state_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>njligames-njlic_engine/njli/builders/WorldStateMachineBuilder.h</label>
+        <link refid="_world_state_machine_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeMultiSphereBuilder.h</label>
+        <link refid="_physics_shape_multi_sphere_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="299">
+        <label>njligames-njlic_engine/njli/builders/ParticleEmitterBuilder.h</label>
+        <link refid="_particle_emitter_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="284">
+        <label>njligames-njlic_engine/njli/builders/graphics/DropdownHUDBuilder.h</label>
+        <link refid="_dropdown_h_u_d_builder_8h"/>
+      </node>
+      <node id="410">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShape.h</label>
+        <link refid="_physics_shape_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="411" relation="include">
+        </childnode>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+      </node>
+      <node id="413">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeBvhTriangleMesh.h</label>
+        <link refid="_physics_shape_bvh_triangle_mesh_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>njligames-njlic_engine/njli/CubeBuilder.h</label>
+        <link refid="_cube_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>njligames-njlic_engine/njli/graphics/SliderHUD.h</label>
+        <link refid="_slider_h_u_d_8h"/>
+      </node>
+      <node id="327">
+        <label>njligames-njlic_engine/njli/builders/physics/shape/PhysicsShapeStaticPlaneBuilder.h</label>
+        <link refid="_physics_shape_static_plane_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="307">
+        <label>njligames-njlic_engine/njli/builders/physics/constraint/PhysicsConstraintGeneric6DofSpringBuilder.h</label>
+        <link refid="_physics_constraint_generic6_dof_spring_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>njligames-njlic_engine/njli/physics/PhysicsContact.h</label>
+        <link refid="_physics_contact_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>njligames-njlic_engine/njli/builders/graphics/ButtonHUDBuilder.h</label>
+        <link refid="_button_h_u_d_builder_8h"/>
+      </node>
+      <node id="287">
+        <label>njligames-njlic_engine/njli/builders/graphics/MaterialPropertyBuilder.h</label>
+        <link refid="_material_property_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>njligames-njlic_engine/njli/physics/shape/PhysicsShapeCapsule.h</label>
+        <link refid="_physics_shape_capsule_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>njligames-njlic_engine/njli/steering/behavior/SteeringBehaviorFlee.h</label>
+        <link refid="_steering_behavior_flee_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="391">
+        <label>njligames-njlic_engine/njli/Timer.h</label>
+        <link refid="_timer_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="290">
+        <label>njligames-njlic_engine/njli/builders/graphics/Sprite2DBuilder.h</label>
+        <link refid="_sprite2_d_builder_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>njligames-njlic_engine/njli/graphics/MaterialProperty.h</label>
+        <link refid="_material_property_8h"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classnjli_1_1_abstract_factory_object" prot="public">njli::AbstractFactoryObject</innerclass>
+    <innernamespace refid="namespacenjli">njli</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>AbstractFactoryObject.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>JLIGameEngineTest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>James<sp/>Folk<sp/>on<sp/>11/9/14.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2014<sp/>James<sp/>Folk.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>JLIGameEngineTest_AbstractFactoryObject_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>JLIGameEngineTest_AbstractFactoryObject_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btAlignedObjectArray.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_abstract_object_8h" kindref="compound">AbstractObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_util_8h" kindref="compound">Util.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;AbstractBuilder.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;btSerializer.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespacenjli" kindref="compound">njli</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">AbstractBuilder;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="classnjli_1_1_abstract_factory_object" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_object" kindref="compound">AbstractObject</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26" refid="classnjli_1_1_abstract_factory_object_1acb96ebb09abe8f2a37a915a842babfac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classnjli_1_1_world_factory" kindref="compound">WorldFactory</ref>;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_decorator_1a087eb5f8d9f51cc476f12f1d10a3cb95" kindref="member">AbstractDecorator::setName</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_decorator_1ad41266885be835f3ee602311e20877a4" kindref="member">AbstractDecorator::getName</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4f7ae7bf09c7c9426e7d6023f7fd8dec" kindref="member">AbstractFactoryObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*ptr);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a23b7edad5e21229d9f9f14359dd3ec46" kindref="member">~AbstractFactoryObject</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="classnjli_1_1_abstract_factory_object_1af4151e41b80d5bc3fc42822c67fc2278" kindref="member">getClassName</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a207c86146d40d0794708ae7f2d4e60a7" kindref="member">getType</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/>std::string()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>*<ref refid="classnjli_1_1_abstract_factory_object_1a83a8876ae63b92804004cf3febe76573" kindref="member">create</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_builder" kindref="compound">AbstractBuilder</ref><sp/>&amp;builder)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>*<ref refid="classnjli_1_1_abstract_factory_object_1a6236ab8114b3f3033bc9824b0980b055" kindref="member">clone</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shared<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1afec18dff52178eaf73a64764c262d95a" kindref="member">destroy</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2" kindref="member">s32</ref><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4763d05bc9dc37c559111f8bb30e1dd8" kindref="member">calculateSerializeBufferSize</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1aad2fbe86fb3bdecf02918a96b9c57976" kindref="member">serialize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*dataBuffer,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>btSerializer<sp/>*serializer)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="classnjli_1_1_abstract_factory_object_1ac4ca71716ed832be357f15f8262c8448" kindref="member">getPointer</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4ffddf141a426a5a07d0ac19f1913811" kindref="member">getPointerValue</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1ae620e2d5fd6bacf75d6dc63a1a499856" kindref="member">operator==</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1af62456deb9b3cd80eeb894b7ee033f44" kindref="member">operator&lt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1aebb630b30d4649b79a5655471cf727a9" kindref="member">operator&gt;</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a475bffe85257bce9d5ad5ea4a991fdf9" kindref="member">operator!=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a2703a2ef27de3bd21b0905c571235922" kindref="member">operator&lt;=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a8ce0719b53e2cca86046b6dbd31aa6af" kindref="member">operator&gt;=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;rhs)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4fc4bcd9d1930911474210c047372fc0" kindref="member">serializeObject</ref>(</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>btSerializer<sp/>*serializer)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1aaa088eb7160046ccf467c0f29f509291" kindref="member">canDelete</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a678b8f28320f6a7e2aa38d5ef72889a8" kindref="member">enableCanDelete</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a75e5bb1d52f364d303a0a38617639649" kindref="member">isRenderObject</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a87597409cecc91b4d40be5e9b3a2d4dc" kindref="member">enableRenderObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4f7ae7bf09c7c9426e7d6023f7fd8dec" kindref="member">AbstractFactoryObject</ref>();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4f7ae7bf09c7c9426e7d6023f7fd8dec" kindref="member">AbstractFactoryObject</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;<ref refid="classnjli_1_1_abstract_factory_object_1ae2c1cfc2cf1b38931ac450e2598a6bb9" kindref="member">operator=</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object" kindref="compound">AbstractFactoryObject</ref><sp/>&amp;);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178" refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="classnjli_1_1_abstract_factory_object_1a8eea2673c37f55c871de8a808a1a0b94" kindref="member">m_pointer</ref>;</highlight></codeline>
+<codeline lineno="179" refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_util_8h_1ad758b7a5c3f18ed79d2fcd23d9f16357" kindref="member">u64</ref><sp/><ref refid="classnjli_1_1_abstract_factory_object_1af1a3dd67b0ce2fc70cff9ca111263829" kindref="member">m_pointerVal</ref>;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="181" refid="classnjli_1_1_abstract_factory_object_1a4977cfd3030c6610ea54ec279b253f45" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a4977cfd3030c6610ea54ec279b253f45" kindref="member">m_canDelete</ref>;</highlight></codeline>
+<codeline lineno="182" refid="classnjli_1_1_abstract_factory_object_1a7b32ea157388606e926495880208db97" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classnjli_1_1_abstract_factory_object_1a7b32ea157388606e926495880208db97" kindref="member">m_isRenderObject</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="njligames-njlic_engine/njli/AbstractFactoryObject.h"/>
+  </compounddef>
+</doxygen>

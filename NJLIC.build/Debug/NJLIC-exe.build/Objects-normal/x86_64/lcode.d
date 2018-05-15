@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lcode.c \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lprefix.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lua.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/luaconf.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lcode.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/llex.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lobject.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/llimits.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lzio.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lmem.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lopcodes.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lparser.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/ldebug.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lstate.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/ltm.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/ldo.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lgc.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lstring.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/ltable.h \
+  /Users/jamesfolk/Work/test_project_repo/bot_macOS/njligames-njlic_engine/lua/src/lvm.h

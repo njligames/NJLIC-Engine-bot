@@ -1,0 +1,1528 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="classnjli_1_1_world_debug_drawer">
+<title>njli::WorldDebugDrawer class Reference</title>
+<para>
+    <programlisting>#include <link linkend="_world_debug_drawer_8h">&lt;WorldDebugDrawer.h&gt;</link></programlisting>
+</para>
+<para>Inheritance diagram for njli::WorldDebugDrawer</para>
+<para>
+    <figure>
+        <title>Inheritance graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_world_debug_drawer__inherit__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+<para>Collaboration diagram for njli::WorldDebugDrawer</para>
+<para>
+    <figure>
+        <title>Collaboration graph</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="1" fileref="classnjli_1_1_world_debug_drawer__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </figure>
+</para>
+        <section>
+            <title>Private Attributes</title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>int m_DebugMode</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>Camera * m_Camera</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLuint linePointProgram</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLint linePointProgram_MvpMatrixLocation</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLuint textProgram</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLint textProgram_GlyphTextureLocation</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLint textProgram_ScreenDimensions</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLuint linePointVAO</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLuint linePointVBO</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLuint textVAO</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>GLuint textVBO</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_world_debug_drawer_1ab55308c80918b35de864ddf762be9415">WorldDebugDrawer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="classnjli_1_1_world_debug_drawer_1a741f540999f852b736db76368719e2cf">~WorldDebugDrawer</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual const char * <link linkend="classnjli_1_1_world_debug_drawer_1a08488c8e987f18b7186d5ca50650db99">getClassName</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_util_8h_1aa62c75d314a0d1f37f79c4b73b2292e2">s32</link> <link linkend="classnjli_1_1_world_debug_drawer_1a151c4b9f151d90e03df92f412346e876">getType</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para> <link linkend="classnjli_1_1_world_debug_drawer_1ad8b4bbf6151d5f233dce54b012d9f395">operator std::string</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a058930605d9a5adbf095701584dededf">beginDraw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1ad0f3fbe3f3f062800792178a1b83318e">endDraw</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1aa840ccc55092f26d9ed20ca1ceae1670">drawPointList</link> (
+const dd::DrawVertex * , int , bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1ab4547ab7ddab242ff2a402c691ce7c72">drawLineList</link> (
+const dd::DrawVertex * , int , bool )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a902a5a10ef3b87d602cd87e2cd37c3e4">drawGlyphList</link> (
+const dd::DrawVertex * , int , dd::GlyphTextureHandle )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a7d7fc930e719f3fd0715c860df1cbca7">destroyGlyphTexture</link> (
+dd::GlyphTextureHandle )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual dd::GlyphTextureHandle <link linkend="classnjli_1_1_world_debug_drawer_1a33c8ba0bbcc08aefc27850aecbbfaeea">createGlyphTexture</link> (
+int , int , const <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> * )</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a09b33cb0a07320fc6c10890abbf1e3b5">drawLine</link> (
+const btVector3 &amp; from, const btVector3 &amp; to, const btVector3 &amp; color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a5469fad4a1de098b62a2e9ecc3bcc291">drawContactPoint</link> (
+const btVector3 &amp; PointOnB, const btVector3 &amp; normalOnB, btScalar distance, int lifeTime, const btVector3 &amp; color)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a283f65c1bc27f601271909a35ffac38d">reportErrorWarning</link> (
+const char * warningString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a76cbaf34350fd41f5fd929e97df5c9a3">draw3dText</link> (
+const btVector3 &amp; location, const char * textString)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual <link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a47497517ec5023b6ea53286eb6381510">setDebugMode</link> (
+int debugMode)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>virtual int <link linkend="classnjli_1_1_world_debug_drawer_1ace4ad17af606db8195712e15a42782b2">getDebugMode</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1aac2655edc06413745b2ff3ff13572a2d">init</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1af34071bc860e89b151d779ee1c6acbbf">unInit</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a52ac5a94b12639e5450f77690ab8f5bc">draw</link> (
+<link linkend="classnjli_1_1_camera">Camera</link> * camera)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a9de791d9497b36d0f19980cf301d05f6">point</link> (
+const btVector3 &amp; pos, const btVector3 &amp; color, float size, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1ab8577e1631222c8a64ba370b4e62daa6">line</link> (
+const btVector3 &amp; from, const btVector3 &amp; to, const btVector3 &amp; color, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a014bce3199ffded2f0577eb3c9a8bf19">screenText</link> (
+ddStrParam str, const btVector3 &amp; pos, const btVector3 &amp; color, float scaling, int durationMillis)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1acac1c29c7c13b5afb9553c38f304af47">projectedText</link> (
+ddStrParam str, const btVector3 &amp; pos, const btVector3 &amp; color, float scaling, int durationMillis)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a247723d82e67043e246c9cf601e9a5e4">arrow</link> (
+const btVector3 &amp; from, const btVector3 &amp; to, const btVector3 &amp; color, float size, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1afaf93a608f1cbda884f660ef626d7891">cross</link> (
+const btVector3 &amp; center, float length, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1adec61e26c61222671eeaae5818750ee2">circle</link> (
+const btVector3 &amp; center, const btVector3 &amp; planeNormal, const btVector3 &amp; color, float radius, float numSteps, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a7a947904ddfe6665fc69fc9d04017f23">plane</link> (
+const btVector3 &amp; center, const btVector3 &amp; planeNormal, const btVector3 &amp; planeColor, const btVector3 &amp; normalVecColor, float planeScale, float normalVecScale, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1af5b08f142be7d2061437d20bfdfb12a4">sphere</link> (
+const btVector3 &amp; center, const btVector3 &amp; color, float radius, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a3e6834506d31a8111699f184ef75c6ad">cone</link> (
+const btVector3 &amp; apex, const btVector3 &amp; dir, const btVector3 &amp; color, float baseRadius, float apexRadius, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1ac47f08694cdd1b36a2b0a89238ef9927">box</link> (
+const btVector3 &amp; center, const btVector3 &amp; color, float width, float height, float depth, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1ae4c968319278e639f0372948fdf16729">aabb</link> (
+const btVector3 &amp; mins, const btVector3 &amp; maxs, const btVector3 &amp; color, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a36d81cb34d46d4e853a44e3477dba202">vertexNormal</link> (
+const btVector3 &amp; origin, const btVector3 &amp; normal, float length, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a3e46b0af228eb9e8f112ad7e6d8007f0">tangentBasis</link> (
+const btVector3 &amp; origin, const btVector3 &amp; normal, const btVector3 &amp; tangent, const btVector3 &amp; bitangent, float lengths, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a42fda06cd30581136e0e39f6682b71bd">xzSquareGrid</link> (
+float mins, float maxs, float y, float step, const btVector3 &amp; color, int durationMillis, bool depthEnabled)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para>bool <link linkend="classnjli_1_1_world_debug_drawer_1a6472cecf79ae2d4b76fcb5e363019fbd">processSdlEvent</link> (
+SDL_Event * event)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title></title>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a909649fb3b8e4eab5b8b76370b0e66d0">setupShaderPrograms</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1ad67f8074167c127eb49596c6d2d813a4">setupVertexBuffers</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a48de01f1761e56a8511925468f6a802a">compileShader</link> (
+const GLuint shader)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a9f85884fc0612b81a189fa42b28c6707">linkProgram</link> (
+const GLuint program)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1aed4000f5c9f1a4b5be0fdd6b48e9d68e">initImgui</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a0c68d5133dbbebd5e9f7cf46d8e9e12f">unInitImgui</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1a303d644236ffcfe2216a0ce445b0e74c">renderImgui</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        <para><link linkend="_thread_8h_1af1e856da2e658414cb2456cb6f7ebc66">void</link> <link linkend="classnjli_1_1_world_debug_drawer_1afa1b4bf7b377c085e4ed2a5b41b13adb">newFrameImgui</link> (
+)</para>
+                    </listitem>
+                </itemizedlist>
+            </para>
+        </section>
+        <section>
+            <title>Member Data Documentation</title>
+        </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ab55308c80918b35de864ddf762be9415">
+                <title>njli::WorldDebugDrawer::WorldDebugDrawer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a741f540999f852b736db76368719e2cf">
+                <title>virtual njli::WorldDebugDrawer::~WorldDebugDrawer ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a08488c8e987f18b7186d5ca50650db99">
+                <title>virtual const char* njli::WorldDebugDrawer::getClassName () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a151c4b9f151d90e03df92f412346e876">
+                <title>virtual s32 njli::WorldDebugDrawer::getType () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ad8b4bbf6151d5f233dce54b012d9f395">
+                <title>njli::WorldDebugDrawer::operator std::string () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a058930605d9a5adbf095701584dededf">
+                <title>virtual void njli::WorldDebugDrawer::beginDraw ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ad0f3fbe3f3f062800792178a1b83318e">
+                <title>virtual void njli::WorldDebugDrawer::endDraw ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1aa840ccc55092f26d9ed20ca1ceae1670">
+                <title>virtual void njli::WorldDebugDrawer::drawPointList (const dd::DrawVertex *, int, bool)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ab4547ab7ddab242ff2a402c691ce7c72">
+                <title>virtual void njli::WorldDebugDrawer::drawLineList (const dd::DrawVertex *, int, bool)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a902a5a10ef3b87d602cd87e2cd37c3e4">
+                <title>virtual void njli::WorldDebugDrawer::drawGlyphList (const dd::DrawVertex *, int, dd::GlyphTextureHandle)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a7d7fc930e719f3fd0715c860df1cbca7">
+                <title>virtual void njli::WorldDebugDrawer::destroyGlyphTexture (dd::GlyphTextureHandle)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a33c8ba0bbcc08aefc27850aecbbfaeea">
+                <title>virtual dd::GlyphTextureHandle njli::WorldDebugDrawer::createGlyphTexture (int, int, const void *)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a09b33cb0a07320fc6c10890abbf1e3b5">
+                <title>virtual void njli::WorldDebugDrawer::drawLine (const btVector3 &amp;from, const btVector3 &amp;to, const btVector3 &amp;color)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a5469fad4a1de098b62a2e9ecc3bcc291">
+                <title>virtual void njli::WorldDebugDrawer::drawContactPoint (const btVector3 &amp;PointOnB, const btVector3 &amp;normalOnB, btScalar distance, int lifeTime, const btVector3 &amp;color)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a283f65c1bc27f601271909a35ffac38d">
+                <title>virtual void njli::WorldDebugDrawer::reportErrorWarning (const char *warningString)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a76cbaf34350fd41f5fd929e97df5c9a3">
+                <title>virtual void njli::WorldDebugDrawer::draw3dText (const btVector3 &amp;location, const char *textString)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a47497517ec5023b6ea53286eb6381510">
+                <title>virtual void njli::WorldDebugDrawer::setDebugMode (int debugMode)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ace4ad17af606db8195712e15a42782b2">
+                <title>virtual int njli::WorldDebugDrawer::getDebugMode () const</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1aac2655edc06413745b2ff3ff13572a2d">
+                <title>void njli::WorldDebugDrawer::init ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1af34071bc860e89b151d779ee1c6acbbf">
+                <title>void njli::WorldDebugDrawer::unInit ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a52ac5a94b12639e5450f77690ab8f5bc">
+                <title>void njli::WorldDebugDrawer::draw (Camera *camera)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a9de791d9497b36d0f19980cf301d05f6">
+                <title>void njli::WorldDebugDrawer::point (const btVector3 &amp;pos, const btVector3 &amp;color, float size=1.0f, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a point in 3D space to the debug draw queue. Point is expressed in world-space coordinates. Note that not all renderer support configurable point size, so take the &apos;size&apos; parameter as a hint only</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pos</entry>
+                                <entry>
+<para>&lt;#pos description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>.0f</entry>
+                                <entry>
+<para>&lt;#.0f description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ab8577e1631222c8a64ba370b4e62daa6">
+                <title>void njli::WorldDebugDrawer::line (const btVector3 &amp;from, const btVector3 &amp;to, const btVector3 &amp;color, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a 3D line to the debug draw queue. Note that lines are expressed in world coordinates, and so are all wireframe primitives which are built from lines.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>from</entry>
+                                <entry>
+<para>&lt;#from description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>to</entry>
+                                <entry>
+<para>&lt;#to description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a014bce3199ffded2f0577eb3c9a8bf19">
+                <title>void njli::WorldDebugDrawer::screenText (ddStrParam str, const btVector3 &amp;pos, const btVector3 &amp;color, float scaling=1.0f, int durationMillis=0)</title> <emphasis></emphasis>
+                
+<para>Add a 2D text string as an overlay to the current view, using a built-in font. Position is in screen-space pixels, origin at the top-left corner of the screen. The third element (Z) of the position vector is ignored. Note: Newlines and tabs are handled (1 tab = 4 spaces).</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>str</entry>
+                                <entry>
+<para>&lt;#str description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pos</entry>
+                                <entry>
+<para>&lt;#pos description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>.0f</entry>
+                                <entry>
+<para>&lt;#.0f description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1acac1c29c7c13b5afb9553c38f304af47">
+                <title>void njli::WorldDebugDrawer::projectedText (ddStrParam str, const btVector3 &amp;pos, const btVector3 &amp;color, float scaling=1.0f, int durationMillis=0)</title> <emphasis></emphasis>
+                
+<para>Add a 3D text label centered at the given world position that gets projected to screen-space. The label always faces the viewer. sx/sy, sw/sh are the viewport coordinates/size, in pixels. &apos;vpMatrix&apos; is the view * projection transform to map the text from 3D to 2D.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>str</entry>
+                                <entry>
+<para>&lt;#str description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pos</entry>
+                                <entry>
+<para>&lt;#pos description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>.0f</entry>
+                                <entry>
+<para>&lt;#.0f description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a247723d82e67043e246c9cf601e9a5e4">
+                <title>void njli::WorldDebugDrawer::arrow (const btVector3 &amp;from, const btVector3 &amp;to, const btVector3 &amp;color, float size, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a set of three coordinate axis depicting the position and orientation of the given transform. &apos;size&apos; defines the size of the arrow heads. &apos;length&apos; defines the length of the arrow&apos;s base line.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>transform</entry>
+                                <entry>
+<para>&lt;#transform description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>&lt;#length description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; 
+<literallayout>
+</literallayout>
+Add a 3D line with an arrow-like end to the debug draw queue. &apos;size&apos; defines the arrow head size. &apos;from&apos; and &apos;to&apos; the length of the arrow&apos;s base line.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>from</entry>
+                                <entry>
+<para>&lt;#from description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>to</entry>
+                                <entry>
+<para>&lt;#to description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>size</entry>
+                                <entry>
+<para>&lt;#size description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1afaf93a608f1cbda884f660ef626d7891">
+                <title>void njli::WorldDebugDrawer::cross (const btVector3 &amp;center, float length, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add an axis-aligned cross (3 lines converging at a point) to the debug draw queue. &apos;length&apos; defines the length of the crossing lines. &apos;center&apos; is the world-space point where the lines meet.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>center</entry>
+                                <entry>
+<para>&lt;#center description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>&lt;#length description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1adec61e26c61222671eeaae5818750ee2">
+                <title>void njli::WorldDebugDrawer::circle (const btVector3 &amp;center, const btVector3 &amp;planeNormal, const btVector3 &amp;color, float radius, float numSteps, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a wireframe circle to the debug draw queue.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>center</entry>
+                                <entry>
+<para>&lt;#center description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>planeNormal</entry>
+                                <entry>
+<para>&lt;#planeNormal description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>radius</entry>
+                                <entry>
+<para>&lt;#radius description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>numSteps</entry>
+                                <entry>
+<para>&lt;#numSteps description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a7a947904ddfe6665fc69fc9d04017f23">
+                <title>void njli::WorldDebugDrawer::plane (const btVector3 &amp;center, const btVector3 &amp;planeNormal, const btVector3 &amp;planeColor, const btVector3 &amp;normalVecColor, float planeScale, float normalVecScale, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a wireframe plane in 3D space to the debug draw queue. If &apos;normalVecScale&apos; is not zero, a line depicting the plane normal is also draw.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>center</entry>
+                                <entry>
+<para>&lt;#center description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>planeNormal</entry>
+                                <entry>
+<para>&lt;#planeNormal description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>planeColor</entry>
+                                <entry>
+<para>&lt;#planeColor description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>normalVecColor</entry>
+                                <entry>
+<para>&lt;#normalVecColor description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>planeScale</entry>
+                                <entry>
+<para>&lt;#planeScale description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>normalVecScale</entry>
+                                <entry>
+<para>&lt;#normalVecScale description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1af5b08f142be7d2061437d20bfdfb12a4">
+                <title>void njli::WorldDebugDrawer::sphere (const btVector3 &amp;center, const btVector3 &amp;color, float radius, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a wireframe sphere to the debug draw queue.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>center</entry>
+                                <entry>
+<para>&lt;#center description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>radius</entry>
+                                <entry>
+<para>&lt;#radius description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a3e6834506d31a8111699f184ef75c6ad">
+                <title>void njli::WorldDebugDrawer::cone (const btVector3 &amp;apex, const btVector3 &amp;dir, const btVector3 &amp;color, float baseRadius, float apexRadius, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a wireframe cone to the debug draw queue. The cone &apos;apex&apos; is the point where all lines meet. The length of the &apos;dir&apos; vector determines the thickness. &apos;baseRadius&apos; &amp; &apos;apexRadius&apos; are in degrees.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>apex</entry>
+                                <entry>
+<para>&lt;#apex description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>dir</entry>
+                                <entry>
+<para>&lt;#dir description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>baseRadius</entry>
+                                <entry>
+<para>&lt;#baseRadius description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>apexRadius</entry>
+                                <entry>
+<para>&lt;#apexRadius description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ac47f08694cdd1b36a2b0a89238ef9927">
+                <title>void njli::WorldDebugDrawer::box (const btVector3 &amp;center, const btVector3 &amp;color, float width, float height, float depth, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Wireframe box from the eight points that define it.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>points</entry>
+                                <entry>
+<para>&lt;#points description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; 
+<literallayout>
+</literallayout>
+Add a wireframe box to the debug draw queue.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>center</entry>
+                                <entry>
+<para>&lt;#center description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>width</entry>
+                                <entry>
+<para>&lt;#width description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>height</entry>
+                                <entry>
+<para>&lt;#height description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depth</entry>
+                                <entry>
+<para>&lt;#depth description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ae4c968319278e639f0372948fdf16729">
+                <title>void njli::WorldDebugDrawer::aabb (const btVector3 &amp;mins, const btVector3 &amp;maxs, const btVector3 &amp;color, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a wireframe Axis Aligned Bounding Box (AABB) to the debug draw queue.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mins</entry>
+                                <entry>
+<para>&lt;#mins description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxs</entry>
+                                <entry>
+<para>&lt;#maxs description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a36d81cb34d46d4e853a44e3477dba202">
+                <title>void njli::WorldDebugDrawer::vertexNormal (const btVector3 &amp;origin, const btVector3 &amp;normal, float length, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a wireframe frustum pyramid to the debug draw queue. &apos;invClipMatrix&apos; is the inverse of the matrix defining the frustum (AKA clip) volume, which normally consists of the projection * view matrix. E.g.: inverse(projMatrix * viewMatrix)</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>invClipMatrix</entry>
+                                <entry>
+<para>&lt;#invClipMatrix description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; 
+<literallayout>
+</literallayout>
+Add a vertex normal for debug visualization. The normal vector &apos;normal&apos; is assumed to be already normalized.</para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>&lt;#origin description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>normal</entry>
+                                <entry>
+<para>&lt;#normal description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>length</entry>
+                                <entry>
+<para>&lt;#length description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a3e46b0af228eb9e8f112ad7e6d8007f0">
+                <title>void njli::WorldDebugDrawer::tangentBasis (const btVector3 &amp;origin, const btVector3 &amp;normal, const btVector3 &amp;tangent, const btVector3 &amp;bitangent, float lengths, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Add a &quot;tangent basis&quot; at a given point in world space. Color scheme used is: normal=WHITE, tangent=YELLOW, bi-tangent=MAGENTA. The normal vector, tangent and bi-tangent vectors are assumed to be already normalized.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>origin</entry>
+                                <entry>
+<para>&lt;#origin description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>normal</entry>
+                                <entry>
+<para>&lt;#normal description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>tangent</entry>
+                                <entry>
+<para>&lt;#tangent description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>bitangent</entry>
+                                <entry>
+<para>&lt;#bitangent description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>lengths</entry>
+                                <entry>
+<para>&lt;#lengths description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a42fda06cd30581136e0e39f6682b71bd">
+                <title>void njli::WorldDebugDrawer::xzSquareGrid (float mins, float maxs, float y, float step, const btVector3 &amp;color, int durationMillis=0, bool depthEnabled=true)</title> <emphasis></emphasis>
+                
+<para>Makes a 3D square grid of lines along the X and Z planes. &apos;y&apos; defines the height in the Y axis where the grid is placed. The grid will go from &apos;mins&apos; to &apos;maxs&apos; units in both the X and Z. &apos;step&apos; defines the gap between each line of the grid.</para>
+
+<para>
+                <formalpara>
+                    <title/>
+                    <table frame="all">
+                        <title>Parameters                        </title>
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>mins</entry>
+                                <entry>
+<para>&lt;#mins description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>maxs</entry>
+                                <entry>
+<para>&lt;#maxs description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para>&lt;#y description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>step</entry>
+                                <entry>
+<para>&lt;#step description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para>&lt;#color description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>durationMillis</entry>
+                                <entry>
+<para>&lt;#durationMillis description#&gt; </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>depthEnabled</entry>
+                                <entry>
+<para>&lt;#depthEnabled description#&gt; </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                </formalpara>
+                </para>
+
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a6472cecf79ae2d4b76fcb5e363019fbd">
+                <title>bool njli::WorldDebugDrawer::processSdlEvent (SDL_Event *event)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a909649fb3b8e4eab5b8b76370b0e66d0">
+                <title>void njli::WorldDebugDrawer::setupShaderPrograms ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1ad67f8074167c127eb49596c6d2d813a4">
+                <title>void njli::WorldDebugDrawer::setupVertexBuffers ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a48de01f1761e56a8511925468f6a802a">
+                <title>void njli::WorldDebugDrawer::compileShader (const GLuint shader)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a9f85884fc0612b81a189fa42b28c6707">
+                <title>void njli::WorldDebugDrawer::linkProgram (const GLuint program)</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1aed4000f5c9f1a4b5be0fdd6b48e9d68e">
+                <title>void njli::WorldDebugDrawer::initImgui ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a0c68d5133dbbebd5e9f7cf46d8e9e12f">
+                <title>void njli::WorldDebugDrawer::unInitImgui ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1a303d644236ffcfe2216a0ce445b0e74c">
+                <title>void njli::WorldDebugDrawer::renderImgui ()</title> <emphasis></emphasis>
+                
+            </section>
+            <section xml:id="classnjli_1_1_world_debug_drawer_1afa1b4bf7b377c085e4ed2a5b41b13adb">
+                <title>void njli::WorldDebugDrawer::newFrameImgui ()</title> <emphasis></emphasis>
+                
+            </section>
+</section>

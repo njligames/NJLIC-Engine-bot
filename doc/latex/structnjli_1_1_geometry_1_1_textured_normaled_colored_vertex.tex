@@ -1,0 +1,104 @@
+\hypertarget{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex}{}\section{njli\+:\+:Geometry\+:\+:Textured\+Normaled\+Colored\+Vertex Struct Reference}
+\label{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex}\index{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}}
+
+
+{\ttfamily \#include $<$Geometry.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a2da687ece7a0358e65dd8fbe00551127}{operator std\+::string}} () const
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bt\+Vector3 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_ae6a6ce74752e418ca7ae6fd3511c4515}{vertex}}
+\item 
+bt\+Vector3 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_af51b64c482f53d1b668dead055e37bcd}{normal}}
+\item 
+bt\+Vector2 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a10525c570e5870adc1eff1e07a9cda0b}{texture}}
+\item 
+bt\+Vector4 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}{color}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 544 of file Geometry.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a2da687ece7a0358e65dd8fbe00551127}\label{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a2da687ece7a0358e65dd8fbe00551127}} 
+\index{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}!operator std\+::string@{operator std\+::string}}
+\index{operator std\+::string@{operator std\+::string}!njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}}
+\subsubsection{\texorpdfstring{operator std\+::string()}{operator std::string()}}
+{\footnotesize\ttfamily njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex\+::operator std\+::string (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 552 of file Geometry.\+h.
+
+
+\begin{DoxyCode}
+553       \{
+554         \textcolor{keywordtype}{char} buffer[2048];
+555         sprintf(buffer,
+556                 \textcolor{stringliteral}{"\{\{%f, %f, %f\}, \{%f, %f, %f\}, \{%f, %f\}, \{%f, %f, %f, %f\}\}"},
+557                 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_ae6a6ce74752e418ca7ae6fd3511c4515}{vertex}}.x(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_ae6a6ce74752e418ca7ae6fd3511c4515}{vertex}}.y(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_ae6a6ce74752e418ca7ae6fd3511c4515}{vertex}}.z(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_af51b64c482f53d1b668dead055e37bcd}{normal}}.x(), 
+      \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_af51b64c482f53d1b668dead055e37bcd}{normal}}.y(),
+558                 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_af51b64c482f53d1b668dead055e37bcd}{normal}}.z(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a10525c570e5870adc1eff1e07a9cda0b}{texture}}.x(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a10525c570e5870adc1eff1e07a9cda0b}{texture}}.y(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}{color}}.x(), 
+      \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}{color}}.y(),
+559                 \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}{color}}.z(), \mbox{\hyperlink{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}{color}}.w());
+560         \textcolor{keywordflow}{return} std::string(buffer);
+561       \}
+\end{DoxyCode}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}\label{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_aed1b3ebbaf3b59beb3a04d40e977bb15}} 
+\index{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}!color@{color}}
+\index{color@{color}!njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily bt\+Vector4 njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex\+::color}
+
+
+
+Definition at line 550 of file Geometry.\+h.
+
+\mbox{\Hypertarget{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_af51b64c482f53d1b668dead055e37bcd}\label{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_af51b64c482f53d1b668dead055e37bcd}} 
+\index{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}!normal@{normal}}
+\index{normal@{normal}!njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}}
+\subsubsection{\texorpdfstring{normal}{normal}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex\+::normal}
+
+
+
+Definition at line 548 of file Geometry.\+h.
+
+\mbox{\Hypertarget{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a10525c570e5870adc1eff1e07a9cda0b}\label{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_a10525c570e5870adc1eff1e07a9cda0b}} 
+\index{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}!texture@{texture}}
+\index{texture@{texture}!njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}}
+\subsubsection{\texorpdfstring{texture}{texture}}
+{\footnotesize\ttfamily bt\+Vector2 njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex\+::texture}
+
+
+
+Definition at line 549 of file Geometry.\+h.
+
+\mbox{\Hypertarget{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_ae6a6ce74752e418ca7ae6fd3511c4515}\label{structnjli_1_1_geometry_1_1_textured_normaled_colored_vertex_ae6a6ce74752e418ca7ae6fd3511c4515}} 
+\index{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}!vertex@{vertex}}
+\index{vertex@{vertex}!njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex@{njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex}}
+\subsubsection{\texorpdfstring{vertex}{vertex}}
+{\footnotesize\ttfamily bt\+Vector3 njli\+::\+Geometry\+::\+Textured\+Normaled\+Colored\+Vertex\+::vertex}
+
+
+
+Definition at line 547 of file Geometry.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+njligames-\/njlic\+\_\+engine/njli/graphics/\mbox{\hyperlink{_geometry_8h}{Geometry.\+h}}\end{DoxyCompactItemize}
